@@ -1,26 +1,20 @@
 import mongoose from 'mongoose'
 
-const rate = {
+const rate = new mongoose.Schema({
   score: Number,
   amount: Number,
   list: {
     type: [{
-      _id: { // **********************系統操作，使用者無權限**************************** 
-        // this.msg.id
-        type: Number,
-        required: [true, '缺少評分_id'],
-        unique: true
-      },
       user: {
         type: mongoose.ObjectId,
-        // ref: 'users',
+        ref: 'users',
         required: true
       },
       score: { type: Number, required: true }
     }],
     default: undefined
   }
-}
+}, { _id: false })
 const msg = (nth) => {
   let msglist = (n) => {
     const list = {
@@ -28,11 +22,11 @@ const msg = (nth) => {
         // this.msg.id
         type: Number,
         required: [true, '缺少留言_id'],
-        unique: true
+        // unique: true
       },
       user: {
         type: mongoose.ObjectId,
-        // ref: 'users',
+        ref: 'users',
         required: [true, '缺少留言創建者']
       },
       privacy: {
@@ -74,12 +68,12 @@ const msg = (nth) => {
 const schema = new mongoose.Schema({
   parent: {
     type: mongoose.ObjectId,
-    // ref: 'boards',
+    ref: 'boards',
     required: [true, '缺少母板']
   },
   user: {
     type: mongoose.ObjectId,
-    // ref: 'users',
+    ref: 'users',
     required: [true, '缺少創建者']
   },
   privacy: {
@@ -88,14 +82,6 @@ const schema = new mongoose.Schema({
     default: 1,
     // 0 全開(可被查看個人資訊) 1只顯示暱稱 2只顯示校系 3 只顯示校
     enum: [0, 1, 2, 3]
-  },
-  publishDate: { // **********************系統操作，使用者無權限****************************
-    type: Date,
-    required: true,
-  },
-  lastEditDate: {   // **********************系統操作，使用者無權限****************************
-    type: Date,
-    required: true,
   },
   // ---------------------------------------------------------------
   title: {
@@ -111,17 +97,22 @@ const schema = new mongoose.Schema({
     maxlength: [5000, '必須 5000 個字以下'],
   },
   // ---------------------------------------------------------------
+  filterRow: {type:[mongoose.Mixed] , default: undefined },
+  // ---------------------------------------------------------------
   // 抓取母板規則:(程式判斷)
   detail: {
     score: Number,
     tag: [Number],
-    type: Number,
-    column: {},
+    category: Number,
+    column:  {type:[mongoose.Mixed] , default: undefined }
   },
   // ---------------------------------------------------------------
   beScored: rate,
-  msg1: msg('1')
-
-}, { versionKey: false })
+  msg1: msg('1'),
+  lastEditDate: {   // **********************系統操作，使用者無權限****************************
+    type: Date,
+    required: true,
+  }
+}, { versionKey: false, timestamps: { createdAt: 'created_at', updatedAt: false } })
 
 export default mongoose.model('articles', schema)
