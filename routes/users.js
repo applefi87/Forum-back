@@ -10,11 +10,12 @@ import {
   // addCart,
   // editCart,
   // getCart
+  giveMsg
 } from '../controllers/users.js'
 
 const router = express.Router()
 
-router.post('/', register)
+router.post('/',giveMsg ,register)
 // router.post('/', content('application/json'), register)
 // router.post('/login', content('application/json'), auth.login, login)
 // router.delete('/logout', auth.jwt, logout)
