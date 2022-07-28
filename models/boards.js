@@ -52,29 +52,12 @@ const msg = (nth) => {
 }
 
 const schema = new mongoose.Schema({
-  parent: {
-    type: mongoose.ObjectId,
-    ref: 'boards',
-    required: [true, '缺少母板']
-  },
-  user: {
-    type: mongoose.ObjectId,
-    ref: 'users',
-    required: [true, '缺少創建者']
-  },
-  privacy: {
-    type: Number,
-    required: [true, '缺少隱私設定'],
-    default: 1,
-    // 0 全開(可被查看個人資訊) 1只顯示暱稱 2只顯示校系 3 只顯示校
-    enum: [0, 1, 2, 3]
-  },
   // ---------------------------------------------------------------
   title: {
     type: String,
-    required: [true, '必填標題'],
-    minlength: [4, '必須 4 個字以上'],
-    maxlength: [50, '必須 50 個字以下'],
+    required: [true, '必填版名'],
+    minlength: [3, '必須 3 個字以上'],
+    maxlength: [20, '必須 20 個字以下'],
   },
   content: {
     type: String,
@@ -82,22 +65,53 @@ const schema = new mongoose.Schema({
     minlength: [20, '必須 20 個字以上'],
     maxlength: [5000, '必須 5000 個字以下'],
   },
-  // ---------------------------------------------------------------
-  filterRow: {type:[mongoose.Mixed] , default: undefined },
+  parent: {
+    type: mongoose.ObjectId,
+    ref: 'boards',
+    required: [true, '缺少母板']
+  },
+  related: {
+    type: [mongoose.ObjectId],
+    default: undefined,
+    ref: 'boards',
+    required: [true, '缺少母板']
+  },
   // ---------------------------------------------------------------
   // 抓取母板規則:(程式判斷)
   detail: {
     score: Number,
     tag: [Number],
     category: Number,
-    column:  {type:[mongoose.Mixed] , default: undefined }
+    column: { type: [mongoose.Mixed], default: undefined }
   },
   // ---------------------------------------------------------------
   beScored: rate,
-  msg1: msg('1'),
-  lastEditDate: {   // **********************系統操作，使用者無權限****************************
-    type: Date,
-    required: true,
+  // -----------------------------------子----------------------
+  childrules: {
+    active: { type: Boolean, required: true },
+    rule: {
+      col: {
+        type: [{
+          c: { type: Number, required: true, alias: 'code' },
+          n: { type: String, required: true, alias: 'name' },
+          r: { type: String, required: true, alias: 'required' },
+          t: { type: Number, required: true, alias: 'type' },
+          o: { type: [{ type: [mongoose.Mixed], default: undefined }], alias: 'others' },
+        }], default: undefined
+      },
+      unique: {
+        type: [{
+          c: { type: Number, required: true, alias: 'code' },
+          n: { type: String, required: true, alias: 'name' },
+          r: { type: String, required: true, alias: 'required' },
+          t: { type: Number, required: true, alias: 'type' },
+          o: { type: [{ type: [mongoose.Mixed], required: true, default: undefined }], alias: 'others' },
+        }], default: undefined
+      }
+    },
+    display:{
+      
+    }
   }
 }, { versionKey: false, timestamps: { createdAt: 'created_at', updatedAt: false } })
 
