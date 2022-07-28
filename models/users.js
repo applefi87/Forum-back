@@ -29,8 +29,9 @@ const emailSchema = (school) => {
       validator: function (email) {
         msg = '信箱格式錯誤'
         // 只能一個@ ||  @後面沒有. (SET已經移除前方.) 直接報錯
-        if (email.match(/[@]/g)?.length != 1 || email.match(/[\.]/)?.length < 1) {  
-          return false }
+        if (email.match(/[@]/g)?.length != 1 || email.match(/[\.]/)?.length < 1) {
+          return false
+        }
         else {
           // 是學校的話還要是.edu(.abc)結尾
           if (!school || email.match(/.*\.edu\.?[a-z]*/)) {
@@ -48,6 +49,8 @@ const emailSchema = (school) => {
   }
   return rule
 }
+
+
 const schema = new mongoose.Schema({
   account: {
     type: String,
@@ -57,11 +60,10 @@ const schema = new mongoose.Schema({
     unique: true,
     match: [/^[A-Za-z0-9]+$/, '帳號格式錯誤']
   },
-  // score: {
-  //   type: Number,
-  //   enum: [0, 1, 2],
-  //   default: 5
-  // },
+  score: {
+    type: Number,
+    enum: [0, 1, 2]
+  },
   // securityData: {
   //   type: {
   //     type: Number,
@@ -74,78 +76,109 @@ const schema = new mongoose.Schema({
   //     type: String,
   //     required: true
   //   },
-  // schoolEmail: emailSchema('school'),
-  email: emailSchema('school'),
-  //   tokens: {
-  //     type: [String]
-  //   },
-  // },
-
-  // info: {
-  //   gender: {
-  //     type: Number,
-  //     required: [true, '必填性別'],
-  //     // 1 男 2 女 3 無
-  //     enum: [1, 2, 3]
-  //   },
-  //   living: {
-  //     type: String,
-  //     maxlength: [100, '必須 100 個字以下'],
-  //   },
-  //   job: {
-  //     type: String,
-  //     maxlength: [30, '必須 30 個字以下'],
-  //   },
-  //   interest: {
-  //     type: String,
-  //     maxlength: [100, '必須 100 個字以下'],
-  //   },
-  //   others: {
-  //     type: String,
-  //     maxlength: [100, '必須 100 個字以下'],
-  //   }
-  // },
-  // record: {
-  //   toBoard: {
-  //     sum: { score: { type: Number, required: true, default: 5 }, amount: { type: Number, required: true, default: 0 } }
-  //     , list: [{
-  //       article: {
-  //         type: mongoose.ObjectId,
-  //         ref: 'articles',
-  //         required: true
-  //       },
-  //       score: { type: Number, required: true }
-  //     }]
-  //   },
-  //   toArticle: {
-  //     sum: { score: { type: Number, required: true, default: 5 }, amount: { type: Number, required: true, default: 0 } },
-  //     list: [{
-  //       article: {
-  //         type: mongoose.ObjectId,
-  //         ref: 'articles',
-  //         required: true
-  //       },
-  //       // 在該文章何處
-  //       location: {
-  //         type: String,
-  //         required: true
-  //       },
-  //       score: { type: Number, required: true }
-  //     }]
-  //   },
-  //   articleScore: {
-  //     sum: { score: { type: Number, required: true, default: 5 }, amount: { type: Number, required: true, default: 0 } },
-  //     list: [{
-  //       article: {
-  //         type: mongoose.ObjectId,
-  //         ref: 'articles',
-  //         required: true
-  //       },
-  //       score: { type: Number, required: true },
-  //       amount: { type: Number, required: true }
-  //     }]
-  //   }
-  // }
+  schoolEmail: emailSchema('school'),
+  email: emailSchema(),
+  tokens: {
+    type: [String]
+  },
+  info: {
+    gender: {
+      type: Number,
+      required: [true, '必填性別'],
+      // 1 男 2 女 3 無
+      enum: [1, 2, 3]
+    },
+    living: {
+      type: String,
+      maxlength: [100, '必須 100 個字以下'],
+    },
+    job: {
+      type: String,
+      maxlength: [30, '必須 30 個字以下'],
+    },
+    interest: {
+      type: String,
+      maxlength: [100, '必須 100 個字以下'],
+    },
+    others: {
+      type: String,
+      maxlength: [100, '必須 100 個字以下'],
+    }
+  },
+  record: {
+    //給版評價
+    toBoard: {
+      sum: { score: { type: Number }, amount: { type: Number } }
+      , list: [{
+        article: {
+          type: mongoose.ObjectId,
+          ref: 'articles',
+          required: true
+        },
+        score: { type: Number, required: true }
+      }]
+    },
+    // 給人文章評價
+    toArticle: {
+      sum: { score: { type: Number }, amount: { type: Number } },
+      list: [{
+        article: {
+          type: mongoose.ObjectId,
+          ref: 'articles',
+          required: true
+        },
+        score: { type: Number, required: true }
+      }]
+    },
+    //給人訊息評價
+    toMsg: {
+      sum: { score: { type: Number }, amount: { type: Number } },
+      list: [{
+        msg: {
+          type: mongoose.ObjectId,
+          ref: 'msgs',
+          required: true
+        },
+        // 在該文章何處
+        location: {
+          type: String,
+          required: true
+        },
+        score: { type: Number, required: true }
+      }]
+    },
+    // 自己文章被評價
+    articleScore: {
+      sum: { score: { type: Number }, amount: { type: Number } },
+      list: [{
+        article: {
+          type: mongoose.ObjectId,
+          ref: 'articles',
+          required: true
+        },
+        score: { type: Number, required: true },
+        amount: { type: Number, required: true }
+      }]
+    },
+    // 自己訊息被評價
+    msgScore: {
+      sum: { score: { type: Number }, amount: { type: Number } },
+      list: [{
+        msg: {
+          type: mongoose.ObjectId,
+          ref: 'msgs',
+          required: true
+        },
+        // 在該文章何處
+        location: {
+          type: String,
+          required: true
+        },
+        score: { type: Number, required: true },
+        amount: { type: Number, required: true }
+      }]
+    }
+  }
 }, { versionKey: false })
 
 export default mongoose.model('users', schema)
