@@ -110,82 +110,82 @@ const schema = new mongoose.Schema({
   record: { // **********************系統操作，使用者無權限****************************
     //給版評價
     toBoard: {
-      score: { type: Number },
-      amount: { type: Number },
+      score: Number,
+      amount: Number,
       list: [{
-      article: {
-        type: mongoose.ObjectId,
-        ref: 'articles',
-        required: true
-      },
-      score: { type: Number, required: true }
-    }]
-  },
-  // 給人文章評價
-  toArticle: {
-    score: { type: Number },
-    amount: { type: Number },
-    list: [{
-      article: {
-        type: mongoose.ObjectId,
-        ref: 'articles',
-        required: true
-      },
-      score: { type: Number, required: true }
-    }]
-  },
-  //給人訊息評價
-  toMsg: {
-    score: { type: Number },
-    amount: { type: Number },
-    list: [{
-      article: {
-        type: mongoose.ObjectId,
-        ref: 'articles',
-        required: true
-      },
-      // 在該文章何處
-      location: {
-        type: String,
-        required: true
-      },
-      score: { type: Number, required: true }
-    }]
-  },
-  // 自己文章被評價
-  articleScore: {
-    score: { type: Number },
-    amount: { type: Number },
-    list: [{
-      article: {
-        type: mongoose.ObjectId,
-        ref: 'articles',
-        required: true
-      },
-      score: { type: Number, required: true },
-      amount: { type: Number, required: true }
-    }]
-  },
-  // 自己訊息被評價
-  msgScore: {
-    score: { type: Number },
-    amount: { type: Number },
-    list: [{
-      article: {
-        type: mongoose.ObjectId,
-        ref: 'articles',
-        required: true
-      },
-      // 在該文章何處
-      location: {
-        type: String,
-        required: true
-      },
-      score: { type: Number, required: true },
-      amount: { type: Number, required: true }
-    }]
+        article: {
+          type: mongoose.ObjectId,
+          ref: 'articles',
+          required: true
+        },
+        score: { type: Number, required: true }
+      }]
+    },
+    // 給人文章評價
+    toArticle: {
+      score: Number,
+      amount: Number,
+      list: [{
+        article: {
+          type: mongoose.ObjectId,
+          ref: 'articles',
+          required: true
+        },
+        score: { type: Number, required: true }
+      }]
+    },
+    //給人訊息評價
+    toMsg: {
+      score: Number,
+      amount: Number,
+      list: [{
+        article: {
+          type: mongoose.ObjectId,
+          ref: 'articles',
+          required: true
+        },
+        // 在該文章何處
+        location: {
+          type: String,
+          required: true
+        },
+        score: { type: Number, required: true }
+      }]
+    },
+    // 自己文章被評價
+    articleScore: {
+      score: Number,
+      amount: Number,
+      list: [{
+        article: {
+          type: mongoose.ObjectId,
+          ref: 'articles',
+          required: true
+        },
+        score: { type: Number, required: true },
+        amount: { type: Number, required: true }
+      }]
+    },
+    // 自己訊息被評價
+    msgScore: {
+      score: Number,
+      amount: Number,
+      list: [{
+        article: {
+          type: mongoose.ObjectId,
+          ref: 'articles',
+          required: true
+        },
+        // 在該文章何處
+        location: {
+          type: String,
+          required: true
+        },
+        score: { type: Number, required: true },
+        amount: { type: Number, required: true }
+      }]
+    }
   }
-}
 }, { versionKey: false })
 
 export default mongoose.model('users', schema)

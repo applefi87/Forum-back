@@ -19,8 +19,8 @@ export const register = async (req, res) => {
   // }
   // req.body.password = bcrypt.hashSync(password, 10)
   try {
-    const reply = await users.create(req.body)
-    res.status(200).send({ success: true, message: reply })
+    const result = await users.create(req.body)
+    res.status(200).send({ success: true, message: '', result })
   } catch (error) {
     if (error.name === 'ValidationError') {
       const key = Object.keys(error.errors)[0]

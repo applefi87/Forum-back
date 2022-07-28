@@ -1,30 +1,38 @@
 import mongoose from 'mongoose'
 
 const rate = {
-  score: { type: Number },
-  amount: { type: Number },
-  list: [{
-    user: {
-      type: mongoose.ObjectId,
-      ref: 'users',
-      required: true
-    },
-    score: { type: Number, required: true }
-  }]
-}
-const msg = (nth) => {
-  let rule = {
-    amount: { type: Number },// **********************系統操作，使用者無權限****************************
-    nowId: { type: Number, default: 0 },// **********************系統操作，使用者無權限****************************
-    list: {
-      id: { // **********************系統操作，使用者無權限**************************** 
+  score: Number,
+  amount: Number,
+  list: {
+    type: [{
+      _id: { // **********************系統操作，使用者無權限**************************** 
         // this.msg.id
         type: Number,
-        required: [true, '缺少留言id']
+        required: [true, '缺少評分_id'],
+        unique: true
       },
       user: {
         type: mongoose.ObjectId,
-        ref: 'users',
+        // ref: 'users',
+        required: true
+      },
+      score: { type: Number, required: true }
+    }],
+    default: undefined
+  }
+}
+const msg = (nth) => {
+  let msglist = (n) => {
+    const list = {
+      _id: { // **********************系統操作，使用者無權限**************************** 
+        // this.msg.id
+        type: Number,
+        required: [true, '缺少留言_id'],
+        unique: true
+      },
+      user: {
+        type: mongoose.ObjectId,
+        // ref: 'users',
         required: [true, '缺少留言創建者']
       },
       privacy: {
@@ -43,27 +51,35 @@ const msg = (nth) => {
       content: {
         type: String,
         required: [true, '必填留言內容'],
-        minlength: [20, '留言必須 3個字以上'],
+        minlength: [3, '留言必須 3個字以上'],
         maxlength: [1000, '留言必須 1000 個字以下'],
       },
       beScored: rate
     }
+    if (n === '1') {
+      list.msg2 = msg('2')
+    }
+    return list
   }
-  if (nth === '1') {
-    rule.msg2 = msg('2')
+  let items = {
+    // 因為看文章很多 留言可能很少，所以算出來放著
+    amount: { type: Number },// **********************系統操作，使用者無權限****************************
+    // 留言加個Id才能讓系統追蹤他給的評價，ex:在xxx文章的id=6 給了好評後編輯 ，系統能對應修改個紀錄s，不然別人刪一條陣列就跑位
+    nowId: { type: Number },// **********************系統操作，使用者無權限****************************
+    list: { type: [msglist(nth)], default: undefined }
   }
-  return rule
+  return items
 }
 
 const schema = new mongoose.Schema({
   parent: {
     type: mongoose.ObjectId,
-    ref: 'boards',
+    // ref: 'boards',
     required: [true, '缺少母板']
   },
   user: {
     type: mongoose.ObjectId,
-    ref: 'users',
+    // ref: 'users',
     required: [true, '缺少創建者']
   },
   privacy: {
@@ -74,15 +90,18 @@ const schema = new mongoose.Schema({
     enum: [0, 1, 2, 3]
   },
   publishDate: { // **********************系統操作，使用者無權限****************************
-    type: Date
+    type: Date,
+    required: true,
   },
   lastEditDate: {   // **********************系統操作，使用者無權限****************************
-    type: Date
+    type: Date,
+    required: true,
   },
   // ---------------------------------------------------------------
   title: {
     type: String,
     required: [true, '必填標題'],
+    minlength: [4, '必須 4 個字以上'],
     maxlength: [50, '必須 50 個字以下'],
   },
   content: {
@@ -92,8 +111,17 @@ const schema = new mongoose.Schema({
     maxlength: [5000, '必須 5000 個字以下'],
   },
   // ---------------------------------------------------------------
+  // 抓取母板規則:(程式判斷)
+  detail: {
+    score: Number,
+    tag: [Number],
+    type: Number,
+    column: {},
+  },
+  // ---------------------------------------------------------------
   beScored: rate,
-  msg1: msg(1)
+  msg1: msg('1')
+
 }, { versionKey: false })
 
 export default mongoose.model('articles', schema)

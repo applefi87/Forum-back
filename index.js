@@ -3,6 +3,7 @@ import mongoose from 'mongoose'
 import express from 'express'
 import rateLimit from 'express-rate-limit'
 import userRouter from './routes/users.js'
+import articleRouter from './routes/articles.js'
 
 mongoose.connect(process.env.DB_URL)
 mongoose.set('sanitizeFilter', true)
@@ -16,10 +17,12 @@ const limiter = rateLimit({
     res.status(429).send({ success: false, message: '太多請求' })
   }
 })
+
 const app = express()
 app.use(limiter)
 app.use(express.json())
 app.use('/users',userRouter)
+app.use('/articles',articleRouter)
 
 app.listen(process.env.PORT || 4000, () => {
   console.log('Server is running')
