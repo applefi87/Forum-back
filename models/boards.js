@@ -1,54 +1,29 @@
 import mongoose from 'mongoose'
 import rate from './rate.js'
 
-const msg = (nth) => {
-  let msglist = (n) => {
-    const list = {
-      _id: { // **********************系統操作，使用者無權限**************************** 
-        // this.msg.id
-        type: Number,
-        required: [true, '缺少留言_id'],
-        // unique: true
-      },
-      user: {
-        type: mongoose.ObjectId,
-        ref: 'users',
-        required: [true, '缺少留言創建者']
-      },
-      privacy: {
-        type: Number,
-        required: [true, '缺少留言隱私設定'],
-        default: 1,
-        // 0 全開(可被查看個人資訊) 1只顯示暱稱 2只顯示校系 3 只顯示校
-        enum: [0, 1, 2, 3]
-      },
-      publishDate: { // **********************系統操作，使用者無權限****************************
-        type: Date
-      },
-      lastEditDate: {   // **********************系統操作，使用者無權限****************************
-        type: Date
-      },
-      content: {
-        type: String,
-        required: [true, '必填留言內容'],
-        minlength: [3, '留言必須 3個字以上'],
-        maxlength: [1000, '留言必須 1000 個字以下'],
-      },
-      beScored: rate
-    }
-    if (n === '1') {
-      list.msg2 = msg('2')
-    }
-    return list
+const col = (t) => {
+  let it = {
+    type: [{
+      c: { type: Number, required: true, alias: 'code' },
+      n: { type: String, required: true, alias: 'name' },
+      r: { type: String, required: true, alias: 'required' },
+      // 代碼表示: 單行文字 多行文字 數字 單選 多選 Boolean  
+      t: { type: Number, required: true, alias: 'type' }
+    }], default: undefined
   }
-  let items = {
-    // 因為看文章很多 留言可能很少，所以算出來放著
-    amount: { type: Number },// **********************系統操作，使用者無權限****************************
-    // 留言加個Id才能讓系統追蹤他給的評價，ex:在xxx文章的id=6 給了好評後編輯 ，系統能對應修改個紀錄s，不然別人刪一條陣列就跑位
-    nowId: { type: Number },// **********************系統操作，使用者無權限****************************
-    list: { type: [msglist(nth)], default: undefined }
+  if (t != "noOther") {
+    it.o = { type: [{ type: [mongoose.Mixed], default: undefined }], alias: 'others' }
   }
-  return items
+  return it
+}
+const display = () => {
+  return {
+    special: mongoose.Mixed,
+    // 抓取
+    filter: { type: [{ type: [Number] }], default: undefined },
+    sort: { type: [{ type: [Number] }], default: undefined },
+    search: Number
+  }
 }
 
 const schema = new mongoose.Schema({
@@ -71,87 +46,83 @@ const schema = new mongoose.Schema({
     required: [true, '缺少母板']
   },
   related: {
-    type: [mongoose.ObjectId],
+    type: [{ type: mongoose.ObjectId, ref: 'boards' }],
     default: undefined,
-    ref: 'boards',
-    required: [true, '缺少母板']
   },
   // ---------------------------------------------------------------
-  // 抓取母板規則:(程式判斷)
-  detail: {
+  // 抓取母板規則:(程式判斷)(不一定有)
+  beScored: {
     score: Number,
-    tag: [Number],
-    category: Number,
-    column: { type: [mongoose.Mixed], default: undefined }
+    amount: Number,
+    list: {
+      type: [{
+        article: {
+          type: mongoose.ObjectId,
+          ref: 'articles',
+          required: true
+        },
+        score: { type: Number, required: true }
+      }],
+      default: undefined
+      // 待處理 應該會多id
+    }
+  },
+  // **********************系統操作，使用者無權限**************************** 
+  // 抓取母板規則:(程式判斷)
+  // 使用者要填該板塊的其他欄位基本資訊
+  fill: {
+    // 對應欄位+附值(任意格式，程式處理成可用)
+    type: [{
+      c: { type: Number, required: true, alias: 'code' },
+      o: { type: [mongoose.Mixed], alias: 'others' },
+    }], default: undefined
+  },
+  unique: {
+    type: [{
+      c: { type: Number, required: true, alias: 'code' },
+      o: { type: [mongoose.Mixed], alias: 'others' },
+    }], default: undefined
   },
   // ---------------------------------------------------------------
-  beScored: rate,
-  // -----------------------------------子----------------------
-  childrules: {
+  childBoard: {
     active: { type: Boolean, required: true },
     rule: {
-      col: {
-        type: [{
-          c: { type: Number, required: true, alias: 'code' },
-          n: { type: String, required: true, alias: 'name' },
-          r: { type: String, required: true, alias: 'required' },
-          t: { type: Number, required: true, alias: 'type' },
-          o: { type: [{ type: [mongoose.Mixed], default: undefined }], alias: 'others' },
-        }], default: undefined
-      },
-      unique: {
-        type: [{
-          c: { type: Number, required: true, alias: 'code' },
-          n: { type: String, required: true, alias: 'name' },
-          r: { type: String, required: true, alias: 'required' },
-          t: { type: Number, required: true, alias: 'type' },
-          o: { type: [{ type: [mongoose.Mixed], required: true, default: undefined }], alias: 'others' },
-        }], default: undefined
-      }
+      col: col(),
+      // 程式抓母版不重複供選擇,填上代表必填
+      unique: col("noOther"),// 對應欄位+附值(任意格式，程式處理成可用)
     },
-    display: {
-      special: mongoose.Mixed,
-      // 抓取
-      filter: { type: [{ type: [Number] }], default: undefined },
-      sort: { type: [{ type: [Number] }], default: undefined },
-      search: Number
-    },
+    display: display(),
     // 子版的文章規則
-    article: {
-      active: { type: Boolean, required: function () { this.childrules.aqctive } },
-      // 大分類
+    childArticle: {
+      active: { type: Boolean, required: function () { this.hildBoard.active } },
+      // 勾選評價版，則下方至少選一
+      review: { type: Boolean, required: true },
+      rate: Boolean,
+      tag: Boolean,
+      // 大分類(評價版不用自己打，上面會判斷自動生成1評價代碼)
+      // 版見越多 要管的規則越多
       category: {
         type: [{
           c: { type: Number, required: true, alias: 'code' },
           n: { type: String, required: true, alias: 'name' },
-          i: { type: String, required: true, alias: 'info' },
+          i: { type: String, required: true, alias: 'info' }
         }], default: undefined
       },
-
       rule: {
-        // 程式抓母版不重複供選擇
-        unique: [Number],
+        //如果有勾tag再填
         tag: [String],
-        col: {
+        category: {
           type: [{
+            //對應上方不同大分類
             c: { type: Number, required: true, alias: 'code' },
-            n: { type: String, required: true, alias: 'name' },
-            r: { type: String, required: true, alias: 'required' },
-            t: { type: Number, required: true, alias: 'type' },
-            o: { type: [{ type: [mongoose.Mixed], default: undefined }], alias: 'others' },
+            //的欄位規則
+            col: col(),
           }], default: undefined
-        },
+        }
       },
-      display: {
-        special: mongoose.Mixed,
-        // 抓取
-        filter: { type: [{ type: [Number] }], default: undefined },
-        sort: { type: [{ type: [Number] }], default: undefined },
-        search: Number
-      },
+      display: display()
     },
-
   }
 }, { versionKey: false, timestamps: { createdAt: 'created_at', updatedAt: false } })
 
-export default mongoose.model('articles', schema)
+export default mongoose.model('boards', schema)

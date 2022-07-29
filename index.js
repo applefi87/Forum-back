@@ -4,6 +4,7 @@ import express from 'express'
 import rateLimit from 'express-rate-limit'
 import userRouter from './routes/users.js'
 import articleRouter from './routes/articles.js'
+import boardRouter from './routes/boards.js'
 
 mongoose.connect(process.env.DB_URL)
 mongoose.set('sanitizeFilter', true)
@@ -21,8 +22,9 @@ const limiter = rateLimit({
 const app = express()
 app.use(limiter)
 app.use(express.json())
-app.use('/users',userRouter)
-app.use('/articles',articleRouter)
+app.use('/user',userRouter)
+app.use('/article',articleRouter)
+app.use('/board',boardRouter)
 
 app.listen(process.env.PORT || 4000, () => {
   console.log('Server is running')

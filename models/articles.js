@@ -68,6 +68,24 @@ const schema = new mongoose.Schema({
     default: 1,
     // 0 全開(可被查看個人資訊) 1只顯示暱稱 2只顯示校系 3 只顯示校
     enum: [0, 1, 2, 3]
+  }, // ---------------------------------------------------------------
+  beScored: rate,
+  // ---------------------------------------------------------------
+  // 抓取母板規則:(程式判斷)
+  // 使用者要填下方分數/tag/類型/其他欄位
+  fill: {
+    category: Number,
+    score: Number,
+    tag: [Number],
+    column: {
+      // 對應欄位+附值(任意格式，程式處理成可用)
+      type: [{
+        c: { type: Number, required: true, alias: 'code' },
+        o: { type: [{ type: [mongoose.Mixed], default: undefined }], alias: 'others' },
+      }], default: undefined
+    },
+    //依母板塊規定填寫不重複欄
+    filterRow: { type: [mongoose.Mixed], default: undefined }
   },
   // ---------------------------------------------------------------
   title: {
@@ -82,18 +100,6 @@ const schema = new mongoose.Schema({
     minlength: [20, '必須 20 個字以上'],
     maxlength: [5000, '必須 5000 個字以下'],
   },
-  // ---------------------------------------------------------------
-  filterRow: {type:[mongoose.Mixed] , default: undefined },
-  // ---------------------------------------------------------------
-  // 抓取母板規則:(程式判斷)
-  detail: {
-    score: Number,
-    tag: [Number],
-    category: Number,
-    column:  {type:[mongoose.Mixed] , default: undefined }
-  },
-  // ---------------------------------------------------------------
-  beScored: rate,
   msg1: msg('1'),
   lastEditDate: {   // **********************系統操作，使用者無權限****************************
     type: Date,
