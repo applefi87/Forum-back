@@ -109,9 +109,48 @@ const schema = new mongoose.Schema({
         }], default: undefined
       }
     },
-    display:{
-      
-    }
+    display: {
+      special: mongoose.Mixed,
+      // 抓取
+      filter: { type: [{ type: [Number] }], default: undefined },
+      sort: { type: [{ type: [Number] }], default: undefined },
+      search: Number
+    },
+    // 子版的文章規則
+    article: {
+      active: { type: Boolean, required: function () { this.childrules.aqctive } },
+      // 大分類
+      category: {
+        type: [{
+          c: { type: Number, required: true, alias: 'code' },
+          n: { type: String, required: true, alias: 'name' },
+          i: { type: String, required: true, alias: 'info' },
+        }], default: undefined
+      },
+
+      rule: {
+        // 程式抓母版不重複供選擇
+        unique: [Number],
+        tag: [String],
+        col: {
+          type: [{
+            c: { type: Number, required: true, alias: 'code' },
+            n: { type: String, required: true, alias: 'name' },
+            r: { type: String, required: true, alias: 'required' },
+            t: { type: Number, required: true, alias: 'type' },
+            o: { type: [{ type: [mongoose.Mixed], default: undefined }], alias: 'others' },
+          }], default: undefined
+        },
+      },
+      display: {
+        special: mongoose.Mixed,
+        // 抓取
+        filter: { type: [{ type: [Number] }], default: undefined },
+        sort: { type: [{ type: [Number] }], default: undefined },
+        search: Number
+      },
+    },
+
   }
 }, { versionKey: false, timestamps: { createdAt: 'created_at', updatedAt: false } })
 
