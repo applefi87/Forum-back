@@ -1,5 +1,5 @@
 import mongoose from 'mongoose'
-export default new mongoose.Schema({
+export default {
   score: Number,
   amount: Number,
   list: {
@@ -11,6 +11,6 @@ export default new mongoose.Schema({
       },
       score: { type: Number, required: true }
     }],
-    default: undefined
+    default: undefined, _id: false
   }
-}, { _id: false })
+}

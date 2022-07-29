@@ -9,7 +9,7 @@ const col = (t) => {
       r: { type: String, required: true, alias: 'required' },
       // 代碼表示: 單行文字 多行文字 數字 單選 多選 Boolean  
       t: { type: Number, required: true, alias: 'type' }
-    }], default: undefined
+    }], default: undefined, _id: false,
   }
   if (t != "noOther") {
     it.o = { type: [{ type: [mongoose.Mixed], default: undefined }], alias: 'others' }
@@ -63,25 +63,25 @@ const schema = new mongoose.Schema({
         },
         score: { type: Number, required: true }
       }],
-      default: undefined
+      default: undefined,
+      _id: false
       // 待處理 應該會多id
     }
   },
-  // **********************系統操作，使用者無權限**************************** 
   // 抓取母板規則:(程式判斷)
   // 使用者要填該板塊的其他欄位基本資訊
   fill: {
     // 對應欄位+附值(任意格式，程式處理成可用)
     type: [{
       c: { type: Number, required: true, alias: 'code' },
-      o: { type: [mongoose.Mixed], alias: 'others' },
-    }], default: undefined
+      d: { type: [mongoose.Mixed], alias: 'data' },
+    }], default: undefined, _id: false
   },
   unique: {
     type: [{
       c: { type: Number, required: true, alias: 'code' },
-      o: { type: [mongoose.Mixed], alias: 'others' },
-    }], default: undefined
+      d: { type: [mongoose.Mixed], alias: 'data' },
+    }], default: undefined, _id: false
   },
   // ---------------------------------------------------------------
   childBoard: {
@@ -94,7 +94,7 @@ const schema = new mongoose.Schema({
     display: display(),
     // 子版的文章規則
     childArticle: {
-      active: { type: Boolean, required: function () { this.hildBoard.active } },
+      active: { type: Boolean, required: function () { this.childBoard.active } },
       // 勾選評價版，則下方至少選一
       review: { type: Boolean, required: true },
       rate: Boolean,
@@ -106,7 +106,7 @@ const schema = new mongoose.Schema({
           c: { type: Number, required: true, alias: 'code' },
           n: { type: String, required: true, alias: 'name' },
           i: { type: String, required: true, alias: 'info' }
-        }], default: undefined
+        }], default: undefined, _id: false
       },
       rule: {
         //如果有勾tag再填
@@ -117,7 +117,7 @@ const schema = new mongoose.Schema({
             c: { type: Number, required: true, alias: 'code' },
             //的欄位規則
             col: col(),
-          }], default: undefined
+          }], default: undefined, _id: false
         }
       },
       display: display()
