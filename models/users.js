@@ -1,4 +1,5 @@
 import mongoose from 'mongoose'
+import rate from './rate.js'
 
 // 信箱基本加工
 function normalizeEmail(email) {
@@ -109,83 +110,17 @@ const schema = new mongoose.Schema({
   },
   record: { // **********************系統操作，使用者無權限****************************
     //給版評價
-    toBoard: {
-      score: Number,
-      amount: Number,
-      list: [{
-        article: {
-          type: mongoose.ObjectId,
-          ref: 'articles',
-          required: true
-        },
-        score: { type: Number, required: true }
-      }]
-    },
+    toBoard: rate('articles'),
     // 給人文章評價
-    toArticle: {
-      score: Number,
-      amount: Number,
-      list: [{
-        article: {
-          type: mongoose.ObjectId,
-          ref: 'articles',
-          required: true
-        },
-        score: { type: Number, required: true }
-      }]
-    },
+    toArticle: rate('articles'),
     //給人訊息評價
-    toMsg: {
-      score: Number,
-      amount: Number,
-      list: [{
-        article: {
-          type: mongoose.ObjectId,
-          ref: 'articles',
-          required: true
-        },
-        // 在該文章何處
-        location: {
-          type: String,
-          required: true
-        },
-        score: { type: Number, required: true }
-      }]
-    },
+    toMsg: rate('articles', hasLocation = true),
     // 自己文章被評價
-    articleScore: {
-      score: Number,
-      amount: Number,
-      list: [{
-        article: {
-          type: mongoose.ObjectId,
-          ref: 'articles',
-          required: true
-        },
-        score: { type: Number, required: true },
-        amount: { type: Number, required: true }
-      }]
-    },
+    articleScore: rate('articles', hasAmount = true),
     // 自己訊息被評價
-    msgScore: {
-      score: Number,
-      amount: Number,
-      list: [{
-        article: {
-          type: mongoose.ObjectId,
-          ref: 'articles',
-          required: true
-        },
-        // 在該文章何處
-        location: {
-          type: String,
-          required: true
-        },
-        score: { type: Number, required: true },
-        amount: { type: Number, required: true }
-      }]
-    }
+    msgScore: rate('articles', hasLocation = true, hasAmount = true)
   }
 }, { versionKey: false })
+
 
 export default mongoose.model('users', schema)

@@ -51,23 +51,7 @@ const schema = new mongoose.Schema({
   },
   // ---------------------------------------------------------------
   // 抓取母板規則:(程式判斷)(不一定有)
-  beScored: {
-    score: Number,
-    amount: Number,
-    list: {
-      type: [{
-        article: {
-          type: mongoose.ObjectId,
-          ref: 'articles',
-          required: true
-        },
-        score: { type: Number, required: true }
-      }],
-      default: undefined,
-      _id: false
-      // 待處理 應該會多id
-    }
-  },
+  beScored: rate('articles'),
   // 抓取母板規則:(程式判斷)
   // 使用者要填該板塊的其他欄位基本資訊
   fill: {
