@@ -8,6 +8,7 @@ import userRouter from './routes/users.js'
 import groupRouter from './routes/groups.js'
 import articleRouter from './routes/articles.js'
 import boardRouter from './routes/boards.js'
+import './passport/passport.js'
 // 初始化
 mongoose.connect(process.env.DB_URL)
 mongoose.set('sanitizeFilter', true)

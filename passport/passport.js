@@ -10,14 +10,15 @@ const ExtractJWT = passportJWT.ExtractJwt
 
 passport.use('login', new LocalStrategy({
   usernameField: 'account',
-  passwordField: 'password'
-}, async (account, password, done) => {
+  passwordField: 'password',
+  passReqToCallback: true
+}, async (req, account, password, done) => {
   try {
-    const user = await users.findOne({ account })
+    let user = await users.findOne({ account, 'securityData.role': req.body.role })
     if (!user) {
       return done(null, false, { message: '帳號不存在' })
     }
-    if (!bcrypt.compareSync(password, user.password)) {
+    if (!bcrypt.compareSync(password, user.securityData.password)) {
       return done(null, false, { message: '密碼錯誤' })
     }
     return done(null, user)
@@ -42,8 +43,8 @@ passport.use('jwt', new JWTStrategy({
     if (!user) {
       return done(null, false, { message: '使用者不存在' })
     }
-    if (user.tokens.indexOf(token) === -1) {
-      return done(null, false, { message: '驗證錯誤' })
+    if (user.securityData.tokens.indexOf(token) === -1) {
+      return done(null, false, { message: '驗證錯誤,請重新登錄' })
     }
     return done(null, { user, token })
   } catch (error) {

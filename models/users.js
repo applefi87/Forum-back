@@ -67,21 +67,21 @@ const schema = new mongoose.Schema({
   },
 
   securityData: { // **********************系統操作，使用者無權限****************************
-    rule: {
+    role: {
       type: Number,
       required: [true, '缺少身分欄位'],
-      default: 1,
       // 1 使用者 0 管理員
       enum: [0, 1, 2]
-    },
-    password: {
-      type: String,
-      required: true
     },
     schoolEmail: emailSchema('school'),
     email: emailSchema(),
     tokens: {
-      type: [String]
+      type: [String],
+      default: undefined
+    },
+    password: {
+      type: String,
+      required: true
     }
   },
   info: {
