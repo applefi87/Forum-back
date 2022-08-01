@@ -140,45 +140,22 @@ export const getUser = (req, res) => {
 //   }
 // }
 
-// export const editCart = async (req, res) => {
-//   try {
-//     if (req.body.quantity <= 0) {
-//       await users.findOneAndUpdate(
-//         { _id: req.user._id, 'cart.product': req.body.product },
-//         {
-//           $pull: {
-//             cart: { product: req.body.product }
-//           }
-//         }
-//       )
-//       // const idx = req.user.cart.findIndex(item => item.product.toString() === req.body.product)
-//       // req.user.cart.splice(idx, 1)
-//       // await req.user.save()
-//     } else {
-//       await users.findOneAndUpdate(
-//         { _id: req.user._id, 'cart.product': req.body.product },
-//         {
-//           $set: {
-//             // $ 代表符合陣列搜尋條件的索引
-//             'cart.$.quantity': req.body.quantity
-//           }
-//         }
-//       )
-//       // const idx = req.user.cart.findIndex(item => item.product.toString() === req.body.product)
-//       // req.user.cart[idx].quantity = req.body.quantity
-//       // await req.user.save()
-//     }
-//     res.status(200).send({ success: true, message: '' })
-//   } catch (error) {
-//     if (error.name === 'ValidationError') {
-//       const key = Object.keys(error.errors)[0]
-//       const message = error.errors[key].message
-//       return res.status(400).send({ success: false, message })
-//     } else {
-//       res.status(500).send({ success: false, message: '伺服器錯誤' })
-//     }
-//   }
-// }
+export const editInfo = async (req, res) => {
+  try {
+    await users.findOneAndUpdate(
+      { _id: req.user._id }, { info: req.body },
+    )
+    res.status(200).send({ success: true, message: '' })
+  } catch (error) {
+    if (error.name === 'ValidationError') {
+      const key = Object.keys(error.errors)[0]
+      const message = error.errors[key].message
+      return res.status(400).send({ success: false, message })
+    } else {
+      res.status(500).send({ success: false, message: '伺服器錯誤' })
+    }
+  }
+}
 
 // export const getCart = async (req, res) => {
 //   try {

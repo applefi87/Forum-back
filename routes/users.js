@@ -8,7 +8,7 @@ import {
   // extend,
   getUser,
   // addCart,
-  // editCart,
+  editInfo,
   // getCart
   // giveMsg
 } from '../controllers/users.js'
@@ -21,6 +21,6 @@ router.post('/login', content('application/json'), auth.login, login)
 // router.post('/extend', auth.jwt, extend)
 router.get('/', auth.jwt, getUser)
 // router.post('/cart', content('application/json'), auth.jwt, addCart)
-// router.patch('/cart', content('application/json'), auth.jwt, editCart)
+router.patch('/editInfo', content('application/json'), auth.jwt, editInfo)
 // router.get('/cart', auth.jwt, getCart)
 export default router
