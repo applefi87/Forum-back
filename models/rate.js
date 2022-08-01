@@ -1,5 +1,5 @@
 import mongoose from 'mongoose'
-export default function (ref, hasLocation= false, hasAmount = false) {
+export default function (ref, setting = {}) {
   const listDetail = () => {
     const d = {
       from: {
@@ -9,14 +9,13 @@ export default function (ref, hasLocation= false, hasAmount = false) {
       },
       score: { type: Number, required: true }
     }
-    if (hasLocation) {
+    if (setting.hasLocation) {
       d.location = { type: String, required: true }
     }
-    if (hasAmount) {
+    if (setting.hasAmount) {
       d.amount = { type: Number, required: true }
     }
     return d
-
   }
   return {
     score: Number,

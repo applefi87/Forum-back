@@ -8,7 +8,7 @@ function normalizeEmail(email) {
   let idx = lowerEmail.indexOf("@")
   let front = lowerEmail.substr(0, idx)
   let back = lowerEmail.substr(idx + 1, lowerEmail.length)
-  // 解決名稱的.會被許多信箱忽略，而可重複註冊
+  // 解決名稱的"."會被許多信箱忽略，而可重複註冊
   front = front.replaceAll(".", "")
   // 解決gmail內部通用名
   back = back.replace("googlemail", 'gmail')
@@ -67,7 +67,7 @@ const schema = new mongoose.Schema({
   },
 
   securityData: { // **********************系統操作，使用者無權限****************************
-    type: {
+    rule: {
       type: Number,
       required: [true, '缺少身分欄位'],
       default: 1,
@@ -114,11 +114,11 @@ const schema = new mongoose.Schema({
     // 給人文章評價
     toArticle: rate('articles'),
     //給人訊息評價
-    toMsg: rate('articles', hasLocation = true),
+    toMsg: rate('articles', { hasLocation: true}),
     // 自己文章被評價
-    articleScore: rate('articles', hasAmount = true),
+    articleScore: rate('articles', { hasAmount : true }),
     // 自己訊息被評價
-    msgScore: rate('articles', hasLocation = true, hasAmount = true)
+    msgScore: rate('articles', { hasLocation: true, hasAmount: true })
   }
 }, { versionKey: false })
 

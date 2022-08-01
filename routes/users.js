@@ -1,6 +1,6 @@
 import express from 'express'
 // import * as auth from '../middleware/auth.js'
-// import content from '../middleware/content.js'
+import content from '../middleware/content.js'
 import {
   register,
   // login,
@@ -10,12 +10,12 @@ import {
   // addCart,
   // editCart,
   // getCart
-  giveMsg
+  // giveMsg
 } from '../controllers/users.js'
 
 const router = express.Router()
 
-router.post('/',giveMsg ,register)
+router.post('/',content('application/json'),register)
 // router.post('/', content('application/json'), register)
 // router.post('/login', content('application/json'), auth.login, login)
 // router.delete('/logout', auth.jwt, logout)
