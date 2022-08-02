@@ -14,10 +14,18 @@ passport.use('login', new LocalStrategy({
   passReqToCallback: true
 }, async (req, account, password, done) => {
   try {
-    let user = await users.findOne({ account, 'securityData.role': req.body.role })
+    let user = await users.findOne({ account, 'securityData.role': req.body.role ? req.body.role : 1 })
     if (!user) {
       return done(null, false, { message: '帳號不存在' })
     }
+    // // 近5分鐘登陸超過5次就報錯
+    // if (user.securityData.loginRec && user.securityData.loginRec.time + 1000 * 60 * 5 < Date.now()) {
+    //   user.securityData.loginRec
+    // }
+    // if (user.securityData.loginRec?.time < Date.now() + 1000 * 60 * 5) {
+    //   return done(null, false, { message: '密碼錯誤' })
+    // }
+    // 驗證密碼
     if (!bcrypt.compareSync(password, user.securityData.password)) {
       return done(null, false, { message: '密碼錯誤' })
     }

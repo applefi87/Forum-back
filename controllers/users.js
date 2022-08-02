@@ -7,23 +7,23 @@ import jwt from 'jsonwebtoken'
 export const register = async (req, res) => {
   const password = req.body.password
   if (!password) { return res.status(400).send({ success: false, message: '缺少密碼欄位' }) }
-  if (password.length < 8) { return res.status(400).send({ success: false, message: '密碼必須 8 個字以上' }) }
+  if (password.length < 4) { return res.status(400).send({ success: false, message: '密碼必須 4 個字以上' }) }
   if (password.length > 30) { return res.status(400).send({ success: false, message: '密碼必須 30 個字以下' }) }
   if (!password.match(/^[A-Za-z0-9]+$/)) { return res.status(400).send({ success: false, message: '密碼格式錯誤' }) }
   try {
     // 移除不該能新增的欄位
     ['securityData', 'record', 'score'].forEach(e => delete req.body[e]);
-    console.log(req.body);
 
     // 新增管理員身要驗證
     // 不填預設1(使用者)
-    if (req.body.role) req.body.role = 1
+    if (!req.body.role) { req.body.role = 1 }
     // 如果是非使用者，要去驗證對應group是否有該使用者
     if (req.body.role != 1) {
       const success = await groups.findOne({ code: req.body.role, users: req.body.account })
-      if (success) {
+      if (!success) {
         // 找不到就回應非法並結束
         res.status(400).send({ success: false, message: 'Wrong admin creatiion!' })
+        console.log('Wrong admin creatiion!');
         return
       }
       console.log('creating admin!');
@@ -52,15 +52,20 @@ export const register = async (req, res) => {
 
 export const login = async (req, res) => {
   try {
-    const token = jwt.sign({ _id: req.user._id, role: req.body.role }, process.env.SECRET, { expiresIn: '2 days' })
+    const expireTime = req.body.keepLogin ? {} : { expiresIn: '1 days' }
+    const token = jwt.sign({ _id: req.user._id, role: req.user.securityData.role }, process.env.SECRET, expireTime)
     req.user.securityData.tokens.push(token)
+    console.log(user);
     await req.user.save()
+    console.log('object');
     res.status(200).send({
       success: true,
       message: '',
       result: {
         token,
-        account: req.user.account
+        account: req.user.account,
+        role: req.user.securityData.role,
+        score: req.user.score
       }
     })
   } catch (error) {

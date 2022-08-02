@@ -56,7 +56,7 @@ const schema = new mongoose.Schema({
   account: {
     type: String,
     required: [true, '缺少帳號欄位'],
-    minlength: [8, '帳號必須 8 個字以上'],
+    minlength: [4, '帳號必須 4 個字以上'],
     maxlength: [20, '帳號必須 20 個字以下'],
     unique: true,
     match: [/^[A-Za-z0-9]+$/, '帳號格式錯誤']
@@ -82,6 +82,10 @@ const schema = new mongoose.Schema({
     password: {
       type: String,
       required: true
+    },
+    loginRec: {
+      time: { type: Date },
+      count: { type: Number }
     }
   },
   info: {
@@ -114,9 +118,9 @@ const schema = new mongoose.Schema({
     // 給人文章評價
     toArticle: rate('articles'),
     //給人訊息評價
-    toMsg: rate('articles', { hasLocation: true}),
+    toMsg: rate('articles', { hasLocation: true }),
     // 自己文章被評價
-    articleScore: rate('articles', { hasAmount : true }),
+    articleScore: rate('articles', { hasAmount: true }),
     // 自己訊息被評價
     msgScore: rate('articles', { hasLocation: true, hasAmount: true })
   }
