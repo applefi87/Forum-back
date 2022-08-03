@@ -25,7 +25,7 @@ const emailSchema = (school) => {
     minlength: [10, '必須 10 個字以上'],
     maxlength: [40, '必須 40 個字以下'],
     unique: true,
-    match: [/^[A-Za-z0-9@\.]+$/, '帳號格式錯誤，僅可含英(不分大小寫)數、@、.'],
+    match: [/^[A-Za-z0-9@\.]+$/, '帳號格式錯誤，僅可含英(不分大小寫)、數、@、.'],
     validate: {
       validator: function (email) {
         msg = '信箱格式錯誤'
@@ -39,7 +39,6 @@ const emailSchema = (school) => {
             return true
           }
           else {
-            console.log('4545');
             msg = '必須為學校信箱'
             return false
           }

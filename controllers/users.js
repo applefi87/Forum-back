@@ -1,4 +1,5 @@
 import users from '../models/users.js'
+import emailVailds from '../models/emailVailds.js'
 import groups from '../models/groups.js'
 // import products from '../models/products.js'
 import bcrypt from 'bcrypt'
@@ -54,11 +55,18 @@ export const register = async (req, res) => {
 
 export const sendMail = async (req, res) => {
   try {
-    await sendMailGo(req.body.mail,'8888')
-
-    // req.user.tokens = req.user.tokens.filter(token => token !== req.token)
-    // await req.user.save()
-    res.status(200).send({  message: { success: true, title: '信箱已寄送', text: ''}})
+    const email = await emailVailds.findOne({ email: req.body.email })
+    console.log(email);
+    if (email) {
+      email.code = Math.floor(Math.random() * 1000000).toString().padStart(6, "0")
+      email.date = Date.now()
+      await email.save()
+    } else {
+      console.log(req.body);
+      await emailVailds.create({ isSchool: req.body.isSchool, email: req.body.email, code: Math.floor(Math.random() * 1000000).toString().padStart(6, "0"), date: Date.now() })
+    }
+    // await sendMailGo(req.body.email,'8888')
+    res.status(200).send({ message: { success: true, title: '信箱已寄送', text: '' } })
   } catch (error) {
     res.status(500).send({ success: false, message: '伺服器錯誤' })
   }
@@ -73,7 +81,7 @@ export const login = async (req, res) => {
     req.user.securityData.tokens.push(token)
     await req.user.save()
     res.status(200).send({
-      message: { success: true, title: 'loginSuccess', text: ''},
+      message: { success: true, title: 'loginSuccess', text: '' },
       result: {
         token,
         account: req.user.account,
