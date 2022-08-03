@@ -4,11 +4,11 @@ import content from '../middleware/content.js'
 import {
   register,
   login,
-  // logout,
+  // logout, 
   // extend,
   getUser,
   // addCart,
-  editInfo,
+  editInfo, 
   // getCart
   // giveMsg
 } from '../controllers/users.js'

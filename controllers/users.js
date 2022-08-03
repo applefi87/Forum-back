@@ -55,9 +55,7 @@ export const login = async (req, res) => {
     const expireTime = req.body.keepLogin ? {} : { expiresIn: '1 days' }
     const token = jwt.sign({ _id: req.user._id, role: req.user.securityData.role }, process.env.SECRET, expireTime)
     req.user.securityData.tokens.push(token)
-    console.log(user);
     await req.user.save()
-    console.log('object');
     res.status(200).send({
       success: true,
       message: '',

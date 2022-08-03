@@ -76,8 +76,7 @@ const schema = new mongoose.Schema({
     schoolEmail: emailSchema('school'),
     email: emailSchema(),
     tokens: {
-      type: [String],
-      default: undefined
+      type: [String]
     },
     password: {
       type: String,
