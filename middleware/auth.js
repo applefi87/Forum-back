@@ -4,8 +4,8 @@ import jsonwebtoken from 'jsonwebtoken'
 export const login = (req, res, next) => {
   passport.authenticate('login', { session: false }, (err, user, info) => {
     if (err || !user) {
-      if (info?.message === 'Missing credentials') info.message = '驗證錯誤'
-      return res.status(401).send({ success: false, message: info?.message })
+      if (info.message === 'Missing credentials'){info.message = '驗證錯誤'}
+      return res.status(401).send({ success: false, message: { success: false, title: info.message, text: '' } })
     } 
     req.user = user  
     next()

@@ -12,11 +12,13 @@ const transporter = nodemailer.createTransport({
   }
 })
 
-transporter.sendMail({
-  from: 'applefi87@gmail.com',
-  to: 'werrtyyui@yahoo.com.tw',
-  subject: '測試喔',
-  html: 'wwww'
-}).then(info => {
-  console.log({ info })
-}).catch(console.error)
+export default async(mail,code)=>{
+  transporter.sendMail({
+    from: 'applefi87@gmail.com',
+    to: mail,
+    subject: '課程網驗證碼在此',
+    html: code+'是你的信箱驗證碼，請至原頁面填入驗證，進入下步驟 '
+  }).then(info => {
+    console.log({ info })
+  }).catch(console.error)
+}

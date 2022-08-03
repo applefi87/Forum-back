@@ -15,7 +15,7 @@ passport.use('login', new LocalStrategy({
 }, async (req, account, password, done) => {
   try {
     let user = await users.findOne({ account, 'securityData.role': req.body.role ? req.body.role : 1 })
-    if (!user) {
+    if (!user) { 
       return done(null, false, { message: '帳號不存在' })
     }
     // // 近5分鐘登陸超過5次就報錯

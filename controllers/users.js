@@ -3,6 +3,7 @@ import groups from '../models/groups.js'
 // import products from '../models/products.js'
 import bcrypt from 'bcrypt'
 import jwt from 'jsonwebtoken'
+import sendMailGo from '../util/sendMail.js'
 
 export const register = async (req, res) => {
   const password = req.body.password
@@ -49,7 +50,22 @@ export const register = async (req, res) => {
     }
   }
 }
+// 
 
+export const sendMail = async (req, res) => {
+  try {
+    await sendMailGo(req.body.mail,'8888')
+
+    // req.user.tokens = req.user.tokens.filter(token => token !== req.token)
+    // await req.user.save()
+    res.status(200).send({  message: { success: true, title: '信箱已寄送', text: ''}})
+  } catch (error) {
+    res.status(500).send({ success: false, message: '伺服器錯誤' })
+  }
+}
+
+
+// 
 export const login = async (req, res) => {
   try {
     const expireTime = req.body.keepLogin ? {} : { expiresIn: '1 days' }
@@ -57,8 +73,7 @@ export const login = async (req, res) => {
     req.user.securityData.tokens.push(token)
     await req.user.save()
     res.status(200).send({
-      success: true,
-      message: '',
+      message: { success: true, title: 'loginSuccess', text: ''},
       result: {
         token,
         account: req.user.account,
@@ -67,7 +82,9 @@ export const login = async (req, res) => {
       }
     })
   } catch (error) {
-    res.status(500).send({ success: false, message: '伺服器錯誤' })
+    res.status(500).send({
+      message: { success: true, title: '伺服器錯誤' },
+    })
   }
 }
 
