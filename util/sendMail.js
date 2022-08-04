@@ -19,6 +19,5 @@ export default async (mail, code) => {
     subject: '課程網驗證碼在此',
     html: code + '是你的信箱驗證碼，請至原頁面填入驗證，進入下步驟 '
   }).then(info => {
-    console.log({ info })
   }).catch(console.error)
 }

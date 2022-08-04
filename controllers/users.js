@@ -7,6 +7,11 @@ import jwt from 'jsonwebtoken'
 
 
 export const register = async (req, res) => {
+  // 這段怪怪的QQ
+  if (!req.mail.isSchool) {
+    res.status(403).send({ success: false, message: { title: '請使用學校信箱' } })
+    return
+  }
   // *******驗證帳號與暱稱
   const findUser = await users.findOne({ account: req.body.account })
   if (findUser) {
@@ -18,17 +23,6 @@ export const register = async (req, res) => {
     res.status(403).send({ success: false, message: { title: '該暱稱已被使用', NickNameOccupied: true, nickName: req.body.nickName } })
     return
   }
-  const findemail = await mails.findOne({ email: req.body.schoolEmail, code: req.body.code })
-  if (req.mailOk) {
-    res.status(403).send({ success: false, message: { title: '請回到步驟二驗證信箱'} })
-    return
-  }
-  // else if(){}
-  // const findemail = await users.findOne({ 'securityData.email': req.body.schoolEmail })
-  // if (findemail) {
-  //   res.status(403).send({ success: false, message: { title: '該學校信箱已被使用', NickNameOccupied: true, nickName: req.body.nickName } })
-  //   return
-  // }
   // ********驗證密碼
   const password = req.body.password
   if (!password) { return res.status(400).send({ success: false, message: { title: '缺少密碼欄位' } }) }
@@ -68,7 +62,7 @@ export const register = async (req, res) => {
     console.log('create success!');
   } catch (error) {
     if (error.name === 'ValidationError') {
-      return res.status(400).send({ success: false, message: error.message })
+      return res.status(400).send({ success: false, message: { title: error.message  }})
     } else {
       console.log(error);
       res.status(500).send({ success: false, message: '伺服器錯誤' })

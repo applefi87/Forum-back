@@ -21,7 +21,7 @@ const router = express.Router()
 
 router.post('/',content('application/json'),mailVerify(true),register)
 router.post('/sendMail', content('application/json'),  sendMail)
-router.post('/mailVerify', content('application/json'),  mailVerify)
+router.post('/mailVerify', content('application/json'),  mailVerify(false))
 router.post('/login', content('application/json'), auth.login, login)
 // router.delete('/logout', auth.jwt, logout)
 // router.post('/extend', auth.jwt, extend)

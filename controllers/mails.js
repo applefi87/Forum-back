@@ -17,6 +17,8 @@ export const sendMail = async (req, res) => {
       email.code = createCode
       email.date = Date.now()
       email.times = 1
+      email.isSchool=req.body.isSchool
+      console.log(createCode);
       await sendMailGo(formatedEmail, createCode)
       await email.save()
     } else {
@@ -30,7 +32,6 @@ export const sendMail = async (req, res) => {
       const message = error.errors[key].message
       return res.status(403).send({ success: false, message: { title: message, duration: 3 } })
     } else {
-      console.log(error);
       res.status(500).send({ success: false, message: '伺服器錯誤' })
     }
   }
@@ -39,7 +40,8 @@ export const sendMail = async (req, res) => {
 export const mailVerify = (isMiddle) => {
   return async (req, res, next) => {
     try {
-      const formatedEmail = normalizeEmail(req.body.email)
+      const mail = req.body.schoolEmail ? req.body.schoolEmail : req.body.email
+      const formatedEmail = normalizeEmail(mail)
       const email = await emails.findOne({ email: formatedEmail })
       // 防亂驗證信箱
       if (email && email?.occupied) {
@@ -56,13 +58,12 @@ export const mailVerify = (isMiddle) => {
         email.times++
         await email.save()
         res.status(403).send({ success: false, message: { title: '驗證碼錯誤,超過3次須重寄驗證信', duration: 3 } })
-      } else {
-        isMiddle ? () => {
-          req.mailOk = true
-          next()
-        } : res.status(200).send({ success: true, message: { title: '驗證成功', text: formatedEmail + '請進行下步驟', duration: 2 } })
-      }
+      } else if (isMiddle) {
+        req.mail = email
+        next()
+      } else { res.status(200).send({ success: true, message: { title: '驗證成功', text: formatedEmail + '請進行下步驟', duration: 2 } }) }
     } catch (error) {
+      console.log('err');
       res.status(500).send({ success: false, message: '伺服器錯誤' })
     }
   }
