@@ -3,8 +3,6 @@ import * as auth from '../middleware/auth.js'
 import content from '../middleware/content.js'
 import {
   register,
-  sendMail,
-  mailVerify,
   login,
   // logout, 
   // extend,
@@ -14,10 +12,14 @@ import {
   // getCart
   // giveMsg
 } from '../controllers/users.js'
+import {
+  sendMail,
+  mailVerify
+} from '../controllers/mails.js'
 
 const router = express.Router()
 
-router.post('/',content('application/json'),register)
+router.post('/',content('application/json'),mailVerify(true),register)
 router.post('/sendMail', content('application/json'),  sendMail)
 router.post('/mailVerify', content('application/json'),  mailVerify)
 router.post('/login', content('application/json'), auth.login, login)

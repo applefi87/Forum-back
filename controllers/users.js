@@ -1,28 +1,46 @@
 import users from '../models/users.js'
-import emails from '../models/emails.js'
+import mails from '../models/emails.js'
 import groups from '../models/groups.js'
 // import products from '../models/products.js'
 import bcrypt from 'bcrypt'
 import jwt from 'jsonwebtoken'
-import normalizeEmail from '../util/normalizeEmail.js'
-import sendMailGo from '../util/sendMail.js'
+
 
 export const register = async (req, res) => {
+  // *******驗證帳號與暱稱
+  const findUser = await users.findOne({ account: req.body.account })
+  if (findUser) {
+    res.status(403).send({ success: false, message: { title: '該帳號已註冊', accountOccupied: true, account: req.body.account } })
+    return
+  }
+  const findNickName = await users.findOne({ nickName: req.body.nickName })
+  if (findNickName) {
+    res.status(403).send({ success: false, message: { title: '該暱稱已被使用', NickNameOccupied: true, nickName: req.body.nickName } })
+    return
+  }
+  const findemail = await mails.findOne({ email: req.body.schoolEmail, code: req.body.code })
+  if (req.mailOk) {
+    res.status(403).send({ success: false, message: { title: '請回到步驟二驗證信箱'} })
+    return
+  }
+  // else if(){}
+  // const findemail = await users.findOne({ 'securityData.email': req.body.schoolEmail })
+  // if (findemail) {
+  //   res.status(403).send({ success: false, message: { title: '該學校信箱已被使用', NickNameOccupied: true, nickName: req.body.nickName } })
+  //   return
+  // }
+  // ********驗證密碼
   const password = req.body.password
-  if (!password) { return res.status(400).send({ success: false, message: '缺少密碼欄位' }) }
-  if (password.length < 4) { return res.status(400).send({ success: false, message: '密碼必須 4 個字以上' }) }
-  if (password.length > 30) { return res.status(400).send({ success: false, message: '密碼必須 30 個字以下' }) }
-  if (!password.match(/^[A-Za-z0-9]+$/)) { return res.status(400).send({ success: false, message: '密碼格式錯誤' }) }
+  if (!password) { return res.status(400).send({ success: false, message: { title: '缺少密碼欄位' } }) }
+  if (password.length < 8 || password.length > 30) { return res.status(400).send({ success: false, message: { title: '長度需介於8~30字之間' } }) }
+  if (!(password.match(/[A-Z]/) && password.match(/[a-z]/) && password.match(/[0-9]/))) { return res.status(400).send({ success: false, message: { title: 'pwdRule' } }) }
   try {
-    // 移除不該能新增的欄位
-    ['securityData', 'record', 'score'].forEach(e => delete req.body[e]);
-
-    // 新增管理員身要驗證
+    // ***********新增管理員身要驗證
     // 不填預設1(使用者)
-    if (!req.body.role) { req.body.role = 1 }
+    const role = req.body.role ? req.body.role : 1
     // 如果是非使用者，要去驗證對應group是否有該使用者
-    if (req.body.role != 1) {
-      const success = await groups.findOne({ code: req.body.role, users: req.body.account })
+    if (role != 1) {
+      const success = await groups.findOne({ code: role, users: req.body.account })
       if (!success) {
         // 找不到就回應非法並結束
         res.status(400).send({ success: false, message: 'Wrong admin creatiion!' })
@@ -32,83 +50,29 @@ export const register = async (req, res) => {
       console.log('creating admin!');
     }
 
-    // 搞得post跟實際資料庫不同，總之我的securityData 不想被別人知道
-    req.body.securityData = {
-      role: req.body.role, schoolEmail: req.body.schoolEmail,
-      email: formatedEmail, password: bcrypt.hashSync(password, 15)
-    }
+    // ***********移除不該能新增的欄位
+    ;['securityData', 'record', 'score'].forEach(e => delete req.body[e]);
 
-    // 新增
-    const result = await users.create(req.body)
-    res.status(200).send({ success: true, message: '', result })
+    // ****************搞得post跟實際資料庫不同，總之我的securityData 不想被別人知道
+    req.body.securityData = {
+      role: role, schoolEmail: req.body.schoolEmail,
+      password: bcrypt.hashSync(password, 15)
+    }
+    req.body.info = { gender: req.body.gender }
+    // ********************新增
+    const result = JSON.parse(JSON.stringify(await users.create(req.body)))
+      // 直接丟陣列記得前方要; 不然會出錯...
+      ;['securityData', '_id'].forEach(e => delete result[e])
+    // 註冊成功
+    res.status(200).send({ success: true, message: { title: '註冊成功' }, result })
     console.log('create success!');
   } catch (error) {
     if (error.name === 'ValidationError') {
       return res.status(400).send({ success: false, message: error.message })
-    } else if (error.name === 'MongoServerError' && error.code === 11000) {
-      res.status(400).send({ success: false, message: '帳號已存在' })
-    } else {
-      res.status(500).send({ success: false, message: '伺服器錯誤' })
-    }
-  }
-}
-// 
-
-export const sendMail = async (req, res) => {
-  try {
-    const formatedEmail = normalizeEmail(req.body.email)
-    const email = await emails.findOne({ email: formatedEmail })
-    // 8位驗證碼
-    const createCode = () => Math.floor(Math.random() * 1000000).toString().padStart(6, "0")
-    if (email) {
-      //已經註冊過，就不可用
-      if (email.occupied) {
-        res.status(403).send({ success: false, message: '該信箱已註冊', text: formatedEmail })
-        return
-      }
-      email.code = createCode()
-      console.log(email.code);
-      email.date = Date.now()
-      email.times = 1
-      await email.save()
-    } else {
-      await emails.create({ isSchool: req.body.isSchool, email: formatedEmail, code: createCode(), date: Date.now(), occupied: false })
-    }
-    res.status(200).send({ message: { success: true, title: '信箱已寄送', text: formatedEmail } })
-  } catch (error) {
-    if (error.name === 'ValidationError') {
-      const key = Object.keys(error.errors)[0]
-      const message = error.errors[key].message
-      return res.status(403).send({ message: { success: false, title: message, duration: 3 } })
     } else {
       console.log(error);
       res.status(500).send({ success: false, message: '伺服器錯誤' })
     }
-  }
-}
-export const mailVerify = async (req, res) => {
-  try {
-    const formatedEmail = normalizeEmail(req.body.email)
-    const email = await emails.findOne({ email: formatedEmail })
-    // 防亂驗證信箱
-    console.log(email?.times);
-    if (email && email?.occupied) {
-      res.status(403).send({ message: { success: false, title: '該信箱已註冊', text: formatedEmail, duration: 3 } })
-      return
-    }
-    if (!email) {
-      res.status(403).send({ message: { success: false, title: '請寄送驗證信驗證', duration: 3 } })
-    } else if (email.date + 1000 * 60 * 60 * 24 < Date.now()) {
-      res.status(403).send({ message: { success: false, title: '驗證碼超過一天,請重寄驗證信驗證', duration: 3 } })
-    } else if (email.times > 3) {
-      res.status(403).send({ message: { success: false, title: '錯誤過多次，請重寄驗證信驗證', duration: 3 } })
-    } else if (email.code != req.body.schoolEmailCode) {
-      email.times++
-      await email.save()
-      res.status(403).send({ message: { success: false, title: '驗證碼錯誤,超過3次須重寄驗證信', duration: 3 } })
-    } else { res.status(200).send({ message: { success: true, title: '驗證成功', text: formatedEmail + '請進行下步驟', duration: 2 } }) }
-  } catch (error) {
-    res.status(500).send({ success: false, message: '伺服器錯誤' })
   }
 }
 

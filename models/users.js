@@ -36,12 +36,18 @@ const schema = new mongoose.Schema({
   account: {
     type: String,
     required: [true, '缺少帳號欄位'],
-    minlength: [4, '帳號必須 4 個字以上'],
+    minlength: [8, '帳號必須 8 個字以上'],
     maxlength: [20, '帳號必須 20 個字以下'],
     unique: true,
     match: [/^[A-Za-z0-9]+$/, '帳號格式錯誤']
   },
-
+  nickName: {
+    type: String,
+    required: [true, '缺少暱稱欄位'],
+    minlength: [4, '必須 4 個字以上'],
+    maxlength: [20, '必須 20 個字以下'],
+    unique: true
+  },
   score: { // **********************系統操作，使用者無權限****************************
     type: Number
   },
@@ -54,7 +60,7 @@ const schema = new mongoose.Schema({
       enum: [0, 1, 2]
     },
     schoolEmail: emailSchema('school'),
-    email: emailSchema(),
+    // email: emailSchema(),
     tokens: {
       type: [String]
     },
@@ -71,8 +77,8 @@ const schema = new mongoose.Schema({
     gender: {
       type: Number,
       required: [true, '必填性別'],
-      // 1 男 2 女 3 無
-      enum: [1, 2, 3]
+      // 1 男 2 女 0 無
+      enum: [1, 2, 0]
     },
     living: {
       type: String,
