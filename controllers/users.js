@@ -1,9 +1,10 @@
 import users from '../models/users.js'
-import emailVailds from '../models/emailVailds.js'
+import emails from '../models/emails.js'
 import groups from '../models/groups.js'
 // import products from '../models/products.js'
 import bcrypt from 'bcrypt'
 import jwt from 'jsonwebtoken'
+import normalizeEmail from '../util/normalizeEmail.js'
 import sendMailGo from '../util/sendMail.js'
 
 export const register = async (req, res) => {
@@ -34,7 +35,7 @@ export const register = async (req, res) => {
     // 搞得post跟實際資料庫不同，總之我的securityData 不想被別人知道
     req.body.securityData = {
       role: req.body.role, schoolEmail: req.body.schoolEmail,
-      email: req.body.email, password: bcrypt.hashSync(password, 15)
+      email: formatedEmail, password: bcrypt.hashSync(password, 15)
     }
 
     // 新增
@@ -55,23 +56,61 @@ export const register = async (req, res) => {
 
 export const sendMail = async (req, res) => {
   try {
-    const email = await emailVailds.findOne({ email: req.body.email })
-    console.log(email);
+    const formatedEmail = normalizeEmail(req.body.email)
+    const email = await emails.findOne({ email: formatedEmail })
+    // 8位驗證碼
+    const createCode = () => Math.floor(Math.random() * 1000000).toString().padStart(6, "0")
     if (email) {
-      email.code = Math.floor(Math.random() * 1000000).toString().padStart(6, "0")
+      //已經註冊過，就不可用
+      if (email.occupied) {
+        res.status(403).send({ success: false, message: '該信箱已註冊', text: formatedEmail })
+        return
+      }
+      email.code = createCode()
+      console.log(email.code);
       email.date = Date.now()
+      email.times = 1
       await email.save()
     } else {
-      console.log(req.body);
-      await emailVailds.create({ isSchool: req.body.isSchool, email: req.body.email, code: Math.floor(Math.random() * 1000000).toString().padStart(6, "0"), date: Date.now() })
+      await emails.create({ isSchool: req.body.isSchool, email: formatedEmail, code: createCode(), date: Date.now(), occupied: false })
     }
-    // await sendMailGo(req.body.email,'8888')
-    res.status(200).send({ message: { success: true, title: '信箱已寄送', text: '' } })
+    res.status(200).send({ message: { success: true, title: '信箱已寄送', text: formatedEmail } })
+  } catch (error) {
+    if (error.name === 'ValidationError') {
+      const key = Object.keys(error.errors)[0]
+      const message = error.errors[key].message
+      return res.status(403).send({ message: { success: false, title: message, duration: 3 } })
+    } else {
+      console.log(error);
+      res.status(500).send({ success: false, message: '伺服器錯誤' })
+    }
+  }
+}
+export const mailVerify = async (req, res) => {
+  try {
+    const formatedEmail = normalizeEmail(req.body.email)
+    const email = await emails.findOne({ email: formatedEmail })
+    // 防亂驗證信箱
+    console.log(email?.times);
+    if (email && email?.occupied) {
+      res.status(403).send({ message: { success: false, title: '該信箱已註冊', text: formatedEmail, duration: 3 } })
+      return
+    }
+    if (!email) {
+      res.status(403).send({ message: { success: false, title: '請寄送驗證信驗證', duration: 3 } })
+    } else if (email.date + 1000 * 60 * 60 * 24 < Date.now()) {
+      res.status(403).send({ message: { success: false, title: '驗證碼超過一天,請重寄驗證信驗證', duration: 3 } })
+    } else if (email.times > 3) {
+      res.status(403).send({ message: { success: false, title: '錯誤過多次，請重寄驗證信驗證', duration: 3 } })
+    } else if (email.code != req.body.schoolEmailCode) {
+      email.times++
+      await email.save()
+      res.status(403).send({ message: { success: false, title: '驗證碼錯誤,超過3次須重寄驗證信', duration: 3 } })
+    } else { res.status(200).send({ message: { success: true, title: '驗證成功', text: formatedEmail + '請進行下步驟', duration: 2 } }) }
   } catch (error) {
     res.status(500).send({ success: false, message: '伺服器錯誤' })
   }
 }
-
 
 // 
 export const login = async (req, res) => {
@@ -81,7 +120,7 @@ export const login = async (req, res) => {
     req.user.securityData.tokens.push(token)
     await req.user.save()
     res.status(200).send({
-      message: { success: true, title: 'loginSuccess', text: '' },
+      message: { success: true, title: 'loginSuccess' },
       result: {
         token,
         account: req.user.account,
