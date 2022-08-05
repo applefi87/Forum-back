@@ -1,6 +1,6 @@
 import users from '../models/users.js'
-import mails from '../models/emails.js'
 import groups from '../models/groups.js'
+import emails from '../models/emails.js'
 // import products from '../models/products.js'
 import bcrypt from 'bcrypt'
 import jwt from 'jsonwebtoken'
@@ -47,14 +47,24 @@ export const register = async (req, res) => {
     // ***********移除不該能新增的欄位
     ;['securityData', 'record', 'score'].forEach(e => delete req.body[e]);
 
-    // ****************搞得post跟實際資料庫不同，總之我的securityData 不想被別人知道
-    req.body.securityData = {
-      role: role, schoolEmail: req.body.schoolEmail,
-      password: bcrypt.hashSync(password, 15)
+    // *********新增 避免亂丟req.body(之後一定會用到)，所以先練習只列要的
+    const input = {
+      account: req.body.account,
+      nickName: req.body.nickName,
+      securityData: {
+        role,
+        schoolEmail: req.body.schoolEmail,
+        password: bcrypt.hashSync(password, 10)
+      },
+      info: { gender: req.body.gender }
     }
-    req.body.info = { gender: req.body.gender }
-    // ********************新增
-    const result = JSON.parse(JSON.stringify(await users.create(req.body)))
+    const result = JSON.parse(JSON.stringify(await users.create(input)))
+    // 註冊完把email清單改已註冊
+    const emailcheck = await emails.findOne({ email: req.mail.email })
+    emailcheck.occupied = true
+    emailcheck.user = result._id
+    emailcheck.save()
+
       // 直接丟陣列記得前方要; 不然會出錯...
       ;['securityData', '_id'].forEach(e => delete result[e])
     // 註冊成功
@@ -62,7 +72,7 @@ export const register = async (req, res) => {
     console.log('create success!');
   } catch (error) {
     if (error.name === 'ValidationError') {
-      return res.status(400).send({ success: false, message: { title: error.message  }})
+      return res.status(400).send({ success: false, message: { title: error.message } })
     } else {
       console.log(error);
       res.status(500).send({ success: false, message: '伺服器錯誤' })
@@ -72,9 +82,12 @@ export const register = async (req, res) => {
 
 // 
 export const login = async (req, res) => {
+  console.log('incontroller');
   try {
-    const expireTime = req.body.keepLogin ? {} : { expiresIn: '1 days' }
+    const expireTime = req.body.keepLogin ? {} : { expiresIn: '2 seconds' }
     const token = jwt.sign({ _id: req.user._id, role: req.user.securityData.role }, process.env.SECRET, expireTime)
+    // token太多 自動刪(預估留最後2次登陸，反正自動續約也會在後面，原本的會被刪掉)
+    if (req.user.securityData.tokens.length > 10) { req.user.securityData.tokens = req.user.securityData.tokens.slice(3) }
     req.user.securityData.tokens.push(token)
     await req.user.save()
     res.status(200).send({
@@ -93,27 +106,56 @@ export const login = async (req, res) => {
   }
 }
 
-// export const logout = async (req, res) => {
-//   try {
-//     req.user.tokens = req.user.tokens.filter(token => token !== req.token)
-//     await req.user.save()
-//     res.status(200).send({ success: true, message: '' })
-//   } catch (error) {
-//     res.status(500).send({ success: false, message: '伺服器錯誤' })
-//   }
-// }
+export const logout = async (req, res) => {
+  try {
+    console.log('incontroller');
+    req.user.securityData.tokens = req.user.securityData.tokens.filter(token => token !== req.token)
+    await req.user.save()
+    res.status(200).send({ success: true, message: { success: true, title: '登出' } })
+  } catch (error) {
+    res.status(500).send({ success: false, message: { success: false, title: '伺服器錯誤' } })
+  }
+}
 
-// export const extend = async (req, res) => {
-//   try {
-//     const idx = req.user.tokens.findIndex(token => token === req.token)
-//     const token = jwt.sign({ _id: req.user._id }, process.env.SECRET, { expiresIn: '7 days' })
-//     req.user.tokens[idx] = token
-//     await req.user.save()
-//     res.status(200).send({ success: true, message: '', result: token })
-//   } catch (error) {
-//     res.status(500).send({ success: false, message: '伺服器錯誤' })
-//   }
-// }
+export const extend = async (req, res) => {
+  try {
+    const token = jwt.sign({ _id: req.user._id }, process.env.SECRET, { expiresIn: '2 seconds' })
+    req.user.securityData.tokens = req.user.securityData.tokens.filter(token => token !== req.token)
+    req.user.securityData.tokens.push(token)
+    await req.user.save()
+    res.status(200).send({ success: true, message: '', result: token })
+  } catch (error) {
+    res.status(500).send({ success: false, message: '伺服器錯誤' })
+  }
+}
+
+
+export const setPWD = async (req, res) => {
+  console.log('incontroller setPWD');
+  try {
+    const createCode = Math.floor(Math.random() * 100000000).toString().padStart(8, "0")
+    const tempPWD = bcrypt.hashSync(createCode, 10)
+
+    // 這方法快，但無法回傳帳號名
+    // const user = await users.update({ _id: req.mail.user }, { 'user.securityData.password': tempPWD })
+    const user = await users.findOne({ _id: req.mail.user })
+    user.securityData.password = tempPWD
+    user.securityData.tokens = []
+    user.save()
+    res.status(200).send({
+      message: { success: true, title: 'loginSuccess' },
+      result: {
+        account: user.account,
+        code: createCode
+      }
+    })
+  } catch (error) {
+    res.status(500).send({
+      message: { success: true, title: '伺服器錯誤' },
+    })
+  }
+}
+
 
 export const getUser = (req, res) => {
   try {

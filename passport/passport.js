@@ -42,7 +42,7 @@ passport.use('jwt', new JWTStrategy({
   ignoreExpiration: true
 }, async (req, payload, done) => {
   const expired = payload.exp * 1000 < Date.now()
-  if (expired && req.originalUrl !== '/users/extend' && req.originalUrl !== '/users/logout') {
+  if (expired && req.originalUrl !== '/user/extend' && req.originalUrl !== '/user/logout') {
     return done(null, false, { message: '登入逾期' })
   }
   const token = req.headers.authorization.split(' ')[1]
@@ -54,8 +54,10 @@ passport.use('jwt', new JWTStrategy({
     if (user.securityData.tokens.indexOf(token) === -1) {
       return done(null, false, { message: '驗證錯誤,請重新登錄' })
     }
+    console.log('passportOK');
     return done(null, { user, token })
   } catch (error) {
+    console.log('passport ERROR');
     return done(error, false)
   }
 }))

@@ -4,27 +4,33 @@ import content from '../middleware/content.js'
 import {
   register,
   login,
-  // logout, 
-  // extend,
+  logout,
+  extend,
+  setPWD,
   getUser,
-  // addCart,
-  editInfo, 
+  editInfo,
   // getCart
   // giveMsg
 } from '../controllers/users.js'
 import {
   sendMail,
-  mailVerify
+  verifyMail,
+  sendPWDMail,
+  verifyPWDMail
 } from '../controllers/mails.js'
 
 const router = express.Router()
 
-router.post('/',content('application/json'),mailVerify(true),register)
-router.post('/sendMail', content('application/json'),  sendMail)
-router.post('/mailVerify', content('application/json'),  mailVerify(false))
+router.post('/', content('application/json'), verifyMail(true), register)
 router.post('/login', content('application/json'), auth.login, login)
-// router.delete('/logout', auth.jwt, logout)
-// router.post('/extend', auth.jwt, extend)
+router.delete('/logout', auth.jwt, logout)
+router.post('/extend', auth.jwt, extend)
+
+router.post('/sendMail', content('application/json'), sendMail())
+router.post('/mailVerify', content('application/json'), verifyMail(false))
+
+router.post('/sendPWDMail', content('application/json'), sendPWDMail)
+router.post('/verifyPWDMail', content('application/json'), verifyPWDMail, setPWD)
 router.get('/', auth.jwt, getUser)
 // router.post('/cart', content('application/json'), auth.jwt, addCart)
 router.patch('/editInfo', content('application/json'), auth.jwt, editInfo)

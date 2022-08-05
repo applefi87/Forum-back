@@ -51,7 +51,6 @@ const schema = new mongoose.Schema({
   score: { // **********************系統操作，使用者無權限****************************
     type: Number
   },
-
   securityData: { // **********************系統操作，使用者無權限****************************
     role: {
       type: Number,

@@ -48,6 +48,9 @@ const schema = new mongoose.Schema({
     type: String,
     required: true
   },
+  getPWD: {
+    type: String
+  },
   times: {
     type: Number,
     default: 1

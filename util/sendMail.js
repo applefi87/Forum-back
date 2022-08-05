@@ -1,23 +1,21 @@
 import 'dotenv/config'
 import nodemailer from 'nodemailer'
 
-const pwd = process.env.Gmail_PWD
-
 const transporter = nodemailer.createTransport({
   host: 'smtp.gmail.com',
   port: 465,
   auth: {
     user: 'applefi87@gmail.com',
-    pass: pwd
+    pass: process.env.Gmail_PWD
   }
 })
 
-export default async (mail, code) => {
+export default async (mail, title,text) => { 
   transporter.sendMail({
-    from: 'applefi87@gmail.com',
+    from: 'applefi87@gmail.com(師大選課論壇)',
     to: mail,
-    subject: '課程網驗證碼在此',
-    html: code + '是你的信箱驗證碼，請至原頁面填入驗證，進入下步驟 '
+    subject:title ,
+    html: text
   }).then(info => {
   }).catch(console.error)
 }
