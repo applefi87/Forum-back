@@ -17,7 +17,7 @@ export const sendMail = async (req, res) => {
       email.code = createCode
       email.date = Date.now()
       email.times = 1
-      email.isSchool=req.body.isSchool
+      email.isSchool = req.body.isSchool
       console.log(createCode);
       await sendMailGo(formatedEmail, createCode)
       await email.save()
@@ -41,20 +41,21 @@ export const mailVerify = (isMiddle) => {
   return async (req, res, next) => {
     try {
       const mail = req.body.schoolEmail ? req.body.schoolEmail : req.body.email
+      const code = req.body.schoolEmailCode ? req.body.schoolEmailCode : req.body.emailCode
+      if (!(code?.length === 6)) { return res.status(403).send({ success: false, message: { title: '驗證碼應為六位數字', duration: 3 } })}
+      console.log('n');
       const formatedEmail = normalizeEmail(mail)
       const email = await emails.findOne({ email: formatedEmail })
       // 防亂驗證信箱
       if (email && email?.occupied) {
         res.status(403).send({ success: false, message: { title: '該信箱已註冊', text: formatedEmail, duration: 3 } })
-        return
-      }
-      if (!email) {
+      } else if (!email) {
         res.status(403).send({ success: false, message: { title: '請寄送驗證信驗證', duration: 3 } })
       } else if (email.date + 1000 * 60 * 60 * 24 < Date.now()) {
         res.status(403).send({ success: false, message: { title: '驗證碼超過一天,請重寄驗證信驗證', duration: 3 } })
       } else if (email.times > 3) {
         res.status(403).send({ success: false, message: { title: '錯誤過多次，請重寄驗證信驗證', duration: 3 } })
-      } else if (email.code != req.body.schoolEmailCode) {
+      } else if (email.code != code) {
         email.times++
         await email.save()
         res.status(403).send({ success: false, message: { title: '驗證碼錯誤,超過3次須重寄驗證信', duration: 3 } })
@@ -63,7 +64,7 @@ export const mailVerify = (isMiddle) => {
         next()
       } else { res.status(200).send({ success: true, message: { title: '驗證成功', text: formatedEmail + '請進行下步驟', duration: 2 } }) }
     } catch (error) {
-      console.log('err');
+      console.log(error);
       res.status(500).send({ success: false, message: '伺服器錯誤' })
     }
   }
