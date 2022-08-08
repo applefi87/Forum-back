@@ -83,9 +83,9 @@ export const register = async (req, res) => {
 
 // 
 export const login = async (req, res) => {
-  console.log('incontroller');
+  console.log('incontroller login');
   try {
-    const expireTime = req.body.keepLogin ? {} : { expiresIn: '200 seconds' }
+    const expireTime = req.body.keepLogin ? {} : { expiresIn: '200000 seconds' }
     const token = jwt.sign({ _id: req.user._id, role: req.user.securityData.role }, process.env.SECRET, expireTime)
     // token太多 自動刪(預估留最後2次登陸，反正自動續約也會在後面，原本的會被刪掉)
     if (req.user.securityData.tokens.length > 10) { req.user.securityData.tokens = req.user.securityData.tokens.slice(3) }
@@ -120,7 +120,7 @@ export const logout = async (req, res) => {
 
 export const extend = async (req, res) => {
   try {
-    const token = jwt.sign({ _id: req.user._id }, process.env.SECRET, { expiresIn: '200 seconds' })
+    const token = jwt.sign({ _id: req.user._id }, process.env.SECRET, { expiresIn: '200000 seconds' })
     req.user.securityData.tokens = req.user.securityData.tokens.filter(token => token !== req.token)
     req.user.securityData.tokens.push(token)
     await req.user.save()
@@ -134,7 +134,6 @@ export const extend = async (req, res) => {
 export const setPWD = async (req, res) => {
   console.log('incontroller setPWD');
   try {
-
     const createCode = randomPWD(8, 'medium')
     //需要加上臨時密碼
     const tempPWD = bcrypt.hashSync(createCode, 10)

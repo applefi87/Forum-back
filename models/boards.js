@@ -7,7 +7,7 @@ const col = (t) => {
       c: { type: Number, required: true, alias: 'code' },
       n: { type: String, required: true, alias: 'name' },
       r: { type: String, required: true, alias: 'required' },
-      // 代碼表示: 單行文字 多行文字 數字 單選 多選 Boolean  
+      // 代碼表示: 1單行文字 2多行文字 3數字 4單選 5多選 0Boolean  
       t: { type: Number, required: true, alias: 'type' }
     }], default: undefined, _id: false,
   }
@@ -26,6 +26,20 @@ const display = () => {
   }
 }
 
+const article = new mongoose.Schema({
+  c: { type: Number, required: true, alias: 'code' },
+  name: { type: String, required: true },
+  intro: { type: String, required: true },
+  titleCol: { type: String, required: true },
+  contentCol: { type: String, required: true },
+  tagActive: Boolean,
+  //如果有勾tag再填
+  tagOption: { type: [String], required: function () { this.tagActive } },
+  col: col(),
+  // 程式抓版不重複供選擇,填上代表必填
+})
+
+
 const schema = new mongoose.Schema({
   // ---------------------------------------------------------------
   title: {
@@ -34,16 +48,16 @@ const schema = new mongoose.Schema({
     minlength: [3, '必須 3 個字以上'],
     maxlength: [20, '必須 20 個字以下'],
   },
-  content: {
+  intro: {
     type: String,
     required: [true, '必填內容'],
-    minlength: [20, '必須 20 個字以上'],
+    minlength: [5, '必須 5 個字以上'],
     maxlength: [5000, '必須 5000 個字以下'],
   },
   parent: {
     type: mongoose.ObjectId,
     ref: 'boards',
-    required: [true, '缺少母板']
+    // required: [true, '缺少母板']
   },
   related: {
     type: [{ type: mongoose.ObjectId, ref: 'boards' }],
@@ -67,45 +81,31 @@ const schema = new mongoose.Schema({
       d: { type: [mongoose.Mixed], alias: 'data' },
     }], default: undefined, _id: false
   },
+
   // ---------------------------------------------------------------
   childBoard: {
     active: { type: Boolean, required: true },
     rule: {
+      title: { type: String, required: true },
       col: col(),
       // 程式抓母版不重複供選擇,填上代表必填
-      unique: col("noOther"),// 對應欄位+附值(任意格式，程式處理成可用)
+      unique: col(),// 對應欄位+附值(任意格式，程式處理成可用)
+      display: display(),
     },
-    display: display(),
     // 子版的文章規則
-    childArticle: {
+    article: {
       active: { type: Boolean, required: function () { this.childBoard.active } },
       // 勾選評價版，則下方至少選一
       review: { type: Boolean, required: true },
-      rate: Boolean,
-      tag: Boolean,
+
       // 大分類(評價版不用自己打，上面會判斷自動生成1評價代碼)
       // 版見越多 要管的規則越多
       category: {
-        type: [{
-          c: { type: Number, required: true, alias: 'code' },
-          n: { type: String, required: true, alias: 'name' },
-          i: { type: String, required: true, alias: 'info' }
-        }], default: undefined, _id: false
+        type: [article],
+        default: undefined, _id: false
       },
-      rule: {
-        //如果有勾tag再填
-        tag: [String],
-        category: {
-          type: [{
-            //對應上方不同大分類
-            c: { type: Number, required: true, alias: 'code' },
-            //的欄位規則
-            col: col(),
-          }], default: undefined, _id: false
-        }
-      },
-      display: display()
-    },
+      display: display(),
+    }
   }
 }, { versionKey: false, timestamps: { createdAt: 'created_at', updatedAt: false } })
 
