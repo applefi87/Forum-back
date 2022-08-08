@@ -1,6 +1,7 @@
 import users from '../models/users.js'
 import groups from '../models/groups.js'
 import emails from '../models/emails.js'
+import randomPWD from '../util/randomPWD.js'
 // import products from '../models/products.js'
 import bcrypt from 'bcrypt'
 import jwt from 'jsonwebtoken'
@@ -133,25 +134,32 @@ export const extend = async (req, res) => {
 export const setPWD = async (req, res) => {
   console.log('incontroller setPWD');
   try {
-    const createCode = Math.floor(Math.random() * 100000000).toString().padStart(8, "0")
+
+    const createCode = randomPWD(8,'medium')
+    //需要加上臨時密碼
     const tempPWD = bcrypt.hashSync(createCode, 10)
 
     // 這方法快，但無法回傳帳號名
-    // const user = await users.update({ _id: req.mail.user }, { 'user.securityData.password': tempPWD })
     const user = await users.findOne({ _id: req.mail.user })
+      // ***********移除不用編輯的欄位
+      ;['securityData', 'record', 'score',].forEach(e => delete req.body[e]);
     user.securityData.password = tempPWD
     user.securityData.tokens = []
     user.save()
+    console.log(user.account, createCode);
     res.status(200).send({
-      message: { success: true, title: 'loginSuccess' },
+      success: true,
+      message: { title: '密碼重設成功' },
       result: {
         account: user.account,
-        code: createCode
+        tempPWD: createCode
       }
     })
   } catch (error) {
+    console.log(error);
     res.status(500).send({
-      message: { success: true, title: '伺服器錯誤' },
+      success: false,
+      message: { title: '伺服器錯誤' },
     })
   }
 }

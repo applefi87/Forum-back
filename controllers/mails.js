@@ -79,13 +79,13 @@ export const sendPWDMail = async (req, res) => {
       res.status(403).send({ success: false, message: { title: '該信箱尚未註冊', text: formatedEmail } })
       return
     }
-    const createCode = Math.floor(Math.random() * 100000000).toString().padStart(8, "0")
+    const createCode = Math.floor(Math.random() * 10000000000).toString().padStart(10, "0")
     email.code = createCode
     email.date = Date.now()
     email.times = 1
     console.log(createCode);
     await sendMailGo(formatedEmail, '課程網找回密碼',
-      `$(createCode)  8位數字是你的臨時驗證碼，一天內有效 <br> 請至原頁面填入驗證，進入下步驟`
+      `$(createCode)  10位數字是你的臨時驗證碼，一天內有效 <br> 請至原頁面填入驗證，進入下步驟`
     )
     await email.save()
     res.status(200).send({ success: true, message: { title: '已寄送找回密碼驗證碼', text: formatedEmail } })
@@ -97,7 +97,7 @@ export const sendPWDMail = async (req, res) => {
 
 export const verifyPWDMail = async (req, res, next) => {
   try {
-    if (!(req.body.code?.length === 8 && req.body.code.match(/^[0-9]+$/))) { return res.status(403).send({ success: false, message: { title: '驗證碼應為八位數字', duration: 3 } }) }
+    if (!(req.body.code?.length === 10 && req.body.code.match(/^[0-9]+$/))) { return res.status(403).send({ success: false, message: { title: '驗證碼應為10位數字', duration: 3 } }) }
     const formatedEmail = normalizeEmail(req.body.email)
     const email = await emails.findOne({ email: formatedEmail })
     if (!email || !email.occupied) {
