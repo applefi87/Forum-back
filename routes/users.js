@@ -7,6 +7,7 @@ import {
   logout,
   extend,
   setPWD,
+  changePWD,
   getUser,
   editInfo,
   // getCart
@@ -31,6 +32,8 @@ router.post('/mailVerify', content('application/json'), verifyMail(false))
 
 router.post('/sendPWDMail', content('application/json'), sendPWDMail)
 router.post('/verifyPWDMail', content('application/json'), verifyPWDMail, setPWD)
+router.post('/changePWD', content('application/json'), auth.jwt, changePWD)
+
 router.get('/', auth.jwt, getUser)
 // router.post('/cart', content('application/json'), auth.jwt, addCart)
 router.patch('/editInfo', content('application/json'), auth.jwt, editInfo)

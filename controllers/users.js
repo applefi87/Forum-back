@@ -85,7 +85,7 @@ export const register = async (req, res) => {
 export const login = async (req, res) => {
   console.log('incontroller');
   try {
-    const expireTime = req.body.keepLogin ? {} : { expiresIn: '2 seconds' }
+    const expireTime = req.body.keepLogin ? {} : { expiresIn: '200 seconds' }
     const token = jwt.sign({ _id: req.user._id, role: req.user.securityData.role }, process.env.SECRET, expireTime)
     // token太多 自動刪(預估留最後2次登陸，反正自動續約也會在後面，原本的會被刪掉)
     if (req.user.securityData.tokens.length > 10) { req.user.securityData.tokens = req.user.securityData.tokens.slice(3) }
@@ -120,7 +120,7 @@ export const logout = async (req, res) => {
 
 export const extend = async (req, res) => {
   try {
-    const token = jwt.sign({ _id: req.user._id }, process.env.SECRET, { expiresIn: '2 seconds' })
+    const token = jwt.sign({ _id: req.user._id }, process.env.SECRET, { expiresIn: '200 seconds' })
     req.user.securityData.tokens = req.user.securityData.tokens.filter(token => token !== req.token)
     req.user.securityData.tokens.push(token)
     await req.user.save()
@@ -135,18 +135,14 @@ export const setPWD = async (req, res) => {
   console.log('incontroller setPWD');
   try {
 
-    const createCode = randomPWD(8,'medium')
+    const createCode = randomPWD(8, 'medium')
     //需要加上臨時密碼
     const tempPWD = bcrypt.hashSync(createCode, 10)
-
-    // 這方法快，但無法回傳帳號名
-    const user = await users.findOne({ _id: req.mail.user })
-      // ***********移除不用編輯的欄位
-      ;['securityData', 'record', 'score',].forEach(e => delete req.body[e]);
+    const user = await users.findOne({ _id: req.mail.user }).select(['account','securityData.password'])
     user.securityData.password = tempPWD
     user.securityData.tokens = []
     user.save()
-    console.log(user.account, createCode);
+    // console.log(user.account, createCode);
     res.status(200).send({
       success: true,
       message: { title: '密碼重設成功' },
@@ -154,6 +150,27 @@ export const setPWD = async (req, res) => {
         account: user.account,
         tempPWD: createCode
       }
+    })
+  } catch (error) {
+    console.log(error);
+    res.status(500).send({
+      success: false,
+      message: { title: '伺服器錯誤' },
+    })
+  }
+}
+
+export const changePWD = async (req, res) => {
+  console.log('incontroller changePWD');
+  try {
+    const user = await users.findOne({ _id: req.user._id }).select(['account','securityData.password'])
+    user.securityData.password = bcrypt.hashSync(req.body.newPWD, 10)
+    user.securityData.tokens = []
+    user.save()
+    console.log('ok');
+    res.status(200).send({
+      success: true,
+      message: { title: '密碼重設成功，請重新登錄' }
     })
   } catch (error) {
     console.log(error);
