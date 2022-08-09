@@ -13,11 +13,13 @@ const translate = [
   ["班", "class"],
   ["全英語", "English"],
   ["限性別", "gender"],
-  ["中文課程名稱", "title"],
-  ["英文課程名稱", "titleEng"],
+  // 
+  ["中文課程名稱", "className"],
+  ["英文課程名稱", "classNameEng"],
   ["學分", 'score'],
   ["必/選", "required"],
   ["教師", "teacher"],
+  // 
   ["地點時間", "timeLocation"],
   // 並非必要但可能引誤會 先刪除限修人數
   ["限修條件", "condition"],
@@ -36,7 +38,14 @@ const toEnglish = csv.map(obj => {
     // 不能用空，因為方便我辨識第幾陣列，不然第幾陣列會跑掉
     // if (obj[translate[i][0]] != undefined) {
     if (obj[translate[i][0]]) {
-      ok[translate[i][1]] = obj[translate[i][0]]
+      if (translate[i][0] !== "地點時間") {
+        ok[translate[i][1]] = obj[translate[i][0]]
+      } else {
+        //拆分時間地點(部分單獨的沒有的就不存) 
+        const data = obj[translate[i][0]].split(" ")
+        ok["time"] = data[1] ? [data[0], data[1]] : [data[0]]
+        if (data[2]) { ok["location"] = data[2] }
+      }
     }
   }
   return ok
@@ -47,11 +56,10 @@ var group = _.mapValues(_.groupBy(toEnglish, (obj) => {
   return obj.serialCode + "kk" + obj.teacher
 }),
   clist => clist.map(obj => _.omit(obj, dataKey)));
-
-fs.writeFileSync('group.json', JSON.stringify(group))
-
+// fs.writeFileSync('group.json', JSON.stringify(group))
 
 // *************
+// 輸出頁面的
 // 從每個課程的key開始回找
 const classesOut = Object.keys(group).map((key) => {
   const idx = toEnglish.findIndex((obj) => (obj.serialCode + "kk" + obj.teacher) === key)

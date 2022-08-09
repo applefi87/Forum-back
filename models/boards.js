@@ -19,6 +19,8 @@ const datas = {
   }], default: undefined, _id: false
 }
 
+
+// sort/nestedCol則顯示欄位
 const display = (type) => {
   const rule = {
     special: mongoose.Mixed,
@@ -29,19 +31,26 @@ const display = (type) => {
     rule.sort = rule.filter
   } else {
     rule.filter = {
+      // ex:系別
       dataCol: { type: [String], default: undefined },
-      uniqueCol: { type: [String], default: undefined },
-      nestedCol: {
-        motherCol: String,
-        fliter: String,
-        data: [
-          {
-            "97-105入學"："藝術與美感"
-          }
-        ]
-      },
+      // ex 學期+時間
+      uniqueCol: { type: [String], default: undefined }
+      // 原要處理通識 之後再搞八...
+      // nestedCol: {
+      //   type: [{
+      //     motherCol: String,
+      //     fliter: String,
+      //     data: [
+      //       {
+      //         col: String,
+      //         list: [String]
+      //       }
+      //     ]
+      //   }], default: undefined
+      // },
     }
-    rule.sort = rule.filter
+    // 只排序dataCol,不然排序還要顯示，麻煩，要得自己點進去看
+    rule.sort = { type: [String], default: undefined }
   }
   return rule
 }
