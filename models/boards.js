@@ -30,7 +30,16 @@ const display = (type) => {
   } else {
     rule.filter = {
       dataCol: { type: [String], default: undefined },
-      uniqueCol: { type: [String], default: undefined }
+      uniqueCol: { type: [String], default: undefined },
+      nestedCol: {
+        motherCol: String,
+        fliter: String,
+        data: [
+          {
+            "97-105入學"："藝術與美感"
+          }
+        ]
+      },
     }
     rule.sort = rule.filter
   }
