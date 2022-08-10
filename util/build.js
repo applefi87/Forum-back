@@ -69,11 +69,10 @@ const classesOut = Object.keys(group).map((key) => {
   const allKey = Object.keys(o)
   for (let i = 0; i < allKey.length; i++) {
     if (!(dataKey.find(key => key == allKey[i]))) {
-      // console.log(allKey[i]);
       delete o[allKey[i]]
     }
   }
-  return { ...o, unique: group[key] }
+  return { ...o, uniqueData: group[key] }
 })
 
 fs.writeFileSync('classesOut.json', JSON.stringify(classesOut))

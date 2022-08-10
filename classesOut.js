@@ -1,4 +1,4 @@
-export default[
+export default [
   {
     "classCode": "0000079",
     "department": "全人中心",
@@ -6,7 +6,7 @@ export default[
     "classNameEng": "Basic Service-Learning",
     "required": "必",
     "teacher": "陳懷萱",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3235,
         "team": "B",
@@ -27,7 +27,7 @@ export default[
     "classNameEng": "Basic Service-Learning",
     "required": "必",
     "teacher": "陳純音",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3236,
         "team": "C",
@@ -48,7 +48,7 @@ export default[
     "classNameEng": "Basic Service-Learning",
     "required": "必",
     "teacher": "廖皎含",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3297,
         "team": "D",
@@ -64,7 +64,7 @@ export default[
     "classNameEng": "Basic Service-Learning",
     "required": "必",
     "teacher": "吳佩蓉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3298,
         "team": "E",
@@ -80,7 +80,7 @@ export default[
     "classNameEng": "Basic Service-Learning",
     "required": "必",
     "teacher": "韋煙灶",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3237,
         "team": "A",
@@ -96,7 +96,7 @@ export default[
     "classNameEng": "Basic Service-Learning",
     "required": "必",
     "teacher": "林政宏",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3238,
         "team": "B",
@@ -112,7 +112,7 @@ export default[
     "classNameEng": "Basic Service-Learning",
     "required": "必",
     "teacher": "陳純音",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3239,
         "team": "C",
@@ -128,7 +128,7 @@ export default[
     "classNameEng": "Basic Service-Learning",
     "required": "必",
     "teacher": "李志宏",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3240,
         "team": "D",
@@ -144,7 +144,7 @@ export default[
     "classNameEng": "Basic Service-Learning",
     "required": "必",
     "teacher": "鄭淳護",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3241,
         "team": "E",
@@ -160,7 +160,7 @@ export default[
     "classNameEng": "Basic Service-Learning",
     "required": "必",
     "teacher": "陳昭揚",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3242,
         "team": "F",
@@ -176,7 +176,7 @@ export default[
     "classNameEng": "Basic Service-Learning",
     "required": "必",
     "teacher": "吳志文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3243,
         "team": "G",
@@ -192,7 +192,7 @@ export default[
     "classNameEng": "Basic Service-Learning",
     "required": "必",
     "teacher": "林昌平",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3244,
         "team": "H",
@@ -208,7 +208,7 @@ export default[
     "classNameEng": "Basic Service-Learning",
     "required": "必",
     "teacher": "蔣宗哲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3245,
         "team": "I",
@@ -224,7 +224,7 @@ export default[
     "classNameEng": "Basic Service-Learning",
     "required": "必",
     "teacher": "楊智元",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3246,
         "team": "J",
@@ -240,7 +240,7 @@ export default[
     "classNameEng": "Basic Service-Learning",
     "required": "必",
     "teacher": "郭君逸",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3247,
         "team": "K",
@@ -256,7 +256,7 @@ export default[
     "classNameEng": "Basic Service-Learning",
     "required": "必",
     "teacher": "紀博文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3248,
         "team": "M",
@@ -272,7 +272,7 @@ export default[
     "classNameEng": "Basic Service-Learning",
     "required": "必",
     "teacher": "蔡昕璋",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3249,
         "team": "A",
@@ -288,7 +288,7 @@ export default[
     "classNameEng": "Basic Service-Learning",
     "required": "必",
     "teacher": "黃瑩暖",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3250,
         "team": "A",
@@ -303,7 +303,7 @@ export default[
     "classNameEng": "Basic Service-Learning",
     "required": "必",
     "teacher": "游森棚",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3251,
         "team": "A",
@@ -319,7 +319,7 @@ export default[
     "classNameEng": "Basic Service-Learning",
     "required": "必",
     "teacher": "葉樹涵",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3252,
         "team": "B",
@@ -335,7 +335,7 @@ export default[
     "classNameEng": "Basic Service-Learning",
     "required": "必",
     "teacher": "胡心慈",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3253,
         "team": "C",
@@ -351,7 +351,7 @@ export default[
     "classNameEng": "Basic Service-Learning",
     "required": "必",
     "teacher": "黃玫瑄",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3254,
         "team": "D",
@@ -367,7 +367,7 @@ export default[
     "classNameEng": "Basic Service-Learning",
     "required": "必",
     "teacher": "李子奇",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3255,
         "team": "A"
@@ -382,7 +382,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "羅翊芳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0181",
         "time": [
@@ -402,7 +402,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "柯如",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0182",
         "time": [
@@ -422,7 +422,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "柯如",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0183",
         "time": [
@@ -442,7 +442,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "蔡劭欣",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0184",
         "time": [
@@ -462,7 +462,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "吳翊良",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0185",
         "team": "A",
@@ -483,7 +483,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "林津羽",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0186",
         "team": "B",
@@ -504,7 +504,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "陳守璽",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0187",
         "team": "C",
@@ -525,7 +525,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "陳嘉琪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0188",
         "team": "D",
@@ -546,7 +546,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "謝秀卉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0189",
         "team": "E",
@@ -567,7 +567,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "楊穎詩",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3363,
         "team": "F",
@@ -588,7 +588,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "吳翊良",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0190",
         "team": "A",
@@ -609,7 +609,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "林津羽",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0191",
         "team": "B",
@@ -630,7 +630,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "楊穎詩",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0192",
         "team": "C",
@@ -651,7 +651,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "陳嘉琪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0193",
         "team": "D",
@@ -672,7 +672,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "賴昶",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0194",
         "team": "E",
@@ -693,7 +693,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "謝秀卉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0195",
         "team": "F",
@@ -714,7 +714,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "徐國能",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0196",
         "team": "G",
@@ -735,7 +735,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "林玉玫",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0197",
         "team": "A",
@@ -756,7 +756,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "林津羽",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0198",
         "team": "B",
@@ -777,7 +777,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "徐禎苓",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0199",
         "team": "C",
@@ -798,7 +798,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "陳守璽",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0200",
         "team": "D",
@@ -819,7 +819,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "陳惠鈴",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0201",
         "team": "E",
@@ -840,7 +840,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "謝秀卉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0203",
         "team": "G",
@@ -861,7 +861,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "謝嘉文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0204",
         "team": "H",
@@ -882,7 +882,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "魏伯全",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0205",
         "team": "I",
@@ -903,7 +903,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "李純瑀",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0206",
         "team": "J",
@@ -924,7 +924,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "汪文祺",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0207",
         "team": "A",
@@ -945,7 +945,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "徐敏媛",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0208",
         "team": "B",
@@ -966,7 +966,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "徐禎苓",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0209",
         "team": "C",
@@ -987,7 +987,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "陳筱筠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0210",
         "team": "D",
@@ -1008,7 +1008,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "陳守璽",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0211",
         "team": "E",
@@ -1029,7 +1029,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "謝秀卉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0212",
         "team": "F",
@@ -1050,7 +1050,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "謝嘉文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0213",
         "team": "G",
@@ -1071,7 +1071,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "魏伯全",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0214",
         "team": "H",
@@ -1092,7 +1092,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "林玉玫",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0215",
         "team": "I",
@@ -1113,7 +1113,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "陳惠鈴",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0216",
         "team": "J",
@@ -1134,7 +1134,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "李純瑀",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0217",
         "team": "K",
@@ -1155,7 +1155,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "李志宏",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0218",
         "team": "A",
@@ -1176,7 +1176,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "汪文祺",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0219",
         "team": "B",
@@ -1197,7 +1197,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "徐敏媛",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0220",
         "team": "C",
@@ -1218,7 +1218,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "陳筱筠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0221",
         "team": "D",
@@ -1239,7 +1239,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "陳嘉琪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0222",
         "team": "E",
@@ -1260,7 +1260,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "黃薏文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0223",
         "team": "F",
@@ -1281,7 +1281,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "謝秀卉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0224",
         "team": "G",
@@ -1302,7 +1302,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "陳明緻",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0225",
         "team": "H",
@@ -1323,7 +1323,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "林玉玫",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0226",
         "team": "A",
@@ -1344,7 +1344,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "林佩怡",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0227",
         "team": "B",
@@ -1365,7 +1365,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "徐敏媛",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0228",
         "team": "C",
@@ -1386,7 +1386,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "徐禎苓",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0229",
         "team": "D",
@@ -1407,7 +1407,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "黃薏文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0230",
         "team": "E",
@@ -1428,7 +1428,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "賴昶",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0231",
         "team": "F",
@@ -1449,7 +1449,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "謝秀卉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0232",
         "team": "G",
@@ -1470,7 +1470,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "陳惠鈴",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0233",
         "team": "H",
@@ -1491,7 +1491,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "陳明緻",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0234",
         "team": "I",
@@ -1512,7 +1512,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "曾暐傑",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0235",
         "team": "A",
@@ -1534,7 +1534,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "林佩怡",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0236",
         "team": "B",
@@ -1556,7 +1556,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "黃月銀",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0237",
         "team": "C",
@@ -1578,7 +1578,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "黃月銀",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0238",
         "team": "D",
@@ -1601,7 +1601,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "柯衣凡",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0239",
         "team": "A",
@@ -1624,7 +1624,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "曾於萱",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0240",
         "team": "B",
@@ -1647,7 +1647,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "曾於萱",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0241",
         "team": "C",
@@ -1670,7 +1670,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "江宗翰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0242",
         "team": "D",
@@ -1693,7 +1693,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "江宗翰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0243",
         "team": "E",
@@ -1716,7 +1716,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "李金安",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0244",
         "team": "A",
@@ -1739,7 +1739,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "李金安",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0245",
         "team": "B",
@@ -1762,7 +1762,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "李婉歆",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0246",
         "team": "C",
@@ -1785,7 +1785,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "王潔",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0247",
         "team": "D",
@@ -1808,7 +1808,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "賴國維",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0248",
         "team": "E",
@@ -1831,7 +1831,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "陳瑄",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0249",
         "team": "F",
@@ -1854,7 +1854,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "王潔",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0250",
         "team": "G",
@@ -1877,7 +1877,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "郭儀風",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0251",
         "team": "H",
@@ -1900,7 +1900,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "李婉歆",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0252",
         "team": "I",
@@ -1923,7 +1923,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "陳瑄",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0253",
         "team": "J",
@@ -1946,7 +1946,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "王潔",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0254",
         "team": "K",
@@ -1969,7 +1969,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "郭儀風",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0255",
         "team": "L",
@@ -1992,7 +1992,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "李婉歆",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0256",
         "team": "M",
@@ -2015,7 +2015,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "賴國維",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0257",
         "team": "N",
@@ -2038,7 +2038,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "李婉歆",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0258",
         "team": "O",
@@ -2061,7 +2061,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "賴國維",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0259",
         "team": "P",
@@ -2083,7 +2083,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "江璧羽",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0260",
         "team": "A",
@@ -2105,7 +2105,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "林千凱",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0261",
         "team": "B",
@@ -2127,7 +2127,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "徐立妍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0263",
         "team": "D",
@@ -2149,7 +2149,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "林千凱",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0264",
         "team": "E",
@@ -2171,7 +2171,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "彭家洋",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0265",
         "team": "F",
@@ -2193,7 +2193,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "林千凱",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0266",
         "team": "G",
@@ -2215,7 +2215,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "徐立妍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0267",
         "team": "H",
@@ -2237,7 +2237,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "黃郁珺",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0268",
         "team": "I",
@@ -2259,7 +2259,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "江璧羽",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0269",
         "team": "J",
@@ -2281,7 +2281,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "黃郁珺",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0270",
         "team": "K",
@@ -2303,7 +2303,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "金瑄桓",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0271",
         "team": "L",
@@ -2325,7 +2325,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "江璧羽",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0272",
         "team": "M",
@@ -2347,7 +2347,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "黃郁珺",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0273",
         "team": "N",
@@ -2369,7 +2369,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "金瑄桓",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0274",
         "team": "O",
@@ -2391,7 +2391,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "蘇鈺恩",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0275",
         "team": "A",
@@ -2413,7 +2413,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "林伊莉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0276",
         "team": "B",
@@ -2435,7 +2435,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "蘇鈺恩",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0277",
         "team": "C",
@@ -2457,7 +2457,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "林伊莉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0278",
         "team": "D",
@@ -2479,7 +2479,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "陳秋梅",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0279",
         "team": "E",
@@ -2501,7 +2501,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "蘇鈺恩",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0281",
         "team": "G",
@@ -2523,7 +2523,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "林伊莉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0282",
         "team": "H",
@@ -2545,7 +2545,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "陳秋梅",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0283",
         "team": "I",
@@ -2567,7 +2567,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "唐家傑",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0284",
         "team": "J",
@@ -2589,7 +2589,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "陳亞玲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0285",
         "team": "K",
@@ -2611,7 +2611,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "李世文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0286",
         "team": "L",
@@ -2633,7 +2633,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "彭家洋",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0288",
         "team": "N",
@@ -2655,7 +2655,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "陳亞玲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0289",
         "team": "O",
@@ -2677,7 +2677,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "彭家洋",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0291",
         "team": "Q",
@@ -2699,7 +2699,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "陳亞玲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0292",
         "team": "R",
@@ -2721,7 +2721,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "唐家傑",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0293",
         "team": "S",
@@ -2743,7 +2743,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "劉怡君",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0294",
         "team": "T",
@@ -2765,7 +2765,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "林政憲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0295",
         "team": "A",
@@ -2787,7 +2787,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "林政憲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0296",
         "team": "B",
@@ -2810,7 +2810,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "李金安",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0297",
         "team": "A",
@@ -2833,7 +2833,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "柯衣凡",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0298",
         "team": "B",
@@ -2856,7 +2856,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "吳佳琪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0299",
         "team": "C",
@@ -2879,7 +2879,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "吳佳琪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0300",
         "team": "D",
@@ -2901,7 +2901,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "蘇子中",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0301",
         "team": "A",
@@ -2923,7 +2923,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "倪通",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0302",
         "team": "A",
@@ -2946,7 +2946,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "倪通",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0303",
         "team": "B",
@@ -2969,7 +2969,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "張珮青",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0305",
         "team": "D",
@@ -2992,7 +2992,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "張珮青",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0306",
         "team": "E",
@@ -3015,7 +3015,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "柯衣凡",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0307",
         "team": "A",
@@ -3038,7 +3038,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "許月貴",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0308",
         "team": "B",
@@ -3060,7 +3060,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "江宗翰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0309",
         "team": "A",
@@ -3082,7 +3082,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "謝伊柔",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0310",
         "team": "A",
@@ -3103,7 +3103,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "謝伊柔",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0311",
         "team": "B",
@@ -3124,7 +3124,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "陳秋梅",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0312",
         "team": "A",
@@ -3145,7 +3145,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "李世文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0313",
         "team": "B",
@@ -3167,7 +3167,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "李婉歆",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0314",
         "team": "A",
@@ -3190,7 +3190,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "李婉歆",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0315",
         "team": "B",
@@ -3212,7 +3212,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "李婉歆",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0316",
         "team": "A",
@@ -3234,7 +3234,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "項瑞芳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0317",
         "team": "A",
@@ -3257,7 +3257,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "項瑞芳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0318",
         "team": "B",
@@ -3279,7 +3279,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "林政憲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0319",
         "team": "A",
@@ -3302,7 +3302,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "張文嘉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0321",
         "team": "A",
@@ -3325,7 +3325,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "張文嘉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0322",
         "team": "B",
@@ -3348,7 +3348,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "曾輔國",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0323",
         "team": "C",
@@ -3371,7 +3371,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "曾輔國",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0324",
         "team": "D",
@@ -3394,7 +3394,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "曾輔國",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0325",
         "team": "E",
@@ -3417,7 +3417,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "張文嘉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0326",
         "team": "F",
@@ -3440,7 +3440,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "張文嘉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0327",
         "team": "G",
@@ -3463,7 +3463,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "張文嘉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0328",
         "team": "H",
@@ -3485,7 +3485,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "陳秋蘭 陳建元 蘇淑娟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0329",
         "team": "A",
@@ -3507,7 +3507,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "李玉馨",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0526",
         "team": "A",
@@ -3527,7 +3527,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "周愚文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0527",
         "team": "B",
@@ -3547,7 +3547,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "劉蔚之",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0528",
         "team": "C",
@@ -3567,7 +3567,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "葉坤靈",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0529",
         "team": "D",
@@ -3587,7 +3587,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "張文哲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0530",
         "team": "A",
@@ -3607,7 +3607,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "張文哲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0531",
         "team": "B",
@@ -3627,7 +3627,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "王淑麗",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0532",
         "team": "C",
@@ -3647,7 +3647,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "劉宜芳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0533",
         "team": "D",
@@ -3667,7 +3667,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "張祐瑄",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0534",
         "team": "E",
@@ -3687,7 +3687,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "王淑麗",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0535",
         "team": "F",
@@ -3707,7 +3707,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "洪仁進",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0536",
         "team": "A",
@@ -3727,7 +3727,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳伊琳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0537",
         "team": "B",
@@ -3747,7 +3747,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "葉坤靈",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0538",
         "team": "C",
@@ -3767,7 +3767,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "葉坤靈",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0539",
         "team": "D",
@@ -3787,7 +3787,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳伊琳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0540",
         "team": "E",
@@ -3807,7 +3807,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林逢祺",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0541",
         "team": "F",
@@ -3827,7 +3827,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林秀珍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0542",
         "team": "G",
@@ -3847,7 +3847,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "蔡進雄",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0543",
         "team": "A",
@@ -3867,7 +3867,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "許殷宏",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0544",
         "team": "B",
@@ -3887,7 +3887,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "許殷宏",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0545",
         "team": "C",
@@ -3907,7 +3907,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "張珍瑋",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0546",
         "team": "D",
@@ -3927,7 +3927,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "王秀玲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0547",
         "team": "A",
@@ -3947,7 +3947,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "王秀玲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0548",
         "team": "B",
@@ -3967,7 +3967,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "湯仁燕",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0549",
         "team": "C",
@@ -3987,7 +3987,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "王力億",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0550",
         "team": "D",
@@ -4007,7 +4007,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "王力億",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0551",
         "team": "E",
@@ -4027,7 +4027,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "張哲榕",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0552",
         "team": "A",
@@ -4047,7 +4047,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "張哲榕",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0553",
         "team": "B",
@@ -4067,7 +4067,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "楊傳蓮",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0554",
         "team": "C",
@@ -4087,7 +4087,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "張民杰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0555",
         "team": "D",
@@ -4107,7 +4107,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "潘正德",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0557",
         "team": "A",
@@ -4127,7 +4127,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "黃國彰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0558",
         "team": "B",
@@ -4147,7 +4147,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "吳淑禎",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0559",
         "team": "C",
@@ -4167,7 +4167,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "吳淑禎",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0560",
         "team": "D",
@@ -4188,7 +4188,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳淑琦",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0561",
         "team": "E",
@@ -4208,7 +4208,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳淑琦",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0562",
         "team": "F",
@@ -4228,7 +4228,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "鄭淑惠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0563",
         "time": [
@@ -4247,7 +4247,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳孟筳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0564",
         "time": [
@@ -4266,7 +4266,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳慧娟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0565",
         "team": "A",
@@ -4286,7 +4286,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "程景琳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0566",
         "team": "B",
@@ -4306,7 +4306,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "戴汝卉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0567",
         "team": "C",
@@ -4326,7 +4326,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "劉蔚之",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0568",
         "time": [
@@ -4345,7 +4345,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林秀珍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0569",
         "team": "A",
@@ -4365,7 +4365,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林秀珍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0570",
         "team": "B",
@@ -4385,7 +4385,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張素貞",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0571",
         "team": "A",
@@ -4405,7 +4405,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張素貞",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0572",
         "team": "B",
@@ -4425,7 +4425,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李偉清",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0573",
         "team": "C",
@@ -4445,7 +4445,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林淑莉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0574",
         "team": "D",
@@ -4466,7 +4466,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "廖靜宜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0575",
         "team": "E",
@@ -4486,7 +4486,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "李家兆",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0576",
         "time": [
@@ -4505,7 +4505,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "曾芬蘭",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0577",
         "team": "A",
@@ -4525,7 +4525,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "鄭育文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0578",
         "team": "B",
@@ -4545,7 +4545,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林小慧",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0579",
         "team": "C",
@@ -4565,7 +4565,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林碧芳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0580",
         "team": "D",
@@ -4585,7 +4585,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "何雅芬",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0581",
         "team": "A",
@@ -4605,7 +4605,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "何雅芬",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0582",
         "team": "B",
@@ -4625,7 +4625,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "葉怡芬",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0583",
         "team": "C",
@@ -4645,7 +4645,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "葉怡芬",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0584",
         "team": "D",
@@ -4665,7 +4665,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "范雅筑",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0585",
         "team": "E",
@@ -4685,7 +4685,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "莊德仁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0586",
         "team": "F",
@@ -4705,7 +4705,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "顏龍源",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0587",
         "team": "A",
@@ -4725,7 +4725,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "鄭子善",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0588",
         "team": "B",
@@ -4745,7 +4745,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "鄭子善",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0589",
         "team": "C",
@@ -4765,7 +4765,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "鄭子善",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0590",
         "team": "D",
@@ -4785,7 +4785,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "劉遠楨",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0591",
         "team": "E",
@@ -4805,7 +4805,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "劉遠楨",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0592",
         "team": "F",
@@ -4825,7 +4825,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "莊德仁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0593",
         "time": [
@@ -4844,7 +4844,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "桑慧芬",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0594",
         "time": [
@@ -4862,7 +4862,7 @@ export default[
     "classNameEng": "Field Lesson(I)",
     "required": "選",
     "teacher": "陳玉娟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0595",
         "condition": "◎第一階段需人工加選◎第二階段需人工加選◎加退選階段需人工加選",
@@ -4877,7 +4877,7 @@ export default[
     "classNameEng": "Field Lesson(II)",
     "required": "選",
     "teacher": "陳玉娟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0596",
         "condition": "◎第一階段需人工加選◎第二階段需人工加選◎加退選階段需人工加選",
@@ -4892,7 +4892,7 @@ export default[
     "classNameEng": "Field Lesson(III)",
     "required": "選",
     "teacher": "陳玉娟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0597",
         "condition": "◎第一階段需人工加選◎第二階段需人工加選◎加退選階段需人工加選",
@@ -4907,7 +4907,7 @@ export default[
     "classNameEng": "Field Lesson(A)",
     "required": "選",
     "teacher": "陳玉娟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0598",
         "condition": "◎第一階段需人工加選◎第二階段需人工加選◎加退選階段需人工加選",
@@ -4922,7 +4922,7 @@ export default[
     "classNameEng": "Field Lesson(B)",
     "required": "選",
     "teacher": "陳玉娟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0599",
         "condition": "◎第一階段需人工加選◎第二階段需人工加選◎加退選階段需人工加選",
@@ -4937,7 +4937,7 @@ export default[
     "classNameEng": "Field Lesson(C)",
     "required": "選",
     "teacher": "陳玉娟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0600",
         "condition": "◎第一階段需人工加選◎第二階段需人工加選◎加退選階段需人工加選",
@@ -4953,7 +4953,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "謝佳叡",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0601",
         "time": [
@@ -4973,7 +4973,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "張民杰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0602",
         "time": [
@@ -4992,7 +4992,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "桑慧芬",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0603",
         "team": "A",
@@ -5012,7 +5012,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林威志",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0604",
         "team": "B",
@@ -5032,7 +5032,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "魯先華",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0605",
         "team": "C",
@@ -5052,7 +5052,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "魯先華",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0606",
         "team": "D",
@@ -5072,7 +5072,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "吳淑禎",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0607",
         "time": [
@@ -5091,7 +5091,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "徐秀婕",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0608",
         "team": "A",
@@ -5110,7 +5110,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "顏龍源",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0609",
         "team": "B",
@@ -5129,7 +5129,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "顏龍源",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0610",
         "team": "C",
@@ -5148,7 +5148,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "吳淑禎",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0611",
         "team": "D",
@@ -5167,7 +5167,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "吳淑禎",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0612",
         "team": "E",
@@ -5186,7 +5186,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "葉明芬",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0613",
         "time": [
@@ -5205,7 +5205,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "高松景",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0614",
         "time": [
@@ -5225,7 +5225,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "高松景",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0615",
         "time": [
@@ -5245,7 +5245,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "郝永崴",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0616",
         "time": [
@@ -5265,7 +5265,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "王榮春",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0617",
         "time": [
@@ -5285,7 +5285,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "桑慧芬",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0618",
         "team": "A",
@@ -5306,7 +5306,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "葉明芬",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0619",
         "team": "B",
@@ -5327,7 +5327,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "羅美蘭",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0621",
         "team": "B",
@@ -5347,7 +5347,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "張淑靜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0622",
         "team": "C",
@@ -5368,7 +5368,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "柯琦",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0620",
         "team": "A",
@@ -5389,7 +5389,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "柯琦",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0623",
         "team": "A",
@@ -5410,7 +5410,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "柯琦",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0624",
         "team": "B",
@@ -5430,7 +5430,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "范雅筑",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0626",
         "team": "B",
@@ -5451,7 +5451,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "柯琦",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0625",
         "team": "A",
@@ -5472,7 +5472,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "朱啟台",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0627",
         "time": [
@@ -5491,7 +5491,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "于曉平",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0628",
         "team": "C",
@@ -5513,7 +5513,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "陳偉仁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0629",
         "team": "D",
@@ -5535,7 +5535,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "于曉平",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0630",
         "team": "B",
@@ -5555,7 +5555,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "潘裕豐",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0631",
         "team": "A",
@@ -5575,7 +5575,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "李乙明",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0632",
         "team": "B",
@@ -5595,7 +5595,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "潘裕豐",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0633",
         "time": [
@@ -5614,7 +5614,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "李乙明",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0634",
         "time": [
@@ -5633,7 +5633,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "吳淑敏",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0635",
         "time": [
@@ -5652,7 +5652,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "劉秀丹",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0636",
         "team": "A",
@@ -5672,7 +5672,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "謝佳男",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0637",
         "team": "B",
@@ -5692,7 +5692,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "邱春瑜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0638",
         "time": [
@@ -5711,7 +5711,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "李家兆",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0639",
         "time": [
@@ -5730,7 +5730,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "張素貞",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0640",
         "team": "A",
@@ -5750,7 +5750,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "李偉清",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0641",
         "team": "B",
@@ -5770,7 +5770,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "林淑莉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0643",
         "team": "D",
@@ -5791,7 +5791,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "廖靜宜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0642",
         "team": "C",
@@ -5812,7 +5812,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "傅祖怡",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0644",
         "time": [
@@ -5832,7 +5832,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "吳舜文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0645",
         "time": [
@@ -5851,7 +5851,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳偉仁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0646",
         "time": [
@@ -5870,7 +5870,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "進明",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0647",
         "time": [
@@ -5890,7 +5890,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "黃嘉笙",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2499,
         "team": "A",
@@ -5912,7 +5912,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "曾明生",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2500,
         "team": "B",
@@ -5934,7 +5934,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "陳慶鴻",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2501,
         "team": "A",
@@ -5955,7 +5955,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "陳慶鴻",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2502,
         "team": "B",
@@ -5976,7 +5976,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "林淑惠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2503,
         "team": "A",
@@ -5997,7 +5997,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "林淑惠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2504,
         "team": "B",
@@ -6018,7 +6018,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "林雯雯",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2505,
         "team": "C",
@@ -6039,7 +6039,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "林雯雯",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3353,
         "team": "D",
@@ -6060,7 +6060,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "王建睎",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2506,
         "team": "A",
@@ -6081,7 +6081,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "王重引",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2507,
         "team": "B",
@@ -6102,7 +6102,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "王重引",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2508,
         "team": "C",
@@ -6123,7 +6123,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "于文蕙",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2509,
         "team": "D",
@@ -6144,7 +6144,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "王建睎",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2510,
         "team": "E",
@@ -6165,7 +6165,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "黃嘉笙",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2511,
         "team": "F",
@@ -6186,7 +6186,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "黃嘉笙",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2512,
         "team": "G",
@@ -6207,7 +6207,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "張桂菱",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2513,
         "time": [
@@ -6227,7 +6227,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "鍾寶弘",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2514,
         "team": "A",
@@ -6248,7 +6248,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "鍾寶弘",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2515,
         "team": "B",
@@ -6269,7 +6269,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "莊欣耘",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2516,
         "team": "C",
@@ -6290,7 +6290,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "莊欣耘",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2517,
         "team": "D",
@@ -6311,7 +6311,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "陳昀宗",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2518,
         "time": [
@@ -6331,7 +6331,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "黃欽永",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2519,
         "time": [
@@ -6351,7 +6351,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "余建霖",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2520,
         "team": "A",
@@ -6372,7 +6372,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "余建霖",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2521,
         "team": "B",
@@ -6393,7 +6393,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "余建霖",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2522,
         "team": "C",
@@ -6414,7 +6414,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "陳昀宗",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2523,
         "team": "A",
@@ -6435,7 +6435,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "陳昀宗",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2524,
         "team": "B",
@@ -6456,7 +6456,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "楊云瑢",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3284,
         "team": "C",
@@ -6477,7 +6477,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "楊云瑢",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3285,
         "team": "D",
@@ -6498,7 +6498,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "楊云瑢",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3286,
         "team": "E",
@@ -6519,7 +6519,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "鄭立夫",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2525,
         "team": "A",
@@ -6540,7 +6540,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "鄭立夫",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2526,
         "team": "B",
@@ -6561,7 +6561,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "鄭立夫",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2527,
         "team": "C",
@@ -6582,7 +6582,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "鄭國輝",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2528,
         "time": [
@@ -6602,7 +6602,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "曾明生",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2529,
         "time": [
@@ -6622,7 +6622,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "詹俊成",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2530,
         "team": "A",
@@ -6643,7 +6643,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "朱瓊苓",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2531,
         "team": "B",
@@ -6664,7 +6664,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "朱瓊苓",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2532,
         "team": "C",
@@ -6685,7 +6685,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "詹俊成",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2533,
         "team": "D",
@@ -6706,7 +6706,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "卓俊辰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2534,
         "team": "E",
@@ -6727,7 +6727,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "林子文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2535,
         "time": [
@@ -6747,7 +6747,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "吳采陵",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2538,
         "team": "A",
@@ -6768,7 +6768,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "吳采陵",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2539,
         "team": "B",
@@ -6789,7 +6789,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "張容軒",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2540,
         "team": "A",
@@ -6810,7 +6810,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "張容軒",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2541,
         "team": "B",
@@ -6831,7 +6831,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "張容軒",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2542,
         "team": "C",
@@ -6852,7 +6852,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "張容軒",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2543,
         "team": "D",
@@ -6873,7 +6873,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "張容軒",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2544,
         "team": "E",
@@ -6894,7 +6894,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "張容軒",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2545,
         "team": "F",
@@ -6915,7 +6915,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "李秉鴻",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3354,
         "team": "G",
@@ -6936,7 +6936,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "陳玫伶",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2546,
         "team": "A",
@@ -6957,7 +6957,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "邱得全",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2547,
         "team": "B",
@@ -6978,7 +6978,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "陳玫伶",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2548,
         "team": "C",
@@ -6999,7 +6999,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "溫良財",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2549,
         "team": "D",
@@ -7020,7 +7020,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "王重引",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2550,
         "time": [
@@ -7040,7 +7040,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "林涓",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2551,
         "team": "A",
@@ -7061,7 +7061,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "張川鈴",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2552,
         "team": "B",
@@ -7082,7 +7082,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "徐孟達",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2553,
         "team": "C",
@@ -7103,7 +7103,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "林涓",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2554,
         "team": "D",
@@ -7124,7 +7124,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "蔡虔祿",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2555,
         "team": "E",
@@ -7145,7 +7145,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "張川鈴",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2556,
         "team": "F",
@@ -7166,7 +7166,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "張川鈴",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2557,
         "team": "G",
@@ -7187,7 +7187,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "蔡虔祿",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2558,
         "team": "H",
@@ -7208,7 +7208,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "張川鈴",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2559,
         "team": "I",
@@ -7229,7 +7229,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "張川鈴",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2560,
         "team": "J",
@@ -7250,7 +7250,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "潘光敏",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2561,
         "team": "K",
@@ -7271,7 +7271,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "李家豪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2562,
         "team": "A",
@@ -7292,7 +7292,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "李家豪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2563,
         "team": "B",
@@ -7313,7 +7313,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "李家豪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2564,
         "team": "C",
@@ -7334,7 +7334,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "林岱樵",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2565,
         "team": "D",
@@ -7355,7 +7355,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "李家豪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2566,
         "team": "E",
@@ -7376,7 +7376,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "李家豪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2567,
         "team": "F",
@@ -7397,7 +7397,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "李家豪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2568,
         "team": "G",
@@ -7418,7 +7418,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "李家豪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2569,
         "team": "H",
@@ -7439,7 +7439,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "施亦婕",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2570,
         "team": "A",
@@ -7460,7 +7460,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "施亦婕",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2571,
         "team": "B",
@@ -7481,7 +7481,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "施亦婕",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2572,
         "team": "C",
@@ -7502,7 +7502,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "施亦婕",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2573,
         "team": "D",
@@ -7523,7 +7523,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "徐孟達",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2574,
         "team": "E",
@@ -7544,7 +7544,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "王傑賢",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2575,
         "team": "F",
@@ -7565,7 +7565,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "施亦婕",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2576,
         "team": "G",
@@ -7586,7 +7586,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "施亦婕",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2577,
         "team": "H",
@@ -7607,7 +7607,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "施亦婕",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2578,
         "team": "I",
@@ -7628,7 +7628,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "陳履賢",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2579,
         "team": "A",
@@ -7649,7 +7649,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "鄭國輝",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2580,
         "team": "B",
@@ -7670,7 +7670,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "鄭國輝",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2581,
         "team": "C",
@@ -7691,7 +7691,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "陳履賢",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2582,
         "team": "D",
@@ -7712,7 +7712,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "黃國恩",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2583,
         "time": [
@@ -7732,7 +7732,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "曾明生",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2584,
         "team": "A",
@@ -7753,7 +7753,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "張桂菱",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2585,
         "team": "B",
@@ -7774,7 +7774,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "曾明生",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2586,
         "team": "A",
@@ -7795,7 +7795,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "黃長福",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2587,
         "team": "B",
@@ -7816,7 +7816,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "張耀庭",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2588,
         "team": "C",
@@ -7837,7 +7837,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "張耀庭",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2589,
         "team": "D",
@@ -7858,7 +7858,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "黃長福",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2590,
         "team": "E",
@@ -7879,7 +7879,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "王建睎",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2591,
         "team": "A",
@@ -7900,7 +7900,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "黃珮昀",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2592,
         "team": "B",
@@ -7921,7 +7921,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "黃珮昀",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2593,
         "team": "C",
@@ -7942,7 +7942,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "張琪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2594,
         "team": "A",
@@ -7963,7 +7963,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "張琪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2595,
         "team": "B",
@@ -7984,7 +7984,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "翁士航",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2596,
         "team": "C",
@@ -8005,7 +8005,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "林淑惠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2597,
         "team": "A",
@@ -8026,7 +8026,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "詹俊成",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2598,
         "team": "B",
@@ -8047,7 +8047,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "林雯雯",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2599,
         "team": "C",
@@ -8068,7 +8068,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "張家豪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2600,
         "team": "D",
@@ -8089,7 +8089,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "林淑惠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2601,
         "team": "E",
@@ -8110,7 +8110,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "林雯雯",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3355,
         "team": "F",
@@ -8131,7 +8131,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "程紹同",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2602,
         "team": "A",
@@ -8152,7 +8152,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "程紹同",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2603,
         "team": "B",
@@ -8173,7 +8173,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "張琬渝",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2604,
         "team": "A",
@@ -8194,7 +8194,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "張琬渝",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2605,
         "team": "B",
@@ -8215,7 +8215,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "林慧敏",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2606,
         "team": "A",
@@ -8236,7 +8236,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "林子文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2607,
         "team": "B",
@@ -8257,7 +8257,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "于文蕙",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2608,
         "team": "C",
@@ -8278,7 +8278,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "林慧敏",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2609,
         "team": "D",
@@ -8299,7 +8299,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "張桂菱",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2610,
         "team": "E",
@@ -8320,7 +8320,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "蘇玫尹",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2611,
         "team": "F",
@@ -8341,7 +8341,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "蘇玫尹",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2612,
         "team": "G",
@@ -8362,7 +8362,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "楊昌展",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2613,
         "team": "A",
@@ -8383,7 +8383,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "楊昌展",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2614,
         "team": "B",
@@ -8404,7 +8404,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "莊珮琪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2615,
         "team": "C",
@@ -8425,7 +8425,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "莊珮琪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2616,
         "team": "D",
@@ -8446,7 +8446,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "張容軒",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2617,
         "time": [
@@ -8466,7 +8466,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "劉錦璋",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2618,
         "time": [
@@ -8486,7 +8486,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "林涓",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2619,
         "time": [
@@ -8506,7 +8506,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "王傑賢",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2620,
         "time": [
@@ -8526,7 +8526,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "鄭國輝",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2621,
         "time": [
@@ -8546,7 +8546,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "張耀庭",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2622,
         "time": [
@@ -8566,7 +8566,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "吳采陵",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2623,
         "time": [
@@ -8586,7 +8586,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "林伯修",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2624,
         "time": [
@@ -8606,7 +8606,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "周台英",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2625,
         "team": "A",
@@ -8627,7 +8627,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "周台英",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2626,
         "team": "B",
@@ -8648,7 +8648,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "黃正杰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2627,
         "time": [
@@ -8668,7 +8668,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "劉昶佑",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2628,
         "team": "A",
@@ -8689,7 +8689,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "劉昶佑",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2629,
         "team": "B",
@@ -8710,7 +8710,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "詹俊成",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2630,
         "condition": "◎第一階段需人工加選◎第二階段需人工加選◎加退選階段需人工加選允許重複修",
@@ -8726,7 +8726,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "李家豪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2631,
         "condition": "◎第一階段需人工加選◎第二階段需人工加選◎加退選階段需人工加選允許重複修",
@@ -8742,7 +8742,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "王鶴森",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2632,
         "team": "F",
@@ -8759,7 +8759,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "張容軒",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2633,
         "team": "M",
@@ -8776,7 +8776,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "王鶴森",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2634,
         "team": "F",
@@ -8793,7 +8793,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "王鶴森",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2635,
         "team": "M",
@@ -8810,7 +8810,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "王鶴森",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2636,
         "condition": "◎第一階段需人工加選◎第二階段需人工加選◎加退選階段需人工加選允許重複修",
@@ -8826,7 +8826,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "施亦婕",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2637,
         "condition": "◎第一階段需人工加選◎第二階段需人工加選◎加退選階段需人工加選允許重複修",
@@ -8842,7 +8842,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "王鶴森",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2638,
         "condition": "◎第一階段需人工加選◎第二階段需人工加選◎加退選階段需人工加選允許重複修",
@@ -8858,7 +8858,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "王鶴森",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2639,
         "condition": "◎第一階段需人工加選◎第二階段需人工加選◎加退選階段需人工加選允許重複修",
@@ -8874,7 +8874,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "李娓娓",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0908",
         "team": "A",
@@ -8896,7 +8896,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "陳惠齡",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0909",
         "team": "B",
@@ -8917,7 +8917,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "林淑慧",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0910",
         "time": [
@@ -8936,7 +8936,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "陳室如",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0911",
         "time": [
@@ -8956,7 +8956,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "左乙萱",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0912",
         "team": "A",
@@ -8978,7 +8978,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "左乙萱",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0913",
         "team": "B",
@@ -8999,7 +8999,7 @@ export default[
     "score": 3,
     "required": "通",
     "teacher": "王宏豪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0914",
         "time": [
@@ -9018,7 +9018,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "馮翊綱",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0915",
         "time": [
@@ -9037,7 +9037,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "蔡孟珍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0916",
         "time": [
@@ -9057,7 +9057,7 @@ export default[
     "score": 3,
     "required": "通",
     "teacher": "蘇榕",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0917",
         "time": [
@@ -9077,7 +9077,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "蔡家丘",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0918",
         "time": [
@@ -9096,7 +9096,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "王望舒",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0919",
         "time": [
@@ -9116,7 +9116,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "王宏豪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3359,
         "time": [
@@ -9135,7 +9135,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "傅皓政",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0920",
         "team": "A",
@@ -9156,7 +9156,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "王鍾山",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0921",
         "team": "B",
@@ -9177,7 +9177,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "王鍾山",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0922",
         "team": "C",
@@ -9198,7 +9198,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "紀金慶",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0923",
         "time": [
@@ -9217,7 +9217,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "黃瑩暖",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0924",
         "time": [
@@ -9237,7 +9237,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "謝聰輝",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0925",
         "time": [
@@ -9257,7 +9257,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "鄭鈞瑋",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0926",
         "team": "A",
@@ -9277,7 +9277,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "鄭鈞瑋",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0927",
         "team": "B",
@@ -9297,7 +9297,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "紀金慶",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0928",
         "team": "C",
@@ -9317,7 +9317,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "林陳涌",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0929",
         "time": [
@@ -9336,7 +9336,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "釋見見",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0930",
         "time": [
@@ -9356,7 +9356,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "張敦為",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0931",
         "time": [
@@ -9377,7 +9377,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "張敦為",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0932",
         "time": [
@@ -9396,7 +9396,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "陳彥",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0933",
         "team": "A",
@@ -9417,7 +9417,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "劉恆妏",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0934",
         "team": "B",
@@ -9438,7 +9438,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "呂啟民",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0935",
         "time": [
@@ -9458,7 +9458,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "莊佳穎",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0936",
         "time": [
@@ -9477,7 +9477,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "楊樺",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0937",
         "time": [
@@ -9496,7 +9496,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "左乙萱",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0938",
         "team": "A",
@@ -9518,7 +9518,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "左乙萱",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0939",
         "team": "B",
@@ -9539,7 +9539,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "姜雲生",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0940",
         "time": [
@@ -9559,7 +9559,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "施友元",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0941",
         "team": "A",
@@ -9580,7 +9580,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "徐揚",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0942",
         "team": "B",
@@ -9601,7 +9601,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "劉傳璽 陳建宇",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0943",
         "time": [
@@ -9620,7 +9620,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "鍾豔攸",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0944",
         "time": [
@@ -9639,7 +9639,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "陳健文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0945",
         "team": "A",
@@ -9659,7 +9659,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "陳建元",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0946",
         "team": "B",
@@ -9679,7 +9679,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "陳健文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0947",
         "time": [
@@ -9698,7 +9698,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "陳永龍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0948",
         "time": [
@@ -9717,7 +9717,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "陳佳宏",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0949",
         "time": [
@@ -9737,7 +9737,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "陳志豪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0950",
         "time": [
@@ -9756,7 +9756,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "潘鳳娟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0951",
         "time": [
@@ -9776,7 +9776,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "胡元玲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0952",
         "time": [
@@ -9796,7 +9796,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "黃玫瑄",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0953",
         "team": "A",
@@ -9816,7 +9816,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "黃玫瑄",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0954",
         "team": "B",
@@ -9836,7 +9836,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "郭乃禎",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0955",
         "time": [
@@ -9855,7 +9855,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "黃玫瑄",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0956",
         "time": [
@@ -9876,7 +9876,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "廖弘民",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0957",
         "time": [
@@ -9895,7 +9895,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "王銀國",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0958",
         "team": "A",
@@ -9916,7 +9916,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "王銀國",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0959",
         "team": "B",
@@ -9937,7 +9937,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "蔡承志",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0960",
         "team": "C",
@@ -9957,7 +9957,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "鍾兆晉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0961",
         "team": "A",
@@ -9977,7 +9977,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "鍾兆晉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0962",
         "team": "B",
@@ -9997,7 +9997,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "李旻憲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0963",
         "team": "A",
@@ -10017,7 +10017,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "林陳涌",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0964",
         "team": "B",
@@ -10037,7 +10037,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "蔡承志",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0965",
         "time": [
@@ -10056,7 +10056,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "劉啟民",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0966",
         "team": "A",
@@ -10076,7 +10076,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "劉啟民",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0967",
         "team": "B",
@@ -10096,7 +10096,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "陳珍源",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0968",
         "time": [
@@ -10115,7 +10115,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "林昌平",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0969",
         "time": [
@@ -10134,7 +10134,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "簡培修",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0970",
         "team": "A",
@@ -10154,7 +10154,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "張凌倩",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0971",
         "team": "B",
@@ -10174,7 +10174,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "簡培修",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0972",
         "team": "C",
@@ -10194,7 +10194,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "蔡明男",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0973",
         "team": "D",
@@ -10214,7 +10214,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "蔡明男",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0974",
         "team": "E",
@@ -10234,7 +10234,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "邵森蘭",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0975",
         "team": "F",
@@ -10254,7 +10254,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "江政杰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0976",
         "team": "G",
@@ -10274,7 +10274,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "江政杰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0977",
         "team": "H",
@@ -10294,7 +10294,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "張凌倩",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0978",
         "team": "I",
@@ -10314,7 +10314,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "黃芳蘭",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0979",
         "team": "J",
@@ -10335,7 +10335,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "林耘逸",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0980",
         "time": [
@@ -10354,7 +10354,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "劉建成",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0981",
         "team": "A",
@@ -10375,7 +10375,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "劉建成",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0982",
         "team": "B",
@@ -10395,7 +10395,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "林小慧",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0983",
         "team": "A",
@@ -10415,7 +10415,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "何英奇",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0984",
         "team": "B",
@@ -10435,7 +10435,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "吳清輝",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0985",
         "team": "A",
@@ -10455,7 +10455,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "吳清輝",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0986",
         "team": "B",
@@ -10475,7 +10475,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "林宜徵",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0987",
         "time": [
@@ -10494,7 +10494,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "王祥安",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0988",
         "team": "A",
@@ -10514,7 +10514,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "王祥安",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0989",
         "team": "B",
@@ -10534,7 +10534,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "劉建成",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0990",
         "time": [
@@ -10553,7 +10553,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "蔣宗哲 劉有德",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0991",
         "time": [
@@ -10573,7 +10573,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "林宜徵",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0992",
         "time": [
@@ -10592,7 +10592,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "劉建成",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0993",
         "team": "A",
@@ -10612,7 +10612,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "劉建成",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0994",
         "team": "B",
@@ -10633,7 +10633,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "橋本康弘",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0995",
         "time": [
@@ -10653,7 +10653,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "鄭淳護",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0996",
         "team": "A",
@@ -10673,7 +10673,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "郭金國",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0997",
         "team": "B",
@@ -10693,7 +10693,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "張子超",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0998",
         "team": "A",
@@ -10713,7 +10713,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "李清安",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0999",
         "team": "B",
@@ -10733,7 +10733,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "姜雲生",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1000,
         "time": [
@@ -10753,7 +10753,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "王震哲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1001,
         "time": [
@@ -10773,7 +10773,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "劉建成",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1002,
         "team": "A",
@@ -10793,7 +10793,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "劉建成",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1003,
         "team": "B",
@@ -10813,7 +10813,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "顏妙璇",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1004,
         "team": "A",
@@ -10833,7 +10833,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "顏妙璇",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1005,
         "team": "B",
@@ -10853,7 +10853,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "李悅寧",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1006,
         "team": "A",
@@ -10874,7 +10874,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "橋本康弘",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1007,
         "team": "B",
@@ -10896,7 +10896,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "賈至達",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1008,
         "time": [
@@ -10915,7 +10915,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "李景峰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1009,
         "team": "A",
@@ -10935,7 +10935,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "李景峰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1010,
         "team": "B",
@@ -10956,7 +10956,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "彭書韻",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1011,
         "time": [
@@ -10976,7 +10976,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "蘇淑娟 張子超 蔡慧敏",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1012,
         "time": [
@@ -10996,7 +10996,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "彭書韻",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1013,
         "time": [
@@ -11015,7 +11015,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "吳佩蓉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1014,
         "time": [
@@ -11035,7 +11035,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "林秀玲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1016,
         "team": "B",
@@ -11056,7 +11056,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "狄亞倫",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1015,
         "team": "A",
@@ -11076,7 +11076,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "鄭怡庭",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1017,
         "time": [
@@ -11095,7 +11095,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "楊諮燕",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1018,
         "team": "A",
@@ -11115,7 +11115,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "朱采翎",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1019,
         "team": "B",
@@ -11135,7 +11135,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "朱采翎",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1020,
         "team": "C",
@@ -11155,7 +11155,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "黃美齡",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1022,
         "team": "E",
@@ -11175,7 +11175,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "蘇宜芬",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1023,
         "team": "F",
@@ -11196,7 +11196,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "黃美齡",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1021,
         "team": "D",
@@ -11216,7 +11216,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "盧志權",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1025,
         "time": [
@@ -11237,7 +11237,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "范俊銘",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1026,
         "time": [
@@ -11256,7 +11256,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "朱文增",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1027,
         "time": [
@@ -11275,7 +11275,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "李晶",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1028,
         "time": [
@@ -11294,7 +11294,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "林慶宏",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1029,
         "time": [
@@ -11313,7 +11313,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "謝秀卉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1030,
         "time": [
@@ -11332,7 +11332,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "林香薇",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1031,
         "time": [
@@ -11353,7 +11353,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "王思韻",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1032,
         "time": [
@@ -11374,7 +11374,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "林淑雲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1033,
         "time": [
@@ -11394,7 +11394,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "林南",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1034,
         "time": [
@@ -11414,7 +11414,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "田正利",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1035,
         "time": [
@@ -11435,7 +11435,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "颯楊",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1036,
         "time": [
@@ -11454,7 +11454,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "張怡倩",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1037,
         "team": "A",
@@ -11475,7 +11475,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "張怡倩",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1038,
         "team": "B",
@@ -11496,7 +11496,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "許菁娟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1039,
         "team": "C",
@@ -11517,7 +11517,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "許菁娟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1040,
         "team": "D",
@@ -11538,7 +11538,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "楊慧娟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1041,
         "team": "A",
@@ -11559,7 +11559,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "楊慧娟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1042,
         "team": "B",
@@ -11580,7 +11580,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "張乃翠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1043,
         "team": "A",
@@ -11601,7 +11601,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "張乃翠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1044,
         "team": "B",
@@ -11622,7 +11622,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "賀中慧",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1045,
         "team": "A",
@@ -11643,7 +11643,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "賀中慧",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1046,
         "team": "B",
@@ -11664,7 +11664,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "譚華德",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1047,
         "team": "A",
@@ -11685,7 +11685,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "譚華德",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1048,
         "team": "B",
@@ -11706,7 +11706,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "劉陳石草",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1049,
         "team": "A",
@@ -11727,7 +11727,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "劉陳石草",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1050,
         "team": "B",
@@ -11748,7 +11748,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "張怡倩",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1051,
         "team": "A",
@@ -11769,7 +11769,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "許菁娟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1052,
         "team": "B",
@@ -11790,7 +11790,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "馮燕妮",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1053,
         "team": "A",
@@ -11811,7 +11811,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "馮燕妮",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1054,
         "team": "B",
@@ -11832,7 +11832,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "陳際宇",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1055,
         "team": "A",
@@ -11853,7 +11853,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "陳際宇",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1056,
         "team": "B",
@@ -11875,7 +11875,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "葉孟宛",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1057,
         "time": [
@@ -11895,7 +11895,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "呂國棟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1058,
         "time": [
@@ -11914,7 +11914,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "沈林琥",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1059,
         "time": [
@@ -11933,7 +11933,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "徐筱琦",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1060,
         "time": [
@@ -11953,7 +11953,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "黃玫瑄",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1061,
         "time": [
@@ -11972,7 +11972,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "黃玫瑄",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1062,
         "time": [
@@ -11991,7 +11991,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "陳伊琳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1063,
         "team": "A",
@@ -12013,7 +12013,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "姜兆眉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1064,
         "team": "B",
@@ -12035,7 +12035,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "徐敏雄",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1065,
         "team": "C",
@@ -12057,7 +12057,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "未定",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1066,
         "team": "D",
@@ -12079,7 +12079,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "吳志文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1067,
         "team": "E",
@@ -12101,7 +12101,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "林佳範",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1068,
         "team": "F",
@@ -12123,7 +12123,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "劉秀丹",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1069,
         "team": "G",
@@ -12145,7 +12145,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "林宗進",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1070,
         "team": "H",
@@ -12167,7 +12167,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "胡翠君",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1071,
         "team": "I",
@@ -12190,7 +12190,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "鄭英傑 劉宇挺 江學瀅 鄭怡庭",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1072,
         "time": [
@@ -12209,7 +12209,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "徐國能",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1073,
         "team": "A",
@@ -12231,7 +12231,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "張瓊惠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1074,
         "team": "B",
@@ -12253,7 +12253,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "陳昭揚",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1075,
         "team": "C",
@@ -12275,7 +12275,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "李宗祐",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1076,
         "team": "D",
@@ -12297,7 +12297,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "洪立三",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1077,
         "team": "E",
@@ -12319,7 +12319,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "劉承賢",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1078,
         "team": "F",
@@ -12341,7 +12341,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "許志農",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3311,
         "team": "A",
@@ -12363,7 +12363,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "蔡志申 林文欽",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1079,
         "team": "B",
@@ -12385,7 +12385,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "呂家榮 吳學亮",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1080,
         "team": "C",
@@ -12407,7 +12407,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "賴韻如",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1081,
         "team": "D",
@@ -12429,7 +12429,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "曾瑋玲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1082,
         "team": "E",
@@ -12451,7 +12451,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "蔣宗哲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1083,
         "team": "F",
@@ -12473,7 +12473,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "黃昱倫",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1084,
         "team": "A",
@@ -12495,7 +12495,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "林靜萍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1085,
         "team": "B",
@@ -12517,7 +12517,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "蔡於儒",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1086,
         "team": "C",
@@ -12539,7 +12539,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "莊連東",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1087,
         "team": "A",
@@ -12561,7 +12561,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "宋曉明",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1088,
         "team": "B",
@@ -12584,7 +12584,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "長友大輔",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1089,
         "team": "C",
@@ -12606,7 +12606,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "吳佩蓉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1090,
         "team": "A",
@@ -12628,7 +12628,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "梁文菁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1091,
         "team": "B",
@@ -12650,7 +12650,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "邱皓政",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1092,
         "time": [
@@ -12671,7 +12671,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "林昌平",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1093,
         "team": "A",
@@ -12693,7 +12693,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "劉崇仁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1094,
         "team": "B",
@@ -12715,7 +12715,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "邱詩雯",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3300,
         "team": "C",
@@ -12737,7 +12737,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "曾瓊慧",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3406,
         "team": "A",
@@ -12758,7 +12758,7 @@ export default[
     "score": 3,
     "required": "通",
     "teacher": "洪英正",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3445,
         "team": "A",
@@ -12780,7 +12780,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "郭任?",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3431,
         "team": "A",
@@ -12803,7 +12803,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "郭任?",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3434,
         "team": "A",
@@ -12825,7 +12825,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "許碩驛",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3413,
         "team": "A",
@@ -12847,7 +12847,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "Richard",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3407,
         "team": "A",
@@ -12868,7 +12868,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "劉有?",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3430,
         "team": "A",
@@ -12890,7 +12890,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "劉有?",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3446,
         "team": "A",
@@ -12912,7 +12912,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "黃淑怡",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3404,
         "team": "B",
@@ -12934,7 +12934,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "黃淑怡",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3403,
         "team": "A",
@@ -12955,7 +12955,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "黃淑怡",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3405,
         "team": "A",
@@ -12977,7 +12977,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "王瑩",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3408,
         "team": "A",
@@ -12998,7 +12998,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "洪秀錦",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3415,
         "team": "B",
@@ -13020,7 +13020,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "洪秀錦",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3414,
         "team": "A",
@@ -13041,7 +13041,7 @@ export default[
     "score": 3,
     "required": "通",
     "teacher": "葉國俊",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3443,
         "team": "A",
@@ -13062,7 +13062,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "歐素瑛",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3441,
         "team": "A",
@@ -13085,7 +13085,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "陳禹仲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3442,
         "team": "A",
@@ -13106,7 +13106,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "李君山",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3428,
         "team": "A",
@@ -13128,7 +13128,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "李君山",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3429,
         "team": "B",
@@ -13150,7 +13150,7 @@ export default[
     "score": 3,
     "required": "通",
     "teacher": "曾宗盛",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3419,
         "team": "A",
@@ -13171,7 +13171,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "歐素瑛",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3440,
         "team": "A",
@@ -13193,7 +13193,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "李啟龍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3401,
         "team": "A",
@@ -13215,7 +13215,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "陳錦瑜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3409,
         "team": "A",
@@ -13236,7 +13236,7 @@ export default[
     "score": 3,
     "required": "通",
     "teacher": "丁宗蘇",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3437,
         "team": "A",
@@ -13258,7 +13258,7 @@ export default[
     "score": 3,
     "required": "通",
     "teacher": "丁宗蘇",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3438,
         "team": "B",
@@ -13281,7 +13281,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "袁孝維",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3433,
         "team": "A",
@@ -13304,7 +13304,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "劉奇璋",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3432,
         "team": "A",
@@ -13326,7 +13326,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "彭溫雅",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3402,
         "team": "A",
@@ -13348,7 +13348,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "楊永慈",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3416,
         "team": "A",
@@ -13369,7 +13369,7 @@ export default[
     "score": 3,
     "required": "通",
     "teacher": "李維晏",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3427,
         "team": "A",
@@ -13390,7 +13390,7 @@ export default[
     "score": 3,
     "required": "通",
     "teacher": "陳巧玲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3444,
         "team": "A",
@@ -13411,7 +13411,7 @@ export default[
     "score": 3,
     "required": "通",
     "teacher": "江介維",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3435,
         "team": "A",
@@ -13432,7 +13432,7 @@ export default[
     "score": 3,
     "required": "通",
     "teacher": "熊宜君",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3439,
         "team": "A",
@@ -13453,7 +13453,7 @@ export default[
     "score": 3,
     "required": "通",
     "teacher": "張  晨",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3417,
         "team": "A",
@@ -13475,7 +13475,7 @@ export default[
     "score": 3,
     "required": "通",
     "teacher": "柯凱?",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3426,
         "team": "A",
@@ -13496,7 +13496,7 @@ export default[
     "score": 3,
     "required": "通",
     "teacher": "蘇虹菱",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3436,
         "team": "A",
@@ -13517,7 +13517,7 @@ export default[
     "score": 3,
     "required": "通",
     "teacher": "蘇虹菱",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3420,
         "team": "A",
@@ -13538,7 +13538,7 @@ export default[
     "score": 3,
     "required": "通",
     "teacher": "劉少雄",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3418,
         "team": "A",
@@ -13560,7 +13560,7 @@ export default[
     "score": 3,
     "required": "通",
     "teacher": "張瀛太",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3410,
         "team": "A",
@@ -13581,7 +13581,7 @@ export default[
     "score": 3,
     "required": "通",
     "teacher": "張瀛太",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3411,
         "team": "B",
@@ -13602,7 +13602,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "胡至柔",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3448,
         "team": "B",
@@ -13624,7 +13624,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "陳翊齊",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3447,
         "team": "A",
@@ -13645,7 +13645,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "陳巧玲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3449,
         "team": "A",
@@ -13666,7 +13666,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "張  晨",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3451,
         "team": "C",
@@ -13688,7 +13688,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "葉芳萍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3450,
         "team": "B",
@@ -13710,7 +13710,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "柯凱?",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3452,
         "team": "A",
@@ -13731,7 +13731,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "陳翊齊",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3424,
         "team": "A",
@@ -13753,7 +13753,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "陳翊齊",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3425,
         "team": "B",
@@ -13774,7 +13774,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "江介維",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3421,
         "team": "A",
@@ -13795,7 +13795,7 @@ export default[
     "score": 3,
     "required": "通",
     "teacher": "熊宜君",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3422,
         "team": "A",
@@ -13817,7 +13817,7 @@ export default[
     "score": 3,
     "required": "通",
     "teacher": "歐墨然",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3423,
         "team": "B",
@@ -13838,7 +13838,7 @@ export default[
     "score": 2,
     "required": "通",
     "teacher": "黃信洋",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3412,
         "team": "A",
@@ -13859,7 +13859,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "謝邦彥",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0001",
         "time": [
@@ -13879,7 +13879,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳恭平",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4185,
         "team": "A",
@@ -13901,7 +13901,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "熊秉荃",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4320,
         "team": "A",
@@ -13924,7 +13924,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "鄭守夏",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4381,
         "team": "A",
@@ -13946,7 +13946,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "黃良得",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4534,
         "team": "A",
@@ -13969,7 +13969,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "吳家麟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4622,
         "team": "A",
@@ -13992,7 +13992,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "曹峰銘",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4699,
         "team": "A",
@@ -14015,7 +14015,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳正平",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3876,
         "team": "A",
@@ -14037,7 +14037,7 @@ export default[
     "score": 4,
     "required": "選",
     "teacher": "李明學",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3928,
         "team": "A",
@@ -14059,7 +14059,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "馬耀民",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3958,
         "team": "A",
@@ -14082,7 +14082,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "韓玉山",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3978,
         "team": "A",
@@ -14104,7 +14104,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "王珮玲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4022,
         "team": "A",
@@ -14127,7 +14127,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "謝志豪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4025,
         "team": "A",
@@ -14149,7 +14149,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "賴超倫",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4092,
         "team": "A",
@@ -14171,7 +14171,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "楊穎堅",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4199,
         "team": "A",
@@ -14193,7 +14193,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "池祥麟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4237,
         "team": "A",
@@ -14215,7 +14215,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "李文宗",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4265,
         "team": "A",
@@ -14238,7 +14238,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "賴勇成",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4295,
         "team": "A",
@@ -14261,7 +14261,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃誌川",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4296,
         "team": "A",
@@ -14284,7 +14284,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林  風",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4312,
         "team": "A",
@@ -14307,7 +14307,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "王珮玲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4340,
         "team": "A",
@@ -14331,7 +14331,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "賀詩琳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4341,
         "team": "A",
@@ -14353,7 +14353,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "黃千芬",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4413,
         "team": "A",
@@ -14376,7 +14376,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "杜宜殷",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4414,
         "team": "A",
@@ -14399,7 +14399,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "柯柏如",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4447,
         "team": "A",
@@ -14422,7 +14422,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "杜宜殷",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4538,
         "team": "A",
@@ -14444,7 +14444,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "童怡新",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4558,
         "team": "A",
@@ -14466,7 +14466,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "詹珮君",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4574,
         "team": "A",
@@ -14489,7 +14489,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李英周",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4615,
         "team": "A",
@@ -14512,7 +14512,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "楊文斌",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4626,
         "team": "A",
@@ -14535,7 +14535,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳炳宇",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4642,
         "team": "A",
@@ -14558,7 +14558,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "傅楸善",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4647,
         "team": "A",
@@ -14580,7 +14580,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳宜廷",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4658,
         "team": "A",
@@ -14603,7 +14603,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "邱智賢",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4661,
         "team": "A",
@@ -14625,7 +14625,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "許鶴瀚",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4784,
         "team": "A",
@@ -14647,7 +14647,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "李宣緯",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4803,
         "team": "A",
@@ -14669,7 +14669,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "鄒平儀",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4813,
         "team": "A",
@@ -14692,7 +14692,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "黃良得",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4819,
         "team": "A",
@@ -14715,7 +14715,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張耀乾",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4828,
         "team": "A",
@@ -14738,7 +14738,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "薛克民",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4730,
         "team": "A",
@@ -14760,7 +14760,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "葉丙成",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4808,
         "team": "A",
@@ -14783,7 +14783,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳士元",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3943,
         "team": "A",
@@ -14805,7 +14805,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃從仁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3947,
         "team": "A",
@@ -14828,7 +14828,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "單偉彌",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3841,
         "team": "A",
@@ -14851,7 +14851,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "黃書緯",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4038,
         "team": "A",
@@ -14874,7 +14874,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "劉淑瓊",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4204,
         "team": "A",
@@ -14897,7 +14897,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "姜至剛",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4264,
         "team": "A",
@@ -14920,7 +14920,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蔡振家",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4297,
         "team": "A",
@@ -14944,7 +14944,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "賴喜美",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4310,
         "team": "A",
@@ -14967,7 +14967,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳誠亮",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4355,
         "team": "A",
@@ -14990,7 +14990,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "廖世偉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4389,
         "team": "A",
@@ -15012,7 +15012,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "曾庸哲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4452,
         "team": "A",
@@ -15035,7 +15035,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "吳文方",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4458,
         "team": "A",
@@ -15058,7 +15058,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "蕭仁傑",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4498,
         "team": "A",
@@ -15080,7 +15080,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張聖琳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4502,
         "team": "A",
@@ -15102,7 +15102,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林敬軒",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4529,
         "team": "A",
@@ -15125,7 +15125,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李宗玄",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4551,
         "team": "A",
@@ -15147,7 +15147,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "楊正大",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4566,
         "team": "A",
@@ -15170,7 +15170,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳淳文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4738,
         "team": "A",
@@ -15193,7 +15193,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "馬耀民",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4809,
         "team": "A",
@@ -15216,7 +15216,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "余雪明",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4823,
         "team": "A",
@@ -15239,7 +15239,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李怡青",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3948,
         "team": "A",
@@ -15262,7 +15262,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "劉建豪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4651,
         "team": "A",
@@ -15285,7 +15285,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "陳懷萱",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4486,
         "team": "A",
@@ -15308,7 +15308,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "蔡文傑",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4487,
         "team": "B",
@@ -15331,7 +15331,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳怡?",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4488,
         "team": "A",
@@ -15355,7 +15355,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "澤大衛",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3842,
         "team": "A",
@@ -15378,7 +15378,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "周承復",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3930,
         "team": "A",
@@ -15401,7 +15401,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王永松",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3976,
         "team": "A",
@@ -15423,7 +15423,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "李宗徽",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3977,
         "team": "A",
@@ -15445,7 +15445,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃千芬",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3979,
         "team": "A",
@@ -15467,7 +15467,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蕭忠仁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4005,
         "team": "A",
@@ -15490,7 +15490,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "賴文崧",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4009,
         "team": "A",
@@ -15513,7 +15513,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "謝志豪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4013,
         "team": "A",
@@ -15535,7 +15535,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "李宗徽",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4021,
         "team": "A",
@@ -15557,7 +15557,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李培芬",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4080,
         "team": "A",
@@ -15579,7 +15579,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "洪廣冀",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4081,
         "team": "A",
@@ -15602,7 +15602,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "葉仲基",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4136,
         "team": "A",
@@ -15624,7 +15624,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳淳文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4182,
         "team": "A",
@@ -15647,7 +15647,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "樂詩涵",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4186,
         "team": "A",
@@ -15670,7 +15670,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "楊一帆",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4230,
         "team": "A",
@@ -15692,7 +15692,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "廖小娟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4232,
         "team": "A",
@@ -15715,7 +15715,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "呂廷璋",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4307,
         "team": "A",
@@ -15737,7 +15737,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "蔡季廷",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4342,
         "team": "A",
@@ -15760,7 +15760,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "李文宗",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4346,
         "team": "A",
@@ -15782,7 +15782,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "賴文崧",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4351,
         "team": "A",
@@ -15805,7 +15805,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "潘建源",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4352,
         "team": "A",
@@ -15827,7 +15827,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "丘政民",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4363,
         "team": "A",
@@ -15850,7 +15850,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "阮文先",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4384,
         "team": "A",
@@ -15872,7 +15872,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "侯詠德",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4388,
         "team": "A",
@@ -15894,7 +15894,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "趙義隆",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4401,
         "team": "A",
@@ -15917,7 +15917,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "郭柏秀",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4432,
         "team": "A",
@@ -15939,7 +15939,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張以杰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4437,
         "team": "A",
@@ -15962,7 +15962,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王弘毅",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4438,
         "team": "A",
@@ -15984,7 +15984,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李明憲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4461,
         "team": "A",
@@ -16007,7 +16007,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "宋玫玫",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4482,
         "team": "A",
@@ -16030,7 +16030,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃書緯",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4484,
         "team": "A",
@@ -16053,7 +16053,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "朱士維",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4485,
         "team": "B",
@@ -16076,7 +16076,7 @@ export default[
     "score": 4,
     "required": "選",
     "teacher": "蔡宜洵",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4506,
         "team": "A",
@@ -16098,7 +16098,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林忠緯",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4526,
         "team": "A",
@@ -16121,7 +16121,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "澤大衛",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4540,
         "team": "A",
@@ -16144,7 +16144,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "吳逸民",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4544,
         "team": "A",
@@ -16166,7 +16166,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蔡忠潤",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4578,
         "team": "A",
@@ -16189,7 +16189,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林鈺雄",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4603,
         "team": "A",
@@ -16212,7 +16212,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王俊傑",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4632,
         "team": "A",
@@ -16235,7 +16235,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "徐讚昇",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4648,
         "team": "A",
@@ -16258,7 +16258,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "鄭瑋",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4657,
         "team": "A",
@@ -16281,7 +16281,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳俊全",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4659,
         "team": "A",
@@ -16303,7 +16303,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳正剛",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4746,
         "team": "A",
@@ -16326,7 +16326,7 @@ export default[
     "score": 4,
     "required": "選",
     "teacher": "王振男",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4750,
         "team": "A",
@@ -16349,7 +16349,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林偉傑",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4771,
         "team": "A",
@@ -16371,7 +16371,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "龔源成",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4786,
         "team": "A",
@@ -16393,7 +16393,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蕭旭峰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4811,
         "team": "A",
@@ -16415,7 +16415,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "薛智文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4390,
         "team": "A",
@@ -16438,7 +16438,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "徐莞曾",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3894,
         "team": "A",
@@ -16461,7 +16461,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "郭巧玲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4674,
         "team": "A",
@@ -16484,7 +16484,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "郭錦樺",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4820,
         "team": "A",
@@ -16506,7 +16506,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李典儒",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4694,
         "team": "A",
@@ -16529,7 +16529,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "薛馬坦",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4302,
         "team": "A",
@@ -16551,7 +16551,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "周中哲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4415,
         "team": "A",
@@ -16575,7 +16575,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "楊國鑫",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4071,
         "team": "A",
@@ -16598,7 +16598,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "徐澔德",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4084,
         "team": "A",
@@ -16621,7 +16621,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳怡?",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4216,
         "team": "A",
@@ -16644,7 +16644,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳書梅",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4326,
         "team": "A",
@@ -16668,7 +16668,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "曾煥凱",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4453,
         "team": "A",
@@ -16691,7 +16691,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林鈺雄",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4604,
         "team": "A",
@@ -16714,7 +16714,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "江文瑜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4689,
         "team": "A",
@@ -16736,7 +16736,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "呂欽文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4254,
         "team": "A",
@@ -16758,7 +16758,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳彥仰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3861,
         "team": "A",
@@ -16781,7 +16781,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "葉德蘭",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4423,
         "team": "A",
@@ -16799,7 +16799,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蔡文傑",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3922,
         "team": "A",
@@ -16822,7 +16822,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "柯佳吟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4007,
         "team": "A",
@@ -16844,7 +16844,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳林祈",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4016,
         "team": "A",
@@ -16866,7 +16866,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蔡偉博",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4020,
         "team": "A",
@@ -16889,7 +16889,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "盧道杰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4102,
         "team": "A",
@@ -16913,7 +16913,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "薛馬坦",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4153,
         "team": "A",
@@ -16936,7 +16936,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蔡政修",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4200,
         "team": "A",
@@ -16958,7 +16958,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "薛景中",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4229,
         "team": "A",
@@ -16981,7 +16981,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "范怡琴",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4267,
         "team": "A",
@@ -17003,7 +17003,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "王子方",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4327,
         "team": "A",
@@ -17026,7 +17026,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "中井太郎",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4332,
         "team": "A",
@@ -17049,7 +17049,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李紅春",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4463,
         "team": "A",
@@ -17072,7 +17072,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "吳宗祐",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4474,
         "team": "A",
@@ -17095,7 +17095,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林晉玄",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4500,
         "team": "A",
@@ -17118,7 +17118,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林晉玄",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4501,
         "team": "A",
@@ -17141,7 +17141,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "袁孝維",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4532,
         "team": "A",
@@ -17164,7 +17164,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "許志文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4593,
         "team": "A",
@@ -17187,7 +17187,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林楨家",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4641,
         "team": "A",
@@ -17210,7 +17210,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "魏?巍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4656,
         "team": "A",
@@ -17233,7 +17233,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "葉淑貞",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4688,
         "team": "A",
@@ -17256,7 +17256,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "江芝華",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4776,
         "team": "A",
@@ -17274,7 +17274,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳嫦芬",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4810,
         "team": "A",
@@ -17297,7 +17297,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "許朱勝",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4704,
         "team": "A",
@@ -17320,7 +17320,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "高文媛",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4535,
         "team": "A",
@@ -17342,7 +17342,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張淑英",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4119,
         "team": "A",
@@ -17365,7 +17365,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "盧信嘉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4580,
         "team": "A",
@@ -17388,7 +17388,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳時欣",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4303,
         "team": "A",
@@ -17410,7 +17410,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "盧道杰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4103,
         "team": "A",
@@ -17434,7 +17434,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "尤磊士",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4723,
         "team": "A",
@@ -17458,7 +17458,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "簡俊超",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4825,
         "team": "A",
@@ -17481,7 +17481,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "郭崇倫",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4162,
         "team": "A",
@@ -17504,7 +17504,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "葉光輝",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3857,
         "team": "A",
@@ -17526,7 +17526,7 @@ export default[
     "classNameEng": "Introduction to Civic Education",
     "score": 3,
     "required": "選",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3925,
         "team": "A",
@@ -17550,7 +17550,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "溫達",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3944,
         "team": "A",
@@ -17574,7 +17574,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "溫達",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3945,
         "team": "A",
@@ -17597,7 +17597,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳懷萱",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4085,
         "team": "A",
@@ -17620,7 +17620,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "施吉昇",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4131,
         "team": "A",
@@ -17643,7 +17643,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "廖世偉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4235,
         "team": "A",
@@ -17665,7 +17665,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張智星",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4236,
         "team": "B",
@@ -17687,7 +17687,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林鈺雄",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4605,
         "team": "A",
@@ -17710,7 +17710,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林智莉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4789,
         "team": "A",
@@ -17733,7 +17733,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林甫容",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4791,
         "team": "A",
@@ -17755,7 +17755,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳書梅",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3859,
         "team": "A",
@@ -17778,7 +17778,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "許哲源",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3868,
         "team": "A",
@@ -17800,7 +17800,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳建錦",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3953,
         "team": "A",
@@ -17824,7 +17824,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "高玄",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3991,
         "team": "A",
@@ -17847,7 +17847,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "胡植慶",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4070,
         "team": "A",
@@ -17870,7 +17870,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "朱美妃",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4075,
         "team": "A",
@@ -17893,7 +17893,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "張翠玉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4078,
         "team": "A",
@@ -17915,7 +17915,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "張琳巧",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4088,
         "team": "A",
@@ -17938,7 +17938,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "范  雲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4148,
         "team": "A",
@@ -17962,7 +17962,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "黃旻華",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4159,
         "team": "A",
@@ -17985,7 +17985,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "慕思勉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4252,
         "team": "A",
@@ -18007,7 +18007,7 @@ export default[
     "score": 4,
     "required": "選",
     "teacher": "邱啟新",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4253,
         "team": "A",
@@ -18029,7 +18029,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "江淳芳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4286,
         "team": "A",
@@ -18052,7 +18052,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蔡佳芬",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4298,
         "team": "A",
@@ -18075,7 +18075,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "楊建章",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4301,
         "team": "A",
@@ -18098,7 +18098,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "顧銓",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4348,
         "team": "A",
@@ -18121,7 +18121,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張陸滿",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4367,
         "team": "A",
@@ -18144,7 +18144,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "黃榮南",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4441,
         "team": "A",
@@ -18166,7 +18166,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳明通",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4456,
         "team": "A",
@@ -18189,7 +18189,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "周建宏",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4457,
         "team": "A",
@@ -18211,7 +18211,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蔡益坤",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4493,
         "team": "A",
@@ -18234,7 +18234,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "黃書緯",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4507,
         "team": "A",
@@ -18257,7 +18257,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳彥仰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4557,
         "team": "A",
@@ -18280,7 +18280,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "瞿志豪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4565,
         "team": "A",
@@ -18303,7 +18303,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王崇智",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4585,
         "team": "A",
@@ -18326,7 +18326,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林鈺雄",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4606,
         "team": "A",
@@ -18349,7 +18349,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "梁碧惠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4705,
         "team": "A",
@@ -18372,7 +18372,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "吳米森",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4709,
         "team": "A",
@@ -18390,7 +18390,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "項  潔",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4775,
         "team": "A",
@@ -18413,7 +18413,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "胡明哲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4793,
         "team": "A",
@@ -18436,7 +18436,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "劉奇璋",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4795,
         "team": "A",
@@ -18459,7 +18459,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "謝宏達",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4818,
         "team": "A",
@@ -18482,7 +18482,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳燕惠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4821,
         "team": "A",
@@ -18504,7 +18504,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳香君",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4834,
         "team": "A",
@@ -18527,7 +18527,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "李昆達",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4785,
         "team": "A",
@@ -18549,7 +18549,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "劉致為",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4046,
         "team": "A",
@@ -18573,7 +18573,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "羅俊雄",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4360,
         "team": "A",
@@ -18596,7 +18596,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "許添本",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4039,
         "team": "A",
@@ -18620,7 +18620,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳景然",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4643,
         "team": "A",
@@ -18643,7 +18643,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "丁建均",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4325,
         "team": "A",
@@ -18665,7 +18665,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "吳珮瑛",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4424,
         "team": "A",
@@ -18683,7 +18683,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "吳珮瑛",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4425,
         "team": "B",
@@ -18701,7 +18701,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "吳珮瑛",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4426,
         "team": "C",
@@ -18719,7 +18719,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李  綱",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3839,
         "team": "A",
@@ -18742,7 +18742,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "呂宗昕",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4130,
         "team": "A",
@@ -18765,7 +18765,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳縕儂",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4443,
         "team": "A",
@@ -18787,7 +18787,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林倩君",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4724,
         "team": "A",
@@ -18810,7 +18810,7 @@ export default[
     "score": 4,
     "required": "選",
     "teacher": "吳沛遠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4772,
         "team": "A",
@@ -18834,7 +18834,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "卿建業",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3873,
         "team": "A",
@@ -18858,7 +18858,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "施永德",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3845,
         "team": "A",
@@ -18882,7 +18882,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "劉秋婉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3911,
         "team": "A",
@@ -18905,7 +18905,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "吳永連",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3931,
         "team": "A",
@@ -18929,7 +18929,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "溫良碩",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3939,
         "team": "A",
@@ -18951,7 +18951,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "余榮熾",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3959,
         "team": "A",
@@ -18974,7 +18974,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "柯淳涵",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3965,
         "team": "A",
@@ -18997,7 +18997,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "洪美仁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3971,
         "team": "A",
@@ -19020,7 +19020,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "鍾明宗",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4024,
         "team": "A",
@@ -19042,7 +19042,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳懷萱",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4029,
         "team": "A",
@@ -19066,7 +19066,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "謝旭亮",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4042,
         "team": "A",
@@ -19088,7 +19088,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "吳珮瑛",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4090,
         "team": "A",
@@ -19110,7 +19110,7 @@ export default[
     "score": 4,
     "required": "選",
     "teacher": "江皓森",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4124,
         "team": "A",
@@ -19132,7 +19132,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "劉定萍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4137,
         "team": "A",
@@ -19154,7 +19154,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "胡哲明",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4140,
         "team": "A",
@@ -19177,7 +19177,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蔡志強",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4145,
         "team": "A",
@@ -19200,7 +19200,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "賴宏誌",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4154,
         "team": "A",
@@ -19224,7 +19224,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "小木曾啟示",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4322,
         "team": "A",
@@ -19248,7 +19248,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "藍俊宏",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4323,
         "team": "A",
@@ -19272,7 +19272,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "賀詩琳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4345,
         "team": "A",
@@ -19294,7 +19294,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃坤祥",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4353,
         "team": "A",
@@ -19316,7 +19316,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "謝依芸",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4356,
         "team": "A",
@@ -19339,7 +19339,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "謝依芸",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4357,
         "team": "B",
@@ -19362,7 +19362,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "靳宗洛",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4362,
         "team": "A",
@@ -19384,7 +19384,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "張文貞",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4395,
         "team": "A",
@@ -19408,7 +19408,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "魏志潾",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4445,
         "team": "A",
@@ -19431,7 +19431,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "南智祐",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4464,
         "team": "A",
@@ -19454,7 +19454,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "管永恕",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4473,
         "team": "A",
@@ -19476,7 +19476,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蔡文傑",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4483,
         "team": "A",
@@ -19499,7 +19499,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "曾萬年",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4497,
         "team": "A",
@@ -19521,7 +19521,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "林晉玄",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4499,
         "team": "A",
@@ -19544,7 +19544,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李百祺",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4503,
         "team": "A",
@@ -19566,7 +19566,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "葛如鈞",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4556,
         "team": "A",
@@ -19589,7 +19589,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "呂學一",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4571,
         "team": "A",
@@ -19611,7 +19611,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張書瑋",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4649,
         "team": "A",
@@ -19633,7 +19633,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "李佳霖",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4655,
         "team": "A",
@@ -19657,7 +19657,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "孟悟理",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4660,
         "team": "A",
@@ -19679,7 +19679,7 @@ export default[
     "classNameEng": "Leadership Lectures",
     "score": 2,
     "required": "選",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4703,
         "team": "A",
@@ -19701,7 +19701,7 @@ export default[
     "classNameEng": "Workplace Collaboration in the Digital Age",
     "score": 2,
     "required": "選",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4727,
         "team": "A",
@@ -19724,7 +19724,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃美嬌",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4728,
         "team": "A",
@@ -19746,7 +19746,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "汪立本",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4732,
         "team": "A",
@@ -19769,7 +19769,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "王雅青",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4751,
         "team": "A",
@@ -19791,7 +19791,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "陳珮珊",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4752,
         "team": "A",
@@ -19814,7 +19814,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "侯文祥",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4754,
         "team": "A",
@@ -19836,7 +19836,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "賴青瑞",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4755,
         "team": "A",
@@ -19859,7 +19859,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "陳維婷",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3880,
         "team": "A",
@@ -19882,7 +19882,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張嘉銓",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3920,
         "team": "A",
@@ -19905,7 +19905,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "?內英一",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3988,
         "team": "A",
@@ -19928,7 +19928,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "賴瑾",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4375,
         "team": "A",
@@ -19952,7 +19952,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "鐘嘉德",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4779,
         "team": "A",
@@ -19974,7 +19974,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蔡孟勳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4528,
         "team": "A",
@@ -19997,7 +19997,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "宋家復",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4602,
         "team": "A",
@@ -20020,7 +20020,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "賴喜美",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4305,
         "team": "A",
@@ -20043,7 +20043,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "賴喜美",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4306,
         "team": "B",
@@ -20066,7 +20066,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王鈺強",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4444,
         "team": "A",
@@ -20089,7 +20089,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "賴喜美",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4304,
         "team": "A",
@@ -20111,7 +20111,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "連韻文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4134,
         "team": "A",
@@ -20134,7 +20134,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳俊杉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4773,
         "team": "A",
@@ -20157,7 +20157,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林友瑜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3983,
         "team": "A",
@@ -20179,7 +20179,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林友瑜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3984,
         "team": "B",
@@ -20202,7 +20202,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "史蘭亭",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4059,
         "team": "A",
@@ -20226,7 +20226,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "史蘭亭",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4629,
         "team": "A",
@@ -20249,7 +20249,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "江文瑜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4682,
         "team": "A",
@@ -20273,7 +20273,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林友瑜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4763,
         "team": "A",
@@ -20296,7 +20296,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林友瑜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4764,
         "team": "B",
@@ -20318,7 +20318,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳祝嵩",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3867,
         "team": "A",
@@ -20342,7 +20342,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林友瑜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4027,
         "team": "A",
@@ -20365,7 +20365,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林友瑜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3840,
         "team": "A",
@@ -20387,7 +20387,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "洪德欽",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3843,
         "team": "A",
@@ -20410,7 +20410,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "紀佩妤",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3860,
         "team": "A",
@@ -20434,7 +20434,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "賴文崧",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3866,
         "team": "A",
@@ -20457,7 +20457,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林依依",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3881,
         "team": "A",
@@ -20479,7 +20479,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林竣達",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3891,
         "team": "A",
@@ -20503,7 +20503,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "黃旻華",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3896,
         "team": "A",
@@ -20526,7 +20526,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "吳展良",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3914,
         "team": "A",
@@ -20548,7 +20548,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "傅文芳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3924,
         "team": "A",
@@ -20570,7 +20570,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林柏安",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3938,
         "team": "A",
@@ -20592,7 +20592,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "唐牧群",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3951,
         "team": "A",
@@ -20615,7 +20615,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林建志",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3975,
         "team": "A",
@@ -20638,7 +20638,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李志煌",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3986,
         "team": "A",
@@ -20660,7 +20660,7 @@ export default[
     "score": 5,
     "required": "選",
     "teacher": "莊武諺",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3987,
         "team": "A",
@@ -20684,7 +20684,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "賀端華",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3990,
         "team": "A",
@@ -20702,7 +20702,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林竣達",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4008,
         "team": "A",
@@ -20725,7 +20725,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "史有伶",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4011,
         "team": "A",
@@ -20747,7 +20747,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "賴文崧",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4030,
         "team": "A",
@@ -20770,7 +20770,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "劉奇璋",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4033,
         "team": "A",
@@ -20793,7 +20793,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃克先",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4037,
         "team": "A",
@@ -20817,7 +20817,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "李宥霆",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4056,
         "team": "A",
@@ -20841,7 +20841,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "徐冠倫",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4057,
         "team": "A",
@@ -20865,7 +20865,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "黃振康",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4060,
         "team": "A",
@@ -20887,7 +20887,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "溫在弘",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4079,
         "team": "A",
@@ -20910,7 +20910,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "郭大維",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4125,
         "team": "A",
@@ -20933,7 +20933,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "謝吉隆",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4214,
         "team": "A",
@@ -20956,7 +20956,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "簡旭伸",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4223,
         "team": "A",
@@ -20979,7 +20979,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張裕龍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4240,
         "team": "A",
@@ -21002,7 +21002,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "周珮雯",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4241,
         "team": "A",
@@ -21025,7 +21025,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "蘇彩足",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4242,
         "team": "A",
@@ -21048,7 +21048,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "曾欽平",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4271,
         "team": "A",
@@ -21071,7 +21071,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "江介維",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4276,
         "team": "A",
@@ -21093,7 +21093,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "邱玉蟬",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4311,
         "team": "A",
@@ -21117,7 +21117,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "謝宜桓",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4329,
         "team": "A",
@@ -21140,7 +21140,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "黃建實",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4330,
         "team": "A",
@@ -21163,7 +21163,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "許鶴瀚",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4344,
         "team": "A",
@@ -21186,7 +21186,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "許正熙",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4376,
         "team": "A",
@@ -21209,7 +21209,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "張文貞",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4396,
         "team": "A",
@@ -21232,7 +21232,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李方中",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4397,
         "team": "A",
@@ -21256,7 +21256,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "楊培珊",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4398,
         "team": "A",
@@ -21279,7 +21279,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "劉憶如",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4399,
         "team": "A",
@@ -21303,7 +21303,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林孟瑢",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4410,
         "team": "A",
@@ -21326,7 +21326,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "詹迺立",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4454,
         "team": "A",
@@ -21349,7 +21349,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "熊  怡",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4467,
         "team": "A",
@@ -21371,7 +21371,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "楊鈞澔",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4468,
         "team": "A",
@@ -21393,7 +21393,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "汪書華",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4492,
         "team": "A",
@@ -21416,7 +21416,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "段維新",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4496,
         "team": "A",
@@ -21439,7 +21439,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "賴提雅",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4508,
         "team": "A",
@@ -21462,7 +21462,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "邱祈榮",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4531,
         "team": "A",
@@ -21485,7 +21485,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "王弘毅",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4552,
         "team": "A",
@@ -21507,7 +21507,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "阮清華",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4563,
         "team": "A",
@@ -21530,7 +21530,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "邱勝賢",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4564,
         "team": "A",
@@ -21553,7 +21553,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "葉素玲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4582,
         "team": "A",
@@ -21576,7 +21576,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "許詩?",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4588,
         "team": "A",
@@ -21599,7 +21599,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李瑩英",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4597,
         "team": "A",
@@ -21621,7 +21621,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "徐進鈺",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4607,
         "team": "A",
@@ -21644,7 +21644,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "孔令傑",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4624,
         "team": "A",
@@ -21667,7 +21667,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "鄭佳昆",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4627,
         "team": "A",
@@ -21690,7 +21690,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王淑美",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4631,
         "team": "A",
@@ -21713,7 +21713,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "鄭佳昆",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4650,
         "team": "A",
@@ -21736,7 +21736,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "劉亮雅",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4676,
         "team": "A",
@@ -21759,7 +21759,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "謝舒凱",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4697,
         "team": "A",
@@ -21782,7 +21782,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳人彥",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4736,
         "team": "A",
@@ -21805,7 +21805,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳彥榮",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4799,
         "team": "A",
@@ -21827,7 +21827,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "楊瑋誠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4827,
         "team": "A",
@@ -21850,7 +21850,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "柯凱?",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4830,
         "team": "A",
@@ -21872,7 +21872,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "朱國瑞",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4815,
         "team": "A",
@@ -21895,7 +21895,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳秀熙",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4787,
         "team": "A",
@@ -21917,7 +21917,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳國棟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3905,
         "team": "A",
@@ -21940,7 +21940,7 @@ export default[
     "score": 4,
     "required": "選",
     "teacher": "李芳仁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4370,
         "team": "A",
@@ -21963,7 +21963,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蔣正偉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4465,
         "team": "A",
@@ -21985,7 +21985,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王麗容",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3884,
         "team": "A",
@@ -22007,7 +22007,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳宜廷",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4287,
         "team": "A",
@@ -22029,7 +22029,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "梁朝雲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4630,
         "team": "A",
@@ -22051,7 +22051,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "劉雅瑄",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4077,
         "team": "A",
@@ -22068,7 +22068,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張俐璇",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4678,
         "team": "A",
@@ -22090,7 +22090,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "謝長澤",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4570,
         "team": "A",
@@ -22112,7 +22112,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "闕志鴻",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4087,
         "team": "A",
@@ -22135,7 +22135,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "周涵怡",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3838,
         "team": "A",
@@ -22157,7 +22157,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林如森",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4575,
         "team": "A",
@@ -22179,7 +22179,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "趙治宇",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4028,
         "team": "A",
@@ -22202,7 +22202,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "周涵怡",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4143,
         "team": "A",
@@ -22224,7 +22224,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蔡貞慧",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4210,
         "team": "A",
@@ -22246,7 +22246,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "黃長玲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4391,
         "team": "A",
@@ -22268,7 +22268,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳慧宏",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4411,
         "team": "A",
@@ -22291,7 +22291,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "賴亮全",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4547,
         "team": "A",
@@ -22314,7 +22314,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "謝欣芩",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4628,
         "team": "A",
@@ -22336,7 +22336,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "蔣秋華",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4144,
         "team": "A",
@@ -22358,7 +22358,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳翠蓮",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4769,
         "team": "A",
@@ -22380,7 +22380,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "吳慧菁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4782,
         "team": "A",
@@ -22402,7 +22402,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "梁啟德",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3923,
         "team": "A",
@@ -22424,7 +22424,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "曹景惠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3960,
         "team": "A",
@@ -22446,7 +22446,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "徐興慶",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3961,
         "team": "A",
@@ -22468,7 +22468,7 @@ export default[
     "score": 4,
     "required": "選",
     "teacher": "余佳慧",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4032,
         "team": "A",
@@ -22490,7 +22490,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "溫良碩",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4195,
         "team": "A",
@@ -22512,7 +22512,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "韓仁毓",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4225,
         "team": "A",
@@ -22534,7 +22534,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "宋麗梅",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4250,
         "team": "A",
@@ -22556,7 +22556,7 @@ export default[
     "score": 4,
     "required": "選",
     "teacher": "吳柏鋒",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4256,
         "team": "A",
@@ -22578,7 +22578,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "沈瓊桃",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4321,
         "team": "A",
@@ -22600,7 +22600,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李志中",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4374,
         "team": "A",
@@ -22622,7 +22622,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林蒼祥",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4377,
         "team": "A",
@@ -22644,7 +22644,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "鍾國彪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4378,
         "team": "A",
@@ -22666,7 +22666,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "邱玉蟬",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4379,
         "team": "A",
@@ -22689,7 +22689,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "袁  易",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4409,
         "team": "A",
@@ -22711,7 +22711,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳良治",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4494,
         "team": "A",
@@ -22733,7 +22733,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "范建得",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4527,
         "team": "A",
@@ -22755,7 +22755,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳思賢",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4600,
         "team": "A",
@@ -22778,7 +22778,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "呂育道",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4620,
         "team": "A",
@@ -22800,7 +22800,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "葉芳萍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4759,
         "team": "A",
@@ -22822,7 +22822,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "熊宜君",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4760,
         "team": "B",
@@ -22844,7 +22844,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳巧玲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4762,
         "team": "D",
@@ -22867,7 +22867,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "葉芳萍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4761,
         "team": "C",
@@ -22889,7 +22889,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳為堅",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4777,
         "team": "A",
@@ -22911,7 +22911,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "蘇志杰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4794,
         "team": "A",
@@ -22933,7 +22933,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳維鈞",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4798,
         "team": "A",
@@ -22955,7 +22955,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蘇虹菱",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4765,
         "team": "A",
@@ -22977,7 +22977,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蘇虹菱",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4766,
         "team": "B",
@@ -22999,7 +22999,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "劉奇璋",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4098,
         "team": "A",
@@ -23021,7 +23021,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "周瑞仁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4099,
         "team": "A",
@@ -23043,7 +23043,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "吳玉山",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4207,
         "team": "A",
@@ -23065,7 +23065,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃麗玲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4208,
         "team": "A",
@@ -23087,7 +23087,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃舒楣",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4592,
         "team": "A",
@@ -23110,7 +23110,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "馬鴻文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4792,
         "team": "A",
@@ -23132,7 +23132,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "吳建昌",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3926,
         "team": "A",
@@ -23154,7 +23154,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李偉泰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4000,
         "team": "A",
@@ -23176,7 +23176,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王志弘",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4224,
         "team": "A",
@@ -23199,7 +23199,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "范吉歐",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4354,
         "team": "A",
@@ -23221,7 +23221,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳良治",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4392,
         "team": "A",
@@ -23244,7 +23244,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李紀舍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4586,
         "team": "A",
@@ -23266,7 +23266,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李存智",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4668,
         "team": "A",
@@ -23288,7 +23288,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蕭旭君",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4290,
         "team": "A",
@@ -23310,7 +23310,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳宏彰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4309,
         "team": "A",
@@ -23333,7 +23333,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "白書禎",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4339,
         "team": "A",
@@ -23355,7 +23355,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "郭貞蘭",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4368,
         "team": "A",
@@ -23377,7 +23377,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "隋中興",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4385,
         "team": "A",
@@ -23399,7 +23399,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "楊明仁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4446,
         "team": "A",
@@ -23421,7 +23421,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林達德",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4708,
         "team": "A",
@@ -23443,7 +23443,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "童心欣",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4796,
         "team": "A",
@@ -23465,7 +23465,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "黃景沂",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4804,
         "team": "A",
@@ -23487,7 +23487,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃麗玲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4138,
         "team": "A",
@@ -23509,7 +23509,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李賢源",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4141,
         "team": "A",
@@ -23531,7 +23531,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "莊振義",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4495,
         "team": "A",
@@ -23553,7 +23553,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王麗容",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4418,
         "team": "A",
@@ -23575,7 +23575,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "吳澤玫",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4481,
         "team": "A",
@@ -23597,7 +23597,7 @@ export default[
     "score": 6,
     "required": "選",
     "teacher": "湯志永",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3864,
         "team": "A",
@@ -23619,7 +23619,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李佳霖",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3882,
         "team": "A",
@@ -23641,7 +23641,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "童涵浦",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3895,
         "team": "A",
@@ -23664,7 +23664,7 @@ export default[
     "score": 4,
     "required": "選",
     "teacher": "李芳仁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3927,
         "team": "A",
@@ -23686,7 +23686,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "左正東",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4165,
         "team": "A",
@@ -23708,7 +23708,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李志偉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4361,
         "team": "A",
@@ -23730,7 +23730,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蔡協澄",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4373,
         "team": "A",
@@ -23752,7 +23752,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王志弘",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4480,
         "team": "A",
@@ -23774,7 +23774,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "簡妤儒",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4633,
         "team": "A",
@@ -23796,7 +23796,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "顏鴻威",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4644,
         "team": "A",
@@ -23818,7 +23818,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "佐藤將之",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4756,
         "team": "A",
@@ -23840,7 +23840,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "呂欣怡",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3950,
         "team": "A",
@@ -23862,7 +23862,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "葉芳萍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3890,
         "team": "A",
@@ -23884,7 +23884,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "張佑宗",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3974,
         "team": "A",
@@ -23906,7 +23906,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李維晏",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4278,
         "team": "A",
@@ -23928,7 +23928,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳巧玲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4279,
         "team": "B",
@@ -23950,7 +23950,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳翊齊",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4280,
         "team": "C",
@@ -23972,7 +23972,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "江介維",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4281,
         "team": "D",
@@ -23995,7 +23995,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張  晨",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4282,
         "team": "E",
@@ -24017,7 +24017,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "康韻梅",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4317,
         "team": "A",
@@ -24039,7 +24039,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張  晨",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4758,
         "team": "B",
@@ -24062,7 +24062,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "柯凱?",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4757,
         "team": "A",
@@ -24085,7 +24085,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "鄭富書",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3874,
         "team": "A",
@@ -24107,7 +24107,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "鄭麗珍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4203,
         "team": "A",
@@ -24129,7 +24129,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "謝雨生",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4215,
         "team": "A",
@@ -24151,7 +24151,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "趙曉芳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4238,
         "team": "A",
@@ -24173,7 +24173,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "宋家復",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4275,
         "team": "A",
@@ -24196,7 +24196,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "趙挺偉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4289,
         "team": "A",
@@ -24218,7 +24218,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "盧孟明",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4331,
         "team": "A",
@@ -24240,7 +24240,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "董鈺琪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4383,
         "team": "A",
@@ -24262,7 +24262,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "周祖述",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4801,
         "team": "A",
@@ -24284,7 +24284,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "馬劍清",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4747,
         "team": "A",
@@ -24306,7 +24306,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "余家斌",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4833,
         "team": "A",
@@ -24328,7 +24328,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "謝佩芬",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4126,
         "team": "A",
@@ -24350,7 +24350,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李世光",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4044,
         "team": "A",
@@ -24372,7 +24372,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "黃育熙",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4671,
         "team": "A",
@@ -24389,7 +24389,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蔡明哲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3966,
         "team": "A",
@@ -24411,7 +24411,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李賢中",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3912,
         "team": "A",
@@ -24433,7 +24433,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "周宇輝",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4266,
         "team": "A",
@@ -24455,7 +24455,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林怡秀",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4639,
         "team": "A",
@@ -24477,7 +24477,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林俊宏",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3908,
         "team": "A",
@@ -24499,7 +24499,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "連家瑩",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3946,
         "team": "A",
@@ -24521,7 +24521,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "葉仲基",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4091,
         "team": "A",
@@ -24543,7 +24543,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "周銘翊",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4105,
         "team": "A",
@@ -24560,7 +24560,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "何明修",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4123,
         "team": "A",
@@ -24583,7 +24583,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林卉婷",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4343,
         "team": "A",
@@ -24600,7 +24600,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "吳宗祐",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4369,
         "team": "A",
@@ -24622,7 +24622,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳志一",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4393,
         "team": "A",
@@ -24644,7 +24644,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蔡宜妮",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4554,
         "team": "A",
@@ -24666,7 +24666,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蔡宜妮",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4555,
         "team": "B",
@@ -24688,7 +24688,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林怡秀",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4634,
         "team": "A",
@@ -24710,7 +24710,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "康正男",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4636,
         "team": "A",
@@ -24732,7 +24732,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林信甫",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4637,
         "team": "A",
@@ -24754,7 +24754,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張莉萍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4698,
         "team": "A",
@@ -24776,7 +24776,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "繆維中",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4780,
         "team": "A",
@@ -24799,7 +24799,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "周家蓓",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4753,
         "team": "A",
@@ -24821,7 +24821,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "辛炳隆",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4272,
         "team": "A",
@@ -24843,7 +24843,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃慶怡",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4366,
         "team": "A",
@@ -24865,7 +24865,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "熊宜君",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4420,
         "team": "A",
@@ -24888,7 +24888,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "曼紐爾",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4460,
         "team": "A",
@@ -24910,7 +24910,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張莉萍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4662,
         "team": "A",
@@ -24933,7 +24933,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "楊金穆",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4733,
         "team": "A",
@@ -24955,7 +24955,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "梁益堉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3949,
         "team": "A",
@@ -24977,7 +24977,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蘇碩斌",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3957,
         "team": "A",
@@ -24999,7 +24999,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王榮麟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3997,
         "team": "A",
@@ -25021,7 +25021,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "廖國基",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4034,
         "team": "A",
@@ -25043,7 +25043,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "葉伊純",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4142,
         "team": "A",
@@ -25065,7 +25065,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "徐學庸",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4263,
         "team": "A",
@@ -25087,7 +25087,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "柯彥廷",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4288,
         "team": "A",
@@ -25109,7 +25109,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "賴育英",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4371,
         "team": "A",
@@ -25131,7 +25131,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "盧信昌",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4459,
         "team": "A",
@@ -25154,7 +25154,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "安亞克",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4587,
         "team": "A",
@@ -25176,7 +25176,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "顧記華",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4591,
         "team": "A",
@@ -25198,7 +25198,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林家暉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4599,
         "team": "A",
@@ -25220,7 +25220,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李恆儒",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4635,
         "team": "A",
@@ -25242,7 +25242,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張文薰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4679,
         "team": "A",
@@ -25264,7 +25264,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "藍佩嘉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4205,
         "team": "A",
@@ -25286,7 +25286,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "張智涵",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3871,
         "team": "A",
@@ -25303,7 +25303,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "張兆恬",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4146,
         "team": "A",
@@ -25325,7 +25325,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張錦華",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4086,
         "team": "A",
@@ -25347,7 +25347,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林巍聳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4826,
         "team": "A",
@@ -25369,7 +25369,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "彭錦鵬",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3850,
         "team": "A",
@@ -25391,7 +25391,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳弱水",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3897,
         "team": "A",
@@ -25413,7 +25413,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林耿慧",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4023,
         "team": "A",
@@ -25435,7 +25435,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王冠棋",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4567,
         "team": "A",
@@ -25457,7 +25457,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王泰俐",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4590,
         "team": "A",
@@ -25480,7 +25480,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "柯凱?",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4767,
         "team": "A",
@@ -25502,7 +25502,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "周仲島",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4816,
         "team": "A",
@@ -25524,7 +25524,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "藍鼎文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3940,
         "team": "A",
@@ -25546,7 +25546,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "宋孔彬",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4043,
         "team": "A",
@@ -25568,7 +25568,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "吳珮瑛",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4089,
         "team": "A",
@@ -25590,7 +25590,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "管永恕",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4350,
         "team": "A",
@@ -25612,7 +25612,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "吳珮瑛",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4428,
         "team": "B",
@@ -25629,7 +25629,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "吳珮瑛",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4429,
         "team": "C",
@@ -25647,7 +25647,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "吳珮瑛",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4427,
         "team": "A",
@@ -25664,7 +25664,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蔡耀明",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4440,
         "team": "A",
@@ -25686,7 +25686,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林照真",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4589,
         "team": "A",
@@ -25708,7 +25708,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "楊秀芳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4667,
         "team": "A",
@@ -25730,7 +25730,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳丕燊",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3995,
         "team": "A",
@@ -25752,7 +25752,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳示國",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4031,
         "team": "A",
@@ -25770,7 +25770,7 @@ export default[
     "score": 4,
     "required": "選",
     "teacher": "黃宇廷",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4569,
         "team": "A",
@@ -25793,7 +25793,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "劉好迪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4222,
         "team": "A",
@@ -25815,7 +25815,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "顏厥安",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3846,
         "team": "A",
@@ -25837,7 +25837,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李育霖",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3862,
         "team": "A",
@@ -25859,7 +25859,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "藍文欽",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3902,
         "team": "A",
@@ -25881,7 +25881,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "高嘉謙",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3904,
         "team": "A",
@@ -25903,7 +25903,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "傅揚",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3907,
         "team": "A",
@@ -25925,7 +25925,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李令儀",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3952,
         "team": "A",
@@ -25947,7 +25947,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林鈺雄",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3967,
         "team": "A",
@@ -25969,7 +25969,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林鈺雄",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3968,
         "team": "A",
@@ -25991,7 +25991,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林鈺雄",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3969,
         "team": "A",
@@ -26013,7 +26013,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林鈺雄",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3970,
         "team": "A",
@@ -26035,7 +26035,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林鈺雄",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4061,
         "team": "A",
@@ -26057,7 +26057,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林鈺雄",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4062,
         "team": "A",
@@ -26079,7 +26079,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林鈺雄",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4063,
         "team": "A",
@@ -26101,7 +26101,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林鈺雄",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4064,
         "team": "A",
@@ -26123,7 +26123,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李勝海",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4068,
         "team": "A",
@@ -26146,7 +26146,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "何亞倫",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4082,
         "team": "A",
@@ -26168,7 +26168,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王遠義",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4108,
         "team": "A",
@@ -26190,7 +26190,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃奕珍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4127,
         "team": "A",
@@ -26212,7 +26212,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "周雍強",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4139,
         "team": "A",
@@ -26234,7 +26234,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "李明輝",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4160,
         "team": "A",
@@ -26256,7 +26256,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "顏厥安",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4190,
         "team": "A",
@@ -26278,7 +26278,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "顏厥安",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4191,
         "team": "A",
@@ -26300,7 +26300,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "顏厥安",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4192,
         "team": "A",
@@ -26322,7 +26322,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "顏厥安",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4193,
         "team": "A",
@@ -26344,7 +26344,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張仁和",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4206,
         "team": "A",
@@ -26366,7 +26366,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "廖肇亨",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4231,
         "team": "A",
@@ -26388,7 +26388,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王驥懋",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4269,
         "team": "A",
@@ -26410,7 +26410,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張國暉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4270,
         "team": "A",
@@ -26432,7 +26432,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "何寄澎",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4318,
         "team": "A",
@@ -26454,7 +26454,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "梅家玲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4450,
         "team": "A",
@@ -26476,7 +26476,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "徐聖心",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4476,
         "team": "A",
@@ -26498,7 +26498,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蔡蕙如",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4505,
         "team": "A",
@@ -26520,7 +26520,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王志弘",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4533,
         "team": "A",
@@ -26542,7 +26542,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "劉華真",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4543,
         "team": "A",
@@ -26564,7 +26564,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "鄭伯壎",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4553,
         "team": "A",
@@ -26586,7 +26586,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "洪維廷",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4613,
         "team": "A",
@@ -26608,7 +26608,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "劉秋婉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4646,
         "team": "A",
@@ -26630,7 +26630,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "謝吉隆",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4672,
         "team": "A",
@@ -26653,7 +26653,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "劉好迪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4673,
         "team": "A",
@@ -26675,7 +26675,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "楊雅儒",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4681,
         "team": "A",
@@ -26697,7 +26697,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "謝欣芩",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4683,
         "team": "A",
@@ -26719,7 +26719,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "孫大川",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4684,
         "team": "A",
@@ -26741,7 +26741,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃美娥",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4687,
         "team": "A",
@@ -26763,7 +26763,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蘇以文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4696,
         "team": "A",
@@ -26785,7 +26785,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃誌川",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4729,
         "team": "A",
@@ -26807,7 +26807,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "葉國俊",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4739,
         "team": "A",
@@ -26829,7 +26829,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "葉國俊",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4740,
         "team": "A",
@@ -26851,7 +26851,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "葉國俊",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4741,
         "team": "A",
@@ -26873,7 +26873,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "張登及",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4406,
         "team": "A",
@@ -26896,7 +26896,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "魏德榮",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4407,
         "team": "B",
@@ -26919,7 +26919,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "童涵浦",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4258,
         "team": "A",
@@ -26942,7 +26942,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張貴閔",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4259,
         "team": "B",
@@ -26964,7 +26964,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "盧柔君",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4095,
         "team": "A",
@@ -26986,7 +26986,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "安志偉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4115,
         "team": "A",
@@ -27008,7 +27008,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "莊吉發",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4669,
         "team": "A",
@@ -27030,7 +27030,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "朱宗信",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3847,
         "team": "A",
@@ -27051,7 +27051,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李勇毅",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4525,
         "team": "A",
@@ -27072,7 +27072,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "熊宗慧",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4244,
         "team": "A",
@@ -27094,7 +27094,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "熊宗慧",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4245,
         "team": "B",
@@ -27116,7 +27116,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳素麗",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4170,
         "team": "B",
@@ -27138,7 +27138,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳維玲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4171,
         "team": "C",
@@ -27160,7 +27160,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳維玲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4172,
         "team": "D",
@@ -27182,7 +27182,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳維玲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4173,
         "team": "E",
@@ -27204,7 +27204,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "沈志中",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4175,
         "team": "G",
@@ -27226,7 +27226,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳素麗",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4176,
         "team": "H",
@@ -27249,7 +27249,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "達力安",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4169,
         "team": "A",
@@ -27272,7 +27272,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "達力安",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4174,
         "team": "F",
@@ -27294,7 +27294,7 @@ export default[
     "score": 4,
     "required": "選",
     "teacher": "張文貞",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4768,
         "team": "A",
@@ -27316,7 +27316,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "梅家玲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4448,
         "team": "A",
@@ -27338,7 +27338,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳思賢",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4110,
         "team": "A",
@@ -27359,7 +27359,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "蘇翊豪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3972,
         "team": "A",
@@ -27380,7 +27380,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "傅從喜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4211,
         "team": "A",
@@ -27403,7 +27403,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李欣穎",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3956,
         "team": "A",
@@ -27425,7 +27425,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳思賢",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4455,
         "team": "A",
@@ -27446,7 +27446,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "漢駿緯",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4713,
         "team": "A",
@@ -27468,7 +27468,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "吳沃剛",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4714,
         "team": "B",
@@ -27490,7 +27490,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "漢駿緯",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4715,
         "team": "C",
@@ -27512,7 +27512,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林倩君",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4716,
         "team": "D",
@@ -27534,7 +27534,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "高一誠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4490,
         "team": "A",
@@ -27556,7 +27556,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "楊雅惠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4491,
         "team": "B",
@@ -27577,7 +27577,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃長玲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4147,
         "team": "A",
@@ -27599,7 +27599,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "張嘉鳳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3899,
         "team": "A",
@@ -27621,7 +27621,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "游啟璋",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4004,
         "team": "A",
@@ -27642,7 +27642,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳石池",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4006,
         "team": "A",
@@ -27665,7 +27665,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "施路易",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4083,
         "team": "A",
@@ -27682,7 +27682,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "葉俊毅",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4509,
         "team": "A",
@@ -27704,7 +27704,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "周泰立",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4510,
         "team": "B",
@@ -27725,7 +27725,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林美峰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4817,
         "team": "A",
@@ -27747,7 +27747,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "蔡祝青",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4234,
         "team": "A",
@@ -27770,7 +27770,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "范吉歐",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3992,
         "team": "A",
@@ -27792,7 +27792,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "范吉歐",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3993,
         "team": "A",
@@ -27814,7 +27814,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王麗蘭",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4065,
         "team": "A",
@@ -27836,7 +27836,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王麗蘭",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4066,
         "team": "B",
@@ -27858,7 +27858,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王麗蘭",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4067,
         "team": "A",
@@ -27880,7 +27880,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林于湘",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4112,
         "team": "A",
@@ -27902,7 +27902,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林雯玲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4113,
         "team": "A",
@@ -27924,7 +27924,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "王怡美",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4156,
         "team": "A",
@@ -27946,7 +27946,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳音卉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4166,
         "team": "A",
@@ -27968,7 +27968,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳音卉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4167,
         "team": "A",
@@ -27990,7 +27990,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳音卉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4168,
         "team": "A",
@@ -28012,7 +28012,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "歐德尼",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4177,
         "team": "A",
@@ -28034,7 +28034,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林湘漪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4178,
         "team": "B",
@@ -28056,7 +28056,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李麗薩",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4247,
         "team": "A",
@@ -28078,7 +28078,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "索奧加",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4248,
         "team": "A",
@@ -28100,7 +28100,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張君松",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4333,
         "team": "A",
@@ -28122,7 +28122,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "劉康定",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4334,
         "team": "B",
@@ -28144,7 +28144,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張君松",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4335,
         "team": "C",
@@ -28166,7 +28166,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "劉康定",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4336,
         "team": "A",
@@ -28188,7 +28188,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王麗蘭",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4364,
         "team": "A",
@@ -28210,7 +28210,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王麗蘭",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4365,
         "team": "A",
@@ -28232,7 +28232,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "阮蓮香",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4559,
         "team": "A",
@@ -28254,7 +28254,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "阮蓮香",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4560,
         "team": "B",
@@ -28276,7 +28276,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "阮蓮香",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4561,
         "team": "A",
@@ -28298,7 +28298,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "阮蓮香",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4562,
         "team": "B",
@@ -28320,7 +28320,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "圖  莉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4608,
         "team": "A",
@@ -28341,7 +28341,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "歐陽永樂",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4609,
         "team": "B",
@@ -28362,7 +28362,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "圖  莉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4610,
         "team": "A",
@@ -28383,7 +28383,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "蕭素英",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4693,
         "team": "A",
@@ -28405,7 +28405,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "方  介",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4737,
         "team": "A",
@@ -28427,7 +28427,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李錫鎮",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4781,
         "team": "A",
@@ -28449,7 +28449,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "呂柏伸",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4790,
         "team": "A",
@@ -28471,7 +28471,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "畢恆達",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3858,
         "team": "A",
@@ -28492,7 +28492,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "許正一",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3872,
         "team": "A",
@@ -28513,7 +28513,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "吳俊傑",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3877,
         "team": "A",
@@ -28534,7 +28534,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林博雄",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3879,
         "team": "A",
@@ -28555,7 +28555,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "徐治平",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3886,
         "team": "A",
@@ -28577,7 +28577,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "顏炳郎",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3887,
         "team": "B",
@@ -28598,7 +28598,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李克強",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3888,
         "team": "C",
@@ -28621,7 +28621,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林立強",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3889,
         "team": "D",
@@ -28643,7 +28643,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "安井伸介",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3909,
         "team": "A",
@@ -28665,7 +28665,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林俊宏",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3910,
         "team": "B",
@@ -28686,7 +28686,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳世民",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3918,
         "team": "A",
@@ -28708,7 +28708,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "楊明仁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3941,
         "team": "A",
@@ -28730,7 +28730,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "楊明仁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3942,
         "team": "A",
@@ -28751,7 +28751,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "何思慎",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3963,
         "team": "A",
@@ -28774,7 +28774,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李婉甄",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4058,
         "team": "A",
@@ -28796,7 +28796,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "郭銘峰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4072,
         "team": "A",
@@ -28818,7 +28818,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林俊全",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4073,
         "team": "A",
@@ -28840,7 +28840,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "徐澔德",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4074,
         "team": "A",
@@ -28861,7 +28861,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃倬英",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4101,
         "team": "A",
@@ -28883,7 +28883,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "鄭卜壬",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4132,
         "team": "A",
@@ -28905,7 +28905,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "古允文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4161,
         "team": "A",
@@ -28927,7 +28927,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林祥泰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4196,
         "team": "A",
@@ -28948,7 +28948,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "游琇?",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4197,
         "team": "B",
@@ -28971,7 +28971,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "戴子安",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4198,
         "team": "C",
@@ -28993,7 +28993,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳怡?",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4202,
         "team": "A",
@@ -29015,7 +29015,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林敬軒",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4217,
         "team": "A",
@@ -29037,7 +29037,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "王業立",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4262,
         "team": "A",
@@ -29059,7 +29059,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "吳高逸",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4358,
         "team": "A",
@@ -29080,7 +29080,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "吳高逸",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4359,
         "team": "A",
@@ -29102,7 +29102,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳世民",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4408,
         "team": "A",
@@ -29124,7 +29124,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "熊  怡",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4466,
         "team": "A",
@@ -29145,7 +29145,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林岳祥",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4469,
         "team": "A",
@@ -29167,7 +29167,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王衍智",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4470,
         "team": "B",
@@ -29189,7 +29189,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "朱家瑩",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4522,
         "team": "A",
@@ -29211,7 +29211,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "李承叡",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4537,
         "team": "A",
@@ -29232,7 +29232,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳縕儂",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4665,
         "team": "A",
@@ -29253,7 +29253,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蕭旭君",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4666,
         "team": "B",
@@ -29274,7 +29274,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "莊吉發",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4670,
         "team": "A",
@@ -29297,7 +29297,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "劉雅詩",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4109,
         "team": "A",
@@ -29319,7 +29319,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳坤志",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3892,
         "team": "A",
@@ -29341,7 +29341,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃宗慧",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3955,
         "team": "A",
@@ -29363,7 +29363,7 @@ export default[
     "score": 4,
     "required": "選",
     "teacher": "林孟瑢",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4218,
         "team": "A",
@@ -29385,7 +29385,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "索奧加",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4249,
         "team": "A",
@@ -29407,7 +29407,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林世銘",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4550,
         "team": "A",
@@ -29429,7 +29429,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳正平",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4572,
         "team": "A",
@@ -29451,7 +29451,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王沐嵐",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4675,
         "team": "A",
@@ -29472,7 +29472,7 @@ export default[
     "classNameEng": "All-out Defense Education Military Training - Defense Mobilization",
     "required": "選",
     "teacher": "余宗基",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4048,
         "team": "A",
@@ -29492,7 +29492,7 @@ export default[
     "classNameEng": "All-out Defense Education Military Training - Defense Mobilization",
     "required": "選",
     "teacher": "余宗基",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4049,
         "team": "B",
@@ -29513,7 +29513,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "侯詠德",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3885,
         "team": "A",
@@ -29534,7 +29534,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "張佑宗",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3973,
         "team": "A",
@@ -29556,7 +29556,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "楊乃冬",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4002,
         "team": "A",
@@ -29578,7 +29578,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "潘建源",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4014,
         "team": "A",
@@ -29599,7 +29599,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "杜裕康",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4026,
         "team": "A",
@@ -29620,7 +29620,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "陳維玲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4194,
         "team": "A",
@@ -29642,7 +29642,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "賴曉黎",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4209,
         "team": "A",
@@ -29664,7 +29664,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "逄愛君",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4292,
         "team": "A",
@@ -29686,7 +29686,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "周承復",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4293,
         "team": "B",
@@ -29708,7 +29708,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王柏堯",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4294,
         "team": "A",
@@ -29729,7 +29729,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蔡貞慧",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4380,
         "team": "A",
@@ -29751,7 +29751,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "周銘翊",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4386,
         "team": "A",
@@ -29773,7 +29773,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "鍾德憲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4387,
         "team": "A",
@@ -29795,7 +29795,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "蘇翊豪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4404,
         "team": "A",
@@ -29816,7 +29816,7 @@ export default[
     "score": 4,
     "required": "選",
     "teacher": "溫在弘",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4471,
         "team": "A",
@@ -29838,7 +29838,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳南光",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4489,
         "team": "A",
@@ -29860,7 +29860,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "鄭貽生",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4517,
         "team": "A",
@@ -29881,7 +29881,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "周信宏",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4518,
         "team": "B",
@@ -29903,7 +29903,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "丁照棣",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4519,
         "team": "C",
@@ -29924,7 +29924,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃偉邦",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4520,
         "team": "A",
@@ -29945,7 +29945,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃偉邦",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4521,
         "team": "B",
@@ -29966,7 +29966,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "王雅筠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4536,
         "team": "A",
@@ -29988,7 +29988,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳林祈",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4583,
         "team": "A",
@@ -30009,7 +30009,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳慶財",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4594,
         "team": "A",
@@ -30030,7 +30030,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "圖  莉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4611,
         "team": "A",
@@ -30051,7 +30051,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "唐牧群",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4625,
         "team": "A",
@@ -30073,7 +30073,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳世民",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4735,
         "team": "A",
@@ -30095,7 +30095,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "黃景沂",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4805,
         "team": "A",
@@ -30116,7 +30116,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "蘇顯揚",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3964,
         "team": "A",
@@ -30138,7 +30138,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "施靜菲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4158,
         "team": "A",
@@ -30159,7 +30159,7 @@ export default[
     "classNameEng": "All-out Defense Education Military Training - International Situations",
     "required": "選",
     "teacher": "劉鐵軍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4054,
         "team": "A",
@@ -30179,7 +30179,7 @@ export default[
     "classNameEng": "All-out Defense Education Military Training - International Situations",
     "required": "選",
     "teacher": "劉鐵軍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4055,
         "team": "B",
@@ -30200,7 +30200,7 @@ export default[
     "score": 5,
     "required": "選",
     "teacher": "夏俊雄",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3929,
         "team": "A",
@@ -30221,7 +30221,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林日白",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3935,
         "team": "A",
@@ -30242,7 +30242,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "林日白",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3936,
         "team": "A",
@@ -30258,7 +30258,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "白保羅",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4114,
         "team": "A",
@@ -30280,7 +30280,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "白保羅",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4116,
         "team": "A",
@@ -30302,7 +30302,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "白保羅",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4117,
         "team": "B",
@@ -30324,7 +30324,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "白保羅",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4118,
         "team": "A",
@@ -30347,7 +30347,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "施世駿",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4163,
         "team": "A",
@@ -30368,7 +30368,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李麗薩",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4246,
         "team": "A",
@@ -30390,7 +30390,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "吳沃剛",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4721,
         "team": "A",
@@ -30412,7 +30412,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "魏家豪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4045,
         "team": "A",
@@ -30433,7 +30433,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "左正東",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4400,
         "team": "A",
@@ -30454,7 +30454,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "童長義",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3962,
         "team": "A",
@@ -30474,7 +30474,7 @@ export default[
     "classNameEng": "All-out Defense Education Military Training - National Defense",
     "required": "選",
     "teacher": "廖天威",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4050,
         "team": "A",
@@ -30494,7 +30494,7 @@ export default[
     "classNameEng": "All-out Defense Education Military Training - National Defense",
     "required": "選",
     "teacher": "廖天威",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4051,
         "team": "B",
@@ -30515,7 +30515,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "趙曉芳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4094,
         "team": "A",
@@ -30537,7 +30537,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蔡  瑜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4802,
         "team": "A",
@@ -30560,7 +30560,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳重仁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3849,
         "team": "A",
@@ -30582,7 +30582,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "洪伯邑",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3852,
         "team": "A",
@@ -30604,7 +30604,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "洪惠敏",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3875,
         "team": "A",
@@ -30626,7 +30626,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "康韻梅",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3883,
         "team": "A",
@@ -30648,7 +30648,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林智莉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3916,
         "team": "A",
@@ -30670,7 +30670,7 @@ export default[
     "score": 4,
     "required": "選",
     "teacher": "陳榮凱",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3989,
         "team": "A",
@@ -30691,7 +30691,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林明照",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4010,
         "team": "A",
@@ -30711,7 +30711,7 @@ export default[
     "classNameEng": "All-out Defense Education Militar Training - Civil Defense",
     "required": "選",
     "teacher": "荊元宙",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4047,
         "team": "A",
@@ -30732,7 +30732,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林火旺",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4097,
         "team": "A",
@@ -30753,7 +30753,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李勝海",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4122,
         "team": "A",
@@ -30774,7 +30774,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "方震華",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4128,
         "team": "A",
@@ -30796,7 +30796,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李佑金",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4149,
         "team": "A",
@@ -30817,7 +30817,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "沈立言",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4308,
         "team": "A",
@@ -30840,7 +30840,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "楊國鑫",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4412,
         "team": "A",
@@ -30862,7 +30862,7 @@ export default[
     "score": 4,
     "required": "選",
     "teacher": "林太家",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4431,
         "team": "A",
@@ -30883,7 +30883,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林如森",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4436,
         "team": "A",
@@ -30905,7 +30905,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "耿  晴",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4439,
         "team": "A",
@@ -30927,7 +30927,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "江金倉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4472,
         "team": "A",
@@ -30948,7 +30948,7 @@ export default[
     "score": 5,
     "required": "選",
     "teacher": "郭孝豪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4581,
         "team": "A",
@@ -30969,7 +30969,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王榮麟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4663,
         "team": "A",
@@ -30990,7 +30990,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "漢駿緯",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4717,
         "team": "A",
@@ -31012,7 +31012,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林倩君",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4718,
         "team": "B",
@@ -31034,7 +31034,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "吳沃剛",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4719,
         "team": "C",
@@ -31056,7 +31056,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "尤磊士",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4720,
         "team": "D",
@@ -31078,7 +31078,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳洵毅",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4743,
         "team": "A",
@@ -31099,7 +31099,7 @@ export default[
     "score": 4,
     "required": "選",
     "teacher": "謝銘倫",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4745,
         "team": "A",
@@ -31120,7 +31120,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林淑怡",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4748,
         "team": "A",
@@ -31142,7 +31142,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "林淑怡",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4749,
         "team": "A",
@@ -31164,7 +31164,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳翠蓮",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4770,
         "team": "A",
@@ -31186,7 +31186,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "吳嘉苓",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4814,
         "team": "A",
@@ -31208,7 +31208,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "劉心才",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3893,
         "team": "A",
@@ -31230,7 +31230,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "劉康定",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4337,
         "team": "A",
@@ -31252,7 +31252,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "賀培銘",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4652,
         "team": "A",
@@ -31274,7 +31274,7 @@ export default[
     "score": 4,
     "required": "選",
     "teacher": "吳嘉苓",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4212,
         "team": "A",
@@ -31297,7 +31297,7 @@ export default[
     "score": 4,
     "required": "選",
     "teacher": "呂青湖",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4213,
         "team": "B",
@@ -31319,7 +31319,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "劉少雄",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4164,
         "team": "A",
@@ -31341,7 +31341,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "王能君",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4504,
         "team": "A",
@@ -31363,7 +31363,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "姜智恩",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4530,
         "team": "A",
@@ -31385,7 +31385,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "呂學一",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4731,
         "team": "A",
@@ -31406,7 +31406,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "徐進鈺",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3851,
         "team": "A",
@@ -31428,7 +31428,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "閻鴻中",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3901,
         "team": "A",
@@ -31450,7 +31450,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林智莉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3915,
         "team": "A",
@@ -31472,7 +31472,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "楊培珊",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3985,
         "team": "A",
@@ -31494,7 +31494,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "李隆獻",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4003,
         "team": "A",
@@ -31516,7 +31516,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "初雅士",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4041,
         "team": "A",
@@ -31537,7 +31537,7 @@ export default[
     "classNameEng": "All-out Defense Education Militar Training - Defense Technology",
     "required": "選",
     "teacher": "劉鐵軍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4052,
         "team": "A",
@@ -31557,7 +31557,7 @@ export default[
     "classNameEng": "All-out Defense Education Militar Training - Defense Technology",
     "required": "選",
     "teacher": "劉鐵軍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4053,
         "team": "B",
@@ -31578,7 +31578,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "凱羅榮",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4150,
         "team": "A",
@@ -31601,7 +31601,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "柏逸嘉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4255,
         "team": "A",
@@ -31623,7 +31623,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "洪士灝",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4291,
         "team": "A",
@@ -31644,7 +31644,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "蔡天怡",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4419,
         "team": "A",
@@ -31666,7 +31666,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "周信宏",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4421,
         "team": "A",
@@ -31682,7 +31682,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "蘇國棟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4422,
         "team": "B",
@@ -31699,7 +31699,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "吳俊達",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4576,
         "team": "A",
@@ -31721,7 +31721,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "吳俊達",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4577,
         "team": "A",
@@ -31743,7 +31743,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "彭文本",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4601,
         "team": "A",
@@ -31765,7 +31765,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蔡益坤",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4664,
         "team": "A",
@@ -31788,7 +31788,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃倬英",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4702,
         "team": "A",
@@ -31810,7 +31810,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王俊傑",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4726,
         "team": "A",
@@ -31832,7 +31832,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "梁朝雲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4788,
         "team": "A",
@@ -31854,7 +31854,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "羅名珍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4129,
         "team": "A",
@@ -31876,7 +31876,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "敖馨郁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4478,
         "team": "A",
@@ -31898,7 +31898,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "沈川洲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4076,
         "team": "A",
@@ -31919,7 +31919,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "洪伯邑",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4251,
         "team": "A",
@@ -31941,7 +31941,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "敖馨郁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4477,
         "team": "A",
@@ -31962,7 +31962,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "許文馨",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4372,
         "team": "A",
@@ -31984,7 +31984,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "吳乃立",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3937,
         "team": "A",
@@ -32006,7 +32006,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳慧宏",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4120,
         "team": "A",
@@ -32027,7 +32027,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "黃詩淳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4133,
         "team": "A",
@@ -32049,7 +32049,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "梁益堉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4135,
         "team": "A",
@@ -32071,7 +32071,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "邱錦榮",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4475,
         "team": "A",
@@ -32092,7 +32092,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王勝仕",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4744,
         "team": "A",
@@ -32114,7 +32114,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳重仁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4812,
         "team": "A",
@@ -32136,7 +32136,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "王業立",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4261,
         "team": "A",
@@ -32158,7 +32158,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林明照",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3913,
         "team": "A",
@@ -32179,7 +32179,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "張嘉銓",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3921,
         "team": "A",
@@ -32200,7 +32200,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "潘少瑜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3982,
         "team": "A",
@@ -32222,7 +32222,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "楊植勝",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3994,
         "team": "A",
@@ -32244,7 +32244,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "伍振勳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4001,
         "team": "A",
@@ -32266,7 +32266,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "劉康慧",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4104,
         "team": "A",
@@ -32288,7 +32288,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "鄭義愷",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4111,
         "team": "A",
@@ -32309,7 +32309,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "周先捷",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4201,
         "team": "A",
@@ -32331,7 +32331,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "余雪明",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4243,
         "team": "A",
@@ -32353,7 +32353,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林國明",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4257,
         "team": "A",
@@ -32375,7 +32375,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "蔡世豪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4299,
         "team": "A",
@@ -32396,7 +32396,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "蔡世豪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4300,
         "team": "B",
@@ -32418,7 +32418,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "吳雅鳳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4338,
         "team": "A",
@@ -32439,7 +32439,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "李隆獻",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4394,
         "team": "A",
@@ -32462,7 +32462,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "吳俊輝",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4405,
         "team": "A",
@@ -32479,7 +32479,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "楊汗如",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4430,
         "team": "A",
@@ -32501,7 +32501,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "許文僊",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4462,
         "team": "A",
@@ -32523,7 +32523,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "敖馨郁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4479,
         "team": "A",
@@ -32546,7 +32546,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "許富鈞",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4539,
         "team": "A",
@@ -32568,7 +32568,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "余柏毅",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4549,
         "team": "B",
@@ -32591,7 +32591,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "吳哲夫",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4548,
         "team": "A",
@@ -32613,7 +32613,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃山耘",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4584,
         "team": "A",
@@ -32635,7 +32635,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "藍文欽",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4623,
         "team": "A",
@@ -32657,7 +32657,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "賴勇成",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4640,
         "team": "A",
@@ -32680,7 +32680,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "史德凡",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4695,
         "team": "A",
@@ -32701,7 +32701,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "曾漢塘",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4831,
         "team": "A",
@@ -32722,7 +32722,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "曾漢塘",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4832,
         "team": "B",
@@ -32743,7 +32743,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張正衡",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3863,
         "team": "A",
@@ -32765,7 +32765,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "高德",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3903,
         "team": "A",
@@ -32787,7 +32787,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "江芝華",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3998,
         "team": "A",
@@ -32809,7 +32809,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "蕭旭峰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4151,
         "team": "A",
@@ -32830,7 +32830,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "蕭旭峰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4152,
         "team": "A",
@@ -32851,7 +32851,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "黃慶璨",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4579,
         "team": "A",
@@ -32872,7 +32872,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "宋聖榮",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3980,
         "team": "A",
@@ -32893,7 +32893,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "宋聖榮",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3981,
         "team": "A",
@@ -32909,7 +32909,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "鄭宗記",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4645,
         "team": "A",
@@ -32932,7 +32932,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳思帆",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4706,
         "team": "A",
@@ -32954,7 +32954,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "史嘉琳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4285,
         "team": "A",
@@ -32977,7 +32977,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "達力安",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4179,
         "team": "A",
@@ -32999,7 +32999,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "梁庚辰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4511,
         "team": "A",
@@ -33021,7 +33021,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "梁庚辰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4512,
         "team": "B",
@@ -33043,7 +33043,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "梁庚辰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4513,
         "team": "C",
@@ -33065,7 +33065,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "梁庚辰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4514,
         "team": "D",
@@ -33087,7 +33087,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "梁庚辰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4515,
         "team": "E",
@@ -33109,7 +33109,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "梁庚辰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4516,
         "team": "F",
@@ -33131,7 +33131,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "劉力瑜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4614,
         "team": "A",
@@ -33153,7 +33153,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林鶴玲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4221,
         "team": "A",
@@ -33175,7 +33175,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "文  哲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4319,
         "team": "A",
@@ -33197,7 +33197,7 @@ export default[
     "score": 4,
     "required": "選",
     "teacher": "張世宗",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4017,
         "team": "A",
@@ -33218,7 +33218,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "黃欽永",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4328,
         "team": "A",
@@ -33240,7 +33240,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "李隆獻",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3844,
         "team": "A",
@@ -33262,7 +33262,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蔡天怡",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3856,
         "team": "A",
@@ -33284,7 +33284,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "初雅士",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3870,
         "team": "A",
@@ -33306,7 +33306,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林聖智",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3917,
         "team": "A",
@@ -33328,7 +33328,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "陳志一",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4093,
         "team": "A",
@@ -33350,7 +33350,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃麗君",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4106,
         "team": "A",
@@ -33373,7 +33373,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "達力安",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4180,
         "team": "A",
@@ -33396,7 +33396,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "達力安",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4226,
         "team": "A",
@@ -33419,7 +33419,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "達力安",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4227,
         "team": "A",
@@ -33441,7 +33441,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "劉啟霖",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4228,
         "team": "A",
@@ -33463,7 +33463,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "初雅士",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4239,
         "team": "A",
@@ -33485,7 +33485,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "曾琦智",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4274,
         "team": "A",
@@ -33507,7 +33507,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "曾琦智",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4277,
         "team": "A",
@@ -33529,7 +33529,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "劉錦添",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4315,
         "team": "B",
@@ -33552,7 +33552,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳暐",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4314,
         "team": "A",
@@ -33574,7 +33574,7 @@ export default[
     "score": 4,
     "required": "選",
     "teacher": "王道一",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4316,
         "team": "A",
@@ -33595,7 +33595,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "卓清芬",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4442,
         "team": "A",
@@ -33617,7 +33617,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "安井伸介",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4451,
         "team": "A",
@@ -33639,7 +33639,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "韓仁毓",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4541,
         "team": "A",
@@ -33661,7 +33661,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "韓仁毓",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4542,
         "team": "A",
@@ -33683,7 +33683,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "呂碧琴",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4598,
         "team": "A",
@@ -33705,7 +33705,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "沈凡玉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4616,
         "team": "A",
@@ -33727,7 +33727,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林鶴玲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4621,
         "team": "A",
@@ -33749,7 +33749,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "蔡秀華",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4638,
         "team": "A",
@@ -33771,7 +33771,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "歐德尼",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4691,
         "team": "A",
@@ -33793,7 +33793,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "高照明",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4725,
         "team": "A",
@@ -33814,7 +33814,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張琳巧",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4822,
         "team": "A",
@@ -33835,7 +33835,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳正國",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4233,
         "team": "A",
@@ -33857,7 +33857,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "郭鴻基",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3878,
         "team": "A",
@@ -33879,7 +33879,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林學紀",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4433,
         "team": "A",
@@ -33901,7 +33901,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林學紀",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4434,
         "team": "A",
@@ -33923,7 +33923,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林學紀",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4435,
         "team": "A",
@@ -33946,7 +33946,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "曼紐爾",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3865,
         "team": "A",
@@ -33968,7 +33968,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "張茂山",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4018,
         "team": "A",
@@ -33990,7 +33990,7 @@ export default[
     "score": 4,
     "required": "選",
     "teacher": "冀宏源",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4019,
         "team": "A",
@@ -34012,7 +34012,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "謝艾米",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4181,
         "team": "A",
@@ -34034,7 +34034,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳東升",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4219,
         "team": "A",
@@ -34056,7 +34056,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "陳東升",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4220,
         "team": "A",
@@ -34073,7 +34073,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王泓仁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4800,
         "team": "A",
@@ -34095,7 +34095,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "長谷川正人",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4806,
         "team": "A",
@@ -34117,7 +34117,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "袁孝維",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3853,
         "team": "A",
@@ -34138,7 +34138,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張文薰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4685,
         "team": "A",
@@ -34160,7 +34160,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "劉正忠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4686,
         "team": "A",
@@ -34182,7 +34182,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "馮勃翰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4707,
         "team": "A",
@@ -34204,7 +34204,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "吳造中",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3854,
         "team": "A",
@@ -34221,7 +34221,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "吳造中",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3855,
         "team": "A",
@@ -34238,7 +34238,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "初雅士",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3869,
         "team": "A",
@@ -34260,7 +34260,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳立仁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3933,
         "team": "B",
@@ -34282,7 +34282,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "康敦彥",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3934,
         "team": "C",
@@ -34305,7 +34305,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "闕居振",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3932,
         "team": "A",
@@ -34327,7 +34327,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "李孔元",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3996,
         "team": "A",
@@ -34349,7 +34349,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "張素卿",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3999,
         "team": "A",
@@ -34371,7 +34371,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林智仁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4100,
         "team": "A",
@@ -34391,7 +34391,7 @@ export default[
     "classNameEng": "Service Learning (A)",
     "required": "選",
     "teacher": "陳怡?",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4155,
         "team": "A",
@@ -34408,7 +34408,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "樂詩涵",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4187,
         "team": "A",
@@ -34430,7 +34430,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蘇國賢",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4268,
         "team": "A",
@@ -34452,7 +34452,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "曾琦智",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4283,
         "team": "A",
@@ -34474,7 +34474,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "吳珮瑛",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4313,
         "team": "A",
@@ -34497,7 +34497,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "歐海仁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4349,
         "team": "A",
@@ -34518,7 +34518,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳世英",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4382,
         "team": "A",
@@ -34541,7 +34541,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "謝馬利歐",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4523,
         "team": "A",
@@ -34563,7 +34563,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "楊珮芸",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4524,
         "team": "A",
@@ -34585,7 +34585,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "魏聖倫",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4545,
         "team": "A",
@@ -34607,7 +34607,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "闕河嘉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4568,
         "team": "A",
@@ -34629,7 +34629,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "蔡  瑜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4618,
         "team": "A",
@@ -34651,7 +34651,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李瑞庭",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4619,
         "team": "A",
@@ -34673,7 +34673,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "蕭素英",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4692,
         "team": "A",
@@ -34695,7 +34695,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "歐德尼",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4701,
         "team": "A",
@@ -34717,7 +34717,7 @@ export default[
     "score": 4,
     "required": "選",
     "teacher": "朱士維",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4824,
         "team": "A",
@@ -34739,7 +34739,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳維婷",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4546,
         "team": "A",
@@ -34761,7 +34761,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "柴惠敏",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4096,
         "team": "A",
@@ -34783,7 +34783,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "圖  莉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4612,
         "team": "A",
@@ -34804,7 +34804,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林倩君",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4710,
         "team": "A",
@@ -34825,7 +34825,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "拉貝明契",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4711,
         "team": "B",
@@ -34847,7 +34847,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "拉貝明契",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4712,
         "team": "C",
@@ -34869,7 +34869,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王遠義",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4449,
         "team": "A",
@@ -34892,7 +34892,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王莉思",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3848,
         "team": "A",
@@ -34914,7 +34914,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳彥榮",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4012,
         "team": "A",
@@ -34931,7 +34931,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "賀培銘",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4653,
         "team": "A",
@@ -34953,7 +34953,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "賀培銘",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4654,
         "team": "B",
@@ -34975,7 +34975,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃川田修",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3954,
         "team": "A",
@@ -34998,7 +34998,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蔡克銓",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4778,
         "team": "A",
@@ -35021,7 +35021,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "袁孝維",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4700,
         "team": "A",
@@ -35042,7 +35042,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "吳珮瑛",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4797,
         "team": "A",
@@ -35063,7 +35063,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "顏厥安",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4189,
         "team": "A",
@@ -35085,7 +35085,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "吳旻旻",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3898,
         "team": "A",
@@ -35107,7 +35107,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "宋家復",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3900,
         "team": "A",
@@ -35129,7 +35129,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "甘懷真",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3906,
         "team": "A",
@@ -35151,7 +35151,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "張嘉銓",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3919,
         "team": "A",
@@ -35172,7 +35172,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "簡瑞碧",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4015,
         "team": "A",
@@ -35193,7 +35193,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張嘉銓",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4035,
         "team": "A",
@@ -35214,7 +35214,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "張嘉銓",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4036,
         "team": "A",
@@ -35236,7 +35236,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "梁元禎",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4040,
         "team": "A",
@@ -35258,7 +35258,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "朱偉誠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4069,
         "team": "A",
@@ -35279,7 +35279,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "徐學庸",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4107,
         "team": "A",
@@ -35300,7 +35300,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "羅鈴沛",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4121,
         "team": "A",
@@ -35322,7 +35322,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "佐藤將之",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4157,
         "team": "A",
@@ -35343,7 +35343,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "歐德尼",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4183,
         "team": "A",
@@ -35366,7 +35366,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "達力安",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4184,
         "team": "A",
@@ -35388,7 +35388,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "蔡倩玟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4188,
         "team": "A",
@@ -35410,7 +35410,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "張貴閔",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4260,
         "team": "A",
@@ -35432,7 +35432,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "葉俊榮",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4273,
         "team": "A",
@@ -35455,7 +35455,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "曾麗玲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4284,
         "team": "A",
@@ -35478,7 +35478,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "周先捷",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4324,
         "team": "A",
@@ -35500,7 +35500,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳慧玲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4347,
         "team": "A",
@@ -35521,7 +35521,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "趙捷謙",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4402,
         "team": "A",
@@ -35543,7 +35543,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "盧信昌",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4403,
         "team": "B",
@@ -35565,7 +35565,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "呂柏伸",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4416,
         "team": "A",
@@ -35587,7 +35587,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "廖本聖",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4417,
         "team": "A",
@@ -35608,7 +35608,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳翠英",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4573,
         "team": "A",
@@ -35630,7 +35630,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳坤志",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4595,
         "team": "A",
@@ -35652,7 +35652,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳坤志",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4596,
         "team": "B",
@@ -35674,7 +35674,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林宏佳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4617,
         "team": "A",
@@ -35696,7 +35696,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "楊雅儒",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4677,
         "team": "A",
@@ -35717,7 +35717,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃美娥",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4680,
         "team": "A",
@@ -35739,7 +35739,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "葉俊榮",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4690,
         "team": "A",
@@ -35761,7 +35761,7 @@ export default[
     "score": 4,
     "required": "選",
     "teacher": "漢駿緯",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4722,
         "team": "A",
@@ -35784,7 +35784,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "史德凡",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4734,
         "team": "A",
@@ -35806,7 +35806,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "葉國俊",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4742,
         "team": "A",
@@ -35827,7 +35827,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "傅揚",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4774,
         "team": "A",
@@ -35849,7 +35849,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "廖國基",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4783,
         "team": "A",
@@ -35870,7 +35870,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "黃啟書",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4807,
         "team": "A",
@@ -35892,7 +35892,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "吳佳儀",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 4829,
         "team": "A",
@@ -35913,7 +35913,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "施乃中",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3454,
         "team": "A",
@@ -35936,7 +35936,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "賴祐吉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3455,
         "team": "A",
@@ -35960,7 +35960,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林宗翰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3503,
         "team": "A",
@@ -35984,7 +35984,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "孫沛立",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3523,
         "team": "A",
@@ -36008,7 +36008,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "歐立成",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3532,
         "team": "A",
@@ -36031,7 +36031,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳衍任",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3534,
         "team": "A",
@@ -36054,7 +36054,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "周海積",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3604,
         "team": "A",
@@ -36077,7 +36077,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳曉慧",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3614,
         "team": "A",
@@ -36100,7 +36100,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "朱  瑾",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3633,
         "team": "A",
@@ -36124,7 +36124,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林宗翰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3638,
         "team": "A",
@@ -36147,7 +36147,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "劉華美",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3657,
         "team": "A",
@@ -36170,7 +36170,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "管中徽",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3659,
         "team": "A",
@@ -36193,7 +36193,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "耿筠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3663,
         "team": "A",
@@ -36216,7 +36216,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "鄭仁偉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3667,
         "team": "A",
@@ -36239,7 +36239,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蔡鴻文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3692,
         "team": "A",
@@ -36263,7 +36263,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳瑞華",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3699,
         "team": "A",
@@ -36286,7 +36286,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "侯惠澤",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3738,
         "team": "A",
@@ -36309,7 +36309,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "杜功仁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3480,
         "team": "A",
@@ -36332,7 +36332,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "廖顯奎",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3510,
         "team": "A",
@@ -36355,7 +36355,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "邱煌仁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3740,
         "team": "A",
@@ -36378,7 +36378,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "施植明",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3756,
         "team": "A",
@@ -36402,7 +36402,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "楊朝龍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3675,
         "team": "A",
@@ -36425,7 +36425,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林慶元",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3490,
         "team": "A",
@@ -36449,7 +36449,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "楊傳凱",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3521,
         "team": "A",
@@ -36472,7 +36472,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃柏仁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3563,
         "team": "A",
@@ -36495,7 +36495,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "朱曉萍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3610,
         "team": "A",
@@ -36519,7 +36519,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李宗憲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3726,
         "team": "A",
@@ -36542,7 +36542,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃國禎",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3789,
         "team": "A",
@@ -36566,7 +36566,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳建宇",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3805,
         "team": "A",
@@ -36590,7 +36590,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃炳照",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3806,
         "team": "A",
@@ -36613,7 +36613,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "徐慶琪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3520,
         "team": "A",
@@ -36637,7 +36637,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "謝劍平",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3546,
         "team": "A",
@@ -36661,7 +36661,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "趙振綱",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3637,
         "team": "A",
@@ -36684,7 +36684,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "曾昭雄",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3713,
         "team": "A",
@@ -36707,7 +36707,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蔡孟廷",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3488,
         "team": "A",
@@ -36730,7 +36730,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李三良",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3509,
         "team": "A",
@@ -36753,7 +36753,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張琬喻",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3535,
         "team": "A",
@@ -36776,7 +36776,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "沈哲州",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3813,
         "team": "A",
@@ -36800,7 +36800,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "鄭瑞光",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3694,
         "team": "A",
@@ -36824,7 +36824,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王靖維",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3707,
         "team": "A",
@@ -36848,7 +36848,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "葉峻賓",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3718,
         "team": "A",
@@ -36871,7 +36871,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "胡蒨傑",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3489,
         "team": "A",
@@ -36894,7 +36894,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "魏小蘭",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3569,
         "team": "A",
@@ -36917,7 +36917,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "劉華美",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3630,
         "team": "A",
@@ -36940,7 +36940,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "魏小蘭",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3741,
         "team": "A",
@@ -36963,7 +36963,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張憲章",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3639,
         "team": "A",
@@ -36987,7 +36987,7 @@ export default[
     "score": 0.5,
     "required": "選",
     "teacher": "劉顯仲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3491,
         "team": "A",
@@ -37011,7 +37011,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張譯尹",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3457,
         "team": "A",
@@ -37034,7 +37034,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "鄭政利",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3606,
         "team": "A",
@@ -37058,7 +37058,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "翁晶晶",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3611,
         "team": "A",
@@ -37081,7 +37081,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃琴雅",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3695,
         "team": "A",
@@ -37105,7 +37105,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "葉穎蓉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3757,
         "team": "A",
@@ -37128,7 +37128,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林孟彥",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3505,
         "team": "A",
@@ -37151,7 +37151,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "胡國瑞",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3529,
         "team": "A",
@@ -37174,7 +37174,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "湯梓辰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3561,
         "team": "A",
@@ -37197,7 +37197,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳建雄",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3670,
         "team": "A",
@@ -37220,7 +37220,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳冠宇",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3735,
         "team": "A",
@@ -37244,7 +37244,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "胡國瑞",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3782,
         "team": "A",
@@ -37267,7 +37267,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "劉添華",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3541,
         "team": "A",
@@ -37291,7 +37291,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "Marnie",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3804,
         "team": "A",
@@ -37315,7 +37315,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王丞浩",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3511,
         "team": "A",
@@ -37339,7 +37339,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "施宣光",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3784,
         "team": "A",
@@ -37363,7 +37363,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "高震宇",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3518,
         "team": "A",
@@ -37387,7 +37387,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "何秀青",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3536,
         "team": "A",
@@ -37410,7 +37410,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "阮怡凱",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3597,
         "team": "A",
@@ -37433,7 +37433,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李姿儀",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3690,
         "team": "A",
@@ -37456,7 +37456,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "梁容輝",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3734,
         "team": "A",
@@ -37479,7 +37479,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳秀玲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3783,
         "team": "A",
@@ -37502,7 +37502,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "廖愛禾",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3818,
         "team": "A",
@@ -37525,7 +37525,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "鍾勇輝",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3831,
         "team": "A",
@@ -37549,7 +37549,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林奇臻",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3788,
         "team": "A",
@@ -37572,7 +37572,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "卓輝華",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3479,
         "team": "A",
@@ -37595,7 +37595,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王孔政",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3501,
         "team": "A",
@@ -37619,7 +37619,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王孔政",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3502,
         "team": "A",
@@ -37642,7 +37642,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃政嘉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3522,
         "team": "A",
@@ -37666,7 +37666,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "龐敏熙",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3739,
         "team": "A",
@@ -37689,7 +37689,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "許啟彬",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3754,
         "team": "A",
@@ -37712,7 +37712,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "顏怡文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3550,
         "team": "A",
@@ -37736,7 +37736,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王蕙芝",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3595,
         "team": "A",
@@ -37760,7 +37760,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林承哲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3461,
         "team": "A",
@@ -37784,7 +37784,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "許維君",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3465,
         "team": "A",
@@ -37808,7 +37808,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "賴志遠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3499,
         "team": "A",
@@ -37831,7 +37831,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林上智",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3526,
         "team": "A",
@@ -37854,7 +37854,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李嘉林",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3591,
         "team": "A",
@@ -37878,7 +37878,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "賴志遠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3617,
         "team": "A",
@@ -37902,7 +37902,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "羅承慈",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3634,
         "team": "A",
@@ -37925,7 +37925,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張順教",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3635,
         "team": "A",
@@ -37948,7 +37948,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林丁丙",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3636,
         "team": "A",
@@ -37971,7 +37971,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "阮聖彰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3685,
         "team": "A",
@@ -37994,7 +37994,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "鄭司維",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3702,
         "team": "A",
@@ -38017,7 +38017,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "許文賢",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3703,
         "team": "A",
@@ -38040,7 +38040,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王靖維",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3708,
         "team": "A",
@@ -38063,7 +38063,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "徐志成",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3765,
         "team": "A",
@@ -38086,7 +38086,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "胡蒨傑",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3810,
         "team": "A",
@@ -38109,7 +38109,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林上智",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3819,
         "team": "A",
@@ -38132,7 +38132,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳筱青",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3830,
         "team": "A",
@@ -38155,7 +38155,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "翁溓松",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3682,
         "team": "A",
@@ -38176,7 +38176,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳志堅",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3524,
         "team": "A",
@@ -38197,7 +38197,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "游進陽",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3525,
         "team": "B",
@@ -38217,7 +38217,7 @@ export default[
     "classNameEng": "All-Out Defense Education: Military Training Program ? Defense Mobilization",
     "required": "選",
     "teacher": "廖天威",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3512,
         "team": "A",
@@ -38237,7 +38237,7 @@ export default[
     "classNameEng": "All-Out Defense Education: Military Training Program ?Defense Policy",
     "required": "選",
     "teacher": "廖天威",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3513,
         "team": "A",
@@ -38257,7 +38257,7 @@ export default[
     "classNameEng": "All-Out Defense Education: Military Training Program ?Defense Technology",
     "required": "選",
     "teacher": "劉鐵軍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3514,
         "team": "A",
@@ -38277,7 +38277,7 @@ export default[
     "classNameEng": "All-Out Defense Education: Military Training Program ?Defense Technology",
     "required": "選",
     "teacher": "劉鐵軍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3515,
         "team": "B",
@@ -38298,7 +38298,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "胡冠域、羅天一",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3545,
         "team": "A",
@@ -38319,7 +38319,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "呂志豪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3560,
         "team": "A",
@@ -38340,7 +38340,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "蘇忠傑",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3562,
         "team": "A",
@@ -38361,7 +38361,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林子仁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3620,
         "team": "B",
@@ -38383,7 +38383,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃意婷",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3619,
         "team": "A",
@@ -38404,7 +38404,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "賴祐吉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3747,
         "team": "A",
@@ -38425,7 +38425,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "陳重光",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3795,
         "team": "A",
@@ -38446,7 +38446,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "李兆麟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3796,
         "team": "B",
@@ -38467,7 +38467,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張柏超",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3472,
         "team": "A",
@@ -38488,7 +38488,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "果鏡法師",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3485,
         "team": "A",
@@ -38509,7 +38509,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蔡鴻文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3500,
         "team": "A",
@@ -38530,7 +38530,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃忠偉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3507,
         "team": "A",
@@ -38551,7 +38551,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "黃忠偉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3508,
         "team": "A",
@@ -38572,7 +38572,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "徐泰國",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3527,
         "team": "A",
@@ -38593,7 +38593,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "邱奕旭",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3540,
         "team": "A",
@@ -38614,7 +38614,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "顏怡文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3558,
         "team": "A",
@@ -38635,7 +38635,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王丞浩",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3559,
         "team": "B",
@@ -38656,7 +38656,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王思如",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3568,
         "team": "A",
@@ -38677,7 +38677,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "劉慧玲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3574,
         "team": "A",
@@ -38698,7 +38698,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "劉慧玲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3575,
         "team": "B",
@@ -38719,7 +38719,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林益泓",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3576,
         "team": "C",
@@ -38740,7 +38740,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林益泓",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3577,
         "team": "D",
@@ -38761,7 +38761,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "王敏東",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3578,
         "team": "E",
@@ -38782,7 +38782,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "王敏東",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3579,
         "team": "F",
@@ -38803,7 +38803,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "王敏東",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3580,
         "team": "G",
@@ -38824,7 +38824,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林昱安",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3594,
         "team": "A",
@@ -38845,7 +38845,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "白省三",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3596,
         "team": "A",
@@ -38866,7 +38866,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "江梓瑋",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3598,
         "team": "A",
@@ -38887,7 +38887,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林裕傑、陳彥廷、施乃中",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3599,
         "team": "A",
@@ -38909,7 +38909,7 @@ export default[
     "score": 5,
     "required": "選",
     "teacher": "葉正桃",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3600,
         "team": "A",
@@ -38930,7 +38930,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "項維欣",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3612,
         "team": "A",
@@ -38951,7 +38951,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "郭家宏",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3628,
         "team": "A",
@@ -38972,7 +38972,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "何昀芳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3647,
         "team": "A",
@@ -38993,7 +38993,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王駿揚",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3648,
         "team": "B",
@@ -39014,7 +39014,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林青萱",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3649,
         "team": "C",
@@ -39035,7 +39035,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "柯志祥",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3650,
         "team": "D",
@@ -39056,7 +39056,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "張厚麒",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3654,
         "team": "A",
@@ -39077,7 +39077,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "陳彥廷",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3671,
         "team": "A",
@@ -39098,7 +39098,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "吳榮梅",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3676,
         "team": "A",
@@ -39119,7 +39119,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "蔡曉雲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3677,
         "team": "A",
@@ -39140,7 +39140,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "劉慧玲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3705,
         "team": "A",
@@ -39162,7 +39162,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "王敏東",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3706,
         "team": "B",
@@ -39184,7 +39184,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林裕傑",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3746,
         "team": "A",
@@ -39205,7 +39205,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林俊傑",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3764,
         "team": "A",
@@ -39226,7 +39226,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "楊振",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3767,
         "team": "A",
@@ -39247,7 +39247,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林時旭",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3793,
         "team": "A",
@@ -39268,7 +39268,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "釋見咸法師",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3803,
         "team": "A",
@@ -39289,7 +39289,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "王百祿",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3459,
         "team": "A",
@@ -39310,7 +39310,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "黃信洋",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3728,
         "team": "A",
@@ -39331,7 +39331,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "黃信洋",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3729,
         "team": "B",
@@ -39352,7 +39352,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳曉慧",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3769,
         "team": "A",
@@ -39373,7 +39373,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "馬世芳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3487,
         "team": "A",
@@ -39394,7 +39394,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳丁章",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3691,
         "team": "A",
@@ -39414,7 +39414,7 @@ export default[
     "classNameEng": "Interdisciplinary Special Project I",
     "score": 2,
     "required": "選",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3736,
         "team": "A",
@@ -39430,7 +39430,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "洪正和",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3462,
         "team": "A",
@@ -39451,7 +39451,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "趙潤昌",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3463,
         "team": "A",
@@ -39472,7 +39472,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "趙潤昌",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3464,
         "team": "B",
@@ -39493,7 +39493,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "宋德震",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3477,
         "team": "A",
@@ -39514,7 +39514,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "王瑞傑",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3481,
         "team": "A",
@@ -39535,7 +39535,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "王瑞傑",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3482,
         "team": "B",
@@ -39556,7 +39556,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "鍾鳳玲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3519,
         "team": "A",
@@ -39577,7 +39577,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "張宏誠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3565,
         "team": "A",
@@ -39598,7 +39598,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "郭育吟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3566,
         "team": "A",
@@ -39619,7 +39619,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳星宏",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3571,
         "team": "A",
@@ -39640,7 +39640,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "吳淑鳳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3584,
         "team": "A",
@@ -39661,7 +39661,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "吳淑鳳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3585,
         "team": "B",
@@ -39682,7 +39682,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "張世瑛",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3586,
         "team": "A",
@@ -39703,7 +39703,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "張世瑛",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3587,
         "team": "B",
@@ -39724,7 +39724,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林慶元",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3603,
         "team": "A",
@@ -39745,7 +39745,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "劉公昭",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3608,
         "team": "A",
@@ -39766,7 +39766,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王維君",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3621,
         "team": "A",
@@ -39787,7 +39787,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王維君",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3622,
         "team": "B",
@@ -39808,7 +39808,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳修聖",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3625,
         "team": "A",
@@ -39829,7 +39829,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林景銘",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3627,
         "team": "A",
@@ -39850,7 +39850,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "鄭大誠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3642,
         "team": "A",
@@ -39871,7 +39871,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "曹淑玉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3645,
         "team": "A",
@@ -39892,7 +39892,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳昭華",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3658,
         "team": "A",
@@ -39913,7 +39913,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃金蘭",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3686,
         "team": "A",
@@ -39934,7 +39934,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃金蘭",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3687,
         "team": "B",
@@ -39955,7 +39955,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "繆維中",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3693,
         "team": "A",
@@ -39976,7 +39976,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "胡家紋",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3723,
         "team": "A",
@@ -39997,7 +39997,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "胡家紋",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3724,
         "team": "B",
@@ -40018,7 +40018,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "賴明政",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3758,
         "team": "A",
@@ -40039,7 +40039,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "賴明政",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3759,
         "team": "B",
@@ -40060,7 +40060,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳世榮",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3770,
         "team": "A",
@@ -40081,7 +40081,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳世榮",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3771,
         "team": "B",
@@ -40102,7 +40102,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "劉公昭",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3797,
         "team": "A",
@@ -40123,7 +40123,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "何思瞇",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3799,
         "team": "A",
@@ -40144,7 +40144,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "何思瞇",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3800,
         "team": "B",
@@ -40165,7 +40165,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "蔡昱宇",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3808,
         "team": "A",
@@ -40186,7 +40186,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "德嘉法師、宗惇法師",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3809,
         "team": "A",
@@ -40207,7 +40207,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "黃東明",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3814,
         "team": "A",
@@ -40228,7 +40228,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "趙國芳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3815,
         "team": "B",
@@ -40249,7 +40249,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "黃東明",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3816,
         "team": "C",
@@ -40270,7 +40270,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "趙國芳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3817,
         "team": "D",
@@ -40291,7 +40291,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "梁欣如",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3820,
         "team": "A",
@@ -40312,7 +40312,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "楊佳蓉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3822,
         "team": "A",
@@ -40333,7 +40333,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "鄭淑文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3823,
         "team": "A",
@@ -40354,7 +40354,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "鄭淑文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3824,
         "team": "B",
@@ -40375,7 +40375,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "鄭治桂",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3826,
         "team": "A",
@@ -40396,7 +40396,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "盧廷清",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3827,
         "team": "B",
@@ -40417,7 +40417,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "王鵬豪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3828,
         "team": "A",
@@ -40438,7 +40438,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "王鵬豪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3829,
         "team": "B",
@@ -40459,7 +40459,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林景銘",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3835,
         "team": "A",
@@ -40480,7 +40480,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳崇賢",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3613,
         "team": "A",
@@ -40501,7 +40501,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳俊男",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3547,
         "team": "A",
@@ -40522,7 +40522,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蘇金輝",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3623,
         "team": "A",
@@ -40543,7 +40543,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蘇金輝",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3624,
         "team": "B",
@@ -40564,7 +40564,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林瑞珠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3632,
         "team": "A",
@@ -40585,7 +40585,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "徐茂炫",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3731,
         "team": "A",
@@ -40607,7 +40607,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃振皓",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3766,
         "team": "A",
@@ -40628,7 +40628,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "洪正和",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3774,
         "team": "A",
@@ -40649,7 +40649,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "張博智",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3790,
         "team": "A",
@@ -40670,7 +40670,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "張博智",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3791,
         "team": "B",
@@ -40690,7 +40690,7 @@ export default[
     "classNameEng": "Interdisciplinary Special Project II",
     "score": 2,
     "required": "選",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3737,
         "team": "A",
@@ -40706,7 +40706,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "阮聖彰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3618,
         "team": "A",
@@ -40727,7 +40727,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "許恆壽、吳堉文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3493,
         "team": "A",
@@ -40748,7 +40748,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "李子聿",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3496,
         "team": "A",
@@ -40769,7 +40769,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳鴻興",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3530,
         "team": "A",
@@ -40790,7 +40790,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "馮志宇",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3581,
         "team": "A",
@@ -40811,7 +40811,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "馮志宇",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3582,
         "team": "B",
@@ -40833,7 +40833,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "施宣光、蔡欣君",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3605,
         "team": "A",
@@ -40854,7 +40854,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "曾凱逸",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3643,
         "team": "A",
@@ -40875,7 +40875,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳彥宏",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3651,
         "team": "A",
@@ -40896,7 +40896,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳彥宏",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3652,
         "team": "B",
@@ -40918,7 +40918,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林希偉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3664,
         "team": "A",
@@ -40940,7 +40940,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "葉瑞徽",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3665,
         "team": "B",
@@ -40962,7 +40962,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張琬喻",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3666,
         "team": "A",
@@ -40983,7 +40983,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳彥廷",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3679,
         "team": "A",
@@ -41004,7 +41004,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "邱乾?",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3696,
         "team": "A",
@@ -41025,7 +41025,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蔡孟廷",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3700,
         "team": "A",
@@ -41046,7 +41046,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "馮志宇",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3709,
         "team": "A",
@@ -41068,7 +41068,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "何珮瑩",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3781,
         "team": "A",
@@ -41089,7 +41089,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "何珮瑩",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3583,
         "team": "A",
@@ -41110,7 +41110,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林孟彥",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3538,
         "team": "A",
@@ -41131,7 +41131,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林孟彥",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3539,
         "team": "B",
@@ -41152,7 +41152,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "王麗蘭",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3570,
         "team": "A",
@@ -41173,7 +41173,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "徐泰國",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3661,
         "team": "A",
@@ -41194,7 +41194,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "洪秀錦",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3684,
         "team": "B",
@@ -41216,7 +41216,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "洪秀錦",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3683,
         "team": "A",
@@ -41237,7 +41237,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "耿筠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3689,
         "team": "A",
@@ -41258,7 +41258,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "葉北辰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3717,
         "team": "A",
@@ -41279,7 +41279,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "黎立仁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3836,
         "team": "A",
@@ -41300,7 +41300,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃昌群",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3474,
         "team": "A",
@@ -41321,7 +41321,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃昌群",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3475,
         "team": "B",
@@ -41343,7 +41343,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林子仁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3476,
         "team": "C",
@@ -41364,7 +41364,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "江志宏",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3486,
         "team": "A",
@@ -41385,7 +41385,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "吳淑貞",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3498,
         "team": "A",
@@ -41406,7 +41406,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "余能豪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3644,
         "team": "A",
@@ -41427,7 +41427,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "管中徽",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3655,
         "team": "A",
@@ -41448,7 +41448,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "黃身安",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3660,
         "team": "A",
@@ -41469,7 +41469,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李大椿",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3710,
         "team": "A",
@@ -41490,7 +41490,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "蔡昱宇",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3712,
         "team": "A",
@@ -41511,7 +41511,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "許嘉裕",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3715,
         "team": "B",
@@ -41532,7 +41532,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張益賓",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3716,
         "team": "C",
@@ -41554,7 +41554,7 @@ export default[
     "score": 4,
     "required": "選",
     "teacher": "周宏隆",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3714,
         "team": "A",
@@ -41575,7 +41575,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "鄭仁偉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3777,
         "team": "A",
@@ -41596,7 +41596,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "傅汝洋",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3825,
         "team": "A",
@@ -41617,7 +41617,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "葉北辰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3495,
         "team": "A",
@@ -41638,7 +41638,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳衍任",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3506,
         "team": "A",
@@ -41659,7 +41659,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "鄧昭瑞",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3626,
         "team": "A",
@@ -41680,7 +41680,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "王淑俐",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3775,
         "team": "A",
@@ -41702,7 +41702,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "李潔",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3776,
         "team": "B",
@@ -41723,7 +41723,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "白姝玉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3466,
         "team": "A",
@@ -41744,7 +41744,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "歐立成、李宗憲、陳建宇",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3533,
         "team": "A",
@@ -41765,7 +41765,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "蔡耀慶",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3629,
         "team": "A",
@@ -41786,7 +41786,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "廖軍豪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3673,
         "team": "A",
@@ -41807,7 +41807,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳文川",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3733,
         "team": "A",
@@ -41827,7 +41827,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "管美蓉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3779,
         "team": "A",
@@ -41848,7 +41848,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "曾盛恕",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3792,
         "team": "A",
@@ -41869,7 +41869,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林裕傑",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3798,
         "team": "A",
@@ -41890,7 +41890,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "鄭政利",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3807,
         "team": "A",
@@ -41911,7 +41911,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "李宜懃",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3812,
         "team": "A",
@@ -41932,7 +41932,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳詩芸",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3548,
         "team": "A",
@@ -41954,7 +41954,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蔡孟霖",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3549,
         "team": "B",
@@ -41975,7 +41975,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蔡孟霖",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3552,
         "team": "B",
@@ -41996,7 +41996,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王秋燕",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3553,
         "team": "C",
@@ -42018,7 +42018,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "梁鍵隴",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3551,
         "team": "A",
@@ -42039,7 +42039,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "鍾建屏",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3588,
         "team": "A",
@@ -42060,7 +42060,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "高李恩",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3669,
         "team": "A",
@@ -42081,7 +42081,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "耿筠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3656,
         "team": "A",
@@ -42102,7 +42102,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "鄭仁偉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3668,
         "team": "A",
@@ -42123,7 +42123,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王思如",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3680,
         "team": "A",
@@ -42143,7 +42143,7 @@ export default[
     "classNameEng": "All-out Defense Education Military Training-International Situation",
     "required": "選",
     "teacher": "劉鐵軍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3516,
         "team": "A",
@@ -42163,7 +42163,7 @@ export default[
     "classNameEng": "All-out Defense Education Military Training-International Situation",
     "required": "選",
     "teacher": "劉鐵軍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3517,
         "team": "B",
@@ -42185,7 +42185,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "徐昀",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3564,
         "team": "A",
@@ -42206,7 +42206,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王宏瑞",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3589,
         "team": "A",
@@ -42228,7 +42228,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林銘煌",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3646,
         "team": "A",
@@ -42249,7 +42249,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "董芳武",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3662,
         "team": "A",
@@ -42270,7 +42270,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王思如",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3672,
         "team": "A",
@@ -42291,7 +42291,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "洪伯達",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3674,
         "team": "A",
@@ -42312,7 +42312,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李根在",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3701,
         "team": "A",
@@ -42333,7 +42333,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "吳雪麗",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3704,
         "team": "A",
@@ -42354,7 +42354,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳麗如",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3711,
         "team": "A",
@@ -42375,7 +42375,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "高震宇",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3720,
         "team": "A",
@@ -42396,7 +42396,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李宜懃",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3730,
         "team": "A",
@@ -42417,7 +42417,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "孫春望",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3748,
         "team": "A",
@@ -42438,7 +42438,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "孫春望",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3749,
         "team": "B",
@@ -42459,7 +42459,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "施皇旭",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3750,
         "team": "C",
@@ -42480,7 +42480,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "施皇旭",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3751,
         "team": "D",
@@ -42501,7 +42501,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蕭勝文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3752,
         "team": "A",
@@ -42522,7 +42522,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蕭勝文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3753,
         "team": "B",
@@ -42543,7 +42543,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳俊安",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3768,
         "team": "A",
@@ -42564,7 +42564,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "袁嘏鼎",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3778,
         "team": "A",
@@ -42585,7 +42585,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "湯梓辰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3786,
         "team": "A",
@@ -42606,7 +42606,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "湯梓辰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3787,
         "team": "B",
@@ -42627,7 +42627,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "黃身安",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3811,
         "team": "A",
@@ -42648,7 +42648,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "鍾勇輝",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3832,
         "team": "A",
@@ -42669,7 +42669,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃瓊慧",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3721,
         "team": "A",
@@ -42690,7 +42690,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "易力行",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3833,
         "team": "A",
@@ -42711,7 +42711,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "孫沛立、胡國瑞、林宗翰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3458,
         "team": "A",
@@ -42733,7 +42733,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "Karl Akbari",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3494,
         "team": "A",
@@ -42755,7 +42755,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "Marco Fabio Benaglia",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3537,
         "team": "A",
@@ -42777,7 +42777,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "周麟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3567,
         "team": "A",
@@ -42799,7 +42799,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "楊智琄",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3544,
         "team": "A",
@@ -42821,7 +42821,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "楊智琄",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3834,
         "team": "A",
@@ -42842,7 +42842,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "汪錫麟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3780,
         "team": "A",
@@ -42863,7 +42863,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張智傑",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3467,
         "team": "A",
@@ -42884,7 +42884,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "林孟彥",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3504,
         "team": "A",
@@ -42906,7 +42906,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "梁容輝",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3573,
         "team": "A",
@@ -42927,7 +42927,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "吳國彰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3456,
         "team": "A",
@@ -42948,7 +42948,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "駱信昌",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3460,
         "team": "A",
@@ -42970,7 +42970,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "許聿靈",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3468,
         "team": "A",
@@ -42992,7 +42992,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林承哲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3469,
         "team": "B",
@@ -43013,7 +43013,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "林承哲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3471,
         "team": "B",
@@ -43035,7 +43035,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "許聿靈",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3470,
         "team": "A",
@@ -43056,7 +43056,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "龐敏熙",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3478,
         "team": "A",
@@ -43077,7 +43077,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林郁君",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3484,
         "team": "A",
@@ -43098,7 +43098,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "吳國彰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3492,
         "team": "A",
@@ -43119,7 +43119,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "吳國彰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3528,
         "team": "A",
@@ -43140,7 +43140,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "未  定",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3531,
         "team": "A",
@@ -43162,7 +43162,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "喻奉天",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3542,
         "team": "A",
@@ -43184,7 +43184,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "郭伯勳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3543,
         "team": "B",
@@ -43206,7 +43206,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "王瑩",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3572,
         "team": "A",
@@ -43228,7 +43228,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王福琨",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3592,
         "team": "A",
@@ -43250,7 +43250,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "葉瑞徽",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3593,
         "team": "B",
@@ -43271,7 +43271,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃健勇",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3601,
         "team": "A",
@@ -43292,7 +43292,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃健勇",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3602,
         "team": "B",
@@ -43313,7 +43313,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "周麟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3640,
         "team": "A",
@@ -43334,7 +43334,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "姚嘉瑜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3653,
         "team": "A",
@@ -43355,7 +43355,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "施皇旭",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3681,
         "team": "A",
@@ -43376,7 +43376,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "鍾玉玲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3719,
         "team": "A",
@@ -43397,7 +43397,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "歐陽超",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3742,
         "team": "A",
@@ -43418,7 +43418,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "楊朝龍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3743,
         "team": "B",
@@ -43439,7 +43439,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "歐陽超",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3744,
         "team": "A",
@@ -43460,7 +43460,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "楊朝龍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3745,
         "team": "B",
@@ -43481,7 +43481,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "曾世賢",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3760,
         "team": "A",
@@ -43502,7 +43502,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "楊朝龍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3761,
         "team": "A",
@@ -43523,7 +43523,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李強笙",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3762,
         "team": "B",
@@ -43544,7 +43544,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林祐生",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3763,
         "team": "A",
@@ -43565,7 +43565,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "江志宏",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3772,
         "team": "A",
@@ -43587,7 +43587,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "黃信洋",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3773,
         "team": "B",
@@ -43608,7 +43608,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "許重博",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3794,
         "team": "A",
@@ -43629,7 +43629,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "楊佳蓉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3821,
         "team": "A",
@@ -43651,7 +43651,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "楊智琄",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3837,
         "team": "A",
@@ -43672,7 +43672,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳俊名",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3453,
         "team": "A",
@@ -43693,7 +43693,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "胡家紋",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3497,
         "team": "A",
@@ -43714,7 +43714,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "賴維新",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3607,
         "team": "A",
@@ -43735,7 +43735,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林庭毅",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3616,
         "team": "A",
@@ -43756,7 +43756,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "白桂英",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3631,
         "team": "A",
@@ -43777,7 +43777,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "周賢鎧",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3698,
         "team": "B",
@@ -43799,7 +43799,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "施劭儒",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3697,
         "team": "A",
@@ -43820,7 +43820,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳俊名",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3785,
         "team": "A",
@@ -43841,7 +43841,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "謝志華",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3801,
         "team": "A",
@@ -43862,7 +43862,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "許啟彬",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3802,
         "team": "A",
@@ -43883,7 +43883,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳士勛",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3473,
         "team": "A",
@@ -43904,7 +43904,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "劉福運",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3483,
         "team": "A",
@@ -43924,7 +43924,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "黃欣萍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3554,
         "team": "A",
@@ -43946,7 +43946,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "徐秀蘭",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3555,
         "team": "A",
@@ -43968,7 +43968,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "黃欣萍、徐秀蘭",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3556,
         "team": "A",
@@ -43990,7 +43990,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "徐秀蘭",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3557,
         "team": "A",
@@ -44012,7 +44012,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "Tran Thi Thanh Huyen",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3590,
         "team": "A",
@@ -44033,7 +44033,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "朱曉萍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3609,
         "team": "A",
@@ -44054,7 +44054,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林瑞珠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3615,
         "team": "A",
@@ -44075,7 +44075,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "王自雄",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3641,
         "team": "A",
@@ -44096,7 +44096,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "白省三",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3678,
         "team": "A",
@@ -44117,7 +44117,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "楊馥妃",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3688,
         "team": "A",
@@ -44139,7 +44139,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "周若漢",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3722,
         "team": "A",
@@ -44160,7 +44160,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "胡家紋",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3725,
         "team": "A",
@@ -44182,7 +44182,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "徐言",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3727,
         "team": "A",
@@ -44203,7 +44203,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃政嘉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3732,
         "team": "A",
@@ -44223,7 +44223,7 @@ export default[
     "classNameEng": "Special Projects (I)",
     "score": 2,
     "required": "選",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3755,
         "team": "A",
@@ -44240,7 +44240,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "王嘉斌",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1163,
         "class": "碩博",
@@ -44262,7 +44262,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "許陳鑑",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1164,
         "class": "碩博",
@@ -44283,7 +44283,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王偉彥",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1165,
         "class": "碩博",
@@ -44304,7 +44304,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "高文忠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1166,
         "class": "碩博",
@@ -44326,7 +44326,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "Saeed Saeedvand",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1167,
         "class": "碩博",
@@ -44348,7 +44348,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "葉家宏",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1168,
         "class": "碩博",
@@ -44370,7 +44370,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃政吉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1169,
         "class": "碩博",
@@ -44391,7 +44391,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "郭建宏",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1170,
         "class": "碩博",
@@ -44412,7 +44412,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蔡政翰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1171,
         "class": "碩博",
@@ -44433,7 +44433,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王嘉斌",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1172,
         "class": "碩博",
@@ -44454,7 +44454,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "呂藝光",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1173,
         "class": "碩博",
@@ -44476,7 +44476,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "賴以威",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1174,
         "class": "碩博",
@@ -44498,7 +44498,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "Saeed Saeedvand",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1175,
         "class": "碩博",
@@ -44520,7 +44520,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "呂成凱",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1176,
         "class": "碩博",
@@ -44541,7 +44541,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "洪國勳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1177,
         "class": "碩博",
@@ -44562,7 +44562,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "林政宏",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1304,
         "grade": 1,
@@ -44583,7 +44583,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "林群祐",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1305,
         "grade": 1,
@@ -44604,7 +44604,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "蘇崇彥",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1308,
         "team": "A",
@@ -44625,7 +44625,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "蘇崇彥",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1309,
         "team": "B",
@@ -44647,7 +44647,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "林群祐",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1310,
         "grade": 2,
@@ -44668,7 +44668,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "康立威",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1306,
         "team": "A",
@@ -44691,7 +44691,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "康立威",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1307,
         "team": "B",
@@ -44714,7 +44714,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "賴以威",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1311,
         "grade": 2,
@@ -44734,7 +44734,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "郭建宏",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1312,
         "grade": 2,
@@ -44754,7 +44754,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "曾煥雯",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1315,
         "grade": 3,
@@ -44774,7 +44774,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "盧明智",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1316,
         "grade": 3,
@@ -44794,7 +44794,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林政宏",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1313,
         "grade": 2,
@@ -44814,7 +44814,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王嘉斌",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1317,
         "grade": 3,
@@ -44834,7 +44834,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳瑄易 洪欽銘",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1318,
         "grade": 3,
@@ -44855,7 +44855,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "許陳鑑",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1303,
         "time": [
@@ -44874,7 +44874,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃政吉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1314,
         "grade": 2,
@@ -44894,7 +44894,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "林群祐",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1320,
         "team": "A",
@@ -44915,7 +44915,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "蘇崇彥",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1321,
         "team": "B",
@@ -44936,7 +44936,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "陳瑄易",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1322,
         "team": "C",
@@ -44957,7 +44957,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蔡家丘",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3125,
         "time": [
@@ -44978,7 +44978,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "哈德森",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3126,
         "time": [
@@ -44998,7 +44998,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "曾肅良",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3127,
         "time": [
@@ -45018,7 +45018,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "曾肅良",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3128,
         "time": [
@@ -45038,7 +45038,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林麗江",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3129,
         "time": [
@@ -45059,7 +45059,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "Candida Syndikus",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3130,
         "time": [
@@ -45079,7 +45079,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "邱士華",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3131,
         "time": [
@@ -45100,7 +45100,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "諾斯邦",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3132,
         "time": [
@@ -45121,7 +45121,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王維周",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3133,
         "time": [
@@ -45141,7 +45141,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蔡家丘",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3134,
         "time": [
@@ -45162,7 +45162,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "哈德森",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3135,
         "time": [
@@ -45182,7 +45182,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "劉碧旭",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3102,
         "class": "碩博",
@@ -45203,7 +45203,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王瓊麗",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3103,
         "class": "碩博",
@@ -45224,7 +45224,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "朱哲良",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3104,
         "class": "碩博",
@@ -45245,7 +45245,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蘇瑤華",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3391,
         "class": "碩博",
@@ -45266,7 +45266,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "吳岱融",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3105,
         "class": "碩博",
@@ -45287,7 +45287,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃瑞祺",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3106,
         "class": "碩博",
@@ -45308,7 +45308,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳育祥",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3397,
         "class": "碩博",
@@ -45329,7 +45329,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林承緯",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3107,
         "class": "碩博",
@@ -45350,7 +45350,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李立鈞",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3108,
         "class": "碩博",
@@ -45371,7 +45371,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "孫翼華 李振明",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3109,
         "class": "碩博",
@@ -45392,7 +45392,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "宋曉明",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3110,
         "class": "碩博",
@@ -45413,7 +45413,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "白適銘",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3111,
         "class": "碩博",
@@ -45434,7 +45434,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "吳宥鋅",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3112,
         "class": "碩博",
@@ -45455,7 +45455,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張省卿",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3113,
         "class": "碩博",
@@ -45476,7 +45476,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "邱誌勇",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3114,
         "class": "碩博",
@@ -45497,7 +45497,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃心健",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3115,
         "class": "碩博",
@@ -45518,7 +45518,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "廖凰玎",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3116,
         "class": "碩博",
@@ -45539,7 +45539,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林淑華",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3150,
         "class": "大碩",
@@ -45560,7 +45560,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳永賢",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3117,
         "class": "碩博",
@@ -45581,7 +45581,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蘇瑤華",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3118,
         "class": "碩博",
@@ -45602,7 +45602,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蔡芷芬",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3119,
         "class": "碩博",
@@ -45623,7 +45623,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳淑華",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3120,
         "class": "碩博",
@@ -45644,7 +45644,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "程代勒 林政榮",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3121,
         "class": "碩博",
@@ -45665,7 +45665,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張元鳳 林震煌",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3122,
         "class": "碩博",
@@ -45686,7 +45686,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張元鳳 林震煌",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3123,
         "class": "碩博",
@@ -45707,7 +45707,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳淑華",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3124,
         "class": "碩博",
@@ -45728,7 +45728,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張維敦",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3152,
         "class": "大碩",
@@ -45750,7 +45750,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳淑華",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3153,
         "class": "大碩",
@@ -45770,7 +45770,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "蘇榕",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3089,
         "time": [
@@ -45790,7 +45790,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "莊連東",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3090,
         "time": [
@@ -45810,7 +45810,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張元鳳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3091,
         "time": [
@@ -45831,7 +45831,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林震煌",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3092,
         "time": [
@@ -45851,7 +45851,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃進龍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3093,
         "time": [
@@ -45871,7 +45871,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "朱友意",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3097,
         "time": [
@@ -45891,7 +45891,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "孫翼華",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3098,
         "time": [
@@ -45911,7 +45911,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "江學瀅",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3099,
         "time": [
@@ -45931,7 +45931,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張元鳳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3100,
         "time": [
@@ -45952,7 +45952,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林震煌",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3101,
         "time": [
@@ -45972,7 +45972,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "宋蕙伶",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3292,
         "time": [
@@ -45992,7 +45992,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "顧素琿",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3154,
         "grade": 1,
@@ -46013,7 +46013,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林正仁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3165,
         "grade": 3,
@@ -46034,7 +46034,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "白適銘",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3160,
         "grade": 2,
@@ -46055,7 +46055,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "姚瑞中",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3168,
         "grade": 4,
@@ -46076,7 +46076,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "胡以誠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3174,
         "grade": 2,
@@ -46097,7 +46097,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "唐瑄",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3167,
         "grade": 3,
@@ -46118,7 +46118,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "江學瀅",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3161,
         "grade": 2,
@@ -46139,7 +46139,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "朱友意",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3155,
         "team": "A",
@@ -46161,7 +46161,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "王瓊麗",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3156,
         "team": "B",
@@ -46183,7 +46183,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "趙惠玲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3157,
         "grade": 1,
@@ -46204,7 +46204,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "高榮禧",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3162,
         "grade": 2,
@@ -46225,7 +46225,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "馬曉瑛",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3187,
         "grade": 3,
@@ -46247,7 +46247,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "朱哲良",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3169,
         "grade": 4,
@@ -46268,7 +46268,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王瓊麗",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3188,
         "grade": 3,
@@ -46289,7 +46289,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張貞雯",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3175,
         "grade": 2,
@@ -46310,7 +46310,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃坤伯",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3186,
         "grade": 2,
@@ -46331,7 +46331,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王瓊麗",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3182,
         "grade": 1,
@@ -46352,7 +46352,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林政榮",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3178,
         "grade": 3,
@@ -46373,7 +46373,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "朱友意",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3189,
         "grade": 3,
@@ -46394,7 +46394,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "莊連東",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3176,
         "grade": 2,
@@ -46415,7 +46415,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林政榮",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3177,
         "grade": 2,
@@ -46436,7 +46436,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "劉子平",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3163,
         "grade": 2,
@@ -46457,7 +46457,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "蔡芷芬",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3190,
         "grade": 3,
@@ -46479,7 +46479,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "許兆宏",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3145,
         "time": [
@@ -46499,7 +46499,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "孫翼華",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3179,
         "grade": 3,
@@ -46520,7 +46520,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "莊連東",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3171,
         "grade": 1,
@@ -46541,7 +46541,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "林政榮",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3183,
         "grade": 1,
@@ -46562,7 +46562,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "潘怡伶",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3146,
         "time": [
@@ -46582,7 +46582,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "鈴鴨富士子",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3147,
         "time": [
@@ -46602,7 +46602,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "潘怡伶",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3148,
         "time": [
@@ -46622,7 +46622,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃進龍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3149,
         "time": [
@@ -46643,7 +46643,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "宋曉明",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3181,
         "time": [
@@ -46663,7 +46663,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "張國治",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3164,
         "grade": 2,
@@ -46684,7 +46684,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "吳宥鋅 林政榮",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3180,
         "grade": 4,
@@ -46705,7 +46705,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "黃進龍 朱友意 蔡芷芬 宋曉明",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3191,
         "grade": 4,
@@ -46726,7 +46726,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "吳宥鋅",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3172,
         "grade": 1,
@@ -46747,7 +46747,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "蔡芷芬",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3184,
         "grade": 1,
@@ -46768,7 +46768,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "宋曉明",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3158,
         "team": "A",
@@ -46790,7 +46790,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "黃進龍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3159,
         "team": "B",
@@ -46812,7 +46812,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "孫翼華",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3173,
         "grade": 1,
@@ -46833,7 +46833,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "吳宥鋅",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3185,
         "grade": 1,
@@ -46854,7 +46854,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "趙惠玲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3170,
         "grade": 4,
@@ -46875,7 +46875,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張佳榮",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2472,
         "time": [
@@ -46895,7 +46895,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "周佳敏",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2489,
         "grade": 2,
@@ -46916,7 +46916,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "康敏平 徐景輝",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2495,
         "team": "A",
@@ -46939,7 +46939,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "康敏平 徐景輝",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2496,
         "team": "B",
@@ -46962,7 +46962,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "邱文昌",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2473,
         "time": [
@@ -46982,7 +46982,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "吳彥濬",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2497,
         "team": "A",
@@ -47005,7 +47005,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "吳彥濬",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2498,
         "team": "B",
@@ -47028,7 +47028,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "王仕茹",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2490,
         "team": "A",
@@ -47051,7 +47051,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "王仕茹",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2491,
         "team": "B",
@@ -47074,7 +47074,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "陳慧玲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2492,
         "grade": 2,
@@ -47095,7 +47095,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "張佳榮 邱皓政 洪秀瑜 黃浩霆",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2474,
         "team": "A",
@@ -47117,7 +47117,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "周世玉 徐美 賴慧文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2475,
         "team": "B",
@@ -47139,7 +47139,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "賴慧文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2476,
         "time": [
@@ -47159,7 +47159,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "陳慧玲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2482,
         "team": "A",
@@ -47182,7 +47182,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "陳慧玲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2483,
         "team": "B",
@@ -47205,7 +47205,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "徐美",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2485,
         "team": "B",
@@ -47229,7 +47229,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "張可盈 印永翔",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2484,
         "team": "A",
@@ -47252,7 +47252,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "邱皓政",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2493,
         "team": "A",
@@ -47274,7 +47274,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "邱皓政",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2494,
         "team": "B",
@@ -47296,7 +47296,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "張佳榮",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2486,
         "team": "A",
@@ -47319,7 +47319,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "張佳榮",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2487,
         "team": "B",
@@ -47342,7 +47342,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張家揚",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2477,
         "time": [
@@ -47363,7 +47363,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "阿曼德",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2478,
         "time": [
@@ -47383,7 +47383,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "鍾震耀",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2479,
         "time": [
@@ -47404,7 +47404,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張家揚",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2480,
         "time": [
@@ -47424,7 +47424,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "何宗武",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2488,
         "grade": 1,
@@ -47446,7 +47446,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃浩霆",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2481,
         "time": [
@@ -47466,7 +47466,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "呂國棟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2696,
         "class": "碩博",
@@ -47487,7 +47487,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "呂俊宏",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2697,
         "class": "碩博",
@@ -47508,7 +47508,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王慈蔚",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2959,
         "class": "大碩",
@@ -47528,7 +47528,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "賴韻如 王慈蔚 蘇銘燦",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2698,
         "class": "碩博",
@@ -47549,7 +47549,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "李壽先",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2699,
         "class": "碩博",
@@ -47570,7 +47570,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "吳忠信",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2956,
         "class": "大碩博",
@@ -47590,7 +47590,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王慈蔚",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2957,
         "class": "大碩博",
@@ -47610,7 +47610,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林豊益",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2958,
         "class": "大碩博",
@@ -47630,7 +47630,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林思民",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2700,
         "class": "碩博",
@@ -47651,7 +47651,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "孫智雯",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2701,
         "class": "碩博",
@@ -47671,7 +47671,7 @@ export default[
     "classNameEng": "Advanced Seminar (I)",
     "required": "必",
     "teacher": "蘇銘燦 王慈蔚 王麗婷",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2702,
         "class": "碩博",
@@ -47692,7 +47692,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "李壽先",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2703,
         "class": "碩博",
@@ -47713,7 +47713,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "鄭劍廷",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2704,
         "class": "碩博",
@@ -47734,7 +47734,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "吳忠信",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2705,
         "class": "碩博",
@@ -47756,7 +47756,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "許鈺鸚",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2706,
         "class": "碩博",
@@ -47778,7 +47778,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "謝秀梅",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2707,
         "class": "碩博",
@@ -47800,7 +47800,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林登秋",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2960,
         "class": "大碩",
@@ -47820,7 +47820,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "沈林琥",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2961,
         "class": "大碩",
@@ -47840,7 +47840,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "賴韻如 張永達",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2962,
         "class": "大碩",
@@ -47863,7 +47863,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李佩珍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2963,
         "class": "大碩",
@@ -47883,7 +47883,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "徐堉峰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2964,
         "class": "大碩",
@@ -47903,7 +47903,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林仲平",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2965,
         "class": "大碩",
@@ -47923,7 +47923,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "王麗婷",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2966,
         "class": "大碩",
@@ -47943,7 +47943,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "廖培鈞 劉湘瑤",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2967,
         "class": "大碩",
@@ -47964,7 +47964,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳均",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2968,
         "class": "大碩",
@@ -47984,7 +47984,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳晶",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2969,
         "class": "大碩",
@@ -48004,7 +48004,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "趙怡姍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2970,
         "class": "大碩",
@@ -48024,7 +48024,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "吳忠信",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2645,
         "time": [
@@ -48044,7 +48044,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "蘇銘燦 鄭劍廷 趙怡姍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2646,
         "time": [
@@ -48064,7 +48064,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "陳仲吉 趙怡姍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2693,
         "team": "A",
@@ -48085,7 +48085,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "王慈蔚 王麗婷",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2694,
         "team": "B",
@@ -48106,7 +48106,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "吳忠信 陳均",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2695,
         "team": "C",
@@ -48127,7 +48127,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "孫智雯 陳晶",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2992,
         "grade": 3,
@@ -48149,7 +48149,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "呂國棟 林豊益 陳均",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2989,
         "grade": 3,
@@ -48170,7 +48170,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "趙怡姍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2980,
         "grade": 2,
@@ -48192,7 +48192,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "郭奇芊",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2975,
         "grade": 2,
@@ -48212,7 +48212,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王震哲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2976,
         "grade": 2,
@@ -48232,7 +48232,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蘇銘燦 孫智雯 謝秀梅",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2993,
         "grade": 3,
@@ -48254,7 +48254,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李冠群 賴韻如",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2977,
         "grade": 2,
@@ -48275,7 +48275,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "徐堉峰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2981,
         "grade": 2,
@@ -48296,7 +48296,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "呂國棟 林豊益 陳均",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2978,
         "grade": 2,
@@ -48317,7 +48317,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "蘇銘燦 謝秀梅 廖培鈞",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2982,
         "grade": 2,
@@ -48339,7 +48339,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃俊嘉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2990,
         "grade": 3,
@@ -48360,7 +48360,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃士穎",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2985,
         "grade": 3,
@@ -48381,7 +48381,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "黃士穎",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2987,
         "grade": 3,
@@ -48401,7 +48401,7 @@ export default[
     "score": 4,
     "required": "必",
     "teacher": "李桂楨 蘇銘燦",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2983,
         "grade": 2,
@@ -48423,7 +48423,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "李桂楨 蘇銘燦",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2984,
         "grade": 2,
@@ -48445,7 +48445,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蘇銘燦 謝秀梅 林炎壽",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2991,
         "grade": 3,
@@ -48467,7 +48467,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "沈林琥",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2988,
         "grade": 3,
@@ -48487,7 +48487,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "孫智雯 李明忠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2973,
         "grade": 1,
@@ -48509,7 +48509,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "孫智雯 李明忠 王震哲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2971,
         "grade": 1,
@@ -48531,7 +48531,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林炎壽",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2952,
         "team": "A",
@@ -48551,7 +48551,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王麗婷",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2953,
         "team": "B",
@@ -48571,7 +48571,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "孫智雯 李明忠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2954,
         "time": [
@@ -48590,7 +48590,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "孫智雯 李明忠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2974,
         "grade": 1,
@@ -48612,7 +48612,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "孫智雯 李明忠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2972,
         "grade": 1,
@@ -48634,7 +48634,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "孫智雯 李明忠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2955,
         "time": [
@@ -48653,7 +48653,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "廖培鈞 趙怡姍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2979,
         "grade": 2,
@@ -48673,7 +48673,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "徐堉峰 謝秀梅 李冠群 林思民 賴韻如 廖培鈞 陳冬生 王麗婷",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2994,
         "grade": 4,
@@ -48694,7 +48694,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "李冠群 張文華",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2997,
         "grade": 4,
@@ -48715,7 +48715,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林陳涌 劉湘瑤",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2995,
         "grade": 4,
@@ -48736,7 +48736,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "李冠群 張文華",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2998,
         "grade": 4,
@@ -48757,7 +48757,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林陳涌 劉湘瑤",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2996,
         "grade": 4,
@@ -48778,7 +48778,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "陳冬生 鄭劍廷",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2771,
         "time": [
@@ -48798,7 +48798,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "陳冬生",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2772,
         "time": [
@@ -48818,7 +48818,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "陳冬生",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2773,
         "time": [
@@ -48838,7 +48838,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "曾冠球",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0466",
         "class": "碩博",
@@ -48859,7 +48859,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "劉若蘭",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0467",
         "class": "碩博",
@@ -48880,7 +48880,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳永龍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0468",
         "class": "碩博",
@@ -48901,7 +48901,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李晟瑋",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0469",
         "class": "碩博",
@@ -48923,7 +48923,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王錦雀",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0470",
         "class": "碩博",
@@ -48944,7 +48944,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳永龍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0471",
         "class": "碩博",
@@ -48966,7 +48966,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "鍾明倫",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0472",
         "class": "碩博",
@@ -48987,7 +48987,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "吳崇旗",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0473",
         "class": "碩博",
@@ -49008,7 +49008,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王錦雀",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0365",
         "grade": 2,
@@ -49030,7 +49030,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "劉若蘭",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0366",
         "grade": 2,
@@ -49051,7 +49051,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "黃信豪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0474",
         "grade": 1,
@@ -49072,7 +49072,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李琪明",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0475",
         "grade": 1,
@@ -49093,7 +49093,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "蔡居澤",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0476",
         "grade": 1,
@@ -49114,7 +49114,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林佳範",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0481",
         "grade": 2,
@@ -49136,7 +49136,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "李晟瑋",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0477",
         "grade": 1,
@@ -49157,7 +49157,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "陳永龍 曾冠球 鍾明倫",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0478",
         "grade": 1,
@@ -49178,7 +49178,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳素秋",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0479",
         "grade": 1,
@@ -49199,7 +49199,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蔡居澤",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0480",
         "grade": 1,
@@ -49220,7 +49220,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "鍾明倫",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0482",
         "grade": 2,
@@ -49241,7 +49241,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "呂啟民",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0815",
         "grade": 1,
@@ -49263,7 +49263,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "呂啟民",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0811",
         "grade": 1,
@@ -49285,7 +49285,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "林佳範",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0816",
         "grade": 1,
@@ -49307,7 +49307,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "林安邦",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0812",
         "grade": 1,
@@ -49329,7 +49329,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "王錦雀",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0817",
         "grade": 1,
@@ -49351,7 +49351,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "王錦雀",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0813",
         "grade": 1,
@@ -49373,7 +49373,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃信豪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0849",
         "grade": 4,
@@ -49393,7 +49393,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "周有熙",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0809",
         "time": [
@@ -49413,7 +49413,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "李琪明",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0833",
         "grade": 2,
@@ -49434,7 +49434,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "李琪明",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0831",
         "grade": 2,
@@ -49455,7 +49455,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "劉恆妏",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0837",
         "grade": 3,
@@ -49475,7 +49475,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "劉恆妏",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0838",
         "grade": 3,
@@ -49495,7 +49495,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "楊智元",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0819",
         "grade": 2,
@@ -49515,7 +49515,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "周有熙",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0839",
         "grade": 3,
@@ -49535,7 +49535,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "陳素秋",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0834",
         "grade": 2,
@@ -49556,7 +49556,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "陳素秋",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0832",
         "grade": 2,
@@ -49577,7 +49577,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "徐秀婕",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0840",
         "grade": 3,
@@ -49598,7 +49598,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "謝宜蓉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0820",
         "grade": 2,
@@ -49618,7 +49618,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "林安邦",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0821",
         "grade": 2,
@@ -49638,7 +49638,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "林佳範",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0822",
         "grade": 2,
@@ -49658,7 +49658,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "陳永龍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0823",
         "grade": 2,
@@ -49678,7 +49678,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "李琪明",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0847",
         "grade": 3,
@@ -49699,7 +49699,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "黃信豪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0824",
         "grade": 2,
@@ -49720,7 +49720,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "謝宜蓉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0825",
         "grade": 2,
@@ -49740,7 +49740,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "吳崇旗 蕭如軒",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0818",
         "grade": 1,
@@ -49762,7 +49762,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "吳崇旗 蕭如軒",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0814",
         "grade": 1,
@@ -49784,7 +49784,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "蕭如軒",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0841",
         "grade": 3,
@@ -49804,7 +49804,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李元德",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0842",
         "grade": 3,
@@ -49824,7 +49824,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "卓瑞蘋",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0826",
         "grade": 2,
@@ -49844,7 +49844,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "鍾明倫",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0843",
         "grade": 3,
@@ -49864,7 +49864,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "李立旻",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0844",
         "grade": 3,
@@ -49884,7 +49884,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "李立旻",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0850",
         "grade": 4,
@@ -49904,7 +49904,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "徐秀婕",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0827",
         "grade": 2,
@@ -49924,7 +49924,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "李晟瑋",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0810",
         "grade": 1,
@@ -49945,7 +49945,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "蕭如軒",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0828",
         "grade": 2,
@@ -49967,7 +49967,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "曾冠球",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0851",
         "grade": 4,
@@ -49989,7 +49989,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "李晟瑋",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0845",
         "grade": 3,
@@ -50009,7 +50009,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "謝宜蓉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0829",
         "grade": 2,
@@ -50029,7 +50029,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "鍾明倫",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0846",
         "grade": 3,
@@ -50049,7 +50049,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "王錦雀",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0852",
         "grade": 4,
@@ -50071,7 +50071,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "徐秀婕",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0830",
         "grade": 2,
@@ -50091,7 +50091,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "劉秀嫚",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0848",
         "grade": 3,
@@ -50113,7 +50113,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "徐秀婕",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0854",
         "grade": 4,
@@ -50135,7 +50135,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "劉秀嫚",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0853",
         "grade": 4,
@@ -50157,7 +50157,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林素英",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1593,
         "class": "碩博",
@@ -50178,7 +50178,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "潘麗珠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1594,
         "class": "碩博",
@@ -50199,7 +50199,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "朱曉海",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3349,
         "class": "碩博",
@@ -50220,7 +50220,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "張春榮",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1595,
         "class": "碩博",
@@ -50241,7 +50241,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王錦慧",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1596,
         "class": "碩博",
@@ -50262,7 +50262,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "許俊雅",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1597,
         "class": "碩博",
@@ -50283,7 +50283,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "鄭燦山",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1598,
         "class": "碩博",
@@ -50304,7 +50304,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳廖安",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1599,
         "class": "碩博",
@@ -50325,7 +50325,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林保淳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1600,
         "class": "碩博",
@@ -50346,7 +50346,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "謝聰輝",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1601,
         "class": "碩博",
@@ -50367,7 +50367,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃敬家",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1602,
         "class": "碩博",
@@ -50388,7 +50388,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "羅凡晸",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1603,
         "class": "碩博",
@@ -50409,7 +50409,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃麗娟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1604,
         "class": "碩博",
@@ -50430,7 +50430,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "劉滄龍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1605,
         "class": "碩博",
@@ -50451,7 +50451,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "祁立峰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1606,
         "class": "碩博",
@@ -50472,7 +50472,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李鍑倫",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1705,
         "class": "大碩",
@@ -50493,7 +50493,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "齊婉先",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3287,
         "class": "大碩",
@@ -50513,7 +50513,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "許華峰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1591,
         "time": [
@@ -50533,7 +50533,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "鍾宗憲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1592,
         "time": [
@@ -50553,7 +50553,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "黃麗娟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1775,
         "team": "A",
@@ -50575,7 +50575,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "陳炫瑋",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1776,
         "team": "B",
@@ -50597,7 +50597,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "范宜如",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1706,
         "grade": 1,
@@ -50618,7 +50618,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "羅凡晸",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1707,
         "grade": 1,
@@ -50639,7 +50639,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "謝聰輝",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1753,
         "grade": 3,
@@ -50659,7 +50659,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "楊如雪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1754,
         "grade": 3,
@@ -50679,7 +50679,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "蔡孟珍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1755,
         "grade": 3,
@@ -50700,7 +50700,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "林佳蓉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1756,
         "team": "A",
@@ -50722,7 +50722,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "徐國能",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1757,
         "team": "B",
@@ -50744,7 +50744,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "須文蔚",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1758,
         "grade": 3,
@@ -50764,7 +50764,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "謝聰輝",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1777,
         "team": "A",
@@ -50786,7 +50786,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "黃麗娟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1778,
         "team": "B",
@@ -50808,7 +50808,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "王錦慧",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1730,
         "team": "A",
@@ -50830,7 +50830,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "王錦慧",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1731,
         "team": "B",
@@ -50852,7 +50852,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "潘麗珠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1708,
         "grade": 1,
@@ -50873,7 +50873,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃明理",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1759,
         "grade": 3,
@@ -50893,7 +50893,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "楊如雪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1709,
         "grade": 1,
@@ -50914,7 +50914,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "李志宏",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1732,
         "grade": 2,
@@ -50934,7 +50934,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "鍾宗憲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1760,
         "grade": 3,
@@ -50954,7 +50954,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "黃麗娟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1733,
         "team": "A",
@@ -50976,7 +50976,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "羅凡晸",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1734,
         "team": "B",
@@ -50998,7 +50998,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "陳嘉凌",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1735,
         "team": "C",
@@ -51020,7 +51020,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "潘麗珠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1736,
         "team": "A",
@@ -51042,7 +51042,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "林佳蓉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1737,
         "team": "B",
@@ -51064,7 +51064,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "黃敬家",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1738,
         "team": "C",
@@ -51086,7 +51086,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "何維剛",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1739,
         "team": "D",
@@ -51108,7 +51108,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳室如",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1740,
         "grade": 2,
@@ -51128,7 +51128,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "林香薇",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1762,
         "team": "A",
@@ -51150,7 +51150,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "林香薇",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1763,
         "team": "B",
@@ -51172,7 +51172,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "郭乃禎",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1764,
         "team": "C",
@@ -51194,7 +51194,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "郭維茹",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1771,
         "grade": 3,
@@ -51216,7 +51216,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "郭維茹",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1773,
         "grade": 3,
@@ -51238,7 +51238,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "王錦慧",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1769,
         "grade": 3,
@@ -51260,7 +51260,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "郭乃禎",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1741,
         "grade": 2,
@@ -51280,7 +51280,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "江淑君",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1742,
         "grade": 2,
@@ -51300,7 +51300,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林淑雲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1765,
         "grade": 3,
@@ -51320,7 +51320,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "黃明理",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1743,
         "grade": 2,
@@ -51340,7 +51340,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "黃瑩暖",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3283,
         "grade": 3,
@@ -51360,7 +51360,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "蔡孟珍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1779,
         "grade": 4,
@@ -51380,7 +51380,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "許華峰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1710,
         "team": "A",
@@ -51402,7 +51402,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳炫瑋",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1711,
         "team": "B",
@@ -51424,7 +51424,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "祁立峰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1766,
         "grade": 3,
@@ -51444,7 +51444,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "黃瑩暖",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1744,
         "grade": 2,
@@ -51464,7 +51464,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林淑雲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1712,
         "grade": 1,
@@ -51485,7 +51485,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "范宜如",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1745,
         "team": "A",
@@ -51507,7 +51507,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "林淑雲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1746,
         "team": "B",
@@ -51529,7 +51529,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "何維剛",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1747,
         "team": "C",
@@ -51551,7 +51551,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "何維剛",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1748,
         "team": "D",
@@ -51573,7 +51573,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "鍾宗憲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1751,
         "grade": 2,
@@ -51595,7 +51595,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "陳亭佑",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1752,
         "grade": 2,
@@ -51617,7 +51617,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "胡衍南",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1750,
         "grade": 2,
@@ -51640,7 +51640,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "鄭燦山",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1783,
         "grade": 4,
@@ -51662,7 +51662,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "鄭燦山",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1784,
         "grade": 4,
@@ -51684,7 +51684,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "曾暐傑",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1782,
         "grade": 4,
@@ -51706,7 +51706,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "金培懿",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1713,
         "team": "A",
@@ -51728,7 +51728,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "黃瑩暖",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1714,
         "team": "B",
@@ -51750,7 +51750,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "江淑君",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1772,
         "grade": 3,
@@ -51772,7 +51772,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "鄭燦山",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1774,
         "grade": 3,
@@ -51794,7 +51794,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "江淑君",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1770,
         "grade": 3,
@@ -51816,7 +51816,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "須文蔚",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1715,
         "grade": 1,
@@ -51837,7 +51837,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "石曉楓",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1716,
         "team": "A",
@@ -51859,7 +51859,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "范宜如",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1717,
         "team": "B",
@@ -51881,7 +51881,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "石曉楓",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1767,
         "grade": 3,
@@ -51901,7 +51901,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林宜蓉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1718,
         "team": "A",
@@ -51923,7 +51923,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "羅凡晸",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1719,
         "team": "B",
@@ -51945,7 +51945,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "黃明理",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1768,
         "grade": 3,
@@ -51966,7 +51966,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳室如",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1720,
         "grade": 1,
@@ -51987,7 +51987,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "蔡孟珍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1749,
         "grade": 2,
@@ -52007,7 +52007,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "張晏瑞",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1702,
         "time": [
@@ -52026,7 +52026,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "許華峰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1726,
         "grade": 1,
@@ -52048,7 +52048,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "曾暐傑",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1728,
         "grade": 1,
@@ -52070,7 +52070,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "許華峰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1724,
         "grade": 1,
@@ -52092,7 +52092,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳亭佑",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1721,
         "grade": 1,
@@ -52113,7 +52113,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳亭佑",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1722,
         "grade": 1,
@@ -52135,7 +52135,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蘇婷",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3299,
         "time": [
@@ -52154,7 +52154,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "陳炫瑋",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1727,
         "grade": 1,
@@ -52176,7 +52176,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "許華峰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1729,
         "grade": 1,
@@ -52198,7 +52198,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "金培懿",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1725,
         "grade": 1,
@@ -52220,7 +52220,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "祁立峰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1723,
         "grade": 1,
@@ -52241,7 +52241,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "李清筠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1703,
         "time": [
@@ -52261,7 +52261,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林宜蓉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1780,
         "team": "A",
@@ -52283,7 +52283,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "李鍑倫",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1781,
         "team": "B",
@@ -52305,7 +52305,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳室如",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1704,
         "time": [
@@ -52325,7 +52325,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳俊光",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1383,
         "class": "碩博",
@@ -52346,7 +52346,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "簡瑛瑛",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1384,
         "class": "碩博",
@@ -52367,7 +52367,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "曾金金",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1385,
         "class": "碩博",
@@ -52388,7 +52388,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳麗宇",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1386,
         "class": "碩博",
@@ -52409,7 +52409,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "楊聰榮",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1387,
         "class": "碩博",
@@ -52430,7 +52430,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "楊聰榮",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1388,
         "class": "碩博",
@@ -52451,7 +52451,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "曾金金",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1389,
         "class": "碩博",
@@ -52473,7 +52473,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林振興",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1390,
         "class": "碩博",
@@ -52494,7 +52494,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "吳龍雲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1391,
         "class": "碩博",
@@ -52515,7 +52515,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "徐東伯",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3392,
         "class": "碩博",
@@ -52536,7 +52536,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "徐東伯",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1393,
         "class": "碩博",
@@ -52558,7 +52558,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "籃玉如",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1394,
         "class": "碩博",
@@ -52580,7 +52580,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "籃玉如",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1395,
         "class": "碩博",
@@ -52601,7 +52601,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "謝佳玲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1352,
         "time": [
@@ -52622,7 +52622,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蔡雅薰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1372,
         "time": [
@@ -52642,7 +52642,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳俊光",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1373,
         "time": [
@@ -52662,7 +52662,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "蔡雅薰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1374,
         "time": [
@@ -52682,7 +52682,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "孟柱憶",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1375,
         "time": [
@@ -52702,7 +52702,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "洪嘉馡",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1376,
         "time": [
@@ -52722,7 +52722,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "簡瑛瑛",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1377,
         "time": [
@@ -52742,7 +52742,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "楊秉煌",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1378,
         "time": [
@@ -52762,7 +52762,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李育娟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1379,
         "time": [
@@ -52782,7 +52782,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳振宇",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1380,
         "time": [
@@ -52803,7 +52803,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張瓅勻",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1381,
         "time": [
@@ -52823,7 +52823,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蕭惠貞",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3365,
         "time": [
@@ -52843,7 +52843,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "杜昭玫",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3342,
         "time": [
@@ -52863,7 +52863,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "謝佳玲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1382,
         "time": [
@@ -52883,7 +52883,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "孫懿芬 曹靜儀",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3343,
         "time": [
@@ -52903,7 +52903,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "陳懷萱",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1487,
         "team": "A",
@@ -52925,7 +52925,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "陳懷萱",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1488,
         "team": "B",
@@ -52947,7 +52947,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "劉崇仁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1470,
         "grade": 1,
@@ -52968,7 +52968,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "劉崇仁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1507,
         "grade": 4,
@@ -52989,7 +52989,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳懷萱",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1489,
         "grade": 2,
@@ -53010,7 +53010,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "杜昭玫",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1500,
         "grade": 3,
@@ -53031,7 +53031,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "未定",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1508,
         "grade": 4,
@@ -53052,7 +53052,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "孫懿芬",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1471,
         "grade": 1,
@@ -53073,7 +53073,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "陳懷萱",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1501,
         "grade": 3,
@@ -53094,7 +53094,7 @@ export default[
     "score": 4,
     "required": "必",
     "teacher": "陳懷萱",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1472,
         "team": "A",
@@ -53116,7 +53116,7 @@ export default[
     "score": 4,
     "required": "必",
     "teacher": "孫懿芬",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1473,
         "team": "B",
@@ -53138,7 +53138,7 @@ export default[
     "score": 4,
     "required": "必",
     "teacher": "王慧娟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1474,
         "team": "C",
@@ -53160,7 +53160,7 @@ export default[
     "score": 4,
     "required": "必",
     "teacher": "李育娟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1475,
         "team": "A",
@@ -53182,7 +53182,7 @@ export default[
     "score": 4,
     "required": "必",
     "teacher": "曹靜儀",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1476,
         "team": "B",
@@ -53204,7 +53204,7 @@ export default[
     "score": 4,
     "required": "必",
     "teacher": "孫懿芬",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1477,
         "team": "C",
@@ -53226,7 +53226,7 @@ export default[
     "score": 4,
     "required": "必",
     "teacher": "劉崇仁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1490,
         "team": "A",
@@ -53248,7 +53248,7 @@ export default[
     "score": 4,
     "required": "必",
     "teacher": "陳寅清",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1491,
         "team": "B",
@@ -53270,7 +53270,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "劉崇仁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1478,
         "team": "B",
@@ -53292,7 +53292,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "未定",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1479,
         "team": "C",
@@ -53314,7 +53314,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "王慧娟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1480,
         "team": "A",
@@ -53336,7 +53336,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "劉崇仁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1481,
         "team": "B",
@@ -53358,7 +53358,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "曹靜儀",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1482,
         "team": "C",
@@ -53380,7 +53380,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "未定",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1492,
         "team": "A",
@@ -53402,7 +53402,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "劉崇仁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1493,
         "team": "B",
@@ -53424,7 +53424,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "曹靜儀",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1483,
         "team": "A",
@@ -53446,7 +53446,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "孫懿芬",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1484,
         "team": "B",
@@ -53468,7 +53468,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "王慧娟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1485,
         "team": "C",
@@ -53490,7 +53490,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "王慧娟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1494,
         "team": "A",
@@ -53512,7 +53512,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "未定",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1495,
         "team": "B",
@@ -53534,7 +53534,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "李育娟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1496,
         "grade": 2,
@@ -53555,7 +53555,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "邱詩雯",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1502,
         "grade": 3,
@@ -53576,7 +53576,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "陳懷萱",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1503,
         "team": "A",
@@ -53598,7 +53598,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "王慧娟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1504,
         "team": "B",
@@ -53620,7 +53620,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "杜昭玫",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1509,
         "grade": 4,
@@ -53641,7 +53641,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "曹靜儀",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1497,
         "grade": 2,
@@ -53662,7 +53662,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "未定",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1532,
         "team": "A",
@@ -53684,7 +53684,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "未定",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1533,
         "team": "B",
@@ -53706,7 +53706,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "孫懿芬",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1486,
         "grade": 1,
@@ -53727,7 +53727,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "邱詩雯",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1512,
         "team": "A",
@@ -53749,7 +53749,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "邱詩雯",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1513,
         "team": "B",
@@ -53771,7 +53771,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "曹靜儀",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1498,
         "grade": 2,
@@ -53792,7 +53792,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "邱詩雯",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1469,
         "time": [
@@ -53813,7 +53813,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "未定",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1505,
         "grade": 3,
@@ -53834,7 +53834,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "曹靜儀",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1499,
         "grade": 2,
@@ -53855,7 +53855,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "未定",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1510,
         "grade": 4,
@@ -53876,7 +53876,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "王慧娟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1506,
         "grade": 3,
@@ -53897,7 +53897,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "張瓅勻",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1514,
         "team": "A",
@@ -53919,7 +53919,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "張瓅勻",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1515,
         "team": "B",
@@ -53941,7 +53941,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "陳嘉凌",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1467,
         "team": "C",
@@ -53961,7 +53961,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "洪嘉馡",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1521,
         "team": "A",
@@ -53983,7 +53983,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "洪嘉馡",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1522,
         "team": "B",
@@ -54005,7 +54005,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "林振興",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1523,
         "grade": 2,
@@ -54026,7 +54026,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "陳麗宇",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1524,
         "team": "A",
@@ -54048,7 +54048,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "陳麗宇",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1525,
         "team": "B",
@@ -54070,7 +54070,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "吳龍雲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1526,
         "team": "A",
@@ -54092,7 +54092,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "吳龍雲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1527,
         "team": "B",
@@ -54114,7 +54114,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "未定",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1511,
         "time": [
@@ -54134,7 +54134,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蔡娉婷",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3396,
         "time": [
@@ -54154,7 +54154,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "官英華",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1516,
         "grade": 1,
@@ -54175,7 +54175,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "未定",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1517,
         "grade": 1,
@@ -54196,7 +54196,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "官英華",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1518,
         "grade": 1,
@@ -54217,7 +54217,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "楊聰榮",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1519,
         "grade": 1,
@@ -54238,7 +54238,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "吳龍雲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1520,
         "grade": 1,
@@ -54259,7 +54259,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "官英華",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1528,
         "grade": 2,
@@ -54280,7 +54280,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "官英華",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1538,
         "grade": 4,
@@ -54301,7 +54301,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "未定",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1536,
         "grade": 3,
@@ -54322,7 +54322,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張瓅勻",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1537,
         "grade": 3,
@@ -54344,7 +54344,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "邱詩雯",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1539,
         "grade": 4,
@@ -54366,7 +54366,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "未定",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3344,
         "grade": 2,
@@ -54387,7 +54387,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳嘉凌",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1529,
         "grade": 2,
@@ -54408,7 +54408,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "鄭怡庭",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1540,
         "grade": 4,
@@ -54429,7 +54429,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "楊秉煌",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1530,
         "team": "A",
@@ -54451,7 +54451,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "楊秉煌",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1531,
         "team": "B",
@@ -54473,7 +54473,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "葉名倉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3307,
         "class": "大碩",
@@ -54493,7 +54493,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "謝明惠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2688,
         "class": "碩博",
@@ -54514,7 +54514,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳頌方",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2689,
         "class": "碩博",
@@ -54535,7 +54535,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李位仁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2690,
         "class": "碩博",
@@ -54556,7 +54556,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李祐慈",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2913,
         "class": "大碩",
@@ -54577,7 +54577,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "孫英傑",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2691,
         "team": "A",
@@ -54599,7 +54599,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "呂家榮",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2692,
         "team": "B",
@@ -54621,7 +54621,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳貴賢",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2914,
         "class": "大碩",
@@ -54642,7 +54642,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "吳學亮",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2640,
         "time": [
@@ -54662,7 +54662,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林震煌",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2641,
         "time": [
@@ -54683,7 +54683,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "吳學亮",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2642,
         "time": [
@@ -54703,7 +54703,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "李位仁 蔡明剛",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2643,
         "time": [
@@ -54723,7 +54723,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林震煌",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2644,
         "time": [
@@ -54743,7 +54743,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "簡敦誠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2680,
         "team": "A",
@@ -54765,7 +54765,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "葉怡均",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2681,
         "team": "B",
@@ -54787,7 +54787,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "未定",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2682,
         "team": "C",
@@ -54809,7 +54809,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "謝明惠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2683,
         "team": "D",
@@ -54831,7 +54831,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "蔡明剛",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2684,
         "team": "E",
@@ -54852,7 +54852,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "孫英傑",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2685,
         "team": "F",
@@ -54874,7 +54874,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳家俊",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2686,
         "team": "G",
@@ -54896,7 +54896,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "簡敦誠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2687,
         "time": [
@@ -54917,7 +54917,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "李位仁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2948,
         "grade": 4,
@@ -54938,7 +54938,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王禎翰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2927,
         "grade": 2,
@@ -54959,7 +54959,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "姚清發",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2909,
         "time": [
@@ -54979,7 +54979,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "許貫中",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2940,
         "grade": 3,
@@ -55000,7 +55000,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "林嘉和",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2915,
         "team": "A",
@@ -55023,7 +55023,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "陳家俊",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2916,
         "team": "B",
@@ -55046,7 +55046,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "林嘉和",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2917,
         "team": "C",
@@ -55069,7 +55069,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "林嘉和",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2918,
         "team": "D",
@@ -55092,7 +55092,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "呂家榮",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2919,
         "team": "F",
@@ -55115,7 +55115,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "葉怡均",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2920,
         "team": "G",
@@ -55138,7 +55138,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "吳學亮",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2921,
         "team": "H",
@@ -55161,7 +55161,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "李以仁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2910,
         "team": "E",
@@ -55183,7 +55183,7 @@ export default[
     "score": 4,
     "required": "必",
     "teacher": "杜玲嫻",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2928,
         "team": "A",
@@ -55205,7 +55205,7 @@ export default[
     "score": 4,
     "required": "必",
     "teacher": "林文偉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2929,
         "team": "B",
@@ -55227,7 +55227,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "杜玲嫻",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2930,
         "team": "A",
@@ -55249,7 +55249,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "杜玲嫻",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2931,
         "team": "B",
@@ -55271,7 +55271,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "林文偉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2932,
         "team": "C",
@@ -55293,7 +55293,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "簡敦誠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2933,
         "team": "D",
@@ -55315,7 +55315,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "李君婷",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2934,
         "grade": 2,
@@ -55336,7 +55336,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "陳頌方",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2935,
         "team": "A",
@@ -55358,7 +55358,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "李君婷",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2936,
         "team": "B",
@@ -55380,7 +55380,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "李君婷",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2937,
         "team": "C",
@@ -55402,7 +55402,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "李位仁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2941,
         "team": "A",
@@ -55424,7 +55424,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "蔡明剛",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2942,
         "team": "B",
@@ -55446,7 +55446,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "王禎翰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2943,
         "team": "A",
@@ -55468,7 +55468,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "李以仁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2944,
         "team": "B",
@@ -55490,7 +55490,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "李祐慈",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2945,
         "team": "C",
@@ -55512,7 +55512,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳頌方",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2949,
         "grade": 4,
@@ -55533,7 +55533,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "林嘉和",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2922,
         "team": "A",
@@ -55556,7 +55556,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "陳家俊",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2923,
         "team": "B",
@@ -55579,7 +55579,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "林嘉和",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2924,
         "team": "C",
@@ -55602,7 +55602,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "李以仁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2911,
         "team": "D",
@@ -55625,7 +55625,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "蔡明剛 李祐慈 劉沂欣",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2912,
         "team": "E",
@@ -55645,7 +55645,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "葉怡均",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2925,
         "team": "A",
@@ -55668,7 +55668,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "宋蕙伶",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2926,
         "team": "B",
@@ -55691,7 +55691,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "林文偉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2938,
         "grade": 2,
@@ -55712,7 +55712,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "孫英傑",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2946,
         "grade": 3,
@@ -55733,7 +55733,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "劉沂欣",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2939,
         "grade": 2,
@@ -55754,7 +55754,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "蔡明剛",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2950,
         "grade": 4,
@@ -55775,7 +55775,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "姚清發",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2951,
         "grade": 4,
@@ -55796,7 +55796,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "姚清發",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2947,
         "grade": 3,
@@ -55816,7 +55816,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "柯佳伶",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3036,
         "class": "大碩",
@@ -55836,7 +55836,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "葉耀明",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3037,
         "class": "大碩",
@@ -55856,7 +55856,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳柏琳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3038,
         "class": "大碩",
@@ -55876,7 +55876,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃文吉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2749,
         "class": "碩博",
@@ -55897,7 +55897,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林均翰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2750,
         "class": "碩博",
@@ -55918,7 +55918,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王弘倫",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2751,
         "class": "碩博",
@@ -55939,7 +55939,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林均翰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2752,
         "class": "碩博",
@@ -55961,7 +55961,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "賀耀華",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2753,
         "class": "碩博",
@@ -55982,7 +55982,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳世旺",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2755,
         "class": "碩博",
@@ -56003,7 +56003,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張鈞法",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2756,
         "class": "碩博",
@@ -56024,7 +56024,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "方瓊瑤",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2757,
         "class": "碩博",
@@ -56046,7 +56046,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王超",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3039,
         "class": "大碩",
@@ -56067,7 +56067,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "賀耀華",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2758,
         "class": "碩博",
@@ -56088,7 +56088,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "蔣宗哲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2759,
         "class": "碩博",
@@ -56109,7 +56109,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "王弘倫",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2760,
         "class": "碩博",
@@ -56130,7 +56130,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳俊祥",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2761,
         "class": "碩博",
@@ -56151,7 +56151,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "未定",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2762,
         "class": "碩博",
@@ -56172,7 +56172,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "賀耀華",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3040,
         "class": "大碩",
@@ -56193,7 +56193,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王科植",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3041,
         "class": "大碩",
@@ -56213,7 +56213,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "紀博文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3042,
         "class": "大碩",
@@ -56233,7 +56233,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李忠謀 趙菁文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3043,
         "class": "大碩",
@@ -56253,7 +56253,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "紀博文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3044,
         "grade": 1,
@@ -56274,7 +56274,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "王弘倫",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3034,
         "time": [
@@ -56294,7 +56294,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王超",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3045,
         "grade": 1,
@@ -56315,7 +56315,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "王超",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3046,
         "team": "A",
@@ -56337,7 +56337,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "王超",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3047,
         "team": "B",
@@ -56359,7 +56359,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "柯佳伶",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3048,
         "grade": 2,
@@ -56380,7 +56380,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "吳榮根",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3049,
         "grade": 2,
@@ -56400,7 +56400,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "陳柏琳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3050,
         "grade": 2,
@@ -56420,7 +56420,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "蔡榮宗",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3051,
         "team": "A",
@@ -56441,7 +56441,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "未定",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3052,
         "team": "B",
@@ -56464,7 +56464,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王科植",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3364,
         "time": [
@@ -56483,7 +56483,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃冠寰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3056,
         "grade": 3,
@@ -56503,7 +56503,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "紀博文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3057,
         "grade": 3,
@@ -56523,7 +56523,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "葉梅珍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3054,
         "grade": 2,
@@ -56543,7 +56543,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "葉梅珍 方瓊瑤",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3058,
         "grade": 3,
@@ -56563,7 +56563,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張鈞法 方瓊瑤",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3059,
         "grade": 3,
@@ -56583,7 +56583,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蔡榮宗",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3060,
         "grade": 3,
@@ -56603,7 +56603,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "李忠謀 柯佳伶",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3035,
         "time": [
@@ -56623,7 +56623,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "黃俊嘉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2763,
         "class": "碩博",
@@ -56646,7 +56646,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "郭奇芊",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2764,
         "class": "碩博",
@@ -56669,7 +56669,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "鍾國芳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2765,
         "class": "碩博",
@@ -56692,7 +56692,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "李壽先 林仲平",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2766,
         "class": "碩博",
@@ -56715,7 +56715,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "鍾國芳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2654,
         "time": [
@@ -56737,7 +56737,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳仲吉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2655,
         "time": [
@@ -56758,7 +56758,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳心怡",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0338",
         "team": "B",
@@ -56781,7 +56781,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林碧芳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0339",
         "team": "C",
@@ -56805,7 +56805,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "劉振維",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0337",
         "team": "A",
@@ -56828,7 +56828,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "梁至中",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0340",
         "team": "A",
@@ -56851,7 +56851,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "何榮桂",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0341",
         "team": "B",
@@ -56873,7 +56873,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "謝建成",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0342",
         "team": "C",
@@ -56895,7 +56895,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林正昌",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0343",
         "class": "碩博",
@@ -56916,7 +56916,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林世華",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0344",
         "class": "碩博",
@@ -56937,7 +56937,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "邱皓政",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0345",
         "class": "碩博",
@@ -56960,7 +56960,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "郭鐘隆",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0346",
         "class": "大碩",
@@ -56982,7 +56982,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "吳清麟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0330",
         "team": "A",
@@ -57003,7 +57003,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "郭郡羽",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0332",
         "team": "C",
@@ -57024,7 +57024,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "吳清麟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0333",
         "team": "D",
@@ -57045,7 +57045,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "譚克平",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0334",
         "team": "E",
@@ -57066,7 +57066,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳柏邑",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0331",
         "team": "B",
@@ -57086,7 +57086,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "張凌嘉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0335",
         "time": [
@@ -57105,7 +57105,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "蔡昕璋",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0336",
         "time": [
@@ -57124,7 +57124,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "范世平",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1362,
         "class": "碩博",
@@ -57146,7 +57146,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王冠雄",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1363,
         "class": "碩博",
@@ -57168,7 +57168,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳文政",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1364,
         "class": "碩博",
@@ -57190,7 +57190,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林昌平",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1365,
         "class": "碩博",
@@ -57212,7 +57212,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "邵軒磊",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1366,
         "class": "碩博",
@@ -57234,7 +57234,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張崑將",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1367,
         "class": "碩博",
@@ -57256,7 +57256,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "胡元玲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1368,
         "class": "碩博",
@@ -57278,7 +57278,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張碧君",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1369,
         "class": "碩博",
@@ -57300,7 +57300,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林賢參",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1370,
         "class": "碩博",
@@ -57323,7 +57323,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "徐筱琦",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1371,
         "class": "碩博",
@@ -57345,7 +57345,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "潘鳳娟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1432,
         "class": "大碩",
@@ -57367,7 +57367,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳文政",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1433,
         "class": "大碩",
@@ -57389,7 +57389,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王冠雄",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1434,
         "class": "大碩",
@@ -57411,7 +57411,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林賢參",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1435,
         "class": "大碩",
@@ -57433,7 +57433,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "邵軒磊",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1436,
         "class": "大碩",
@@ -57455,7 +57455,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "莊仁傑",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1437,
         "class": "大碩",
@@ -57478,7 +57478,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "王冠雄 關弘昌 田正利 莊仁傑",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1351,
         "time": [
@@ -57499,7 +57499,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "關弘昌 林昌平",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1358,
         "time": [
@@ -57520,7 +57520,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "范世平",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1359,
         "time": [
@@ -57541,7 +57541,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "江柏煒",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1360,
         "time": [
@@ -57562,7 +57562,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "張崑將 關弘昌 田正利 王冠雄",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1361,
         "time": [
@@ -57583,7 +57583,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "田正利",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1461,
         "grade": 3,
@@ -57605,7 +57605,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "未定",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1438,
         "grade": 1,
@@ -57627,7 +57627,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林賢參",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1439,
         "grade": 1,
@@ -57649,7 +57649,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "金恩美",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1450,
         "grade": 2,
@@ -57671,7 +57671,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "未定",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1451,
         "grade": 2,
@@ -57693,7 +57693,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "金恩美",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1452,
         "grade": 2,
@@ -57715,7 +57715,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "關弘昌",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1440,
         "grade": 1,
@@ -57737,7 +57737,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "田正利",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1453,
         "grade": 2,
@@ -57759,7 +57759,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "關弘昌",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1454,
         "grade": 2,
@@ -57781,7 +57781,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "江柏煒",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1441,
         "grade": 1,
@@ -57803,7 +57803,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林昌平",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1442,
         "grade": 1,
@@ -57825,7 +57825,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "潘鳳娟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1455,
         "grade": 2,
@@ -57847,7 +57847,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "曲兆祥",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1443,
         "grade": 1,
@@ -57869,7 +57869,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張碧君",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1456,
         "grade": 2,
@@ -57891,7 +57891,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "胡元玲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1462,
         "grade": 3,
@@ -57913,7 +57913,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王冠雄",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1457,
         "grade": 2,
@@ -57935,7 +57935,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳文政",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1444,
         "grade": 1,
@@ -57957,7 +57957,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張崑將",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1463,
         "grade": 3,
@@ -57979,7 +57979,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "范世平",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1464,
         "grade": 3,
@@ -58002,7 +58002,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "未定",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1465,
         "grade": 3,
@@ -58024,7 +58024,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "張崑將",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1445,
         "grade": 1,
@@ -58046,7 +58046,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張志源",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1458,
         "grade": 2,
@@ -58068,7 +58068,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "邵軒磊",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1446,
         "grade": 1,
@@ -58090,7 +58090,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃自強",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3290,
         "grade": 4,
@@ -58111,7 +58111,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "徐筱琦",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1447,
         "grade": 1,
@@ -58133,7 +58133,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳文政",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1459,
         "grade": 2,
@@ -58155,7 +58155,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "鄭怡庭",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1466,
         "grade": 3,
@@ -58177,7 +58177,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "莊仁傑",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1460,
         "grade": 2,
@@ -58199,7 +58199,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張碧君",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1448,
         "grade": 1,
@@ -58221,7 +58221,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "莊仁傑",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1449,
         "grade": 1,
@@ -58243,7 +58243,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "郝永崴",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0438",
         "class": "碩博",
@@ -58264,7 +58264,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "鍾鴻銘",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0357",
         "time": [
@@ -58284,7 +58284,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "唐淑華",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0358",
         "time": [
@@ -58304,7 +58304,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "唐淑華 卯靜儒 王力億",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0433",
         "time": [
@@ -58324,7 +58324,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "湯仁燕",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0434",
         "time": [
@@ -58344,7 +58344,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳麗華",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0435",
         "time": [
@@ -58364,7 +58364,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林君憶",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0436",
         "time": [
@@ -58384,7 +58384,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王力億",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0437",
         "time": [
@@ -58404,7 +58404,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃純敏",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0381",
         "class": "碩博",
@@ -58425,7 +58425,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李玉馨 葉坤靈",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0382",
         "class": "碩博",
@@ -58446,7 +58446,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "周愚文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0383",
         "class": "碩博",
@@ -58468,7 +58468,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "余穎麒",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0384",
         "class": "碩博",
@@ -58489,7 +58489,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "洪仁進",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0385",
         "class": "碩博",
@@ -58510,7 +58510,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃乃熒",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0386",
         "class": "碩博",
@@ -58531,7 +58531,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃乃熒",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0387",
         "class": "碩博",
@@ -58552,7 +58552,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "方永泉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0388",
         "class": "碩博",
@@ -58573,7 +58573,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "許殷宏",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3308,
         "class": "碩博",
@@ -58594,7 +58594,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張宜君",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0389",
         "class": "碩博",
@@ -58615,7 +58615,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "鄭英傑",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0390",
         "class": "碩博",
@@ -58636,7 +58636,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王麗雲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0391",
         "class": "碩博",
@@ -58657,7 +58657,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "劉蔚之",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0393",
         "class": "碩博",
@@ -58678,7 +58678,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張建成",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0394",
         "class": "碩博",
@@ -58699,7 +58699,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳伊琳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0395",
         "class": "碩博",
@@ -58720,7 +58720,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張珍瑋",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0396",
         "class": "碩博",
@@ -58741,7 +58741,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃鴻文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0397",
         "class": "碩博",
@@ -58763,7 +58763,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳佩英",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0398",
         "class": "碩博",
@@ -58784,7 +58784,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "鄭淑惠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0347",
         "time": [
@@ -58804,7 +58804,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "陳玉娟 黃乃熒 陳佩英",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0348",
         "time": [
@@ -58824,7 +58824,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "李玉馨 鄭淑惠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0374",
         "time": [
@@ -58844,7 +58844,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "余穎麒 張宜君",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0375",
         "time": [
@@ -58864,7 +58864,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃純敏 林君憶",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0376",
         "time": [
@@ -58884,7 +58884,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林秀珍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0377",
         "time": [
@@ -58904,7 +58904,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "吳清基",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0378",
         "time": [
@@ -58924,7 +58924,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "李玉馨",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0379",
         "time": [
@@ -58944,7 +58944,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "方永泉 崔",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0380",
         "time": [
@@ -58964,7 +58964,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "周愚文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0659",
         "grade": 1,
@@ -58986,7 +58986,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "周愚文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0658",
         "grade": 1,
@@ -59008,7 +59008,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "陳玉娟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0668",
         "grade": 2,
@@ -59029,7 +59029,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "黃乃熒",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0665",
         "grade": 2,
@@ -59050,7 +59050,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "林子斌",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0672",
         "team": "B",
@@ -59072,7 +59072,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "林子斌",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0671",
         "team": "A",
@@ -59093,7 +59093,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "王麗雲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0660",
         "grade": 2,
@@ -59113,7 +59113,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林逢祺",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0661",
         "grade": 2,
@@ -59133,7 +59133,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "黃春木",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0684",
         "grade": 4,
@@ -59153,7 +59153,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "余穎麒",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0673",
         "grade": 3,
@@ -59173,7 +59173,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "劉蔚之",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0674",
         "grade": 3,
@@ -59193,7 +59193,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "黃純敏",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0675",
         "grade": 3,
@@ -59213,7 +59213,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林逢祺",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0685",
         "grade": 4,
@@ -59233,7 +59233,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "張宜君",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0652",
         "grade": 1,
@@ -59255,7 +59255,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "王麗雲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0676",
         "grade": 3,
@@ -59275,7 +59275,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "王力億",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0662",
         "grade": 2,
@@ -59295,7 +59295,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林君憶",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0663",
         "grade": 2,
@@ -59316,7 +59316,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "鄭淑惠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0682",
         "grade": 3,
@@ -59337,7 +59337,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "鄭淑惠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0680",
         "grade": 3,
@@ -59358,7 +59358,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "葉坤靈",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0654",
         "team": "B",
@@ -59381,7 +59381,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "鄭英傑",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0653",
         "team": "A",
@@ -59403,7 +59403,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "唐淑華",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0656",
         "team": "B",
@@ -59426,7 +59426,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "唐淑華",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0655",
         "team": "A",
@@ -59448,7 +59448,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "洪仁進",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0683",
         "grade": 3,
@@ -59469,7 +59469,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "林秀珍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0681",
         "grade": 3,
@@ -59490,7 +59490,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "張宜君",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0669",
         "grade": 2,
@@ -59511,7 +59511,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "鄭英傑",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0666",
         "grade": 2,
@@ -59532,7 +59532,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳玉娟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0686",
         "grade": 4,
@@ -59552,7 +59552,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "卯靜儒",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0670",
         "grade": 2,
@@ -59573,7 +59573,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "卯靜儒",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0667",
         "grade": 2,
@@ -59594,7 +59594,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林君憶",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0677",
         "grade": 3,
@@ -59614,7 +59614,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "方永泉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0657",
         "grade": 1,
@@ -59635,7 +59635,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "張珍瑋",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0678",
         "grade": 3,
@@ -59656,7 +59656,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "湯仁燕",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0679",
         "grade": 3,
@@ -59677,7 +59677,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "藍偉瑩",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0664",
         "grade": 2,
@@ -59697,7 +59697,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "蔡慧敏",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2740,
         "class": "碩博",
@@ -59718,7 +59718,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張子超",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2741,
         "class": "碩博",
@@ -59739,7 +59739,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "葉欣誠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2742,
         "class": "碩博",
@@ -59760,7 +59760,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林益仁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2743,
         "class": "碩博",
@@ -59781,7 +59781,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "葉欣誠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2744,
         "class": "碩博",
@@ -59802,7 +59802,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "方偉達",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2745,
         "class": "碩博",
@@ -59823,7 +59823,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "方偉達",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2746,
         "class": "碩博",
@@ -59845,7 +59845,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "葉欣誠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2747,
         "class": "碩博",
@@ -59867,7 +59867,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林冠慧",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2748,
         "class": "碩博",
@@ -59888,7 +59888,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "蔡慧敏",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2652,
         "time": [
@@ -59908,7 +59908,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "張子超",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2653,
         "time": [
@@ -59928,7 +59928,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "方偉達",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2738,
         "time": [
@@ -59948,7 +59948,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "林冠慧",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2739,
         "time": [
@@ -59968,7 +59968,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "呂鈺秀",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2098,
         "time": [
@@ -59989,7 +59989,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "許馨文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2099,
         "time": [
@@ -60010,7 +60010,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "張海欣",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2100,
         "time": [
@@ -60031,7 +60031,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "呂錘寬",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2101,
         "time": [
@@ -60051,7 +60051,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "蘇鈺淨",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2102,
         "time": [
@@ -60072,7 +60072,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "張海欣",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2103,
         "time": [
@@ -60093,7 +60093,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "呂錘寬",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2104,
         "time": [
@@ -60113,7 +60113,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "賴秀綢",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2105,
         "condition": "◎限本系(含雙主修)修習 ◎必須先修過(也可以同時修)【EMM0002  民族音樂學導論】 ◎課程不開放上修",
@@ -60129,7 +60129,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "蘇鈺淨",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2106,
         "condition": "◎限本系(含雙主修)修習 ◎必須先修過(也可以同時修)【EMM0068  擦弦樂器專題研究】 ◎課程不開放上修",
@@ -60145,7 +60145,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "蘇鈺淨",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2107,
         "condition": "◎限本系(含雙主修)修習◎必須先修過【EMM0081  主修（二胡）（一）】 ◎課程不開放上修",
@@ -60161,7 +60161,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "賴秀綢",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2108,
         "condition": "◎限本系(含雙主修)修習  ◎限碩二碩三以上修習◎必須先修過【EMM0080  主修（琵琶）（二）】 ◎課程不開放上修",
@@ -60177,7 +60177,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "宋文勝",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2109,
         "time": [
@@ -60198,7 +60198,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "張海欣",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2110,
         "time": [
@@ -60220,7 +60220,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "許馨文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2111,
         "time": [
@@ -60241,7 +60241,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "許馨文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2112,
         "time": [
@@ -60262,7 +60262,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "黃均人",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2113,
         "time": [
@@ -60283,7 +60283,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "蘇鈺淨",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2114,
         "time": [
@@ -60304,7 +60304,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "鄭榮興",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2115,
         "time": [
@@ -60325,7 +60325,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "曹文傑",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2116,
         "time": [
@@ -60347,7 +60347,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林南",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1616,
         "class": "碩博",
@@ -60370,7 +60370,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "高瑪麗",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1617,
         "class": "碩博",
@@ -60393,7 +60393,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "梁孫傑 未定",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1618,
         "class": "碩博",
@@ -60416,7 +60416,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "貝格泰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1619,
         "class": "碩博",
@@ -60439,7 +60439,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林秀玲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1620,
         "class": "碩博",
@@ -60461,7 +60461,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "吳佳琪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1791,
         "class": "大碩",
@@ -60483,7 +60483,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "路愷宜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1621,
         "class": "碩博",
@@ -60506,7 +60506,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "曾思旭",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1622,
         "class": "碩博",
@@ -60529,7 +60529,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "謝妙玲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1623,
         "class": "碩博",
@@ -60552,7 +60552,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李臻儀",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1624,
         "class": "碩博",
@@ -60575,7 +60575,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "颯楊",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1625,
         "class": "碩博",
@@ -60598,7 +60598,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "颯楊",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1626,
         "class": "碩博",
@@ -60621,7 +60621,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "詹曉蕙",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1627,
         "class": "碩博",
@@ -60643,7 +60643,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張妙霞",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1628,
         "class": "碩博",
@@ -60665,7 +60665,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳純音",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1629,
         "class": "碩博",
@@ -60688,7 +60688,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蘇席瑤",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1630,
         "class": "碩博",
@@ -60711,7 +60711,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳浩然",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1631,
         "class": "碩博",
@@ -60733,7 +60733,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張武昌",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1632,
         "class": "碩博",
@@ -60755,7 +60755,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李宜倩",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1633,
         "class": "碩博",
@@ -60777,7 +60777,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "孔繁偉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1634,
         "class": "碩博",
@@ -60800,7 +60800,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "吳佳琪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1582,
         "time": [
@@ -60821,7 +60821,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳乃嫻",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1583,
         "time": [
@@ -60842,7 +60842,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳秋蘭 徐碧美",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1584,
         "time": [
@@ -60863,7 +60863,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃涵榆",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1607,
         "time": [
@@ -60885,7 +60885,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "狄亞倫",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1608,
         "time": [
@@ -60906,7 +60906,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "李秀娟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1609,
         "time": [
@@ -60927,7 +60927,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "林蕙珊",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1610,
         "time": [
@@ -60948,7 +60948,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "吳曉虹",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1612,
         "time": [
@@ -60969,7 +60969,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "劉宇挺",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1613,
         "time": [
@@ -60990,7 +60990,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "吳美貞",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1614,
         "time": [
@@ -61011,7 +61011,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "張珮青",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1615,
         "time": [
@@ -61032,7 +61032,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "吳靜蘭",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1871,
         "grade": 3,
@@ -61055,7 +61055,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "曾於萱",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1875,
         "grade": 4,
@@ -61076,7 +61076,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "程玉秀",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1854,
         "grade": 3,
@@ -61099,7 +61099,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "孔繁偉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1819,
         "grade": 2,
@@ -61121,7 +61121,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "戴宇呈",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1820,
         "grade": 2,
@@ -61143,7 +61143,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "劉宇挺",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1821,
         "grade": 2,
@@ -61166,7 +61166,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "李宜倩",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1850,
         "grade": 2,
@@ -61189,7 +61189,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "羅美蘭",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1846,
         "grade": 2,
@@ -61212,7 +61212,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "江璧羽",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1792,
         "team": "A",
@@ -61235,7 +61235,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "柯珍宜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1793,
         "team": "B",
@@ -61258,7 +61258,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "多德",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1794,
         "team": "C",
@@ -61281,7 +61281,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃涵榆",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1876,
         "grade": 4,
@@ -61302,7 +61302,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張瓊惠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1822,
         "grade": 2,
@@ -61323,7 +61323,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "吳靜蘭",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1855,
         "grade": 3,
@@ -61345,7 +61345,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳乃嫻",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1823,
         "grade": 2,
@@ -61367,7 +61367,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "吳美貞",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1824,
         "team": "A",
@@ -61390,7 +61390,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "李宜倩",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1825,
         "team": "B",
@@ -61413,7 +61413,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "吳美貞",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1826,
         "team": "C",
@@ -61436,7 +61436,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "曾於萱",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1856,
         "grade": 3,
@@ -61457,7 +61457,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "李宜懃",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1882,
         "grade": 4,
@@ -61481,7 +61481,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "路愷宜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1873,
         "grade": 3,
@@ -61504,7 +61504,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "陳秋梅",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1795,
         "team": "A",
@@ -61528,7 +61528,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "陳浩然",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1796,
         "team": "B",
@@ -61552,7 +61552,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "謝妙玲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1797,
         "team": "C",
@@ -61576,7 +61576,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "陳正賢",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1798,
         "team": "D",
@@ -61600,7 +61600,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "孔繁偉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1799,
         "team": "E",
@@ -61624,7 +61624,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "蘇榕",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1800,
         "team": "F",
@@ -61648,7 +61648,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "吳靜蘭",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1801,
         "team": "G",
@@ -61672,7 +61672,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "蘇席瑤",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1802,
         "team": "H",
@@ -61696,7 +61696,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "蘇子中",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1827,
         "grade": 2,
@@ -61718,7 +61718,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "常紹如",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1877,
         "team": "A",
@@ -61741,7 +61741,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "柯衣凡",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1878,
         "team": "B",
@@ -61764,7 +61764,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "柯衣凡",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1879,
         "team": "C",
@@ -61787,7 +61787,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "常紹如",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1857,
         "team": "A",
@@ -61810,7 +61810,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "戴宇呈",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1858,
         "team": "B",
@@ -61833,7 +61833,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "孔繁偉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1859,
         "team": "C",
@@ -61855,7 +61855,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "李曉芸",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1828,
         "grade": 2,
@@ -61876,7 +61876,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "李曉芸",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1860,
         "grade": 3,
@@ -61897,7 +61897,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "高瑪麗",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1803,
         "grade": 1,
@@ -61920,7 +61920,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "曾思旭",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1815,
         "grade": 1,
@@ -61944,7 +61944,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "貝格泰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1811,
         "grade": 1,
@@ -61968,7 +61968,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "陳純音",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1829,
         "team": "A",
@@ -61992,7 +61992,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "吳曉虹",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1830,
         "team": "B",
@@ -62016,7 +62016,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "李臻儀",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1851,
         "grade": 2,
@@ -62040,7 +62040,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "李臻儀",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1847,
         "grade": 2,
@@ -62064,7 +62064,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林南",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1861,
         "grade": 3,
@@ -62084,7 +62084,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "井郁子",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1831,
         "team": "A",
@@ -62106,7 +62106,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "井郁子",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1832,
         "team": "B",
@@ -62128,7 +62128,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "李文晴",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1862,
         "grade": 3,
@@ -62149,7 +62149,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "多德",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1804,
         "team": "A",
@@ -62173,7 +62173,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "多德",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1805,
         "team": "B",
@@ -62197,7 +62197,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "謝妙玲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1806,
         "team": "C",
@@ -62221,7 +62221,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "柯衣凡",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1816,
         "team": "A",
@@ -62246,7 +62246,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "常紹如",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1817,
         "team": "B",
@@ -62271,7 +62271,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "多德",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1812,
         "team": "A",
@@ -62296,7 +62296,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "常紹如",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1813,
         "team": "B",
@@ -62320,7 +62320,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "李宜懃",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1880,
         "grade": 4,
@@ -62342,7 +62342,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "易家如",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1886,
         "team": "A",
@@ -62366,7 +62366,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "易家如",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1887,
         "team": "B",
@@ -62390,7 +62390,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "周中天",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1883,
         "team": "A",
@@ -62414,7 +62414,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "易家如",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1884,
         "team": "B",
@@ -62439,7 +62439,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳秋梅",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1818,
         "grade": 1,
@@ -62462,7 +62462,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "許月貴",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1814,
         "grade": 1,
@@ -62485,7 +62485,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "羅美蘭",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1807,
         "team": "A",
@@ -62508,7 +62508,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林蕙珊",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1808,
         "team": "B",
@@ -62531,7 +62531,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳正賢",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1809,
         "team": "C",
@@ -62554,7 +62554,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳正賢",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1810,
         "team": "D",
@@ -62577,7 +62577,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "曾於萱",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1833,
         "team": "A",
@@ -62600,7 +62600,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "曾於萱",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1834,
         "team": "B",
@@ -62623,7 +62623,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "柯珍宜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1863,
         "team": "A",
@@ -62646,7 +62646,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "柯珍宜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1864,
         "team": "B",
@@ -62669,7 +62669,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "曾於萱",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1865,
         "team": "C",
@@ -62692,7 +62692,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "貝格泰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1835,
         "team": "A",
@@ -62715,7 +62715,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "曾於萱",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1836,
         "team": "B",
@@ -62738,7 +62738,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "王宏均",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1837,
         "team": "C",
@@ -62761,7 +62761,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "多德",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1838,
         "team": "D",
@@ -62784,7 +62784,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "戴宇呈",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1839,
         "team": "E",
@@ -62807,7 +62807,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "柯衣凡",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1840,
         "team": "F",
@@ -62830,7 +62830,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "江璧羽",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1866,
         "team": "A",
@@ -62853,7 +62853,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "路愷宜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1867,
         "team": "B",
@@ -62876,7 +62876,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "詹曉蕙",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1868,
         "team": "C",
@@ -62899,7 +62899,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "陳乃嫻",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1869,
         "team": "D",
@@ -62922,7 +62922,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "張瓊惠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1852,
         "grade": 2,
@@ -62945,7 +62945,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "狄亞倫",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1848,
         "grade": 2,
@@ -62968,7 +62968,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "林南",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1874,
         "grade": 3,
@@ -62991,7 +62991,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "黃涵榆",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1872,
         "grade": 3,
@@ -63013,7 +63013,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "李文晴",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1881,
         "grade": 4,
@@ -63034,7 +63034,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林秀玲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1841,
         "grade": 2,
@@ -63056,7 +63056,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李秀娟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1842,
         "grade": 2,
@@ -63078,7 +63078,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林秀玲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1843,
         "grade": 2,
@@ -63100,7 +63100,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "高瑪麗",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1844,
         "grade": 2,
@@ -63122,7 +63122,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "許月貴",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1785,
         "time": [
@@ -63144,7 +63144,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "江璧羽",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1786,
         "time": [
@@ -63166,7 +63166,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "許月貴",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1787,
         "time": [
@@ -63188,7 +63188,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "蘇子中",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1788,
         "time": [
@@ -63210,7 +63210,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "謝妙玲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1789,
         "time": [
@@ -63232,7 +63232,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "多德",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1790,
         "time": [
@@ -63253,7 +63253,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "丁仁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1845,
         "grade": 2,
@@ -63276,7 +63276,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "吳曉虹",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1853,
         "grade": 2,
@@ -63299,7 +63299,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "丁仁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1849,
         "grade": 2,
@@ -63321,7 +63321,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "劉宇挺",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1870,
         "grade": 3,
@@ -63342,7 +63342,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "王宏均",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1888,
         "grade": 4,
@@ -63365,7 +63365,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "曾俊傑",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1885,
         "grade": 4,
@@ -63388,7 +63388,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "王麗雲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0516",
         "time": [
@@ -63408,7 +63408,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "周佳宥",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0517",
         "time": [
@@ -63428,7 +63428,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "陳佩英",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0518",
         "time": [
@@ -63448,7 +63448,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林佩瑩 趙丰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3000,
         "class": "大碩",
@@ -63470,7 +63470,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "徐月娟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3001,
         "class": "大碩",
@@ -63492,7 +63492,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "曾莉珊",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3002,
         "class": "大碩",
@@ -63514,7 +63514,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "管一政",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3003,
         "class": "大碩",
@@ -63536,7 +63536,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李通藝",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3004,
         "class": "大碩",
@@ -63559,7 +63559,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "謝奈特",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3005,
         "class": "大碩",
@@ -63580,7 +63580,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "簡芳菁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2708,
         "class": "碩博",
@@ -63601,7 +63601,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳林文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2709,
         "class": "碩博",
@@ -63622,7 +63622,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "管一政",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2710,
         "class": "碩博",
@@ -63643,7 +63643,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "賴昱銘",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2711,
         "class": "碩博",
@@ -63664,7 +63664,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李德貴",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3006,
         "class": "大碩",
@@ -63686,7 +63686,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李匡悌",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2712,
         "class": "碩博",
@@ -63708,7 +63708,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "葉恩肇",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2713,
         "class": "碩博",
@@ -63729,7 +63729,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃婉如",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2714,
         "class": "碩博",
@@ -63750,7 +63750,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳正達",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2715,
         "class": "碩博",
@@ -63771,7 +63771,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "葉庭光",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2716,
         "class": "碩博",
@@ -63792,7 +63792,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "王重傑",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2717,
         "class": "碩博",
@@ -63813,7 +63813,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林佩瑩",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3007,
         "class": "大碩",
@@ -63836,7 +63836,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳卉瑄",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3008,
         "class": "大碩",
@@ -63857,7 +63857,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "賴昱銘",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3009,
         "class": "大碩",
@@ -63879,7 +63879,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "葉恩肇",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3010,
         "class": "大碩",
@@ -63901,7 +63901,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王重傑",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3011,
         "class": "大碩",
@@ -63923,7 +63923,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李通藝",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3012,
         "class": "大碩",
@@ -63945,7 +63945,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "吳朝榮 鄭志文 葉庭光",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3013,
         "class": "大碩",
@@ -63967,7 +63967,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "鄭志文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3014,
         "class": "大碩",
@@ -63989,7 +63989,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "葉孟宛",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3015,
         "class": "大碩",
@@ -64011,7 +64011,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "葉庭光 葉恩肇",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3016,
         "class": "大碩",
@@ -64033,7 +64033,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳正達 陳卉瑄 葉孟宛",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3017,
         "class": "大碩",
@@ -64056,7 +64056,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "陳林文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2647,
         "grade": 1,
@@ -64078,7 +64078,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "曾瑋玲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2648,
         "grade": 2,
@@ -64100,7 +64100,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "謝奈特",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2718,
         "team": "B",
@@ -64124,7 +64124,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "黃婉如",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2719,
         "team": "C",
@@ -64148,7 +64148,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "管一政",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2720,
         "team": "D",
@@ -64172,7 +64172,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "陳卉瑄",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2721,
         "team": "E",
@@ -64196,7 +64196,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "葉孟宛",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2722,
         "team": "F",
@@ -64220,7 +64220,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "賴昱銘",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2723,
         "team": "B",
@@ -64244,7 +64244,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "曾莉珊",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2724,
         "team": "C",
@@ -64268,7 +64268,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "李悅寧",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2725,
         "team": "D",
@@ -64292,7 +64292,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "林佩瑩",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2726,
         "team": "E",
@@ -64316,7 +64316,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "葉庭光",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2727,
         "team": "F",
@@ -64339,7 +64339,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "林月珍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3021,
         "grade": 2,
@@ -64361,7 +64361,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "簡芳菁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3022,
         "grade": 2,
@@ -64382,7 +64382,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳正達",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3029,
         "grade": 3,
@@ -64404,7 +64404,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "米泓生",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3023,
         "grade": 2,
@@ -64426,7 +64426,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "葉庭光",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3018,
         "grade": 1,
@@ -64447,7 +64447,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "葉恩肇 賴昱銘",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3019,
         "grade": 1,
@@ -64468,7 +64468,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "管一政 曾瑋玲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3024,
         "grade": 2,
@@ -64490,7 +64490,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "陳卉瑄 林佩瑩",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3020,
         "grade": 1,
@@ -64511,7 +64511,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳林文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3025,
         "grade": 2,
@@ -64533,7 +64533,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "曾莉珊",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3026,
         "grade": 2,
@@ -64555,7 +64555,7 @@ export default[
     "score": 4,
     "required": "選",
     "teacher": "葉恩肇 曾瑋玲 葉庭光 曾莉珊",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3032,
         "team": "A",
@@ -64578,7 +64578,7 @@ export default[
     "score": 4,
     "required": "選",
     "teacher": "黃婉如 曾瑋玲 賴昱銘 鄭志文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3027,
         "team": "B",
@@ -64601,7 +64601,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "葉恩肇 葉庭光",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3030,
         "grade": 3,
@@ -64623,7 +64623,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "曾莉珊 陳卉瑄 賴昱銘 李悅寧 葉孟宛",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3028,
         "grade": 2,
@@ -64644,7 +64644,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蔡安理",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2999,
         "time": [
@@ -64665,7 +64665,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "張俊彥",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3031,
         "grade": 3,
@@ -64687,7 +64687,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "許瑛玿 楊芳瑩",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3033,
         "grade": 4,
@@ -64710,7 +64710,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "路狄諾",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1353,
         "time": [
@@ -64731,7 +64731,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "梁孫傑",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1354,
         "time": [
@@ -64751,7 +64751,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳學毅",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1355,
         "time": [
@@ -64772,7 +64772,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "路狄諾",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1356,
         "time": [
@@ -64793,7 +64793,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "賴嘉玲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1357,
         "time": [
@@ -64813,7 +64813,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "石明宗",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3288,
         "time": [
@@ -64833,7 +64833,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "俞智贏",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0051",
         "time": [
@@ -64853,7 +64853,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "柴惠敏",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0052",
         "time": [
@@ -64873,7 +64873,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "鄭景峰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0053",
         "time": [
@@ -64893,7 +64893,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "李佳融",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0054",
         "time": [
@@ -64913,7 +64913,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "俞智贏",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0055",
         "time": [
@@ -64933,7 +64933,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蔡於儒",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0056",
         "time": [
@@ -64953,7 +64953,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "相子元",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0057",
         "time": [
@@ -64973,7 +64973,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "鄭景峰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0058",
         "time": [
@@ -64993,7 +64993,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "何仁育",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0059",
         "time": [
@@ -65013,7 +65013,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "劉有德",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0060",
         "time": [
@@ -65033,7 +65033,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李恆儒",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0061",
         "time": [
@@ -65053,7 +65053,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "何仁育",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0062",
         "time": [
@@ -65073,7 +65073,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "劉有德",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0063",
         "time": [
@@ -65093,7 +65093,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "劉有德",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0064",
         "time": [
@@ -65113,7 +65113,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "何仁育",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0065",
         "time": [
@@ -65133,7 +65133,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "何仁育",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0066",
         "time": [
@@ -65153,7 +65153,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "鄭景峰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0174",
         "grade": 3,
@@ -65173,7 +65173,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "梁嘉音",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0163",
         "grade": 2,
@@ -65193,7 +65193,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "李佳融",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0164",
         "grade": 2,
@@ -65213,7 +65213,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "劉錦璋",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0165",
         "grade": 2,
@@ -65233,7 +65233,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "李建興",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0154",
         "grade": 1,
@@ -65254,7 +65254,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "馬杰堯",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0166",
         "grade": 2,
@@ -65274,7 +65274,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "梁嘉音",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0175",
         "grade": 3,
@@ -65294,7 +65294,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "蔡於儒",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0167",
         "grade": 2,
@@ -65314,7 +65314,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "蔡於儒",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0176",
         "grade": 3,
@@ -65334,7 +65334,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "馬杰堯",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0177",
         "grade": 3,
@@ -65354,7 +65354,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "李建興",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0178",
         "grade": 3,
@@ -65374,7 +65374,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "翁士航",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0131",
         "team": "M",
@@ -65397,7 +65397,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "翁士航",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0130",
         "team": "F",
@@ -65420,7 +65420,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林維芬",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0168",
         "grade": 2,
@@ -65441,7 +65441,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "黃珮昀",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0179",
         "grade": 3,
@@ -65462,7 +65462,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "張恩崇",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0169",
         "grade": 2,
@@ -65483,7 +65483,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "蔡於儒",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0156",
         "grade": 1,
@@ -65506,7 +65506,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "李建興",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0170",
         "grade": 2,
@@ -65527,7 +65527,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "林岱樵",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0180",
         "grade": 3,
@@ -65548,7 +65548,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林岱樵",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0171",
         "grade": 2,
@@ -65569,7 +65569,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "周台英",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0172",
         "grade": 2,
@@ -65591,7 +65591,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "翁士航",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0158",
         "grade": 1,
@@ -65613,7 +65613,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳妙怡",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0159",
         "grade": 1,
@@ -65635,7 +65635,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "李秉鴻",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0161",
         "team": "M",
@@ -65659,7 +65659,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "梁嘉音",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0160",
         "team": "F",
@@ -65683,7 +65683,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "何仁育",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0173",
         "grade": 2,
@@ -65704,7 +65704,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "翁士航",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0132",
         "time": [
@@ -65723,7 +65723,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "鄭景峰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0133",
         "time": [
@@ -65742,7 +65742,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "翁士航",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0134",
         "time": [
@@ -65762,7 +65762,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "未定",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0135",
         "time": [
@@ -65781,7 +65781,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳信亨",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0136",
         "time": [
@@ -65800,7 +65800,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "黃珮昀",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0162",
         "grade": 1,
@@ -65822,7 +65822,7 @@ export default[
     "score": 4,
     "required": "必",
     "teacher": "蔡於儒",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0137",
         "time": [
@@ -65842,7 +65842,7 @@ export default[
     "score": 4,
     "required": "必",
     "teacher": "林雯雯",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0138",
         "time": [
@@ -65862,7 +65862,7 @@ export default[
     "score": 4,
     "required": "必",
     "teacher": "李秉鴻",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0139",
         "time": [
@@ -65882,7 +65882,7 @@ export default[
     "score": 4,
     "required": "必",
     "teacher": "梁嘉音",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0140",
         "time": [
@@ -65902,7 +65902,7 @@ export default[
     "score": 4,
     "required": "必",
     "teacher": "陳妙怡",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0141",
         "time": [
@@ -65922,7 +65922,7 @@ export default[
     "score": 4,
     "required": "必",
     "teacher": "周台英",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0142",
         "time": [
@@ -65942,7 +65942,7 @@ export default[
     "score": 4,
     "required": "必",
     "teacher": "張恩崇",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0143",
         "time": [
@@ -65962,7 +65962,7 @@ export default[
     "score": 4,
     "required": "必",
     "teacher": "張恩崇",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0144",
         "time": [
@@ -65983,7 +65983,7 @@ export default[
     "score": 4,
     "required": "必",
     "teacher": "黃珮昀",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0145",
         "time": [
@@ -66004,7 +66004,7 @@ export default[
     "score": 4,
     "required": "必",
     "teacher": "黃珮昀",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0146",
         "time": [
@@ -66024,7 +66024,7 @@ export default[
     "score": 4,
     "required": "必",
     "teacher": "黃達德 李玟寬",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0147",
         "time": [
@@ -66045,7 +66045,7 @@ export default[
     "score": 4,
     "required": "必",
     "teacher": "李濤名",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0148",
         "time": [
@@ -66066,7 +66066,7 @@ export default[
     "score": 4,
     "required": "必",
     "teacher": "李佳融",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0149",
         "time": [
@@ -66087,7 +66087,7 @@ export default[
     "score": 4,
     "required": "必",
     "teacher": "林岱樵",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0150",
         "time": [
@@ -66107,7 +66107,7 @@ export default[
     "score": 4,
     "required": "必",
     "teacher": "俞智贏",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0151",
         "time": [
@@ -66127,7 +66127,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "周遵儒",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1240,
         "class": "大碩",
@@ -66148,7 +66148,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "廖信",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1149,
         "grade": 1,
@@ -66169,7 +66169,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "廖信",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1155,
         "grade": 2,
@@ -66190,7 +66190,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王健華",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1150,
         "grade": 1,
@@ -66211,7 +66211,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "杜聖聰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3320,
         "grade": 2,
@@ -66232,7 +66232,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "王健華",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1156,
         "grade": 2,
@@ -66253,7 +66253,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "邱于平",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1151,
         "grade": 1,
@@ -66274,7 +66274,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "邱琪瑄",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3321,
         "grade": 2,
@@ -66295,7 +66295,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王希俊",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1152,
         "grade": 1,
@@ -66316,7 +66316,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳明秀",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3318,
         "grade": 1,
@@ -66337,7 +66337,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "邱于平",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1157,
         "grade": 2,
@@ -66358,7 +66358,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "王希俊",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1153,
         "grade": 1,
@@ -66379,7 +66379,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張晏榕",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1154,
         "grade": 1,
@@ -66400,7 +66400,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "楊美雪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3319,
         "grade": 1,
@@ -66421,7 +66421,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林素惠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3322,
         "grade": 1,
@@ -66442,7 +66442,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "周遵儒",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1245,
         "team": "A",
@@ -66464,7 +66464,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "周遵儒",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1246,
         "team": "B",
@@ -66486,7 +66486,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳皇利",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3323,
         "grade": 2,
@@ -66507,7 +66507,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "張晏榕",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1247,
         "grade": 2,
@@ -66528,7 +66528,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳明秀",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3324,
         "grade": 2,
@@ -66549,7 +66549,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李燕秋",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3328,
         "grade": 3,
@@ -66570,7 +66570,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "葉振璧",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3329,
         "grade": 3,
@@ -66591,7 +66591,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "邱槿桉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3330,
         "grade": 3,
@@ -66612,7 +66612,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "邱于平",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1255,
         "team": "A",
@@ -66634,7 +66634,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "邱于平",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1256,
         "team": "B",
@@ -66656,7 +66656,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳明秀",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3335,
         "grade": 1,
@@ -66677,7 +66677,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "祝濬清",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3325,
         "grade": 2,
@@ -66698,7 +66698,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "張晏榕 陳仙舟 劉立行",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1251,
         "grade": 3,
@@ -66720,7 +66720,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳皇利",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3331,
         "grade": 3,
@@ -66741,7 +66741,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "萬岳憲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3332,
         "grade": 3,
@@ -66762,7 +66762,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "陳仙舟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1248,
         "team": "A",
@@ -66784,7 +66784,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "陳仙舟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1249,
         "team": "B",
@@ -66806,7 +66806,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳仙舟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1252,
         "grade": 3,
@@ -66827,7 +66827,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳仙舟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1253,
         "grade": 3,
@@ -66848,7 +66848,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "曹聖豪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3333,
         "grade": 3,
@@ -66870,7 +66870,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王靜弦",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3317,
         "grade": 3,
@@ -66891,7 +66891,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳淑如",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3326,
         "grade": 2,
@@ -66912,7 +66912,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "王靜弦",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3327,
         "grade": 2,
@@ -66933,7 +66933,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "廖信",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1241,
         "team": "A",
@@ -66956,7 +66956,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王健華",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1242,
         "grade": 1,
@@ -66977,7 +66977,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "邱于平 張晏榕 陳仙舟 周遵儒 劉立行",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1257,
         "grade": 4,
@@ -66999,7 +66999,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "邱于平",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1243,
         "grade": 1,
@@ -67020,7 +67020,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳仙舟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1254,
         "grade": 3,
@@ -67041,7 +67041,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張晏榕",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1250,
         "grade": 2,
@@ -67062,7 +67062,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王希俊",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1244,
         "grade": 1,
@@ -67083,7 +67083,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "廖信",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1258,
         "grade": 4,
@@ -67105,7 +67105,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "廖信",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1259,
         "grade": 4,
@@ -67127,7 +67127,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "洪立三",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1647,
         "class": "碩博",
@@ -67148,7 +67148,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "郭乃文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1648,
         "class": "碩博",
@@ -67170,7 +67170,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "王文誠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1649,
         "class": "碩博",
@@ -67191,7 +67191,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳哲銘",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1650,
         "class": "碩博",
@@ -67212,7 +67212,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "周學政",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1651,
         "class": "碩博",
@@ -67233,7 +67233,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "周學政",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1652,
         "class": "碩博",
@@ -67254,7 +67254,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張峻嘉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1653,
         "class": "碩博",
@@ -67276,7 +67276,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "莫家俊",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1654,
         "class": "碩博",
@@ -67297,7 +67297,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "譚鴻仁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1655,
         "class": "碩博",
@@ -67318,7 +67318,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "翁叔平",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1656,
         "class": "碩博",
@@ -67339,7 +67339,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "顏秀慧",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1657,
         "class": "碩博",
@@ -67361,7 +67361,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "吳鄭重",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1659,
         "class": "碩博",
@@ -67382,7 +67382,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "張國楨",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1660,
         "class": "碩博",
@@ -67403,7 +67403,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "汪明輝",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1661,
         "class": "碩博",
@@ -67425,7 +67425,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "韋煙灶",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1662,
         "class": "碩博",
@@ -67446,7 +67446,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "韋煙灶",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1585,
         "time": [
@@ -67467,7 +67467,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "洪致文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1586,
         "time": [
@@ -67488,7 +67488,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "郭乃文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1587,
         "time": [
@@ -67509,7 +67509,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳瑩",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1645,
         "time": [
@@ -67530,7 +67530,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "張峻嘉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1646,
         "time": [
@@ -67550,7 +67550,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李宗祐",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1942,
         "grade": 2,
@@ -67570,7 +67570,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳瑩",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1957,
         "grade": 3,
@@ -67590,7 +67590,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "王文誠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1953,
         "grade": 2,
@@ -67611,7 +67611,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "譚鴻仁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1929,
         "grade": 1,
@@ -67632,7 +67632,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "汪明輝",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1943,
         "grade": 2,
@@ -67652,7 +67652,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "洪立三",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1938,
         "grade": 1,
@@ -67674,7 +67674,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "洪立三",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1934,
         "grade": 1,
@@ -67696,7 +67696,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "王聖鐸",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1955,
         "grade": 2,
@@ -67718,7 +67718,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "王聖鐸",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1954,
         "grade": 2,
@@ -67740,7 +67740,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "翁叔平",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1944,
         "grade": 2,
@@ -67760,7 +67760,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林宗儀",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1939,
         "grade": 1,
@@ -67783,7 +67783,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林宗儀",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1935,
         "grade": 1,
@@ -67806,7 +67806,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "洪致文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1940,
         "grade": 1,
@@ -67829,7 +67829,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "翁叔平",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1936,
         "grade": 1,
@@ -67852,7 +67852,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "周學政",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1958,
         "grade": 3,
@@ -67873,7 +67873,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "莫家俊",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1956,
         "grade": 2,
@@ -67894,7 +67894,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "廖學誠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1945,
         "grade": 2,
@@ -67914,7 +67914,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "蘇淑娟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1965,
         "grade": 3,
@@ -67935,7 +67935,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "陳哲銘 譚鴻仁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1964,
         "grade": 3,
@@ -67956,7 +67956,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "吳秉昇",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1946,
         "team": "A",
@@ -67979,7 +67979,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "吳秉昇",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1947,
         "team": "B",
@@ -68002,7 +68002,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "張國楨",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1949,
         "team": "D",
@@ -68026,7 +68026,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "張國楨",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1948,
         "team": "C",
@@ -68049,7 +68049,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "陳哲銘",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1941,
         "grade": 1,
@@ -68071,7 +68071,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "陳哲銘",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1937,
         "grade": 1,
@@ -68094,7 +68094,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "吳鄭重",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1924,
         "time": [
@@ -68113,7 +68113,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王聖鐸",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1950,
         "grade": 2,
@@ -68133,7 +68133,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "郭乃文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1951,
         "grade": 2,
@@ -68153,7 +68153,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張鈺光",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1959,
         "grade": 3,
@@ -68173,7 +68173,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "顏秀慧",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1960,
         "grade": 3,
@@ -68193,7 +68193,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "林聖欽",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1930,
         "team": "A",
@@ -68216,7 +68216,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "張峻嘉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1931,
         "team": "B",
@@ -68240,7 +68240,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "莫家俊",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1925,
         "team": "C",
@@ -68261,7 +68261,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "沈淑敏 翁叔平 李宗祐 陳瑩",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1932,
         "team": "A",
@@ -68284,7 +68284,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "沈淑敏 翁叔平 李宗祐 陳瑩",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1933,
         "team": "B",
@@ -68308,7 +68308,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "沈淑敏 翁叔平 李宗祐 陳瑩",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1926,
         "team": "C",
@@ -68329,7 +68329,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王文誠 陳瑩",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1927,
         "time": [
@@ -68348,7 +68348,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "洪致文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1952,
         "grade": 2,
@@ -68368,7 +68368,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "周學政",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1961,
         "grade": 3,
@@ -68388,7 +68388,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "蘇淑娟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1928,
         "time": [
@@ -68408,7 +68408,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "汪明輝",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1962,
         "grade": 3,
@@ -68428,7 +68428,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "沈淑敏",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1963,
         "grade": 3,
@@ -68448,7 +68448,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林聖欽",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1966,
         "grade": 4,
@@ -68471,7 +68471,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "廖容瑜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0439",
         "class": "碩博",
@@ -68492,7 +68492,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "高松景",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0440",
         "class": "碩博",
@@ -68513,7 +68513,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "江大雄",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0441",
         "class": "碩博",
@@ -68535,7 +68535,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "李銘杰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0443",
         "class": "碩博",
@@ -68556,7 +68556,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "胡益進",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0444",
         "class": "碩博",
@@ -68577,7 +68577,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "連盈如",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0445",
         "class": "碩博",
@@ -68598,7 +68598,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "江大雄",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0446",
         "class": "碩博",
@@ -68620,7 +68620,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "李子奇",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0447",
         "class": "碩博",
@@ -68641,7 +68641,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "賴香如",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0448",
         "class": "碩博",
@@ -68663,7 +68663,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "曾治乾",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0449",
         "class": "碩博",
@@ -68684,7 +68684,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "紀雪雲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0451",
         "class": "碩博",
@@ -68705,7 +68705,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "李子奇",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0744",
         "class": "大碩",
@@ -68727,7 +68727,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "李子奇",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0745",
         "class": "大碩",
@@ -68748,7 +68748,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "李銘杰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0746",
         "class": "大碩",
@@ -68769,7 +68769,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "劉潔心",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0361",
         "grade": 2,
@@ -68790,7 +68790,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "董貞吟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0362",
         "grade": 2,
@@ -68811,7 +68811,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "張晏蓉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0359",
         "grade": 1,
@@ -68832,7 +68832,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "董貞吟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0363",
         "grade": 2,
@@ -68853,7 +68853,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "胡益進",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0360",
         "grade": 1,
@@ -68874,7 +68874,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "李思賢",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0452",
         "grade": 1,
@@ -68895,7 +68895,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "劉潔心",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0453",
         "grade": 1,
@@ -68916,7 +68916,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "胡益進",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0454",
         "grade": 2,
@@ -68937,7 +68937,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "劉潔心 吳文琪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0455",
         "grade": 2,
@@ -68959,7 +68959,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "賴韻如",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0751",
         "grade": 2,
@@ -68980,7 +68980,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "李銘杰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0752",
         "grade": 2,
@@ -69001,7 +69001,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "高松景",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0762",
         "grade": 3,
@@ -69022,7 +69022,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "曾治乾",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0763",
         "grade": 3,
@@ -69043,7 +69043,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "曾治乾",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0764",
         "team": "A",
@@ -69065,7 +69065,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "曾治乾",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0765",
         "team": "B",
@@ -69087,7 +69087,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "連盈如",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0753",
         "grade": 2,
@@ -69108,7 +69108,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "張晏蓉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0766",
         "grade": 3,
@@ -69129,7 +69129,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "吳文琪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0774",
         "grade": 4,
@@ -69151,7 +69151,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "李銘杰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0747",
         "grade": 1,
@@ -69172,7 +69172,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "李思賢",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0754",
         "grade": 2,
@@ -69193,7 +69193,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "高松景",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0767",
         "grade": 3,
@@ -69214,7 +69214,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "廖容瑜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0768",
         "grade": 3,
@@ -69235,7 +69235,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "賴香如",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0769",
         "grade": 3,
@@ -69256,7 +69256,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "朱芬郁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0756",
         "grade": 2,
@@ -69277,7 +69277,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林佳嫻",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3351,
         "grade": 2,
@@ -69298,7 +69298,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林佳嫻",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0757",
         "grade": 2,
@@ -69318,7 +69318,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "張鳳琴",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0758",
         "grade": 2,
@@ -69339,7 +69339,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "賴香如",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0759",
         "grade": 2,
@@ -69359,7 +69359,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "吳文琪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0770",
         "grade": 3,
@@ -69380,7 +69380,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "張鳳琴",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0749",
         "grade": 1,
@@ -69401,7 +69401,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "李子奇",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0760",
         "grade": 2,
@@ -69422,7 +69422,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "朱芬郁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0771",
         "grade": 3,
@@ -69444,7 +69444,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "吳文琪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0761",
         "grade": 2,
@@ -69464,7 +69464,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "高松景",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0772",
         "grade": 3,
@@ -69484,7 +69484,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "董貞吟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0773",
         "grade": 3,
@@ -69505,7 +69505,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "王淑慧",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0750",
         "grade": 1,
@@ -69526,7 +69526,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "紀雪雲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0775",
         "grade": 4,
@@ -69546,7 +69546,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "張晏蓉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0776",
         "grade": 4,
@@ -69567,7 +69567,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "吳志文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0460",
         "class": "碩博",
@@ -69588,7 +69588,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張鑑如",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0465",
         "class": "碩博",
@@ -69610,7 +69610,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林如萍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0461",
         "class": "碩博",
@@ -69631,7 +69631,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "張鑑如",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0364",
         "team": "B",
@@ -69653,7 +69653,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "簡淑真",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0462",
         "time": [
@@ -69673,7 +69673,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "王馨敏",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0456",
         "time": [
@@ -69693,7 +69693,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "楊翠竹",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0457",
         "time": [
@@ -69713,7 +69713,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "張鑑如 吳怡萱",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0463",
         "time": [
@@ -69734,7 +69734,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "簡淑真",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0464",
         "time": [
@@ -69754,7 +69754,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "魏秀珍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0458",
         "time": [
@@ -69774,7 +69774,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃淑滿",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0459",
         "time": [
@@ -69794,7 +69794,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "葉明芬",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0798",
         "grade": 1,
@@ -69816,7 +69816,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "吳怡萱",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0781",
         "grade": 1,
@@ -69838,7 +69838,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "聶西平",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0799",
         "grade": 1,
@@ -69859,7 +69859,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "聶西平",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0807",
         "grade": 4,
@@ -69880,7 +69880,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "吳怡萱",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0791",
         "grade": 4,
@@ -69901,7 +69901,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "周于佩",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0784",
         "grade": 2,
@@ -69922,7 +69922,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "周有熙",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0782",
         "grade": 1,
@@ -69943,7 +69943,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "周麗端",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0805",
         "grade": 3,
@@ -69964,7 +69964,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "孫秉筠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0783",
         "grade": 1,
@@ -69985,7 +69985,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "黃淑滿",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0800",
         "grade": 1,
@@ -70006,7 +70006,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "吳文惠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0801",
         "grade": 2,
@@ -70027,7 +70027,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "林如萍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0806",
         "grade": 3,
@@ -70048,7 +70048,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "周姍姍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0788",
         "grade": 3,
@@ -70069,7 +70069,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "洪宜芳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0792",
         "grade": 4,
@@ -70091,7 +70091,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "楊翠竹",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0802",
         "grade": 2,
@@ -70112,7 +70112,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "吳志文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0778",
         "grade": 3,
@@ -70133,7 +70133,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "洪宜芳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0785",
         "grade": 2,
@@ -70154,7 +70154,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "嚴如鈺",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0803",
         "grade": 2,
@@ -70175,7 +70175,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "魏秀珍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0796",
         "time": [
@@ -70195,7 +70195,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "葛惠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0793",
         "grade": 4,
@@ -70216,7 +70216,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "魏秀珍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0804",
         "grade": 2,
@@ -70237,7 +70237,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "薛承泰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0797",
         "time": [
@@ -70257,7 +70257,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "周于佩",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0789",
         "grade": 3,
@@ -70278,7 +70278,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "聶西平",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0786",
         "grade": 2,
@@ -70299,7 +70299,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "周于佩",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0790",
         "grade": 3,
@@ -70320,7 +70320,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "王馨敏 洪宜芳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0794",
         "grade": 4,
@@ -70341,7 +70341,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "楊翠竹",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0808",
         "grade": 4,
@@ -70362,7 +70362,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "葛惠 洪宜芳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0795",
         "grade": 4,
@@ -70383,7 +70383,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "洪宜芳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0787",
         "grade": 2,
@@ -70404,7 +70404,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "黃淑滿",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0777",
         "time": [
@@ -70424,7 +70424,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "葉明芬",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0779",
         "grade": 3,
@@ -70445,7 +70445,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "葉明芬",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0780",
         "grade": 4,
@@ -70466,7 +70466,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林麗月",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1635,
         "class": "碩博",
@@ -70487,7 +70487,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "康豹",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1636,
         "class": "碩博",
@@ -70508,7 +70508,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "吳翎君",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1637,
         "class": "碩博",
@@ -70529,7 +70529,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳惠芬",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1638,
         "class": "碩博",
@@ -70550,7 +70550,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "吳文星",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1639,
         "class": "碩博",
@@ -70571,7 +70571,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "王汎森",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1640,
         "class": "碩博",
@@ -70592,7 +70592,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "邱仲麟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1641,
         "class": "碩博",
@@ -70613,7 +70613,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "葉高樹",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1642,
         "class": "碩博",
@@ -70634,7 +70634,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "石蘭梅",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1643,
         "class": "碩博",
@@ -70655,7 +70655,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李宗翰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1905,
         "class": "大碩",
@@ -70676,7 +70676,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "盧省言",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1906,
         "class": "大碩",
@@ -70697,7 +70697,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳建元",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1907,
         "class": "大碩",
@@ -70717,7 +70717,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林滿紅",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1908,
         "class": "大碩",
@@ -70737,7 +70737,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "葉高樹",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1644,
         "grade": 2,
@@ -70759,7 +70759,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "楊彥彬",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1909,
         "team": "A",
@@ -70781,7 +70781,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "王麒銘",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1910,
         "team": "B",
@@ -70804,7 +70804,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "楊彥彬",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1889,
         "time": [
@@ -70823,7 +70823,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳秀鳳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1890,
         "time": [
@@ -70842,7 +70842,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "盧省言",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1891,
         "time": [
@@ -70861,7 +70861,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "葉高樹",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1921,
         "team": "A",
@@ -70884,7 +70884,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "陳健文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1922,
         "team": "B",
@@ -70907,7 +70907,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳建元",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1892,
         "time": [
@@ -70926,7 +70926,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "鄧世安",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1893,
         "time": [
@@ -70945,7 +70945,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "周東怡",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1894,
         "time": [
@@ -70964,7 +70964,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "陳昭揚",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1917,
         "team": "A",
@@ -70987,7 +70987,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "李宗翰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1918,
         "team": "B",
@@ -71010,7 +71010,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "陳秀鳳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1911,
         "team": "A",
@@ -71033,7 +71033,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "楊彥彬",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1912,
         "team": "B",
@@ -71056,7 +71056,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "盧省言",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1919,
         "team": "A",
@@ -71079,7 +71079,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "楊彥彬",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1920,
         "team": "B",
@@ -71102,7 +71102,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "吳文星",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1913,
         "team": "A",
@@ -71125,7 +71125,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "王麒銘",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1914,
         "team": "B",
@@ -71148,7 +71148,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳秀鳳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1895,
         "time": [
@@ -71167,7 +71167,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "周東怡",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1896,
         "time": [
@@ -71186,7 +71186,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "周東怡",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1897,
         "time": [
@@ -71205,7 +71205,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳佳宏",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1898,
         "time": [
@@ -71224,7 +71224,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "陳健文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1915,
         "team": "A",
@@ -71247,7 +71247,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "石蘭梅",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1916,
         "team": "B",
@@ -71270,7 +71270,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "石蘭梅",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1899,
         "time": [
@@ -71291,7 +71291,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "王麒銘",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1900,
         "time": [
@@ -71311,7 +71311,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳登武",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1901,
         "time": [
@@ -71330,7 +71330,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳健文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1902,
         "time": [
@@ -71349,7 +71349,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳昭揚",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1903,
         "time": [
@@ -71368,7 +71368,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "吳翎君",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1904,
         "time": [
@@ -71387,7 +71387,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "石蘭梅",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1923,
         "grade": 4,
@@ -71409,7 +71409,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王開顏",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1350,
         "time": [
@@ -71428,7 +71428,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "林舒柔",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2462,
         "time": [
@@ -71448,7 +71448,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "施人英",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2463,
         "time": [
@@ -71468,7 +71468,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "劉孟俊",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2464,
         "time": [
@@ -71488,7 +71488,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "董澤平",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2465,
         "time": [
@@ -71508,7 +71508,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳敦基 未定",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2466,
         "time": [
@@ -71529,7 +71529,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "康敏平",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2467,
         "time": [
@@ -71549,7 +71549,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "陳玠甫 施人英 鄒蘊欣",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2468,
         "time": [
@@ -71570,7 +71570,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "何宗武",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2469,
         "time": [
@@ -71590,7 +71590,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "施人英",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2470,
         "time": [
@@ -71611,7 +71611,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李耀宗",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2471,
         "time": [
@@ -71633,7 +71633,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "陳育霖",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0650",
         "class": "大碩",
@@ -71655,7 +71655,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "陳育霖",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0651",
         "class": "大碩",
@@ -71677,7 +71677,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "劉美慧 范雅筑",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0648",
         "time": [
@@ -71698,7 +71698,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "葉怡芬",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0649",
         "time": [
@@ -71719,7 +71719,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李文瑜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0485",
         "class": "碩博",
@@ -71740,7 +71740,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林育慈",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0486",
         "class": "碩博",
@@ -71761,7 +71761,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "邱瓊慧",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0487",
         "class": "碩博",
@@ -71782,7 +71782,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "邱國力",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0488",
         "class": "碩博",
@@ -71803,7 +71803,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳明溥",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0489",
         "class": "碩博",
@@ -71824,7 +71824,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳志洪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0490",
         "class": "碩博",
@@ -71845,7 +71845,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "林育慈",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0367",
         "time": [
@@ -71865,7 +71865,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "陳志洪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0368",
         "time": [
@@ -71885,7 +71885,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "邱瓊慧",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0483",
         "time": [
@@ -71905,7 +71905,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "陳志洪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0484",
         "time": [
@@ -71925,7 +71925,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "蘇友珊",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1133,
         "class": "碩博",
@@ -71946,7 +71946,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "蘇友珊",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1134,
         "class": "碩博",
@@ -71967,7 +71967,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "蘇友珊",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1135,
         "class": "碩博",
@@ -71988,7 +71988,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃啟祐",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1136,
         "class": "碩博",
@@ -72009,7 +72009,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳麗妃",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1137,
         "class": "碩博",
@@ -72031,7 +72031,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "胡茹萍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1095,
         "time": [
@@ -72052,7 +72052,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "宋修德",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1096,
         "time": [
@@ -72073,7 +72073,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "胡茹萍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1097,
         "time": [
@@ -72094,7 +72094,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "李景峰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1098,
         "time": [
@@ -72115,7 +72115,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "胡茹萍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1099,
         "time": [
@@ -72136,7 +72136,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "詹育",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1100,
         "time": [
@@ -72157,7 +72157,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "詹育",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1101,
         "time": [
@@ -72177,7 +72177,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "郭金國",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1102,
         "time": [
@@ -72198,7 +72198,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "李懿芳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1103,
         "time": [
@@ -72218,7 +72218,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "李懿芳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1111,
         "time": [
@@ -72238,7 +72238,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "詹育",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1112,
         "time": [
@@ -72258,7 +72258,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "詹育",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1113,
         "time": [
@@ -72278,7 +72278,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "黃啟祐",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1114,
         "time": [
@@ -72298,7 +72298,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳麗妃",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1115,
         "time": [
@@ -72318,7 +72318,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "郭金國",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1116,
         "time": [
@@ -72338,7 +72338,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "黃啟祐",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1117,
         "time": [
@@ -72358,7 +72358,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳麗妃",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1118,
         "time": [
@@ -72378,7 +72378,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "黃啟祐 蘇友珊",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1119,
         "time": [
@@ -72398,7 +72398,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "董雲春",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1120,
         "time": [
@@ -72418,7 +72418,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "鄧敦平",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1121,
         "time": [
@@ -72438,7 +72438,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "李懿芳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1122,
         "time": [
@@ -72458,7 +72458,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "黃啟祐",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1123,
         "time": [
@@ -72478,7 +72478,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "呂有豐",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1138,
         "grade": 1,
@@ -72499,7 +72499,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "蘇友珊",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1124,
         "time": [
@@ -72519,7 +72519,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "呂有豐",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1139,
         "grade": 1,
@@ -72540,7 +72540,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "黃啟祐",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1125,
         "time": [
@@ -72560,7 +72560,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "曾璧光",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1126,
         "time": [
@@ -72580,7 +72580,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "吳明振",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1127,
         "time": [
@@ -72600,7 +72600,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "詹育",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1128,
         "time": [
@@ -72620,7 +72620,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "曾璧光",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1129,
         "time": [
@@ -72640,7 +72640,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "趙守博",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3291,
         "time": [
@@ -72660,7 +72660,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "吳明振",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1130,
         "time": [
@@ -72680,7 +72680,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "黃啟祐",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1131,
         "time": [
@@ -72700,7 +72700,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "莫懷恩",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3385,
         "grade": 2,
@@ -72720,7 +72720,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "呂有豐 鄧敦平 洪翊軒 張俊興",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1186,
         "time": [
@@ -72739,7 +72739,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳信正",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1187,
         "time": [
@@ -72758,7 +72758,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "江明進",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3382,
         "grade": 1,
@@ -72778,7 +72778,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "郭金國 洪翊軒",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3383,
         "grade": 1,
@@ -72798,7 +72798,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "呂藝光",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3384,
         "grade": 1,
@@ -72818,7 +72818,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "白凱仁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3389,
         "grade": 3,
@@ -72838,7 +72838,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "卓清松",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1192,
         "time": [
@@ -72857,7 +72857,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張俊興",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1193,
         "time": [
@@ -72876,7 +72876,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "呂有豐 張俊興",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1194,
         "time": [
@@ -72895,7 +72895,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "呂有豐",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3386,
         "grade": 2,
@@ -72915,7 +72915,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "呂有豐",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1196,
         "time": [
@@ -72934,7 +72934,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "支裕文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3387,
         "grade": 2,
@@ -72955,7 +72955,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "莫懷恩",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3388,
         "grade": 2,
@@ -72975,7 +72975,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "鄧敦平",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1200,
         "time": [
@@ -72994,7 +72994,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "鄭龍嶽",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1201,
         "time": [
@@ -73013,7 +73013,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "柯盛泰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1202,
         "time": [
@@ -73032,7 +73032,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "賴慕回",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1203,
         "time": [
@@ -73051,7 +73051,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "呂有豐",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1204,
         "time": [
@@ -73070,7 +73070,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳瑄易",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3350,
         "time": [
@@ -73089,7 +73089,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "謝建成",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0512",
         "class": "碩博",
@@ -73110,7 +73110,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "曾元顯",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0513",
         "class": "碩博",
@@ -73131,7 +73131,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "柯皓仁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0514",
         "class": "碩博",
@@ -73152,7 +73152,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "吳怡瑾",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0515",
         "class": "碩博",
@@ -73174,7 +73174,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "邱銘心",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0373",
         "time": [
@@ -73194,7 +73194,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "邱銘心",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0507",
         "time": [
@@ -73214,7 +73214,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "吳美美",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0508",
         "time": [
@@ -73234,7 +73234,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳淑君",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0509",
         "time": [
@@ -73254,7 +73254,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "袁千雯",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0510",
         "time": [
@@ -73274,7 +73274,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "袁千雯",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0511",
         "time": [
@@ -73294,7 +73294,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蕭顯勝 張敬珣 林弘昌 陳怡靜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3281,
         "class": "大碩",
@@ -73316,7 +73316,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "孫弘岳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1207,
         "class": "大碩",
@@ -73337,7 +73337,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "孫弘岳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1208,
         "class": "大碩",
@@ -73358,7 +73358,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "張基成",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1108,
         "grade": 1,
@@ -73379,7 +73379,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張敬珣",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1104,
         "time": [
@@ -73399,7 +73399,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳怡靜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1105,
         "time": [
@@ -73419,7 +73419,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張基成",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1106,
         "time": [
@@ -73439,7 +73439,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林坤誼",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1107,
         "time": [
@@ -73459,7 +73459,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "吳祉芸",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1140,
         "time": [
@@ -73479,7 +73479,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "許庭嘉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1141,
         "time": [
@@ -73499,7 +73499,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蕭顯勝",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1142,
         "time": [
@@ -73519,7 +73519,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "蔡芸琤",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1148,
         "grade": 2,
@@ -73540,7 +73540,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "陳怡靜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1147,
         "grade": 1,
@@ -73561,7 +73561,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張玉山",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1144,
         "time": [
@@ -73581,7 +73581,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林坤誼",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1145,
         "time": [
@@ -73601,7 +73601,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林弘昌",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1146,
         "time": [
@@ -73621,7 +73621,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "蔡其瑞",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1215,
         "grade": 2,
@@ -73644,7 +73644,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "林弘昌",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1216,
         "grade": 2,
@@ -73666,7 +73666,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "簡佑宏",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1210,
         "grade": 1,
@@ -73688,7 +73688,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "許庭嘉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1213,
         "grade": 1,
@@ -73710,7 +73710,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林坤誼",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1209,
         "grade": 1,
@@ -73731,7 +73731,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "程金保",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1205,
         "time": [
@@ -73752,7 +73752,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "張玉山",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1214,
         "grade": 1,
@@ -73774,7 +73774,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張敬珣",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1232,
         "grade": 4,
@@ -73796,7 +73796,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "耿剛",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1224,
         "grade": 3,
@@ -73818,7 +73818,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "蔡芸琤",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1223,
         "grade": 2,
@@ -73840,7 +73840,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李啟龍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1217,
         "grade": 2,
@@ -73862,7 +73862,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張敏捷",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1233,
         "grade": 4,
@@ -73884,7 +73884,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "林坤誼 陳怡靜 張敬珣",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1234,
         "team": "A",
@@ -73906,7 +73906,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "蕭顯勝",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1235,
         "team": "B",
@@ -73928,7 +73928,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "丁玉良",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1236,
         "team": "C",
@@ -73950,7 +73950,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "簡佑宏",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1237,
         "team": "D",
@@ -73972,7 +73972,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "許庭嘉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1238,
         "team": "E",
@@ -73994,7 +73994,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "汪殿杰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1225,
         "grade": 3,
@@ -74016,7 +74016,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "丁玉良",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1211,
         "grade": 1,
@@ -74038,7 +74038,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林弘昌",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1218,
         "grade": 2,
@@ -74060,7 +74060,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "孫弘岳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1212,
         "grade": 1,
@@ -74082,7 +74082,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張敬珣",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1206,
         "time": [
@@ -74102,7 +74102,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "蔡芸琤",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1219,
         "grade": 2,
@@ -74124,7 +74124,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "耿剛",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1220,
         "grade": 2,
@@ -74146,7 +74146,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蔡其瑞",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1221,
         "grade": 2,
@@ -74168,7 +74168,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "丁玉良",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1226,
         "grade": 3,
@@ -74190,7 +74190,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "吳宗曄",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1227,
         "grade": 3,
@@ -74212,7 +74212,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "洪嘉駿 支裕文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1239,
         "grade": 4,
@@ -74234,7 +74234,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蕭顯勝",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1228,
         "grade": 3,
@@ -74256,7 +74256,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "吳姈蓉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1229,
         "grade": 3,
@@ -74278,7 +74278,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳怡靜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1222,
         "grade": 2,
@@ -74300,7 +74300,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "簡佑宏",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1230,
         "grade": 3,
@@ -74322,7 +74322,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "張玉山",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1231,
         "grade": 3,
@@ -74344,7 +74344,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張雯",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1396,
         "grade": 1,
@@ -74366,7 +74366,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "盧承杰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1397,
         "grade": 1,
@@ -74388,7 +74388,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "葉俶禎",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1398,
         "grade": 1,
@@ -74410,7 +74410,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "賴志",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1399,
         "grade": 1,
@@ -74432,7 +74432,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "鄭道有",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1400,
         "grade": 1,
@@ -74454,7 +74454,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "葉俶禎",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1404,
         "grade": 2,
@@ -74476,7 +74476,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林怡君",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1405,
         "grade": 2,
@@ -74498,7 +74498,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張雯",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1406,
         "grade": 2,
@@ -74520,7 +74520,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李浡",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1407,
         "grade": 2,
@@ -74542,7 +74542,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "盧承杰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1408,
         "grade": 2,
@@ -74564,7 +74564,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "賴志",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1409,
         "grade": 2,
@@ -74586,7 +74586,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "賴志",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1410,
         "grade": 2,
@@ -74608,7 +74608,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "林怡君",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1401,
         "grade": 1,
@@ -74630,7 +74630,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "盧承杰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1402,
         "grade": 1,
@@ -74652,7 +74652,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張詠晴",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1403,
         "grade": 1,
@@ -74674,7 +74674,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "盧承杰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1411,
         "grade": 2,
@@ -74695,7 +74695,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "石曉楓 李志宏 蘇子中 陳登武 白適銘 吳義芳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1581,
         "class": "大碩",
@@ -74715,7 +74715,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "張文朝",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1541,
         "team": "A",
@@ -74736,7 +74736,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "張文朝",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1542,
         "team": "B",
@@ -74757,7 +74757,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "許育惠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1543,
         "team": "C",
@@ -74778,7 +74778,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "邱麗娟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1544,
         "team": "D",
@@ -74799,7 +74799,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "金培懿",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1545,
         "team": "A",
@@ -74820,7 +74820,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "洪韶翎",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1546,
         "team": "B",
@@ -74841,7 +74841,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "池田晶子",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1547,
         "team": "A",
@@ -74862,7 +74862,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "賴建樺",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1548,
         "team": "B",
@@ -74883,7 +74883,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "賴建樺",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1549,
         "time": [
@@ -74903,7 +74903,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "邱麗娟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1550,
         "time": [
@@ -74923,7 +74923,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "富田哲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1551,
         "time": [
@@ -74943,7 +74943,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "洪韶翎",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1552,
         "time": [
@@ -74963,7 +74963,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "簡嘉菁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1553,
         "time": [
@@ -74983,7 +74983,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "池田晶子",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1554,
         "team": "A",
@@ -75004,7 +75004,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "許育惠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1555,
         "team": "B",
@@ -75025,7 +75025,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "金恩美",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1556,
         "team": "A",
@@ -75046,7 +75046,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "金家絃",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1557,
         "team": "B",
@@ -75067,7 +75067,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "李圭旼",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1558,
         "team": "C",
@@ -75088,7 +75088,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "康雲柱",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1559,
         "team": "D",
@@ -75109,7 +75109,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "金家絃",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1560,
         "team": "A",
@@ -75130,7 +75130,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "李圭旼",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1561,
         "team": "B",
@@ -75151,7 +75151,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "金恩美",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1562,
         "team": "A",
@@ -75172,7 +75172,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "金佳圓",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1563,
         "team": "B",
@@ -75193,7 +75193,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "康雲柱",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1564,
         "team": "C",
@@ -75214,7 +75214,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "崔熲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1565,
         "time": [
@@ -75234,7 +75234,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "朱立熙",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1566,
         "time": [
@@ -75254,7 +75254,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "李正",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1567,
         "time": [
@@ -75274,7 +75274,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "朱立熙",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1568,
         "time": [
@@ -75294,7 +75294,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "金佳圓",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1569,
         "team": "A",
@@ -75315,7 +75315,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "康雲柱",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1570,
         "team": "B",
@@ -75336,7 +75336,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "金佳圓",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1571,
         "time": [
@@ -75356,7 +75356,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "金家絃",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1572,
         "time": [
@@ -75376,7 +75376,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "李正",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1573,
         "time": [
@@ -75396,7 +75396,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "蒲世豪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1574,
         "time": [
@@ -75416,7 +75416,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "蔡士瑋",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1575,
         "time": [
@@ -75436,7 +75436,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "李立鈞",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1576,
         "time": [
@@ -75456,7 +75456,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "古秀鈴",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1577,
         "time": [
@@ -75476,7 +75476,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "汪明輝 蔡慧敏",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1578,
         "time": [
@@ -75495,7 +75495,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "吳靜蘭",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3309,
         "time": [
@@ -75514,7 +75514,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "黃家凱",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1580,
         "time": [
@@ -75533,7 +75533,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "李良一",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0895",
         "time": [
@@ -75553,7 +75553,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "李良一",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0896",
         "time": [
@@ -75572,7 +75572,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "李旻憲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0897",
         "time": [
@@ -75592,7 +75592,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張欣怡",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0898",
         "time": [
@@ -75611,7 +75611,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林宗進",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0899",
         "time": [
@@ -75630,7 +75630,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "梁至中",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0905",
         "grade": 3,
@@ -75650,7 +75650,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "邱國力",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0900",
         "time": [
@@ -75669,7 +75669,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蔡孟蓉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0906",
         "grade": 3,
@@ -75690,7 +75690,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "吳清麟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0901",
         "time": [
@@ -75709,7 +75709,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "吳清麟 李良一",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0902",
         "time": [
@@ -75728,7 +75728,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "林宗進 蔡今中",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0903",
         "time": [
@@ -75747,7 +75747,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張欣怡",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0904",
         "time": [
@@ -75766,7 +75766,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "游森棚",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2660,
         "class": "碩博",
@@ -75788,7 +75788,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林福來 楊凱琳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2661,
         "class": "碩博",
@@ -75809,7 +75809,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張少同",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2662,
         "class": "碩博",
@@ -75830,7 +75830,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "左台益",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2663,
         "class": "碩博",
@@ -75852,7 +75852,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳界山",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2664,
         "class": "碩博",
@@ -75873,7 +75873,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "劉家新",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2777,
         "class": "大碩",
@@ -75893,7 +75893,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "楊凱琳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2665,
         "class": "碩博",
@@ -75914,7 +75914,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蔡碧紋",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2778,
         "class": "大碩",
@@ -75934,7 +75934,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "夏良忠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2779,
         "class": "大碩",
@@ -75955,7 +75955,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "司靈得",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2666,
         "class": "碩博",
@@ -75977,7 +75977,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "孟悟理",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2667,
         "class": "碩博",
@@ -75999,7 +75999,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林俊吉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2776,
         "class": "大碩博",
@@ -76019,7 +76019,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "謝豐瑞",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2668,
         "class": "碩博",
@@ -76040,7 +76040,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "胡舉卿 范洪源",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2669,
         "team": "A",
@@ -76063,7 +76063,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "范洪源 胡舉卿",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2670,
         "team": "B",
@@ -76085,7 +76085,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "紀文鎮",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2780,
         "class": "大碩",
@@ -76106,7 +76106,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "呂翠珊",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2781,
         "class": "大碩",
@@ -76127,7 +76127,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "游森棚",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2782,
         "class": "大碩",
@@ -76148,7 +76148,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張秉瑩",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2783,
         "class": "大碩",
@@ -76168,7 +76168,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "黃聰明",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2784,
         "team": "A",
@@ -76190,7 +76190,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "謝世峰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2785,
         "team": "B",
@@ -76212,7 +76212,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "程毅豪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2786,
         "class": "大碩",
@@ -76232,7 +76232,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃聰明",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2787,
         "class": "大碩",
@@ -76252,7 +76252,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "黃聰明",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2789,
         "team": "A",
@@ -76273,7 +76273,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "謝世峰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2790,
         "team": "B",
@@ -76294,7 +76294,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林俊吉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3390,
         "class": "大碩",
@@ -76316,7 +76316,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳建隆",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2791,
         "class": "大碩",
@@ -76336,7 +76336,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "許志農",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2656,
         "time": [
@@ -76356,7 +76356,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王婷瑩",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2657,
         "time": [
@@ -76376,7 +76376,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "左台益 謝豐瑞 楊凱琳 王婷瑩",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2658,
         "time": [
@@ -76396,7 +76396,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "左台益 謝豐瑞 楊凱琳 王婷瑩",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2659,
         "time": [
@@ -76416,7 +76416,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "張毓麟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2834,
         "team": "A",
@@ -76438,7 +76438,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "陳賢修",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2835,
         "team": "B",
@@ -76460,7 +76460,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林延輯",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2820,
         "grade": 2,
@@ -76480,7 +76480,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "劉容真",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2836,
         "grade": 3,
@@ -76500,7 +76500,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "呂翠珊",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2845,
         "grade": 4,
@@ -76520,7 +76520,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "楊青育",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2792,
         "team": "A",
@@ -76542,7 +76542,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "范洪源",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2793,
         "team": "B",
@@ -76564,7 +76564,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "陳建隆",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2821,
         "team": "A",
@@ -76585,7 +76585,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "林惠娥",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2822,
         "team": "B",
@@ -76606,7 +76606,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "陳瑞堂",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2837,
         "team": "A",
@@ -76627,7 +76627,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "樂美亨",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2838,
         "team": "B",
@@ -76648,7 +76648,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "胡舉卿",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2839,
         "grade": 3,
@@ -76668,7 +76668,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳瑞堂",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2823,
         "grade": 2,
@@ -76688,7 +76688,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蔡碧紋",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2840,
         "team": "A",
@@ -76709,7 +76709,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張少同",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2841,
         "team": "B",
@@ -76730,7 +76730,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "李華介",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2810,
         "grade": 1,
@@ -76752,7 +76752,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "胡舉卿",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2815,
         "grade": 1,
@@ -76774,7 +76774,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "劉容真",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2805,
         "grade": 1,
@@ -76796,7 +76796,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "謝世峰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2811,
         "grade": 1,
@@ -76818,7 +76818,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "夏良忠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2816,
         "grade": 1,
@@ -76840,7 +76840,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "李華介",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2806,
         "grade": 1,
@@ -76862,7 +76862,7 @@ export default[
     "score": 4,
     "required": "必",
     "teacher": "林惠娥",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2824,
         "team": "A",
@@ -76884,7 +76884,7 @@ export default[
     "score": 4,
     "required": "必",
     "teacher": "郭庭榕",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2825,
         "team": "B",
@@ -76906,7 +76906,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "劉家新",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2826,
         "team": "A",
@@ -76927,7 +76927,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "劉容真",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2827,
         "team": "B",
@@ -76948,7 +76948,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "胡舉卿",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2828,
         "team": "C",
@@ -76969,7 +76969,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "陳賢修",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2812,
         "grade": 1,
@@ -76991,7 +76991,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "郭君逸",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2817,
         "grade": 1,
@@ -77013,7 +77013,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "朱亮儒",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2807,
         "grade": 1,
@@ -77035,7 +77035,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "謝世峰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2813,
         "grade": 1,
@@ -77057,7 +77057,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "夏良忠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2818,
         "grade": 1,
@@ -77079,7 +77079,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "李華介",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2808,
         "grade": 1,
@@ -77101,7 +77101,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "林惠娥",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2829,
         "team": "A",
@@ -77123,7 +77123,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "郭庭榕",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2830,
         "team": "B",
@@ -77145,7 +77145,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "劉家新",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2831,
         "team": "A",
@@ -77167,7 +77167,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "劉容真",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2832,
         "team": "B",
@@ -77189,7 +77189,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "胡舉卿",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2833,
         "team": "C",
@@ -77211,7 +77211,7 @@ export default[
     "score": 4,
     "required": "必",
     "teacher": "陳賢修",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2814,
         "grade": 1,
@@ -77233,7 +77233,7 @@ export default[
     "score": 4,
     "required": "必",
     "teacher": "郭君逸",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2819,
         "grade": 1,
@@ -77255,7 +77255,7 @@ export default[
     "score": 4,
     "required": "必",
     "teacher": "朱亮儒",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2809,
         "grade": 1,
@@ -77277,7 +77277,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "林月珍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2794,
         "team": "A",
@@ -77300,7 +77300,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "范洪源",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2795,
         "team": "B",
@@ -77323,7 +77323,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "張幼賢",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2796,
         "team": "C",
@@ -77346,7 +77346,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "陳慧如",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2797,
         "team": "D",
@@ -77369,7 +77369,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "陳瑞堂",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2798,
         "team": "E",
@@ -77392,7 +77392,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "洪有情",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2799,
         "team": "F",
@@ -77415,7 +77415,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "楊青育",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2800,
         "team": "G",
@@ -77438,7 +77438,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "張毓麟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2801,
         "team": "H",
@@ -77461,7 +77461,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "李政哲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2802,
         "team": "I",
@@ -77484,7 +77484,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "王建勛",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2803,
         "team": "J",
@@ -77507,7 +77507,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "蔡天鉞",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2774,
         "team": "K",
@@ -77530,7 +77530,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "司靈得",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2775,
         "team": "L",
@@ -77550,7 +77550,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "孫維良",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2804,
         "grade": 1,
@@ -77572,7 +77572,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林延輯",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2846,
         "grade": 4,
@@ -77592,7 +77592,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "王婷瑩",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2842,
         "team": "A",
@@ -77613,7 +77613,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "唐書志",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2843,
         "grade": 3,
@@ -77633,7 +77633,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "左台益",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2844,
         "grade": 3,
@@ -77653,7 +77653,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "謝豐瑞",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2847,
         "team": "A",
@@ -77675,7 +77675,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "左台益 楊凱琳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2848,
         "team": "B",
@@ -77698,7 +77698,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "周德瑋",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2448,
         "time": [
@@ -77719,7 +77719,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "蕭中強",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2449,
         "time": [
@@ -77739,7 +77739,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李賢",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2450,
         "time": [
@@ -77760,7 +77760,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "沈永正",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2451,
         "time": [
@@ -77781,7 +77781,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "洪秀瑜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2452,
         "time": [
@@ -77801,7 +77801,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "周世玉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2453,
         "time": [
@@ -77821,7 +77821,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "賴慧文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2454,
         "time": [
@@ -77842,7 +77842,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "何宗武",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2455,
         "time": [
@@ -77862,7 +77862,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蔡蒔銓",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2456,
         "time": [
@@ -77882,7 +77882,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "周德瑋 蔡蒔銓",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2457,
         "time": [
@@ -77902,7 +77902,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "鄒蘊欣",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2458,
         "time": [
@@ -77922,7 +77922,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "陳玠甫 施人英 鄒蘊欣",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2459,
         "time": [
@@ -77943,7 +77943,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "未定",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2460,
         "time": [
@@ -77964,7 +77964,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "阿曼德",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2461,
         "time": [
@@ -77984,7 +77984,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳炳宏",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1412,
         "time": [
@@ -78005,7 +78005,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "林慧斐",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1413,
         "time": [
@@ -78025,7 +78025,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳炳宏",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1414,
         "time": [
@@ -78045,7 +78045,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "胡綺珍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1415,
         "time": [
@@ -78065,7 +78065,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "胡綺珍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1416,
         "time": [
@@ -78085,7 +78085,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蔣旭政",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1417,
         "time": [
@@ -78105,7 +78105,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林慧斐",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1418,
         "time": [
@@ -78125,7 +78125,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蔡如音",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1419,
         "time": [
@@ -78145,7 +78145,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "胡綺珍 王維菁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1420,
         "time": [
@@ -78165,7 +78165,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蔣旭政",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1421,
         "time": [
@@ -78186,7 +78186,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳俊達",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1260,
         "class": "大碩",
@@ -78206,7 +78206,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳延昌",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1261,
         "class": "大碩",
@@ -78227,7 +78227,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "楊啟榮",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1262,
         "class": "大碩",
@@ -78247,7 +78247,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳順同",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1263,
         "class": "大碩",
@@ -78268,7 +78268,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "鄧敦建",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1264,
         "class": "大碩",
@@ -78288,7 +78288,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "劉傳璽",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1265,
         "class": "大碩",
@@ -78308,7 +78308,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "柯坤呈",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3293,
         "class": "大碩",
@@ -78328,7 +78328,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "鄧敦建 張天立",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1266,
         "class": "大碩",
@@ -78348,7 +78348,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "呂有勝",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1159,
         "class": "碩博",
@@ -78369,7 +78369,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "劉傳璽",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1160,
         "class": "碩博",
@@ -78391,7 +78391,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "鄧敦建",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1161,
         "class": "碩博",
@@ -78413,7 +78413,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "呂有勝",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1162,
         "class": "碩博",
@@ -78434,7 +78434,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳順同",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1267,
         "class": "大碩",
@@ -78456,7 +78456,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張國維",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1268,
         "class": "大碩",
@@ -78476,7 +78476,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張天立",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1269,
         "class": "大碩",
@@ -78497,7 +78497,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "吳順德",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1270,
         "class": "大碩",
@@ -78517,7 +78517,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "柯坤呈",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3294,
         "class": "大碩",
@@ -78537,7 +78537,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "洪宜芳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1271,
         "class": "大碩",
@@ -78557,7 +78557,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蔣欣翰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1158,
         "time": [
@@ -78577,7 +78577,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "鄭慶民",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1274,
         "team": "A",
@@ -78599,7 +78599,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "鄭淳護",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1275,
         "team": "B",
@@ -78621,7 +78621,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "張天立",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1281,
         "grade": 2,
@@ -78642,7 +78642,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "楊啟榮",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1282,
         "grade": 2,
@@ -78663,7 +78663,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "楊啟榮",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1299,
         "grade": 2,
@@ -78684,7 +78684,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "張國維",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1276,
         "team": "A",
@@ -78706,7 +78706,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "吳順德",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1277,
         "team": "B",
@@ -78728,7 +78728,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "陳美勇",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1283,
         "grade": 2,
@@ -78749,7 +78749,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "陳美勇",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1300,
         "grade": 2,
@@ -78770,7 +78770,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "陳俊達",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3399,
         "grade": 3,
@@ -78791,7 +78791,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "呂有勝",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3400,
         "grade": 3,
@@ -78812,7 +78812,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "吳順德",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1290,
         "grade": 3,
@@ -78832,7 +78832,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳俊達",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1295,
         "grade": 4,
@@ -78853,7 +78853,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張天立",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1291,
         "grade": 3,
@@ -78873,7 +78873,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "程金保",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1278,
         "grade": 1,
@@ -78894,7 +78894,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "劉傳璽",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1284,
         "grade": 2,
@@ -78915,7 +78915,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "張國維",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1285,
         "team": "A",
@@ -78937,7 +78937,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "張國維",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1286,
         "team": "B",
@@ -78959,7 +78959,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蔡俊毅",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1287,
         "grade": 2,
@@ -78979,7 +78979,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "呂有勝",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1292,
         "team": "A",
@@ -79001,7 +79001,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "呂有勝",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1293,
         "team": "B",
@@ -79023,7 +79023,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "楊啟榮",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1294,
         "grade": 3,
@@ -79043,7 +79043,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "陳順同",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1279,
         "team": "A",
@@ -79065,7 +79065,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "黃俊榮",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1280,
         "team": "B",
@@ -79087,7 +79087,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "鄧敦建",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1296,
         "grade": 4,
@@ -79107,7 +79107,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "呂有勝 劉傳璽 陳俊達 張天立 吳順德",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1297,
         "team": "A",
@@ -79129,7 +79129,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "程金保 楊啟榮 陳順同 鄧敦建 張國維",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1298,
         "team": "B",
@@ -79151,7 +79151,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "程金保 陳美勇",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1301,
         "grade": 2,
@@ -79167,7 +79167,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "程金保 陳美勇",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1302,
         "grade": 2,
@@ -79183,7 +79183,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "程金保",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1272,
         "grade": 4,
@@ -79204,7 +79204,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "鄭慶民",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1273,
         "grade": 4,
@@ -79226,7 +79226,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "莊惠君",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2384,
         "class": "大碩",
@@ -79246,7 +79246,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "蕭慶瑜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2086,
         "class": "碩博",
@@ -79267,7 +79267,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "金希文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2385,
         "class": "大碩",
@@ -79288,7 +79288,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳家輝",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2386,
         "class": "大碩",
@@ -79309,7 +79309,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "耿立",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2387,
         "class": "大碩",
@@ -79329,7 +79329,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "王望舒",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2388,
         "class": "大碩",
@@ -79349,7 +79349,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "錢善華",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2090,
         "class": "碩博",
@@ -79370,7 +79370,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "莊惠君",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2091,
         "class": "碩博",
@@ -79391,7 +79391,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林梅芳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2092,
         "class": "碩博",
@@ -79412,7 +79412,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "蔡佳璇",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2093,
         "class": "碩博",
@@ -79434,7 +79434,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "司信寧",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2094,
         "class": "碩博",
@@ -79456,7 +79456,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "司信寧",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2095,
         "class": "碩博",
@@ -79478,7 +79478,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "司信寧",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2096,
         "class": "碩博",
@@ -79500,7 +79500,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "趙菁文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2097,
         "class": "碩博",
@@ -79521,7 +79521,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "徐家駒",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2390,
         "class": "大碩",
@@ -79541,7 +79541,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "李承育",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2391,
         "class": "大碩",
@@ -79561,7 +79561,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "許德彰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2392,
         "class": "大碩",
@@ -79581,7 +79581,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "廖嘉弘",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2394,
         "team": "B",
@@ -79603,7 +79603,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "葉樹涵",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2395,
         "team": "C",
@@ -79624,7 +79624,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳麗芬",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2396,
         "team": "D",
@@ -79646,7 +79646,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "孫愛光",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2397,
         "team": "E",
@@ -79669,7 +79669,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "齊格蒙.索普",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2393,
         "team": "A",
@@ -79691,7 +79691,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "吳舜文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1995,
         "time": [
@@ -79711,7 +79711,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "李和莆",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3360,
         "time": [
@@ -79731,7 +79731,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "李和莆",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3361,
         "time": [
@@ -79751,7 +79751,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "李和莆",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3362,
         "time": [
@@ -79771,7 +79771,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "陳曉雰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1996,
         "time": [
@@ -79791,7 +79791,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "楊艾琳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3302,
         "team": "A",
@@ -79807,7 +79807,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "陳沁紅",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3303,
         "team": "A",
@@ -79823,7 +79823,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "廖嘉弘",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1997,
         "team": "B",
@@ -79839,7 +79839,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "廖珮如",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3304,
         "team": "S",
@@ -79855,7 +79855,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "趙菁文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3305,
         "team": "F",
@@ -79871,7 +79871,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "孫愛光",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1998,
         "time": [
@@ -79891,7 +79891,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "廖嘉弘",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1999,
         "team": "B",
@@ -79907,7 +79907,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "蘇毓婷",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2001,
         "team": "L",
@@ -79923,7 +79923,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "黃均人",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2002,
         "time": [
@@ -79943,7 +79943,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "陳曉雰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2003,
         "time": [
@@ -79963,7 +79963,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "莊惠君",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2004,
         "time": [
@@ -79983,7 +79983,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "吳舜文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2005,
         "time": [
@@ -80003,7 +80003,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "林小玉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2006,
         "time": [
@@ -80025,7 +80025,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "司信寧",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2007,
         "time": [
@@ -80045,7 +80045,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "潘宇文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2008,
         "time": [
@@ -80065,7 +80065,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳曉雰 潘宇文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2009,
         "time": [
@@ -80085,7 +80085,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "鍾家瑋",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2010,
         "time": [
@@ -80105,7 +80105,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "金希文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2011,
         "team": "B",
@@ -80121,7 +80121,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "李和莆",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2012,
         "team": "D",
@@ -80137,7 +80137,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "蕭慶瑜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2013,
         "team": "E",
@@ -80153,7 +80153,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "趙菁文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2014,
         "team": "F",
@@ -80169,7 +80169,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "蕭慶瑜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2015,
         "team": "E",
@@ -80186,7 +80186,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "齊格蒙.索普",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2016,
         "time": [
@@ -80206,7 +80206,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "孫愛光",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2017,
         "time": [
@@ -80226,7 +80226,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "孫愛光",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2018,
         "team": "A",
@@ -80242,7 +80242,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "翁佳芬",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2019,
         "team": "C",
@@ -80258,7 +80258,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "許心",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2021,
         "team": "F",
@@ -80275,7 +80275,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "齊格蒙.索普",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2020,
         "team": "E",
@@ -80291,7 +80291,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "翁佳芬",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2022,
         "team": "C",
@@ -80307,7 +80307,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "林明慧",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2023,
         "team": "A",
@@ -80328,7 +80328,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "楊艾琳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2024,
         "team": "B",
@@ -80349,7 +80349,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "宋威德",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2025,
         "team": "D",
@@ -80370,7 +80370,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "鄭雅心",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2026,
         "team": "E",
@@ -80391,7 +80391,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳麗芬",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2027,
         "time": [
@@ -80411,7 +80411,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "陳曉雰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2028,
         "time": [
@@ -80431,7 +80431,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "孫愛光 未定 齊格蒙.索普",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2029,
         "time": [
@@ -80451,7 +80451,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "錢善華",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2030,
         "team": "A",
@@ -80467,7 +80467,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "蕭慶瑜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2031,
         "team": "E",
@@ -80483,7 +80483,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "陳瓊瑜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2032,
         "team": "G",
@@ -80500,7 +80500,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "齊格蒙.索普",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2033,
         "time": [
@@ -80520,7 +80520,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "孫愛光",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2034,
         "time": [
@@ -80540,7 +80540,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "孫愛光",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2035,
         "team": "A",
@@ -80556,7 +80556,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "翁佳芬",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2036,
         "team": "C",
@@ -80572,7 +80572,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "許心",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2037,
         "team": "F",
@@ -80588,7 +80588,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "孫愛光 未定 齊格蒙.索普",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2038,
         "time": [
@@ -80608,7 +80608,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "蘇毓婷",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2039,
         "time": [
@@ -80628,7 +80628,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "林明慧",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2040,
         "team": "C",
@@ -80644,7 +80644,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "鍾家瑋",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2041,
         "team": "H",
@@ -80660,7 +80660,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "嚴俊傑",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2042,
         "team": "I",
@@ -80676,7 +80676,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "葉綠娜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2043,
         "team": "N",
@@ -80692,7 +80692,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "蔡瀚儀",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2045,
         "team": "T",
@@ -80708,7 +80708,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "陳冠宇",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2046,
         "team": "W",
@@ -80724,7 +80724,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "廖皎含",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2047,
         "team": "X",
@@ -80740,7 +80740,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "林明慧",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2048,
         "team": "C",
@@ -80756,7 +80756,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "陳曉雰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2049,
         "team": "G",
@@ -80772,7 +80772,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "嚴俊傑",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2050,
         "team": "I",
@@ -80788,7 +80788,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "葉綠娜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2051,
         "team": "N",
@@ -80804,7 +80804,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "葉孟儒",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2052,
         "team": "Q",
@@ -80820,7 +80820,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "林季穎",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2053,
         "team": "S",
@@ -80836,7 +80836,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "徐嘉琪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2054,
         "team": "U",
@@ -80852,7 +80852,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "廖皎含",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2055,
         "team": "X",
@@ -80868,7 +80868,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "楊艾琳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2056,
         "team": "A",
@@ -80884,7 +80884,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "趙方豪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2057,
         "team": "M",
@@ -80900,7 +80900,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "陳允宜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2058,
         "team": "B",
@@ -80916,7 +80916,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "陳允宜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2059,
         "team": "B",
@@ -80932,7 +80932,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "王望舒",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2060,
         "team": "E",
@@ -80948,7 +80948,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "趙方豪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2062,
         "team": "M",
@@ -80964,7 +80964,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "林芳瑜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2063,
         "team": "I",
@@ -80980,7 +80980,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "陳沁紅",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2064,
         "team": "A",
@@ -80996,7 +80996,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "林士凱",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2065,
         "team": "I",
@@ -81012,7 +81012,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "廖嘉弘",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2066,
         "team": "B",
@@ -81028,7 +81028,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "吳庭毓",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2067,
         "team": "K",
@@ -81044,7 +81044,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "蔡耿銘",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3310,
         "team": "W",
@@ -81060,7 +81060,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "楊瑞瑟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2068,
         "team": "L",
@@ -81076,7 +81076,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "黃冠蓁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2069,
         "team": "V",
@@ -81092,7 +81092,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "歐陽伶宜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2070,
         "team": "N",
@@ -81108,7 +81108,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "歐陽伶宜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2071,
         "team": "N",
@@ -81124,7 +81124,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "廖珮如",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2072,
         "team": "S",
@@ -81140,7 +81140,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "黃貞瑛",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2073,
         "team": "G",
@@ -81156,7 +81156,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "游雅慧",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2074,
         "team": "F",
@@ -81172,7 +81172,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "林麗玥",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2075,
         "team": "D",
@@ -81188,7 +81188,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "李珮琪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2076,
         "team": "C",
@@ -81204,7 +81204,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "陳威稜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2077,
         "team": "B",
@@ -81220,7 +81220,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "宋威德",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2078,
         "team": "A",
@@ -81236,7 +81236,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "徐家駒",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2079,
         "team": "I",
@@ -81252,7 +81252,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "簡凱玉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2080,
         "team": "J",
@@ -81268,7 +81268,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "徐家駒",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2081,
         "team": "I",
@@ -81284,7 +81284,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "葉樹涵",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2082,
         "team": "K",
@@ -81300,7 +81300,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "張釗銘",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2083,
         "team": "N",
@@ -81316,7 +81316,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "陳哲輝",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2084,
         "team": "A",
@@ -81332,7 +81332,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "鄭雅心",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2085,
         "team": "B",
@@ -81348,7 +81348,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "鍾家瑋",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3336,
         "time": [
@@ -81368,7 +81368,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳漢金",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2156,
         "time": [
@@ -81387,7 +81387,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "未定",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2157,
         "time": [
@@ -81406,7 +81406,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "李承育",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2158,
         "time": [
@@ -81425,7 +81425,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "莊惠君",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2406,
         "grade": 1,
@@ -81447,7 +81447,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "吳舜文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2405,
         "grade": 1,
@@ -81469,7 +81469,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "莊惠君",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2407,
         "grade": 2,
@@ -81489,7 +81489,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "林明慧",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2159,
         "team": "C",
@@ -81505,7 +81505,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "林瑋祺",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2160,
         "team": "E",
@@ -81521,7 +81521,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "陳曉雰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2161,
         "team": "G",
@@ -81537,7 +81537,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "鍾家瑋",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2162,
         "team": "H",
@@ -81553,7 +81553,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "嚴俊傑",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2163,
         "team": "I",
@@ -81569,7 +81569,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "許惠品",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2164,
         "team": "K",
@@ -81585,7 +81585,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "陳芝羽",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2165,
         "team": "O",
@@ -81601,7 +81601,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "鄭怡君",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2166,
         "team": "P",
@@ -81617,7 +81617,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "林季穎",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2167,
         "team": "S",
@@ -81633,7 +81633,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "楊舒婷",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2168,
         "team": "V",
@@ -81649,7 +81649,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "廖皎含",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2169,
         "team": "X",
@@ -81665,7 +81665,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "辛幸純",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2171,
         "team": "Z",
@@ -81681,7 +81681,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "林明慧",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2172,
         "team": "C",
@@ -81697,7 +81697,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "王杰珍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2173,
         "team": "D",
@@ -81713,7 +81713,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "陳曉雰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2174,
         "team": "G",
@@ -81729,7 +81729,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "鍾家瑋",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2175,
         "team": "H",
@@ -81745,7 +81745,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "嚴俊傑",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2176,
         "team": "I",
@@ -81761,7 +81761,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "葉孟儒",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2177,
         "team": "Q",
@@ -81777,7 +81777,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "賈元元",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2178,
         "team": "R",
@@ -81793,7 +81793,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "林季穎",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2179,
         "team": "S",
@@ -81809,7 +81809,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "楊舒婷",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2180,
         "team": "V",
@@ -81825,7 +81825,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "陳冠宇",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2181,
         "team": "W",
@@ -81841,7 +81841,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "廖皎含",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2182,
         "team": "X",
@@ -81857,7 +81857,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "辛幸純",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2184,
         "team": "Z",
@@ -81873,7 +81873,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "王望舒",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2185,
         "team": "E",
@@ -81889,7 +81889,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "黃莉錦",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2186,
         "team": "G",
@@ -81905,7 +81905,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "林芳瑜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2187,
         "team": "I",
@@ -81921,7 +81921,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "未定",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2188,
         "team": "K",
@@ -81937,7 +81937,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "耿立",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2189,
         "team": "P",
@@ -81953,7 +81953,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "陳允宜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2190,
         "team": "B",
@@ -81969,7 +81969,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "蘇秀華",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2191,
         "team": "F",
@@ -81985,7 +81985,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "黎蓉櫻",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2192,
         "team": "H",
@@ -82001,7 +82001,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "林芳瑜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2193,
         "team": "I",
@@ -82017,7 +82017,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "未定",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2194,
         "team": "K",
@@ -82033,7 +82033,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "林中光",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2195,
         "team": "L",
@@ -82049,7 +82049,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "林麗玥",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2196,
         "team": "D",
@@ -82065,7 +82065,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "游雅慧",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2197,
         "team": "F",
@@ -82081,7 +82081,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "黃貞瑛",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2198,
         "team": "G",
@@ -82097,7 +82097,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "段富軒",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2199,
         "team": "H",
@@ -82113,7 +82113,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "簡凱玉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2200,
         "team": "J",
@@ -82129,7 +82129,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "葉樹涵",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2201,
         "team": "K",
@@ -82145,7 +82145,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "蘇毓婷",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2202,
         "team": "L",
@@ -82161,7 +82161,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "張釗銘",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2203,
         "team": "N",
@@ -82177,7 +82177,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "劉宜欣",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2205,
         "team": "P",
@@ -82193,7 +82193,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "宋威德",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3338,
         "team": "A",
@@ -82209,7 +82209,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "李珮琪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2206,
         "team": "C",
@@ -82225,7 +82225,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "簡凱玉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2207,
         "team": "J",
@@ -82241,7 +82241,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "葉樹涵",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2208,
         "team": "K",
@@ -82257,7 +82257,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "蘇毓婷",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2209,
         "team": "L",
@@ -82273,7 +82273,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "張釗銘",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2210,
         "team": "N",
@@ -82289,7 +82289,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "蔡佳修",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2211,
         "team": "O",
@@ -82305,7 +82305,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "賴俊諺",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2212,
         "team": "Q",
@@ -82321,7 +82321,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "陳沁紅",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2213,
         "team": "A",
@@ -82337,7 +82337,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "廖嘉弘",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2214,
         "team": "B",
@@ -82353,7 +82353,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "蘇顯達",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2215,
         "team": "C",
@@ -82369,7 +82369,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "林士凱",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2216,
         "team": "I",
@@ -82385,7 +82385,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "楊瑞瑟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2217,
         "team": "L",
@@ -82401,7 +82401,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "歐陽伶宜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2218,
         "team": "N",
@@ -82417,7 +82417,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "廖珮如",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2219,
         "team": "S",
@@ -82433,7 +82433,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "解瑄",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2220,
         "team": "U",
@@ -82449,7 +82449,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "黃冠蓁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2221,
         "team": "V",
@@ -82465,7 +82465,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "陳沁紅",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2222,
         "team": "A",
@@ -82481,7 +82481,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "廖嘉弘",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2223,
         "team": "B",
@@ -82497,7 +82497,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "蘇顯達",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2224,
         "team": "C",
@@ -82513,7 +82513,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "楊瑞瑟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2225,
         "team": "L",
@@ -82529,7 +82529,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "王麗雯",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2226,
         "team": "M",
@@ -82545,7 +82545,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "歐陽伶宜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2227,
         "team": "N",
@@ -82561,7 +82561,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "戴俐文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2228,
         "team": "P",
@@ -82577,7 +82577,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "蘇億容",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2229,
         "team": "Q",
@@ -82593,7 +82593,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "解瑄",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2230,
         "team": "U",
@@ -82609,7 +82609,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "陳哲輝",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2231,
         "team": "A",
@@ -82625,7 +82625,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "陳哲輝",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2232,
         "team": "A",
@@ -82641,7 +82641,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "鄭雅心",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2233,
         "team": "B",
@@ -82657,7 +82657,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "金希文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2234,
         "team": "B",
@@ -82673,7 +82673,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "李和莆",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2235,
         "team": "D",
@@ -82689,7 +82689,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "蕭慶瑜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2236,
         "team": "E",
@@ -82705,7 +82705,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "趙菁文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2237,
         "team": "F",
@@ -82721,7 +82721,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "陳家輝",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2238,
         "team": "L",
@@ -82737,7 +82737,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "金希文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2239,
         "team": "B",
@@ -82753,7 +82753,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "蕭慶瑜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2240,
         "team": "E",
@@ -82769,7 +82769,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "金希文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2241,
         "team": "B",
@@ -82785,7 +82785,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "趙菁文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2242,
         "team": "F",
@@ -82801,7 +82801,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "陳瓊瑜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2243,
         "team": "G",
@@ -82817,7 +82817,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "蔡美好",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2244,
         "team": "B",
@@ -82833,7 +82833,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "蘇筠涵",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2245,
         "team": "E",
@@ -82849,7 +82849,7 @@ export default[
     "score": 0.5,
     "required": "選",
     "teacher": "林明慧",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2246,
         "team": "C",
@@ -82865,7 +82865,7 @@ export default[
     "score": 0.5,
     "required": "選",
     "teacher": "陳芝羽",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3368,
         "team": "O",
@@ -82881,7 +82881,7 @@ export default[
     "score": 0.5,
     "required": "選",
     "teacher": "蔡瀚儀",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3369,
         "team": "T",
@@ -82897,7 +82897,7 @@ export default[
     "score": 0.5,
     "required": "選",
     "teacher": "王望舒",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2247,
         "team": "E",
@@ -82913,7 +82913,7 @@ export default[
     "score": 0.5,
     "required": "選",
     "teacher": "王望舒",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2248,
         "team": "E",
@@ -82929,7 +82929,7 @@ export default[
     "score": 0.5,
     "required": "選",
     "teacher": "廖聰文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3370,
         "team": "J",
@@ -82945,7 +82945,7 @@ export default[
     "score": 0.5,
     "required": "選",
     "teacher": "林麗玥",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2249,
         "team": "D",
@@ -82961,7 +82961,7 @@ export default[
     "score": 0.5,
     "required": "選",
     "teacher": "黃貞瑛",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2250,
         "team": "G",
@@ -82977,7 +82977,7 @@ export default[
     "score": 0.5,
     "required": "選",
     "teacher": "簡凱玉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2251,
         "team": "J",
@@ -82993,7 +82993,7 @@ export default[
     "score": 0.5,
     "required": "選",
     "teacher": "賴俊諺",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2252,
         "team": "Q",
@@ -83009,7 +83009,7 @@ export default[
     "score": 0.5,
     "required": "選",
     "teacher": "路耀祖",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2253,
         "team": "H",
@@ -83025,7 +83025,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "鄭怡君",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2254,
         "time": [
@@ -83046,7 +83046,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "楊瑞瑟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2255,
         "time": [
@@ -83066,7 +83066,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "莊文達",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2416,
         "grade": 3,
@@ -83086,7 +83086,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "呂鈺秀",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2398,
         "grade": 1,
@@ -83107,7 +83107,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "陳漢金",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2417,
         "team": "A",
@@ -83128,7 +83128,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "黃均人",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2418,
         "team": "B",
@@ -83149,7 +83149,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "潘宇文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2256,
         "time": [
@@ -83168,7 +83168,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "蕭慶瑜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2408,
         "team": "A",
@@ -83191,7 +83191,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "陳瓊瑜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2409,
         "team": "B",
@@ -83214,7 +83214,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "孫愛光",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2410,
         "team": "A",
@@ -83237,7 +83237,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "徐嘉琪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2257,
         "time": [
@@ -83256,7 +83256,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "陳瓊瑜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2411,
         "team": "A",
@@ -83277,7 +83277,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "吳佩蓉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2412,
         "team": "B",
@@ -83298,7 +83298,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "許德彰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2258,
         "time": [
@@ -83317,7 +83317,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "孫愛光",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2420,
         "team": "B",
@@ -83339,7 +83339,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "齊格蒙.索普",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2419,
         "team": "A",
@@ -83360,7 +83360,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳怡婷",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2259,
         "time": [
@@ -83379,7 +83379,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "楊舒婷",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2260,
         "time": [
@@ -83399,7 +83399,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳惠齡",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2261,
         "time": [
@@ -83419,7 +83419,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "趙菁文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2262,
         "time": [
@@ -83438,7 +83438,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "莊文達",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2263,
         "time": [
@@ -83457,7 +83457,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "未定",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2264,
         "team": "A",
@@ -83477,7 +83477,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "未定",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2265,
         "team": "B",
@@ -83497,7 +83497,7 @@ export default[
     "score": 0.5,
     "required": "選",
     "teacher": "蔡佳璇",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2266,
         "condition": "◎限本系(含雙主修)、輔系修習",
@@ -83514,7 +83514,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林孟君",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2267,
         "time": [
@@ -83533,7 +83533,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "嚴俊傑",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2268,
         "time": [
@@ -83552,7 +83552,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "王望舒",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2269,
         "time": [
@@ -83571,7 +83571,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "解瑄",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2270,
         "team": "B",
@@ -83592,7 +83592,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "吳佩蓉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2271,
         "time": [
@@ -83611,7 +83611,7 @@ export default[
     "score": 0.5,
     "required": "選",
     "teacher": "解瑄",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2272,
         "team": "U",
@@ -83627,7 +83627,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "宋威德",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2273,
         "time": [
@@ -83647,7 +83647,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "蘇毓婷",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2274,
         "time": [
@@ -83668,7 +83668,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "莊文達",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2275,
         "time": [
@@ -83687,7 +83687,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "路耀祖",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2276,
         "time": [
@@ -83707,7 +83707,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "莊文達",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2399,
         "grade": 1,
@@ -83729,7 +83729,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "吳佩蓉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2400,
         "team": "B",
@@ -83752,7 +83752,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "錢善華",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2401,
         "team": "C",
@@ -83775,7 +83775,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "金希文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2421,
         "team": "A",
@@ -83796,7 +83796,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "金希文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2422,
         "team": "B",
@@ -83817,7 +83817,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "吳庭毓",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2277,
         "team": "A",
@@ -83838,7 +83838,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "陳漢金",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2413,
         "team": "A",
@@ -83860,7 +83860,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "司信寧",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2414,
         "team": "B",
@@ -83881,7 +83881,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "莊文達",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2402,
         "team": "A",
@@ -83904,7 +83904,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "陳瓊瑜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2403,
         "team": "B",
@@ -83927,7 +83927,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "陳瓊瑜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2404,
         "team": "A",
@@ -83950,7 +83950,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "羅明芳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2278,
         "time": [
@@ -83970,7 +83970,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "趙菁文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2279,
         "time": [
@@ -83989,7 +83989,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "林明慧",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2280,
         "team": "C",
@@ -84005,7 +84005,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "鍾家瑋",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3339,
         "team": "H",
@@ -84021,7 +84021,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "嚴俊傑",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2281,
         "team": "I",
@@ -84037,7 +84037,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "葉綠娜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3393,
         "team": "N",
@@ -84053,7 +84053,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "賈元元",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3312,
         "team": "R",
@@ -84069,7 +84069,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "林季穎",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3313,
         "team": "S",
@@ -84085,7 +84085,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "徐嘉琪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2282,
         "team": "U",
@@ -84101,7 +84101,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "廖皎含",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2283,
         "team": "X",
@@ -84117,7 +84117,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "辛幸純",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2284,
         "team": "Z",
@@ -84133,7 +84133,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "林瑋祺",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3371,
         "team": "E",
@@ -84149,7 +84149,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "林明慧",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2285,
         "team": "C",
@@ -84165,7 +84165,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "王杰珍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2286,
         "team": "D",
@@ -84181,7 +84181,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "林瑋祺",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2287,
         "team": "E",
@@ -84197,7 +84197,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "陳曉雰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2288,
         "team": "G",
@@ -84213,7 +84213,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "鍾家瑋",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2289,
         "team": "H",
@@ -84229,7 +84229,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "嚴俊傑",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2290,
         "team": "I",
@@ -84245,7 +84245,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "許惠品",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2291,
         "team": "K",
@@ -84261,7 +84261,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "陳怡婷",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2292,
         "team": "M",
@@ -84277,7 +84277,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "陳芝羽",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2293,
         "team": "O",
@@ -84293,7 +84293,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "葉孟儒",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2294,
         "team": "Q",
@@ -84309,7 +84309,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "賈元元",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2295,
         "team": "R",
@@ -84325,7 +84325,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "徐嘉琪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2296,
         "team": "U",
@@ -84341,7 +84341,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "陳冠宇",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2297,
         "team": "W",
@@ -84357,7 +84357,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "廖皎含",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2298,
         "team": "X",
@@ -84373,7 +84373,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "辛幸純",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2299,
         "team": "Z",
@@ -84389,7 +84389,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "嚴俊傑",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2300,
         "team": "I",
@@ -84405,7 +84405,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "楊艾琳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3314,
         "team": "A",
@@ -84421,7 +84421,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "陳允宜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2301,
         "team": "B",
@@ -84437,7 +84437,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "趙方豪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2303,
         "team": "M",
@@ -84453,7 +84453,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "耿立",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2304,
         "team": "P",
@@ -84469,7 +84469,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "陳允宜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2305,
         "team": "B",
@@ -84485,7 +84485,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "黎蓉櫻",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2306,
         "team": "H",
@@ -84501,7 +84501,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "林芳瑜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2307,
         "team": "I",
@@ -84517,7 +84517,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "廖聰文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2308,
         "team": "J",
@@ -84533,7 +84533,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "未定",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2309,
         "team": "K",
@@ -84549,7 +84549,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "趙方豪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2310,
         "team": "M",
@@ -84565,7 +84565,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "陳允宜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2311,
         "team": "B",
@@ -84581,7 +84581,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "李珮琪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2312,
         "team": "C",
@@ -84597,7 +84597,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "林麗玥",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2313,
         "team": "D",
@@ -84613,7 +84613,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "侯傳安",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3334,
         "team": "E",
@@ -84629,7 +84629,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "游雅慧",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3372,
         "team": "F",
@@ -84645,7 +84645,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "黃貞瑛",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2314,
         "team": "G",
@@ -84661,7 +84661,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "段富軒",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3295,
         "team": "H",
@@ -84677,7 +84677,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "簡凱玉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3315,
         "team": "J",
@@ -84693,7 +84693,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "蘇毓婷",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2316,
         "team": "L",
@@ -84709,7 +84709,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "張釗銘",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2318,
         "team": "N",
@@ -84725,7 +84725,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "賴俊諺",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2319,
         "team": "Q",
@@ -84741,7 +84741,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "宋威德",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2320,
         "team": "A",
@@ -84757,7 +84757,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "游雅慧",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2322,
         "team": "F",
@@ -84773,7 +84773,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "黃貞瑛",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2323,
         "team": "G",
@@ -84789,7 +84789,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "簡凱玉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2324,
         "team": "J",
@@ -84805,7 +84805,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "葉樹涵",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2325,
         "team": "K",
@@ -84821,7 +84821,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "蘇毓婷",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2326,
         "team": "L",
@@ -84837,7 +84837,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "張釗銘",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2327,
         "team": "N",
@@ -84853,7 +84853,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "蔡佳修",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2328,
         "team": "O",
@@ -84869,7 +84869,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "劉宜欣",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2329,
         "team": "P",
@@ -84885,7 +84885,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "陳沁紅",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2330,
         "team": "A",
@@ -84901,7 +84901,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "傅瑋亭",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2331,
         "team": "G",
@@ -84917,7 +84917,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "張群",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3394,
         "team": "J",
@@ -84933,7 +84933,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "吳庭毓",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2332,
         "team": "K",
@@ -84949,7 +84949,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "楊瑞瑟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2333,
         "team": "L",
@@ -84965,7 +84965,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "歐陽伶宜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2334,
         "team": "N",
@@ -84981,7 +84981,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "戴俐文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2335,
         "team": "P",
@@ -84997,7 +84997,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "周春祥",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2336,
         "team": "T",
@@ -85013,7 +85013,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "黃冠蓁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3340,
         "team": "V",
@@ -85029,7 +85029,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "蔡耿銘",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3366,
         "team": "W",
@@ -85045,7 +85045,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "陳沁紅",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2337,
         "team": "A",
@@ -85061,7 +85061,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "路耀祖",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2338,
         "team": "H",
@@ -85077,7 +85077,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "林士凱",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2339,
         "team": "I",
@@ -85093,7 +85093,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "吳庭毓",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2340,
         "team": "K",
@@ -85109,7 +85109,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "楊瑞瑟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2341,
         "team": "L",
@@ -85125,7 +85125,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "歐陽伶宜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2342,
         "team": "N",
@@ -85141,7 +85141,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "戴俐文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2343,
         "team": "P",
@@ -85157,7 +85157,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "蘇億容",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3398,
         "team": "Q",
@@ -85173,7 +85173,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "廖珮如",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2344,
         "team": "S",
@@ -85189,7 +85189,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "解瑄",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2345,
         "team": "U",
@@ -85205,7 +85205,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "陳哲輝",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2346,
         "team": "A",
@@ -85221,7 +85221,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "鄭雅心",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2347,
         "team": "B",
@@ -85237,7 +85237,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "李和莆",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3373,
         "team": "D",
@@ -85253,7 +85253,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "蕭慶瑜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2348,
         "team": "E",
@@ -85269,7 +85269,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "趙菁文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2349,
         "team": "F",
@@ -85285,7 +85285,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "李和莆",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2350,
         "team": "D",
@@ -85301,7 +85301,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "蕭慶瑜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2351,
         "team": "E",
@@ -85317,7 +85317,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "趙菁文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2352,
         "team": "F",
@@ -85333,7 +85333,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "陳瓊瑜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2353,
         "team": "G",
@@ -85349,7 +85349,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "李和莆",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2354,
         "team": "D",
@@ -85365,7 +85365,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "蘇筠涵",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2356,
         "team": "E",
@@ -85381,7 +85381,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "蔡美好",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2357,
         "team": "B",
@@ -85397,7 +85397,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "陳慧君",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2358,
         "team": "C",
@@ -85413,7 +85413,7 @@ export default[
     "score": 0.5,
     "required": "選",
     "teacher": "賴麗君",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2359,
         "team": "B",
@@ -85429,7 +85429,7 @@ export default[
     "score": 0.5,
     "required": "選",
     "teacher": "鍾家瑋",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3341,
         "team": "H",
@@ -85445,7 +85445,7 @@ export default[
     "score": 0.5,
     "required": "選",
     "teacher": "許惠品",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2360,
         "team": "K",
@@ -85461,7 +85461,7 @@ export default[
     "score": 0.5,
     "required": "選",
     "teacher": "陳惠齡",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2361,
         "team": "L",
@@ -85477,7 +85477,7 @@ export default[
     "score": 0.5,
     "required": "選",
     "teacher": "陳芝羽",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2362,
         "team": "O",
@@ -85493,7 +85493,7 @@ export default[
     "score": 0.5,
     "required": "選",
     "teacher": "林季穎",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3352,
         "team": "S"
@@ -85508,7 +85508,7 @@ export default[
     "score": 0.5,
     "required": "選",
     "teacher": "蔡瀚儀",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2363,
         "team": "T",
@@ -85524,7 +85524,7 @@ export default[
     "score": 0.5,
     "required": "選",
     "teacher": "未定",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2364,
         "team": "Y",
@@ -85540,7 +85540,7 @@ export default[
     "score": 0.5,
     "required": "選",
     "teacher": "林明慧",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2365,
         "team": "C",
@@ -85556,7 +85556,7 @@ export default[
     "score": 0.5,
     "required": "選",
     "teacher": "許惠品",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3374,
         "team": "K",
@@ -85572,7 +85572,7 @@ export default[
     "score": 0.5,
     "required": "選",
     "teacher": "蔡瀚儀",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3375,
         "team": "T",
@@ -85588,7 +85588,7 @@ export default[
     "score": 0.5,
     "required": "選",
     "teacher": "薛映東",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2367,
         "team": "C",
@@ -85604,7 +85604,7 @@ export default[
     "score": 0.5,
     "required": "選",
     "teacher": "王望舒",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3346,
         "team": "E",
@@ -85620,7 +85620,7 @@ export default[
     "score": 0.5,
     "required": "選",
     "teacher": "黎蓉櫻",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3376,
         "team": "H",
@@ -85636,7 +85636,7 @@ export default[
     "score": 0.5,
     "required": "選",
     "teacher": "廖聰文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2368,
         "team": "J",
@@ -85652,7 +85652,7 @@ export default[
     "score": 0.5,
     "required": "選",
     "teacher": "未定",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3377,
         "team": "K",
@@ -85669,7 +85669,7 @@ export default[
     "score": 0.5,
     "required": "選",
     "teacher": "林中光",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2369,
         "team": "L",
@@ -85685,7 +85685,7 @@ export default[
     "score": 0.5,
     "required": "選",
     "teacher": "陳美玲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2370,
         "team": "N",
@@ -85701,7 +85701,7 @@ export default[
     "score": 0.5,
     "required": "選",
     "teacher": "耿立",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2371,
         "team": "P",
@@ -85717,7 +85717,7 @@ export default[
     "score": 0.5,
     "required": "選",
     "teacher": "廖聰文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2372,
         "team": "J",
@@ -85733,7 +85733,7 @@ export default[
     "score": 0.5,
     "required": "選",
     "teacher": "未定",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3378,
         "team": "K",
@@ -85750,7 +85750,7 @@ export default[
     "score": 0.5,
     "required": "選",
     "teacher": "林中光",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3379,
         "team": "L",
@@ -85766,7 +85766,7 @@ export default[
     "score": 0.5,
     "required": "選",
     "teacher": "李珮琪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3380,
         "team": "C",
@@ -85782,7 +85782,7 @@ export default[
     "score": 0.5,
     "required": "選",
     "teacher": "蔡佳修",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3306,
         "team": "O",
@@ -85798,7 +85798,7 @@ export default[
     "score": 0.5,
     "required": "選",
     "teacher": "賴俊諺",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2373,
         "team": "Q",
@@ -85814,7 +85814,7 @@ export default[
     "score": 0.5,
     "required": "選",
     "teacher": "傅瑋亭",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2374,
         "team": "G",
@@ -85830,7 +85830,7 @@ export default[
     "score": 0.5,
     "required": "選",
     "teacher": "張群",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2375,
         "team": "J",
@@ -85846,7 +85846,7 @@ export default[
     "score": 0.5,
     "required": "選",
     "teacher": "解瑄",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2376,
         "team": "U",
@@ -85862,7 +85862,7 @@ export default[
     "score": 0.5,
     "required": "選",
     "teacher": "莊文達",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3381,
         "team": "C",
@@ -85878,7 +85878,7 @@ export default[
     "score": 0.5,
     "required": "選",
     "teacher": "蕭慶瑜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2377,
         "team": "E",
@@ -85894,7 +85894,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "莊惠君",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2415,
         "grade": 2,
@@ -85914,7 +85914,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "蔡佳璇",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2378,
         "time": [
@@ -85933,7 +85933,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "廖嘉弘",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2380,
         "team": "B",
@@ -85955,7 +85955,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "葉樹涵",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2381,
         "team": "C",
@@ -85977,7 +85977,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "陳麗芬",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2382,
         "team": "D",
@@ -85999,7 +85999,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "孫愛光",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2383,
         "team": "E",
@@ -86022,7 +86022,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "齊格蒙.索普",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2379,
         "team": "A",
@@ -86044,7 +86044,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "吳舜文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2424,
         "grade": 4,
@@ -86066,7 +86066,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "潘宇文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2423,
         "grade": 4,
@@ -86088,7 +86088,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蘇純立",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3061,
         "class": "大碩",
@@ -86110,7 +86110,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "未定",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3062,
         "class": "大碩",
@@ -86133,7 +86133,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "阮氏金銀",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3063,
         "class": "大碩",
@@ -86155,7 +86155,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "蔡帛蓉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2770,
         "grade": 1,
@@ -86176,7 +86176,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "葉宛儒",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2767,
         "time": [
@@ -86196,7 +86196,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "蘇純立",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2768,
         "time": [
@@ -86216,7 +86216,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "盧立卿",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2769,
         "time": [
@@ -86236,7 +86236,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "蔡帛蓉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3064,
         "grade": 1,
@@ -86257,7 +86257,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "蔡帛蓉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3065,
         "grade": 1,
@@ -86278,7 +86278,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "吳啟豪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3068,
         "grade": 2,
@@ -86299,7 +86299,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "吳啟豪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3069,
         "grade": 2,
@@ -86320,7 +86320,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "蘇銘燦 陳晶",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3070,
         "grade": 2,
@@ -86341,7 +86341,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "李桂楨 蘇銘燦 陳晶",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3071,
         "grade": 2,
@@ -86362,7 +86362,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "蔡帛蓉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3072,
         "grade": 2,
@@ -86382,7 +86382,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "葉宛儒",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3076,
         "grade": 3,
@@ -86403,7 +86403,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "未定",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3077,
         "grade": 3,
@@ -86425,7 +86425,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "未定",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3078,
         "grade": 3,
@@ -86447,7 +86447,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "沈賜川",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3079,
         "grade": 3,
@@ -86468,7 +86468,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "沈賜川",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3080,
         "grade": 3,
@@ -86489,7 +86489,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "盧立卿",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3083,
         "grade": 4,
@@ -86510,7 +86510,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "蘇純立",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3084,
         "grade": 4,
@@ -86531,7 +86531,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "沈賜川",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3066,
         "grade": 1,
@@ -86552,7 +86552,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "未定",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3081,
         "grade": 3,
@@ -86573,7 +86573,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "吳啟豪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3082,
         "grade": 3,
@@ -86594,7 +86594,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "蘇純立",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3395,
         "grade": 4,
@@ -86614,7 +86614,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "沈賜川",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3067,
         "grade": 1,
@@ -86635,7 +86635,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "未定",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3073,
         "grade": 2,
@@ -86657,7 +86657,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "未定",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3074,
         "grade": 2,
@@ -86680,7 +86680,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "阮氏金銀",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3075,
         "grade": 2,
@@ -86703,7 +86703,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "楊岡",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2447,
         "time": [
@@ -86723,7 +86723,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "謝卓帆",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1178,
         "class": "碩博",
@@ -86744,7 +86744,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "謝振傑",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1179,
         "class": "碩博",
@@ -86766,7 +86766,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "鄭超仁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1180,
         "class": "碩博",
@@ -86787,7 +86787,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "邱南福",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1181,
         "class": "碩博",
@@ -86809,7 +86809,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "邱南福",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1182,
         "class": "碩博",
@@ -86831,7 +86831,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "廖書賢",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1183,
         "class": "碩博",
@@ -86852,7 +86852,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "邱爾德",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1339,
         "class": "大碩",
@@ -86872,7 +86872,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李敏鴻",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1341,
         "class": "大碩",
@@ -86893,7 +86893,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "呂杰翰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1342,
         "class": "大碩",
@@ -86913,7 +86913,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "廖書賢",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1343,
         "grade": 1,
@@ -86934,7 +86934,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "謝振傑",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1344,
         "grade": 2,
@@ -86955,7 +86955,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "張俊傑",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1345,
         "grade": 2,
@@ -86976,7 +86976,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "楊承山",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1346,
         "grade": 3,
@@ -86997,7 +86997,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "楊承山",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1347,
         "grade": 3,
@@ -87018,7 +87018,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "李敏鴻 鄭超仁 謝振傑 廖書賢 邱南福 楊承山 張俊傑",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1348,
         "grade": 3,
@@ -87039,7 +87039,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "李敏鴻 鄭超仁 謝振傑 廖書賢 邱南福 楊承山 張俊傑",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1349,
         "grade": 4,
@@ -87059,7 +87059,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "梁志民",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2435,
         "class": "大碩",
@@ -87081,7 +87081,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "梁志民",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2117,
         "time": [
@@ -87101,7 +87101,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李山明",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2118,
         "time": [
@@ -87121,7 +87121,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "何康國",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2119,
         "time": [
@@ -87141,7 +87141,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "李燕宜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2120,
         "time": [
@@ -87162,7 +87162,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "歐陽穎華",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2121,
         "time": [
@@ -87182,7 +87182,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "許昱琦",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2122,
         "time": [
@@ -87203,7 +87203,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "何康國",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2123,
         "time": [
@@ -87223,7 +87223,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "歐陽穎華",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2124,
         "time": [
@@ -87243,7 +87243,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "梁志民",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2125,
         "time": [
@@ -87263,7 +87263,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "梁志民",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2126,
         "time": [
@@ -87283,7 +87283,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "張得恩",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2127,
         "team": "A",
@@ -87299,7 +87299,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "湯發凱",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2128,
         "team": "B",
@@ -87315,7 +87315,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "張得恩",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2129,
         "team": "A",
@@ -87331,7 +87331,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "湯發凱",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2130,
         "team": "B",
@@ -87348,7 +87348,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "李燕宜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2131,
         "time": [
@@ -87368,7 +87368,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "李燕宜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2132,
         "time": [
@@ -87388,7 +87388,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "李燕宜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2133,
         "team": "A",
@@ -87404,7 +87404,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "林娟儀",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2134,
         "team": "B",
@@ -87420,7 +87420,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "張詩欣",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2135,
         "team": "C",
@@ -87436,7 +87436,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "許昱琦",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2136,
         "team": "D",
@@ -87452,7 +87452,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "李燕宜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2137,
         "team": "A",
@@ -87468,7 +87468,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "林娟儀",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2138,
         "team": "B",
@@ -87484,7 +87484,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "張詩欣",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2139,
         "team": "C",
@@ -87500,7 +87500,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "林娟儀",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2140,
         "team": "B",
@@ -87516,7 +87516,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "張詩欣",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2142,
         "time": [
@@ -87537,7 +87537,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "許昱琦",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2143,
         "time": [
@@ -87558,7 +87558,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "吳義芳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2144,
         "time": [
@@ -87578,7 +87578,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林娟儀",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2145,
         "time": [
@@ -87598,7 +87598,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "吳義芳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2146,
         "time": [
@@ -87619,7 +87619,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "吳義芳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2147,
         "time": [
@@ -87640,7 +87640,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "范聖韜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2148,
         "time": [
@@ -87660,7 +87660,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "何康國",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2149,
         "time": [
@@ -87680,7 +87680,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "吳義芳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2150,
         "time": [
@@ -87700,7 +87700,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "吳義芳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2151,
         "time": [
@@ -87720,7 +87720,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "梁志民",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2152,
         "time": [
@@ -87740,7 +87740,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "張仰瑄",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2153,
         "time": [
@@ -87760,7 +87760,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "賴家慶",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2154,
         "time": [
@@ -87780,7 +87780,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "賴家慶",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2155,
         "time": [
@@ -87800,7 +87800,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "范聖韜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2425,
         "time": [
@@ -87819,7 +87819,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "楊世丞",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2439,
         "grade": 2,
@@ -87839,7 +87839,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林娟儀",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2426,
         "time": [
@@ -87858,7 +87858,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "何康國",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2440,
         "grade": 2,
@@ -87878,7 +87878,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "王秀娟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2427,
         "time": [
@@ -87898,7 +87898,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "王秀娟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2436,
         "grade": 1,
@@ -87920,7 +87920,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "沈斻",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2445,
         "grade": 3,
@@ -87942,7 +87942,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "梁文菁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2437,
         "grade": 1,
@@ -87963,7 +87963,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "吳碧容",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2428,
         "time": [
@@ -87984,7 +87984,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "何康國",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2446,
         "grade": 4,
@@ -88006,7 +88006,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "張仰瑄",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2438,
         "grade": 1,
@@ -88027,7 +88027,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "王秀娟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2441,
         "grade": 2,
@@ -88049,7 +88049,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "湯發凱",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2429,
         "team": "A",
@@ -88070,7 +88070,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "湯發凱",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2430,
         "team": "B",
@@ -88091,7 +88091,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "鄭帆婷",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2442,
         "team": "A",
@@ -88113,7 +88113,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "鄭帆婷",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2443,
         "team": "B",
@@ -88135,7 +88135,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "劉權富",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2431,
         "time": [
@@ -88154,7 +88154,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "梁文菁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2432,
         "time": [
@@ -88176,7 +88176,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "吳碧容",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2444,
         "grade": 2,
@@ -88196,7 +88196,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "吳義芳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2433,
         "time": [
@@ -88215,7 +88215,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "范聖韜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2434,
         "time": [
@@ -88234,7 +88234,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "吳麗娟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0399",
         "class": "碩博",
@@ -88255,7 +88255,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "姜兆眉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0401",
         "class": "碩博",
@@ -88276,7 +88276,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "劉子鍵",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0402",
         "class": "碩博",
@@ -88297,7 +88297,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "危芷芬",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0403",
         "class": "碩博",
@@ -88318,7 +88318,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "程景琳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0404",
         "class": "碩博",
@@ -88339,7 +88339,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳李綢",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0405",
         "class": "碩博",
@@ -88360,7 +88360,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "毛國楠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0406",
         "class": "碩博",
@@ -88381,7 +88381,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "陳柏熹",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0407",
         "class": "碩博",
@@ -88402,7 +88402,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "陳柏邑",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0408",
         "class": "碩博",
@@ -88423,7 +88423,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "王麗斐 李俊仁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0409",
         "class": "碩博",
@@ -88444,7 +88444,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "簡郁芩",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0410",
         "class": "碩博",
@@ -88466,7 +88466,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "王麗斐",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0411",
         "class": "碩博",
@@ -88487,7 +88487,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "曾志朗",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0412",
         "class": "碩博",
@@ -88508,7 +88508,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "何英奇",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0413",
         "class": "碩博",
@@ -88529,7 +88529,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "陳秀蓉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0349",
         "grade": 1,
@@ -88550,7 +88550,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "林家興",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0351",
         "grade": 2,
@@ -88571,7 +88571,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "田秀蘭",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0350",
         "grade": 1,
@@ -88592,7 +88592,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "陳秀蓉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0352",
         "grade": 3,
@@ -88613,7 +88613,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "林正昌",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0414",
         "grade": 1,
@@ -88634,7 +88634,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "陳慧娟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0415",
         "grade": 1,
@@ -88655,7 +88655,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "王玉珍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0417",
         "grade": 2,
@@ -88676,7 +88676,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "田秀蘭",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0418",
         "team": "A",
@@ -88698,7 +88698,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王櫻芬",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0419",
         "team": "B",
@@ -88720,7 +88720,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "喬虹",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0416",
         "grade": 1,
@@ -88741,7 +88741,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "李俊仁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0687",
         "time": [
@@ -88761,7 +88761,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "許禕芳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0696",
         "grade": 2,
@@ -88782,7 +88782,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳玉芳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0703",
         "grade": 3,
@@ -88803,7 +88803,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "陳姿",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0688",
         "time": [
@@ -88823,7 +88823,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "林旻沛",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0697",
         "grade": 2,
@@ -88844,7 +88844,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "簡郁芩",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0689",
         "time": [
@@ -88865,7 +88865,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "蔡芬芳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0698",
         "grade": 2,
@@ -88885,7 +88885,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "謝文宜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0699",
         "grade": 2,
@@ -88906,7 +88906,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "陳柏熹",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0700",
         "grade": 2,
@@ -88928,7 +88928,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳孟筳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0701",
         "grade": 2,
@@ -88948,7 +88948,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "楊國如",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0709",
         "grade": 4,
@@ -88969,7 +88969,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "蘇宜芬",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0690",
         "time": [
@@ -88989,7 +88989,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "姜兆眉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0693",
         "team": "A",
@@ -89011,7 +89011,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "張德聰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0691",
         "team": "B",
@@ -89031,7 +89031,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "張世華",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0704",
         "team": "A",
@@ -89053,7 +89053,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "王櫻芬",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0705",
         "team": "B",
@@ -89075,7 +89075,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "羅惠群",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0692",
         "team": "C",
@@ -89096,7 +89096,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林俊宏",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0710",
         "grade": 4,
@@ -89117,7 +89117,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "張雨霖",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0694",
         "grade": 1,
@@ -89138,7 +89138,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "吳姿瑩",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0711",
         "grade": 4,
@@ -89159,7 +89159,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳秀蓉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0712",
         "grade": 4,
@@ -89180,7 +89180,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "張世華",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0713",
         "team": "A",
@@ -89203,7 +89203,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "喬虹",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0714",
         "team": "B",
@@ -89226,7 +89226,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "許禕芳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0695",
         "grade": 1,
@@ -89247,7 +89247,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "吳昭容",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0715",
         "grade": 4,
@@ -89268,7 +89268,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "姜兆眉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0706",
         "grade": 3,
@@ -89289,7 +89289,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "王榮春",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0707",
         "grade": 3,
@@ -89310,7 +89310,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "張雨霖",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0708",
         "grade": 3,
@@ -89330,7 +89330,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "王玉珍 劉振維",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0716",
         "grade": 4,
@@ -89351,7 +89351,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "張雨霖",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0717",
         "grade": 4,
@@ -89373,7 +89373,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蔡虔祿",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0018",
         "class": "碩博",
@@ -89395,7 +89395,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "劉宏文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0019",
         "class": "碩博",
@@ -89417,7 +89417,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳勇志",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0020",
         "class": "碩博",
@@ -89438,7 +89438,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李恆儒",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0021",
         "class": "碩博",
@@ -89459,7 +89459,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "方進隆",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0022",
         "class": "碩博",
@@ -89481,7 +89481,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃昱倫",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0023",
         "class": "碩博",
@@ -89502,7 +89502,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林慶宏",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0024",
         "class": "碩博",
@@ -89523,7 +89523,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林玫君",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0025",
         "class": "碩博",
@@ -89544,7 +89544,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "石明宗",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0026",
         "class": "碩博",
@@ -89565,7 +89565,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "石明宗",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0027",
         "class": "碩博",
@@ -89586,7 +89586,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "洪聰敏",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0028",
         "class": "碩博",
@@ -89607,7 +89607,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "洪聰敏",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0029",
         "class": "碩博",
@@ -89628,7 +89628,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃長福",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0030",
         "class": "碩博",
@@ -89649,7 +89649,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林德嘉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0031",
         "class": "碩博",
@@ -89670,7 +89670,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "徐孟達",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0032",
         "class": "碩博",
@@ -89691,7 +89691,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "卓俊辰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0033",
         "class": "碩博",
@@ -89713,7 +89713,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "柯珍宜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0034",
         "class": "碩博",
@@ -89735,7 +89735,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "許立宏",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0035",
         "class": "碩博",
@@ -89757,7 +89757,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "林靜萍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0002",
         "time": [
@@ -89777,7 +89777,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "闕月清",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0003",
         "time": [
@@ -89797,7 +89797,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "鄭志富",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0004",
         "time": [
@@ -89817,7 +89817,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張家豪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0005",
         "time": [
@@ -89837,7 +89837,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "施登堯",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0010",
         "time": [
@@ -89857,7 +89857,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "鄭志富",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0011",
         "time": [
@@ -89877,7 +89877,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "程瑞福",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0012",
         "team": "A",
@@ -89898,7 +89898,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "洪聰敏",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0013",
         "team": "B",
@@ -89919,7 +89919,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "程紹同",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0014",
         "time": [
@@ -89939,7 +89939,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "湯添進",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0015",
         "time": [
@@ -89959,7 +89959,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張至滿",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0016",
         "time": [
@@ -89979,7 +89979,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "掌慶維",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0017",
         "time": [
@@ -89999,7 +89999,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "陳信亨",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0067",
         "grade": 1,
@@ -90020,7 +90020,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "王鶴森",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0081",
         "grade": 2,
@@ -90041,7 +90041,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "蔡虔祿",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0103",
         "grade": 3,
@@ -90061,7 +90061,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "?俐雯",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0104",
         "grade": 3,
@@ -90081,7 +90081,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "黃昱倫",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0082",
         "grade": 2,
@@ -90102,7 +90102,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "黃欽永",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0083",
         "grade": 2,
@@ -90122,7 +90122,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "張琪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0122",
         "grade": 4,
@@ -90142,7 +90142,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "黃國恩",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0084",
         "grade": 2,
@@ -90162,7 +90162,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "施登堯",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0123",
         "grade": 4,
@@ -90183,7 +90183,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "梁嘉音",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0085",
         "grade": 2,
@@ -90203,7 +90203,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "王宏豪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0068",
         "team": "A",
@@ -90226,7 +90226,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "王宏豪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3358,
         "team": "B",
@@ -90248,7 +90248,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "林靜萍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0105",
         "grade": 3,
@@ -90268,7 +90268,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "林靜萍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0124",
         "grade": 4,
@@ -90289,7 +90289,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "施登堯",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0106",
         "grade": 3,
@@ -90309,7 +90309,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林慶宏",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0125",
         "grade": 4,
@@ -90330,7 +90330,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "李至斌",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0086",
         "grade": 2,
@@ -90350,7 +90350,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "掌慶維",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0088",
         "team": "M",
@@ -90373,7 +90373,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "掌慶維",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0087",
         "team": "F",
@@ -90396,7 +90396,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "施登堯",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0107",
         "grade": 3,
@@ -90417,7 +90417,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "溫良財",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0090",
         "team": "M",
@@ -90440,7 +90440,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "溫良財",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0089",
         "team": "F",
@@ -90463,7 +90463,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "邱得全",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0108",
         "grade": 3,
@@ -90484,7 +90484,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "程瑞福",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0070",
         "team": "M",
@@ -90507,7 +90507,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "程瑞福",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0069",
         "team": "F",
@@ -90530,7 +90530,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "黃輝榮",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0072",
         "team": "M",
@@ -90553,7 +90553,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳妙怡",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0071",
         "team": "F",
@@ -90576,7 +90576,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳妙怡",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0109",
         "grade": 3,
@@ -90597,7 +90597,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林岱樵",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0092",
         "team": "M",
@@ -90620,7 +90620,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林岱樵",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0091",
         "team": "F",
@@ -90643,7 +90643,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳勇志",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0110",
         "grade": 3,
@@ -90664,7 +90664,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "王宏豪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0094",
         "team": "M",
@@ -90687,7 +90687,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "王宏豪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0093",
         "team": "F",
@@ -90710,7 +90710,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "鄭國輝",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0074",
         "team": "M",
@@ -90733,7 +90733,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "鄭國輝",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0073",
         "team": "F",
@@ -90756,7 +90756,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "鄭國輝",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0111",
         "grade": 3,
@@ -90777,7 +90777,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "蔡虔祿",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0096",
         "team": "M",
@@ -90800,7 +90800,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "潘光敏",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0095",
         "team": "F",
@@ -90823,7 +90823,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "徐孟達",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0112",
         "grade": 3,
@@ -90844,7 +90844,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "王傑賢",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0076",
         "team": "M",
@@ -90867,7 +90867,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "王傑賢",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0075",
         "team": "F",
@@ -90890,7 +90890,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林慶宏",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0113",
         "grade": 3,
@@ -90911,7 +90911,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "曾明生",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0098",
         "team": "M",
@@ -90934,7 +90934,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "麥秀英",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0097",
         "team": "F",
@@ -90957,7 +90957,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "張琪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0078",
         "team": "M",
@@ -90980,7 +90980,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "張琪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0077",
         "team": "F",
@@ -91003,7 +91003,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "詹俊成",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0080",
         "team": "M",
@@ -91026,7 +91026,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林淑惠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0079",
         "team": "F",
@@ -91049,7 +91049,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "方進隆",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0114",
         "grade": 3,
@@ -91070,7 +91070,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "黃昱倫",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0099",
         "grade": 2,
@@ -91092,7 +91092,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "黃昱倫",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0115",
         "grade": 3,
@@ -91113,7 +91113,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "李恆儒",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0116",
         "grade": 3,
@@ -91134,7 +91134,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "李恆儒 黃昱倫",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0126",
         "grade": 4,
@@ -91156,7 +91156,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "黃正杰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0127",
         "grade": 4,
@@ -91176,7 +91176,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林淑惠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0128",
         "grade": 4,
@@ -91196,7 +91196,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "劉宏文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0117",
         "grade": 3,
@@ -91217,7 +91217,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "曾明生",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0100",
         "grade": 2,
@@ -91237,7 +91237,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "掌慶維",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0118",
         "grade": 3,
@@ -91257,7 +91257,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "湯添進",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0119",
         "grade": 3,
@@ -91277,7 +91277,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "王傑賢",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0120",
         "grade": 3,
@@ -91297,7 +91297,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "詹俊成",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0101",
         "grade": 2,
@@ -91317,7 +91317,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "王傑賢",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3345,
         "grade": 3,
@@ -91337,7 +91337,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "程紹同",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0102",
         "grade": 2,
@@ -91357,7 +91357,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "掌慶維",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0121",
         "grade": 3,
@@ -91378,7 +91378,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳信亨",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0152",
         "time": [
@@ -91399,7 +91399,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "施登堯",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0129",
         "grade": 4,
@@ -91420,7 +91420,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳信亨",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0153",
         "time": [
@@ -91441,7 +91441,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蘇宜芬 洪儷瑜 陳孟筳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3274,
         "class": "碩博",
@@ -91463,7 +91463,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "張文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3275,
         "time": [
@@ -91482,7 +91482,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "周學政 張國楨 陳哲銘 吳秉昇",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3273,
         "time": [
@@ -91502,7 +91502,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "楊智元",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3276,
         "time": [
@@ -91521,7 +91521,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "楊智元",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3277,
         "time": [
@@ -91540,7 +91540,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "韓宗憲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3278,
         "time": [
@@ -91559,7 +91559,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "印永翔 高文忠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3279,
         "time": [
@@ -91578,7 +91578,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "高文忠 印永翔",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3280,
         "time": [
@@ -91597,7 +91597,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "林舒柔",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3258,
         "time": [
@@ -91617,7 +91617,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "賴慧文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3259,
         "time": [
@@ -91637,7 +91637,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "徐美",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3260,
         "time": [
@@ -91657,7 +91657,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃浩霆",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3261,
         "time": [
@@ -91678,7 +91678,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "施友元",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3262,
         "time": [
@@ -91698,7 +91698,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "吳美貞",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3265,
         "time": [
@@ -91719,7 +91719,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "蘇子中",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3266,
         "time": [
@@ -91739,7 +91739,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃慧玉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3268,
         "time": [
@@ -91760,7 +91760,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃慧玉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3269,
         "time": [
@@ -91780,7 +91780,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳學毅",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3270,
         "time": [
@@ -91800,7 +91800,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "許玉燕",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3271,
         "time": [
@@ -91821,7 +91821,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "許玉燕",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3272,
         "time": [
@@ -91841,7 +91841,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林炯明",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3263,
         "time": [
@@ -91861,7 +91861,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "李清安",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3264,
         "time": [
@@ -91881,7 +91881,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "胡翠君",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3256,
         "time": [
@@ -91901,7 +91901,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "胡翠君",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3257,
         "time": [
@@ -91922,7 +91922,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "吳文欽",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2671,
         "class": "碩博",
@@ -91944,7 +91944,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "張明哲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2672,
         "class": "碩博",
@@ -91966,7 +91966,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "李沃龍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2673,
         "class": "碩博",
@@ -91988,7 +91988,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳鴻宜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2674,
         "class": "碩博",
@@ -92010,7 +92010,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "吳亞霖",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2675,
         "class": "碩博",
@@ -92033,7 +92033,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "吳亞霖",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2676,
         "class": "碩博",
@@ -92055,7 +92055,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張宜仁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2850,
         "class": "大碩",
@@ -92075,7 +92075,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "傅祖怡",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2851,
         "class": "大碩",
@@ -92096,7 +92096,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "卜宏毅",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2677,
         "class": "碩博",
@@ -92118,7 +92118,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張明哲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2678,
         "class": "碩博",
@@ -92140,7 +92140,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳鴻宜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2679,
         "class": "碩博",
@@ -92161,7 +92161,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "游至仕",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2852,
         "class": "大碩",
@@ -92181,7 +92181,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "趙宇強",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2854,
         "class": "大碩",
@@ -92202,7 +92202,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林文欽",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2855,
         "class": "大碩",
@@ -92223,7 +92223,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "葉乃棠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2856,
         "class": "大碩",
@@ -92243,7 +92243,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "李沃龍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2886,
         "grade": 2,
@@ -92264,7 +92264,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "陳啟明",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2883,
         "grade": 2,
@@ -92285,7 +92285,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "趙宇強",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2887,
         "grade": 2,
@@ -92306,7 +92306,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "江府峻",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2884,
         "grade": 2,
@@ -92327,7 +92327,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張宜仁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2889,
         "grade": 3,
@@ -92347,7 +92347,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "高賢忠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2876,
         "grade": 1,
@@ -92369,7 +92369,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "高賢忠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2873,
         "grade": 1,
@@ -92391,7 +92391,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陸健榮",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2879,
         "grade": 2,
@@ -92411,7 +92411,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "陸亭樺",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2880,
         "team": "A",
@@ -92432,7 +92432,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "傅祖怡",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2881,
         "team": "B",
@@ -92453,7 +92453,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "藍彥文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2882,
         "team": "C",
@@ -92474,7 +92474,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "江府峻",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2890,
         "grade": 3,
@@ -92495,7 +92495,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳傳仁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2904,
         "grade": 4,
@@ -92515,7 +92515,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "江佩勳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2891,
         "team": "A",
@@ -92536,7 +92536,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "徐鏞元",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2892,
         "team": "B",
@@ -92557,7 +92557,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "駱芳鈺",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2893,
         "team": "C",
@@ -92578,7 +92578,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "徐鏞元",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2901,
         "grade": 3,
@@ -92599,7 +92599,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "陳啟明",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2898,
         "grade": 3,
@@ -92620,7 +92620,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "吳亞霖",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2905,
         "grade": 4,
@@ -92640,7 +92640,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "張嘉泓 邱顯智",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2857,
         "team": "A",
@@ -92663,7 +92663,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "陳穎叡",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2858,
         "team": "B",
@@ -92686,7 +92686,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "盧志權 駱芳鈺",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2859,
         "team": "C",
@@ -92709,7 +92709,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "陸健榮 賈至達",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2860,
         "team": "D",
@@ -92732,7 +92732,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "陳穎叡",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2861,
         "team": "E",
@@ -92755,7 +92755,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "陳穎叡",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2888,
         "grade": 2,
@@ -92776,7 +92776,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "陳傳仁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2885,
         "grade": 2,
@@ -92797,7 +92797,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "高賢忠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2902,
         "grade": 3,
@@ -92818,7 +92818,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "張嘉泓",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2899,
         "grade": 3,
@@ -92839,7 +92839,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "蔡志申",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2877,
         "grade": 1,
@@ -92861,7 +92861,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "邱顯智",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2874,
         "grade": 1,
@@ -92883,7 +92883,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "蔡志申",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2878,
         "grade": 1,
@@ -92906,7 +92906,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "邱顯智",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2875,
         "grade": 1,
@@ -92929,7 +92929,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "盧志權",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2862,
         "team": "A",
@@ -92952,7 +92952,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "盧志權",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2863,
         "team": "B",
@@ -92975,7 +92975,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "江佩勳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2864,
         "team": "C",
@@ -92998,7 +92998,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "陳穎叡",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2865,
         "team": "D",
@@ -93021,7 +93021,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "張嘉泓",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2866,
         "team": "E",
@@ -93044,7 +93044,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "卜宏毅",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2867,
         "team": "F",
@@ -93067,7 +93067,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "賈至達",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2868,
         "team": "A",
@@ -93090,7 +93090,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "邱顯智",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2869,
         "team": "B",
@@ -93113,7 +93113,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "高賢忠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2870,
         "team": "A",
@@ -93136,7 +93136,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "賈至達",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2871,
         "team": "B",
@@ -93159,7 +93159,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "游至仕",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2894,
         "grade": 3,
@@ -93179,7 +93179,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "徐鏞元",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2872,
         "grade": 1,
@@ -93200,7 +93200,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林文欽 高賢忠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2895,
         "grade": 3,
@@ -93220,7 +93220,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "胡淑芬",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2896,
         "grade": 3,
@@ -93240,7 +93240,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "高賢忠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2903,
         "grade": 3,
@@ -93261,7 +93261,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "張嘉泓",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2900,
         "grade": 3,
@@ -93282,7 +93282,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陸健榮",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2906,
         "grade": 4,
@@ -93302,7 +93302,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "駱芳鈺",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2849,
         "time": [
@@ -93321,7 +93321,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳育霖",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2897,
         "grade": 3,
@@ -93341,7 +93341,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳育霖",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2907,
         "team": "A",
@@ -93363,7 +93363,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳育霖",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2908,
         "team": "B",
@@ -93385,7 +93385,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "吳亭芳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0519",
         "time": [
@@ -93405,7 +93405,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "陳貞夙",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0520",
         "time": [
@@ -93425,7 +93425,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "張本聖",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0521",
         "time": [
@@ -93445,7 +93445,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "吳亭芳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0522",
         "time": [
@@ -93465,7 +93465,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳貞夙",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0523",
         "time": [
@@ -93485,7 +93485,7 @@ export default[
     "score": 4,
     "required": "必",
     "teacher": "吳亭芳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0524",
         "time": [
@@ -93505,7 +93505,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "陳貞夙",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0525",
         "time": [
@@ -93525,7 +93525,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林志鴻",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2729,
         "class": "碩博",
@@ -93547,7 +93547,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林志鴻",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2730,
         "class": "碩博",
@@ -93570,7 +93570,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "劉湘瑤",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2731,
         "class": "碩博",
@@ -93592,7 +93592,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "邱美虹",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2732,
         "class": "碩博",
@@ -93614,7 +93614,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "張文華 劉湘瑤",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2733,
         "class": "碩博",
@@ -93636,7 +93636,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "楊芳瑩",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2734,
         "class": "碩博",
@@ -93659,7 +93659,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "方素琦",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2735,
         "class": "碩博",
@@ -93681,7 +93681,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "顏妙璇",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2736,
         "class": "碩博",
@@ -93703,7 +93703,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "吳心楷",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2737,
         "class": "碩博",
@@ -93726,7 +93726,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "許瑛玿",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3289,
         "class": "碩博",
@@ -93747,7 +93747,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張文華",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2649,
         "time": [
@@ -93767,7 +93767,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "林陳涌",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2650,
         "time": [
@@ -93788,7 +93788,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "方素琦",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2651,
         "time": [
@@ -93809,7 +93809,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "邱美虹 張俊彥",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 2728,
         "time": [
@@ -93830,7 +93830,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林振春",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0426",
         "class": "碩博",
@@ -93851,7 +93851,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張德永",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0428",
         "class": "碩博",
@@ -93872,7 +93872,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王雅鈴",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0429",
         "class": "碩博",
@@ -93893,7 +93893,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張振維",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0430",
         "class": "碩博",
@@ -93914,7 +93914,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳仲彥",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0432",
         "class": "碩博",
@@ -93935,7 +93935,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "吳盈慧",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0719",
         "class": "大碩",
@@ -93957,7 +93957,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃明月",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0353",
         "time": [
@@ -93977,7 +93977,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "楊國賜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0354",
         "time": [
@@ -93997,7 +93997,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "廖世璋",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0356",
         "time": [
@@ -94017,7 +94017,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "郭郡羽",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0420",
         "time": [
@@ -94037,7 +94037,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "徐敏雄",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0421",
         "time": [
@@ -94057,7 +94057,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "鄭勝分",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0422",
         "time": [
@@ -94077,7 +94077,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "陳仲彥",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0423",
         "time": [
@@ -94097,7 +94097,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "陳仲彥",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0424",
         "time": [
@@ -94117,7 +94117,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "林鴻洲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0425",
         "time": [
@@ -94137,7 +94137,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "王美文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0720",
         "grade": 1,
@@ -94158,7 +94158,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "郭郡羽",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0721",
         "grade": 1,
@@ -94179,7 +94179,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "廖世璋",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0722",
         "grade": 1,
@@ -94200,7 +94200,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "徐敏雄",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0729",
         "grade": 2,
@@ -94221,7 +94221,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "王雅鈴",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0730",
         "grade": 2,
@@ -94242,7 +94242,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "張德永",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0736",
         "grade": 3,
@@ -94263,7 +94263,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "王美文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0737",
         "grade": 3,
@@ -94284,7 +94284,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "鄭勝分",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0723",
         "grade": 1,
@@ -94305,7 +94305,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "巫彥德",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0731",
         "grade": 2,
@@ -94326,7 +94326,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "鄭勝分",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0732",
         "grade": 2,
@@ -94347,7 +94347,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "萬岳憲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0733",
         "grade": 2,
@@ -94368,7 +94368,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "吳盈慧",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0738",
         "grade": 3,
@@ -94389,7 +94389,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "詹婉如",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0724",
         "grade": 1,
@@ -94410,7 +94410,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "王雅鈴 張振維",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0741",
         "grade": 4,
@@ -94431,7 +94431,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "徐敏雄 郭郡羽",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0742",
         "grade": 4,
@@ -94452,7 +94452,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "謝文和",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0739",
         "grade": 3,
@@ -94473,7 +94473,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "曹仕翰",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0725",
         "grade": 1,
@@ -94494,7 +94494,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林鴻洲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0740",
         "grade": 3,
@@ -94515,7 +94515,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林鴻洲",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0743",
         "grade": 4,
@@ -94537,7 +94537,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "張振維",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0734",
         "grade": 2,
@@ -94558,7 +94558,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳仲彥",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0726",
         "grade": 1,
@@ -94579,7 +94579,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳仲彥",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0718",
         "time": [
@@ -94600,7 +94600,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "曾冠球",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0727",
         "grade": 1,
@@ -94621,7 +94621,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "楊智元",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0728",
         "grade": 1,
@@ -94642,7 +94642,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "潘美璟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0735",
         "grade": 2,
@@ -94664,7 +94664,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王慧婷",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0495",
         "class": "碩博",
@@ -94685,7 +94685,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張正芬",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0496",
         "class": "碩博",
@@ -94706,7 +94706,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "潘裕豐",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0497",
         "class": "碩博",
@@ -94727,7 +94727,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "趙本強",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0498",
         "class": "碩博",
@@ -94748,7 +94748,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "邱春瑜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0499",
         "class": "碩博",
@@ -94769,7 +94769,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "陳偉仁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0500",
         "class": "碩博",
@@ -94790,7 +94790,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "洪儷瑜 姚惠馨",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0859",
         "class": "大碩",
@@ -94811,7 +94811,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "潘裕豐",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0501",
         "class": "碩博",
@@ -94832,7 +94832,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張蓓莉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0502",
         "class": "碩博",
@@ -94853,7 +94853,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳美芳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0503",
         "class": "碩博",
@@ -94874,7 +94874,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張千惠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0504",
         "class": "碩博",
@@ -94895,7 +94895,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "姜義村",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0505",
         "class": "碩博",
@@ -94917,7 +94917,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "吳亭芳 郭靜姿 洪儷瑜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0506",
         "class": "碩博",
@@ -94939,7 +94939,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "洪儷瑜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0369",
         "time": [
@@ -94959,7 +94959,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "郭靜姿",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0370",
         "time": [
@@ -94979,7 +94979,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "姜義村",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0371",
         "time": [
@@ -95000,7 +95000,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "姜義村",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0372",
         "team": "A",
@@ -95022,7 +95022,7 @@ export default[
     "score": 1,
     "required": "選",
     "teacher": "洪儷瑜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3367,
         "team": "B",
@@ -95044,7 +95044,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "郭靜姿",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0491",
         "time": [
@@ -95064,7 +95064,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "佘永吉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0492",
         "time": [
@@ -95084,7 +95084,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "于曉平",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0493",
         "time": [
@@ -95104,7 +95104,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "沈慶盈",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0494",
         "time": [
@@ -95124,7 +95124,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "劉秀丹",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0863",
         "grade": 2,
@@ -95144,7 +95144,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "劉惠美",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0864",
         "grade": 2,
@@ -95165,7 +95165,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "陳心怡",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0865",
         "grade": 2,
@@ -95186,7 +95186,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "潘裕豐",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0866",
         "team": "A",
@@ -95207,7 +95207,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "李乙明",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0867",
         "team": "B",
@@ -95228,7 +95228,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "劉秀丹",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0883",
         "team": "A",
@@ -95250,7 +95250,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "謝佳男",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0884",
         "team": "B",
@@ -95272,7 +95272,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳心怡",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0885",
         "grade": 4,
@@ -95293,7 +95293,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "邱春瑜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0886",
         "grade": 4,
@@ -95313,7 +95313,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "陳偉仁 王宣惠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0868",
         "grade": 2,
@@ -95334,7 +95334,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "佘永吉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0869",
         "grade": 2,
@@ -95356,7 +95356,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳貞夙 姜義村 吳亭芳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0860",
         "grade": 1,
@@ -95378,7 +95378,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "姜義村",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0861",
         "grade": 1,
@@ -95399,7 +95399,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張千惠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0875",
         "grade": 3,
@@ -95420,7 +95420,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "王曉嵐 王宣惠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0876",
         "grade": 3,
@@ -95441,7 +95441,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "王曉嵐",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0877",
         "grade": 3,
@@ -95462,7 +95462,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "邱春瑜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0870",
         "grade": 2,
@@ -95483,7 +95483,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "張千惠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0871",
         "grade": 2,
@@ -95503,7 +95503,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "劉惠美",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0872",
         "grade": 2,
@@ -95524,7 +95524,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "廖靜宜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0887",
         "grade": 4,
@@ -95544,7 +95544,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "王慧婷",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0873",
         "grade": 2,
@@ -95564,7 +95564,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "洪儷瑜 單延愷",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0888",
         "grade": 4,
@@ -95585,7 +95585,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "劉秀丹",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0874",
         "grade": 2,
@@ -95606,7 +95606,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "劉秀丹",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0878",
         "grade": 3,
@@ -95627,7 +95627,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "于曉平",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0879",
         "team": "B",
@@ -95649,7 +95649,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "潘裕豐",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0880",
         "grade": 3,
@@ -95669,7 +95669,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "進明",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0889",
         "grade": 4,
@@ -95691,7 +95691,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "吳淑敏",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0855",
         "time": [
@@ -95710,7 +95710,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "李乙明",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0890",
         "grade": 4,
@@ -95731,7 +95731,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳偉仁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0881",
         "grade": 3,
@@ -95751,7 +95751,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "王曉嵐",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0862",
         "grade": 1,
@@ -95774,7 +95774,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "廖靜宜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0856",
         "team": "B",
@@ -95794,7 +95794,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "佘永吉 王宣惠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0891",
         "team": "A",
@@ -95816,7 +95816,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "陳貞夙 廖靜宜",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0892",
         "team": "B",
@@ -95838,7 +95838,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "于曉平",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0893",
         "team": "C",
@@ -95860,7 +95860,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "陳偉仁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0894",
         "team": "D",
@@ -95882,7 +95882,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "王慧婷",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0882",
         "grade": 3,
@@ -95903,7 +95903,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "傅祖怡",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0857",
         "time": [
@@ -95922,7 +95922,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "吳舜文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0858",
         "time": [
@@ -95942,7 +95942,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "雷芷卉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0045",
         "class": "碩博",
@@ -95963,7 +95963,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王國欽",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0046",
         "class": "碩博",
@@ -95985,7 +95985,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "雷芷卉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0047",
         "class": "碩博",
@@ -96007,7 +96007,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "麥康妮",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0006",
         "time": [
@@ -96027,7 +96027,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李晶",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0007",
         "time": [
@@ -96047,7 +96047,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "雷芷卉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0008",
         "time": [
@@ -96068,7 +96068,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "廖邕",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0009",
         "time": [
@@ -96088,7 +96088,7 @@ export default[
     "score": 1,
     "required": "必",
     "teacher": "林儷蓉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0036",
         "time": [
@@ -96108,7 +96108,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "朱文增",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0037",
         "time": [
@@ -96128,7 +96128,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王國欽",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0038",
         "time": [
@@ -96148,7 +96148,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "麥康妮",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0048",
         "grade": 1,
@@ -96169,7 +96169,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林儷蓉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0039",
         "time": [
@@ -96189,7 +96189,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "朱文增",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0049",
         "team": "A",
@@ -96211,7 +96211,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "方進義",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0050",
         "team": "B",
@@ -96233,7 +96233,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李晶",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0040",
         "time": [
@@ -96253,7 +96253,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林伯修",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0041",
         "time": [
@@ -96273,7 +96273,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林伯修",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0042",
         "time": [
@@ -96293,7 +96293,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳子軒",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0043",
         "time": [
@@ -96313,7 +96313,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "廖邕",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0044",
         "time": [
@@ -96334,7 +96334,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李懿芳 楊凱琳 吳心楷 許瑛玿 林坤誼 高文忠 賴以威",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1109,
         "grade": 1,
@@ -96356,7 +96356,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "方偉達 賴以威",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1110,
         "grade": 1,
@@ -96377,7 +96377,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "張文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1422,
         "time": [
@@ -96397,7 +96397,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "沈慶盈",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1423,
         "time": [
@@ -96418,7 +96418,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "陳杏容",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1424,
         "time": [
@@ -96438,7 +96438,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "鄭凱芸",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1425,
         "time": [
@@ -96458,7 +96458,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "張文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1426,
         "time": [
@@ -96478,7 +96478,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "莊登閔",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1427,
         "time": [
@@ -96498,7 +96498,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王永慈",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1428,
         "time": [
@@ -96518,7 +96518,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "潘淑滿",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1429,
         "time": [
@@ -96538,7 +96538,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "沈慶盈",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1430,
         "time": [
@@ -96558,7 +96558,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳杏容",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1431,
         "time": [
@@ -96578,7 +96578,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林凱元",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3087,
         "class": "大碩",
@@ -96601,7 +96601,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "江學瀅",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3088,
         "class": "大碩",
@@ -96621,7 +96621,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "薛佑廷",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3085,
         "time": [
@@ -96641,7 +96641,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "未定",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3086,
         "time": [
@@ -96660,7 +96660,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林巾力",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1686,
         "class": "碩博",
@@ -96681,7 +96681,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "林淑慧",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1687,
         "class": "碩博",
@@ -96702,7 +96702,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "林芳玫",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1688,
         "class": "碩博",
@@ -96723,7 +96723,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳玉箴",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1689,
         "class": "碩博",
@@ -96744,7 +96744,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "曾秀萍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1690,
         "class": "碩博",
@@ -96765,7 +96765,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "劉承賢",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1691,
         "class": "碩博",
@@ -96787,7 +96787,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "伊恩羅文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3357,
         "class": "碩博",
@@ -96808,7 +96808,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳龍廷",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1692,
         "class": "碩博",
@@ -96829,7 +96829,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "呂美親",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1693,
         "class": "碩博",
@@ -96850,7 +96850,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "莊佳穎",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1684,
         "time": [
@@ -96870,7 +96870,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "許俊雅",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1685,
         "time": [
@@ -96890,7 +96890,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "林淑慧",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1984,
         "grade": 3,
@@ -96910,7 +96910,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "林芳玫",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1978,
         "grade": 2,
@@ -96930,7 +96930,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "曾秀萍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1985,
         "grade": 3,
@@ -96950,7 +96950,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "莊佳穎",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1972,
         "grade": 1,
@@ -96971,7 +96971,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "許慧如",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1973,
         "grade": 1,
@@ -96992,7 +96992,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "劉承賢",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1979,
         "grade": 2,
@@ -97012,7 +97012,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "林巾力",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1980,
         "grade": 2,
@@ -97032,7 +97032,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "陳玉箴",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1986,
         "grade": 3,
@@ -97052,7 +97052,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "蔡惠名",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1974,
         "team": "A",
@@ -97074,7 +97074,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "蔡惠名",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1975,
         "team": "B",
@@ -97096,7 +97096,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "蔡惠名",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1987,
         "grade": 3,
@@ -97116,7 +97116,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "賴文英",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1981,
         "grade": 2,
@@ -97136,7 +97136,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "劉承賢",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1988,
         "grade": 3,
@@ -97156,7 +97156,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "石牧民",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1991,
         "grade": 4,
@@ -97176,7 +97176,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "賴文英",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1989,
         "grade": 3,
@@ -97196,7 +97196,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "石牧民",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1990,
         "grade": 3,
@@ -97216,7 +97216,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "石牧民",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1982,
         "grade": 2,
@@ -97236,7 +97236,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳龍廷",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1976,
         "grade": 1,
@@ -97257,7 +97257,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "劉定綱",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1992,
         "grade": 4,
@@ -97277,7 +97277,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "呂美親",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1983,
         "grade": 2,
@@ -97297,7 +97297,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "王秀容",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1977,
         "grade": 1,
@@ -97319,7 +97319,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "伊恩羅文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3356,
         "grade": 1,
@@ -97340,7 +97340,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "王秀容",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1971,
         "time": [
@@ -97359,7 +97359,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "胡翠君",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": "0907",
         "grade": 1,
@@ -97380,7 +97380,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳志豪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1994,
         "class": "大碩",
@@ -97400,7 +97400,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳宗仁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1694,
         "time": [
@@ -97420,7 +97420,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "新田龍希",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3347,
         "time": [
@@ -97440,7 +97440,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "翁佳音",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1695,
         "time": [
@@ -97460,7 +97460,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳佳宏",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1696,
         "time": [
@@ -97480,7 +97480,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "張素玢",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1697,
         "time": [
@@ -97500,7 +97500,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "張素玢 陳志豪",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1698,
         "time": [
@@ -97520,7 +97520,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蔡錦堂",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1699,
         "time": [
@@ -97540,7 +97540,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "謝仕淵",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1700,
         "time": [
@@ -97560,7 +97560,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "張素玢",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3301,
         "time": [
@@ -97581,7 +97581,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "康培德 林聖欽 韋煙灶",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1701,
         "time": [
@@ -97601,7 +97601,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "新田龍希",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3348,
         "time": [
@@ -97621,7 +97621,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "康培德",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1993,
         "time": [
@@ -97640,7 +97640,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳子瑋",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1663,
         "class": "碩博",
@@ -97661,7 +97661,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李根芳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1664,
         "class": "碩博",
@@ -97682,7 +97682,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳子瑋",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1665,
         "class": "碩博",
@@ -97703,7 +97703,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "鄭永康",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1666,
         "class": "碩博",
@@ -97724,7 +97724,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "胡宗文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1667,
         "class": "碩博",
@@ -97745,7 +97745,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "鄭永康",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1668,
         "class": "碩博",
@@ -97766,7 +97766,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "陳子瑋 賴慈芸",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1967,
         "team": "A",
@@ -97787,7 +97787,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "詹柏勻 未定",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1968,
         "team": "B",
@@ -97808,7 +97808,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "未定",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1969,
         "class": "大碩",
@@ -97828,7 +97828,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蔡嘉瑩",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1970,
         "class": "大碩",
@@ -97848,7 +97848,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李奭學",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1588,
         "time": [
@@ -97868,7 +97868,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "李根芳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1589,
         "time": [
@@ -97888,7 +97888,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "廖柏森",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1590,
         "time": [
@@ -97908,7 +97908,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "汝明麗 葉泰民",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3282,
         "grade": 2,
@@ -97929,7 +97929,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "廖柏森",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1669,
         "grade": 1,
@@ -97950,7 +97950,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳碧珠",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1670,
         "grade": 1,
@@ -97971,7 +97971,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "胡宗文",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1671,
         "grade": 1,
@@ -97992,7 +97992,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "李根芳",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1672,
         "grade": 1,
@@ -98013,7 +98013,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳子瑋 蔡嘉瑩",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1673,
         "grade": 1,
@@ -98034,7 +98034,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "汝明麗",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1678,
         "grade": 2,
@@ -98055,7 +98055,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "蘇正隆",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1674,
         "grade": 1,
@@ -98076,7 +98076,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "賴慈芸",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1679,
         "grade": 2,
@@ -98097,7 +98097,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "鄭永康",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1680,
         "grade": 2,
@@ -98118,7 +98118,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "汝明麗",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1675,
         "grade": 1,
@@ -98139,7 +98139,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "范大龍",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1676,
         "grade": 1,
@@ -98160,7 +98160,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳子瑋",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1681,
         "grade": 2,
@@ -98181,7 +98181,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "汝明麗",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1682,
         "grade": 2,
@@ -98202,7 +98202,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蔡嘉瑩",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1683,
         "grade": 2,
@@ -98223,7 +98223,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳珮馨",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1677,
         "grade": 1,
@@ -98244,7 +98244,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃明仁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3196,
         "class": "大碩",
@@ -98264,7 +98264,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "鄧建國",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3144,
         "class": "碩博",
@@ -98285,7 +98285,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "伊彬 梁桂嘉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3094,
         "time": [
@@ -98305,7 +98305,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "梁桂嘉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3095,
         "time": [
@@ -98325,7 +98325,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林俊良",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3096,
         "time": [
@@ -98345,7 +98345,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "伊彬",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3136,
         "time": [
@@ -98365,7 +98365,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "何清輝",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3137,
         "time": [
@@ -98385,7 +98385,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王千睿",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3138,
         "time": [
@@ -98405,7 +98405,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林俊良",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3139,
         "time": [
@@ -98425,7 +98425,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "施令紅",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3140,
         "time": [
@@ -98445,7 +98445,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "黃心健",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3141,
         "time": [
@@ -98465,7 +98465,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "梁桂嘉",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3142,
         "time": [
@@ -98485,7 +98485,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "伊彬",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3143,
         "time": [
@@ -98506,7 +98506,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "長友大輔",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3197,
         "grade": 1,
@@ -98527,7 +98527,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "施令紅",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3198,
         "grade": 1,
@@ -98548,7 +98548,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "林俊良",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3199,
         "team": "A",
@@ -98571,7 +98571,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "薛佑廷",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3200,
         "team": "B",
@@ -98593,7 +98593,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "廖偉民",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3201,
         "team": "A",
@@ -98615,7 +98615,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "蘇瀚",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3202,
         "team": "B",
@@ -98637,7 +98637,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "劉建成",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3206,
         "grade": 2,
@@ -98658,7 +98658,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "蘇文清",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3222,
         "grade": 3,
@@ -98679,7 +98679,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "林玠里",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3223,
         "grade": 3,
@@ -98700,7 +98700,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "伊彬",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3203,
         "team": "A",
@@ -98722,7 +98722,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "許和捷",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3204,
         "team": "B",
@@ -98744,7 +98744,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林俊良",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3224,
         "grade": 3,
@@ -98765,7 +98765,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "薛佑廷",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3225,
         "grade": 3,
@@ -98786,7 +98786,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "劉大章",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3226,
         "grade": 3,
@@ -98807,7 +98807,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "薛佑廷",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3207,
         "grade": 2,
@@ -98828,7 +98828,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳漢元",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3208,
         "grade": 2,
@@ -98849,7 +98849,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "廖偉民",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3231,
         "team": "A",
@@ -98871,7 +98871,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "鄧建國",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3232,
         "team": "B",
@@ -98893,7 +98893,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "呂奇駿",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3227,
         "grade": 3,
@@ -98914,7 +98914,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "王俊博",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3316,
         "time": [
@@ -98935,7 +98935,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "鄧建國",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3209,
         "grade": 2,
@@ -98957,7 +98957,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "長友大輔",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3210,
         "grade": 2,
@@ -98978,7 +98978,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "施令紅",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3211,
         "grade": 2,
@@ -98999,7 +98999,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "薛佑廷",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3212,
         "grade": 2,
@@ -99020,7 +99020,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "劉大章",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3213,
         "grade": 2,
@@ -99041,7 +99041,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳思穎",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3214,
         "grade": 2,
@@ -99062,7 +99062,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "陳佳宏",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3215,
         "grade": 2,
@@ -99083,7 +99083,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "李延祥",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3216,
         "grade": 2,
@@ -99104,7 +99104,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "呂奇駿",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3228,
         "grade": 3,
@@ -99125,7 +99125,7 @@ export default[
     "score": 6,
     "required": "必",
     "teacher": "梁桂嘉 王千睿",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3229,
         "grade": 3,
@@ -99146,7 +99146,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "林玠里",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3217,
         "grade": 2,
@@ -99168,7 +99168,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "周育潤",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3218,
         "grade": 2,
@@ -99189,7 +99189,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "莊澤光",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3219,
         "grade": 2,
@@ -99210,7 +99210,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "長友大輔",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3230,
         "grade": 3,
@@ -99231,7 +99231,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "蘇瀚",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3220,
         "grade": 2,
@@ -99252,7 +99252,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "蘇文清 王千睿",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3192,
         "time": [
@@ -99272,7 +99272,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "王千睿",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3233,
         "grade": 4,
@@ -99294,7 +99294,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "黃心健",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3193,
         "time": [
@@ -99314,7 +99314,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "廖偉民",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3194,
         "time": [
@@ -99334,7 +99334,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "蘇瀚",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3205,
         "grade": 1,
@@ -99355,7 +99355,7 @@ export default[
     "score": 2,
     "required": "選",
     "teacher": "蘇瀚",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3221,
         "grade": 2,
@@ -99376,7 +99376,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "范日奎",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 3195,
         "time": [
@@ -99396,7 +99396,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "呂有豐",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1332,
         "grade": 1,
@@ -99417,7 +99417,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "白凱仁",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1333,
         "grade": 1,
@@ -99439,7 +99439,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "劉華棟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1334,
         "grade": 1,
@@ -99460,7 +99460,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "洪翊軒",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1336,
         "grade": 2,
@@ -99481,7 +99481,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "陳韋任",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1337,
         "grade": 2,
@@ -99501,7 +99501,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "陳美勇",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1338,
         "grade": 3,
@@ -99521,7 +99521,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳韋任",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1323,
         "time": [
@@ -99540,7 +99540,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "劉華棟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1324,
         "time": [
@@ -99559,7 +99559,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "陳韋任 張天立",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1325,
         "time": [
@@ -99578,7 +99578,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "鄧敦平",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1326,
         "time": [
@@ -99597,7 +99597,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "林湛喬",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1327,
         "time": [
@@ -99616,7 +99616,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "談光雄",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1328,
         "time": [
@@ -99635,7 +99635,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "劉華棟",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1329,
         "time": [
@@ -99654,7 +99654,7 @@ export default[
     "score": 3,
     "required": "選",
     "teacher": "呂有豐 鄧敦平 洪翊軒 陳韋任 白凱仁 劉華棟 張俊興",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1330,
         "time": [
@@ -99674,7 +99674,7 @@ export default[
     "score": 2,
     "required": "必",
     "teacher": "呂有豐 鄧敦平 洪翊軒 陳韋任 白凱仁 劉華棟 張俊興",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1331,
         "time": [
@@ -99693,7 +99693,7 @@ export default[
     "score": 3,
     "required": "必",
     "teacher": "張俊興",
-    "unique": [
+    "uniqueData": [
       {
         "serialCode": 1335,
         "grade": 1,

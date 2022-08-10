@@ -6,19 +6,12 @@ const col = {
     // 先不用，因為用code是方便多語言/換名稱，但用i18n也能辦到
     // c: { type: Number, required: true, alias: 'code' },
     n: { type: String, required: true, alias: 'name' },
-    r: { type: String, required: true, alias: 'required' },
+    r: { type: Boolean, required: true, alias: 'required' },
     // 代碼表示: 1單行文字 2多行文字 3數字 4範圍 5單選 6多選 0Boolean  
-    t: { type: Number, required: true, alias: 'type' }
+    t: { type: Number, required: true, alias: 'type', enum: [0, 1, 2, 3, 4, 5, 6] },
+    d: { type: String, alias: 'default' }
   }], default: undefined, _id: false,
 }
-const datas = {
-  // 對應欄位+附值(任意格式，程式處理成可用)
-  type: [{
-    n: { type: String, required: true, alias: 'name' },
-    d: { type: [mongoose.Mixed], alias: 'data' },
-  }], default: undefined, _id: false
-}
-
 
 // sort/nestedCol則顯示欄位
 const display = (type) => {
@@ -67,13 +60,12 @@ const article = new mongoose.Schema({
   // 程式抓版不重複供選擇,填上代表必填
 })
 
-
 const schema = new mongoose.Schema({
   title: {
     type: String,
     required: [true, '必填版名'],
-    minlength: [3, '必須 3 個字以上'],
-    maxlength: [20, '必須 20 個字以下'],
+    minlength: [2, '必須 2 個字以上'],
+    maxlength: [50, '必須 50 個字以下'],
   },
   intro: {
     type: String,
@@ -92,8 +84,8 @@ const schema = new mongoose.Schema({
   // 抓取母板規則:(不一定有)
   beScored: rate('articles'),
   // 抓取母板規則:使用者要填對應的內容，就像填表單
-  colData: datas,
-  uniqueData: datas,
+  colData: { type: [mongoose.Mixed], default: undefined },
+  uniqueData: { type: [mongoose.Mixed], default: undefined },
   // ---------------------------------------------------------------
   childBoard: {
     active: { type: Boolean, required: true },
