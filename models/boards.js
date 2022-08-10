@@ -77,8 +77,8 @@ const schema = new mongoose.Schema({
   },
   intro: {
     type: String,
-    required: [true, '必填內容'],
-    minlength: [5, '必須 5 個字以上'],
+    // required: [true, '必填內容'],
+    // minlength: [5, '必須 5 個字以上'],
     maxlength: [1000, '必須 1000 個字以下'],
   },
   parent: {

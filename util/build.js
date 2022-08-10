@@ -11,7 +11,7 @@ const translate = [
   ["組", "team"],
   ["年", "grade"],
   ["班", "class"],
-  ["全英語", "English"],
+  ["全英語", "english"],
   ["限性別", "gender"],
   // 
   ["中文課程名稱", "className"],
