@@ -7,8 +7,9 @@ const col = {
     // c: { type: Number, required: true, alias: 'code' },
     n: { type: String, required: true, alias: 'name' },
     r: { type: Boolean, required: true, alias: 'required' },
-    // 代碼表示: 1單行文字 2多行文字 3數字 4範圍 5單選 6多選 0Boolean  
-    t: { type: Number, required: true, alias: 'type', enum: [0, 1, 2, 3, 4, 5, 6] },
+    // 代碼表示: 1單行文字 2多行文字 3數字  5單選 6多選 0Boolean  
+    t: { type: Number, required: true, alias: 'type', enum: [0, 1, 2, 3, 4, 5, 6, 7] },
+    o: { type: mongoose.Mixed, alias: 'others' },
     d: { type: String, alias: 'default' }
   }], default: undefined, _id: false,
 }
@@ -112,4 +113,5 @@ const schema = new mongoose.Schema({
   }
 }, { versionKey: false, timestamps: { createdAt: 'created_at', updatedAt: false } })
 
+schema.index({ parent: 1, type: -1 })
 export default mongoose.model('boards', schema)

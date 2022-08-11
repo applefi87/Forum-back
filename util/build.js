@@ -1,36 +1,17 @@
 import csv from './original.js'
-// import group from '../group.js'
+import translate from '../translateForm/school.js'
 import _ from 'lodash'
 import fs from 'fs'
-
 // 把中文key轉英文(統一)
-const translate = [
-  ["開課序號", 'serialCode'],
-  ["開課代碼", 'classCode'],
-  ["系所", "department"],
-  ["組", "team"],
-  ["年", "grade"],
-  ["班", "class"],
-  ["全英語", "english"],
-  ["限性別", "gender"],
-  // 
-  ["中文課程名稱", "className"],
-  ["英文課程名稱", "classNameEng"],
-  ["學分", 'score'],
-  ["必/選", "required"],
-  ["教師", "teacher"],
-  // 
-  ["地點時間", "timeLocation"],
-  // 並非必要但可能引誤會 先刪除限修人數
-  ["限修條件", "condition"],
-  ["備註", "others"]]
+import codeList from '../translateForm/school.js'
 
 // 分組前，同一組的資料可以省去，用idx來控制(方便)，用陣列名來刪除(才穩定) (之後也可直接全手打)
-const dataCol = [1, 2, 6, 8, 9, 10, 11, 12]
-const dataKey = []
-for (let colNum in dataCol) {
-  dataKey.push(translate[dataCol[colNum]][1])
-}
+// const dataCol = [1, 2, 6, 8, 9, 10, 11, 12]
+// const dataKey = []
+// for (let colNum in dataCol) {
+//   dataKey.push(translate[dataCol[colNum]][1])
+// }
+const dataKey = ["department", 'classCode', "english", "className", "classNameEng", 'score', "required", "teacher", "semester"]
 
 const toEnglish = csv.map(obj => {
   const ok = {}

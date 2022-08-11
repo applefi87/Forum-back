@@ -7,6 +7,7 @@ import formatValid from '../middleware/formatValid.js'
 import {
   createBoard,
   createRoot,
+  getBoard
 } from '../controllers/boards.js'
 
 const router = express.Router()
@@ -14,9 +15,8 @@ const router = express.Router()
 // 身分核可>格式母版檢查OK>post
 router.post('/create/:id', auth.jwt, admin, formatValid, createBoard)
 router.post('/createRoot', auth.jwt, admin, createRoot)
-// router.get('/', getProducts)
+router.post('/:id', getBoard)
 // router.get('/all', auth.jwt, admin, getAllProducts)
-// router.get('/:id', getProduct)
 // router.patch('/:id', content('multipart/form-data'), auth.jwt, admin, upload, editProduct)
 
 export default router
