@@ -113,5 +113,5 @@ const schema = new mongoose.Schema({
   }
 }, { versionKey: false, timestamps: { createdAt: 'created_at', updatedAt: false } })
 
-schema.index({ parent: 1, type: -1 })
+schema.index({ parent: 1, "colData.c0": 1,"beScored.score":-1 })
 export default mongoose.model('boards', schema)
