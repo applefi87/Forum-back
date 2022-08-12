@@ -9,29 +9,27 @@ export default async (req, res, next) => {
   const parent = await boards.findById(req.params.id)
   if (!parent) return res.status(403).send({ success: false, message: '找無該母版' })
   const out = []
-
   // *******************************************
-
-  for (let c of file.slice(999, 1010)) {
+  for (let c of file.slice(2999, 3050)) {
     const form = {
       // 限20字
       "title": c.className.split(' [')[0].slice(0, 20),
       "parent": req.body.parent,
       // "uniqueData": c.uniqueData,
       "childBoard": {
-        "active": false,
+        "active": false
       }
     }
     // ***宣告存兩個欄位用的變數**
     const pDataCol = parent.childBoard.rule.dataCol
-    form.colData = []
+    form.colData = {}
     const pUniqueCol = parent.childBoard.rule.uniqueCol
     form.uniqueData = []
     // 把colData, uniqueData一起用同個代碼判斷規則 但比較..不好懂000
     for (const col of ['colData', 'uniqueData']) {
       for (let it of col === 'uniqueData' ? c.uniqueData : ["once"]) {
         // 只有uniqueData會用到
-        const itData = []
+        const itData = {}
         // ----------開始區分
         for (let rule of col === 'uniqueData' ? pUniqueCol : pDataCol) {
           // 母版的規則其他參數
@@ -81,11 +79,8 @@ export default async (req, res, next) => {
               default:
                 return res.status(403).send({ success: false, message: "其他" + "母版規則格式錯誤:" + rule.t + ":" + data })
             }
-            console.log(codeList.findIndex((arr) => { console.log(arr[1] + "*" + rule.n); return arr[1] === rule.n }));
-            // 完成把母版ok的加進去
-            console.log(codeList[codeList.findIndex((arr) => arr[1] === rule.n)]);
             const key = codeList[codeList.findIndex((arr) => arr[1] === rule.n)][2]
-            col === 'uniqueData' ? itData.push({ [key]: data }) : form.colData.push({ [key]: data })
+            col === 'uniqueData' ? (itData[key] = data) : (form.colData[key] = data)
           }
         }
         col === 'uniqueData' ? form.uniqueData.push(itData) : null
@@ -93,6 +88,8 @@ export default async (req, res, next) => {
     }
     out.push(form)
   }
+  req.parent = parent
+  console.log(parent.childBoard.rule.display.filter.dataCol.c0);
   req.boardList = out
   next()
 }
