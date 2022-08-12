@@ -2,7 +2,8 @@ import express from 'express'
 // import content from '../middleware/content.js'
 import * as auth from '../middleware/auth.js'
 import admin from '../middleware/admin.js'
-import formatValid from '../middleware/formatValid.js'
+import boardFormatValid from '../middleware/boardFormatValid.js'
+import getBoardValid from '../middleware/getBoardValid.js'
 // import upload from '../middleware/upload.js'
 import {
   createBoard,
@@ -13,9 +14,9 @@ import {
 const router = express.Router()
 
 // 身分核可>格式母版檢查OK>post
-router.post('/create/:id', auth.jwt, admin, formatValid, createBoard)
+router.post('/create/:id', auth.jwt, admin, boardFormatValid, createBoard)
 router.post('/createRoot', auth.jwt, admin, createRoot)
-router.post('/:id', getBoard)
+router.post('/:id',getBoardValid, getBoard)
 // router.get('/all', auth.jwt, admin, getAllProducts)
 // router.patch('/:id', content('multipart/form-data'), auth.jwt, admin, upload, editProduct)
 
