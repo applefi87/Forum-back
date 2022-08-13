@@ -43,6 +43,8 @@ export const createRoot = async (req, res) => {
 
 export const getBoard = async (req, res) => {
   try {
+    const parent = await boards.findById(req.params.id)
+    parent.childBoard.rule.display.filter.dataCol.c0
     const result = await products.find({ sell: true })
     res.status(200).send({ success: true, message: '', result })
   } catch (error) {
