@@ -18,7 +18,9 @@ router.post('/create/temp/:id', auth.jwt, admin, boardFormatValid, createBoard)
 // 創建不用審核的母版(之後限特定身分)
 router.post('/createRoot', auth.jwt, admin, createRoot)
 // 取得板塊資料(含左方篩選欄+子版清單+文章)
-router.post('/:id-:search-:filter-:sort',getBoardValid, getBoard)
+// 多參數不知為何不能用
+// router.post('/:id-:search-:filter-:sort',getBoardValid, getBoard)
+router.post('/:id',getBoardValid, getBoard)
 // router.get('/all', auth.jwt, admin, getAllProducts)
 // router.patch('/:id', content('multipart/form-data'), auth.jwt, admin, upload, editProduct)
 
