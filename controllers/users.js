@@ -8,11 +8,12 @@ import jwt from 'jsonwebtoken'
 
 
 export const register = async (req, res) => {
-  // 這段怪怪的QQ
-  if (!req.mail.isSchool) {
-    res.status(403).send({ success: false, message: { title: '請使用學校信箱' } })
-    return
-  }
+
+  // 記得改回來
+  // if (!req.mail.isSchool) {
+  //   res.status(403).send({ success: false, message: { title: '請使用學校信箱' } })
+  //   return
+  // }
   // *******驗證帳號與暱稱
   const findUser = await users.findOne({ account: req.body.account })
   if (findUser) {
@@ -137,7 +138,7 @@ export const setPWD = async (req, res) => {
     const createCode = randomPWD(8, 'medium')
     //需要加上臨時密碼
     const tempPWD = bcrypt.hashSync(createCode, 10)
-    const user = await users.findOne({ _id: req.mail.user }).select(['account','securityData.password'])
+    const user = await users.findOne({ _id: req.mail.user }).select(['account', 'securityData.password'])
     user.securityData.password = tempPWD
     user.securityData.tokens = []
     user.save()
@@ -162,7 +163,7 @@ export const setPWD = async (req, res) => {
 export const changePWD = async (req, res) => {
   console.log('incontroller changePWD');
   try {
-    const user = await users.findOne({ _id: req.user._id }).select(['account','securityData.password'])
+    const user = await users.findOne({ _id: req.user._id }).select(['account', 'securityData.password'])
     user.securityData.password = bcrypt.hashSync(req.body.newPWD, 10)
     user.securityData.tokens = []
     user.save()

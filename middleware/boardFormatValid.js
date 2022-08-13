@@ -88,8 +88,12 @@ export default async (req, res, next) => {
     }
     out.push(form)
   }
+  parent.childBoard.rule.display.filter.dataCol.c0 = ['地科系（學）', '歐文所（碩）', '競技系（碩）', '競技系（學）']
+  const ou = await parent.save()
+  console.log(ou.childBoard.rule.display.filter.dataCol);
   req.parent = parent
-  console.log(parent.childBoard.rule.display.filter.dataCol.c0);
+  const pt = await boards.findById(req.params.id)
+  console.log(pt.childBoard.rule.display.filter.dataCol.c0);
   req.boardList = out
   next()
 }

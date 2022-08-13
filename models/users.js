@@ -58,7 +58,8 @@ const schema = new mongoose.Schema({
       // 1 使用者 0 管理員
       enum: [0, 1, 2]
     },
-    schoolEmail: emailSchema('school'),
+    // 記得改回 schoolEmail: emailSchema('school'),
+    schoolEmail: emailSchema(),
     // email: emailSchema(),
     tokens: {
       type: [String]
