@@ -14,7 +14,7 @@ export default async (req, res, next) => {
     const form = {
       // 限20字
       "title": c.className.split(' [')[0].slice(0, 20),
-      "parent": req.body.parent,
+      "parent": req.params.id,
       // "uniqueData": c.uniqueData,
       "childBoard": {
         "active": false
