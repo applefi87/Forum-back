@@ -43,10 +43,10 @@ export const createRoot = async (req, res) => {
 
 export const getBoard = async (req, res) => {
   try {
-
-    const childBoards = boards.find({ parent: req.params.id, 'colData.c0': req.filter })
+    const childBoards = await boards.find({ parent: req.params.id, 'colData.c0': req.filter })
     res.status(200).send({ success: true, message: '', result: childBoards })
   } catch (error) {
+    console.log(error);
     res.status(500).send({ success: false, message: '伺服器錯誤' })
   }
 }
