@@ -43,7 +43,9 @@ export const createRoot = async (req, res) => {
 
 export const getBoard = async (req, res) => {
   try {
-    const childBoards = await boards.find({ parent: req.params.id, 'colData.c0': req.filter })
+    // 只拿會在母版table顯示/用來排序的欄位 就好
+
+    const childBoards = await boards.find(req.condition, "title beScored colData")
     res.status(200).send({ success: true, message: '', result: childBoards })
   } catch (error) {
     console.log(error);
