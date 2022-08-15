@@ -2,13 +2,12 @@ import boards from '../models/boards.js'
 
 export const createBoard = async (req, res) => {
   try {
-    // 為了最高效率處理過濾的filter清單，而上傳資料似乎不會立刻index排序抓取
-    // 所以先抓之前的選取清單，再把新加入的新的加進去並更新
+    console.log("in Controller createBoard");
+    // 抓之前的filter清單，再把新加入的加進去更新，省效能
     const pFilter = req.parent.childBoard.rule.display.filter
     let filterList = new Set(pFilter.dataCol.c0)
     let repeat = new Set()
     const result = await boards.create(req.boardList)
-    console.log('ok');
     result.forEach(board => {
       // 取出所有欄位的資料
       const item = board.colData.c0
@@ -16,9 +15,10 @@ export const createBoard = async (req, res) => {
     })
     // 把取出來不重複清單存回去
     pFilter.dataCol.c0 = [...filterList]
-    const up = await req.parent.save()
-    console.log(up.childBoard.rule.display.filter.dataCol.c0);
-    res.status(200).send({ success: true, message: '', result: up })
+    // 要這樣通知才能更新mixed
+    req.parent.markModified('childBoard.rule.display.filter.dataCol')
+    const list = await req.parent.save()
+    res.status(200).send({ success: true, message: '', result: list })
   } catch (error) {
     console.log(error);
     if (error.name === 'ValidationError') {

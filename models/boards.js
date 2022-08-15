@@ -27,7 +27,7 @@ const display = (type) => {
     rule.filter = {
       // ex:系別
       // 預計 C0:[111-1,110-1,110-2]
-      dataCol: {},
+      dataCol: mongoose.Mixed,
       // ex 學期+時間
       uniqueCol: mongoose.Mixed
       // 先改成限定要有清單的才可過濾(用板定的選項就好)

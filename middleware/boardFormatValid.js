@@ -10,7 +10,7 @@ export default async (req, res, next) => {
   if (!parent) return res.status(403).send({ success: false, message: '找無該母版' })
   const out = []
   // *******************************************
-  for (let c of file.slice(2999, 3050)) {
+  for (let c of file.slice(2500, 2580)) {
     const form = {
       // 限20字
       "title": c.className.split(' [')[0].slice(0, 20),
@@ -88,12 +88,7 @@ export default async (req, res, next) => {
     }
     out.push(form)
   }
-  parent.childBoard.rule.display.filter.dataCol.c0 = ['地科系（學）', '歐文所（碩）', '競技系（碩）', '競技系（學）']
-  const ou = await parent.save()
-  console.log(ou.childBoard.rule.display.filter.dataCol);
   req.parent = parent
-  const pt = await boards.findById(req.params.id)
-  console.log(pt.childBoard.rule.display.filter.dataCol.c0);
   req.boardList = out
   next()
 }
