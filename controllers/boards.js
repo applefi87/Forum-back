@@ -17,12 +17,12 @@ export const createBoard = async (req, res) => {
     })
     // 把取出來不重複清單存回去
     pFilter.dataCol.c0 = [...filterList]
-    console.log("完成filter清單(計算不到0.01秒)");
+    console.log("完成filter清單");
     // 要這樣通知才能更新mixed
     req.parent.markModified('childBoard.rule.display.filter.dataCol')
-    const list = await req.parent.save()
-    console.log("儲存完成");
-    res.status(200).send({ success: true, message: '', result: list })
+    await req.parent.save()
+    console.log("filter list updated");
+    res.status(200).send({ success: true, message: '', result })
   } catch (error) {
     console.log(error);
     if (error.name === 'ValidationError') {

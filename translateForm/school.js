@@ -17,5 +17,5 @@ export default [
   ["備註", "others", "c75"],
   ["學期", "semester", "c80"],
   ["時間", "time", "c85"],
-  ["地點", "location", "90"]]
+  ["地點", "location", "c90"]]
     // 並非必要但可能引誤會 先刪除限修人數

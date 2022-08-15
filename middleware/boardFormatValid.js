@@ -1,4 +1,4 @@
-import file from '../classesOut.js'
+import file from '../translateForm/classesOut.js'
 import boards from '../models/boards.js'
 import codeList from '../translateForm/school.js'
 
