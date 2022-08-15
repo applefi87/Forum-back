@@ -44,12 +44,87 @@ export const createRoot = async (req, res) => {
     }
   }
 }
-
 export const getBoard = async (req, res) => {
   try {
+    const board = await boards.findById(req.params.id)
+    res.status(200).send({ success: true, message: '', result: childBoards })
+    console.log("end");
+  } catch (error) {
+    console.log(error);
+    res.status(500).send({ success: false, message: '伺服器錯誤' })
+  }
+}
+export const getChildBoards = async (req, res) => {
+  try {
+    const uri = 'https://mozilla.org/?test=' + JSON.stringify({
+      "filterData": [
+        {
+          "col": "c0",
+          "text": "生科系（學）",
+          "all": true
+        }
+      ],
+      "filterUnique": [
+        {
+          "col": "c80",
+          "text": "111-1"
+        }
+      ],
+      "search": [
+        {
+          "col": "c40",
+          "text": "生物"
+        }
+      ]
+    });
+    // const encoded = encodeURI(uri);
+    // console.log(encoded);
+    const filter = JSON.parse(decodeURI(req.query.test))
+    console.log(filter);
+    // 先處理過濾內容
+    const condition = { parent: req.params.id }
+    // 如果主要filter欄c0沒被宣告過，給預設(下方有宣告就會改false)
+    let defaultFilter = true
+    // 使用者有輸入內容直接去資料庫查詢即可(打錯就找不到)
+    if (filter.filterData.length > 0) {
+      filter.filterData.forEach(filter => {
+        // 欄位要有字串非空值 + 要有過濾/全部 才算有效
+        if (filter.col && typeof filter.col === "string" && (filter.text || filter.all)) {
+          // 有宣告過，不用預設值
+          if (filter.col === "c0") { defaultFilter = false }
+          // 要有過濾 || 全部就不用篩
+          if (!filter.all) {
+            condition['colData.' + filter.col] = filter.text
+          }
+        }
+      })
+    }
+    // 沒宣告過加上默認過濾
+    if (defaultFilter) {
+      condition['colData.' + "c0"] = board.childBoard.rule.display.filter.dataCol.c0[0]
+    }
+    // 同 輪到unique的欄位 
+    if (filter.filterUnique?.length > 0) {
+      filter.filterUnique.forEach(filter => {
+        if (filter.col && typeof filter.col === "string" && (filter.text || filter.all)) {
+          if (!filter.all) {
+            condition['uniqueData.' + filter.col] = filter.text
+          }
+        }
+      })
+    }
+    // 同 輪到search的欄位(目前只一個，保留彈性用array包)
+    // 沒有search.all
+    if (filter.search?.length > 0) {
+      filter.search.forEach(search => {
+        if (search.col && typeof search.col === "string" && search.text) {
+          condition['colData.' + search.col] = RegExp(search.text, "i")
+        }
+      })
+    }
     // 只拿會在母版table顯示/用來排序的欄位 就好
     console.log("進Controller");
-    const childBoards = await boards.find(req.condition, "title beScored colData")
+    const childBoards = await boards.find(condition, "title beScored colData")
     res.status(200).send({ success: true, message: '', result: childBoards })
     console.log("end");
   } catch (error) {

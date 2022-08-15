@@ -8,7 +8,8 @@ import getBoardValid from '../middleware/getBoardValid.js'
 import {
   createBoard,
   createRoot,
-  getBoard
+  getBoard,
+  getChildBoards
 } from '../controllers/boards.js'
 
 const router = express.Router()
@@ -19,9 +20,8 @@ router.post('/create/temp/:id', auth.jwt, admin, boardFormatValid, createBoard)
 router.post('/createRoot', auth.jwt, admin, createRoot)
 // 取得板塊資料(含左方篩選欄+子版清單+文章)
 // 主要在過濾+搜尋的部分(sort先放在用戶端排)
-// 多參數不知為何不能用
-// router.post('/:id-:search-:filter-:sort',getBoardValid, getBoard)
 router.post('/:id',getBoardValid, getBoard)
+router.post('/childs/:id',getBoardValid, getChildBoards)
 // router.get('/all', auth.jwt, admin, getAllProducts)
 // router.patch('/:id', content('multipart/form-data'), auth.jwt, admin, upload, editProduct)
 
