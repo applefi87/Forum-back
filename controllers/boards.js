@@ -2,12 +2,14 @@ import boards from '../models/boards.js'
 
 export const createBoard = async (req, res) => {
   try {
+    // 這裡clg很多因為要測哪裡跑最久 就是上傳mongoDB最久
     console.log("in Controller createBoard");
+    const result = await boards.create(req.boardList)
+    console.log("boards created");
     // 抓之前的filter清單，再把新加入的加進去更新，省效能
     const pFilter = req.parent.childBoard.rule.display.filter
     let filterList = new Set(pFilter.dataCol.c0)
     let repeat = new Set()
-    const result = await boards.create(req.boardList)
     result.forEach(board => {
       // 取出所有欄位的資料
       const item = board.colData.c0
@@ -15,9 +17,11 @@ export const createBoard = async (req, res) => {
     })
     // 把取出來不重複清單存回去
     pFilter.dataCol.c0 = [...filterList]
+    console.log("完成filter清單(計算不到0.01秒)");
     // 要這樣通知才能更新mixed
     req.parent.markModified('childBoard.rule.display.filter.dataCol')
     const list = await req.parent.save()
+    console.log("儲存完成");
     res.status(200).send({ success: true, message: '', result: list })
   } catch (error) {
     console.log(error);
