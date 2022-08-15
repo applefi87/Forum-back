@@ -17,7 +17,6 @@ export default async (req, res, next) => {
       // 欄位要有字串非空值 + 要有過濾/全部 才算有效
       if (filter.col && typeof filter.col === "string" && (filter.text || filter.all)) {
         if (filter.col === "c0") { defaultFilter = false }
-        console.log("ok");
         // 要有過濾 || 全部就不用篩
         if (!filter.all) {
           condition['colData.' + filter.col] = filter.text
@@ -31,7 +30,7 @@ export default async (req, res, next) => {
   }
 
   // 同 輪到unique的欄位 
-  if (req.body.filterUnique.length > 0) {
+  if (req.body.filterUnique?.length > 0) {
     req.body.filterUnique.forEach(filter => {
       if (filter.col && typeof filter.col === "string" && (filter.text || filter.all)) {
         if (!filter.all) {
@@ -42,7 +41,7 @@ export default async (req, res, next) => {
   }
   // 同 輪到search的欄位(目前只一個，保留彈性用array包)
   // 沒有search.all
-  if (req.body.search.length > 0) {
+  if (req.body.search?.length > 0) {
     req.body.search.forEach(search => {
       if (search.col && typeof search.col === "string" && search.text) {
         condition['colData.' + search.col] = RegExp(search.text, "i")
@@ -50,6 +49,5 @@ export default async (req, res, next) => {
     })
   }
   req.condition = condition
-  console.log(condition);
   next()
 }

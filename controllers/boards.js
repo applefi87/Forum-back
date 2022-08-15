@@ -48,9 +48,10 @@ export const createRoot = async (req, res) => {
 export const getBoard = async (req, res) => {
   try {
     // 只拿會在母版table顯示/用來排序的欄位 就好
-
+    console.log("進Controller");
     const childBoards = await boards.find(req.condition, "title beScored colData")
     res.status(200).send({ success: true, message: '', result: childBoards })
+    console.log("end");
   } catch (error) {
     console.log(error);
     res.status(500).send({ success: false, message: '伺服器錯誤' })
