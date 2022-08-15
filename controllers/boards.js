@@ -47,7 +47,7 @@ export const createRoot = async (req, res) => {
 export const getBoard = async (req, res) => {
   try {
     const board = await boards.findById(req.params.id)
-    res.status(200).send({ success: true, message: '', result: childBoards })
+    res.status(200).send({ success: true, message: '', result: board })
     console.log("end");
   } catch (error) {
     console.log(error);
@@ -56,29 +56,6 @@ export const getBoard = async (req, res) => {
 }
 export const getChildBoards = async (req, res) => {
   try {
-    const uri = 'https://mozilla.org/?test=' + JSON.stringify({
-      "filterData": [
-        {
-          "col": "c0",
-          "text": "生科系（學）",
-          "all": true
-        }
-      ],
-      "filterUnique": [
-        {
-          "col": "c80",
-          "text": "111-1"
-        }
-      ],
-      "search": [
-        {
-          "col": "c40",
-          "text": "生物"
-        }
-      ]
-    });
-    // const encoded = encodeURI(uri);
-    // console.log(encoded);
     const filter = JSON.parse(decodeURI(req.query.test))
     console.log(filter);
     // 先處理過濾內容
@@ -95,7 +72,7 @@ export const getChildBoards = async (req, res) => {
           // 要有過濾 || 全部就不用篩
           if (!filter.all) {
             condition['colData.' + filter.col] = filter.text
-          }
+          } 
         }
       })
     }
