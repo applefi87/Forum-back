@@ -45,9 +45,10 @@ export const createRoot = async (req, res) => {
   }
 }
 export const getBoard = async (req, res) => {
+  console.log('in controller');
+  // console.log(req.board);
   try {
-    const board = await boards.findById(req.params.id)
-    res.status(200).send({ success: true, message: '', result: board })
+    res.status(200).send({ success: true, message: '', result: req.board })
     console.log("end");
   } catch (error) {
     console.log(error);
@@ -72,7 +73,7 @@ export const getChildBoards = async (req, res) => {
           // 要有過濾 || 全部就不用篩
           if (!filter.all) {
             condition['colData.' + filter.col] = filter.text
-          } 
+          }
         }
       })
     }
