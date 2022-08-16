@@ -56,6 +56,7 @@ export const getBoard = async (req, res) => {
   }
 }
 export const getChildBoards = async (req, res) => {
+  console.log("進Controller");
   try {
     const filter = JSON.parse(decodeURI(req.query.test))
     console.log(filter);
@@ -71,15 +72,13 @@ export const getChildBoards = async (req, res) => {
           // 有宣告過，不用預設值
           if (filter.col === "c0") { defaultFilter = false }
           // 要有過濾 || 全部就不用篩
-          if (!filter.all) {
-            condition['colData.' + filter.col] = filter.text
-          }
+          if (!filter.all) { condition['colData.' + filter.col] = filter.text }
         }
       })
     }
     // 沒宣告過加上默認過濾
     if (defaultFilter) {
-      condition['colData.' + "c0"] = board.childBoard.rule.display.filter.dataCol.c0[0]
+      condition['colData.' + "c0"] = req.board.childBoard.rule.display.filter.dataCol.c0[0]
     }
     // 同 輪到unique的欄位 
     if (filter.filterUnique?.length > 0) {
@@ -91,17 +90,18 @@ export const getChildBoards = async (req, res) => {
         }
       })
     }
+    // 目前讓前台去比對，先拔除
     // 同 輪到search的欄位(目前只一個，保留彈性用array包)
     // 沒有search.all
-    if (filter.search?.length > 0) {
-      filter.search.forEach(search => {
-        if (search.col && typeof search.col === "string" && search.text) {
-          condition['colData.' + search.col] = RegExp(search.text, "i")
-        }
-      })
-    }
+    // if (filter.search?.length > 0) {
+    //   filter.search.forEach(search => {
+    //     if (search.col && typeof search.col === "string" && search.text) {
+    //       condition['colData.' + search.col] = RegExp(search.text, "i")
+    //     }
+    //   })
+    // }
     // 只拿會在母版table顯示/用來排序的欄位 就好
-    console.log("進Controller");
+    console.log(condition);
     const childBoards = await boards.find(condition, "title beScored colData")
     res.status(200).send({ success: true, message: '', result: childBoards })
     console.log("end");
