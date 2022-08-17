@@ -67,14 +67,14 @@ const schema = new mongoose.Schema({
     enum: [0, 1, 2, 3]
   }, // ---------------------------------------------------------------
   // 1是默認評價專用區，要母板塊有開放才可選
-  category: {
-    type: Number,
-    required: [true, '缺少文章類型']
-  },
-  unique: {
+  uniqueId: {
     type: mongoose.ObjectId,
     ref: 'boards',
     required: [true, '缺少版內分類']
+  },
+  category: {
+    type: Number,
+    required: [true, '缺少文章類型']
   },
   // ---------------------------------------------------------------
   title: {
@@ -93,11 +93,11 @@ const schema = new mongoose.Schema({
     type: Number,
     required: function () { return (this.category === 1 ? [true, '缺少文章類型'] : false) }
   },
-  tag: [Number],
+  tags: [String],
   // ---------------------------------------------------------------
   // 抓取母板規則:(程式判斷)
   // 使用者要填下方分數/tag/類型/其他欄位
-  column: {
+  columns: {
     // 對應欄位+附值(任意格式，程式處理成可用)
     type: [{
       c: { type: Number, required: true, alias: 'col' },
@@ -107,9 +107,13 @@ const schema = new mongoose.Schema({
   // 
   beScored: rate('users'),
   msg1: msg('1'),// **********************系統操作，使用者無權限****************************
-  lastEditDate: {   // **********************系統操作，使用者無權限****************************
+  // lastEditDate: {   // **********************系統操作，使用者無權限****************************
+  //   type: Date,
+  //   required: true,
+  // }
+  update_at: {
     type: Date,
-    required: true,
+    required: [true, "系統應該要自動填更新時間，異常"]
   }
 }, { versionKey: false, timestamps: { createdAt: 'created_at', updatedAt: false } })
 

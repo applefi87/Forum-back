@@ -66,14 +66,15 @@ const unique = () => {
 }
 
 const article = new mongoose.Schema({
-  n: { type: String, required: true, alias: 'name' },
+  c: { type: Number, required: true, alias: 'code', unique: [true, "不可重複文章類型代碼"] },
+  n: { type: String, required: true, alias: 'name', unique: [true, "不可重複文章類型標題"] },
   intro: { type: String, required: true },
   titleCol: { type: String, required: true },
   tagActive: Boolean,
   //如果有勾tag再填
   tagOption: { type: [String], required: function () { return this.tagActive }, default: undefined },
   contentCol: { type: String, required: true },
-  col: col,
+  cols: col,
   // 程式抓版不重複供選擇,填上代表必填
 })
 

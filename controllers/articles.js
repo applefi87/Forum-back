@@ -2,7 +2,7 @@ import articles from '../models/articles.js'
 
 export const createArticle = async (req, res) => {
   try {
-    const result = await articles.create(req.body)
+    const result = await articles.create(req.form)
     res.status(200).send({ success: true, message: '', result })
   } catch (error) {
     if (error.name === 'ValidationError') {
