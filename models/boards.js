@@ -117,10 +117,8 @@ const schema = new mongoose.Schema({
     // 子版的文章規則
     article: {
       active: { type: Boolean, required: function () { return this.childBoard.active } },
-      // 是否要評價區
-      hasReview: { type: Boolean, required: function () { return this.childBoard.article.active } },
       // 大分類(評價版不用自己打，上面會判斷自動生成1評價代碼)
-      // 版見越多 要管的規則越多
+      // 版建越多 要管的規則越多
       category: {
         type: [article],
         default: undefined, _id: false
