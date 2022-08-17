@@ -5,12 +5,13 @@ import express from 'express'
 // import upload from '../middleware/upload.js'
 import {
   createArticle,
+  getArticles
 } from '../controllers/articles.js'
 
 const router = express.Router()
 
-router.post('/', createArticle)
-// router.get('/', getProducts)
+router.get('/:id', getArticles)
+router.post('/create', createArticle)
 // router.get('/all', auth.jwt, admin, getAllProducts)
 // router.get('/:id', getProduct)
 // router.patch('/:id', content('multipart/form-data'), auth.jwt, admin, upload, editProduct)

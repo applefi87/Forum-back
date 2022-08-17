@@ -4,7 +4,7 @@ import rate from './rate.js'
 const msg = (nth) => {
   let msglist = (n) => {
     const list = {
-      _id: { // **********************系統操作，使用者無權限**************************** 
+      _id: { // **********************系統操作，使用者無權限****************************  
         // this.msg.id
         type: Number,
         required: [true, '缺少留言_id'],
@@ -36,7 +36,7 @@ const msg = (nth) => {
     if (n === '1') {
       list.msg2 = msg('2')
     }
-    return mongoose.Schema(list, { timestamps: { createdAt: 'created_at'} })
+    return mongoose.Schema(list, { timestamps: { createdAt: 'created_at' } })
   }
   let items = {
     // 因為看文章很多 留言可能很少，所以算出來放著
@@ -49,10 +49,15 @@ const msg = (nth) => {
 }
 
 const schema = new mongoose.Schema({
-  parent: {
+  board: {
     type: mongoose.ObjectId,
     ref: 'boards',
     required: [true, '缺少母板']
+  },
+  unique: {
+    type: mongoose.ObjectId,
+    ref: 'articles',
+    required: [true, '缺少版內分類']
   },
   user: {
     type: mongoose.ObjectId,

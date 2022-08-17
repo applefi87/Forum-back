@@ -10,7 +10,7 @@ export default async (req, res, next) => {
   if (!parent) return res.status(403).send({ success: false, message: '找無該母版' })
   const out = []
   // *******************************************
-  for (let c of file) {
+  for (let c of file.slice(2000,2100)) {
     const form = {
       // 限20字
       "title": c.className.split(' [')[0].slice(0, 20),

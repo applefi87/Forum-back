@@ -56,6 +56,14 @@ const display = (type) => {
   }
   return rule
 }
+// 為了要_id(直接包mixed不行 的替代方案)
+const unique = () => {
+  const obj = {}
+  for (let i = 0; i <= 100; i += 5) {
+    obj['c' + i] = mongoose.Mixed
+  }
+  return new mongoose.Schema(obj)
+}
 
 const article = new mongoose.Schema({
   n: { type: String, required: true, alias: 'name' },
@@ -94,10 +102,7 @@ const schema = new mongoose.Schema({
   beScored: rate('articles'),
   // 抓取母板規則:使用者要填對應的內容，就像填表單
   colData: mongoose.Mixed,
-  uniqueData: {
-    type: [mongoose.Mixed],
-    default: undefined, _id: false
-  },
+  uniqueData: [unique()],
   // ---------------------------------------------------------------
   childBoard: {
     active: { type: Boolean, required: true },
@@ -128,3 +133,6 @@ schema.index({ parent: 1, "colData.c0": 1 })
 export default mongoose.model('boards', schema).on('index', function (err) {
   if (err) console.error(err);
 })
+
+// childBoard.article.active && childBoard.article.hasReview
+// childBoard.article.category[0].n
