@@ -8,7 +8,8 @@ import {
   createBoard,
   createRoot,
   getBoard,
-  getChildBoards
+  getChildBoards,
+  getPart
 } from '../controllers/boards.js'
 
 const router = express.Router()
@@ -20,7 +21,7 @@ router.post('/createRoot', content('application/json'), auth.jwt, admin, createR
 // 主要在過濾+搜尋的部分(sort先放在用戶端排)
 router.get('/childs/:id', getBoardValid, getChildBoards)
 router.get('/:id', getBoardValid, getBoard)
-// router.get('/all', auth.jwt, admin, getAllProducts)
+router.get('/getPart/:id', getPart)
 // router.patch('/:id', content('multipart/form-data'), auth.jwt, admin, upload, editProduct)
 
 export default router

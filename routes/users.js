@@ -9,7 +9,7 @@ import {
   setPWD,
   changePWD,
   getUser,
-  editInfo,
+  editInfo
   // getCart
   // giveMsg
 } from '../controllers/users.js'
@@ -34,8 +34,7 @@ router.post('/sendPWDMail', content('application/json'), sendPWDMail)
 router.post('/verifyPWDMail', content('application/json'), verifyPWDMail, setPWD)
 router.post('/changePWD', content('application/json'), auth.jwt, changePWD)
 
-router.get('/', auth.jwt, getUser)
-// router.post('/cart', content('application/json'), auth.jwt, addCart)
-router.patch('/editInfo', content('application/json'), auth.jwt, editInfo)
+// router.get('/', auth.jwt, getUser)
+// router.patch('/editInfo', content('application/json'), auth.jwt, editInfo)
 // router.get('/cart', auth.jwt, getCart)
 export default router

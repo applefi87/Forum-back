@@ -7,7 +7,6 @@ export default async (req, res, next) => {
   console.log('in middle formatvalid');
   // 找該版
   const board = await boards.findById(req.params.id)
-  return res.status(403).send({ success: false, message: 'test' })
   if (!board) return res.status(403).send({ success: false, message: '找無該版' })
   // 找母版對是否開放文章
   const parent = await boards.findById(board.parent)
@@ -15,9 +14,8 @@ export default async (req, res, next) => {
   const article = parent.childBoard.article
   if (article.category.length < 1) return res.status(403).send({ success: false, message: '該版無文章區資訊' })
   //找是否有對應到該版unique項目id
-  const uniqueOK = board.uniqueData?.find((it) => {
-    return it._id.toString() === req.body.uniqueId
-  })
+  // mongoose特殊用法
+  const uniqueOK = board.uniqueData?.id(req.body.uniqueId)
   if (!uniqueOK) return res.status(403).send({ success: false, message: '沒對到該版獨立分類' })
   // 延遲工具
   // await new Promise(resolve => setTimeout(() => resolve(console.log('ok')), 2000));

@@ -1,4 +1,5 @@
 import articles from '../models/articles.js'
+import users from '../models/users.js'
 
 export const createArticle = async (req, res) => {
   try {
@@ -15,9 +16,16 @@ export const createArticle = async (req, res) => {
 
 export const getArticles = async (req, res) => {
   try {
-    const result = await products.find({ board: req.params.id })
-    res.status(200).send({ success: true, message: '', result })
+    // 直接用populate 秒殺
+    const articleList = await articles.find({ board: req.params.id }).
+      populate({
+        path: 'user',
+        select: "account score info.gender"
+      });
+    if (articleList.lenth < 1) return res.status(403).send({ success: true, message: '沒文章' })
+    res.status(200).send({ success: true, message: '', result: articleList })
   } catch (error) {
+    console.log(error);
     res.status(500).send({ success: false, message: '伺服器錯誤' })
   }
 }
