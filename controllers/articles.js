@@ -1,5 +1,6 @@
 import articles from '../models/articles.js'
-import users from '../models/users.js'
+import boards from '../models/boards.js'
+
 
 export const createArticle = async (req, res) => {
   try {
@@ -21,17 +22,18 @@ export const getArticles = async (req, res) => {
       populate({
         path: 'user',
         select: "nickName score info.gender"
-      });
+      })
     if (articleList.lenth < 1) return res.status(403).send({ success: true, message: '沒文章' })
     const out = articleList.map(a => {
-      if (a.privacy === 0) {
+      const o = JSON.parse(JSON.stringify(a))
+      if (o.privacy == 0) {
         // 先預備id是否可點擊，之後變連結
-        delete a.user._id
-        a.user.nickName = 'anonymous'
+        delete o.user._id
+        o.user.nickName = 'anonymous'
       }
-      return
+      return o
     })
-    res.status(200).send({ success: true, message: '', result: articleList })
+    res.status(200).send({ success: true, message: '', result: out })
   } catch (error) {
     console.log(error);
     res.status(500).send({ success: false, message: '伺服器錯誤' })
