@@ -23,7 +23,7 @@ export default async (req, res, next) => {
   // 此為必填區 不然就報錯 (上方已經驗證過)
   form.board = req.params.id
   form.user = req.user._id
-  form.privacy = req.body.privacy || 2
+  form.privacy = req.body.privacy || 0
   form.uniqueId = req.body.uniqueId
   //找是否有對應到母版定義的category code
   // 順便取出該類型的相關規則

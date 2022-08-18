@@ -20,9 +20,17 @@ export const getArticles = async (req, res) => {
     const articleList = await articles.find({ board: req.params.id }).
       populate({
         path: 'user',
-        select: "account score info.gender"
+        select: "nickName score info.gender"
       });
     if (articleList.lenth < 1) return res.status(403).send({ success: true, message: '沒文章' })
+    const out = articleList.map(a => {
+      if (a.privacy === 0) {
+        // 先預備id是否可點擊，之後變連結
+        delete a.user._id
+        a.user.nickName = 'anonymous'
+      }
+      return
+    })
     res.status(200).send({ success: true, message: '', result: articleList })
   } catch (error) {
     console.log(error);
