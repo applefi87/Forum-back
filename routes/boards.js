@@ -22,6 +22,5 @@ router.post('/createRoot', content('application/json'), auth.jwt, admin, createR
 router.get('/childs/:id', getBoardValid, getChildBoards)
 router.get('/:id', getBoardValid, getBoard)
 router.get('/getPart/:id', getPart)
-// router.patch('/:id', content('multipart/form-data'), auth.jwt, admin, upload, editProduct)
 
 export default router

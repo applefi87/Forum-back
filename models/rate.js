@@ -2,7 +2,7 @@ import mongoose from 'mongoose'
 export default function (ref, setting = {}) {
   const listDetail = () => {
     const d = {
-      from: {
+      user: {
         type: mongoose.ObjectId,
         ref: ref,
         required: true
@@ -11,7 +11,7 @@ export default function (ref, setting = {}) {
     }
     if (setting.hasLocation) {
       d.location = { type: String, required: true }
-    }
+    } 
     if (setting.hasAmount) {
       d.amount = { type: Number, required: true }
     }

@@ -5,8 +5,24 @@ import boards from '../models/boards.js'
 export const createArticle = async (req, res) => {
   try {
     const result = await articles.create(req.form)
+    // 如果是評分版，成功後呼叫板塊更新評分
+    if (req.body.category === 1) {
+      const board = await boards.findById(req.params.id)
+      if (!board.beScored) { board.beScored = { score: 0, amount: 0, list: [] } }
+      console.log(board.beScored);
+      board.beScored.list.push({ user: req.user.id, score: req.body.score })
+      const totalScore = 0;
+      board.beScored.amount = board.beScored.list.length
+      const score = board.beScored.list.reduce(
+        (previousValue, currentValue) => previousValue + currentValue,
+        totalScore
+      )
+      board.beScored.score = score / board.beScored.amount
+      board.save()
+    }
     res.status(200).send({ success: true, message: '', result })
   } catch (error) {
+    console.log(error);
     if (error.name === 'ValidationError') {
       return res.status(400).send({ success: false, message: error.message })
     } else {
