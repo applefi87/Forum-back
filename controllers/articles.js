@@ -17,7 +17,7 @@ export const createArticle = async (req, res) => {
       board.beScored.amount = board.beScored.list.length
       let sumScore = board.beScored.list.reduce((sum, it) => sum + it.score, 0)
       board.beScored.score = sumScore / board.beScored.amount
-      const out = await board.save()
+      await board.save()
     }
     res.status(200).send({ success: true, message: '', result })
   } catch (error) {

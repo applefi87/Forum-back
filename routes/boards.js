@@ -8,8 +8,7 @@ import {
   createBoard,
   createRoot,
   getBoard,
-  getChildBoards,
-  getPart
+  getChildBoards
 } from '../controllers/boards.js'
 
 const router = express.Router()
@@ -19,8 +18,7 @@ router.post('/create/temp/:id', content('application/json'), auth.jwt, admin, bo
 router.post('/createRoot', content('application/json'), auth.jwt, admin, createRoot)
 // 取得板塊資料(含左方篩選欄+子版清單+文章)
 // 主要在過濾+搜尋的部分(sort先放在用戶端排)
-router.get('/childs/:id', getBoardValid, getChildBoards)
+router.get('/childs/:id', getBoardValid, getChildBoards)   
 router.get('/:id', getBoardValid, getBoard)
-router.get('/getPart/:id', getPart)
 
-export default router
+export default router 
