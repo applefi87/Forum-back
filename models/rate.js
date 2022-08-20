@@ -2,7 +2,7 @@ import mongoose from 'mongoose'
 export default function (ref, setting = {}) {
   const listDetail = () => {
     const d = {
-      user: {
+      from: {
         type: mongoose.ObjectId,
         ref: ref,
         required: true

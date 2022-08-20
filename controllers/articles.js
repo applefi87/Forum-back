@@ -8,17 +8,18 @@ export const createArticle = async (req, res) => {
     // 如果是評分版，成功後呼叫板塊更新評分
     if (req.body.category === 1) {
       const board = await boards.findById(req.params.id)
-      if (!board.beScored) { board.beScored = { score: 0, amount: 0, list: [] } }
-      console.log(board.beScored);
-      board.beScored.list.push({ user: req.user.id, score: req.body.score })
-      const totalScore = 0;
+      if (!board) { res.status(403).send({ success: false, message: '找不到該版' }) }
+      // 之前沒有就產生對應object 不預設有是減少資料負擔      
+      if (!(board.beScored?.list?.length > 0)) {
+        board.beScored = { score: 0, amount: 0, list: [] }
+      }
+      board.beScored.list.push({ from: req.user.id, score: req.body.score })
       board.beScored.amount = board.beScored.list.length
-      const score = board.beScored.list.reduce(
-        (previousValue, currentValue) => previousValue + currentValue,
-        totalScore
-      )
-      board.beScored.score = score / board.beScored.amount
-      board.save()
+      let sumScore = board.beScored.list.reduce((sum, it) => sum + it.score, 0)
+      board.beScored.score = sumScore / board.beScored.amount
+      console.log(board.beScored);
+      const out = await board.save()
+      console.log(out.beScored);
     }
     res.status(200).send({ success: true, message: '', result })
   } catch (error) {
@@ -33,6 +34,7 @@ export const createArticle = async (req, res) => {
 
 export const getArticles = async (req, res) => {
   try {
+    console.log('in controller');
     // 直接用populate 秒殺
     const articleList = await articles.find({ board: req.params.id }).
       populate({
@@ -49,6 +51,7 @@ export const getArticles = async (req, res) => {
       }
       return o
     })
+    console.log('end');
     res.status(200).send({ success: true, message: '', result: out })
   } catch (error) {
     console.log(error);

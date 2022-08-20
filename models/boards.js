@@ -100,7 +100,7 @@ const schema = new mongoose.Schema({
     default: undefined, _id: false
   },
   // 抓取母板規則:(不一定有)
-  beScored: rate('articles'),
+  beScored: rate('users'),
   // 抓取母板規則:使用者要填對應的內容，就像填表單
   colData: mongoose.Mixed,
   uniqueData: [unique()],
