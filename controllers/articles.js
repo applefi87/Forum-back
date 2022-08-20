@@ -9,15 +9,21 @@ export const createArticle = async (req, res) => {
     if (req.body.category === 1) {
       const board = await boards.findById(req.params.id)
       if (!board) { res.status(403).send({ success: false, message: '找不到該版' }) }
-      // 之前沒有就產生對應object 不預設有是減少資料負擔      
+      // 之前沒有就產生新beScored物件  不預設放空值是減少資料負擔      
       if (!(board.beScored?.list?.length > 0)) {
         board.beScored = { score: 0, amount: 0, list: [] }
       }
-      board.beScored.list.push({ from: req.user.id, score: req.body.score })
+      console.log(result.id);
+      board.beScored.list.push({ from: result.id, score: req.body.score })
       board.beScored.amount = board.beScored.list.length
       let sumScore = board.beScored.list.reduce((sum, it) => sum + it.score, 0)
       board.beScored.score = sumScore / board.beScored.amount
       await board.save()
+      // 更新個人評分
+      const userToBoard = req.user.record?.toBoard?
+      if (!(userToBoard.list?.length > 0)) {
+        board.beScored = { score: 0, amount: 0, list: [] }
+      }
     }
     res.status(200).send({ success: true, message: '', result })
   } catch (error) {

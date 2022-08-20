@@ -95,7 +95,7 @@ const schema = new mongoose.Schema({
     others: {
       type: String,
       maxlength: [100, '必須 100 個字以下'],
-    }
+    } 
   },
   record: { // **********************系統操作，使用者無權限****************************
     //給版評價

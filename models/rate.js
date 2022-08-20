@@ -15,7 +15,7 @@ export default function (ref, setting = {}) {
     if (setting.hasAmount) {
       d.amount = { type: Number, required: true }
     }
-    return d
+    return d 
   }
   return {
     score: Number,
