@@ -18,7 +18,7 @@ export const createArticle = async (req, res) => {
       // board.beScored.amount = board.beScored.list.length
       // let sumScore = board.beScored.list.reduce((sum, it) => sum + it.score, 0)
       // board.beScored.score = sumScore / board.beScored.amount
-      board.beScored.score = (board.beScored.amount * board.beScored.score + req.body.score) / (board.beScored.amount + 1)
+      board.beScored.score = Math.ceil((board.beScored.amount * board.beScored.score + req.body.score) / (board.beScored.amount + 1))
       board.beScored.amount++
       await board.save()
       // 更新個人評分
