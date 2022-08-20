@@ -5,7 +5,11 @@ import randomPWD from '../util/randomPWD.js'
 // import products from '../models/products.js'
 import bcrypt from 'bcrypt'
 import jwt from 'jsonwebtoken'
-
+const rateEmpty = {
+  score: 0,
+  amount: 0,
+  list: []
+}
 
 export const register = async (req, res) => {
 
@@ -58,7 +62,14 @@ export const register = async (req, res) => {
         schoolEmail: req.body.schoolEmail,
         password: bcrypt.hashSync(password, 10)
       },
-      info: { gender: req.body.gender }
+      info: { gender: req.body.gender },
+      // 必須初始化，不然發東西要更新時會找不到而報錯
+      record: {
+        toBoard: rateEmpty,
+        toArticle: rateEmpty,
+        articleScore: rateEmpty,
+        msgScore: rateEmpty
+      }
     }
     const result = JSON.parse(JSON.stringify(await users.create(input)))
     // 註冊完把email清單改已註冊
@@ -238,4 +249,3 @@ export const editInfo = async (req, res) => {
     }
   }
 }
-

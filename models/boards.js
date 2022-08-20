@@ -99,8 +99,8 @@ const schema = new mongoose.Schema({
     type: [{ type: mongoose.ObjectId, ref: 'boards' }],
     default: undefined, _id: false
   },
-  // 抓取母板規則:(不一定有)
-  beScored: rate('users'),
+  // 抓取母板規則:(不一定有) 放文章id是編輯時能直接找到更新
+  beScored: rate('articles'),
   // 抓取母板規則:使用者要填對應的內容，就像填表單
   colData: mongoose.Mixed,
   uniqueData: [unique()],

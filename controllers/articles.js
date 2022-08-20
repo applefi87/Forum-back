@@ -13,17 +13,22 @@ export const createArticle = async (req, res) => {
       if (!(board.beScored?.list?.length > 0)) {
         board.beScored = { score: 0, amount: 0, list: [] }
       }
-      console.log(result.id);
       board.beScored.list.push({ from: result.id, score: req.body.score })
-      board.beScored.amount = board.beScored.list.length
-      let sumScore = board.beScored.list.reduce((sum, it) => sum + it.score, 0)
-      board.beScored.score = sumScore / board.beScored.amount
+      // 考量只是加陣列不太會出錯，最簡單算法拿之前的算
+      // board.beScored.amount = board.beScored.list.length
+      // let sumScore = board.beScored.list.reduce((sum, it) => sum + it.score, 0)
+      // board.beScored.score = sumScore / board.beScored.amount
+      board.beScored.score = (board.beScored.amount * board.beScored.score + req.body.score) / (board.beScored.amount + 1)
+      board.beScored.amount++
       await board.save()
       // 更新個人評分
-      const userToBoard = req.user.record?.toBoard?
-      if (!(userToBoard.list?.length > 0)) {
-        board.beScored = { score: 0, amount: 0, list: [] }
-      }
+      const toBoard = req.user.record?.toBoard
+      toBoard?.list.push({ from: result.id, score: req.body.score })
+      toBoard.score = Math.ceil((toBoard?.amount * toBoard?.score + req.body.score) / (toBoard?.amount + 1))
+      toBoard.amount++
+      const t = await req.user.save()
+      console.log(t.record?.toBoard);
+      console.log(t.record?.toBoard?.list);
     }
     res.status(200).send({ success: true, message: '', result })
   } catch (error) {
