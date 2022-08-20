@@ -117,5 +117,5 @@ const schema = new mongoose.Schema({
     required: [true, "系統應該要自動填更新時間，異常"]
   }
 }, { versionKey: false, timestamps: { createdAt: 'created_at', updatedAt: false } })
-
+schema.index({ board: 1, category: 1 })
 export default mongoose.model('articles', schema)

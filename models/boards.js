@@ -132,6 +132,3 @@ schema.index({ parent: 1, "colData.c0": 1 })
 export default mongoose.model('boards', schema).on('index', function (err) {
   if (err) console.error(err);
 })
-
-// childBoard.article.active && childBoard.article.hasReview
-// childBoard.article.category[0].n
