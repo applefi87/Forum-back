@@ -11,6 +11,7 @@ export default async (req, res, next) => {
   const out = []
   // *******************************************
   for (let c of file) {
+    // 基本加工
     const form = {
       // 限20字
       "title": c.className.split(' [')[0].slice(0, 20),

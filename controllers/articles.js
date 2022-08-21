@@ -27,8 +27,6 @@ export const createArticle = async (req, res) => {
       toBoard.score = Math.ceil((toBoard?.amount * toBoard?.score + req.body.score) / (toBoard?.amount + 1))
       toBoard.amount++
       const t = await req.user.save()
-      console.log(t.record?.toBoard);
-      console.log(t.record?.toBoard?.list);
     }
     res.status(200).send({ success: true, message: '', result })
   } catch (error) {

@@ -66,8 +66,8 @@ const unique = () => {
 }
 
 const article = new mongoose.Schema({
-  c: { type: Number, required: true, alias: 'code', unique: [true, "不可重複文章類型代碼"] },
-  n: { type: String, required: true, alias: 'name', unique: [true, "不可重複文章類型標題"] },
+  c: { type: Number, required: true, alias: 'code' },
+  n: { type: String, required: true, alias: 'name' },
   intro: { type: String, required: true },
   titleCol: { type: String, required: true },
   tagActive: Boolean,
@@ -129,6 +129,8 @@ const schema = new mongoose.Schema({
 }, { versionKey: false, timestamps: { createdAt: 'created_at', updatedAt: false } })
 // 考量, "beScored.score" 是會一直變動的，先移除
 schema.index({ parent: 1, "colData.c0": 1 })
-export default mongoose.model('boards', schema).on('index', function (err) {
-  if (err) console.error(err);
-})
+// 處理index 錯誤
+export default mongoose.model('boards', schema)
+  .on('index', function (err) {
+    if (err) console.error(err);
+  })

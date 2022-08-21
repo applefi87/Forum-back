@@ -12,6 +12,8 @@ import boardRouter from './routes/boards.js'
 import './passport/passport.js'
 // 初始化
 mongoose.connect(process.env.DB_URL, { autoIndex: false })
+// mongoose.connect(process.env.DB_URL)
+
 mongoose.set('sanitizeFilter', true)
 const app = express()
 
