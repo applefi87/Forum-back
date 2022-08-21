@@ -1,4 +1,4 @@
-import csv from './original.js'
+import csv from './test.js'
 import translate from '../translateForm/school.js'
 import _ from 'lodash'
 import fs from 'fs'
@@ -56,7 +56,7 @@ const classesOut = Object.keys(group).map((key) => {
   return { ...o, uniqueData: group[key] }
 })
 
-fs.writeFileSync('classesOut.json', JSON.stringify(classesOut))
+fs.writeFileSync('test.json', JSON.stringify(classesOut))
 
 
 // *****
