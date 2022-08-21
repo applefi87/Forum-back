@@ -4,7 +4,7 @@ export const createBoard = async (req, res) => {
   try {
     // 這裡clg很多因為要測哪裡跑最久 就是上傳mongoDB最久
     console.log("in Controller createBoard");
-    const result = await boards.create(req.boardList)
+    const result = await boards.insertMany(req.boardList)
     console.log("boards created");
     // 抓之前的filter清單，再把新加入的加進去更新，省效能
     const pFilter = req.parent.childBoard.rule.display.filter
@@ -111,20 +111,11 @@ export const getChildBoards = async (req, res) => {
     //     }
     //   })
     // }
+    const start1 = Date.now()
     // 只拿會在母版table顯示/用來排序的欄位 就好
     const childBoards = await boards.find(condition, "title beScored colData")
-    // console.log(childBoards)
-    const start = Date.now()
-    console.log('updating');
-    // for (let i in childBoards) {
-    //   if (!childBoards[i].beScored?.score) { childBoards[i].beScored = { score: 1 } }
-    //   if (childBoards[i].beScored.score < 5) { childBoards[i].beScored.score++ }
-    //   else { childBoards[i].beScored.score-- }
-    //   await childBoards[i].save()
-    // }
     res.status(200).send({ success: true, message: '', result: childBoards })
     console.log("end");
-    console.log(Date.now() - start);
   } catch (error) {
     console.log(error);
     res.status(500).send({ success: false, message: '伺服器錯誤' })
