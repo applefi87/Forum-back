@@ -10,6 +10,7 @@ export default async (req, res, next) => {
     next()
   } catch (error) {
     console.log("err middleware");
+    console.log(error);
     res.status(404).send({ success: false, message: '查無該id' })
   }
 }

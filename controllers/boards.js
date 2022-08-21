@@ -48,6 +48,7 @@ export const getBoard = async (req, res) => {
   console.log('in controller');
   // console.log(req.board);
   try {
+
     res.status(200).send({ success: true, message: '', result: req.board })
     console.log("end");
   } catch (error) {
@@ -112,8 +113,18 @@ export const getChildBoards = async (req, res) => {
     // }
     // 只拿會在母版table顯示/用來排序的欄位 就好
     const childBoards = await boards.find(condition, "title beScored colData")
+    // console.log(childBoards)
+    const start = Date.now()
+    console.log('updating');
+    for (let i in childBoards) {
+      if (!childBoards[i].beScored?.score) { childBoards[i].beScored = { score: 1 } }
+      if (childBoards[i].beScored.score < 5) { childBoards[i].beScored.score++ }
+      else { childBoards[i].beScored.score-- }
+      await childBoards[i].save()
+    }
     res.status(200).send({ success: true, message: '', result: childBoards })
     console.log("end");
+    console.log(Date.now() - start);
   } catch (error) {
     console.log(error);
     res.status(500).send({ success: false, message: '伺服器錯誤' })

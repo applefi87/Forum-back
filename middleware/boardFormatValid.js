@@ -37,7 +37,7 @@ export default async (req, res, next) => {
           // !!! 變化處
           let data = col === 'uniqueData' ? it[rule.n] : c[rule.n]
           // 預先統一填入
-          if (rule.n === "semester") data = "111-1";
+          if (rule.n === "semester") data = req.body.uniqueCol;
           // 沒值但有預設就填進去
           if (data === undefined && rule.d) data = rule.d
           // 必填沒值就報錯
