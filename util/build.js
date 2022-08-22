@@ -12,7 +12,7 @@ import codeList from '../translateForm/school.js'
 // }
 export default function (csv) {
   const dataKey = ["department", 'classCode', "english", "className", "classNameEng", 'score', "required", "teacher", "semester"]
-  const toEnglish = csv.map(obj => {
+  const toEnglish = csv?.map(obj => {
     const ok = {}
     for (let i = 0; i < translate.length; i++) {
       // 不能用空，因為方便我辨識第幾陣列，不然第幾陣列會跑掉
@@ -31,7 +31,7 @@ export default function (csv) {
           }
           ok["time"] = data[1] ? [data[0], data[1]] : [data[0]]
           if (data[2]) { ok["location"] = data[2] }
-        } 
+        }
       }
     }
     return ok

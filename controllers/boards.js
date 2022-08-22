@@ -2,16 +2,27 @@ import boards from '../models/boards.js'
 
 export const createBoard = async (req, res) => {
   try {
-    // 這裡clg很多因為要測哪裡跑最久 就是上傳mongoDB最久
+    const updateResult = req.updateList.length > 0 ? await boards.bulkSave(req.updateList) : null
     console.log("in Controller createBoard");
     const result = await boards.insertMany(req.newList)
     console.log("boards created");
-
-    // 抓之前的filter清單，再把新加入的加進去更新，省效能
+    // *******抓之前的filter清單，再把新加入的加進去更新，省效能*****
     const pFilter = req.parent.childBoard.rule.display.filter
+    // uniqueCol
+    if (updateResult || result) {
+      if (pFilter.uniqueCol?.c80?.length > 0) {
+        if (!pFilter.uniqueCol.c80.includes(req.body.uniqueCol)) {
+          pFilter.uniqueCol.c80.push(req.body.uniqueCol)
+        }
+      } else {
+        pFilter.uniqueCol  = { c80: [req.body.uniqueCol] }
+      }
+      req.parent.markModified('childBoard.rule.display.filter.uniqueCol')
+    }
+    // dataCol
     let filterList = new Set(pFilter.dataCol.c0)
     let repeat = new Set()
-    result.forEach(board => { 
+    result.forEach(board => {
       // 取出所有欄位的資料
       const item = board.colData.c0
       filterList.has(item) ? repeat.add(item) : filterList.add(item);

@@ -191,11 +191,7 @@ export default async (req, res, next) => {
     // ***********
     req.parent = parent
     req.newList = newList
-    if (updateList.length > 0) {
-      const updateResult = await boards.bulkSave(updateList)
-      // console.log(updateResult);
-      console.log("boards updated");
-    }
+    req.updateList = updateList
     console.log('next');
     next()
   } catch (error) {
