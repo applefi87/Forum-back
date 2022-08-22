@@ -7,8 +7,10 @@ import mongoose from 'mongoose'
 
 export default async (req, res, next) => {
   try {
+    let count = 0
     console.log('in boardFormatValid');
     const file = buildFile(req.body.csv)
+
     const parent = await boards.findById(req.params.id)
     if (!parent) return res.status(403).send({ success: false, message: '找無該母版' })
     //區分之前有的跟新的
@@ -22,10 +24,14 @@ export default async (req, res, next) => {
     const uniqueCode = codeList.filter(c => !dataKey.includes(c[1]))
     const pUniqueCol = parent.childBoard.rule.uniqueCol
     // **************
-    console
-    for (let c of file) {
+    for (const c of file) {
+      count++
+      // console.log(c);
       // 避免進來資料基本欄位沒有
-      if (!(c.classCode && c.className && c.teacher)) break
+      if (!(c.classCode && c.className)) {
+        console.log(c.classCode + ":" + c.className + ":" + c.teacher);
+      }
+      if (!(c.classCode && c.className)) break
       const oldClass = childBoards.find(oldC => (oldC.colData.c10 + oldC.colData.c60) === (c.classCode + c.teacher))
       if (oldClass) {
         // 確認資料不重複
@@ -39,6 +45,7 @@ export default async (req, res, next) => {
           oldUnique.push(uniqueString)
         }
         // 新課程每個unique轉字串 比對不重複就validate加入原陣列
+        let changed = false
         for (let it of c.uniqueData) {
           let uniqueString = ''
           for (let code of uniqueCode) {
@@ -47,9 +54,12 @@ export default async (req, res, next) => {
               uniqueString += ('c80:' + req.body.uniqueCol)
             } else if (code[2] === 'c90') {
               uniqueString += ('c90:' + '無')
+            } else if (code[2] === 'c60') {
+              uniqueString += ('c60:' + '無')
             }
           }
-          if (!oldUnique.find(s => { console.log(s); console.log(uniqueString); console.log(s === uniqueString); console.log(s === uniqueString); return s === uniqueString })) {
+          // if (!oldUnique.find(s => { console.log(s); console.log(uniqueString); console.log(s === uniqueString); console.log(s === uniqueString); return s === uniqueString })){
+          if (!oldUnique.find(s => s === uniqueString)) {
             const itData = {}
             // ----------開始區分
             for (let rule of pUniqueCol) {
@@ -106,9 +116,10 @@ export default async (req, res, next) => {
             }
             oldClass.uniqueData.push(itData)
             oldClass._id = mongoose.Types.ObjectId(oldClass._id)
+            changed = true
           }
         }
-        updateList.push(oldClass)
+        if (changed) updateList.push(oldClass)
       } else {
         // 基本加工
         const form = {
@@ -189,9 +200,12 @@ export default async (req, res, next) => {
       }
     }
     // ***********
+    console.log(count);
     req.parent = parent
     req.newList = newList
+    console.log(newList.length);
     req.updateList = updateList
+    console.log(updateList.length);
     console.log('next');
     next()
   } catch (error) {

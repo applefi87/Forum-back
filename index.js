@@ -40,7 +40,7 @@ app.use(cors({
 }))
 
 // 再限定一次防mongo語法
-app.use(express.json())
+app.use(express.json({ limit: '5mb' }))
 app.use(mongoSanitize())
 // *********************待紀錄ip
 // app.set('trust proxy', 1)
