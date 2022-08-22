@@ -1,4 +1,4 @@
-import buildfile from '../util/build.js'
+import buildFile from '../util/build.js'
 import boards from '../models/boards.js'
 import codeList from '../translateForm/school.js'
 import mongoose from 'mongoose'
@@ -8,7 +8,7 @@ import mongoose from 'mongoose'
 export default async (req, res, next) => {
   try {
     console.log('in boardFormatValid');
-    const file = buildfile(req.body.csv)
+    const file = buildFile(req.body.csv)
     const parent = await boards.findById(req.params.id)
     if (!parent) return res.status(403).send({ success: false, message: '找無該母版' })
     //區分之前有的跟新的
@@ -22,7 +22,7 @@ export default async (req, res, next) => {
     const uniqueCode = codeList.filter(c => !dataKey.includes(c[1]))
     const pUniqueCol = parent.childBoard.rule.uniqueCol
     // **************
-    console.log(file[file.length - 1].uniqueData);
+    console
     for (let c of file) {
       // 避免進來資料基本欄位沒有
       if (!(c.classCode && c.className && c.teacher)) break
@@ -45,6 +45,8 @@ export default async (req, res, next) => {
             if (it[code[1]]) { uniqueString += (code[2] + ":" + (typeof it[code[1]] !== 'object' ? it[code[1]] : JSON.stringify(it[code[1]]))) }
             else if (code[2] === 'c80') {
               uniqueString += ('c80:' + req.body.uniqueCol)
+            } else if (code[2] === 'c90') {
+              uniqueString += ('c90:' + '無')
             }
           }
           if (!oldUnique.find(s => { console.log(s); console.log(uniqueString); console.log(s === uniqueString); console.log(s === uniqueString); return s === uniqueString })) {
@@ -108,7 +110,6 @@ export default async (req, res, next) => {
         }
         updateList.push(oldClass)
       } else {
-        console.log(c.className);
         // 基本加工
         const form = {
           // 限20字
@@ -190,14 +191,14 @@ export default async (req, res, next) => {
     // ***********
     req.parent = parent
     req.newList = newList
-    console.log(newList);
     if (updateList.length > 0) {
       const updateResult = await boards.bulkSave(updateList)
       // console.log(updateResult);
       console.log("boards updated");
     }
+    console.log('next');
     next()
-  } catch (error) { 
+  } catch (error) {
     console.log(error)
   }
 }

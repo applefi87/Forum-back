@@ -24,14 +24,14 @@ export default function (csv) {
           //拆分時間地點(部分單獨的沒有的就不存) 
           const data = obj[translate[i][0]].split(" ")
           if (data.length == 1) {
-            temp = JSON.parse(JSON.stringify(data[0].split(/[,-]/)))
+            const temp = JSON.parse(JSON.stringify(data[0].split(/[,-]/)))
             // 撇除標準"二 7-9 本部 美506"有這種白癡格式..."三,1310-三,1600"
             data[0] = temp[0]
             data[1] = temp[1] + temp[3]
           }
           ok["time"] = data[1] ? [data[0], data[1]] : [data[0]]
           if (data[2]) { ok["location"] = data[2] }
-        }
+        } 
       }
     }
     return ok
