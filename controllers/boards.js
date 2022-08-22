@@ -4,13 +4,14 @@ export const createBoard = async (req, res) => {
   try {
     // 這裡clg很多因為要測哪裡跑最久 就是上傳mongoDB最久
     console.log("in Controller createBoard");
-    const result = await boards.insertMany(req.boardList)
+    const result = await boards.insertMany(req.newList)
     console.log("boards created");
+
     // 抓之前的filter清單，再把新加入的加進去更新，省效能
     const pFilter = req.parent.childBoard.rule.display.filter
     let filterList = new Set(pFilter.dataCol.c0)
     let repeat = new Set()
-    result.forEach(board => {
+    result.forEach(board => { 
       // 取出所有欄位的資料
       const item = board.colData.c0
       filterList.has(item) ? repeat.add(item) : filterList.add(item);

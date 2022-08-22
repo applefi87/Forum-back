@@ -19,7 +19,7 @@ router.post('/create/temp/:id', content('application/json'), auth.jwt, admin, bo
 // 創建不用審核的母版(之後限特定身分)
 router.post('/createRoot', content('application/json'), auth.jwt, admin, createRoot)
 // 取得板塊資料(含左方篩選欄+子版清單+文章)
-// 主要在過濾+搜尋的部分(sort先放在用戶端排)
+// 主要在過濾+搜尋的部分(sort先放在用戶端排) 
 router.get('/childs/:id', getBoardValid, getChildBoards)   
 router.get('/:id', getBoardValid, getBoard)
 // 考量掉包機率大 增加風險 先暫停(目前已經可回傳全部資料)
