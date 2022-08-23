@@ -10,7 +10,7 @@ export default async (req, res, next) => {
     let count = 0
     let same = 0
     console.log('in boardFormatValid');
-    const temp = buildFile(req.body.csv)
+    const temp = buildFile(req.body.csv.slice(500, 501))
     // const file = [temp[505], temp[506], temp[507]]
     const file = temp
     console.log('builded');
@@ -32,15 +32,13 @@ export default async (req, res, next) => {
       count++
       // 沒課程碼/課程名稱就忽略
       if (!(c.classCode && c.className)) { console.log(c.classCode, c.className); continue }
-      // -----------------------
-      const oldClass = childBoards?.find(oldC => (oldC.colData.c10 + oldC.colData.c60) === (c.classCode + (c.teacher || '無')))
+      const oldClass = childBoards.find(oldC => (oldC.colData.c10 + oldC.colData.c60) === (c.classCode + (c.teacher || '無')))
       if (oldClass) {
         // 確認資料不重複
         // 原課程unique轉字串
         const oldUnique = []
         for (let u of oldClass.uniqueData) {
           let uniqueString = ''
-          
           for (let code of uniqueCode) {
             if (u[code[2]]) uniqueString += (code[2] + ":" + (typeof u[code[2]] !== 'object' ? u[code[2]] : JSON.stringify(u[code[2]])))
           }
@@ -50,18 +48,18 @@ export default async (req, res, next) => {
         let changed = false
         for (let it of c.uniqueData) {
           let uniqueString = ''
-
           for (let code of uniqueCode) {
-            if ((code[2] === "c5") && it[code[1]]) { uniqueString += (code[2] + ":" + (typeof it[code[1]] !== 'object' ? it[code[1]] : JSON.stringify(it[code[1]]))) }
+            if (it[code[1]]) { uniqueString += (code[2] + ":" + (typeof it[code[1]] !== 'object' ? it[code[1]] : JSON.stringify(it[code[1]]))) }
             else if (code[2] === 'c80') {
               uniqueString += ('c80:' + req.body.uniqueCol)
+            } else if (code[2] === 'c90') {
+              uniqueString += ('c90:' + '無')
+            } else if (code[2] === 'c60') {
+              uniqueString += ('c60:' + '無')
             }
           }
-          // if (!oldUnique.find(s => { console.log(s); console.log(uniqueString); console.log(s === uniqueString); console.log(s === uniqueString); return s === uniqueString })) {
+          // if (!oldUnique.find(s => { console.log(s); console.log(uniqueString); console.log(s === uniqueString); console.log(s === uniqueString); return s === uniqueString })){
           if (!oldUnique.find(s => s === uniqueString)) {
-            console.log(JSON.stringify(oldUnique));
-            console.log(JSON.stringify(uniqueString));
-            console.log('-');
             const itData = {}
             // ----------開始區分
             for (let rule of pUniqueCol) {
@@ -123,15 +121,6 @@ export default async (req, res, next) => {
         }
         if (changed) updateList.push(oldClass)
       } else {
-        // 如果同課程名+老師 直接加到unique裡面
-        const newUniqueIdx = newList?.findIndex(newC => (newC.colData.c10 + newC.colData.c60) === (c.classCode + (c.teacher || '無')))
-        if (newUniqueIdx >= 0) {
-          newUnique = newList[newUniqueIdx]
-          newUnique.uniqueData.push()
-        }
-
-        // 真正要新增的
-
         // 基本加工
         const form = {
           // 限20字

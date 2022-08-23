@@ -97,7 +97,8 @@ const schema = new mongoose.Schema({
   },
   related: {
     type: [{ type: mongoose.ObjectId, ref: 'boards' }],
-    default: undefined, _id: false
+    default: undefined,
+    _id: false
   },
   // 抓取母板規則:(不一定有) 放文章id是編輯時能直接找到更新
   beScored: rate('articles'),

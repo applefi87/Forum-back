@@ -1,21 +1,36 @@
 import boards from '../models/boards.js'
+import fs from 'fs'
 
 export const createBoard = async (req, res) => {
   try {
+    fs.writeFileSync('tt.json', JSON.stringify(req.updateList))
     const updateResult = req.updateList.length > 0 ? await boards.bulkSave(req.updateList) : null
-    console.log("in Controller createBoard");
+
+    // const updateResult = req.updateList.length > 0 ? await boards.bulkSave(req.updateList.map(list => {
+    //   return {
+    //     updateOne: {
+    //       filter: {_id: list._id},
+    //       update: list,
+    //       upsert: true,
+    //     }
+    //   }
+    // }), { skipValidation: true }) : null
+    // console.log("in Controller createBoard");
+    // for (let i of req.updateList) {
+    //   await i.save()
+    // }
     const result = await boards.insertMany(req.newList)
     console.log("boards created");
     // *******抓之前的filter清單，再把新加入的加進去更新，省效能*****
     const pFilter = req.parent.childBoard.rule.display.filter
     // uniqueCol
-    if (updateResult || result) {
+    if (result) {
       if (pFilter.uniqueCol?.c80?.length > 0) {
         if (!pFilter.uniqueCol.c80.includes(req.body.uniqueCol)) {
           pFilter.uniqueCol.c80.push(req.body.uniqueCol)
         }
       } else {
-        pFilter.uniqueCol  = { c80: [req.body.uniqueCol] }
+        pFilter.uniqueCol = { c80: [req.body.uniqueCol] }
       }
       req.parent.markModified('childBoard.rule.display.filter.uniqueCol')
     }
