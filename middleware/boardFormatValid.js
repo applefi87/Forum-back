@@ -14,8 +14,10 @@ export default async (req, res, next) => {
     let same = 0
     let combine = 0
     const temp = buildFile(req.body.csv)
-    // const file = [temp[505], temp[506], temp[507]]
-    const file = temp
+    console.log(req.body.csv);
+    console.log(temp);
+    const file = temp.slice(0, 2)
+    // const file = temp
     const parent = await boards.findById(req.params.id)
     if (!parent) return res.status(403).send({ success: false, message: '找無該母版' })
     //區分之前有的跟新的
