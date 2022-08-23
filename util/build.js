@@ -42,7 +42,7 @@ export default function (csv) {
     return obj.serialCode + "kk" + obj.teacher
   }),
     clist => clist.map(obj => _.omit(obj, dataKey)));
-  fs.writeFileSync('group.json', JSON.stringify(group))
+  // fs.writeFileSync('group.json', JSON.stringify(group))
 
   // *************
   // 輸出頁面的
@@ -60,7 +60,7 @@ export default function (csv) {
     }
     return { ...o, uniqueData: group[key] }
   })
-  fs.writeFileSync('classesOut.json', JSON.stringify(classesOut))
+  // fs.writeFileSync('classesOut.json', JSON.stringify(classesOut))
   return classesOut
 }
 
