@@ -12,11 +12,12 @@ export default async (req, res, next) => {
   try {
     let count = 0
     let same = 0
-    let combine = 0
+    let combineUpdate = 0
+    let combineNew = 0
     const temp = buildFile(req.body.csv)
-    console.log(req.body.csv);
-    console.log(temp);
-    const file = temp.slice(0, 2)
+    // console.log(req.body.csv);
+    // console.log(temp);
+    const file = temp
     // const file = temp
     const parent = await boards.findById(req.params.id)
     if (!parent) return res.status(403).send({ success: false, message: '找無該母版' })
@@ -157,10 +158,10 @@ export default async (req, res, next) => {
             //     uniqueString += ('c80:' + req.body.uniqueCol)
             //   }
             // }
-            // if (!oldUnique.find(s => { console.log(s); console.log(uniqueString); console.log(s === uniqueString); console.log(s === uniqueString); return s === uniqueString })) {
+            // if (!oldUnique.find( s => { console.log(s); console.log(uniqueString); console.log(s === uniqueString); console.log(s === uniqueString); return s === uniqueString })) {
             if (!oldUnique.find(s => s === uniqueString)) {
               newClassUnique.push(toCode(it))
-              combine++
+              combineNew++
             }
           }
         } else {
@@ -305,14 +306,15 @@ export default async (req, res, next) => {
     // ***********
     console.log("count:" + count);
     console.log("same:" + same);
-    console.log("combine:" + combine);
-    req.parent = parent
-    req.newList = newList
+    console.log("combineUpdate:" + combineUpdate);
     console.log("newList:" + newList.length);
-    // fs.writeFileSync('tt.json', JSON.stringify(updateList))
-    req.updateList = updateList
+    console.log("combineNew:" + combineNew);
     console.log("updateList:" + updateList.length);
     console.log('next');
+    // fs.writeFileSync('tt.json', JSON.stringify(updateList))
+    req.updateList = updateList
+    req.parent = parent
+    req.newList = newList
     next()
   } catch (error) {
     console.log(error)

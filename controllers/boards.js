@@ -3,7 +3,7 @@ import fs from 'fs'
 
 export const createBoard = async (req, res) => {
   try {
-    // fs.writeFileSync('tt.json', JSON.stringify(req.updateList))
+    fs.writeFileSync('tt.json', JSON.stringify(req.updateList))
     const updateResult = req.updateList.length > 0 ? await boards.bulkSave(req.updateList) : null
     // const updateResult = req.updateList.length > 0 ? await boards.bulkSave(req.updateList.map(list => {
     //   return {
