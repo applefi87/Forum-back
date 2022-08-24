@@ -53,7 +53,7 @@ export const createBoard = async (req, res) => {
       await req.parent.save()
       console.log("filter list updated");
     }
-    console.log('end');
+    console.log('end---------------------------------');
     res.status(200).send({ success: true, message: '', result })
   } catch (error) {
     console.log(error);
