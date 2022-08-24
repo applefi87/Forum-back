@@ -4,50 +4,56 @@ import fs from 'fs'
 export const createBoard = async (req, res) => {
   try {
     // fs.writeFileSync('tt.json', JSON.stringify(req.updateList))
-    const updateResult = req.updateList.length > 0 ? await boards.bulkSave(req.updateList) : null
-    // const updateResult = req.updateList.length > 0 ? await boards.bulkSave(req.updateList.map(list => {
-    //   return {
-    //     updateOne: {
-    //       filter: {_id: list._id},
-    //       update: list,
-    //       upsert: true,
-    //     }
-    //   }
-    // }), { skipValidation: true }) : null
-    // console.log("in Controller createBoard");
-    // for (let i of req.updateList) {
-    //   await i.save()
-    // }
-    const result = await boards.insertMany(req.newList)
-    console.log("boards created");
+    if (req.updateList.length > 0) {
+      console.log("boards updating");
+      const us = Date.now();
+      await boards.bulkSave(req.updateList);
+      console.log("boards updated" + (Date.now() - us));
+    }
+    let result
+    if (req.newList.length > 0) {
+      console.log("boards creating");
+      const us = Date.now();
+      result = await boards.insertMany(req.newList);
+      console.log("boards created" + (Date.now() - us));
+    }
     // *******抓之前的filter清單，再把新加入的加進去更新，省效能*****
     const pFilter = req.parent.childBoard.rule.display.filter
-    // uniqueCol
-    if (result) {
+    // 只要有post 就補上當次uniqueCol 值
+    if (req.updateList.length > 0 || req.newList.length > 0) {
+      // 之前有該object且沒重複再加
       if (pFilter.uniqueCol?.c80?.length > 0) {
         if (!pFilter.uniqueCol.c80.includes(req.body.uniqueCol)) {
           pFilter.uniqueCol.c80.push(req.body.uniqueCol)
         }
       } else {
+        // 不然直接新增
         pFilter.uniqueCol = { c80: [req.body.uniqueCol] }
       }
       req.parent.markModified('childBoard.rule.display.filter.uniqueCol')
+      console.log("uniqueCol updated");
+    } else {
+      console.log('no changed');
     }
-    // dataCol
-    let filterList = new Set(pFilter.dataCol.c0)
-    let repeat = new Set()
-    result.forEach(board => {
-      // 取出所有欄位的資料
-      const item = board.colData.c0
-      filterList.has(item) ? repeat.add(item) : filterList.add(item);
-    })
-    // 把取出來不重複清單存回去
-    pFilter.dataCol.c0 = [...filterList]
-    console.log("完成filter清單");
-    // 要這樣通知才能更新mixed
-    req.parent.markModified('childBoard.rule.display.filter.dataCol')
-    await req.parent.save()
-    console.log("filter list updated");
+
+    // dataCol 比較多 要去比對新資料
+    if (result) {
+      let filterList = new Set(pFilter.dataCol.c0)
+      let repeat = new Set()
+      result.forEach(board => {
+        // 取出所有欄位的資料
+        const item = board.colData.c0
+        filterList.has(item) ? repeat.add(item) : filterList.add(item);
+      })
+      // 把取出來不重複清單存回去
+      pFilter.dataCol.c0 = [...filterList]
+      console.log("filterList builded");
+      // 要這樣通知才能更新mixed
+      req.parent.markModified('childBoard.rule.display.filter.dataCol')
+      await req.parent.save()
+      console.log("filter list updated");
+    }
+    console.log('end');
     res.status(200).send({ success: true, message: '', result })
   } catch (error) {
     console.log(error);
