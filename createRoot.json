@@ -1,0 +1,206 @@
+{
+  "title": "師大選課評價",
+  "intro": "師大選課評價",
+  "childBoard": {
+      "active": true,
+      "titleCol": "className",
+      "rule": {
+          "dataCol": [
+              {
+                  "n": "department",
+                  "r": true,
+                  "t": 1
+              },
+              {
+                  "n": "className",
+                  "r": true,
+                  "t": 1,
+                  "o": {
+                      "min": 2,
+                      "max": 200
+                  }
+              },
+              {
+                  "n": "score",
+                  "r": false,
+                  "t": 3,
+                  "o": {
+                      "min": 0,
+                      "max": 8
+                  }
+              },
+              {
+                  "n": "required",
+                  "r": true,
+                  "t": 5,
+                  "o": [
+                      "必",
+                      "選",
+                      "通"
+                  ]
+              },
+              {
+                  "n": "english",
+                  "r": false,
+                  "t": 0
+              },
+              {
+                  "n": "classNameEng",
+                  "r": true,
+                  "t": 1,
+                  "o": {
+                      "max": 500
+                  }
+              },
+              {
+                  "n": "classCode",
+                  "r": true,
+                  "t": 1
+              },
+              {
+                  "n": "teacher",
+                  "r": true,
+                  "t": 1,
+                  "d": "無",
+                  "o": {
+                      "max": 50
+                  }
+              }
+          ],
+          "uniqueCol": [
+              {
+                  "n": "semester",
+                  "r": true,
+                  "t": 5,
+                  "o": [
+                      "110-1",
+                      "110-2",
+                      "111-1"
+                  ]
+              },
+              {
+                  "n": "serialCode",
+                  "r": true,
+                  "t": 1
+              },
+              {
+                  "n": "location",
+                  "r": true,
+                  "t": 1,
+                  "d": "無"
+              },
+              {
+                  "n": "time",
+                  "r": true,
+                  "t": 7,
+                  "d": "無"
+              },
+              {
+                  "n": "class",
+                  "r": false,
+                  "t": 1
+              },
+              {
+                  "n": "others",
+                  "r": false,
+                  "t": 2
+              },
+              {
+                  "n": "condition",
+                  "r": false,
+                  "t": 2
+              },
+              {
+                  "n": "team",
+                  "r": false,
+                  "t": 1
+              },
+              {
+                  "n": "grade",
+                  "r": false,
+                  "t": 1
+              },
+              {
+                  "n": "gender",
+                  "r": false,
+                  "t": 5,
+                  "o": [
+                      "M",
+                      "F",
+                      ""
+                  ]
+              }
+          ],
+          "display": {
+              "special": "./school/filterDate.vue",
+              "filter": {
+                  "dataCol": {
+                      "c0": []
+                  }
+              },
+              "sort": [
+                  "department"
+              ]
+          }
+      },
+      "article": {
+          "active": true,
+          "hasReview": true,
+          "category": [
+              {
+                  "c": 1,
+                  "n": "系統自動填'評價區'",
+                  "intro": "歡迎留詳細評價",
+                  "titleCol": "結論",
+                  "tagActive": true,
+                  "tagOption": [
+                      "甜",
+                      "涼",
+                      "收穫",
+                      "重",
+                      "雷"
+                  ],
+                  "contentCol": "心得",
+                  "cols": [
+                      {
+                          "n": "作業",
+                          "r": true,
+                          "t": 1
+                      },
+                      {
+                          "n": "花費",
+                          "r": false,
+                          "t": 3
+                      },
+                      {
+                          "n": "點名",
+                          "r": true,
+                          "t": 5
+                      },
+                      {
+                          "n": "考試",
+                          "r": true,
+                          "t": 2
+                      }
+                  ]
+              },
+              {
+                  "c": 2,
+                  "name": "考古題",
+                  "intro": "留考古名留千古",
+                  "tagActive": false,
+                  "titleCol": "名稱",
+                  "contentCol": "題目內容"
+              }
+          ],
+          "display": {
+              "special": "./school/filterDate.vue",
+              "filter": {
+                  "c0": []
+              },
+              "sort": [],
+              "search": 5
+          }
+      }
+  }
+}
