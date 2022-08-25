@@ -5,6 +5,7 @@ import rateLimit from 'express-rate-limit'
 import mongoSanitize from 'express-mongo-sanitize'
 import cors from 'cors'
 
+import testRouter from './routes/tests.js'
 import userRouter from './routes/users.js'
 import groupRouter from './routes/groups.js'
 import articleRouter from './routes/articles.js'
@@ -51,7 +52,7 @@ app.use('/group', groupRouter)
 
 app.use('/article', articleRouter)
 app.use('/board', boardRouter)
-
+app.use('/test', testRouter)
 app.listen(process.env.PORT || 4000, () => {
   console.log('Server is running')
 })

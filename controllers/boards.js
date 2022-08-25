@@ -54,7 +54,7 @@ export const createBoard = async (req, res) => {
       console.log("filter list updated");
     }
     console.log('end---------------------------------');
-    res.status(200).send({ success: true, message: '', result })
+    res.status(200).send({ success: true, message: { title: 'uploadSuccess' }})
   } catch (error) {
     console.log(error);
     if (error.name === 'ValidationError') {
@@ -62,8 +62,29 @@ export const createBoard = async (req, res) => {
     } else {
       res.status(500).send({ success: false, message: '伺服器錯誤', error })
     }
-  } 
+  }
 }
+// 之後建文章可用這個方式
+// export const addCart = async (req, res) => {
+//     const result = await products.findById(req.body.product)
+//     // 沒找到或已下架
+//     if (!result || !result.sell) {
+//       return res.status(404).send({ success: false, message: '商品不存在' })
+//     }
+//     // 找購物車有沒有這個商品
+//     const idx = req.user.cart.findIndex(item => item.product.toString() === req.body.product)
+//     if (idx > -1) {
+//       req.user.cart[idx].quantity += req.body.quantity
+//     } else {
+//       req.user.cart.push({
+//         product: req.body.product,
+//         quantity: req.body.quantity
+//       })
+//     }
+//     await req.user.save()
+//     res.status(200).send({ success: true, message: '', result: req.user.cart.length })
+// }
+
 export const createRoot = async (req, res) => {
   try {
     const result = await boards.create(req.body)

@@ -2,7 +2,7 @@ import users from '../models/users.js'
 import groups from '../models/groups.js'
 import emails from '../models/emails.js'
 import randomPWD from '../util/randomPWD.js'
-// import products from '../models/products.js'
+import fs from 'fs'
 import bcrypt from 'bcrypt'
 import jwt from 'jsonwebtoken'
 const rateEmpty = {
@@ -71,7 +71,12 @@ export const register = async (req, res) => {
         msgScore: rateEmpty
       }
     }
+
     const result = JSON.parse(JSON.stringify(await users.create(input)))
+    // !!!!!!!!!!!!!!!!!!!
+    fs.writeFileSync('users.json', JSON.stringify(input))
+    return
+    // !!!!!!!!!!!!!!!!!!!
     // 註冊完把email清單改已註冊
     const emailcheck = await emails.findOne({ email: req.mail.email })
     emailcheck.occupied = true
@@ -212,26 +217,6 @@ export const getUser = (req, res) => {
   }
 }
 
-// 之後建文章可用這個方式
-// export const addCart = async (req, res) => {
-//     const result = await products.findById(req.body.product)
-//     // 沒找到或已下架
-//     if (!result || !result.sell) {
-//       return res.status(404).send({ success: false, message: '商品不存在' })
-//     }
-//     // 找購物車有沒有這個商品
-//     const idx = req.user.cart.findIndex(item => item.product.toString() === req.body.product)
-//     if (idx > -1) {
-//       req.user.cart[idx].quantity += req.body.quantity
-//     } else {
-//       req.user.cart.push({
-//         product: req.body.product,
-//         quantity: req.body.quantity
-//       })
-//     }
-//     await req.user.save()
-//     res.status(200).send({ success: true, message: '', result: req.user.cart.length })
-// }
 
 export const editInfo = async (req, res) => {
   try {

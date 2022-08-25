@@ -1,5 +1,5 @@
 import boards from '../models/boards.js'
-
+import fs from 'fs'
 
 // 找到版> 去母版看文章規則>審查規則+對應欄位>存入
 
@@ -57,6 +57,7 @@ export default async (req, res, next) => {
     // column.
     //   form.columns = 2
     req.form = form
+    // fs.writeFileSync('article.json', JSON.stringify(form))
     console.log('valid ok');
     // return res.status(403).send({ success: false, message: '到這完成', result: form })
     next()
