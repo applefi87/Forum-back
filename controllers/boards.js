@@ -62,7 +62,7 @@ export const createBoard = async (req, res) => {
     } else {
       res.status(500).send({ success: false, message: '伺服器錯誤', error })
     }
-  }
+  } 
 }
 export const createRoot = async (req, res) => {
   try {
