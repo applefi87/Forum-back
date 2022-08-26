@@ -13,11 +13,6 @@ const rateEmpty = {
 
 export const register = async (req, res) => {
 
-  // 記得改回來
-  // if (!req.mail.isSchool) {
-  //   res.status(403).send({ success: false, message: { title: '請使用學校信箱' } })
-  //   return
-  // }
   // *******驗證帳號與暱稱
   const findUser = await users.findOne({ account: req.body.account })
   if (findUser) {
@@ -74,8 +69,8 @@ export const register = async (req, res) => {
 
     const result = JSON.parse(JSON.stringify(await users.create(input)))
     // !!!!!!!!!!!!!!!!!!!
-    fs.writeFileSync('users.json', JSON.stringify(input))
-    return
+    // fs.writeFileSync('users.json', JSON.stringify(input))
+    // return
     // !!!!!!!!!!!!!!!!!!!
     // 註冊完把email清單改已註冊
     const emailcheck = await emails.findOne({ email: req.mail.email })

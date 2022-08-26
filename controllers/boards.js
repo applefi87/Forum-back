@@ -54,13 +54,13 @@ export const createBoard = async (req, res) => {
       console.log("filter list updated");
     }
     console.log('end---------------------------------');
-    res.status(200).send({ success: true, message: { title: 'uploadSuccess' }})
+    res.status(200).send({ success: true, message: { title: 'uploadSuccess' } })
   } catch (error) {
     console.log(error);
     if (error.name === 'ValidationError') {
-      return res.status(400).send({ success: false, message: error.message })
+      return res.status(400).send({ success: false, message: { title: 'ValidationError' } })
     } else {
-      res.status(500).send({ success: false, message: '伺服器錯誤', error })
+      res.status(500).send({ success: false, message: { title: 'ServerError' }, error })
     }
   }
 }
@@ -88,25 +88,23 @@ export const createBoard = async (req, res) => {
 export const createRoot = async (req, res) => {
   try {
     const result = await boards.create(req.body)
-    res.status(200).send({ success: true, message: '', result })
+    res.status(200).send({ success: true, message: { title: 'createded', text: result } })
   } catch (error) {
     if (error.name === 'ValidationError') {
       return res.status(400).send({ success: false, message: error.message })
     } else {
-      res.status(500).send({ success: false, message: '伺服器錯誤', error })
+      res.status(500).send({ success: false, message: 'ServerError', error })
     }
   }
 }
 export const getBoard = async (req, res) => {
   console.log('in controller');
-  // console.log(req.board);
   try {
-
     res.status(200).send({ success: true, message: '', result: req.board })
     console.log("end");
   } catch (error) {
     console.log(error);
-    res.status(500).send({ success: false, message: '伺服器錯誤' })
+    res.status(500).send({ success: false, message: 'ServerError' })
   }
 }
 export const getBoardTest = async (req, res) => {
@@ -117,7 +115,7 @@ export const getBoardTest = async (req, res) => {
     console.log("end");
   } catch (error) {
     console.log(error);
-    res.status(500).send({ success: false, message: '伺服器錯誤' })
+    res.status(500).send({ success: false, message: 'ServerError' })
   }
 }
 export const getChildBoards = async (req, res) => {
@@ -171,6 +169,6 @@ export const getChildBoards = async (req, res) => {
     console.log("end");
   } catch (error) {
     console.log(error);
-    res.status(500).send({ success: false, message: '伺服器錯誤' })
+    res.status(500).send({ success: false, message: 'ServerError' })
   }
 }

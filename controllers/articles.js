@@ -8,11 +8,9 @@ export const createArticle = async (req, res) => {
     // 如果是評分版，成功後呼叫板塊更新評分
     if (req.body.category === 1) {
       const board = await boards.findById(req.params.id)
-      if (!board) { res.status(403).send({ success: false, message: '找不到該版' }) }
+      if (!board) return res.status(403).send({ success: false, message: { title: 'BoardNoFound' } })
       // 之前沒有就產生新beScored物件  不預設放空值是減少資料負擔      
-      if (!(board.beScored?.list?.length > 0)) {
-        board.beScored = { score: 0, amount: 0, list: [] }
-      }
+      if (!(board.beScored?.list?.length > 0)) board.beScored = { score: 0, amount: 0, list: [] }
       board.beScored.list.push({ from: result.id, score: req.body.score })
       // 考量只是加陣列不太會出錯，最簡單算法拿之前的算
       // board.beScored.amount = board.beScored.list.length
@@ -26,15 +24,15 @@ export const createArticle = async (req, res) => {
       toBoard?.list.push({ from: result.id, score: req.body.score })
       toBoard.score = Math.ceil((toBoard?.amount * toBoard?.score + req.body.score) / (toBoard?.amount + 1))
       toBoard.amount++
-      const t = await req.user.save()
+      await req.user.save()
     }
-    res.status(200).send({ success: true, message: '', result })
+    res.status(200).send({ success: true, message: { title: 'published' } })
   } catch (error) {
     console.log(error);
     if (error.name === 'ValidationError') {
-      return res.status(400).send({ success: false, message: error.message })
+      return res.status(400).send({ success: false, message: { title: 'ValidationError', text: error.message } })
     } else {
-      res.status(500).send({ success: false, message: '伺服器錯誤', error })
+      res.status(500).send({ success: false, message: { title: error } })
     }
   }
 }
@@ -48,7 +46,7 @@ export const getArticles = async (req, res) => {
         path: 'user',
         select: "nickName score info.gender record.toBoard.score"
       })
-    if (articleList.lenth < 1) return res.status(403).send({ success: true, message: '沒文章' })
+    if (articleList.lenth < 1) return res.status(403).send({ success: true, message: '' })
     const out = articleList.map(a => {
       const o = JSON.parse(JSON.stringify(a))
       if (o.privacy == 0) {
@@ -62,6 +60,6 @@ export const getArticles = async (req, res) => {
     res.status(200).send({ success: true, message: '', result: out })
   } catch (error) {
     console.log(error);
-    res.status(500).send({ success: false, message: '伺服器錯誤' })
+    res.status(500).send({ success: false, message: 'ServerError' })
   }
 }
