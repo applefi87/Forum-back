@@ -51,7 +51,7 @@ export const getArticles = async (req, res) => {
     const articleList = await articles.find({ board: req.params.id }).
       populate({
         path: 'user',
-        select: "nickName score info.gender record.toBoard.score record.toBoard.scoreChart"
+        select: "nickName score info.gender record.toBoard.score record.toBoard.amount record.toBoard.scoreChart"
       })
     if (articleList.lenth < 1) return res.status(403).send({ success: true, message: '' })
     const out = articleList.map(a => {
