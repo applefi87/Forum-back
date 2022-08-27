@@ -18,6 +18,8 @@ export const createArticle = async (req, res) => {
       // board.beScored.score = sumScore / board.beScored.amount
       board.beScored.score = Math.ceil((board.beScored.amount * board.beScored.score + req.body.score) / (board.beScored.amount + 1))
       board.beScored.amount++
+      //對應0分 在陣列[0]+1 就能給chart.js讀取
+      board.beScored.scoreChart[req.body.score]++
       await board.save()
       // 更新個人評分
       const toBoard = req.user.record?.toBoard

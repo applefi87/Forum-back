@@ -11,15 +11,16 @@ export default function (ref, setting = {}) {
     }
     if (setting.hasLocation) {
       d.location = { type: String, required: true }
-    } 
+    }
     if (setting.hasAmount) {
       d.amount = { type: Number, required: true }
     }
-    return d 
+    return d
   }
   return {
     score: Number,
     amount: Number,
+    scoreChart: [Number],
     list: {
       type: [listDetail()],
       default: undefined,

@@ -8,6 +8,7 @@ import jwt from 'jsonwebtoken'
 const rateEmpty = {
   score: 0,
   amount: 0,
+  scoreChart:[0,0,0,0,0,0],
   list: []
 }
 
