@@ -8,12 +8,11 @@ import jwt from 'jsonwebtoken'
 const rateEmpty = {
   score: 0,
   amount: 0,
-  scoreChart:[0,0,0,0,0,0],
+  scoreChart: [0, 0, 0, 0, 0, 0],
   list: []
 }
 
 export const register = async (req, res) => {
-
   // *******驗證帳號與暱稱
   const findUser = await users.findOne({ account: req.body.account })
   if (findUser) {

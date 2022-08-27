@@ -6,7 +6,6 @@ import fs from 'fs'
 export default async (req, res, next) => {
   console.log('in middle formatvalid');
   try {
-    console.log(req.body);
     // 找該版
     const board = await boards.findById(req.params.id)
     if (!board) return res.status(403).send({ success: false, message: '找無該版' })
