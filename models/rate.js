@@ -20,6 +20,8 @@ export default function (ref, setting = {}) {
   return {
     score: Number,
     amount: Number,
+    // 之後改成統一先創 不然為了省幾個字，要多一大堆次判斷
+    // 目前只有使用者有先創
     scoreChart: [Number],
     list: {
       type: [listDetail()],

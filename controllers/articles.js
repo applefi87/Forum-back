@@ -10,7 +10,7 @@ export const createArticle = async (req, res) => {
       const board = await boards.findById(req.params.id)
       if (!board) return res.status(403).send({ success: false, message: { title: 'BoardNoFound' } })
       // 之前沒有就產生新beScored物件  不預設放空值是減少資料負擔      
-      if (!(board.beScored?.list?.length > 0)) board.beScored = { score: 0, amount: 0, list: [] }
+      if (!(board.beScored?.list?.length > 0)) board.beScored = { score: 0, amount: 0, scoreChart: [0, 0, 0, 0, 0, 0], list: [] }
       board.beScored.list.push({ from: result.id, score: req.body.score })
       // 考量只是加陣列不太會出錯，最簡單算法拿之前的算
       // board.beScored.amount = board.beScored.list.length
@@ -19,12 +19,20 @@ export const createArticle = async (req, res) => {
       board.beScored.score = Math.ceil((board.beScored.amount * board.beScored.score + req.body.score) / (board.beScored.amount + 1))
       board.beScored.amount++
       //對應0分 在陣列[0]+1 就能給chart.js讀取
+      console.log('board.beScored.scoreChart.length:' + board.beScored.scoreChart.length);
+      // 因應部分板塊用舊規則 有bescore 但沒scoreChart || == []
+      if (!(board.beScored.scoreChart.length === 6)) {
+        console.log('in');
+        board.beScored.scoreChart = [0, 0, 0, 0, 0, 0]
+      }
+      console.log(board.beScored.scoreChart);
       board.beScored.scoreChart[req.body.score]++
       await board.save()
       // 更新個人評分
       const toBoard = req.user.record?.toBoard
       toBoard?.list.push({ from: result.id, score: req.body.score })
       toBoard.score = Math.ceil((toBoard?.amount * toBoard?.score + req.body.score) / (toBoard?.amount + 1))
+      toBoard.scoreChart[req.body.score]++
       toBoard.amount++
       await req.user.save()
     }

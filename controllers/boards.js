@@ -20,7 +20,7 @@ export const createBoard = async (req, res) => {
     // *******抓之前的filter清單，再把新加入的加進去更新，省效能*****
     const pFilter = req.parent.childBoard.rule.display.filter
     // 只要有post 就補上當次uniqueCol 值
-    if (req.updateList.length > 0 || req.newList.length > 0) {
+    if(req.updateList.length > 0 || req.newList.length > 0) {
       // 之前有該object且沒重複再加
       if (pFilter.uniqueCol?.c80?.length > 0) {
         if (!pFilter.uniqueCol.c80.includes(req.body.uniqueCol)) {
