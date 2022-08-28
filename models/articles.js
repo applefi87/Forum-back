@@ -25,7 +25,6 @@ const msg = (nth) => {
       content: {
         type: String,
         required: [true, '必填留言內容'],
-        minlength: [3, '留言必須 3個字以上'],
         maxlength: [1000, '留言必須 1000 個字以下'],
       },
       beScored: rate('users')

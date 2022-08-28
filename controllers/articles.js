@@ -1,6 +1,6 @@
 import articles from '../models/articles.js'
 import boards from '../models/boards.js'
-
+import _ from 'lodash'
 
 export const createArticle = async (req, res) => {
   try {
@@ -56,24 +56,30 @@ export const getArticles = async (req, res) => {
       populate({
         path: 'msg1.list.user',
         select: 'nickName '
-      });
+      })
     // 有文章?---把發文者與留言者要匿名的暱稱+id移除
     if (articleList.lenth < 1) return res.status(403).send({ success: true, message: '' })
-    const out = articleList.map(article => {
+    const out = articleList.map(a => {
+      // 要轉物件才會正常,不然有時delete 等等就是不一樣
+      const article = a.toObject()
       // 有留言?---把發文者與留言者要匿名的暱稱+id移除
       if (article.msg1?.amount) {
         const cleanMsg1List = article.msg1.list.map(msg => {
           // 發文者看自己文章，名稱變成"你"
-          if (msg.user._id.toString() === req._id) msg.user.nickName = 'you'
+          console.log("msg.user._id.toString() === req._id" + msg.user._id.toString() + ":" + req._id + "=" + (msg.user._id.toString() === req._id));
+          console.log(msg.user._id.toString() === article.user._id.toString());
+          console.log(msg.privacy === 0);
+          console.log('---');
+          if (msg.user._id.toString() === req._id) { msg.user.nickName = 'you' }
           // 看發文者在留言區，他的名稱變 "樓主"
-          else if ((msg.user._id === article.user._id)) {
+          else if ((msg.user._id.toString() === article.user._id.toString())) {
             // 是匿名移除_id
-            if (article.privacy === 0) delete msg.user._id
+            if (article.privacy === 0) delete msg.user._id.toString()
             // 統一發文者叫 "發文者"
             msg.user.nickName = 'originalPoster'
             // 扣除瀏覽者與發文者 剩下匿名的...
           } else if (msg.privacy === 0) {
-            delete msg.user._id
+            delete msg.user._id.toString()
             msg.user.nickName = null
           }
           return msg
@@ -86,7 +92,7 @@ export const getArticles = async (req, res) => {
         article.user.nickName = 'you'
       }
       else if (article.privacy == 0) {
-        delete article.user._id
+        delete article.user._id.toString()
         article.user.nickName = null
       }
       return article
@@ -111,7 +117,7 @@ export const createMsg = async (req, res) => {
     article.msg1.list.push({
       id: article.msg1.nowId, user: req.user._id, privacy: req.body.privacy, lastEditDate: Date.now(), content: req.body.content
     })
-    article.save()
+    await article.save()
     res.status(200).send({ success: true, message: { title: 'published' } })
   } catch (error) {
     console.log(error);
@@ -120,5 +126,22 @@ export const createMsg = async (req, res) => {
     } else {
       res.status(500).send({ success: false, message: { title: error } })
     }
+    console.log(error);
+  }
+}
+
+export const updateArticle = async (req, res) => {
+  try {
+    const article = await articles.findById(req.params.id)
+    if (!article) return res.status(403).send({ success: false, message: '查無此評價' })
+    res.status(200).send({ success: true, message: '', result: article  })
+  } catch (error) {
+    console.log(error);
+    if (error.name === 'ValidationError') {
+      return res.status(400).send({ success: false, message: { title: 'ValidationError', text: error.message } })
+    } else {
+      res.status(500).send({ success: false, message: { title: error } })
+    }
+    console.log(error);
   }
 }

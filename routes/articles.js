@@ -6,13 +6,15 @@ import getArticleValid from '../middleware/getArticleValid.js'
 import {
   createArticle,
   getArticles,
-  createMsg
+  createMsg,
+  updateArticle
 } from '../controllers/articles.js'
 
 const router = express.Router()
 
 router.post('/create/:id', content('application/json'), auth.jwt, articleFormatValid, createArticle)
 router.post('/createMsg/:id', content('application/json'), auth.jwt, createMsg)
+router.post('/updateArticle/:id', content('application/json'), auth.jwt, updateArticle)
 // router.get('/all', auth.jwt, admin, getAllProducts)
 // router.get('/:id', getProduct)
 // router.patch('/:id', content('multipart/form-data'), auth.jwt, admin, upload, editProduct)
