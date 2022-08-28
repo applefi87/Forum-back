@@ -67,9 +67,6 @@ export const getArticles = async (req, res) => {
         const cleanMsg1List = article.msg1.list.map(m => {
           const msg = _.cloneDeep(m)
           // 發文者看自己文章，名稱變成"你"
-          console.log(msg.user);
-          console.log(msg.user?._id);
-          console.log("----");
           // 先存著攻下方辨識就能清空了
           const msgUserId = msg.user._id.toString()
           if (msg.privacy === 0) {
@@ -99,7 +96,6 @@ export const getArticles = async (req, res) => {
       return article
     })
     console.log('end');
-    console.log(out);
     res.status(200).send({ success: true, message: '', result: out })
   } catch (error) {
     console.log(error);
