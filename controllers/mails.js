@@ -1,6 +1,6 @@
 import emails from '../models/emails.js'
 import normalizeEmail from '../util/normalizeEmail.js'
-import sendMailGo from '../util/sendMail.js'
+import sendMailJs from '../util/sendMail.js'
 
 export const sendMail = (mode) => {
   return async (req, res) => {
@@ -20,12 +20,12 @@ export const sendMail = (mode) => {
         email.times = 1
         email.isSchool = req.body.isSchool
         console.log(createCode);
-        await sendMailGo(formatedEmail, createCode)
+        await sendMaiJs(formatedEmail, createCode)
         await email.save()
       } else {
         console.log(createCode);
-        await sendMailGo(formatedEmail, '課程網註冊驗證碼',
-          `$(createCode)  是你的信箱驗證碼，一天內有效<br> 請至原頁面填入驗證，進入下步驟`
+        await sendMaiJs(formatedEmail, '課程網註冊驗證碼',
+          `${createCode}  是你的信箱驗證碼，一天內有效<br> 請至原頁面填入驗證，進入下步驟`
         )
         await emails.create({ isSchool: req.body.isSchool, email: formatedEmail, code: createCode, date: Date.now(), occupied: false })
       }
@@ -60,7 +60,7 @@ export const verifyMail = (isMiddle) => {
       } else if (isMiddle) {
         req.mail = email
         next()
-      } else { res.status(200).send({ success: true, message: { title: 'verified-NextStep', text: formatedEmail , duration: 2 } }) }
+      } else { res.status(200).send({ success: true, message: { title: 'verified-NextStep', text: formatedEmail, duration: 2 } }) }
     } catch (error) {
       console.log(error);
       res.status(500).send({ success: false, message: 'ServerError' })
@@ -84,8 +84,8 @@ export const sendPWDMail = async (req, res) => {
     email.date = Date.now()
     email.times = 1
     console.log(createCode);
-    await sendMailGo(formatedEmail, '課程網找回密碼',
-      `$(createCode)  10位數字是你的臨時驗證碼，一天內有效 <br> 請至原頁面填入驗證，進入下步驟`
+    await sendMaiJs(formatedEmail, '課程網找回密碼',
+      `${createCode}  10位數字是你的臨時驗證碼，一天內有效 <br> 請至原頁面填入驗證，進入下步驟`
     )
     await email.save()
     res.status(200).send({ success: true, message: { title: '已寄送找回密碼驗證碼', text: formatedEmail } })

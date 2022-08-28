@@ -51,7 +51,7 @@ export const getArticles = async (req, res) => {
     const articleList = await articles.find({ board: req.params.id }).
       populate({
         path: 'user',
-        select: "nickName score info.gender record.toBoard.score record.toBoard.amount record.toBoard.scoreChart"
+        select: "nickName score info.gender record.toBoard.score record.toBoard.amount record.toBoard.scoreChart msg1.amount"
       })
     if (articleList.lenth < 1) return res.status(403).send({ success: true, message: '' })
     const out = articleList.map(a => {
@@ -59,7 +59,7 @@ export const getArticles = async (req, res) => {
       if (o.privacy == 0) {
         // 先預備id是否可點擊，之後變連結
         delete o.user._id
-        o.user.nickName = 'anonymous'
+        o.user.nickName = null
       }
       return o
     })
@@ -68,5 +68,34 @@ export const getArticles = async (req, res) => {
   } catch (error) {
     console.log(error);
     res.status(500).send({ success: false, message: 'ServerError' })
+  }
+}
+
+export const createMsg = async (req, res) => {
+  try {
+    const article = await articles.findById(req.params.id)
+    if (!article) return res.status(403).send({ success: false, message: '留言異常，查無此評價' })
+    // 找到後加留言
+
+
+    if (!(article.msg1?.amount)) article.msg1 = { amount: 0, nowId: 0, list: [] }
+    article.msg1.amount++
+    article.msg1.nowId++
+    // beScored:  msg2先忽略
+    article.msg1.list.push({
+      id: article.msg1.nowId, user: req.user._id, privacy: req.body.privacy, lastEditDate: Date.now(), content: req.body.content
+    })
+
+
+
+    article.save()
+    res.status(200).send({ success: true, message: { title: 'published' } })
+  } catch (error) {
+    console.log(error);
+    if (error.name === 'ValidationError') {
+      return res.status(400).send({ success: false, message: { title: 'ValidationError', text: error.message } })
+    } else {
+      res.status(500).send({ success: false, message: { title: error } })
+    }
   }
 }

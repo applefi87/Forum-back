@@ -4,7 +4,7 @@ import rate from './rate.js'
 const msg = (nth) => {
   let msglist = (n) => {
     const list = {
-      _id: { // **********************系統操作，使用者無權限****************************  
+      id: { // **********************系統操作，使用者無權限****************************  
         // this.msg.id
         type: Number,
         required: [true, '缺少留言_id'],
@@ -22,9 +22,6 @@ const msg = (nth) => {
         // 0 隱身匿名  1全開(可被查看個人資訊)  ..只顯示暱稱 2只顯示校系 3 只顯示校
         enum: [0, 1, 2, 3]
       },
-      lastEditDate: {   // **********************系統操作，使用者無權限****************************
-        type: Date
-      },
       content: {
         type: String,
         required: [true, '必填留言內容'],
@@ -36,14 +33,15 @@ const msg = (nth) => {
     if (n === '1') {
       list.msg2 = msg('2')
     }
-    return mongoose.Schema(list, { timestamps: { createdAt: 'created_at' } })
+    // 更新內部msg時記得取消 updateAt功能 
+    return mongoose.Schema(list, { timestamps: true})
   }
   let items = {
     // 因為看文章很多 留言可能很少，所以算出來放著
     amount: { type: Number },// **********************系統操作，使用者無權限****************************
-    // 留言加個Id才能讓系統追蹤他給的評價，ex:在xxx文章的id=6 給了好評後編輯 ，系統能對應修改個紀錄s，不然別人刪一條陣列就跑位
+    // // 留言加個Id才能讓系統追蹤他給的評價，ex:在xxx文章的id=6 給了好評後編輯 ，系統能對應修改個紀錄s，不然別人刪一條陣列就跑位
     nowId: { type: Number },// **********************系統操作，使用者無權限****************************
-    list: { type: [msglist(nth)], default: undefined }
+    list: { type: [msglist(nth)], default: undefined, _id: false }
   }
   return items
 }

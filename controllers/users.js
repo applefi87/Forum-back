@@ -2,7 +2,7 @@ import users from '../models/users.js'
 import groups from '../models/groups.js'
 import emails from '../models/emails.js'
 import randomPWD from '../util/randomPWD.js'
-import fs from 'fs'
+// import fs from 'fs'
 import bcrypt from 'bcrypt'
 import jwt from 'jsonwebtoken'
 const rateEmpty = {
@@ -28,7 +28,9 @@ export const register = async (req, res) => {
   const password = req.body.password
   if (!password) { return res.status(400).send({ success: false, message: { title: '缺少密碼欄位' } }) }
   if (password.length < 8 || password.length > 30) { return res.status(400).send({ success: false, message: { title: '長度需介於8~30字之間' } }) }
-  if (!(password.match(/[A-Z]/) && password.match(/[a-z]/) && password.match(/[0-9]/))) { return res.status(400).send({ success: false, message: { title: 'pwdRule' } }) }
+    // 先改成簡易密碼 必須有英數就好
+  if (!( password.match(/[a-zA-Z]/) && password.match(/[0-9]/))) { return res.status(400).send({ success: false, message: { title: 'pwdEasyRule' } }) }
+  // if (!(password.match(/[A-Z]/) && password.match(/[a-z]/) && password.match(/[0-9]/))) { return res.status(400).send({ success: false, message: { title: 'pwdRule' } }) }
   try {
     // ***********新增管理員身要驗證
     // 不填預設1(使用者)

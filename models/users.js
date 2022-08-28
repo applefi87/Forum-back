@@ -36,7 +36,8 @@ const schema = new mongoose.Schema({
   account: {
     type: String,
     required: [true, '缺少帳號欄位'],
-    minlength: [8, '帳號必須 8 個字以上'],
+    minlength: [4, '帳號必須 4 個字以上'],
+    // minlength: [8, '帳號必須 8 個字以上'],
     maxlength: [20, '帳號必須 20 個字以下'],
     unique: true,
     match: [/^[A-Za-z0-9]+$/, '帳號格式錯誤']
