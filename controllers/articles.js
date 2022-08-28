@@ -115,8 +115,8 @@ export const createMsg = async (req, res) => {
     article.msg1.list.push({
       id: article.msg1.nowId, user: req.user._id, privacy: req.body.privacy, lastEditDate: Date.now(), content: req.body.content
     })
-    await article.save()
-    res.status(200).send({ success: true, message: { title: 'published' } })
+    const newArticle = await article.save()
+    res.status(200).send({ success: true, message: { title: 'published' }, result: newArticle })
   } catch (error) {
     console.log(error);
     if (error.name === 'ValidationError') {
@@ -128,7 +128,8 @@ export const createMsg = async (req, res) => {
   }
 }
 
-export const updateArticle = async (req, res) => {
+export const getArticle = async (req, res) => {
+  console.log('in controller');
   try {
     const article = await articles.findById(req.params.id)
     if (!article) return res.status(403).send({ success: false, message: '查無此評價' })
