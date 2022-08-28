@@ -55,10 +55,22 @@ passport.use('jwt', new JWTStrategy({
     if (user.securityData.tokens.indexOf(token) === -1) {
       return done(null, false, { message: '驗證錯誤,請重新登錄' })
     }
-    // console.log('passportOK');
     return done(null, { user, token })
   } catch (error) {
     console.log('passport ERROR');
     return done(error, false)
   }
+}))
+passport.use('jwtForId', new JWTStrategy({
+  jwtFromRequest: ExtractJWT.fromAuthHeaderAsBearerToken(),
+  secretOrKey: process.env.SECRET,
+  passReqToCallback: true,
+  ignoreExpiration: true
+}, async (req, payload, done) => {
+  const expired = payload.exp * 1000 < Date.now()
+  if (expired) {
+    return done(null, false, { message: '不採用ID' })
+  }
+  const token = req.headers.authorization.split(' ')[1]
+  return done(null, { _id: payload._id, role: payload.role })
 }))

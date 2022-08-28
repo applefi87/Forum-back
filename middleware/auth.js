@@ -31,3 +31,17 @@ export const jwt = (req, res, next) => {
     next()
   })(req, res, next)
 }
+
+// 直接取出沒過期token的id 供controller簡易比對是否是本人 
+export const jwtForId = (req, res, next) => {
+  passport.authenticate('jwtForId', { session: false }, (err, data, info) => {
+    if (err || !data) {
+      console.log('no Id');
+    } else {
+      req._id = data._id
+      req.role = data.role
+      console.log('Get Id');
+    }
+    next()
+  })(req, res, next)
+}

@@ -16,6 +16,6 @@ router.post('/createMsg/:id', content('application/json'), auth.jwt, createMsg)
 // router.get('/all', auth.jwt, admin, getAllProducts)
 // router.get('/:id', getProduct)
 // router.patch('/:id', content('multipart/form-data'), auth.jwt, admin, upload, editProduct)
-router.get('/:id', getArticleValid, getArticles)
+router.get('/:id', getArticleValid, auth.jwtForId, getArticles)
 
 export default router

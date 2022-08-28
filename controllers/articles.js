@@ -56,38 +56,38 @@ export const getArticles = async (req, res) => {
       populate({
         path: 'msg1.list.user',
         select: 'nickName '
-        // Get friends of friends - populate the 'friends' array for every friend
-        // populate: { path: 'friends' }
       });
+    // 有文章?---把發文者與留言者要匿名的暱稱+id移除
     if (articleList.lenth < 1) return res.status(403).send({ success: true, message: '' })
     const out = articleList.map(article => {
-      // 有留言，把發文者與留言者要匿名的暱稱+id移除
+      // 有留言?---把發文者與留言者要匿名的暱稱+id移除
       if (article.msg1?.amount) {
         const cleanMsg1List = article.msg1.list.map(msg => {
-          console.log('here');
-          console.log(article.user._id + ":" + req.user);
-          if (false) {
-            // article.user._id === req.user._id
-            msg.user.nickName = 'yourself'
-          } else {
-            // 有留言，把發文者與留言者要匿名的暱稱移除
-            if ((msg.user._id === article.user._id)) {
-              if (article.privacy === 0) delete msg.user._id
-              // 統一發文者叫 "發文者"
-              msg.user.nickName = 'originalPoster'
-            } else if (msg.privacy === 0) {
-              delete msg.user._id
-              msg.user.nickName = null
-            }
+          // 發文者看自己文章，名稱變成"你"
+          if (msg.user._id.toString() === req._id) msg.user.nickName = 'you'
+          // 看發文者在留言區，他的名稱變 "樓主"
+          else if ((msg.user._id === article.user._id)) {
+            // 是匿名移除_id
+            if (article.privacy === 0) delete msg.user._id
+            // 統一發文者叫 "發文者"
+            msg.user.nickName = 'originalPoster'
+            // 扣除瀏覽者與發文者 剩下匿名的...
+          } else if (msg.privacy === 0) {
+            delete msg.user._id
+            msg.user.nickName = null
           }
           return msg
         })
         delete article.msg1.list
         article.msg1.list = cleanMsg1List
-        article.user.nickName = null
       }
-      if (article.privacy == 0) {
-        // 先預備id是否可點擊，之後變連結
+      // 發文者看自己文章，名稱變成"你"
+      if (article.user._id.toString() === req._id) {
+        article.user.nickName = 'you'
+        // 供自己文章介面稍微不同用
+        article.isSelf = true
+      }
+      else if (article.privacy == 0) {
         delete article.user._id
         article.user.nickName = null
       }
