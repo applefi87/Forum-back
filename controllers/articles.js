@@ -64,24 +64,25 @@ export const getArticles = async (req, res) => {
       const article = a.toObject()
       // 有留言?---把發文者與留言者要匿名的暱稱+id移除
       if (article.msg1?.amount) {
-        const cleanMsg1List = article.msg1.list.map(msg => {
+        const cleanMsg1List = article.msg1.list.map(m => {
+          const msg = _.cloneDeep(m)
           // 發文者看自己文章，名稱變成"你"
-          console.log("msg.user._id.toString() === req._id" + msg.user._id.toString() + ":" + req._id + "=" + (msg.user._id.toString() === req._id));
-          console.log(msg.user._id.toString() === article.user._id.toString());
-          console.log(msg.privacy === 0);
-          console.log('---');
-          if (msg.user._id.toString() === req._id) { msg.user.nickName = 'you' }
-          // 看發文者在留言區，他的名稱變 "樓主"
-          else if ((msg.user._id.toString() === article.user._id.toString())) {
-            // 是匿名移除_id
-            if (article.privacy === 0) delete msg.user._id.toString()
-            // 統一發文者叫 "發文者"
-            msg.user.nickName = 'originalPoster'
-            // 扣除瀏覽者與發文者 剩下匿名的...
-          } else if (msg.privacy === 0) {
-            delete msg.user._id.toString()
+          console.log(msg.user);
+          console.log(msg.user?._id);
+          console.log("----");
+          // 先存著攻下方辨識就能清空了
+          const msgUserId = msg.user._id.toString()
+          if (msg.privacy === 0) {
+            delete msg.user._id
             msg.user.nickName = null
           }
+          if ((msgUserId === article.user._id.toString())) {
+            // 避免意外，文章設匿名再刪一次
+            if (article.privacy === 0) delete msg.user._id
+            // 看發文者在留言區，他的名稱變 "樓主"
+            msg.user.nickName = 'originalPoster'
+          }
+          if (msgUserId === req._id) msg.user.nickName = 'you'
           return msg
         })
         delete article.msg1.list
@@ -92,12 +93,13 @@ export const getArticles = async (req, res) => {
         article.user.nickName = 'you'
       }
       else if (article.privacy == 0) {
-        delete article.user._id.toString()
+        article.user._id = undefined
         article.user.nickName = null
       }
       return article
     })
     console.log('end');
+    console.log(out);
     res.status(200).send({ success: true, message: '', result: out })
   } catch (error) {
     console.log(error);
@@ -134,7 +136,7 @@ export const updateArticle = async (req, res) => {
   try {
     const article = await articles.findById(req.params.id)
     if (!article) return res.status(403).send({ success: false, message: '查無此評價' })
-    res.status(200).send({ success: true, message: '', result: article  })
+    res.status(200).send({ success: true, message: '', result: article })
   } catch (error) {
     console.log(error);
     if (error.name === 'ValidationError') {
