@@ -52,10 +52,31 @@ export const getArticles = async (req, res) => {
       populate({
         path: 'user',
         select: "nickName score info.gender record.toBoard.score record.toBoard.amount record.toBoard.scoreChart msg1"
-      })
+      }).
+      populate({
+        path: 'msg1.list.user',
+        select: 'nickName '
+        // Get friends of friends - populate the 'friends' array for every friend
+        // populate: { path: 'friends' }
+      });
     if (articleList.lenth < 1) return res.status(403).send({ success: true, message: '' })
     const out = articleList.map(a => {
       const o = JSON.parse(JSON.stringify(a))
+      // 有留言，把發文者與留言者要匿名的暱稱+id移除
+      if (o.msg1?.amount) {
+        const cleanMsg1List = o.msg1.list.map(m => {
+          const msg = JSON.parse(JSON.stringify(m))
+          // 有留言，把發文者與留言者要匿名的暱稱移除
+          if ((msg.user._id === o.user._id) || msg.privacy === 0) {
+            delete msg.user._id
+            msg.user.nickName = null
+          }
+          return msg
+        })
+        delete o.msg1.list
+        o.msg1.list = cleanMsg1List
+        o.user.nickName = null
+      }
       if (o.privacy == 0) {
         // 先預備id是否可點擊，之後變連結
         delete o.user._id
