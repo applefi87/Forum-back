@@ -21,7 +21,7 @@ const msg = (nth) => {
         default: 1,
         // 0 隱身匿名  1全開(可被查看個人資訊)  ..只顯示暱稱 2只顯示校系 3 只顯示校
         enum: [0, 1, 2, 3]
-      },
+      }, 
       content: {
         type: String,
         required: [true, '必填留言內容'],

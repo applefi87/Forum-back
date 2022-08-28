@@ -60,29 +60,38 @@ export const getArticles = async (req, res) => {
         // populate: { path: 'friends' }
       });
     if (articleList.lenth < 1) return res.status(403).send({ success: true, message: '' })
-    const out = articleList.map(a => {
-      const o = JSON.parse(JSON.stringify(a))
+    const out = articleList.map(article => {
       // 有留言，把發文者與留言者要匿名的暱稱+id移除
-      if (o.msg1?.amount) {
-        const cleanMsg1List = o.msg1.list.map(m => {
-          const msg = JSON.parse(JSON.stringify(m))
-          // 有留言，把發文者與留言者要匿名的暱稱移除
-          if ((msg.user._id === o.user._id) || msg.privacy === 0) {
-            delete msg.user._id
-            msg.user.nickName = null
+      if (article.msg1?.amount) {
+        const cleanMsg1List = article.msg1.list.map(msg => {
+          console.log('here');
+          console.log(article.user._id + ":" + req.user);
+          if (false) {
+            // article.user._id === req.user._id
+            msg.user.nickName = 'yourself'
+          } else {
+            // 有留言，把發文者與留言者要匿名的暱稱移除
+            if ((msg.user._id === article.user._id)) {
+              if (article.privacy === 0) delete msg.user._id
+              // 統一發文者叫 "發文者"
+              msg.user.nickName = 'originalPoster'
+            } else if (msg.privacy === 0) {
+              delete msg.user._id
+              msg.user.nickName = null
+            }
           }
           return msg
         })
-        delete o.msg1.list
-        o.msg1.list = cleanMsg1List
-        o.user.nickName = null
+        delete article.msg1.list
+        article.msg1.list = cleanMsg1List
+        article.user.nickName = null
       }
-      if (o.privacy == 0) {
+      if (article.privacy == 0) {
         // 先預備id是否可點擊，之後變連結
-        delete o.user._id
-        o.user.nickName = null
+        delete article.user._id
+        article.user.nickName = null
       }
-      return o
+      return article
     })
     console.log('end');
     res.status(200).send({ success: true, message: '', result: out })
@@ -97,8 +106,6 @@ export const createMsg = async (req, res) => {
     const article = await articles.findById(req.params.id)
     if (!article) return res.status(403).send({ success: false, message: '留言異常，查無此評價' })
     // 找到後加留言
-
-
     if (!(article.msg1?.amount)) article.msg1 = { amount: 0, nowId: 0, list: [] }
     article.msg1.amount++
     article.msg1.nowId++
@@ -106,9 +113,6 @@ export const createMsg = async (req, res) => {
     article.msg1.list.push({
       id: article.msg1.nowId, user: req.user._id, privacy: req.body.privacy, lastEditDate: Date.now(), content: req.body.content
     })
-
-
-
     article.save()
     res.status(200).send({ success: true, message: { title: 'published' } })
   } catch (error) {

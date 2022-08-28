@@ -28,8 +28,8 @@ export const register = async (req, res) => {
   const password = req.body.password
   if (!password) { return res.status(400).send({ success: false, message: { title: '缺少密碼欄位' } }) }
   if (password.length < 8 || password.length > 30) { return res.status(400).send({ success: false, message: { title: '長度需介於8~30字之間' } }) }
-    // 先改成簡易密碼 必須有英數就好
-  if (!( password.match(/[a-zA-Z]/) && password.match(/[0-9]/))) { return res.status(400).send({ success: false, message: { title: 'pwdEasyRule' } }) }
+  // 先改成簡易密碼 必須有英數就好
+  if (!(password.match(/[a-zA-Z]/) && password.match(/[0-9]/))) { return res.status(400).send({ success: false, message: { title: 'pwdEasyRule' } }) }
   // if (!(password.match(/[A-Z]/) && password.match(/[a-z]/) && password.match(/[0-9]/))) { return res.status(400).send({ success: false, message: { title: 'pwdRule' } }) }
   try {
     // ***********新增管理員身要驗證
@@ -109,6 +109,7 @@ export const login = async (req, res) => {
       message: { success: true, title: 'loginSuccess' },
       result: {
         token,
+        _id: req.user._id,
         account: req.user.account,
         role: req.user.securityData.role,
         score: req.user.score
