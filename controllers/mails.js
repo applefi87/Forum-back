@@ -19,12 +19,12 @@ export const sendMail = (mode) => {
         email.date = Date.now()
         email.times = 1
         email.isSchool = req.body.isSchool
-        console.log(createCode);
-        await sendMaiJs(formatedEmail, createCode)
+        await sendMailJs(formatedEmail, createCode)
         await email.save()
+        console.log(createCode);
       } else {
         console.log(createCode);
-        await sendMaiJs(formatedEmail, '課程網註冊驗證碼',
+        await sendMailJs(formatedEmail, '課程網註冊驗證碼',
           `${createCode}  是你的信箱驗證碼，一天內有效<br> 請至原頁面填入驗證，進入下步驟`
         )
         await emails.create({ isSchool: req.body.isSchool, email: formatedEmail, code: createCode, date: Date.now(), occupied: false })
@@ -84,7 +84,7 @@ export const sendPWDMail = async (req, res) => {
     email.date = Date.now()
     email.times = 1
     console.log(createCode);
-    await sendMaiJs(formatedEmail, '課程網找回密碼',
+    await sendMailJs(formatedEmail, '課程網找回密碼',
       `${createCode}  10位數字是你的臨時驗證碼，一天內有效 <br> 請至原頁面填入驗證，進入下步驟`
     )
     await email.save()

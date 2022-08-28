@@ -84,8 +84,6 @@ export const getArticles = async (req, res) => {
       // 發文者看自己文章，名稱變成"你"
       if (article.user._id.toString() === req._id) {
         article.user.nickName = 'you'
-        // 供自己文章介面稍微不同用
-        article.isSelf = true
       }
       else if (article.privacy == 0) {
         delete article.user._id
