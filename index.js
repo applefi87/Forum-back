@@ -4,7 +4,6 @@ import express from 'express'
 import rateLimit from 'express-rate-limit'
 import mongoSanitize from 'express-mongo-sanitize'
 import cors from 'cors'
-
 import testRouter from './routes/tests.js'
 import userRouter from './routes/users.js'
 import groupRouter from './routes/groups.js'
@@ -29,7 +28,6 @@ const limiter = rateLimit({
   }
 })
 app.use(limiter)
-
 app.use(cors({
   origin(origin, callback) {
     // if (origin === undefined || origin.includes('github') || origin.includes('localhost')) {
