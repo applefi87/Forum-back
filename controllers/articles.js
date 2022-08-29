@@ -1,6 +1,42 @@
 import articles from '../models/articles.js'
 import boards from '../models/boards.js'
 import _ from 'lodash'
+const sanitizeArticle = (req, articleIn) => {
+  // 要轉物件才會正常,不然有時delete 等等就是不一樣
+  const article = articleIn.toObject()
+  // 有留言?---把發文者與留言者要匿名的暱稱+id移除
+  if (article.msg1?.amount) {
+    const cleanMsg1List = article.msg1.list.map(m => {
+      const msg = _.cloneDeep(m)
+      // 發文者看自己文章，名稱變成"你"
+      // 先存著攻下方辨識就能清空了
+      const msgUserId = msg.user._id.toString()
+      if (msg.privacy === 0) {
+        delete msg.user._id
+        msg.user.nickName = null
+      }
+      if ((msgUserId === article.user._id.toString())) {
+        // 避免意外，文章設匿名再刪一次
+        if (article.privacy === 0) delete msg.user._id
+        // 看發文者在留言區，他的名稱變 "樓主"
+        msg.user.nickName = 'originalPoster'
+      }
+      if (msgUserId === req._id) msg.user.nickName = 'you'
+      return msg
+    })
+    delete article.msg1.list
+    article.msg1.list = cleanMsg1List
+  }
+  // 發文者看自己文章，名稱變成"你"
+  if (article.user._id.toString() === req._id) {
+    article.user.nickName = 'you'
+  }
+  else if (article.privacy == 0) {
+    article.user._id = undefined
+    article.user.nickName = null
+  }
+  return article
+}
 
 export const createArticle = async (req, res) => {
   try {
@@ -60,40 +96,7 @@ export const getArticles = async (req, res) => {
     // 有文章?---把發文者與留言者要匿名的暱稱+id移除
     if (articleList.lenth < 1) return res.status(403).send({ success: true, message: '' })
     const out = articleList.map(a => {
-      // 要轉物件才會正常,不然有時delete 等等就是不一樣
-      const article = a.toObject()
-      // 有留言?---把發文者與留言者要匿名的暱稱+id移除
-      if (article.msg1?.amount) {
-        const cleanMsg1List = article.msg1.list.map(m => {
-          const msg = _.cloneDeep(m)
-          // 發文者看自己文章，名稱變成"你"
-          // 先存著攻下方辨識就能清空了
-          const msgUserId = msg.user._id.toString()
-          if (msg.privacy === 0) {
-            delete msg.user._id
-            msg.user.nickName = null
-          }
-          if ((msgUserId === article.user._id.toString())) {
-            // 避免意外，文章設匿名再刪一次
-            if (article.privacy === 0) delete msg.user._id
-            // 看發文者在留言區，他的名稱變 "樓主"
-            msg.user.nickName = 'originalPoster'
-          }
-          if (msgUserId === req._id) msg.user.nickName = 'you'
-          return msg
-        })
-        delete article.msg1.list
-        article.msg1.list = cleanMsg1List
-      }
-      // 發文者看自己文章，名稱變成"你"
-      if (article.user._id.toString() === req._id) {
-        article.user.nickName = 'you'
-      }
-      else if (article.privacy == 0) {
-        article.user._id = undefined
-        article.user.nickName = null
-      }
-      return article
+      return sanitizeArticle(req, a)
     })
     console.log('end');
     res.status(200).send({ success: true, message: '', result: out })
@@ -115,8 +118,14 @@ export const createMsg = async (req, res) => {
     article.msg1.list.push({
       id: article.msg1.nowId, user: req.user._id, privacy: req.body.privacy, lastEditDate: Date.now(), content: req.body.content
     })
-    const newArticle = await article.save()
-    res.status(200).send({ success: true, message: { title: 'published' }, result: newArticle })
+    // 偷工 抓資料就加工(預期存=取)
+    await article.save()
+    const newArticle = await articles.findById(req.params.id).
+      populate({
+        path: 'msg1.list.user',
+        select: 'nickName _id'
+      })
+    res.status(200).send({ success: true, message: { title: 'published' }, result: sanitizeArticle(req, newArticle) })
   } catch (error) {
     console.log(error);
     if (error.name === 'ValidationError') {

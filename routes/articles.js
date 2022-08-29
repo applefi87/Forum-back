@@ -13,7 +13,7 @@ import {
 const router = express.Router()
 
 router.post('/create/:id', content('application/json'), auth.jwt, articleFormatValid, createArticle)
-router.post('/createMsg/:id', content('application/json'), auth.jwt, createMsg)
+router.post('/createMsg/:id', content('application/json'), auth.jwt, auth.jwtForId, createMsg)
 router.get('/getArticle/:id', auth.jwtForId, getArticle)
 // router.get('/all', auth.jwt, admin, getAllProducts)
 // router.get('/:id', getProduct)
