@@ -52,11 +52,11 @@ export const verifyMail = (isMiddle) => {
       } else if (email.date.getTime() + 1000 * 60 * 60 * 24 < Date.now()) {
         res.status(403).send({ success: false, message: { title: '驗證碼超過一天,請重寄驗證信驗證', duration: 3 } })
       } else if (email.times > 3) {
-        res.status(403).send({ success: false, message: { title: '驗證碼錯誤,超過3次須重寄驗證信', duration: 3 } })
+        res.status(403).send({ success: false, message: { title: '錯誤過多次，請重寄驗證信驗證', duration: 3 } })
       } else if (email.code != code) {
         email.times++
         await email.save()
-        res.status(403).send({ success: false, message: { title: '驗證失敗', duration: 3 } })
+        res.status(403).send({ success: false, message: { title: '驗證碼錯誤,超過3次須重寄驗證信', duration: 3 } })
       } else if (isMiddle) {
         req.mail = email
         next()
