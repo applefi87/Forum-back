@@ -89,8 +89,8 @@ const schema = new mongoose.Schema({
   content: {
     type: String,
     required: [true, '必填內容'],
-    minlength: [20, '必須 20 個字以上'],
-    maxlength: [5000, '必須 5000 個字以下'],
+    minlength: [10, '必須 10 個字以上'],
+    maxlength: [50000, '必須 50000 個字以下'],
   },
   score: {
     type: Number,

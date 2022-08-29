@@ -1,8 +1,10 @@
 import boards from '../models/boards.js'
 import fs from 'fs'
-
+import xss from 'xss'
 // 找到版> 去母版看文章規則>審查規則+對應欄位>存入
-
+const cleanXSS = (html) => {
+  return xss(html)
+}
 export default async (req, res, next) => {
   console.log('in middle formatvalid');
   try {
@@ -35,7 +37,7 @@ export default async (req, res, next) => {
     form.category = req.body.category
     // (給schema檢查)
     form.title = req.body.title
-    form.content = req.body.content
+    form.content = cleanXSS(req.body.content)
     // 是1(評價版)才加評分 (給schema檢查)
     if (category.c === 1) { form.score = req.body.score }
     // 處理tag (母板歸有訂才加入) (已經審查完內容)

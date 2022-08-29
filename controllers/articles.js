@@ -1,6 +1,7 @@
 import articles from '../models/articles.js'
 import boards from '../models/boards.js'
 import _ from 'lodash'
+
 const sanitizeArticle = (req, articleIn) => {
   // 要轉物件才會正常,不然有時delete 等等就是不一樣
   const article = articleIn.toObject()
@@ -38,6 +39,7 @@ const sanitizeArticle = (req, articleIn) => {
   return article
 }
 
+
 export const createArticle = async (req, res) => {
   try {
     const result = await articles.create(req.form)
@@ -73,7 +75,7 @@ export const createArticle = async (req, res) => {
   } catch (error) {
     console.log(error);
     if (error.name === 'ValidationError') {
-      return res.status(400).send({ success: false, message: { title: 'ValidationError', text: error.message } })
+      return res.status(400).send({ success: false, message: { title: '格式不符', text: error.message } })
     } else {
       res.status(500).send({ success: false, message: { title: error } })
     }
