@@ -29,7 +29,7 @@ export const sendMail = (mode) => {
         )
         await emails.create({ isSchool: req.body.isSchool, email: formatedEmail, code: createCode, date: Date.now(), occupied: false })
       }
-      res.status(200).send({ success: true, message: { title: '請至該信箱收信', text: formatedEmail, duration: 10000 } })
+      res.status(200).send({ success: true, message: { title: 'emailSend', text: formatedEmail } })
     } catch (error) {
       res.status(500).send({ success: false, message: 'ServerError' })
     }
@@ -46,21 +46,21 @@ export const verifyMail = (isMiddle) => {
       const email = await emails.findOne({ email: formatedEmail })
       // 防亂驗證信箱
       if (email && email?.occupied) {
-        res.status(403).send({ success: false, message: { title: '該信箱已註冊', text: formatedEmail, duration: 3 } })
+        res.status(403).send({ success: false, message: { title: 'emailOccupied', text: formatedEmail, duration: 3 } })
       } else if (!email) {
-        res.status(403).send({ success: false, message: { title: '請寄送驗證信驗證', duration: 3 } })
+        res.status(403).send({ success: false, message: { title: 'sendVerificationEmailFirst', duration: 3 } })
       } else if (email.date.getTime() + 1000 * 60 * 60 * 24 < Date.now()) {
-        res.status(403).send({ success: false, message: { title: '驗證碼超過一天,請重寄驗證信驗證', duration: 3 } })
+        res.status(403).send({ success: false, message: { title: 'codeExpired', duration: 3 } })
       } else if (email.times > 3) {
-        res.status(403).send({ success: false, message: { title: '驗證碼錯誤,超過3次須重寄驗證信', duration: 3 } })
+        res.status(403).send({ success: false, message: { title: 'failTooMuchTimes', duration: 3 } })
       } else if (email.code != code) {
         email.times++
         await email.save()
-        res.status(403).send({ success: false, message: { title: '驗證失敗', duration: 3 } })
+        res.status(403).send({ success: false, message: { title: 'verifyFailed', duration: 3 } })
       } else if (isMiddle) {
         req.mail = email
         next()
-      } else { res.status(200).send({ success: true, message: { title: '驗證成功，請填寫帳密', text: formatedEmail, duration: 2 } }) }
+      } else { res.status(200).send({ success: true, message: { title: 'verified-NextStep', text: formatedEmail, duration: 2 } }) }
     } catch (error) {
       console.log(error);
       res.status(500).send({ success: false, message: 'ServerError' })

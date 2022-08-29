@@ -214,10 +214,12 @@ export default async (req, res, next) => {
     console.log("combineNew:" + combineNew);
     console.log("updateList:" + updateList.length);
     console.log('next');
+    const info = "count:" + count + "; " + "same:" + same + "; " + "combineUpdate:" + combineUpdate + "; " + "updateList:" + updateList.length + "; " + "newList:" + newList.length + "; " + "combineNew:" + combineNew
     // fs.writeFileSync('tt.json', JSON.stringify(updateList))
     req.updateList = updateList
     req.parent = parent
     req.newList = newList
+    req.info = info
     next()
   } catch (error) {
     console.log(error)

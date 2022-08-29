@@ -32,11 +32,11 @@ app.use(limiter)
 
 app.use(cors({
   origin(origin, callback) {
-    if (origin === undefined || origin.includes('github') || origin.includes('localhost')) {
+    // if (origin === undefined || origin.includes('github') || origin.includes('localhost')) {
       callback(null, true)
-    } else {
-      callback(new Error('Not Allowed'), false)
-    }
+    // } else {
+    //   callback(new Error('Not Allowed'), false)
+    // }
   }
 }))
 
