@@ -21,7 +21,7 @@ const msg = (nth) => {
         default: 1,
         // 0 隱身匿名  1全開(可被查看個人資訊)  ..只顯示暱稱 2只顯示校系 3 只顯示校
         enum: [0, 1, 2, 3]
-      }, 
+      },
       content: {
         type: String,
         required: [true, '必填留言內容'],
@@ -33,7 +33,7 @@ const msg = (nth) => {
       list.msg2 = msg('2')
     }
     // 更新內部msg時記得取消 updateAt功能 
-    return mongoose.Schema(list, { timestamps: true})
+    return mongoose.Schema(list, { timestamps: true })
   }
   let items = {
     // 因為看文章很多 留言可能很少，所以算出來放著
@@ -55,6 +55,12 @@ const schema = new mongoose.Schema({
     type: mongoose.ObjectId,
     ref: 'users',
     required: [true, '缺少創建者']
+  },
+  state: {
+    type: Number,
+    default: 1,
+    //屏蔽    1.正常
+    enum: [0, 1]
   },
   privacy: {
     type: Number,
