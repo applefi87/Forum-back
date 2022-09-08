@@ -4,7 +4,7 @@ import fs from 'fs'
 // 把中文key轉英文(統一)
 import codeList from '../translateForm/school.js'
 
-// 分組前，同一組的資料可以省去，用idx來控制(方便)，用陣列名來刪除(才穩定) (之後也可直接全手打)
+// 分組前，同一組的資料可以省去，用idx來控制(方便)，用陣列名來刪除(才穩定) (之後也可用介面調整)
 // const dataCol = [1, 2, 6, 8, 9, 10, 11, 12]
 // const dataKey = []
 // for (let colNum in dataCol) {
@@ -15,7 +15,7 @@ export default function (csv) {
   const toEnglish = csv?.map(obj => {
     const ok = {}
     for (let i = 0; i < translate.length; i++) {
-      // 不能用空，因為方便我辨識第幾陣列，不然第幾陣列會跑掉
+      // 不能用空方便我辨識第幾陣列，不然第幾陣列會跑掉
       // if (obj[translate[i][0]] != undefined) {
       if (obj[translate[i][0]]) {
         if (translate[i][0] !== "地點時間") {
