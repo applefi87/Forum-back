@@ -1,7 +1,6 @@
 import buildFile from '../util/build.js'
 import boards from '../models/boards.js'
 import codeList from '../translateForm/school.js'
-import mongoose from 'mongoose'
 import fs from 'fs'
 
 const inputCol = "c80"
@@ -130,82 +129,82 @@ export default async (req, res, next) => {
 
     // **************
     console.log('start for');
-    // for (const c of file) {
-    //   count++
-    //   // 沒課程碼/課程名稱就忽略
-    //   if (!(c.classCode && c.className)) { console.log(c.classCode, c.className); continue }
-    //   // -----------------------
-    //   const oldClassIdx = childBoards?.findIndex(oldC => (oldC.colData.c10 + oldC.colData.c60) === (c.classCode + (c.teacher || '無')))
-    //   if (oldClassIdx >= 0) {
-    //     const newClassUniqueIdx = updateList?.findIndex(newC => (newC.colData.c10 + newC.colData.c60) === (c.classCode + (c.teacher || '無')))
-    //     // 有同課程名 + 老師
-    //     if (newClassUniqueIdx >= 0) {
-    //       combineUnique(updateList, newClassUniqueIdx, c)
-    //     } else {
-    //       const pUniqueCol = parent.childBoard.rule.uniqueCol
-    //       const oldClass = childBoards[oldClassIdx]
-    //       // 確認資料不重複
-    //       // 原課程unique轉字串
-    //       const oldUnique = []
-    //       for (let it of oldClass.uniqueData) {
-    //         let uniqueString = ''
-    //         for (let uniqueCol of uniqueCols) {
-    //           uniqueString += (uniqueCol + ":" + (typeof it[uniqueCol] !== 'object' ? it[uniqueCol] : JSON.stringify(it[uniqueCol])))
-    //         }
-    //         uniqueString += (inputCol + it[inputCol])
-    //         oldUnique.push(uniqueString)
-    //       }
-    //       // 新課程每個unique轉字串 比對不重複就validate加入原陣列
-    //       let changed = false
-    //       for (let it of c.uniqueData) {
-    //         let uniqueString = ''
-    //         for (let uniqueCol of uniqueCols) {
-    //           const codeName = uniqueCode.find(c => c[2] === uniqueCol)[1]
-    //           uniqueString += (uniqueCol + ":" + (typeof it[codeName] !== 'object' ? it[codeName] : JSON.stringify(it[codeName])))
-    //         }
-    //         // inputCol 直接加上
-    //         uniqueString += (inputCol + req.body.uniqueCol)
-    //         if (!oldUnique.find(s => s === uniqueString)) {
-    //           oldClass.uniqueData.push(toCode(it, pUniqueCol))
-    //           oldClass._id = mongoose.Types.ObjectId(oldClass._id)
-    //           changed = true
-    //         } else { same++ }
-    //       }
-    //       if (changed) updateList.push(oldClass)
-    //     }
-    //   } else {
-    //     // 如果同課程名+老師 直接加到unique裡面
-    //     const newClassUniqueIdx = newList?.findIndex(newC => (newC.colData.c10 + newC.colData.c60) === (c.classCode + (c.teacher || '無')))
-    //     // 有同課程名+老師 
-    //     if (newClassUniqueIdx >= 0) {
-    //       combineUnique(newList, newClassUniqueIdx, c)
-    //     } else {
-    //       // ************真正要新增的
-    //       // 基本加工
-    //       const form = {
-    //         // 限20字
-    //         "title": c.className.split(' [')[0].slice(0, 20),
-    //         "parent": req.params.id,
-    //         // "uniqueData": c.uniqueData,
-    //         "childBoard": {
-    //           "active": false
-    //         }
-    //       }
-    //       // ***宣告存兩個欄位用的變數**
-    //       const pDataCol = parent.childBoard.rule.dataCol
-    //       form.colData = {}
-    //       form.colData = { ...toCode(c, pDataCol) }
-    //       // ******
-    //       form.uniqueData = []
-    //       // uniqueData
+    for (const c of file) {
+      count++
+      // 沒課程碼/課程名稱就忽略
+      if (!(c.classCode && c.className)) { console.log(c.classCode, c.className); continue }
+      // -----------------------
+      const oldClassIdx = childBoards?.findIndex(oldC => (oldC.colData.c10 + oldC.colData.c60) === (c.classCode + (c.teacher || '無')))
+      if (oldClassIdx >= 0) {
+        const newClassUniqueIdx = updateList?.findIndex(newC => (newC.colData.c10 + newC.colData.c60) === (c.classCode + (c.teacher || '無')))
+        // 有同課程名 + 老師
+        if (newClassUniqueIdx >= 0) {
+          combineUnique(updateList, newClassUniqueIdx, c)
+        } else {
+          const pUniqueCol = parent.childBoard.rule.uniqueCol
+          const oldClass = childBoards[oldClassIdx]
+          // 確認資料不重複
+          // 原課程unique轉字串
+          const oldUnique = []
+          for (let it of oldClass.uniqueData) {
+            let uniqueString = ''
+            for (let uniqueCol of uniqueCols) {
+              uniqueString += (uniqueCol + ":" + (typeof it[uniqueCol] !== 'object' ? it[uniqueCol] : JSON.stringify(it[uniqueCol])))
+            }
+            uniqueString += (inputCol + it[inputCol])
+            oldUnique.push(uniqueString)
+          }
+          // 新課程每個unique轉字串 比對不重複就validate加入原陣列
+          let changed = false
+          for (let it of c.uniqueData) {
+            let uniqueString = ''
+            for (let uniqueCol of uniqueCols) {
+              const codeName = uniqueCode.find(c => c[2] === uniqueCol)[1]
+              uniqueString += (uniqueCol + ":" + (typeof it[codeName] !== 'object' ? it[codeName] : JSON.stringify(it[codeName])))
+            }
+            // inputCol 直接加上
+            uniqueString += (inputCol + req.body.uniqueCol)
+            if (!oldUnique.find(s => s === uniqueString)) {
+              oldClass.uniqueData.push(toCode(it, pUniqueCol))
+              oldClass._id = mongoose.Types.ObjectId(oldClass._id)
+              changed = true
+            } else { same++ }
+          }
+          if (changed) updateList.push(oldClass)
+        }
+      } else {
+        // 如果同課程名+老師 直接加到unique裡面
+        const newClassUniqueIdx = newList?.findIndex(newC => (newC.colData.c10 + newC.colData.c60) === (c.classCode + (c.teacher || '無')))
+        // 有同課程名+老師 
+        if (newClassUniqueIdx >= 0) {
+          combineUnique(newList, newClassUniqueIdx, c)
+        } else {
+          // ************真正要新增的
+          // 基本加工
+          const form = {
+            // 限20字
+            "title": c.className.split(' [')[0].slice(0, 20),
+            "parent": req.params.id,
+            // "uniqueData": c.uniqueData,
+            "childBoard": {
+              "active": false
+            }
+          }
+          // ***宣告存兩個欄位用的變數**
+          const pDataCol = parent.childBoard.rule.dataCol
+          form.colData = {}
+          form.colData = { ...toCode(c, pDataCol) }
+          // ******
+          form.uniqueData = []
+          // uniqueData
 
-    //       for (let it of c.uniqueData) {
-    //         form.uniqueData.push(toCode(it, pUniqueCol))
-    //       }
-    //       newList.push(form)
-    //     }
-    //   }
-    // }
+          for (let it of c.uniqueData) {
+            form.uniqueData.push(toCode(it, pUniqueCol))
+          }
+          newList.push(form)
+        }
+      }
+    }
     // ***********
     console.log("count:" + count);
     console.log("same:" + same);
