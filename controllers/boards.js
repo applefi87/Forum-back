@@ -25,12 +25,14 @@ export const createBoard = async (req, res) => {
       if (pFilter.uniqueCol?.c80?.length > 0) {
         if (!pFilter.uniqueCol.c80.includes(req.body.uniqueCol)) {
           pFilter.uniqueCol.c80.push(req.body.uniqueCol)
+          pFilter.uniqueCol.c80.sort().reverse()
         }
       } else {
         // 不然直接新增
         pFilter.uniqueCol = { c80: [req.body.uniqueCol] }
       }
       req.parent.markModified('childBoard.rule.display.filter.uniqueCol')
+      await req.parent.save()
       console.log("uniqueCol updated");
     } else {
       console.log('no changed');
