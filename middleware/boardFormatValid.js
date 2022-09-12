@@ -12,12 +12,12 @@ export default async (req, res, next) => {
     let same = 0
     let combineUpdate = 0
     let combineNew = 0
-    const temp = buildFile(req.body.csv)
+    const parent = await boards.findById(req.params.id)
+    console.log("get parent");
+    const temp = buildFile(req.body.csv,parent.childBoard.rule)
     // fs.writeFileSync('in.json', JSON.stringify(temp))
     // console.log(req.body.csv);
     const file = temp
-    const parent = await boards.findById(req.params.id)
-    console.log("get parent");
     const inputCol = "c80"
     const uniqueCols = ["c5"]
     if (!parent) return res.status(403).send({ success: false, message: '找無該母版' })

@@ -114,11 +114,12 @@ const schema = new mongoose.Schema({
       // 程式抓母版不重複供選擇,填上代表必填
       uniqueCols: col,// 對應欄位+附值(任意格式，程式處理成可用)
       display: display('board'),
-      transformTable:Array,
-      dataList:Array,
-      uniqueList:Array,
-      combineCheckCols:Array,
-      TitleCol:String
+      transformTable: [mongoose.Mixed],
+      dataList: [String],
+      uniqueList: [String],
+      multiLangList: [String],
+      combineCheckCols: [String],
+      TitleCol: String
     },
     // 子版的文章規則
     article: {

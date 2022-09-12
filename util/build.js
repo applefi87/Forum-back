@@ -10,7 +10,7 @@ import codeList from '../translateForm/school.js'
 // for (let colNum in dataCol) {
 //   dataKey.push(translate[dataCol[colNum]][1])
 // }
-export default function (csv) {
+export default function (csv,rule) {
   const dataKey = ["department", 'classCode', "english", "className", "classNameEng", 'score', "required", "teacher", "semester"]
   const toEnglish = csv?.map(obj => {
     const ok = {}
