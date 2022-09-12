@@ -110,9 +110,7 @@ const schema = new mongoose.Schema({
     active: { type: Boolean, required: true },
     titleCol: { type: String, required: function () { return this.childBoard.active } },
     rule: {
-      dataCols: col,
-      // 程式抓母版不重複供選擇,填上代表必填
-      uniqueCols: col,// 對應欄位+附值(任意格式，程式處理成可用)
+      cols: col,
       display: display('board'),
       transformTable: [mongoose.Mixed],
       dataList: [String],
