@@ -29,52 +29,12 @@ export default function (csv, rule) {
     }
     return ok
   })
-  // ********************
-  // 只取出關鍵欄位來組合判斷是否相同，節省效能
-  const createCombineString = (obj) => {
-    let out
-    for (let c in rule.combineCheckCols) {
-      out += (obj[c] + "*")
-    }
-    return out
-  }
-  // 開始分組
-  // 加工出
-  var group = _.mapValues(
-    // 產生同代碼老師 { '代碼+老師': [課程詳細內容清單], '6': [6.1, 6.3] }
-    _.groupBy(toCode, (obj) => {
-      return createCombineString(obj)
-    }),
-    clist => clist.map(obj => _.pick(obj, uniqueList)));
-  // fs.writeFileSync('group.json', JSON.stringify(group))
-
-  // *************
-  // 輸出頁面的
-  // 從每個課程的key開始回找
-  const classesOut = Object.keys(group).map((key) => {
-    const idx = toCode.findIndex((obj) => {
-      return createCombineString(obj) === key
-    }
-    )
-    // 取得在原檔的完整清單
-    const o = JSON.parse(JSON.stringify(toCode[idx]))
-    // 移除Unique的欄位
-    const allKey = Object.keys(o)
-    for (let i = 0; i < allKey.length; i++) {
-      if (!(dataKey.find(key => key == allKey[i]))) {
-        delete o[allKey[i]]
-      }
-    }
-    return { ...o, uniqueData: group[key] }
-  })
-  // fs.writeFileSync('classesOut.json', JSON.stringify(classesOut))
-  return classesOut
+  fs.writeFileSync('toCode.json', JSON.stringify(toCode))
+  return toCode
 }
 
-
-
 // *****
-// fs.writeFileSync('group.json', JSON.stringify(group))
+
 
 // 用來檢查不重複位是否合理/需要新增(ex:發現班也是unique)
 // const o = []

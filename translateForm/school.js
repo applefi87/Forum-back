@@ -1,4 +1,4 @@
-// export default [
+export default 
 //   ["系所", "department", "c0"],
 //   ["開課序號", 'serialCode', "c5"],
 //   ["開課代碼", 'classCode', "c10"],
@@ -30,7 +30,6 @@
   { zhTW: "全英語", enUS: "english", c: "c30" },
   { zhTW: "限性別", enUS: "gender", c: "c35" },
   { zhTW: "中文課程名稱", enUS: "className", c: "c40" },
-  { zhTW: "英文課程名稱", enUS: "classNameEng", c: "c45" },
   { zhTW: "學分", enUS: 'score', c: "c50" },
   { zhTW: "必/選", enUS: "required", c: "c55" },
   { zhTW: "教師", enUS: "teacher", c: "c60" },
