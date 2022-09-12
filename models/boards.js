@@ -5,7 +5,7 @@ const col = {
   type: [{
     // 先不用，因為用code是方便多語言/換名稱，但用i18n也能辦到
     // c: { type: Number, required: true, alias: 'code' },
-    n: { type: String, required: true, alias: 'name' },
+    c: { type: String, required: true, alias: 'code' },
     r: { type: Boolean, required: true, alias: 'required' },
     // 代碼表示: 1單行文字 2多行文字 3數字  5單選 6多選 0Boolean  
     t: { type: Number, required: true, alias: 'type', enum: [0, 1, 2, 3, 4, 5, 6, 7] },
@@ -108,16 +108,18 @@ const schema = new mongoose.Schema({
   // ---------------------------------------------------------------
   childBoard: {
     active: { type: Boolean, required: true },
-    titleCol: { type: String, required: function () { return this.childBoard.active } },
     rule: {
-      cols: col,
-      display: display('board'),
-      transformTable: [mongoose.Mixed],
-      dataList: [String],
-      uniqueList: [String],
-      multiLangList: [String],
-      combineCheckCols: [String],
-      TitleCol: String
+      type: {
+        cols: col,
+        display: display('board'),
+        transformTable: [mongoose.Mixed],
+        dataList: [String],
+        uniqueList: [String],
+        multiLangList: [String],
+        combineCheckCols: [String],
+        titleCol: String,
+      },
+      required: function () { return this.childBoard.active }
     },
     // 子版的文章規則
     article: {

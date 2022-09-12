@@ -33,8 +33,6 @@ export default
   { zhTW: "學分", enUS: 'score', c: "c50" },
   { zhTW: "必/選", enUS: "required", c: "c55" },
   { zhTW: "教師", enUS: "teacher", c: "c60" },
-  { zhTW: "時間", enUS: "time", c: "c65" },
-  { zhTW: "地點", enUS: "location", c: "c65" },
   { zhTW: "限修條件", enUS: "condition", c: "c70" },
   { zhTW: "備註", enUS: "others", c: "c75" },
   { zhTW: "學期", enUS: "semester", c: "c80" },

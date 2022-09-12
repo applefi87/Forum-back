@@ -3,6 +3,10 @@ import boards from '../models/boards.js'
 import codeList from '../translateForm/school.js'
 import fs from 'fs'
 
+
+// const dataList = rule.dataList
+// const uniqueList = rule.uniqueList
+// const translate = rule.transformTable
 // // 只取出關鍵欄位來組合判斷是否相同，節省效能
 // const createCombineString = (obj) => {
 //   let out
