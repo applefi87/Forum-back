@@ -34,13 +34,19 @@ export default function (csv, rule) {
           }
           return ok
         })
-        fs.writeFileSync('toCode.json', JSON.stringify(toCode))
+        // fs.writeFileSync('toCode.json', JSON.stringify(toCode))
       } catch (error) {
         console.log(error)
         return res.status(400).send({ success: false, message: '轉檔錯誤' })
       }
     },
-    { delimiter: { wrap: '"', eol: '\n' } }
+    // 要提示換行單位、包裹String符號(目前不用 但之後可能會遇到先留著)
+    {
+      delimiter: {
+        // wrap: '"', 
+        eol: '\n'
+      }
+    }
   )
   return toCode
 }
