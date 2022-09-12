@@ -3,13 +3,11 @@ import boards from '../models/boards.js'
 import codeList from '../translateForm/school.js'
 import fs from 'fs'
 
-const inputCol = "c80"
-const uniqueCols = ["c5"]
+
 // 代碼表示: 1單行文字 2多行文字 3數字  5單選 6多選 0Boolean 
 // isMatchWith
 export default async (req, res, next) => {
   try {
-    console.log(req.body.uniqueCol);
     let count = 0
     let same = 0
     let combineUpdate = 0
@@ -20,8 +18,10 @@ export default async (req, res, next) => {
     const file = temp
     const parent = await boards.findById(req.params.id)
     console.log("get parent");
+    const inputCol = "c80"
+    const uniqueCols = ["c5"]
     if (!parent) return res.status(403).send({ success: false, message: '找無該母版' })
-    const pUniqueCol = parent.childBoard.rule.uniqueCol
+    const pUniqueCol = parent.childBoard.rule.uniqueCols
 
     //區分之前有的跟新的
     // 只拿會在母版table顯示/用來排序的欄位 就好
@@ -39,7 +39,7 @@ export default async (req, res, next) => {
         // !!! 變化處
         let data = toBeAdd[rule.n]
         // 預先統一填入
-        if (rule.n === "semester") data = req.body.uniqueCol;
+        if (rule.n === "semester") data = req.body.uniqueCols;
         // 沒值但有預設就填進去
         if (data === undefined && rule.d) data = rule.d
         // 必填沒值就報錯
@@ -109,7 +109,7 @@ export default async (req, res, next) => {
           uniqueString += (uniqueCol + ":" + (typeof it[codeName] !== 'object' ? it[codeName] : JSON.stringify(it[codeName])))
         }
         // inputCol 直接加上
-        uniqueString += (inputCol + req.body.uniqueCol)
+        uniqueString += (inputCol + req.body.uniqueCols)
         // for (let code of uniqueCode) {
         //   if (uniqueCols.includes(code[2]) && it[code[1]]) { uniqueString += (code[2] + ":" + (typeof it[code[1]] !== 'object' ? it[code[1]] : JSON.stringify(it[code[1]]))) }
         //   else if (code[2] === 'c80') {
@@ -142,7 +142,7 @@ export default async (req, res, next) => {
         if (newClassUniqueIdx >= 0) {
           combineUnique(updateList, newClassUniqueIdx, c)
         } else {
-          const pUniqueCol = parent.childBoard.rule.uniqueCol
+          const pUniqueCol = parent.childBoard.rule.uniqueCols
           const oldClass = childBoards[oldClassIdx]
           // 確認資料不重複
           // 原課程unique轉字串
