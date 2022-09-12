@@ -25,7 +25,7 @@ export default async (req, res, next) => {
     // 區分unique/data(build就有 這裡直接借) 
     const dataKey = ["department", 'classCode', "english", "className", "classNameEng", 'score', "required", "teacher"]
     const uniqueCode = codeList.filter(c => !dataKey.includes(c[1]))
-    const pUniqueCol = parent.childBoard.rule.uniqueCol
+    const pUniqueCol = parent.childBoard.rule.uniqueCols
     // **************
     console.log('start for');
     for (const c of file) {
@@ -51,7 +51,7 @@ export default async (req, res, next) => {
           for (let code of uniqueCode) {
             if (it[code[1]]) { uniqueString += (code[2] + ":" + (typeof it[code[1]] !== 'object' ? it[code[1]] : JSON.stringify(it[code[1]]))) }
             else if (code[2] === 'c80') {
-              uniqueString += ('c80:' + req.body.uniqueCol)
+              uniqueString += ('c80:' + req.body.uniqueCols)
             } else if (code[2] === 'c90') {
               uniqueString += ('c90:' + '無')
             } else if (code[2] === 'c60') {
@@ -68,7 +68,7 @@ export default async (req, res, next) => {
               // !!! 變化處
               let data = it[rule.n]
               // 預先統一填入
-              if (rule.n === "semester") data = req.body.uniqueCol;
+              if (rule.n === "semester") data = req.body.uniqueCols;
               // 沒值但有預設就填進去
               if (data === undefined && rule.d) data = rule.d
               // 必填沒值就報錯
@@ -132,7 +132,7 @@ export default async (req, res, next) => {
           }
         }
         // ***宣告存兩個欄位用的變數**
-        const pDataCol = parent.childBoard.rule.dataCol
+        const pDataCol = parent.childBoard.rule.dataCols
         form.colData = {}
         form.uniqueData = []
         // 把colData, uniqueData一起用同個代碼判斷規則 但比較..不好懂000
@@ -147,7 +147,7 @@ export default async (req, res, next) => {
               // !!! 變化處
               let data = col === 'uniqueData' ? it[rule.n] : c[rule.n]
               // 預先統一填入
-              if (rule.n === "semester") data = req.body.uniqueCol;
+              if (rule.n === "semester") data = req.body.uniqueCols;
               // 沒值但有預設就填進去
               if (data === undefined && rule.d) data = rule.d
               // 必填沒值就報錯

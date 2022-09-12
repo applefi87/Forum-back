@@ -27,9 +27,9 @@ const display = (type) => {
     rule.filter = {
       // ex:系別
       // 預計 C0:[111-1,110-1,110-2]
-      dataCol: mongoose.Mixed,
+      dataCols: mongoose.Mixed,
       // ex 學期+時間
-      uniqueCol: mongoose.Mixed
+      uniqueCols: mongoose.Mixed
       // 先改成限定要有清單的才可過濾(用板定的選項就好)
       // uniqueCol: {
       //   type: [{
@@ -110,10 +110,15 @@ const schema = new mongoose.Schema({
     active: { type: Boolean, required: true },
     titleCol: { type: String, required: function () { return this.childBoard.active } },
     rule: {
-      dataCol: col,
+      dataCols: col,
       // 程式抓母版不重複供選擇,填上代表必填
-      uniqueCol: col,// 對應欄位+附值(任意格式，程式處理成可用)
+      uniqueCols: col,// 對應欄位+附值(任意格式，程式處理成可用)
       display: display('board'),
+      transformTable:Array,
+      dataList:Array,
+      uniqueList:Array,
+      combineCheckCols:Array,
+      TitleCol:String
     },
     // 子版的文章規則
     article: {

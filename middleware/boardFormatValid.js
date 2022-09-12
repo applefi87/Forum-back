@@ -99,7 +99,8 @@ export default async (req, res, next) => {
         uniqueString += (inputCol + req.body.uniqueCol)
         oldUnique.push(uniqueString)
       }
-      // 新課程每個unique轉字串 比對不重複就validate加入原陣列
+      // 新課程每個unique欄位轉字串 比對不重複就validate加入原陣列
+      // 改用_.isEqual(OBJ1,OBJ2) 但如果值是陣列則順序會影響，小心淺層複製 輸入要先轉成Code 才能直接比較
       let changed = false
       for (let it of c.uniqueData) {
         let uniqueString = ''
@@ -191,7 +192,7 @@ export default async (req, res, next) => {
             }
           }
           // ***宣告存兩個欄位用的變數**
-          const pDataCol = parent.childBoard.rule.dataCol
+          const pDataCol = parent.childBoard.rule.dataCols
           form.colData = {}
           form.colData = { ...toCode(c, pDataCol) }
           // ******

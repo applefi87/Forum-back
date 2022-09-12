@@ -19,3 +19,23 @@ export default [
   ["時間", "time", "c85"],
   ["地點", "location", "c90"]]
     // 並非必要但可能引誤會 先刪除限修人數
+    // [
+    //   {zhTW:"系所", enUS:"department", c:"c0"},
+    //   {zhTW:"開課序號", enUS:'serialCode', c:"c5"},
+    //   {zhTW:"開課代碼", enUS:'classCode', c:"c10"},
+    //   {zhTW:"組", enUS:"team", c:"c15"},
+    //   {zhTW:"年", enUS:"grade", c:"c20"},
+    //   {zhTW:"班", enUS:"class", c:"c25"},
+    //   {zhTW:"全英語", enUS:"english", c:"c30"},
+    //   {zhTW:"限性別", enUS:"gender", c:"c35"},
+    //   {zhTW:"中文課程名稱", enUS:"className", c:"c40"},
+    //   {zhTW:"英文課程名稱", enUS:"classNameEng", c:"c45"},
+    //   {zhTW:"學分", enUS:'score', c:"c50"},
+    //   {zhTW:"必/選",enUS:"required", c:"c55"},
+    //   {zhTW:"教師", enUS:"teacher", c:"c60"},
+    //   {zhTW:"地點時間", enUS:"timeLocation", c:"c65"},
+    //   {zhTW:"限修條件", enUS:"condition", c:"c70"},
+    //   {zhTW:"備註", enUS:"others", c:"c75"},
+    //   {zhTW:"學期", enUS:"semester", c:"c80"},
+    //   {zhTW:"時間", enUS:"time", c:"c85"},
+    //   {zhTW:"地點", enUS:"location", c:"c90"}]

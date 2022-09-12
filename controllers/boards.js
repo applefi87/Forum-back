@@ -19,28 +19,28 @@ export const createBoard = async (req, res) => {
     }
     // *******抓之前的filter清單，再把新加入的加進去更新，省效能*****
     const pFilter = req.parent.childBoard.rule.display.filter
-    // 只要有post 就補上當次uniqueCol 值
+    // 只要有post 就補上當次uniqueCols 值
     if (req.updateList.length > 0 || req.newList.length > 0) {
       // 之前有該object且沒重複再加
-      if (pFilter.uniqueCol?.c80?.length > 0) {
-        if (!pFilter.uniqueCol.c80.includes(req.body.uniqueCol)) {
-          pFilter.uniqueCol.c80.push(req.body.uniqueCol)
-          pFilter.uniqueCol.c80.sort().reverse()
+      if (pFilter.uniqueCols?.c80?.length > 0) {
+        if (!pFilter.uniqueCols.c80.includes(req.body.uniqueCols)) {
+          pFilter.uniqueCols.c80.push(req.body.uniqueCols)
+          pFilter.uniqueCols.c80.sort().reverse()
         }
       } else {
         // 不然直接新增
-        pFilter.uniqueCol = { c80: [req.body.uniqueCol] }
+        pFilter.uniqueCols = { c80: [req.body.uniqueCols] }
       }
-      req.parent.markModified('childBoard.rule.display.filter.uniqueCol')
+      req.parent.markModified('childBoard.rule.display.filter.uniqueCols')
       await req.parent.save()
-      console.log("uniqueCol updated");
+      console.log("uniqueCols updated");
     } else {
       console.log('no changed');
     }
 
-    // dataCol 比較多 要去比對新資料
+    // dataCols 比較多 要去比對新資料
     if (result) {
-      let filterList = new Set(pFilter.dataCol.c0)
+      let filterList = new Set(pFilter.dataCols.c0)
       let repeat = new Set()
       result.forEach(board => {
         // 取出所有欄位的資料
@@ -48,10 +48,10 @@ export const createBoard = async (req, res) => {
         filterList.has(item) ? repeat.add(item) : filterList.add(item);
       })
       // 把取出來不重複清單存回去
-      pFilter.dataCol.c0 = [...filterList]
+      pFilter.dataCols.c0 = [...filterList]
       console.log("filterList builded");
       // 要這樣通知才能更新mixed
-      req.parent.markModified('childBoard.rule.display.filter.dataCol')
+      req.parent.markModified('childBoard.rule.display.filter.dataCols')
       await req.parent.save()
       console.log("filter list updated");
     }
@@ -66,26 +66,6 @@ export const createBoard = async (req, res) => {
     }
   }
 }
-// 之後建文章可用這個方式
-// export const addCart = async (req, res) => {
-//     const result = await products.findById(req.body.product)
-//     // 沒找到或已下架
-//     if (!result || !result.sell) {
-//       return res.status(404).send({ success: false, message: '商品不存在' })
-//     }
-//     // 找購物車有沒有這個商品
-//     const idx = req.user.cart.findIndex(item => item.product.toString() === req.body.product)
-//     if (idx > -1) {
-//       req.user.cart[idx].quantity += req.body.quantity
-//     } else {
-//       req.user.cart.push({
-//         product: req.body.product,
-//         quantity: req.body.quantity
-//       })
-//     }
-//     await req.user.save()
-//     res.status(200).send({ success: true, message: '', result: req.user.cart.length })
-// }
 
 export const createRoot = async (req, res) => {
   try {
@@ -142,7 +122,7 @@ export const getChildBoards = async (req, res) => {
     }
     // 沒宣告過加上默認過濾
     if (defaultFilter) {
-      condition['colData.' + "c0"] = req.board.childBoard.rule.display.filter.dataCol.c0[0]
+      condition['colData.' + "c0"] = req.board.childBoard.rule.display.filter.dataCols.c0[0]
     }
     // 同 輪到unique的欄位 
     if (filter.filterUnique?.length > 0) {
