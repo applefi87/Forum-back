@@ -61,13 +61,14 @@ export default async (req, res, next) => {
     // 留一些計數的，確認運算沒錯
     let count = 0
     let same = 0
+    let duplicated = 0
     let combineUpdate = 0
     let combineNew = 0
     const rule = parent.childBoard.rule
-    const pDataCol = rule.cols.filter((it) => rule.dataList.includes(it.c))
-    const pUniqueCol = rule.cols.filter((it) => !rule.dataList.includes(it.c))
-    console.log(pUniqueCol);
-    // return res.status(403).send({ success: false, message: '測試完成' })
+    // 為了產生漂亮照數字順序的清單
+    const sortedCols = rule.cols.sort((a, b) => a.c.slice(1).localeCompare(b.c.slice(1), undefined, { numeric: true }))
+    const pDataCol = sortedCols.filter((it) => rule.dataList.includes(it.c))
+    const pUniqueCol = sortedCols.filter((it) => !rule.dataList.includes(it.c))
     //*****區分之前有的跟新的
     // 只拿欄位就夠區分了
     const childBoards = await boards.find({ parent: req.params.id }, "colData uniqueData")
@@ -138,7 +139,6 @@ export default async (req, res, next) => {
           }
           itData[rule.c] = data
         }
-        console.log(itData);
       }
       return itData
     }
@@ -190,12 +190,17 @@ export default async (req, res, next) => {
         if (newClassUniqueIdx >= 0) {
           if (checkUniqueAndAdd(updateList[newClassUniqueIdx], c)) {
             combineUpdate++
+          } else {
+            duplicated++
           }
         } else {
           const form = { ...childBoards[oldClassIdx] }
           // console.log(form);
-          checkUniqueAndAdd(form, c)
-          updateList.push(form)
+          if (checkUniqueAndAdd(form, c)) {
+            updateList.push(form)
+          } else {
+            duplicated++
+          }
         }
       } else {
         // ***如果新增清單已經有同課程名+老師 直接加到對應unique裡面
@@ -204,8 +209,11 @@ export default async (req, res, next) => {
         if (newClassUniqueIdx >= 0) {
           if (checkUniqueAndAdd(newList[newClassUniqueIdx], c)) {
             combineNew++
+          } else {
+            duplicated++
           }
         } else {
+          console.log('creating');
           // 要全新增的
           const form = {
             // title/intro只根版才一定要有 不然抓它母版的titleCol欄位去調資料
@@ -219,20 +227,21 @@ export default async (req, res, next) => {
           form.colData = row2Col(c, pDataCol)
           const temp = row2Col(c, pUniqueCol)
           form.uniqueData = [temp]
-          console.log(temp);
-          newList.push(form)
+          // console.log(temp);
+          newList.push({ ...form })
         }
       }
     }
     // ***********
     console.log("count:" + count);
     console.log("same:" + same);
+    console.log("updateList:" + updateList.length);
     console.log("combineUpdate:" + combineUpdate);
     console.log("newList:" + newList.length);
     console.log("combineNew:" + combineNew);
-    console.log("updateList:" + updateList.length);
+    console.log("duplicated:" + duplicated);
     console.log('next');
-    const info = "count:" + count + "; " + "same:" + same + "; " + "combineUpdate:" + combineUpdate + "; " + "updateList:" + updateList.length + "; " + "newList:" + newList.length + "; " + "combineNew:" + combineNew
+    const info = "count:" + count + "; " + "same:" + same + "; " + "combineUpdate:" + combineUpdate + "; " + "updateList:" + updateList.length + "; " + "newList:" + newList.length + "; " + "combineNew:" + combineNew + "duplicated:" + duplicated
     // fs.writeFileSync('tt.json', JSON.stringify(updateList))
     req.updateList = updateList
     req.parent = parent
@@ -244,3 +253,30 @@ export default async (req, res, next) => {
     console.log(error)
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
