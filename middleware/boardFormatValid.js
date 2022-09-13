@@ -1,24 +1,26 @@
 import buildFile from '../util/build.js'
 import boards from '../models/boards.js'
-import codeList from '../translateForm/school.js'
+import _ from 'lodash'
 import fs from 'fs'
+// !!!
+// 須確保判斷重複的欄位
+// 加入的csv要檢查:必填的意外沒值是否有改預設(目前有d可以預設填東西，之後再評估要程式/csv處理)
+//  預設建新板沒有子板/文章 要之後再改
+// -----------
+// 功能介紹: 確認有母版再新增子板>把傳來的子板CSV轉json>轉代碼版json>
+// 抓取現有的子板，比對是新的再更新加入
+// -區分之前有的跟新的
+// -
+// -
+// -
 
-// const dataList = rule.dataList
-// const uniqueList = rule.uniqueList
-// // 只取出關鍵欄位來組合判斷是否相同，節省效能
-// const createCombineString = (obj) => {
-//   let out
-//   for (let c in rule.combineCheckCols) {
-//     out += (obj[c] + "*")
-//   }
-//   return out
-// }
+
 // // 開始分組
 // // 加工出
 // var group = _.mapValues(
 //   // 產生同代碼老師 { '代碼+老師': [課程詳細內容清單], '6': [6.1, 6.3] }
-//   _.groupBy(toCode, (obj) => {
-//     return createCombineString(obj)
+//   _.groupBy(row2Col, (obj) => {
+//     return combineDataString(obj)
 //   }),
 //   clist => clist.map(obj => _.pick(obj, uniqueList)));
 // // fs.writeFileSync('group.json', JSON.stringify(group))
@@ -26,16 +28,16 @@ import fs from 'fs'
 // // 輸出頁面的
 // // 從每個課程的key開始回找
 // const classesOut = Object.keys(group).map((key) => {
-//   const idx = toCode.findIndex((obj) => {
-//     return createCombineString(obj) === key
+//   const idx = row2Col.findIndex((obj) => {
+//     return combineDataString(obj) === key
 //   }
 //   )
 //   // 取得在原檔的完整清單
-//   const o = JSON.parse(JSON.stringify(toCode[idx]))
+//   const o = JSON.parse(JSON.stringify(row2Col[idx]))
 //   // 移除Unique的欄位
 //   const allKey = Object.keys(o)
 //   for (let i = 0; i < allKey.length; i++) {
-//     if (!(dataKey.find(key => key == allKey[i]))) {
+//     if (!(dataList.find(key => key == allKey[i]))) {
 //       delete o[allKey[i]]
 //     }
 //   }
@@ -49,201 +51,175 @@ import fs from 'fs'
 // isMatchWith
 export default async (req, res, next) => {
   try {
+    // *****************確認有母版再新增子板
+    const parent = await boards.findById(req.params.id)
+    if (!parent) return res.status(403).send({ success: false, message: '找無該母版' })
+    console.log("get parent");
+    //  *****************把傳來的子板CSV轉json+轉代碼版json
+    const file = await buildFile(req.body.csv, parent.childBoard.rule)
+    // ******************抓取現有的子板，比對是新的再更新加入
+    // 留一些計數的，確認運算沒錯
     let count = 0
     let same = 0
     let combineUpdate = 0
     let combineNew = 0
-    const parent = await boards.findById(req.params.id)
-    console.log("get parent");
-    const temp = buildFile(req.body.csv, parent.childBoard.rule)
-    // fs.writeFileSync('in.json', JSON.stringify(temp))
-    // console.log(req.body.csv);
-    return res.status(200).send({ success: false, message: '測試完成' })
-    const file = temp
-    const inputCol = "c80"
-    const uniqueCols = ["c5"]
-    if (!parent) return res.status(403).send({ success: false, message: '找無該母版' })
-    const pUniqueCol = parent.childBoard.rule.uniqueCols
-
-    //區分之前有的跟新的
-    // 只拿會在母版table顯示/用來排序的欄位 就好
-    const childBoards = await boards.find({ parent: req.params.id }, "title beScored colData uniqueData")
-    console.log("childBoards" + childBoards.length);
+    const rule = parent.childBoard.rule
+    const pDataCol = rule.cols.filter((it) => rule.dataList.includes(it.c))
+    const pUniqueCol = rule.cols.filter((it) => !rule.dataList.includes(it.c))
+    console.log(pUniqueCol);
+    // return res.status(403).send({ success: false, message: '測試完成' })
+    //*****區分之前有的跟新的
+    // 只拿欄位就夠區分了
+    const childBoards = await boards.find({ parent: req.params.id }, "colData uniqueData")
+    console.log("childBoards:" + childBoards.length);
     const updateList = []
     const newList = []
     // *****************************************
-    const toCode = (toBeAdd, pUniqueCol) => {
+    // 只取出關鍵欄位來組合判斷是否相同，節省效能
+    const combineDataString = (obj) => {
+      let out
+      for (let c of rule.combineCheckCols) {
+        out += (obj[c] + "*")
+      }
+      return out
+    }
+    // ***整列code資料只留unique(存進去)
+    // 用rule.cols規則去檢查，合格且有列出才回傳
+    const row2Col = (toBeAdd, pColRules) => {
       const itData = {}
       // ----------開始區分
-      for (let rule of pUniqueCol) {
+      for (let rule of pColRules) {
         // 母版的規則其他參數
         const other = rule.o
         // !!! 變化處
-        let data = toBeAdd[rule.n]
-        // 預先統一填入
-        if (rule.n === "semester") data = req.body.uniqueCols;
-        // 沒值但有預設就填進去
-        if (data === undefined && rule.d) data = rule.d
+        let data = toBeAdd[rule.c]
+        // 沒值但有預設不填進去=>避免原資料與加入資料不同，再次比對會重複加入(改在輸出端放預設值)
+        // if (data === undefined && rule.d) data = rule.d
         // 必填沒值就報錯
-        if (rule.r && (data === undefined || data === null || data === "")) return res.status(403).send({ success: false, message: c.className + "|" + rule.n + "|" + "不可是空的!" })
+        if (rule.r && (data === undefined || data === null || data === "") && !rule.d) return res.status(403).send({ success: false, message: combineDataString(toBeAdd) + "|" + rule.c + "|" + "不可是空的!" })
         // 有值才檢查
         if (data) {
           // 類型審核錯誤也抱錯
           // 代碼表示: 1單行文字 2多行文字 3數字  5單選 6多選 7 其他 0Boolean  
           switch (rule.t) {
             case 0:
-              if (other) return res.status(403).send({ success: false, message: "不該有規則" + rule.n + rule.t + ":" + data })
+              if (other) return res.status(403).send({ success: false, message: "不該有規則" + rule.c + rule.t + ":" + data })
+              // 防止常見的傻傻忘記改Boolean
               if (data === "是" || "true" || "yes") data = true
-              if (typeof data !== "boolean") return res.status(403).send({ success: false, message: "輸入格式驗證錯誤" + rule.n + rule.t + ":" + data })
+              if (typeof data !== "boolean") return res.status(403).send({ success: false, message: "輸入格式驗證錯誤" + rule.c + rule.t + ":" + data })
               break;
             case 1: case 2:
+              // 數字轉文字
               if (typeof data === "number") data = data.toString()
-              if (typeof data !== "string") return res.status(403).send({ success: false, message: "輸入格式驗證錯誤" + rule.n + rule.t + ":" + data })
+              if (typeof data !== "string") return res.status(403).send({ success: false, message: "輸入格式驗證錯誤" + rule.c + rule.t + ":" + data })
               if (other === undefined) { break }
-              if (other.max !== undefined && (typeof other.max !== "number" || data.length > other.max)) return res.status(403).send({ success: false, message: "最多字數超過" + other.max + "的限制" + rule.n + rule.t + ":" + other.max + ":" + data })
-              if (other.min !== undefined && (typeof other.min !== "number" || data.length < other.min)) return res.status(403).send({ success: false, message: "最少字數超過" + other.min + "的限制" + rule.n + rule.t + ":" + other.min + ":" + data })
+              if (other.max !== undefined && (typeof other.max !== "number" || data.length > other.max)) return res.status(403).send({ success: false, message: "最多字數超過" + other.max + "的限制" + rule.c + rule.t + ":" + other.max + ":" + data })
+              if (other.min !== undefined && (typeof other.min !== "number" || data.length < other.min)) return res.status(403).send({ success: false, message: "最少字數超過" + other.min + "的限制" + rule.c + rule.t + ":" + other.min + ":" + data })
               break;
             case 3:
               // 數學包含整數/最大/最小可限制
-              if (typeof data !== "number") return res.status(403).send({ success: false, message: "輸入格式驗證錯誤" + rule.n + rule.t + ":" + data })
+              if (typeof data !== "number") return res.status(403).send({ success: false, message: "輸入格式驗證錯誤" + rule.c + rule.t + ":" + data })
               if (other === undefined) { break }
-              if (other.integer !== undefined && (typeof other.integer !== "boolean" || (other.integer && data != Math.floor(data)))) return res.status(403).send({ success: false, message: "必須為整數的格式錯誤" + rule.n + rule.t + ":" + other.integer + ":" + data })
-              if (other.max !== undefined && (typeof other.max !== "number" || data > other.max)) return res.status(403).send({ success: false, message: "最大值超過" + other.max + "的限制" + rule.n + rule.t + ":" + other.max + ":" + data })
-              if (other.min !== undefined && (typeof other.min !== "number" || data < other.min)) return res.status(403).send({ success: false, message: "最小值超過" + other.min + "的限制" + rule.n + rule.t + ":" + other.min + ":" + data })
+              if (other.integer !== undefined && (typeof other.integer !== "boolean" || (other.integer && data != Math.floor(data)))) return res.status(403).send({ success: false, message: "必須為整數的格式錯誤" + rule.c + rule.t + ":" + other.integer + ":" + data })
+              if (other.max !== undefined && (typeof other.max !== "number" || data > other.max)) return res.status(403).send({ success: false, message: "最大值超過" + other.max + "的限制" + rule.c + rule.t + ":" + other.max + ":" + data })
+              if (other.min !== undefined && (typeof other.min !== "number" || data < other.min)) return res.status(403).send({ success: false, message: "最小值超過" + other.min + "的限制" + rule.c + rule.t + ":" + other.min + ":" + data })
               break;
             case 5: case 6:
               // 多選必須包含陣列的選項
-              if (typeof data !== "string") return res.status(403).send({ success: false, message: "輸入格式驗證錯誤" + rule.n + rule.t + ":" + data })
+              if (typeof data !== "string") return res.status(403).send({ success: false, message: "輸入格式驗證錯誤" + rule.c + rule.t + ":" + data })
               if (other === undefined) return res.status(403).send({ success: false, message: "必須設定單選選項" + rule.t + ":" + other + ":" + data })
-              if (!Array.isArray(other) || other.filter((i) => typeof i !== "string").length > 0) return res.status(403).send({ success: false, message: "單選格式錯誤" + rule.n + rule.t + ":" + other + ":" + data })
+              if (!Array.isArray(other) || other.filter((i) => typeof i !== "string").length > 0) return res.status(403).send({ success: false, message: "單選格式錯誤" + rule.c + rule.t + ":" + other + ":" + data })
               break;
-            // **********!!!!!!!!!之後要改掉!!!!!!!!!!!!!!!!!!!********************
+            // **********!!!!!!!!!之後要改掉!!!!!!!!!!!!!!!!!!!******************** (未來也許放圖片等等)
             case 7:
-              break;
+              return
             default:
               return res.status(403).send({ success: false, message: "其他" + "母版規則格式錯誤:" + rule.t + ":" + data })
           }
-          const key = codeList[codeList.findIndex((arr) => arr[1] === rule.n)][2]
-          itData[key] = data
+          itData[rule.c] = data
         }
+        console.log(itData);
       }
       return itData
     }
-    const combineUnique = (newList, idx, c) => {
-      const newClassUnique = newList[idx].uniqueData
-      const oldUnique = []
-      for (let it of newClassUnique) {
-        let uniqueString = ''
-        for (let uniqueCol of uniqueCols) {
-          const codeName = uniqueCode.find(c => c[2] === uniqueCol)[1]
-          uniqueString += (uniqueCol + ":" + (typeof it[codeName] !== 'object' ? it[codeName] : JSON.stringify(it[codeName])))
-        }
-        uniqueString += (inputCol + req.body.uniqueCol)
-        oldUnique.push(uniqueString)
-      }
-      // 新課程每個unique欄位轉字串 比對不重複就validate加入原陣列
-      // 改用_.isEqual(OBJ1,OBJ2) 但如果值是陣列則順序會影響，小心淺層複製 輸入要先轉成Code 才能直接比較
-      let changed = false
-      for (let it of c.uniqueData) {
-        let uniqueString = ''
-        for (let uniqueCol of uniqueCols) {
-          const codeName = uniqueCode.find(c => c[2] === uniqueCol)[1]
-          uniqueString += (uniqueCol + ":" + (typeof it[codeName] !== 'object' ? it[codeName] : JSON.stringify(it[codeName])))
-        }
-        // inputCol 直接加上
-        uniqueString += (inputCol + req.body.uniqueCols)
-        // for (let code of uniqueCode) {
-        //   if (uniqueCols.includes(code[2]) && it[code[1]]) { uniqueString += (code[2] + ":" + (typeof it[code[1]] !== 'object' ? it[code[1]] : JSON.stringify(it[code[1]]))) }
-        //   else if (code[2] === 'c80') {
-        //     uniqueString += ('c80:' + req.body.uniqueCol)
-        //   }
-        // }
-        // if (!oldUnique.find( s => { console.log(s); console.log(uniqueString); console.log(s === uniqueString); console.log(s === uniqueString); return s === uniqueString })) {
-        if (!oldUnique.find(s => s === uniqueString)) {
-          newClassUnique.push(toCode(it, pUniqueCol))
-          combineNew++
+    // ***把將被新增的清單與新資料檢查，是新的才新增
+    // 有更新則回傳true供計數
+    const checkUniqueAndAdd = (uniquesArr, newRow) => {
+      let success = false
+      const uniqueDatas = uniquesArr.uniqueData
+      let equal = false
+      for (let it of uniqueDatas) {
+        if (_.isEqual(it, newRow)) {
+          equal = true
+          break
         }
       }
+      if (equal) {
+        same++
+      } else {
+        success = true
+        uniqueDatas.push(row2Col(newRow, pUniqueCol))
+        // !!!!!!!!!!! 檢查是否需要!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        // uniquesArr._id = mongoose.Types.ObjectId(oldClass._id)
+      }
+      return success
     }
     // *******************************************
-    // 區分unique/data(build就有 這裡直接借) 
-    const dataKey = ["department", 'classCode', "english", "className", "classNameEng", 'score', "required", "teacher"]
-    const uniqueCode = codeList.filter(c => !dataKey.includes(c[1]))
-
+    // 區分unique/data
+    const dataList = rule.dataList
+    const uniqueList = rule.transformTable.filter(c => !dataList.includes(c.c)).map(i => i.c)
     // **************
     console.log('start for');
     for (const c of file) {
       count++
+      let combineCheckColNull = false
+      for (let col of rule.combineCheckCols) {
+        if (c[col] === "" || c[col] === undefined) {
+          combineCheckColNull = true
+          break
+        }
+      }
       // 沒課程碼/課程名稱就忽略
-      if (!(c.classCode && c.className)) { console.log(c.classCode, c.className); continue }
-      // -----------------------
-      const oldClassIdx = childBoards?.findIndex(oldC => (oldC.colData.c10 + oldC.colData.c60) === (c.classCode + (c.teacher || '無')))
+      if (combineCheckColNull) { console.log(combineDataString(c)); continue }
+      const cCombineString = combineDataString(c)
+      // 課代碼+老師與新的有重複(用更新)=>unique也沒有則確認新增，不然用新增(會合併)
+      const oldClassIdx = childBoards?.findIndex(oldC => (combineDataString(oldC.colData) === cCombineString))
       if (oldClassIdx >= 0) {
-        const newClassUniqueIdx = updateList?.findIndex(newC => (newC.colData.c10 + newC.colData.c60) === (c.classCode + (c.teacher || '無')))
-        // 有同課程名 + 老師
+        // 現有更新清單已經有了?，以它為主判斷是否是全新值
+        const newClassUniqueIdx = updateList?.findIndex(newC => (combineDataString(newC.colData) === cCombineString))
         if (newClassUniqueIdx >= 0) {
-          combineUnique(updateList, newClassUniqueIdx, c)
+          if (checkUniqueAndAdd(updateList[newClassUniqueIdx], c)) {
+            combineUpdate++
+          }
         } else {
-          const pUniqueCol = parent.childBoard.rule.uniqueCols
-          const oldClass = childBoards[oldClassIdx]
-          // 確認資料不重複
-          // 原課程unique轉字串
-          const oldUnique = []
-          for (let it of oldClass.uniqueData) {
-            let uniqueString = ''
-            for (let uniqueCol of uniqueCols) {
-              uniqueString += (uniqueCol + ":" + (typeof it[uniqueCol] !== 'object' ? it[uniqueCol] : JSON.stringify(it[uniqueCol])))
-            }
-            uniqueString += (inputCol + it[inputCol])
-            oldUnique.push(uniqueString)
-          }
-          // 新課程每個unique轉字串 比對不重複就validate加入原陣列
-          let changed = false
-          for (let it of c.uniqueData) {
-            let uniqueString = ''
-            for (let uniqueCol of uniqueCols) {
-              const codeName = uniqueCode.find(c => c[2] === uniqueCol)[1]
-              uniqueString += (uniqueCol + ":" + (typeof it[codeName] !== 'object' ? it[codeName] : JSON.stringify(it[codeName])))
-            }
-            // inputCol 直接加上
-            uniqueString += (inputCol + req.body.uniqueCol)
-            if (!oldUnique.find(s => s === uniqueString)) {
-              oldClass.uniqueData.push(toCode(it, pUniqueCol))
-              oldClass._id = mongoose.Types.ObjectId(oldClass._id)
-              changed = true
-            } else { same++ }
-          }
-          if (changed) updateList.push(oldClass)
+          const form = { ...childBoards[oldClassIdx] }
+          // console.log(form);
+          checkUniqueAndAdd(form, c)
+          updateList.push(form)
         }
       } else {
-        // 如果同課程名+老師 直接加到unique裡面
-        const newClassUniqueIdx = newList?.findIndex(newC => (newC.colData.c10 + newC.colData.c60) === (c.classCode + (c.teacher || '無')))
-        // 有同課程名+老師 
+        // ***如果新增清單已經有同課程名+老師 直接加到對應unique裡面
+        const newClassUniqueIdx = newList?.findIndex(newC => (combineDataString(newC.colData) === cCombineString))
+        // 加到對應unique裡面
         if (newClassUniqueIdx >= 0) {
-          combineUnique(newList, newClassUniqueIdx, c)
+          if (checkUniqueAndAdd(newList[newClassUniqueIdx], c)) {
+            combineNew++
+          }
         } else {
-          // ************真正要新增的
-          // 基本加工
+          // 要全新增的
           const form = {
-            // 限20字
-            "title": c.className.split(' [')[0].slice(0, 20),
+            // title/intro只根版才一定要有 不然抓它母版的titleCol欄位去調資料
             "parent": req.params.id,
-            // "uniqueData": c.uniqueData,
+            // 預設建新板沒有子板/文章 要之後再改
             "childBoard": {
               "active": false
             }
           }
-          // ***宣告存兩個欄位用的變數**
-          const pDataCol = parent.childBoard.rule.dataCols
-          form.colData = {}
-          form.colData = { ...toCode(c, pDataCol) }
-          // ******
-          form.uniqueData = []
-          // uniqueData
-
-          for (let it of c.uniqueData) {
-            form.uniqueData.push(toCode(it, pUniqueCol))
-          }
+          // !!!!!!!!!!!!!!!!!!!!!!!!!! 是否有必要{...obj}? !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+          form.colData = row2Col(c, pDataCol)
+          const temp = row2Col(c, pUniqueCol)
+          form.uniqueData = [temp]
+          console.log(temp);
           newList.push(form)
         }
       }
@@ -262,7 +238,8 @@ export default async (req, res, next) => {
     req.parent = parent
     req.newList = newList
     req.info = info
-    next()
+    return res.status(200).send({ success: false, message: '跑完' })
+    // next()
   } catch (error) {
     console.log(error)
   }

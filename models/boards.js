@@ -1,6 +1,7 @@
 import mongoose from 'mongoose'
 import rate from './rate.js'
-
+// title/intro只根版才一定要有 不然抓它母版的titleCol欄位去調資料
+// 
 const col = {
   type: [{
     // 先不用，因為用code是方便多語言/換名稱，但用i18n也能辦到
@@ -81,13 +82,12 @@ const article = new mongoose.Schema({
 const schema = new mongoose.Schema({
   title: {
     type: String,
-    required: [true, '必填版名'],
     minlength: [2, '必須 2 個字以上'],
     maxlength: [50, '必須 50 個字以下'],
   },
   intro: {
     type: String,
-    // required: [true, '必填內容'],
+    required: [function () { return this.title }, '有title為根版，必填介紹'],
     // minlength: [5, '必須 5 個字以上'],
     maxlength: [1000, '必須 1000 個字以下'],
   },
@@ -114,7 +114,7 @@ const schema = new mongoose.Schema({
         display: display('board'),
         transformTable: [mongoose.Mixed],
         dataList: [String],
-        uniqueList: [String],
+        // uniqueList: [String], 先移除 反正transformTable中不是datecol 就是 不該有多餘的在transformTable中 也方便只調整一邊就好
         multiLangList: [String],
         combineCheckCols: [String],
         titleCol: String,
