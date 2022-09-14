@@ -19,37 +19,45 @@ export const createBoard = async (req, res) => {
     }
     // *******抓之前的filter清單，再把新加入的加進去更新，省效能*****
     const pFilter = req.parent.childBoard.rule.display.filter
-    // 只要有post 就補上當次uniqueCols 值
-    if (req.updateList.length > 0 || req.newList.length > 0) {
-      // 之前有該object且沒重複再加
-      if (pFilter.uniqueCols?.c80?.length > 0) {
-        if (!pFilter.uniqueCols.c80.includes(req.body.uniqueCols)) {
-          pFilter.uniqueCols.c80.push(req.body.uniqueCols)
-          pFilter.uniqueCols.c80.sort().reverse()
+    // ***把原顯示的過濾清單，加上新的過濾清單
+    const addObj2ObjSet = (cols) => {
+      for (let k of Object.keys(cols)) {
+        const filterArr = [...req.newUniqueFilters[k]]
+        if (cols[k]?.length > 0) {
+          for (let nk of filterArr) {
+            if (!cols[k].includes(nk)) {
+              cols[k].push(nk)
+            }
+          }
         }
-      } else {
-        // 不然直接新增
-        pFilter.uniqueCols = { c80: [req.body.uniqueCols] }
+        else {
+          // 不然直接新增
+          cols[k] = filterArr
+        }
+        cols[k].sort().reverse()
       }
+    }
+    // ***只要任一有更新，更新display>filter>unique欄位
+    if (req.updateList.length > 0 || req.newList.length > 0) {
+      // 沒有要先建
+      if (!pFilter.uniqueCols) {
+        pFilter.uniqueCols = {}
+      }
+      addObj2ObjSet(pFilter.uniqueCols)
       req.parent.markModified('childBoard.rule.display.filter.uniqueCols')
       await req.parent.save()
       console.log("uniqueCols updated");
     } else {
       console.log('no changed');
     }
-
     // dataCols 比較多 要去比對新資料
     if (result) {
-      let filterList = new Set(pFilter.dataCols.c0)
-      let repeat = new Set()
-      result.forEach(board => {
-        // 取出所有欄位的資料
-        const item = board.colData.c0
-        filterList.has(item) ? repeat.add(item) : filterList.add(item);
-      })
-      // 把取出來不重複清單存回去
-      pFilter.dataCols.c0 = [...filterList]
-      console.log("filterList builded");
+      // 沒有要先建
+      if (!pFilter.dataCols) {
+        pFilter.dataCols = {}
+      }
+      addObj2ObjSet(pFilter.dataCols)
+      console.log("filterList updated");
       // 要這樣通知才能更新mixed
       req.parent.markModified('childBoard.rule.display.filter.dataCols')
       await req.parent.save()

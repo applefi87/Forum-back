@@ -47,8 +47,7 @@ import fs from 'fs'
 // ---------------------------------------------
 
 
-// 代碼表示: 1單行文字 2多行文字 3數字  5單選 6多選 0Boolean 
-// isMatchWith
+// 代碼表示: 0Boolean  1單行文字 2多行文字 3數字  5單選 6多選 
 export default async (req, res, next) => {
   try {
     // *****************確認有母版再新增子板
@@ -69,6 +68,7 @@ export default async (req, res, next) => {
     const sortedCols = rule.cols.sort((a, b) => a.c.slice(1).localeCompare(b.c.slice(1), undefined, { numeric: true }))
     const pDataCol = sortedCols.filter((it) => rule.dataList.includes(it.c))
     const pUniqueCol = sortedCols.filter((it) => !rule.dataList.includes(it.c))
+    const uniqueList = pUniqueCol.map(it => it.c)
     //*****區分之前有的跟新的
     // 只拿欄位就夠區分了
     const childBoards = await boards.find({ parent: req.params.id }, "colData uniqueData")
@@ -83,6 +83,33 @@ export default async (req, res, next) => {
         out += (obj[c] + "*")
       }
       return out
+    }
+    // **
+    const filter = () => {
+
+    }
+    // ******
+    const pFilter = parent.childBoard.rule.display.filter
+    const pFilterDataKeys = Object.keys(pFilter.dataCols)
+    const pFilterUniqueKeys = Object.keys(pFilter.uniqueCols)
+    // ***每個過濾欄位都是set格式方便判斷是否重複
+    const newDataFilters = {}
+    for (let k of pFilterDataKeys) {
+      newDataFilters[k] = new Set()
+    }
+    const newUniqueFilters = {}
+    for (let k of pFilterUniqueKeys) {
+      newUniqueFilters[k] = new Set()
+    }
+    const addDataFilter = (row) => {
+      for (let k of pFilterDataKeys) {
+        newDataFilters[k].add(row[k])
+      }
+    }
+    const addUniqueFilter = (row) => {
+      for (let k of pFilterUniqueKeys) {
+        newUniqueFilters[k].add(row[k])
+      }
     }
     // ***整列code資料只留unique(存進去)
     // 用rule.cols規則去檢查，合格且有列出才回傳
@@ -105,13 +132,11 @@ export default async (req, res, next) => {
           switch (rule.t) {
             case 0:
               if (other) return res.status(403).send({ success: false, message: "不該有規則" + rule.c + rule.t + ":" + data })
-              // 防止常見的傻傻忘記改Boolean
-              if (data === "是" || "true" || "yes") data = true
               if (typeof data !== "boolean") return res.status(403).send({ success: false, message: "輸入格式驗證錯誤" + rule.c + rule.t + ":" + data })
               break;
             case 1: case 2:
               // 數字轉文字
-              if (typeof data === "number") data = data.toString()
+              // if (typeof data === "number") data = data.toString()
               if (typeof data !== "string") return res.status(403).send({ success: false, message: "輸入格式驗證錯誤" + rule.c + rule.t + ":" + data })
               if (other === undefined) { break }
               if (other.max !== undefined && (typeof other.max !== "number" || data.length > other.max)) return res.status(403).send({ success: false, message: "最多字數超過" + other.max + "的限制" + rule.c + rule.t + ":" + other.max + ":" + data })
@@ -147,9 +172,14 @@ export default async (req, res, next) => {
     const checkUniqueAndAdd = (uniquesArr, newRow) => {
       let success = false
       const uniqueDatas = uniquesArr.uniqueData
+      console.log('newRow:', newRow);
+      const newUniqueRow = _.pick(newRow, uniqueList);
       let equal = false
+      console.log(newUniqueRow);
       for (let it of uniqueDatas) {
-        if (_.isEqual(it, newRow)) {
+        delete it._id
+        console.log(it);
+        if (_.isEqual(it, newUniqueRow)) {
           equal = true
           break
         }
@@ -157,17 +187,20 @@ export default async (req, res, next) => {
       if (equal) {
         same++
       } else {
+        console.log('new');
         success = true
+        // 因為成功更新，該列的display>filter>uniqueCols要存著，等等一起更新
+        addUniqueFilter(newRow)
         uniqueDatas.push(row2Col(newRow, pUniqueCol))
         // !!!!!!!!!!! 檢查是否需要!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         // uniquesArr._id = mongoose.Types.ObjectId(oldClass._id)
       }
       return success
     }
+    // ***
+
     // *******************************************
     // 區分unique/data
-    const dataList = rule.dataList
-    const uniqueList = rule.transformTable.filter(c => !dataList.includes(c.c)).map(i => i.c)
     // **************
     console.log('start for');
     for (const c of file) {
@@ -194,7 +227,7 @@ export default async (req, res, next) => {
             duplicated++
           }
         } else {
-          const form = { ...childBoards[oldClassIdx] }
+          const form = childBoards[oldClassIdx].toObject()
           // console.log(form);
           if (checkUniqueAndAdd(form, c)) {
             updateList.push(form)
@@ -229,6 +262,9 @@ export default async (req, res, next) => {
           form.uniqueData = [temp]
           // console.log(temp);
           newList.push({ ...form })
+          // 因為成功更新，該列的display>filter>dataCols&&uniqueCols要存著，等等一起更新
+          addDataFilter(c)
+          addUniqueFilter(c)
         }
       }
     }
@@ -247,8 +283,10 @@ export default async (req, res, next) => {
     req.parent = parent
     req.newList = newList
     req.info = info
-    return res.status(200).send({ success: false, message: '跑完' })
-    // next()
+    req.newDataFilters = newDataFilters
+    req.newUniqueFilters = newUniqueFilters
+    // return res.status(200).send({ success: false, message: '跑完' })
+    next()
   } catch (error) {
     console.log(error)
   }
