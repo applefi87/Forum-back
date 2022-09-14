@@ -1,6 +1,7 @@
 import buildFile from '../util/build.js'
 import boards from '../models/boards.js'
 import _ from 'lodash'
+import mongoose from 'mongoose'
 import fs from 'fs'
 // !!!
 // 須確保判斷重複的欄位
@@ -171,14 +172,12 @@ export default async (req, res, next) => {
     // 有更新則回傳true供計數
     const checkUniqueAndAdd = (uniquesArr, newRow) => {
       let success = false
-      const uniqueDatas = uniquesArr.uniqueData
-      console.log('newRow:', newRow);
+      // 有些是document物件要轉一般物件，有些不是
+      const uniqueDatas = uniquesArr.toObject ? uniquesArr.toObject().uniqueData : uniquesArr.uniqueData
       const newUniqueRow = _.pick(newRow, uniqueList);
       let equal = false
-      console.log(newUniqueRow);
       for (let it of uniqueDatas) {
         delete it._id
-        console.log(it);
         if (_.isEqual(it, newUniqueRow)) {
           equal = true
           break
@@ -187,13 +186,12 @@ export default async (req, res, next) => {
       if (equal) {
         same++
       } else {
-        console.log('new');
         success = true
         // 因為成功更新，該列的display>filter>uniqueCols要存著，等等一起更新
         addUniqueFilter(newRow)
-        uniqueDatas.push(row2Col(newRow, pUniqueCol))
+        uniquesArr.uniqueData.push(row2Col(newRow, pUniqueCol))
         // !!!!!!!!!!! 檢查是否需要!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-        // uniquesArr._id = mongoose.Types.ObjectId(oldClass._id)
+        // uniquesArr._id = mongoose.Types.ObjectId(uniquesArr._id)
       }
       return success
     }
@@ -203,6 +201,7 @@ export default async (req, res, next) => {
     // 區分unique/data
     // **************
     console.log('start for');
+    console.log(file);
     for (const c of file) {
       count++
       let combineCheckColNull = false
@@ -227,8 +226,7 @@ export default async (req, res, next) => {
             duplicated++
           }
         } else {
-          const form = childBoards[oldClassIdx].toObject()
-          // console.log(form);
+          const form = childBoards[oldClassIdx]
           if (checkUniqueAndAdd(form, c)) {
             updateList.push(form)
           } else {
@@ -246,7 +244,7 @@ export default async (req, res, next) => {
             duplicated++
           }
         } else {
-          console.log('creating');
+          // console.log('creating');
           // 要全新增的
           const form = {
             // title/intro只根版才一定要有 不然抓它母版的titleCol欄位去調資料

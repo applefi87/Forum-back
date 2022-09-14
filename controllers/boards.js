@@ -20,9 +20,11 @@ export const createBoard = async (req, res) => {
     // *******抓之前的filter清單，再把新加入的加進去更新，省效能*****
     const pFilter = req.parent.childBoard.rule.display.filter
     // ***把原顯示的過濾清單，加上新的過濾清單
-    const addObj2ObjSet = (cols) => {
+    const addObj2ObjSet = (cols, newFilters) => {
+      // console.log(cols);
       for (let k of Object.keys(cols)) {
-        const filterArr = [...req.newUniqueFilters[k]]
+        // console.log(req.newFilters[k]);
+        const filterArr = [...newFilters[k]]
         if (cols[k]?.length > 0) {
           for (let nk of filterArr) {
             if (!cols[k].includes(nk)) {
@@ -43,8 +45,9 @@ export const createBoard = async (req, res) => {
       if (!pFilter.uniqueCols) {
         pFilter.uniqueCols = {}
       }
-      addObj2ObjSet(pFilter.uniqueCols)
+      addObj2ObjSet(pFilter.uniqueCols, req.newUniqueFilters)
       req.parent.markModified('childBoard.rule.display.filter.uniqueCols')
+      // console.log(pFilter.uniqueCols);
       await req.parent.save()
       console.log("uniqueCols updated");
     } else {
@@ -56,7 +59,7 @@ export const createBoard = async (req, res) => {
       if (!pFilter.dataCols) {
         pFilter.dataCols = {}
       }
-      addObj2ObjSet(pFilter.dataCols)
+      addObj2ObjSet(pFilter.dataCols, req.newDataFilters)
       console.log("filterList updated");
       // 要這樣通知才能更新mixed
       req.parent.markModified('childBoard.rule.display.filter.dataCols')

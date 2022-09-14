@@ -31,7 +31,7 @@ export default async function (csv, rule) {
         for (let it of translate) {
           // 欄位是空的/根本沒有就不填入 不然0要照樣填入
           if (obj[it['zhTW']] !== "" && obj[it['zhTW']] !== undefined) {
-            if (preFormatCols[it.c]) {
+            if (preFormatCols[it.c] !== undefined) {
               const t = obj[it['zhTW']]
               switch (preFormatCols[it.c]) {
                 case 1:
@@ -40,9 +40,9 @@ export default async function (csv, rule) {
                   break;
                 }
                 case 0: {
-                  if (t === "有" || t === "yes" || t === "true") {
+                  if (t === "有" || t === "是" || t === "yes" || t === "true" || t === 'TRUE' || t === true) {
                     ok[it['c']] = true
-                  } else if (t === "無" || t === "no" || t === "false") {
+                  } else if (t === "無" || t === "否" || t === "no" || t === "false" || t === "FALSE" || t === false) {
                     ok[it['c']] = false
                   }
                   break;
