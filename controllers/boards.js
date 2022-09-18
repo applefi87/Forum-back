@@ -128,7 +128,7 @@ export const getChildBoards = async (req, res) => {
           // 有宣告過，不用預設值
           if (filter.col === "c0") { defaultFilter = false }
           // 要有過濾 || 全部就不用篩
-          if (!filter.all) { condition['colData.' + filter.col] = filter.text }
+          if (!filter.all) { condition['colDatas.' + filter.col] = filter.text }
         }
       })
     }
