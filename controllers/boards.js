@@ -120,6 +120,7 @@ export const getChildBoards = async (req, res) => {
     // 如果主要filter欄c0沒被宣告過，給預設(下方有宣告就會改false)
     let defaultFilter = true
     // 使用者有輸入內容直接去資料庫查詢即可(打錯就找不到)
+    console.log(filter);
     if (filter.filterData.length > 0) {
       filter.filterData.forEach(filter => {
         // 欄位要有字串非空值 + 要有過濾/全部 才算有效
@@ -133,14 +134,14 @@ export const getChildBoards = async (req, res) => {
     }
     // 沒宣告過加上默認過濾
     if (defaultFilter) {
-      condition['colData.' + "c0"] = req.board.childBoard.rule.display.filter.dataCols.c0[0]
+      condition['colDatas.' + "c0"] = req.board.childBoard.rule.display.filter.dataCols.c0[0]
     }
     // 同 輪到unique的欄位 
     if (filter.filterUnique?.length > 0) {
       filter.filterUnique.forEach(filter => {
         if (filter.col && typeof filter.col === "string" && (filter.text || filter.all)) {
           if (!filter.all) {
-            condition['uniqueData.' + filter.col] = filter.text
+            condition['uniqueDatas.' + filter.col] = filter.text
           }
         }
       })
@@ -157,6 +158,7 @@ export const getChildBoards = async (req, res) => {
     // }
     const start1 = Date.now()
     // 只拿會在母版table顯示/用來排序的欄位 就好
+    console.log(condition);
     const childBoards = await boards.find(condition, "title beScored colData")
     res.status(200).send({ success: true, message: '', result: childBoards })
     console.log("end");
