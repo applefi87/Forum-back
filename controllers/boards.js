@@ -128,20 +128,20 @@ export const getChildBoards = async (req, res) => {
           // 有宣告過，不用預設值
           if (filter.col === "c0") { defaultFilter = false }
           // 要有過濾 || 全部就不用篩
-          if (!filter.all) { condition['colDatas.' + filter.col] = filter.text }
+          if (!filter.all) { condition['colData.' + filter.col] = filter.text }
         }
       })
     }
     // 沒宣告過加上默認過濾
     if (defaultFilter) {
-      condition['colDatas.' + "c0"] = req.board.childBoard.rule.display.filter.dataCols.c0[0]
+      condition['colData.' + "c0"] = req.board.childBoard.rule.display.filter.dataCols.c0[0]
     }
     // 同 輪到unique的欄位 
     if (filter.filterUnique?.length > 0) {
       filter.filterUnique.forEach(filter => {
         if (filter.col && typeof filter.col === "string" && (filter.text || filter.all)) {
           if (!filter.all) {
-            condition['uniqueDatas.' + filter.col] = filter.text
+            condition['uniqueData.' + filter.col] = filter.text
           }
         }
       })
