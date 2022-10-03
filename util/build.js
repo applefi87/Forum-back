@@ -10,14 +10,18 @@ import converter from 'json-2-csv'
 export default async function (csv, rule) {
   const translate = rule.transformTable
   let toCode
+  // console.log(csv);
   // csv2json
-  await converter.csv2jsonAsync(csv, {
+
+  // csv.replace(xxx) ，因為csv可能是'\r'、'\n'換行，測試到有'\r\n'換行，而且結尾是'/n'會出錯,所以統一確保加工
+  await converter.csv2jsonAsync(csv.replace(/\r\n/g, '\n').replace(/\r/g, ''), {
     delimiter: {
       // wrap: '"', 
-      eol: '\n'
+      // eol: '\r\n'
     }
   }).then(
     (arr) => {
+      console.log(arr)
       // 預加工母版定義要Boolean/數字等無法直接用csv檔建立的資料(由於我判斷用_.isEqual,物件/陣列無法比較，先用字串留著)
       const preFormatCols = {}
       rule.cols.forEach(it => {
@@ -66,6 +70,7 @@ export default async function (csv, rule) {
     return res.status(400).send({ success: false, message: '轉檔錯誤' })
   }
   );
+  // console.log(toCode);
   return toCode
 }
 
