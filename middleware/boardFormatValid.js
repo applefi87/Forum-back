@@ -85,10 +85,7 @@ export default async (req, res, next) => {
       }
       return out
     }
-    // **
-    const filter = () => {
 
-    }
     // ******
     const pFilter = parent.childBoard.rule.display.filter
     const pFilterDataKeys = Object.keys(pFilter.dataCols)
@@ -125,7 +122,7 @@ export default async (req, res, next) => {
         // 沒值但有預設不填進去=>避免原資料與加入資料不同，再次比對會重複加入(改在輸出端放預設值)
         // if (data === undefined && rule.d) data = rule.d
         // 必填沒值就報錯
-        if (rule.r && (data === undefined || data === null || data === "") && !rule.d) return res.status(403).send({ success: false, message: combineDataString(toBeAdd) + "|" + rule.c + "|" + "不可是空的!" })
+        if (rule.r && (data === undefined || data === null || data === "") && !rule.d) { console.log(toBeAdd); return res.status(403).send({ success: false, message: combineDataString(toBeAdd) + "|" + rule.c + "|" + "不可是空的!" }) }
         // 有值才檢查
         if (data) {
           // 類型審核錯誤也抱錯
@@ -201,7 +198,6 @@ export default async (req, res, next) => {
     // 區分unique/data
     // **************
     console.log('start for');
-    console.log(file);
     for (const c of file) {
       count++
       let combineCheckColNull = false
@@ -211,10 +207,10 @@ export default async (req, res, next) => {
           break
         }
       }
-      // 沒課程碼/課程名稱就忽略
+      // 以課程評價版的"結合判斷欄'當範例，沒課程代碼/教師就忽略
       if (combineCheckColNull) { console.log(combineDataString(c)); continue }
       const cCombineString = combineDataString(c)
-      // 課代碼+老師與新的有重複(用更新)=>unique也沒有則確認新增，不然用新增(會合併)
+      // "結合判斷欄'與新的有重複(用更新)=>unique也沒有則確認新增，不然用新增(會合併)
       const oldClassIdx = childBoards?.findIndex(oldC => (combineDataString(oldC.colData) === cCombineString))
       if (oldClassIdx >= 0) {
         // 現有更新清單已經有了?，以它為主判斷是否是全新值
