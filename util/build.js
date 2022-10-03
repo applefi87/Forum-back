@@ -21,7 +21,7 @@ export default async function (csv, rule) {
     }
   }).then(
     (arr) => {
-      console.log(arr)
+      // console.log(arr)
       // 預加工母版定義要Boolean/數字等無法直接用csv檔建立的資料(由於我判斷用_.isEqual,物件/陣列無法比較，先用字串留著)
       const preFormatCols = {}
       rule.cols.forEach(it => {

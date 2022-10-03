@@ -11,11 +11,6 @@ import fs from 'fs'
 // 功能介紹: 確認有母版再新增子板>把傳來的子板CSV轉json>轉代碼版json>
 // 抓取現有的子板，比對是新的再更新加入
 // -區分之前有的跟新的
-// -
-// -
-// -
-
-
 // // 開始分組
 // // 加工出
 // var group = _.mapValues(
@@ -64,6 +59,8 @@ export default async (req, res, next) => {
     let duplicated = 0
     let combineUpdate = 0
     let combineNew = 0
+    // 給row2Col審核錯誤後顯示用
+    const errorList = []
     const rule = parent.childBoard.rule
     // 為了產生漂亮照數字順序的清單
     const sortedCols = rule.cols.sort((a, b) => a.c.slice(1).localeCompare(b.c.slice(1), undefined, { numeric: true }))
@@ -122,43 +119,43 @@ export default async (req, res, next) => {
         // 沒值但有預設不填進去=>避免原資料與加入資料不同，再次比對會重複加入(改在輸出端放預設值)
         // if (data === undefined && rule.d) data = rule.d
         // 必填沒值就報錯
-        if (rule.r && (data === undefined || data === null || data === "") && !rule.d) { console.log(toBeAdd); return res.status(403).send({ success: false, message: combineDataString(toBeAdd) + "|" + rule.c + "|" + "不可是空的!" }) }
+        if (rule.r && (data === undefined || data === null || data === "") && !rule.d) { errorList.push(combineDataString(toBeAdd) + "|" + rule.c + "|" + "不可是空的!"); return false }
         // 有值才檢查
         if (data) {
           // 類型審核錯誤也抱錯
           // 代碼表示: 1單行文字 2多行文字 3數字  5單選 6多選 7 其他 0Boolean  
           switch (rule.t) {
             case 0:
-              if (other) return res.status(403).send({ success: false, message: "不該有規則" + rule.c + rule.t + ":" + data })
-              if (typeof data !== "boolean") return res.status(403).send({ success: false, message: "輸入格式驗證錯誤" + rule.c + rule.t + ":" + data })
+              if (other) { errorList.push("不該有規則" + rule.c + rule.t + ":" + data); return false }
+              if (typeof data !== "boolean") { errorList.push("輸入格式驗證錯誤" + rule.c + rule.t + ":" + data); return false }
               break;
             case 1: case 2:
               // 數字轉文字
               // if (typeof data === "number") data = data.toString()
-              if (typeof data !== "string") return res.status(403).send({ success: false, message: "輸入格式驗證錯誤" + rule.c + rule.t + ":" + data })
+              if (typeof data !== "string") { errorList.push("輸入格式驗證錯誤" + rule.c + rule.t + ":" + data); return false }
               if (other === undefined) { break }
-              if (other.max !== undefined && (typeof other.max !== "number" || data.length > other.max)) return res.status(403).send({ success: false, message: "最多字數超過" + other.max + "的限制" + rule.c + rule.t + ":" + other.max + ":" + data })
-              if (other.min !== undefined && (typeof other.min !== "number" || data.length < other.min)) return res.status(403).send({ success: false, message: "最少字數超過" + other.min + "的限制" + rule.c + rule.t + ":" + other.min + ":" + data })
+              if (other.max !== undefined && (typeof other.max !== "number" || data.length > other.max)) { errorList.push("最多字數超過" + other.max + "的限制" + rule.c + rule.t + ":" + other.max + ":" + data); return false }
+              if (other.min !== undefined && (typeof other.min !== "number" || data.length < other.min)) { errorList.push("最少字數超過" + other.min + "的限制" + rule.c + rule.t + ":" + other.min + ":" + data); return false }
               break;
             case 3:
               // 數學包含整數/最大/最小可限制
-              if (typeof data !== "number") return res.status(403).send({ success: false, message: "輸入格式驗證錯誤" + rule.c + rule.t + ":" + data })
+              if (typeof data !== "number") { errorList.push("輸入格式驗證錯誤" + rule.c + rule.t + ":" + data); return false }
               if (other === undefined) { break }
-              if (other.integer !== undefined && (typeof other.integer !== "boolean" || (other.integer && data != Math.floor(data)))) return res.status(403).send({ success: false, message: "必須為整數的格式錯誤" + rule.c + rule.t + ":" + other.integer + ":" + data })
-              if (other.max !== undefined && (typeof other.max !== "number" || data > other.max)) return res.status(403).send({ success: false, message: "最大值超過" + other.max + "的限制" + rule.c + rule.t + ":" + other.max + ":" + data })
-              if (other.min !== undefined && (typeof other.min !== "number" || data < other.min)) return res.status(403).send({ success: false, message: "最小值超過" + other.min + "的限制" + rule.c + rule.t + ":" + other.min + ":" + data })
+              if (other.integer !== undefined && (typeof other.integer !== "boolean" || (other.integer && data != Math.floor(data)))) { errorList.push("必須為整數的格式錯誤" + rule.c + rule.t + ":" + other.integer + ":" + data); return false }
+              if (other.max !== undefined && (typeof other.max !== "number" || data > other.max)) { errorList.push("最大值超過" + other.max + "的限制" + rule.c + rule.t + ":" + other.max + ":" + data); return false }
+              if (other.min !== undefined && (typeof other.min !== "number" || data < other.min)) { errorList.push("最小值超過" + other.min + "的限制" + rule.c + rule.t + ":" + other.min + ":" + data); return false }
               break;
             case 5: case 6:
               // 多選必須包含陣列的選項
-              if (typeof data !== "string") return res.status(403).send({ success: false, message: "輸入格式驗證錯誤" + rule.c + rule.t + ":" + data })
-              if (other === undefined) return res.status(403).send({ success: false, message: "必須設定單選選項" + rule.t + ":" + other + ":" + data })
-              if (!Array.isArray(other) || other.filter((i) => typeof i !== "string").length > 0) return res.status(403).send({ success: false, message: "單選格式錯誤" + rule.c + rule.t + ":" + other + ":" + data })
+              if (typeof data !== "string") { errorList.push("輸入格式驗證錯誤" + rule.c + rule.t + ":" + data); return false }
+              if (other === undefined) { errorList.push("必須設定單選選項" + rule.t + ":" + other + ":" + data); return false }
+              if (!Array.isArray(other) || other.filter((i) => typeof i !== "string").length > 0) { errorList.push("單選格式錯誤" + rule.c + rule.t + ":" + other + ":" + data); return false }
               break;
             // **********!!!!!!!!!之後要改掉!!!!!!!!!!!!!!!!!!!******************** (未來也許放圖片等等)
             case 7:
               return
             default:
-              return res.status(403).send({ success: false, message: "其他" + "母版規則格式錯誤:" + rule.t + ":" + data })
+              { errorList.push("其他" + "母版規則格式錯誤:" + rule.t + ":" + data); return false }
           }
           itData[rule.c] = data
         }
@@ -180,20 +177,19 @@ export default async (req, res, next) => {
           break
         }
       }
-      if (equal) {
-        same++
-      } else {
+      if (equal) same++
+      else {
         success = true
-        // 因為成功更新，該列的display>filter>uniqueCols要存著，等等一起更新
-        addUniqueFilter(newRow)
-        uniquesArr.uniqueData.push(row2Col(newRow, pUniqueCol))
-        // !!!!!!!!!!! 檢查是否需要!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-        // uniquesArr._id = mongoose.Types.ObjectId(uniquesArr._id)
+        const newCol = row2Col(newRow, pUniqueCol)
+        // 審核成功才加進去，不然跳過並存著供回報
+        if (newCol) {
+          uniquesArr.uniqueData.push(newCol)
+          // 因為成功更新，該列的display>filter>uniqueCols要存著，等等一起更新
+          addUniqueFilter(newRow)
+        }
       }
       return success
     }
-    // ***
-
     // *******************************************
     // 區分unique/data
     // **************
@@ -208,8 +204,8 @@ export default async (req, res, next) => {
         }
       }
       // 以課程評價版的"結合判斷欄'當範例，沒課程代碼/教師就忽略
-      if (combineCheckColNull) { console.log(combineDataString(c)); continue }
       const cCombineString = combineDataString(c)
+      if (combineCheckColNull) { errorList.push(cCombineString); continue }
       // "結合判斷欄'與新的有重複(用更新)=>unique也沒有則確認新增，不然用新增(會合併)
       const oldClassIdx = childBoards?.findIndex(oldC => (combineDataString(oldC.colData) === cCombineString))
       if (oldClassIdx >= 0) {
@@ -266,10 +262,12 @@ export default async (req, res, next) => {
     console.log("count:" + count);
     console.log("same:" + same);
     console.log("updateList:" + updateList.length);
+    console.log(updateList);
     console.log("combineUpdate:" + combineUpdate);
     console.log("newList:" + newList.length);
     console.log("combineNew:" + combineNew);
     console.log("duplicated:" + duplicated);
+    console.log("errorList:" + errorList);
     console.log('next');
     const info = "count:" + count + "; " + "same:" + same + "; " + "combineUpdate:" + combineUpdate + "; " + "updateList:" + updateList.length + "; " + "newList:" + newList.length + "; " + "combineNew:" + combineNew + "duplicated:" + duplicated
     // fs.writeFileSync('tt.json', JSON.stringify(updateList))
