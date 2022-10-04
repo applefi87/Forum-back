@@ -31,7 +31,8 @@ app.use(limiter)
 app.use(cors({
   origin(origin, callback) {
     console.log(origin);
-    if (origin === undefined || origin.includes('https://applefi87.github.io') || origin.includes('localhost')) {
+    if (origin === 'https://leisureforum.onrender.com') {
+      // if (origin === undefined || origin.includes('https://applefi87.github.io') || origin === 'https://leisureforum.onrender.com' || origin.includes('http://localhost')) {
       callback(null, true)
     } else {
       callback(new Error('Not Allowed'), false)
@@ -40,8 +41,8 @@ app.use(cors({
 }))
 
 // 再限定一次防mongo語法
-app.use(express.json({ limit: '5mb' }))
 app.use(mongoSanitize())
+app.use(express.json({ limit: '5mb' }))
 // *********************待紀錄ip
 // app.set('trust proxy', 1)
 // app.get('/ip', (request, response) => response.send(request.ip))
