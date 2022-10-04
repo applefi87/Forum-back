@@ -30,11 +30,12 @@ const limiter = rateLimit({
 app.use(limiter)
 app.use(cors({
   origin(origin, callback) {
-    // if (origin === undefined || origin.includes('github') || origin.includes('localhost')) {
+    console.log(origin);
+    if (origin === undefined || origin.includes('https://applefi87.github.io') || origin.includes('localhost')) {
       callback(null, true)
-    // } else {
-    //   callback(new Error('Not Allowed'), false)
-    // }
+    } else {
+      callback(new Error('Not Allowed'), false)
+    }
   }
 }))
 
