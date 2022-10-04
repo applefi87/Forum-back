@@ -48,13 +48,10 @@ export default async (req, res, next) => {
   try {
     // *****************確認有母版再新增子板
     const parent = await boards.findById(req.params.id)
-    console.time("get parent");
     if (!parent) return res.status(403).send({ success: false, message: '找無該母版' })
-    console.timeEnd("get parent");
+    console.log("get parent");
     //  *****************把傳來的子板CSV轉json+轉代碼版json
-    console.time("buildFile");
     const file = await buildFile(req.body.csv, parent.childBoard.rule)
-    console.timeEnd("buildFile");
     // ******************抓取現有的子板，比對是新的再更新加入
     // 留一些計數的，確認運算沒錯
     let count = 0
@@ -72,9 +69,7 @@ export default async (req, res, next) => {
     const uniqueList = pUniqueCol.map(it => it.c)
     //*****區分之前有的跟新的
     // 只拿欄位就夠區分了
-    console.time("Get childBoards");
     const childBoards = await boards.find({ parent: req.params.id }, "colData uniqueData")
-    console.timeEnd("Get childBoards");
     console.log("childBoards:" + childBoards.length);
     const updateList = []
     const newList = []
@@ -85,9 +80,6 @@ export default async (req, res, next) => {
       for (let c of rule.combineCheckCols) {
         out += (obj[c] + "*")
       }
-      // for (let i = 0; i < rule.combineCheckCols.length; i++) {
-      //   out += (obj[rule.combineCheckCols[i]] + "*")
-      // }
       return out
     }
 
@@ -201,15 +193,7 @@ export default async (req, res, next) => {
     // *******************************************
     // 區分unique/data
     // **************
-
-    console.time('building childBoardsMap');
-    const childBoardsMap = new Map()
-    for (const item of childBoards) {
-      childBoardsMap.set(combineDataString(item.colData), item);
-    }
-    console.timeEnd('building childBoardsMap');
     console.log('start for');
-    console.time('for')
     for (const c of file) {
       count++
       let combineCheckColNull = false
@@ -222,41 +206,31 @@ export default async (req, res, next) => {
       // 以課程評價版的"結合判斷欄'當範例，沒課程代碼/教師就忽略
       const cCombineString = combineDataString(c)
       if (combineCheckColNull) { errorList.push(cCombineString); continue }
-      // // "結合判斷欄'與新的有重複(用更新)=>unique也沒有則確認新增，不然用新增(會合併)
-      // const oldClassIdx = childBoards?.findIndex(oldC => (combineDataString(oldC.colData) === cCombineString))
-      const sameChildBoard = childBoardsMap.get(cCombineString);
-      if (sameChildBoard) {
+      // "結合判斷欄'與新的有重複(用更新)=>unique也沒有則確認新增，不然用新增(會合併)
+      const oldClassIdx = childBoards?.findIndex(oldC => (combineDataString(oldC.colData) === cCombineString))
+      if (oldClassIdx >= 0) {
         // 現有更新清單已經有了?，以它為主判斷是否是全新值
-        const childBoardsMap = new Map()
-        for (const item of updateList) {
-          childBoardsMap.set(combineDataString(item.colData), item);
-        }
-        const sameInUpdateList = childBoardsMap.get(cCombineString);
-        // const newClassUniqueIdx = updateList?.findIndex(newC => (combineDataString(newC.colData) === cCombineString))
-        if (sameInUpdateList) {
-          if (checkUniqueAndAdd(sameInUpdateList, c)) {
+        const newClassUniqueIdx = updateList?.findIndex(newC => (combineDataString(newC.colData) === cCombineString))
+        if (newClassUniqueIdx >= 0) {
+          if (checkUniqueAndAdd(updateList[newClassUniqueIdx], c)) {
             combineUpdate++
           } else {
             duplicated++
           }
         } else {
-          if (checkUniqueAndAdd(sameChildBoard, c)) {
-            updateList.push(sameChildBoard)
+          const form = childBoards[oldClassIdx]
+          if (checkUniqueAndAdd(form, c)) {
+            updateList.push(form)
           } else {
             duplicated++
           }
         }
       } else {
         // ***如果新增清單已經有同課程名+老師 直接加到對應unique裡面
-        const childBoardsMap = new Map()
-        for (const item of newList) {
-          childBoardsMap.set(combineDataString(item.colData), item);
-        }
-        const sameInNewList = childBoardsMap.get(cCombineString);
-        // const newClassUniqueIdx = newList?.findIndex(newC => (combineDataString(newC.colData) === cCombineString))
+        const newClassUniqueIdx = newList?.findIndex(newC => (combineDataString(newC.colData) === cCombineString))
         // 加到對應unique裡面
-        if (sameInNewList) {
-          if (checkUniqueAndAdd(sameInNewList, c)) {
+        if (newClassUniqueIdx >= 0) {
+          if (checkUniqueAndAdd(newList[newClassUniqueIdx], c)) {
             combineNew++
           } else {
             duplicated++
@@ -284,11 +258,11 @@ export default async (req, res, next) => {
         }
       }
     }
-    console.timeEnd('for')
     // ***********
     console.log("count:" + count);
     console.log("same:" + same);
     console.log("updateList:" + updateList.length);
+    console.log(updateList);
     console.log("combineUpdate:" + combineUpdate);
     console.log("newList:" + newList.length);
     console.log("combineNew:" + combineNew);

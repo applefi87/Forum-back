@@ -120,7 +120,7 @@ export const getChildBoards = async (req, res) => {
     // 如果主要filter欄c0沒被宣告過，給預設(下方有宣告就會改false)
     let defaultFilter = true
     // 使用者有輸入內容直接去資料庫查詢即可(打錯就找不到)
-    console.log(filter);
+    // console.log(filter);
     if (filter.filterData.length > 0) {
       filter.filterData.forEach(filter => {
         // 欄位要有字串非空值 + 要有過濾/全部 才算有效
