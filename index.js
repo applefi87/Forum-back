@@ -1,4 +1,4 @@
-import 'dotenv/config'
+import * as dotenv from 'dotenv'
 import mongoose from 'mongoose'
 import express from 'express'
 import rateLimit from 'express-rate-limit'
@@ -10,6 +10,8 @@ import groupRouter from './routes/groups.js'
 import articleRouter from './routes/articles.js'
 import boardRouter from './routes/boards.js'
 import './passport/passport.js'
+dotenv.config({ path: `./.env.${process.env.NODE_ENV}` });
+console.log(process.env.NODE_ENV);
 // 初始化
 mongoose.connect(process.env.DB_URL, { autoIndex: false })
 // mongoose.connect(process.env.DB_URL)
@@ -30,17 +32,18 @@ const limiter = rateLimit({
 app.use(limiter)
 app.use(cors({
   origin(origin, callback) {
-    // if (origin === undefined || origin.includes('github') || origin.includes('localhost')) {
+    const corsCheck = process.env.NODE_ENV === 'main' ? origin.includes('https://leisureforum.onrender.com') : origin === undefined || origin.includes('https://applefi87.github.io') || origin === 'https://leisureforum.onrender.com' || origin.includes('http://localhost')
+    if (corsCheck) {
       callback(null, true)
-    // } else {
-    //   callback(new Error('Not Allowed'), false)
-    // }
+    } else {
+      callback(new Error('Not Allowed'), false)
+    }
   }
 }))
 
 // 再限定一次防mongo語法
-app.use(express.json({ limit: '5mb' }))
 app.use(mongoSanitize())
+app.use(express.json({ limit: '5mb' }))
 // *********************待紀錄ip
 // app.set('trust proxy', 1)
 // app.get('/ip', (request, response) => response.send(request.ip))
