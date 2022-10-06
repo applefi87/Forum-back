@@ -194,6 +194,7 @@ export default async (req, res, next) => {
     // 區分unique/data
     // **************
     console.log('start for');
+    console.time('for')
     for (const c of file) {
       count++
       let combineCheckColNull = false
@@ -258,11 +259,12 @@ export default async (req, res, next) => {
         }
       }
     }
+    console.timeEnd('for')
     // ***********
     console.log("count:" + count);
     console.log("same:" + same);
     console.log("updateList:" + updateList.length);
-    console.log(updateList);
+    // console.log(updateList);
     console.log("combineUpdate:" + combineUpdate);
     console.log("newList:" + newList.length);
     console.log("combineNew:" + combineNew);
