@@ -32,7 +32,7 @@ const limiter = rateLimit({
 app.use(limiter)
 app.use(cors({
   origin(origin, callback) {
-    const corsCheck = process.env.NODE_ENV === 'main' ? origin.includes('https://leisureforum.onrender.com') : origin === undefined || origin.includes('https://applefi87.github.io') || origin === 'https://leisureforum.onrender.com' || origin.includes('http://localhost')
+    const corsCheck = process.env.NODE_ENV === 'main' ? origin?.includes('https://leisureforum.onrender.com') : origin === undefined || origin?.includes('https://applefi87.github.io') || origin === 'https://leisureforum.onrender.com' || origin?.includes('http://localhost')
     if (corsCheck) {
       callback(null, true)
     } else {
