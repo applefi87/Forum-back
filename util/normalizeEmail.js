@@ -12,8 +12,9 @@ export default function (email) {
   let back = lowerEmail.substr(idx + 1, lowerEmail.length)
   console.log(5);
   console.log(front);
+  console.log(front.replaceAll);
   // 解決名稱的"."會被許多信箱忽略，而可重複註冊
-  // front = front.replaceAll(".", "")
+  front = front.replace(/\./g, "")
   console.log(6);
   // 解決gmail內部通用名
   back = back.replace("googlemail", 'gmail')
