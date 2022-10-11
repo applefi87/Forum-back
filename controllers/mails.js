@@ -19,7 +19,9 @@ export const sendMail = (mode) => {
         email.date = Date.now()
         email.times = 1
         email.isSchool = req.body.isSchool
+        console.log('已申請過，要寄信');
         await sendMailJs(formatedEmail, createCode)
+        console.log('已申請過，要儲存');
         await email.save()
         console.log(createCode);
       } else {
@@ -27,11 +29,13 @@ export const sendMail = (mode) => {
         await sendMailJs(formatedEmail, '課程網註冊驗證碼',
           `${createCode}  是你的信箱驗證碼，一天內有效<br> 請至原頁面填入驗證，進入下步驟`
         )
+        console.log('未申請過，要創建');
         await emails.create({ isSchool: req.body.isSchool, email: formatedEmail, code: createCode, date: Date.now(), occupied: false })
+        console.log('未申請過，創建完成');
       }
       res.status(200).send({ success: true, message: { title: '請至該信箱收信', text: formatedEmail, duration: 10000 } })
     } catch (error) {
-      res.status(500).send({ success: false, message: 'ServerError' })
+      res.status(500).send({ success: false, message: { title: 'ServerError' }, info: error })
     }
   }
 }
