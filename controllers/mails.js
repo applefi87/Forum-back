@@ -2,14 +2,15 @@ import emails from '../models/emails.js'
 import normalizeEmail from '../util/normalizeEmail.js'
 import sendMailJs from '../util/sendMail.js'
 
-export const sendMail = (mode) => {
+export const sendMail = () => {
   return async (req, res) => {
-    console.log('in controller>mail-sendmail');
     try {
+      console.log('in controller>mail-sendmail');
       const formatedEmail = normalizeEmail(req.body.email)
+      console.log('normalized')
       const email = await emails.findOne({ email: formatedEmail })
       // 6位驗證碼
-      console.log(email||'沒找到此email');
+      console.log(email || '沒找到此email');
       const createCode = Math.floor(Math.random() * 1000000).toString().padStart(6, "0")
       if (email) {
         //已經註冊過，就不可用
