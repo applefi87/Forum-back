@@ -4,10 +4,12 @@ import sendMailJs from '../util/sendMail.js'
 
 export const sendMail = (mode) => {
   return async (req, res) => {
+    console.log('in controller>mail-sendmail');
     try {
       const formatedEmail = normalizeEmail(req.body.email)
       const email = await emails.findOne({ email: formatedEmail })
       // 6位驗證碼
+      console.log(email||'沒找到此email');
       const createCode = Math.floor(Math.random() * 1000000).toString().padStart(6, "0")
       if (email) {
         //已經註冊過，就不可用
