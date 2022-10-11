@@ -39,6 +39,7 @@ app.use(cors({
       callback(new Error('Not Allowed'), false)
     }
   }
+  , credentials: true
 }))
 
 // 再限定一次防mongo語法
