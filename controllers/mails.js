@@ -5,6 +5,7 @@ import sendMailJs from '../util/sendMail.js'
 export const sendMail = async (req, res) => {
   try {
     console.log('in controller>mail-sendmail');
+    console.log(req.body.email);
     const formatedEmail = normalizeEmail(req.body.email)
     console.log('normalized')
     const email = await emails.findOne({ email: formatedEmail })
