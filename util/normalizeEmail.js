@@ -1,7 +1,6 @@
 // 信箱基本加工
 export default function (email) {
   console.log('start normalizeEmail');
-
   // 轉小寫
   console.log(1);
   let lowerEmail = email.toLowerCase()
