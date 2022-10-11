@@ -18,7 +18,7 @@ export default function (email) {
   console.log(6);
   // 解決gmail內部通用名
   back = back.replace("googlemail", 'gmail')
-  console.log(7);
+  console.log(7, front + "@" + back);
   return front + "@" + back
   // 不再有./gmail重複/大寫
 }
