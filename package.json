@@ -33,6 +33,6 @@
   "scripts": {
     "dev": "set NODE_ENV=develop&&nodemon index.js",
     "devMain": "set NODE_ENV=mainDev&&nodemon index.js",
-    "start": "set NODE_ENV=main&&node index.js"
+    "start": "set NODE_ENV=develop&&node index.js"
   }
 }
