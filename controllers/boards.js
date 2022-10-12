@@ -67,7 +67,7 @@ export const createBoard = async (req, res) => {
       console.log("filter list updated");
     }
     console.log('end---------------------------------');
-    res.status(200).send({ success: true, message: { title: '上傳更新完成', text: req.info, duration: 200000 } })
+    res.status(200).send({ success: true, message: { title: '上傳更新完成', text: req.info, duration: 20000 } })
   } catch (error) {
     console.log(error);
     if (error.name === 'ValidationError') {
