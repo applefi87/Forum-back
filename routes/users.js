@@ -27,7 +27,7 @@ router.post('/login', content('application/json'), auth.login, login)
 router.delete('/logout', auth.jwt, logout)
 router.post('/extend', auth.jwt, extend)
 
-router.post('/sendMail', content('application/json'), sendMail())
+router.post('/sendMail', content('application/json'), sendMail)
 router.post('/mailVerify', content('application/json'), verifyMail(false))
 
 router.post('/sendPWDMail', content('application/json'), sendPWDMail)
