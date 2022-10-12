@@ -34,5 +34,10 @@
     "dev": "set NODE_ENV=develop&&nodemon index.js",
     "devMain": "set NODE_ENV=mainDev&&nodemon index.js",
     "start": "set NODE_ENV=develop&&node index.js"
+  },
+  "engines": {
+    "node": ">=16 <18",
+    "npm": ">= 6.13.4",
+    "yarn": ">= 1.21.1"
   }
 }
