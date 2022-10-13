@@ -32,7 +32,7 @@ export default async (req, res, next) => {
     // 順便取出該類型的相關規則
     const category = article.category.find((it) => {
       return it.c == req.body.category
-    }) 
+    })
     if (!category) return res.status(403).send({ success: false, message: '無該文章類型' })
     form.category = req.body.category
     // (給schema檢查)
@@ -43,10 +43,9 @@ export default async (req, res, next) => {
     // 處理tag (母板歸有訂才加入) (已經審查完內容)
     if (category.tagActive) {
       const tags = []
-      for (let tag of article.category[0].tagOption) {
-        if (req.body.tags?.includes(tag.c)) {
-          tags.push(tag.c)
-        }
+      const tagsObj = article.category.find(o => o.c === req.body.category).tagOption
+      for (let tag of Object.keys(tagsObj)) {
+        if (req.body.tags?.includes(tag)) tags.push(tag)
       }
       // 沒有標tag也是正常的
       form.tags = tags

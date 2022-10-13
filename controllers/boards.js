@@ -91,7 +91,7 @@ export const createRoot = async (req, res) => {
   }
 }
 export const getBoard = async (req, res) => {
-  console.log('in controller');
+  console.log('in controller -getBoard');
   try {
     res.status(200).send({ success: true, message: '', result: req.board })
     console.log("end");
@@ -101,7 +101,7 @@ export const getBoard = async (req, res) => {
   }
 }
 export const getBoardTest = async (req, res) => {
-  console.log('in controller');
+  console.log('in controller-getBoardTest');
   // console.log(req.board);
   try {
     res.status(200).send({ success: true, message: '', result: req.all })
@@ -112,7 +112,7 @@ export const getBoardTest = async (req, res) => {
   }
 }
 export const getChildBoards = async (req, res) => {
-  console.log("進Controller");
+  console.log("in Controller-getChildBoards");
   try {
     const filter = JSON.parse(decodeURI(req.query.test))
     // 先處理過濾內容

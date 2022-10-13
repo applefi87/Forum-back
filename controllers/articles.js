@@ -64,10 +64,10 @@ export const createArticle = async (req, res) => {
       board.beScored.scoreChart[req.body.score]++
       if (!board.beScored.tags) board.beScored.tags = {}
       for (let i of req.form.tags) {
-        if (board.beScored.tags[i] !== undefined) { board.beScored.tags[i]++ } else {
-          board.beScored.tags[i] = 1
-        }
+        if (board.beScored.tags[i] !== undefined) { board.beScored.tags[i]++ }
+        else { board.beScored.tags[i] = 1 }
       }
+      board.markModified('beScored.tags')
       await board.save()
       // 更新個人評分
       const toBoard = req.user.record.toBoard

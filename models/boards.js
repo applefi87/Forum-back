@@ -72,7 +72,7 @@ const article = new mongoose.Schema({
   intro: { type: String, required: true },
   tagActive: Boolean,
   //如果有勾tag再填
-  tagOption: { type: [String], required: function () { return this.tagActive }, default: undefined },
+  tagOption: { type: mongoose.Mixed, required: function () { return this.tagActive }, default: undefined },
   contentCol: mongoose.Mixed,
   cols: col,
   // 程式抓版不重複供選擇,填上代表必填
