@@ -158,7 +158,7 @@ export const getChildBoards = async (req, res) => {
     // }
     const start1 = Date.now()
     // 只拿會在母版table顯示/用來排序的欄位 就好
-    console.log(condition);
+    // console.log(condition);
     const childBoards = await boards.find(condition, "title beScored colData")
     res.status(200).send({ success: true, message: '', result: childBoards })
     console.log("end");

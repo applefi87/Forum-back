@@ -79,11 +79,8 @@ const article = new mongoose.Schema({
 })
 
 const schema = new mongoose.Schema({
-  title: {
-    type: String,
-    minlength: [2, '必須 2 個字以上'],
-    maxlength: [50, '必須 50 個字以下'],
-  },
+  // 標題採多語言格式，如果是根版(沒母版)才用這，不然規則會設在母版的childBoard.rule.titleCol裡(對應前端也要去存取)
+  titleCol: { type: mongoose.Mixed, required: function () { return this.parent == undefined }, default: undefined },
   intro: {
     type: String,
     required: [function () { return this.title }, '有title為根版，必填介紹'],
@@ -103,7 +100,10 @@ const schema = new mongoose.Schema({
   beScored: rate('articles'),
   // 抓取母板規則:使用者要填對應的內容，就像填表單
   colData: mongoose.Mixed,
-  uniqueData: [unique()],
+  uniqueData: {
+    type: [unique()],
+    default: undefined
+  },
   // ---------------------------------------------------------------
   childBoard: {
     active: { type: Boolean, required: true },
@@ -116,9 +116,10 @@ const schema = new mongoose.Schema({
         // uniqueList: [String], 先移除 反正transformTable中不是datecol 就是 不該有多餘的在transformTable中 也方便只調整一邊就好
         multiLangList: [String],
         combineCheckCols: [String],
-        titleCol: String,
+        titleCol: { type: mongoose.Mixed, required: function () { return this.parent.length > 0 }, default: undefined },
       },
-      required: function () { return this.childBoard.active }
+      required: function () { return this.childBoard.active },
+      _id: false
     },
     // 子版的文章規則
     article: {
