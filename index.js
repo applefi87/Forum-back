@@ -32,16 +32,14 @@ const limiter = rateLimit({
 app.use(limiter)
 app.use(cors({
   origin(origin, callback) {
-
     const corsCheck = process.env.NODE_ENV === 'main' ? origin === 'https://leisureforum.onrender.com' : (origin === undefined || origin === 'https://leisureforum-develop.onrender.com' || origin?.includes('http://localhost'))
-
     if (corsCheck) {
       callback(null, true)
     } else {
       callback(new Error('Not Allowed'), false)
     }
   }
-  , credentials: true
+  // , credentials: true
 }))
 
 // 再限定一次防mongo語法
