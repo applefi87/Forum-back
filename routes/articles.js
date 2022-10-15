@@ -2,20 +2,24 @@ import express from 'express'
 import content from '../middleware/content.js'
 import * as auth from '../middleware/auth.js'
 import admin from '../middleware/admin.js'
-import articleFormatValid from '../middleware/articleFormatValid.js'
+import createArticleValid from '../middleware/createArticleValid.js'
+import editArticleValid from '../middleware/editArticleValid.js'
+import articleValid from '../middleware/articleValid.js'
 import getArticleValid from '../middleware/getArticleValid.js'
 import {
   createArticle,
-  getArticles,
   createMsg,
+  editArticle,
+  getArticles,
   getArticle,
   banMsg
 } from '../controllers/articles.js'
 
 const router = express.Router()
 
-router.post('/create/:id', content('application/json'), auth.jwt, articleFormatValid, createArticle)
+router.post('/create/:id', content('application/json'), auth.jwt, articleValid, createArticleValid, createArticle)
 router.post('/createMsg/:id', content('application/json'), auth.jwt, auth.jwtForId, createMsg)
+router.post('/edit/:id', content('application/json'), auth.jwt, articleValid, editArticle)
 router.get('/getArticle/:id', auth.jwtForId, getArticle)
 router.delete('/:id', auth.jwt, admin, banMsg)
 // router.get('/all', auth.jwt, admin, getAllProducts)

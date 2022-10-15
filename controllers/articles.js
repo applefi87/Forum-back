@@ -1,7 +1,10 @@
 import articles from '../models/articles.js'
 import boards from '../models/boards.js'
 import _ from 'lodash'
-
+import xss from 'xss'
+const cleanXSS = (html) => {
+  return xss(html)
+}
 const sanitizeArticle = (req, articleIn) => {
   // 要轉物件才會正常,不然有時delete 等等就是不一樣
   const article = articleIn.toObject()
@@ -22,7 +25,10 @@ const sanitizeArticle = (req, articleIn) => {
         // 看發文者在留言區，他的名稱變 "樓主"
         msg.user.nickName = 'originalPoster'
       }
-      if (msgUserId === req._id) msg.user.nickName = 'you'
+      if (msgUserId === req._id) {
+        msg.user.nickName = 'you'
+        msg.owner = true
+      }
       return msg
     })
     delete article.msg1.list
@@ -31,6 +37,7 @@ const sanitizeArticle = (req, articleIn) => {
   // 發文者看自己文章，名稱變成"你"
   if (article.user._id.toString() === req._id) {
     article.user.nickName = 'you'
+    article.owner = true
   }
   else if (article.privacy == 0) {
     article.user._id = undefined
@@ -48,8 +55,8 @@ export const createArticle = async (req, res) => {
       const board = await boards.findById(req.params.id)
       if (!board) return res.status(403).send({ success: false, message: { title: 'BoardNoFound' } })
       // 之前沒有就產生新beScored物件  不預設放空值是減少資料負擔      
-      if (!(board.beScored?.list?.length > 0)) board.beScored = { score: 0, amount: 0, scoreChart: [0, 0, 0, 0, 0, 0], list: [] }
-      board.beScored.list.push({ from: result.id, score: req.body.score })
+      // if (!(board.beScored?.list?.length > 0)) board.beScored = { score: 0, amount: 0, scoreChart: [0, 0, 0, 0, 0, 0], list: [] }
+      // board.beScored.list.push({ from: result.id, score: req.body.score })
       // 考量只是加陣列不太會出錯，最簡單算法拿之前的算
       // board.beScored.amount = board.beScored.list.length
       // let sumScore = board.beScored.list.reduce((sum, it) => sum + it.score, 0)
@@ -88,32 +95,6 @@ export const createArticle = async (req, res) => {
   }
 }
 
-export const getArticles = async (req, res) => {
-  try {
-    console.log('in controller');
-    // 直接用populate 秒殺
-    const articleList = await articles.find({ board: req.params.id }).
-      populate({
-        path: 'user',
-        select: "nickName score info.gender record.toBoard.score record.toBoard.amount record.toBoard.scoreChart msg1"
-      }).
-      populate({
-        path: 'msg1.list.user',
-        select: 'nickName '
-      })
-    // 有文章?---把發文者與留言者要匿名的暱稱+id移除
-    if (articleList.lenth < 1) return res.status(403).send({ success: true, message: '' })
-    const out = articleList.map(a => {
-      return sanitizeArticle(req, a)
-    })
-    console.log('end');
-    res.status(200).send({ success: true, message: '', result: out })
-  } catch (error) {
-    console.log(error);
-    res.status(500).send({ success: false, message: 'ServerError' })
-  }
-}
-
 export const createMsg = async (req, res) => {
   try {
     const article = await articles.findById(req.params.id)
@@ -143,6 +124,71 @@ export const createMsg = async (req, res) => {
     console.log(error);
   }
 }
+export const editArticle = async (req, res) => {
+  console.log('in controller editArticle');
+  try {
+    // 找該文章
+    const article = await articles.findById(req.body._id)
+    // (給schema檢查)
+    article.privacy = req.body.privacy || 0
+    article.title = req.body.title
+    article.content = cleanXSS(req.body.content)
+    // 是1(評價版)才加評分 (給schema檢查)
+    if (article.category === 1 && req.body.score >= 0 && req.body.score <= 5 && Number.isInteger(req.body.score)) { article.score = req.body.score }
+    //找是否有對應到母版該category的規則
+    const category = req.article.category.find((it) => {
+      return it.c == req.body.category
+    })
+    // 處理tag (母板歸有訂才加入) (已經審查完內容)
+    if (category.tagActive) {
+      article.tags.length = 0
+      const tags = []
+      const tagsObj = category.tagOption
+      for (let tag of Object.keys(tagsObj)) {
+        if (req.body.tags?.includes(tag)) tags.push(tag)
+      }
+      article.tags.push(...tags)
+    }
+    // 不用mongoose內建，因為我編輯評價分數會被自動更新，但只有發文者改資料才該更新
+    article.update_at = Date.now()
+    // 先忽略schema 的 cols
+    // const columns = []
+    // column.
+    //   form.columns = 2
+    // return res.status(403).send({ success: false, message: '到這完成', result: form })
+    await article.save()
+    res.status(200).send({ success: true, message: { title: 'published' } })
+  } catch (error) {
+    console.log(error);
+    res.status(500).send({ success: false, message: '伺服器錯誤' })
+  }
+}
+export const getArticles = async (req, res) => {
+  try {
+    console.log('in controller');
+    const articleList = await articles.find({ board: req.params.id }).
+      populate({
+        path: 'user',
+        select: "nickName score info.gender record.toBoard.score record.toBoard.amount record.toBoard.scoreChart msg1"
+      }).
+      populate({
+        path: 'msg1.list.user',
+        select: 'nickName '
+      })
+    // 有文章?---把發文者與留言者要匿名的暱稱+id移除
+    if (articleList.lenth < 1) return res.status(403).send({ success: true, message: '' })
+    const out = articleList.map(a => {
+      return sanitizeArticle(req, a)
+    })
+    console.log('end');
+    res.status(200).send({ success: true, message: '', result: out })
+  } catch (error) {
+    console.log(error);
+    res.status(500).send({ success: false, message: 'ServerError' })
+  }
+}
+
+
 
 export const banMsg = async (req, res) => {
   console.log('in controller');
