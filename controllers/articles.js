@@ -55,20 +55,21 @@ export const createArticle = async (req, res) => {
       const board = await boards.findById(req.params.id)
       if (!board) return res.status(403).send({ success: false, message: { title: 'BoardNoFound' } })
       // 之前沒有就產生新beScored物件  不預設放空值是減少資料負擔      
-      // if (!(board.beScored?.list?.length > 0)) board.beScored = { score: 0, amount: 0, scoreChart: [0, 0, 0, 0, 0, 0], list: [] }
-      // board.beScored.list.push({ from: result.id, score: req.body.score })
-      // 考量只是加陣列不太會出錯，最簡單算法拿之前的算
-      // board.beScored.amount = board.beScored.list.length
-      // let sumScore = board.beScored.list.reduce((sum, it) => sum + it.score, 0)
-      // board.beScored.score = sumScore / board.beScored.amount
-      board.beScored.score = Math.ceil((board.beScored.amount * board.beScored.score + req.body.score) / (board.beScored.amount + 1))
+      // board.beScored 因為是mogoose格式,所以沒設也有東西，才用.list去抓
+      if (!board.beScored?.list) {
+        console.log('create bs');
+        board.beScored = { scoreSum: 0, amount: 0, list: [] }
+      }
+      console.log(board.beScored);
+      board.beScored.scoreSum += req.body.score
       board.beScored.amount++
       //對應0分 在陣列[0]+1 就能給chart.js讀取
       // 因應部分板塊用舊規則 有bescore 但沒scoreChart || == []
-      if (!(board.beScored.scoreChart.length === 6)) {
+      if (!(board.beScored.scoreChart?.length === 6)) {
         board.beScored.scoreChart = [0, 0, 0, 0, 0, 0]
       }
       board.beScored.scoreChart[req.body.score]++
+      // 
       if (!board.beScored.tags) board.beScored.tags = {}
       for (let i of req.form.tags) {
         if (board.beScored.tags[i] !== undefined) { board.beScored.tags[i]++ }
@@ -79,7 +80,7 @@ export const createArticle = async (req, res) => {
       // 更新個人評分
       const toBoard = req.user.record.toBoard
       toBoard.list.push({ from: result.id, score: req.body.score })
-      toBoard.score = Math.ceil((toBoard.amount * toBoard.score + req.body.score) / (toBoard.amount + 1))
+      toBoard.scoreSum += req.body.score
       toBoard.scoreChart[req.body.score]++
       toBoard.amount++
       await req.user.save()
@@ -127,6 +128,12 @@ export const createMsg = async (req, res) => {
 export const editArticle = async (req, res) => {
   console.log('in controller editArticle');
   try {
+    // 有評分，則先驗證評分格式 
+    if (req.body.score !== undefined) {
+      if (!(Number.isInteger(req.body.score) && req.body.score <= 5 && req.body.score >= 0)) {
+        return res.status(401).send({ success: false, message: '評分格式錯誤' })
+      }
+    }
     // 找該文章
     const article = await articles.findById(req.body._id)
     // (給schema檢查)
@@ -134,20 +141,31 @@ export const editArticle = async (req, res) => {
     article.title = req.body.title
     article.content = cleanXSS(req.body.content)
     // 是1(評價版)才加評分 (給schema檢查)
-    if (article.category === 1 && req.body.score >= 0 && req.body.score <= 5 && Number.isInteger(req.body.score)) { article.score = req.body.score }
+    let isScoreChange
+    let scoreChange
+    if (article.category === 1) {
+      isScoreChange = req.body.score !== article.score
+      scoreChange = _.cloneDeep([article.score, req.body.score])
+      article.score = req.body.score
+    }
     //找是否有對應到母版該category的規則
     const category = req.article.category.find((it) => {
       return it.c == req.body.category
     })
     // 處理tag (母板歸有訂才加入) (已經審查完內容)
+    // 等等判斷是否更新版資料用
+    let isTagsChange
+    let tagsChange
     if (category.tagActive) {
-      article.tags.length = 0
       const tags = []
       const tagsObj = category.tagOption
       for (let tag of Object.keys(tagsObj)) {
-        if (req.body.tags?.includes(tag)) tags.push(tag)
+        // 清單有，但沒被加過(避免重複的tag)才加入
+        if (req.body.tags?.includes(tag) && !tags.includes(tag)) tags.push(tag)
       }
-      article.tags.push(...tags)
+      isTagsChange = !_.isEqual(_.sortBy(article.tags), _.sortBy(tags))
+      tagsChange = _.cloneDeep([article.tags, tags])
+      article.tags = tags
     }
     // 不用mongoose內建，因為我編輯評價分數會被自動更新，但只有發文者改資料才該更新
     article.update_at = Date.now()
@@ -157,6 +175,42 @@ export const editArticle = async (req, res) => {
     //   form.columns = 2
     // return res.status(403).send({ success: false, message: '到這完成', result: form })
     await article.save()
+    // 更新版評分/tags/使用者評分***(如果有更動的話)
+    // 如果是評分版，成功後呼叫板塊更新評分
+    if (req.body.category === 1) {
+      console.log(scoreChange, tagsChange);
+      if (isTagsChange || isScoreChange) {
+        const board = await boards.findById(req.body.board)
+        if (!board) return res.status(403).send({ success: false, message: { title: 'BoardNoFound' } })
+        // 考量只是加陣列不太會出錯，最簡單算法拿之前的算
+        if (isScoreChange) {
+          board.beScored.scoreSum += scoreChange[1] - scoreChange[0]
+          //對應0分 在陣列[0]+1 就能給chart.js讀取
+          board.beScored.scoreChart[scoreChange[0]]--
+          board.beScored.scoreChart[scoreChange[1]]++
+        }
+        if (isTagsChange) {
+          for (let i of tagsChange[0]) board.beScored.tags[i]--
+          for (let i of tagsChange[1]) {
+            if (board.beScored.tags[i] !== undefined) { board.beScored.tags[i]++ }
+            else { board.beScored.tags[i] = 1 }
+          }
+          board.markModified('beScored.tags')
+        }
+        await board.save()
+      }
+      if (isScoreChange) {
+        // 更新個人評分
+        const toBoard = req.user.record.toBoard
+        toBoard.list[toBoard.list.findIndex(a => a.from.toString() === article._id.toString())].score = scoreChange[1]
+        toBoard.scoreSum += scoreChange[1] - scoreChange[0]
+        toBoard.scoreChart[scoreChange[0]]--
+        toBoard.scoreChart[scoreChange[1]]++
+        await req.user.save()
+      }
+    }
+
+
     res.status(200).send({ success: true, message: { title: 'published' } })
   } catch (error) {
     console.log(error);

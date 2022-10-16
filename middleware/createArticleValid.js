@@ -20,18 +20,25 @@ export default async (req, res, next) => {
     })
     if (!category) return res.status(403).send({ success: false, message: '無該文章類型' })
     form.category = req.body.category
+    // 是1(評價版)才加評分 
+    if (category.c === 1) {
+      if (Number.isInteger(req.body.score) && req.body.score <= 5 && req.body.score >= 0) {
+        form.score = req.body.score
+      } else {
+        return res.status(401).send({ success: false, message: '評分錯誤' })
+      }
+    }
     // (給schema檢查)
     form.privacy = req.body.privacy || 0
     form.title = req.body.title
     form.content = cleanXSS(req.body.content)
-    // 是1(評價版)才加評分 (給schema檢查)
-    if (category.c === 1) { form.score = req.body.score }
     // 處理tag (母板歸有訂才加入) (已經審查完內容)
     if (category.tagActive) {
       const tags = []
       const tagsObj = category.tagOption
       for (let tag of Object.keys(tagsObj)) {
-        if (req.body.tags?.includes(tag)) tags.push(tag)
+        // 清單有，但沒被加過(避免重複的tag)才加入
+        if (req.body.tags?.includes(tag) && !tags.includes(tag)) tags.push(tag)
       }
       // 沒有標tag也是正常的
       form.tags = tags
