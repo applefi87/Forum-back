@@ -2,7 +2,6 @@ import boards from '../models/boards.js'
 import fs from 'fs'
 
 export default async (req, res, next) => {
-  console.log('in middle formatvalid');
   try {
     // 找該版
     const board = await boards.findById(req.params.id)
