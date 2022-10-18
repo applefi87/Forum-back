@@ -68,11 +68,11 @@ const unique = () => {
 
 const article = new mongoose.Schema({
   c: { type: Number, required: true, alias: 'code' },
-  n: { type: String, required: true, alias: 'name' },
+  n: { type: mongoose.Mixed, required: function () { return this.c !== 1 }, alias: 'name' },
   intro: { type: String, required: true },
   tagActive: Boolean,
   //如果有勾tag再填
-  tagOption: { type: mongoose.Mixed, required: function () { return this.tagActive }, default: undefined },
+  tagOption: { type: mongoose.Mixed, required: function () { return this.tagActive } },
   contentCol: mongoose.Mixed,
   cols: col,
   // 程式抓版不重複供選擇,填上代表必填

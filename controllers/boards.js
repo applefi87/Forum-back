@@ -80,7 +80,24 @@ export const createBoard = async (req, res) => {
 
 export const createRoot = async (req, res) => {
   try {
-    const result = await boards.create(req.body)
+    // 目前沒檢查格式，之後再調整，先只檢查與研究好
+    const buildedRoot = JSON.parse(JSON.stringify(req.body))
+    if (buildedRoot.childBoard?.article?.active) {
+      // 有文章就一定要設語言，至少要有英文
+      if (buildedRoot.childBoard.article.languages.length < 1) {
+        return res.status(400).send({ success: false, message: "需設定語言選項" })
+      }
+      const langsOut = {}
+      for (let it of buildedRoot.childBoard.article.languages) {
+        // 之後會增加語言清單供檢查，不然可以被亂放
+        if (typeof it !== 'string') return res.status(400).send({ success: false, message: "語言選項的" + it + "格式非文字" })
+        if (!Object.keys(langsOut).includes(it)) {
+          langsOut[it] = 0
+        }
+      }
+      buildedRoot.childBoard.article.languages = langsOut
+    }
+    const result = await boards.create(buildedRoot)
     res.status(200).send({ success: true, message: { title: 'createded', text: result } })
   } catch (error) {
     if (error.name === 'ValidationError') {

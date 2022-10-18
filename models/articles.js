@@ -97,7 +97,7 @@ const schema = new mongoose.Schema({
     required: function () { return (this.category === 1 ? [true, '缺少文章類型'] : false) },
     enum: [0, 1, 2, 3, 4, 5]
   },
-  tags: [String],
+  tags: [{ type: String }],
   // ---------------------------------------------------------------
   // 抓取母板規則:(程式判斷)
   // 使用者要填下方分數/tag/類型/其他欄位
