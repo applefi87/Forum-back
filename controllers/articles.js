@@ -261,7 +261,7 @@ export const getArticles = async (req, res) => {
     const articleList = await articles.find({ board: req.params.id }).
       populate({
         path: 'user',
-        select: "nickName score info.gender record.toBoard.score record.toBoard.amount record.toBoard.scoreChart msg1"
+        select: "nickName score info.gender record.toBoard.scoreSum record.toBoard.amount record.toBoard.scoreChart msg1"
       }).
       populate({
         path: 'msg1.list.user',
