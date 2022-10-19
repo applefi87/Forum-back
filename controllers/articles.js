@@ -311,6 +311,7 @@ export const deleteMsg = async (req, res) => {
     res.status(500).send({ success: false, message: '伺服器錯誤' })
   }
 }
+
 export const getArticles = async (req, res) => {
   try {
     console.log('in controller');
@@ -357,6 +358,27 @@ export const banArticle = async (req, res) => {
   }
 }
 
+export const banMsg = async (req, res) => {
+  console.log('in controller banMsg');
+  try {
+    const msg1List = req.theArticle.msg1.list
+    const theMsg = msg1List[msg1List.findIndex(msg => msg.id === req.body.id)]
+    // theMsg.privacy = req.body.privacy
+    theMsg.state = 0
+    // 偷工 抓資料就加工(預期存=取)
+    console.log('start ban');
+    await req.theArticle.save()
+    console.log('banned');
+    res.status(200).send({ success: true, message: { title: 'banned' } })
+  } catch (error) {
+    if (error.name === 'ValidationError') {
+      return res.status(400).send({ success: false, message: { title: 'ValidationError', text: error.message } })
+    } else {
+      res.status(500).send({ success: false, message: { title: error } })
+    }
+    console.log(error);
+  }
+}
 export const getArticle = async (req, res) => {
   console.log('in controller');
   try {

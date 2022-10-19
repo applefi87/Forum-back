@@ -15,7 +15,7 @@ import {
   deleteArticle,
   deleteMsg,
   banArticle,
-  // banMsg,
+  banMsg,
   getArticles,
   getArticle
 } from '../controllers/articles.js'
@@ -30,7 +30,7 @@ router.get('/getArticle/:id', auth.jwtForId, getArticle)
 router.delete('/:id', auth.jwt, owner, deleteArticle)
 router.post('/msg/delete/:id', content('application/json'), auth.jwt, msgOwner, deleteMsg)
 router.delete('/banArticle/:id', auth.jwt, admin, banArticle)
-// router.post('/banMsg/:id', auth.jwt, admin, banMsg)
+router.post('/msg/ban/:id', auth.jwt, admin, msgOwner, banMsg)
 // router.get('/all', auth.jwt, admin, getAllProducts)
 // router.get('/:id', getProduct)
 // router.patch('/:id', content('multipart/form-data'), auth.jwt, admin, upload, editProduct)

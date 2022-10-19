@@ -27,6 +27,12 @@ const msg = (nth) => {
         required: [true, '必填留言內容'],
         maxlength: [1000, '留言必須 1000 個字以下'],
       },
+      state: {
+        type: Number,
+        default: 1,
+        //屏蔽    1.正常
+        enum: [0, 1]
+      },
       beScored: rate('users')
     }
     if (n === '1') {
