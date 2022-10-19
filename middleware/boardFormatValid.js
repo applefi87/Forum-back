@@ -148,14 +148,14 @@ export default async (req, res, next) => {
                     if (other.autofix === true) {
                       data = data.substring(0, other.max)
                     } else {
-                      errorList.push("最多字數超過" + other.max + "的限制" + rule.c + rule.t + ":" + other.max + ":" + data); return false
+                      errorList.push("最多字數超過" + other.max + "的限制" + rule.c + ";type:" + rule.t + ":" + data); return false
                     }
                   }
                 }
               }
               if (other.min !== undefined) {
                 if (typeof other.min !== "number") { errorList.push("最少字數驗證格式錯誤" + other.min); return false } else {
-                  if (data.length < other.min) { errorList.push("最多字數超過" + other.min + "的限制" + rule.c + rule.t + ":" + other.min + ":" + data); return false }
+                  if (data.length < other.min) { errorList.push("最少字數小於" + other.min + "的限制" + rule.c + ";type:" + rule.t + ":" + data); return false }
                 }
               }
               break;

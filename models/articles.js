@@ -20,7 +20,7 @@ const msg = (nth) => {
         required: [true, '缺少留言隱私設定'],
         default: 1,
         // 0 隱身匿名  1全開(可被查看個人資訊)  ..只顯示暱稱 2只顯示校系 3 只顯示校
-        enum: [0, 1, 2, 3]
+        enum: [0, 1]
       },
       content: {
         type: String,

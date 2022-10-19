@@ -217,6 +217,29 @@ export const editArticle = async (req, res) => {
     res.status(500).send({ success: false, message: '伺服器錯誤' })
   }
 }
+export const editMsg = async (req, res) => {
+  console.log('in controller editMsg');
+  try {
+    const msg1List = req.theArticle.msg1.list
+    const theMsg = msg1List[msg1List.findIndex(msg => msg.id === req.body.id)]
+    // theMsg.privacy = req.body.privacy
+    theMsg.content = req.body.content
+    theMsg.lastEditDate = Date.now()
+    // 偷工 抓資料就加工(預期存=取)
+    console.log('start update');
+    await req.theArticle.save()
+    console.log('updated');
+    res.status(200).send({ success: true, message: { title: 'updated' } })
+  } catch (error) {
+    if (error.name === 'ValidationError') {
+      return res.status(400).send({ success: false, message: { title: 'ValidationError', text: error.message } })
+    } else {
+      res.status(500).send({ success: false, message: { title: error } })
+    }
+    console.log(error);
+  }
+}
+
 export const deleteArticle = async (req, res) => {
   console.log('in controller deleteArticle');
   try {
@@ -255,6 +278,39 @@ export const deleteArticle = async (req, res) => {
     res.status(500).send({ success: false, message: '伺服器錯誤' })
   }
 }
+export const deleteMsg = async (req, res) => {
+  console.log('in controller deleteMsg');
+  try {
+    const msg1List = req.theArticle.msg1.list
+    msg1List.splice(msg1List.findIndex(msg => msg.id === req.body.id), 1)
+    // 找到後加留言
+    req.theArticle.msg1.amount--
+    console.log('start del');
+    await req.theArticle.save()
+    // 之後留言有評分功能要補上下方使用者紀錄
+    // 刪除使用者發文紀錄
+    // 如果是評分版，成功後呼叫板塊移除評分
+    // if (req.theArticle.category === 1) {
+    //   // 更新板紀錄
+    //   board.beScored.scoreSum -= req.theArticle.score
+    //   board.beScored.amount--
+    //   //對應0分 在陣列[0]+1 就能給chart.js讀取
+    //   board.beScored.scoreChart[req.theArticle.score]--
+    //   for (let i of req.theArticle.tags) board.beScored.tags[i]--
+    //   board.markModified('beScored.tags')
+    //   await board.save()
+    //   // 更新使用者紀錄
+    //   toBoard.scoreSum -= req.theArticle.score
+    //   toBoard.amount--
+    //   toBoard.scoreChart[req.theArticle.score]--
+    // }
+    console.log('del ok');
+    res.status(200).send({ success: true, message: { title: 'deleted' } })
+  } catch (error) {
+    console.log(error);
+    res.status(500).send({ success: false, message: '伺服器錯誤' })
+  }
+}
 export const getArticles = async (req, res) => {
   try {
     console.log('in controller');
@@ -282,7 +338,7 @@ export const getArticles = async (req, res) => {
 
 
 
-export const banMsg = async (req, res) => {
+export const banArticle = async (req, res) => {
   console.log('in controller');
   try {
     const article = await articles.findById(req.params.id)
