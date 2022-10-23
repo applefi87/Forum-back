@@ -1,9 +1,9 @@
 import articles from '../models/articles.js'
 export default async (req, res, next) => {
   try {
-    const article = await articles.findById(req.route.path === "/edit/:id" ? req.body._id : req.params.id)
+    const article = await articles.findById(req.body._id)
     if (req.user._id.toString() === article.user._id.toString()) {
-      req.theArticle = article
+      req.article = article
       next()
     } else {
       res.status(403).send({ success: false, message: '非文章擁有者' })

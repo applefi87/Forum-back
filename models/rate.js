@@ -1,22 +1,5 @@
 import mongoose from 'mongoose'
-export default function (ref, setting = {}) {
-  const listDetail = () => {
-    const d = {
-      from: {
-        type: mongoose.ObjectId,
-        ref: ref,
-        required: true
-      },
-      score: { type: Number, required: true }
-    }
-    if (setting.hasLocation) {
-      d.location = { type: String, required: true }
-    }
-    if (setting.hasAmount) {
-      d.amount = { type: Number, required: true }
-    }
-    return d
-  }
+export default function (ref) {
   return {
     scoreSum: Number,
     amount: Number,
@@ -25,7 +8,11 @@ export default function (ref, setting = {}) {
     scoreChart: { type: [Number], default: undefined },
     tags: mongoose.Mixed,
     list: {
-      type: [listDetail()],
+      type: [{
+        type: mongoose.ObjectId,
+        ref: ref,
+        required: true
+      }],
       default: undefined,
       _id: false
     }

@@ -1,5 +1,5 @@
 import mongoose from 'mongoose'
-import rate from './rate.js'
+import rate from './rate-user.js'
 import normalizeEmail from '../util/normalizeEmail.js'
 
 // 驗證學校信箱

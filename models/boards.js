@@ -74,7 +74,7 @@ const article = new mongoose.Schema({
   //如果有勾tag再填
   tagOption: { type: mongoose.Mixed, required: function () { return this.tagActive } },
   contentCol: mongoose.Mixed,
-  cols: col,
+  cols: col
   // 程式抓版不重複供選擇,填上代表必填
 })
 
@@ -97,7 +97,10 @@ const schema = new mongoose.Schema({
     _id: false
   },
   // 抓取母板規則:(不一定有) 放文章id是編輯時能直接找到更新
-  beScored: rate('articles'),
+  beScored: rate('users'),
+  reviewList: {
+    type: [mongoose.Mixed], default: undefined, _id: false
+  },
   // 抓取母板規則:使用者要填對應的內容，就像填表單
   colData: mongoose.Mixed,
   uniqueData: {
