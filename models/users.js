@@ -1,5 +1,5 @@
 import mongoose from 'mongoose'
-import rate from './rate-user.js'
+import rateUser from './rate-user.js'
 import normalizeEmail from '../util/normalizeEmail.js'
 
 // 驗證學校信箱
@@ -42,7 +42,7 @@ const schema = new mongoose.Schema({
     unique: true,
     match: [/^[A-Za-z0-9]+$/, '帳號格式錯誤']
   },
-  nickName: {
+  nickName: { 
     type: String,
     required: [true, '缺少暱稱欄位'],
     minlength: [4, '必須 4 個字以上'],
@@ -100,15 +100,15 @@ const schema = new mongoose.Schema({
   },
   record: { // **********************系統操作，使用者無權限****************************
     //給版評價
-    toBoard: rate('articles'),
+    toBoard: rateUser('articles'),
     // 給人文章評價
-    toArticle: rate('articles'),
+    toArticle: rateUser('articles'),
     //給人訊息評價
-    toMsg: rate('articles', { hasLocation: true }),
+    toMsg: rateUser('articles', { hasLocation: true }),
     // 自己文章被評價
-    articleScore: rate('articles', { hasAmount: true }),
+    articleScore: rateUser('articles', { hasAmount: true }),
     // 自己訊息被評價
-    msgScore: rate('articles', { hasLocation: true, hasAmount: true })
+    msgScore: rateUser('articles', { hasLocation: true, hasAmount: true })
   }
 }, { versionKey: false })
 

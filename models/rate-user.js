@@ -30,6 +30,11 @@ export default function (ref, setting = {}) {
       type: [listDetail()],
       default: undefined,
       _id: false
-    }
+    },
+    bannedList: {
+      type: [listDetail()],
+      _id: false
+    },
+    bannedAmount: { type: Number, default: 0 }
   }
 }

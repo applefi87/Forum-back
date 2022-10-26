@@ -1,7 +1,9 @@
 import articles from '../models/articles.js'
 import boards from '../models/boards.js'
+import users from '../models/users.js'
 import _ from 'lodash'
-
+// **************小功能區
+// 移除使用者設匿名後的暱稱/id,以及本人/版主的暱稱修改
 const sanitizeArticle = (req, articleIn) => {
   // 要轉物件才會正常,不然有時delete 等等就是不一樣
   const article = articleIn.toObject()
@@ -42,8 +44,25 @@ const sanitizeArticle = (req, articleIn) => {
   }
   return article
 }
+// 因為刪除/ban文章 版的評分/使用者紀錄要移除
+const removeReviewinfo = (article, board, user) => {
+  // 更新板紀錄***
+  board.beScored.scoreSum -= article.score
+  board.beScored.amount--
+  board.beScored.list.splice(board.beScored.list.findIndex(u => u.toString() === user._id.toString()), 1)
+  //對應0分 在陣列[0]+1 就能給chart.js讀取
+  board.beScored.scoreChart[article.score]--
+  for (let i of article.tags) board.beScored.tags[i]--
+  board.markModified('beScored.tags')
+  // 刪除使用者發文紀錄***
+  const toBoard = user.record.toBoard
+  toBoard.list.splice(toBoard.list.findIndex(a => a.from.toString() === article._id.toString()), 1)
+  toBoard.scoreSum -= article.score
+  toBoard.amount--
+  toBoard.scoreChart[article.score]--
+}
 
-
+// **************正式router區
 export const createArticle = async (req, res) => {
   try {
     // 如果是評分版，成功後呼叫板塊更新評分
@@ -144,25 +163,12 @@ export const deleteArticle = async (req, res) => {
     await articles.deleteOne({ _id: req.article._id })
     console.log('del ok');
     // 如果是評分版，成功後呼叫板塊移除評分
+    // (不該合併到上面，避免文章沒刪成功就移除資訊)
     if (req.article.category === 1) {
-      // 更新板紀錄***
-      board.beScored.scoreSum -= req.article.score
-      board.beScored.amount--
-      board.beScored.list.splice(board.beScored.list.findIndex(u => u.toString() === req.user._id.toString()), 1)
-      //對應0分 在陣列[0]+1 就能給chart.js讀取
-      board.beScored.scoreChart[req.article.score]--
-      for (let i of req.article.tags) board.beScored.tags[i]--
-      board.markModified('beScored.tags')
+      removeReviewinfo(req.article, board, req.user)
       await board.save()
-      // 刪除使用者發文紀錄***
-      const toBoard = req.user.record.toBoard
-      toBoard.list.splice(toBoard.list.findIndex(a => a.from.toString() === req.article._id.toString()), 1)
-      toBoard.scoreSum -= req.article.score
-      toBoard.amount--
-      toBoard.scoreChart[req.article.score]--
+      await req.user.save()
     }
-    // 更新使用者發文紀錄(/+評分)
-    await req.user.save()
     res.status(200).send({ success: true, message: { title: 'deleted' } })
   } catch (error) {
     console.log(error);
@@ -175,9 +181,24 @@ export const banArticle = async (req, res) => {
   try {
     const article = await articles.findById(req.params.id)
     if (!article) return res.status(403).send({ success: false, message: '查無此評價' })
+    let board
+    let user
+    // 如果是評分版，有抓到板塊就移除紀錄(因為文章確定有資訊，儲存應不是問題)
+    if (article.category === 1) {
+      board = await boards.findById(article.board)
+      if (!board) return res.status(403).send({ success: false, message: { title: 'BoardNoFound' } })
+      user = await users.findById(article.user)
+      if (!user) return res.status(403).send({ success: false, message: { title: 'UserNoFound' } })
+      // 使用者banned的文章要備份到bannedList再移除並更新
+      const toBoard = user.record.toBoard
+      toBoard.bannedAmount++
+      toBoard.bannedList.push(toBoard.list.find(a => a.from.toString() === article._id.toString()))
+      removeReviewinfo(article, board, user)
+      await board.save()
+      await user.save()
+    }
     article.state = 0
     const result = await article.save()
-    // console.log(result);
     res.status(200).send({ success: true, message: '', result })
   } catch (error) {
     if (error.name === 'ValidationError') {
