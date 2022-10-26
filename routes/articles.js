@@ -23,7 +23,7 @@ import {
 } from '../controllers/articles.js'
 
 const router = express.Router()
-// auth.jwtForId : 給會回傳匿名等內容用的，會加入req._id等供消毒 
+// auth.jwtForId : 給會回傳匿名等內容用的，會加入req._id等供移除需匿名項目
 router.post('/create/:id', content('application/json'), auth.jwt, articleValid, onlyOnce.article, createArticleValid, createArticle)
 // 要articleValid 因為要母版的文章規則
 router.post('/edit/:id', content('application/json'), auth.jwt, owner, articleValid, editArticleValid, editArticle)
