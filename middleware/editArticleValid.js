@@ -55,6 +55,7 @@ export default async (req, res, next) => {
     req.isTagsChange = isTagsChange
     req.tagsChange = tagsChange
     req.scoreChange = scoreChange
+    req.isScoreChange = isScoreChange
     // return res.status(403).send({ success: false, message: '到這完成', result: form })
     next()
   } catch (error) {
