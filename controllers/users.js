@@ -9,7 +9,9 @@ const rateEmpty = {
   score: 0,
   amount: 0,
   scoreChart: [0, 0, 0, 0, 0, 0],
-  list: []
+  list: [],
+  bannedList: [],
+  bannedAmount: 0
 }
 
 export const register = async (req, res) => {
