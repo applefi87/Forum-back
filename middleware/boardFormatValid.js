@@ -223,6 +223,7 @@ export default async (req, res, next) => {
     }
     console.timeEnd('building childBoardsMap');
     console.log('start for');
+    res.status(200).send({ success: true, message: { title: 'start for' } }) 
     console.time('for')
     for (const c of file) {
       count++
