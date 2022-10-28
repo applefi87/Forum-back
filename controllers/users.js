@@ -53,7 +53,7 @@ export const register = async (req, res) => {
     // ***********移除不該能新增的欄位
     ;['securityData', 'record', 'score'].forEach(e => delete req.body[e]);
 
-    // *********新增 避免亂丟req.body(之後一定會用到)，所以先練習只列要的
+    // *********新增 避免亂丟req.body，所以只列要的
     const input = {
       account: req.body.account,
       nickName: req.body.nickName,

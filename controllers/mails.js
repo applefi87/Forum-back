@@ -52,9 +52,9 @@ export const sendMail = async (req, res) => {
 export const verifyMail = (isMiddle) => {
   return async (req, res, next) => {
     try {
-      const mail = req.body.schoolEmail ? req.body.schoolEmail : req.body.email
       const code = req.body.schoolEmailCode ? req.body.schoolEmailCode : req.body.emailCode
       if (!(code?.length === 6 && (/^[0-9]+$/).test(code))) { return res.status(403).send({ success: false, message: { title: '驗證碼應為六位數字', duration: 3 } }) }
+      const mail = req.body.schoolEmail ? req.body.schoolEmail : req.body.email
       const formatedEmail = normalizeEmail(mail)
       const email = await emails.findOne({ email: formatedEmail })
       // 防亂驗證信箱
