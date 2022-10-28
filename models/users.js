@@ -15,8 +15,8 @@ const emailSchema = (school) => {
     match: [/^[A-Za-z0-9]+@[A-Za-z0-9]+\.[A-Za-z0-9\.]+$/, '帳號格式錯誤，僅可含英(不分大小寫)、數、@、.'],
     validate: {
       validator: function (email) {
-        // 是學校的話還要是.edu(.abc)結尾
-        if (!school || email.match(/^[A-Za-z0-9]+@[A-Za-z0-9\.]+\.edu\.[A-Za-z0-9\.]+$/)) {
+        // 是學校的話還要是.edu.tw結尾
+        if (!school || (/^[A-Za-z0-9]+@[A-Za-z0-9\.]+\.edu\.tw$/).test(email)) {
           return true
         }
         else {
@@ -42,7 +42,7 @@ const schema = new mongoose.Schema({
     unique: true,
     match: [/^[A-Za-z0-9]+$/, '帳號格式錯誤']
   },
-  nickName: { 
+  nickName: {
     type: String,
     required: [true, '缺少暱稱欄位'],
     minlength: [4, '必須 4 個字以上'],
@@ -60,7 +60,7 @@ const schema = new mongoose.Schema({
       enum: [0, 1, 2]
     },
     // 記得改回 schoolEmail: emailSchema('school'),
-    schoolEmail: emailSchema(),
+    schoolEmail: emailSchema(true),
     // email: emailSchema(),
     tokens: {
       type: [String]
@@ -96,7 +96,7 @@ const schema = new mongoose.Schema({
     others: {
       type: String,
       maxlength: [100, '必須 100 個字以下'],
-    } 
+    }
   },
   record: { // **********************系統操作，使用者無權限****************************
     //給版評價
@@ -109,7 +109,8 @@ const schema = new mongoose.Schema({
     articleScore: rateUser('articles', { hasAmount: true }),
     // 自己訊息被評價
     msgScore: rateUser('articles', { hasLocation: true, hasAmount: true })
-  }
+  },
+  temp: mongoose.Mixed
 }, { versionKey: false })
 
 

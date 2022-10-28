@@ -27,7 +27,7 @@ const emailSchema = (isSchool) => {
     validate: {
       validator: function (email) {
         // 是學校的話還要是.edu(.abc)結尾
-        if ((!isSchool||isSchool.length<1 ) || email.match(/^[A-Za-z0-9]+@[A-Za-z0-9\.]+\.edu\.[A-Za-z0-9\.]+$/)) {
+        if ((!isSchool||isSchool.length<1 ) || (/^[A-Za-z0-9]+@[A-Za-z0-9\.]+\.edu\.[A-Za-z0-9\.]+$/).test(email)) {
           return true
         }
         else {

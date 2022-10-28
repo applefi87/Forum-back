@@ -1,9 +1,10 @@
 import articles from '../models/articles.js'
 import boards from '../models/boards.js'
 import users from '../models/users.js'
-import _ from 'lodash'
+import _ from 'lodash' 
 // **************小功能區
 // 移除使用者設匿名後的暱稱/id,以及本人/版主的暱稱修改
+// 保留字: 'originalPoster' 'you' 'admin' 
 const sanitizeArticle = (req, articleIn) => {
   // 要轉物件才會正常,不然有時delete 等等就是不一樣
   const article = articleIn.toObject()

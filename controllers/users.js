@@ -15,6 +15,7 @@ const rateEmpty = {
 }
 
 export const register = async (req, res) => {
+  if (['originalPoster', 'you', 'admin'].includes(req.body.nickName)) return res.status(403).send({ success: false, message: { title: '該暱稱不可使用', NickNameOccupied: true, nickName: req.body.nickName } })
   // *******驗證帳號與暱稱
   const findUser = await users.findOne({ account: req.body.account })
   if (findUser) {
@@ -30,8 +31,8 @@ export const register = async (req, res) => {
   const password = req.body.password
   if (!password) { return res.status(400).send({ success: false, message: { title: '缺少密碼欄位' } }) }
   if (password.length < 8 || password.length > 30) { return res.status(400).send({ success: false, message: { title: '長度需介於8~30字之間' } }) }
-  // 先改成簡易密碼 必須有英數就好
-  if (!(password.match(/[a-zA-Z]/) && password.match(/[0-9]/))) { return res.status(400).send({ success: false, message: { title: '必須含英文與數字' } }) }
+  // 先改成簡易密碼 必須有英數就好(可以有其他符號，反正會加工應該穿不進來)
+  if (!((/[a-zA-Z]/).test(password) && (/[0-9]/).test(password))) { return res.status(400).send({ success: false, message: { title: '必須含英文與數字' } }) }
   // if (!(password.match(/[A-Z]/) && password.match(/[a-z]/) && password.match(/[0-9]/))) { return res.status(400).send({ success: false, message: { title: 'pwdRule' } }) }
   try {
     // ***********新增管理員身要驗證

@@ -10,8 +10,6 @@ import {
   changePWD,
   getUser,
   editInfo
-  // getCart
-  // giveMsg
 } from '../controllers/users.js'
 import {
   sendMail,
@@ -26,10 +24,10 @@ router.post('/', content('application/json'), verifyMail(true), register)
 router.post('/login', content('application/json'), auth.login, login)
 router.delete('/logout', auth.jwt, logout)
 router.post('/extend', auth.jwt, extend)
-
+// 
 router.post('/sendMail', content('application/json'), sendMail)
 router.post('/mailVerify', content('application/json'), verifyMail(false))
-
+// 改密碼/忘記密碼相關
 router.post('/sendPWDMail', content('application/json'), sendPWDMail)
 router.post('/verifyPWDMail', content('application/json'), verifyPWDMail, setPWD)
 router.post('/changePWD', content('application/json'), auth.jwt, changePWD)

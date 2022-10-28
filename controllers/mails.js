@@ -2,10 +2,19 @@ import emails from '../models/emails.js'
 import normalizeEmail from '../util/normalizeEmail.js'
 import sendMailJs from '../util/sendMail.js'
 
+const checkSchoolMail = (e) => {
+  return (/^[a-z0-9]+@[a-z0-9\.]+\.edu\.tw$/).test(e)
+}
+
 export const sendMail = async (req, res) => {
   console.log('in controller>mail-sendmail');
   try {
+    // ***會驗證isSchool跟實際驗證結果，目前統一要學校(以免亂試，反正目前都要是學校的)
+    // 之後多加區分學校與一般信箱的註冊有區別即可 (使用者schema要調整成校Email可不填，且二選一)
     const formatedEmail = normalizeEmail(req.body.email)
+    console.log(checkSchoolMail(formatedEmail));
+    if (checkSchoolMail(formatedEmail) !== req.body.isSchool) return res.status(403).send({ success: false, message: { title: '信箱驗證失敗', text: formatedEmail } })
+    if (!req.body.isSchool) return res.status(403).send({ success: false, message: { title: '必須為學校信箱', text: formatedEmail } })
     // console.log('normalized')
     const email = await emails.findOne({ email: formatedEmail })
     // 6位驗證碼
@@ -20,7 +29,6 @@ export const sendMail = async (req, res) => {
       email.code = createCode
       email.date = Date.now()
       email.times = 1
-      email.isSchool = req.body.isSchool
       // console.log('已申請過，要寄信');
       await sendMailJs(formatedEmail, createCode)
       // console.log('已申請過，要儲存');
@@ -39,7 +47,6 @@ export const sendMail = async (req, res) => {
   } catch (error) {
     res.status(500).send({ success: false, message: { title: 'ServerError' }, info: error })
   }
-
 }
 
 export const verifyMail = (isMiddle) => {
@@ -47,7 +54,7 @@ export const verifyMail = (isMiddle) => {
     try {
       const mail = req.body.schoolEmail ? req.body.schoolEmail : req.body.email
       const code = req.body.schoolEmailCode ? req.body.schoolEmailCode : req.body.emailCode
-      if (!(code?.length === 6 && code.match(/^[0-9]+$/))) { return res.status(403).send({ success: false, message: { title: '驗證碼應為六位數字', duration: 3 } }) }
+      if (!(code?.length === 6 && (/^[0-9]+$/).test(code))) { return res.status(403).send({ success: false, message: { title: '驗證碼應為六位數字', duration: 3 } }) }
       const formatedEmail = normalizeEmail(mail)
       const email = await emails.findOne({ email: formatedEmail })
       // 防亂驗證信箱
@@ -103,7 +110,7 @@ export const sendPWDMail = async (req, res) => {
 
 export const verifyPWDMail = async (req, res, next) => {
   try {
-    if (!(req.body.code?.length === 10 && req.body.code.match(/^[0-9]+$/))) { return res.status(403).send({ success: false, message: { title: '驗證碼應為10位數字', duration: 3 } }) }
+    if (!(req.body.code?.length === 10 && (/^[0-9]+$/).test(req.body.code))) { return res.status(403).send({ success: false, message: { title: '驗證碼應為10位數字', duration: 3 } }) }
     const formatedEmail = normalizeEmail(req.body.email)
     const email = await emails.findOne({ email: formatedEmail })
     if (!email || !email.occupied) {
