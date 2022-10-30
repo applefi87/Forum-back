@@ -25,18 +25,18 @@ export const createBoard = async (req, res) => {
       for (let k of Object.keys(cols)) {
         // console.log(req.newFilters[k]);
         const filterArr = [...newFilters[k]]
-        if (cols[k]?.length > 0) {
+        if (cols[k]?.l?.length > 0) {
           for (let nk of filterArr) {
-            if (!cols[k].includes(nk)) {
-              cols[k].push(nk)
+            if (!cols[k].l?.includes(nk)) {
+              cols[k].l?.push(nk)
             }
           }
         }
         else {
           // 不然直接新增
-          cols[k] = filterArr
+          cols[k].l = filterArr
         }
-        cols[k].sort().reverse()
+        cols[k].l.sort().reverse()
       }
     }
     // ***只要任一有更新，更新display>filter>unique欄位
