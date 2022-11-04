@@ -19,11 +19,12 @@ export const jwt = (req, res, next) => {
       console.log('authJWTErr');
       console.log(err, info);
       if (info instanceof jsonwebtoken.JsonWebTokenError) {
-        return res.status(401).send({ success: false, message: { title: '驗證錯誤' } })
+        return res.status(404).send({ success: false, message: { title: '驗證錯誤' } })
       } else {
         return res.status(401).send({ success: false, message: { title: info.message, text: err } })
       }
     }
+    // console.log(data);
     req.user = data.user
     req.token = data.token
     req.role = data.role

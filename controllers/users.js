@@ -102,16 +102,23 @@ export const register = async (req, res) => {
 export const login = async (req, res) => {
   console.log('incontroller login');
   try {
-    const expireTime = req.body.keepLogin ? {} : { expiresIn: '200000 seconds' }
+    // const expireTime = req.body.keepLogin ? {} : { expiresIn: '10 seconds' }
+    const expireTime = { expiresIn: '900 seconds' }
     const token = jwt.sign({ _id: req.user._id, role: req.user.securityData.role }, process.env.SECRET, expireTime)
     // token太多 自動刪(預估留最後2次登陸，反正自動續約也會在後面，原本的會被刪掉)
     if (req.user.securityData.tokens.length > 10) { req.user.securityData.tokens = req.user.securityData.tokens.slice(3) }
     req.user.securityData.tokens.push(token)
     await req.user.save()
+    // req.session = null
+    // 讓你可以單獨改數值
+    if (req.body.keepLogin) {
+      req.sessionOptions.maxAge = 30 * 24 * 60 * 60000
+    }
+    req.session.keyJWT = token
     res.status(200).send({
-      message: { success: true, title: '登陸成功!' },
+      message: { success: true, title: 'Login success!' },
       result: {
-        token,
+        // token,
         _id: req.user._id,
         account: req.user.account,
         role: req.user.securityData.role,
@@ -119,6 +126,7 @@ export const login = async (req, res) => {
       }
     })
   } catch (error) {
+    console.log(error);
     res.status(500).send({
       message: { success: true, title: '伺服器錯誤' },
     })
@@ -138,11 +146,15 @@ export const logout = async (req, res) => {
 
 export const extend = async (req, res) => {
   try {
-    const token = jwt.sign({ _id: req.user._id }, process.env.SECRET, { expiresIn: '200000 seconds' })
+    const token = jwt.sign({ _id: req.user._id }, process.env.SECRET, { expiresIn: '900 seconds' })
     req.user.securityData.tokens = req.user.securityData.tokens.filter(token => token !== req.token)
     req.user.securityData.tokens.push(token)
     await req.user.save()
-    res.status(200).send({ success: true, message: '', result: token })
+    if (req.body.keepLogin) {
+      req.sessionOptions.maxAge = 30 * 24 * 60 * 60000
+    }
+    req.session.keyJWT = token
+    res.status(200).send({ success: true, message: '' })
   } catch (error) {
     res.status(500).send({ success: false, message: '伺服器錯誤' })
   }

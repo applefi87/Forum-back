@@ -35,9 +35,20 @@ passport.use('login', new LocalStrategy({
     return done(error, false)
   }
 }))
-
+// 供cookie使用 若是tempLogin就要標記，晚點Auth會驗證
+const extractor = function (req) {
+  var token = null;
+  if (req.session?.keyJWT) {
+    token = req.session?.keyJWT
+  } else {
+    token = ''
+    console.log('no cookie');
+  }
+  return token;
+};
 passport.use('jwt', new JWTStrategy({
-  jwtFromRequest: ExtractJWT.fromAuthHeaderAsBearerToken(),
+  // jwtFromRequest: ExtractJWT.fromAuthHeaderAsBearerToken(),
+  jwtFromRequest: extractor,
   secretOrKey: process.env.SECRET,
   passReqToCallback: true,
   ignoreExpiration: true
@@ -46,7 +57,7 @@ passport.use('jwt', new JWTStrategy({
   if (expired && req.originalUrl !== '/user/extend' && req.originalUrl !== '/user/logout') {
     return done(null, false, { message: '登入逾期' })
   }
-  const token = req.headers.authorization.split(' ')[1]
+  const token = req.session?.keyJWT
   try {
     const user = await users.findById(payload._id)
     if (!user) {
@@ -62,7 +73,7 @@ passport.use('jwt', new JWTStrategy({
   }
 }))
 passport.use('jwtForId', new JWTStrategy({
-  jwtFromRequest: ExtractJWT.fromAuthHeaderAsBearerToken(),
+  jwtFromRequest: extractor,
   secretOrKey: process.env.SECRET,
   passReqToCallback: true,
   ignoreExpiration: true
@@ -71,6 +82,5 @@ passport.use('jwtForId', new JWTStrategy({
   if (expired) {
     return done(null, false, { message: '不採用ID' })
   }
-  const token = req.headers.authorization.split(' ')[1]
   return done(null, { _id: payload._id, role: payload.role })
 }))
