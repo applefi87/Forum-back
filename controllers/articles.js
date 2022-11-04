@@ -1,7 +1,7 @@
 import articles from '../models/articles.js'
 import boards from '../models/boards.js'
 import users from '../models/users.js'
-import _ from 'lodash' 
+import _ from 'lodash'
 // **************小功能區
 // 移除使用者設匿名後的暱稱/id,以及本人/版主的暱稱修改
 // 保留字: 'originalPoster' 'you' 'admin' 
@@ -15,19 +15,21 @@ const sanitizeArticle = (req, articleIn) => {
       // 發文者看自己文章，名稱變成"你"
       // 先存著攻下方辨識就能清空了
       const msgUserId = msg.user._id.toString()
-      if (msg.privacy === 0) {
-        delete msg.user._id
-        msg.user.nickName = null
-      }
-      if ((msgUserId === article.user._id.toString())) {
+      if (msgUserId === req._id) {
+        msg.owner = true
+        if (msg.privacy === 0) {
+          msg.user.nickName = 'youHide'
+        } else {
+          msg.user.nickName = 'you'
+        }
+      } else if (msgUserId === article.user._id.toString()) {
+        // 看發文者在留言區，他的名稱變 "樓主"
+        msg.user.nickName = 'owner'
         // 避免意外，文章設匿名再刪一次
         if (article.privacy === 0) delete msg.user._id
-        // 看發文者在留言區，他的名稱變 "樓主"
-        msg.user.nickName = 'originalPoster'
-      }
-      if (msgUserId === req._id) {
-        msg.user.nickName = 'you'
-        msg.owner = true
+      } else if (msg.privacy === 0) {
+        delete msg.user._id
+        msg.user.nickName = null
       }
       return msg
     })

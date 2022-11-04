@@ -16,12 +16,11 @@ export const login = (req, res, next) => {
 export const jwt = (req, res, next) => {
   passport.authenticate('jwt', { session: false }, (err, data, info) => {
     if (err || !data) {
-      console.log('authJWTErr');
-      console.log(err, info);
+      console.log(info.message);
       if (info instanceof jsonwebtoken.JsonWebTokenError) {
         return res.status(404).send({ success: false, message: { title: '驗證錯誤' } })
       } else {
-        return res.status(401).send({ success: false, message: { title: info.message, text: err } })
+        return res.status(401).send({ success: false, message: { title: info.message } })
       }
     }
     // console.log(data);
