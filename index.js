@@ -49,7 +49,7 @@ app.use(mongoSanitize())
 app.use(express.json({ limit: '5mb' }))
 
 app.use(cookieSession({
-  name: 'sessionJWT',
+  name: 'session',
   secret: process.env.COOKIE_SECRET,
   cookie: {
     // https://github.com/expressjs/cookie-session#readme
