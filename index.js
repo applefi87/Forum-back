@@ -43,7 +43,7 @@ app.use(cors({
   ,
   // https://github.com/expressjs/cors#readme  https://israynotarray.com/vscode/20210709/4359299/
   credentials: true,
-  allowedHeaders: 'X-Requested-With'
+  allowedHeaders: '*'
 }))
 
 // 再限定一次防mongo語法
