@@ -10,7 +10,7 @@ import cookie from 'cookies'
 // const expireTime = { expiresIn: '60 minutes' }
 const expireTime = { expiresIn: '2 seconds' }
 
-const globalCookieSetting = { sameSite: 'none', signed: true, secure: true }
+const globalCookieSetting = { sameSite: 'lax', signed: true, secure: true }
 
 const rateEmpty = {
   score: 0,
