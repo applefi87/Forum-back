@@ -3,7 +3,6 @@ import mongoose from 'mongoose'
 import express from 'express'
 import rateLimit from 'express-rate-limit'
 import rateLimit2 from 'rate-limiter-flexible'
-import cookieSession from 'cookie-session'
 import mongoSanitize from 'express-mongo-sanitize'
 import cors from 'cors'
 import testRouter from './routes/tests.js'
@@ -34,7 +33,7 @@ const limiter = rateLimit({
 app.use(limiter)
 app.use(cors({
   origin(origin, callback) {
-    const corsCheck = process.env.NODE_ENV === 'main' ? origin === 'https://leisureforum.onrender.com' : (origin === undefined || origin === 'https://leisureforum-develop.onrender.com' || origin?.includes('http://localhost'))
+    const corsCheck = process.env.NODE_ENV === 'main' ? origin === 'https://leisureforum.onrender.com' : (origin === undefined || origin === 'https://leisureforum-develop.onrender.com' || origin === 'http://localhost:9000')
     if (corsCheck) {
       callback(null, true)
     } else {
@@ -48,33 +47,8 @@ app.use(cors({
 app.use(mongoSanitize())
 app.use(express.json({ limit: '5mb' }))
 
-app.use(cookieSession({
-  name: 'session',
-  secret: process.env.COOKIE_SECRET,
-  cookie: {
-    // https://github.com/expressjs/cookie-session#readme
-    // *不讓網頁JS 去存取cookie(你自己不會顯示，但有被XSS攻擊就能被抓到，所以多一道保險但你自己也不之內容)
-    // httpOnly: false, 預設true
-    // *lax 限制外網的指令是get則可帶cookie 'strict'則都不行 但被限制送出則伺服器也無法寫入
-    sameSite: 'lax',
-    // *只有在https連線才會帶給伺服器
-    secure: true
-    // domain: "lei.com",  設的話子網域test.lei.com均可讀取
-    // path: '/admin',  設的話/admin內的route才可讀取
-    // expires: 5 (UTC格式設截止日) maxAge 是以豪秒為有效時間
-    // secret: "0",
-
-
-  }
-
-}))
-// *********************待紀錄ip
-// app.set('trust proxy', 1)
-// app.get('/ip', (request, response) => response.send(request.ip))
-
 app.use('/user', userRouter)
 app.use('/group', groupRouter)
-
 app.use('/article', articleRouter)
 app.use('/board', boardRouter)
 app.use('/test', testRouter)

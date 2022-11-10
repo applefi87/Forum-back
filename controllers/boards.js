@@ -110,8 +110,8 @@ export const createRoot = async (req, res) => {
 export const getBoard = async (req, res) => {
   console.log('in controller -getBoard');
   try {
-    res.status(200).send({ success: true, message: '', login: (req.session.keyJWT?.length > 0), result: req.board })
-    console.log("end");
+    res.status(200).send({ success: true, message: '', result: req.board })
+    // console.log("end");
   } catch (error) {
     console.log(error);
     res.status(500).send({ success: false, message: 'ServerError' })

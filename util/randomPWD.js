@@ -5,11 +5,11 @@
  * @Date: 2021-07-02 15:52:32
  * @Author: mulingyuer
  */
- export default function (len = 10, mode = "medium") {
+export default function (len = 10, mode = "medium") {
   const lowerCaseArr = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',];
   const blockLetterArr = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
   const numberArr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-  const specialArr = ['!', '@', '-', '_', '=', '<', '>', '#', '*', '%', '+', '&', '^', '$'];
+  const specialArr = ['!', '@', '-', '_', '=', '<', '>', '*', ' ', '/', '|', '#', '*', '%', '+', '&', '^', '$', '~', '`', '(', ')', '[', ']', '{', '}', '.'];
   const passArr = [];
   let password = '';
 

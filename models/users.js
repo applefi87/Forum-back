@@ -10,7 +10,7 @@ const emailSchema = (school) => {
     set: normalizeEmail,
     required: [true, '缺少信箱欄位'],
     minlength: [10, '必須 10 個字以上'],
-    maxlength: [40, '必須 40 個字以下'],
+    maxlength: [100, '必須 100 個字以下'],
     unique: true,
     match: [/^[A-Za-z0-9]+@[A-Za-z0-9]+\.[A-Za-z0-9\.]+$/, '帳號格式錯誤，僅可含英(不分大小寫)、數、@、.'],
     validate: {
@@ -23,7 +23,6 @@ const emailSchema = (school) => {
           msg = '必須為學校信箱'
           return false
         }
-
       },
       message: () => { return msg }
     }
@@ -36,17 +35,16 @@ const schema = new mongoose.Schema({
   account: {
     type: String,
     required: [true, '缺少帳號欄位'],
-    minlength: [4, '帳號必須 4 個字以上'],
-    // minlength: [8, '帳號必須 8 個字以上'],
-    maxlength: [20, '帳號必須 20 個字以下'],
+    minlength: [6, '帳號必須 6 個字以上'],
+    maxlength: [30, '帳號必須 30 個字以下'],
     unique: true,
     match: [/^[A-Za-z0-9]+$/, '帳號格式錯誤']
   },
   nickName: {
     type: String,
     required: [true, '缺少暱稱欄位'],
-    minlength: [4, '必須 4 個字以上'],
-    maxlength: [20, '必須 20 個字以下'],
+    minlength: [6, '必須 6 個字以上'],
+    maxlength: [30, '必須 30 個字以下'],
     unique: true
   },
   score: { // **********************系統操作，使用者無權限****************************
@@ -69,9 +67,27 @@ const schema = new mongoose.Schema({
       type: String,
       required: true
     },
+    // 目前沒用
     loginRec: {
       time: { type: Date },
       count: { type: Number }
+    },
+    safty: {
+      // 紀錄忘記密碼/等小次數用
+      times: {
+        type: Number,
+        default: 0
+      },
+      // 紀錄狂登陸帳密失敗用
+      errTimes: {
+        type: Number,
+        default: 0
+      },
+      // 供換算超過日期後清除
+      errDate: {
+        type: Date,
+        default: Date.now()
+      },
     }
   },
   info: {

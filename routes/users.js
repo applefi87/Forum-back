@@ -6,7 +6,7 @@ import {
   login,
   logout,
   extend,
-  setPWD,
+  resetPWD,
   changePWD,
   getUser,
   editInfo
@@ -14,8 +14,8 @@ import {
 import {
   sendMail,
   verifyMail,
-  sendPWDMail,
-  verifyPWDMail
+  sendForgetPWDMail,
+  verifyForgetPWDCode
 } from '../controllers/mails.js'
 
 const router = express.Router()
@@ -28,8 +28,8 @@ router.post('/extend', auth.jwt, extend)
 router.post('/sendMail', content('application/json'), sendMail)
 router.post('/mailVerify', content('application/json'), verifyMail(false))
 // 改密碼/忘記密碼相關
-router.post('/sendPWDMail', content('application/json'), sendPWDMail)
-router.post('/verifyPWDMail', content('application/json'), verifyPWDMail, setPWD)
+router.post('/sendForgetPWDMail', content('application/json'), sendForgetPWDMail)
+router.post('/verifyForgetPWDCode', content('application/json'), verifyForgetPWDCode, resetPWD)
 router.post('/changePWD', content('application/json'), auth.jwt, changePWD)
 
 // router.get('/', auth.jwt, getUser)

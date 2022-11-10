@@ -51,7 +51,7 @@ export default async (req, res, next) => {
     // const columns = []
     // column.
     //   form.columns = 2
-    console.log('articleFormatValid ok');
+    // console.log('articleFormatValid ok');
     req.isTagsChange = isTagsChange
     req.tagsChange = tagsChange
     req.scoreChange = scoreChange

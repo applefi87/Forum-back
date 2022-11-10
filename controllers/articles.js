@@ -294,13 +294,12 @@ export const editMsg = async (req, res) => {
 }
 
 export const deleteMsg = async (req, res) => {
-  console.log('in controller deleteMsg');
   try {
     const msg1List = req.article.msg1.list
     msg1List.splice(msg1List.findIndex(msg => msg.id === req.body.id), 1)
     // 找到後加留言
     req.article.msg1.amount--
-    console.log('start del');
+    console.log('saving del result in C');
     await req.article.save()
     // 之後留言有評分功能要補上下方使用者紀錄
     // 刪除使用者發文紀錄

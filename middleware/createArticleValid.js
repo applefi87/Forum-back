@@ -50,7 +50,7 @@ export default async (req, res, next) => {
     // column.
     //   form.columns = 2
     req.form = form
-    console.log('articleFormatValid ok');
+    // console.log('articleFormatValid ok');
     // return res.status(403).send({ success: false, message: '到這完成', result: form })
     next()
   } catch (error) {
