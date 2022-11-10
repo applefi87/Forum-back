@@ -10,7 +10,9 @@ import cookie from 'cookies'
 // const expireTime = { expiresIn: '60 minutes' }
 const expireTime = { expiresIn: '2 seconds' }
 
-const globalCookieSetting = { sameSite: 'lax', signed: true, secure: true, domain: 'leisureforum-develop.onrender.com' }
+// domain消失
+// const globalCookieSetting = { sameSite: 'lax', signed: true, secure: true, domain: 'leisureforum-develop.onrender.com' }
+const globalCookieSetting = { sameSite: 'none', signed: true, secure: true }
 
 const rateEmpty = {
   score: 0,
