@@ -27,20 +27,24 @@ export const sendMail = async (req, res) => {
     }
     // 6位驗證碼
     // console.log(email || '沒找到此email');
-    const createCode = randomPWD()
+    const createCode = randomPWD(10, 'low')
     const hashCode = hash.sha256().update(createCode).digest('hex')
     if (email) {
       email.code = hashCode
       email.date = Date.now()
       email.times = 1
       // console.log('已申請過，要寄信');
-      await sendMailJs(formatedEmail, createCode)
+      await sendMailJs(formatedEmail, '課程網註冊驗證碼',
+        `${createCode}  是你的信箱驗證碼，一天內有效<br> 請至原頁面填入驗證，進入下步驟`
+      )
+      console.log(createCode);
       // console.log('已申請過，要儲存');
       await email.save()
     } else {
       await sendMailJs(formatedEmail, '課程網註冊驗證碼',
         `${createCode}  是你的信箱驗證碼，一天內有效<br> 請至原頁面填入驗證，進入下步驟`
       )
+      console.log(createCode);
       // console.log('未申請過，要創建');
       await emails.create({ isSchool: req.body.isSchool, email: formatedEmail, code: hashCode, date: Date.now(), occupied: false })
       // console.log('未申請過，創建完成');
@@ -54,12 +58,14 @@ export const sendMail = async (req, res) => {
 export const verifyMail = (isMiddle) => {
   return async (req, res, next) => {
     const code = req.body.schoolEmailCode || req.body.emailCode
-    if (!(code?.length === 6 && (/^[0-9]+$/).test(code))) { return res.status(403).send({ success: false, message: { title: '驗證碼應為六位數字', duration: 3 } }) }
+    if (!(code?.length === 10 && (/[a-z]/).test(code) && (/[0-9]/).test(code))) { return res.status(403).send({ success: false, message: { title: '驗證碼應為十位英數', duration: 3 } }) }
     try {
       // 如果是code一般信箱就驗證一般
       // 不然就全走學校信箱驗證
-      const mail = req.body.schoolEmailCode ? req.body.schoolEmail : req.body.email
-      if (mail) return res.status(403).send({ success: false, message: { title: '信箱錯誤', text: formatedEmail } })
+      // const mail = req.body.schoolEmailCode ? req.body.schoolEmail : req.body.email
+      //重評估email code 區分兩個的目的
+      const mail = req.body.schoolEmail || req.body.email
+      if (!mail) return res.status(403).send({ success: false, message: { title: '信箱錯誤', text: mail } })
       const formatedEmail = normalizeEmail(mail)
       if (formatedEmail === 'Email error') return res.status(403).send({ success: false, message: { title: '信箱錯誤', text: formatedEmail } })
       const email = await emails.findOne({ email: formatedEmail })
@@ -141,7 +147,7 @@ export const sendForgetPWDMail = async (req, res) => {
     // 這裡是真正有寄信，所以要再扣分，避免被破解驗證碼
     email.errTimes++
     email.date = Date.now()
-    const createCode = randomPWD(10, 'low')
+    const createCode = randomPWD(10, email.errTimes < 10 ? 'low' : 'medium')
     const hashCode = hash.sha256().update(createCode).digest('hex')
     email.code = hashCode
     email.times = 0

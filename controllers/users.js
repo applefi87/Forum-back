@@ -37,7 +37,7 @@ export const register = async (req, res) => {
   // ********驗證密碼
   const password = req.body.password
   if (!password) { return res.status(400).send({ success: false, message: { title: '缺少密碼欄位' } }) }
-  if (password.length < 8 || password.length > 30) { return res.status(400).send({ success: false, message: { title: '長度需介於8~30字之間' } }) }
+  if (password.length < 8 || password.length > 40) { return res.status(400).send({ success: false, message: { title: '長度需介於8~40字之間' } }) }
   // 先改成簡易密碼 必須有英數就好(可以有其他符號，反正會加工應該穿不進來)
   if (!((/[a-zA-Z]/).test(password) && (/[0-9]/).test(password))) { return res.status(400).send({ success: false, message: { title: '必須含英文與數字' } }) }
   // if (!(password.match(/[A-Z]/) && password.match(/[a-z]/) && password.match(/[0-9]/))) { return res.status(400).send({ success: false, message: { title: 'pwdRule' } }) }
@@ -200,7 +200,7 @@ export const extend = async (req, res) => {
 export const resetPWD = async (req, res) => {
   console.log('incontroller resetPWD');
   try {
-    const createCode = randomPWD(10, 'high')
+    const createCode = randomPWD(10)
     //需要加上臨時密碼
     const user = await users.findOne({ _id: req.user }).select(['account', 'securityData.password'])
     user.securityData.password = bcrypt.hashSync(createCode, 8)
@@ -225,10 +225,32 @@ export const resetPWD = async (req, res) => {
     })
   }
 }
+// 關鍵步驟前，確認是否錯誤累計時間已隔24hr可清除/次數過多(不合格回傳錯誤訊息)
+const errCheckFail = (data, needSave) => {
+  // 如果錯誤時間累積超過一天，錯誤次數重算
+  // 並確認是否需要再等
+  if (afterMin(data.errDate.getTime()) > 60 * 24) {
+    data.errTimes = 0
+    data.errDate = Date.now()
+    needSave = true
+  } // 當日異常次數大於15要隔一陣子
+  else if (data.errTimes > 15) {
+    const rM = afterMin(data.date.getTime())
+    if (data.errTimes > 30 && 24 * 60 > rM) {
+      return `錯誤次數過多，請隔${Math.ceil(24 - (rM / 60))}小時再試`
+    } else if (10 > rM) return `錯誤次數過多，請隔${10 - rM}分鐘再試`
+  }
+}
 
 export const changePWD = async (req, res) => {
   console.log('incontroller changePWD');
   try {
+    if (req.body.password.length < 8 || req.body.password.length > 40 || !((/[a-zA-Z]/).test(req.body.password) && (/[0-9]/).test(req.body.password)) || req.body.newPWD.length < 8 || req.body.newPWD.length > 40 || !((/[a-zA-Z]/).test(req.body.newPWD) && (/[0-9]/).test(req.body.newPWD))) {
+      return res.status(403).send({
+        success: false,
+        message: { title: '密碼必含英數，8位以上' },
+      })
+    }
     const user = await users.findOne({ _id: req.user._id }).select(['securityData.password', 'securityData.tokens', ' securityData.safty'])
     if (user.securityData.safty.times > 4) {
       user.securityData.tokens = user.securityData.tokens.filter(token => token !== req.token)
