@@ -45,8 +45,8 @@ app.use(cors({
   // https://github.com/expressjs/cors#readme  https://israynotarray.com/vscode/20210709/4359299/
   credentials: true,
   methods: ['POST', 'PUT', 'GET', 'OPTIONS', 'HEAD', 'DELETE'],
-  exposedHeaders: ["set-cookie"]
-  // allowedHeaders: ['Content-Type', 'X-H', 'x-requested-with', 'Accept']
+  // exposedHeaders: ["set-cookie"]
+  allowedHeaders: ['Content-Type', 'X-H', 'x-requested-with', 'Accept']
 }))
 
 // 再限定一次防mongo語法
