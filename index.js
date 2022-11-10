@@ -31,7 +31,7 @@ const limiter = rateLimit({
   }
 })
 app.use(limiter)
-app.set('trust proxy', 5);
+app.set('trust proxy', true);
 app.use(cors({
   origin(origin, callback) {
     const corsCheck = process.env.NODE_ENV === 'main' ? origin === 'https://leisureforum.onrender.com' : (origin === undefined || origin === 'https://leisureforum-develop.onrender.com' || origin === 'http://localhost:9000')
