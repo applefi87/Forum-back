@@ -10,7 +10,7 @@ import cookie from 'cookies'
 // const expireTime = { expiresIn: '60 minutes' }
 const expireTime = { expiresIn: '2 seconds' }
 
-const globalCookieSetting = { sameSite: 'lax', signed: true }
+const globalCookieSetting = { sameSite: 'lax', signed: true, domain: 'dashboard.render.com' }
 
 const rateEmpty = {
   score: 0,
