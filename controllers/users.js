@@ -131,11 +131,11 @@ export const login = async (req, res) => {
     }
     let cookies = new cookie(req, res, { keys: [process.env.COOKIE_SECRET] })
     cookies.set('keyJWT', token, {
-      httpOnly: true, ...cookieSet
+      httpOnly: true, signed: true
       // ,secure: true
     })
     cookies.set('loginCookie', loginCookie, {
-      httpOnly: false, ...cookieSet
+      httpOnly: false, sameSite: 'lax'
       // ,secure: true
     })
     res.status(200).send({
