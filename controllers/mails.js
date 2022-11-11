@@ -27,7 +27,8 @@ export const sendMail = async (req, res) => {
     }
     // 6位驗證碼
     // console.log(email || '沒找到此email');
-    const createCode = randomPWD(10, 'low')
+    // const createCode = randomPWD(10, 'low')
+    const createCode = "temp123456"
     const hashCode = hash.sha256().update(createCode).digest('hex')
     if (email) {
       email.code = hashCode
