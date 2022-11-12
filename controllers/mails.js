@@ -16,6 +16,7 @@ export const sendMail = async (req, res) => {
     const formatedEmail = normalizeEmail(req.body.email)
     if (formatedEmail === 'Email error') return res.status(403).send({ success: false, message: { title: '信箱錯誤', text: formatedEmail } })
     // console.log(checkSchoolMail(formatedEmail));
+
     if (req.body.isSchool && !checkSchoolMail(formatedEmail)) return res.status(403).send({ success: false, message: { title: '必須為學校信箱', text: formatedEmail } })
     // console.log('normalized')
     const email = await emails.findOne({ email: formatedEmail })

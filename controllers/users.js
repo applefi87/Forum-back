@@ -6,9 +6,8 @@ import sendMailJs from '../util/sendMail.js'
 // import fs from 'fs'
 import bcrypt from 'bcrypt'
 import jwt from 'jsonwebtoken'
-import cookie from 'cookies'
-// const expireTime = { expiresIn: '60 minutes' }
-const expireTime = { expiresIn: '2 seconds' }
+const expireTime = { expiresIn: '15 minutes' }
+// const expireTime = { expiresIn: '2 seconds' }
 
 // domain消失
 // const globalCookieSetting = { sameSite: 'lax', signed: true, secure: true, domain: 'leisureforum-develop.onrender.com' }
@@ -111,39 +110,16 @@ export const register = async (req, res) => {
 export const login = async (req, res) => {
   console.log('incontroller login');
   try {
-    const loginCookie = randomPWD(10, 'high')
-    const token = jwt.sign({ _id: req.user._id, role: req.user.securityData.role, ck: loginCookie, kp: req.body.keepLogin }, process.env.SECRET, expireTime)
+    const token = jwt.sign({ _id: req.user._id, role: req.user.securityData.role }, process.env.SECRET, expireTime)
     // token太多 自動刪(預估留最後2次登陸，反正自動續約也會在後面，原本的會被刪掉)
     if (req.user.securityData.tokens.length > 5) { req.user.securityData.tokens = req.user.securityData.tokens.slice(3) }
     req.user.securityData.tokens.push(token)
     await req.user.save()
-    // ***cookie
-    // *只有在https連線才會帶給伺服器
-    // *待啟用* secure: true
-    // *不讓網頁JS 去存取cookie(你自己不會顯示，但有被XSS攻擊就能被抓到，所以多一道保險但你自己也不之內容)
-    // httpOnly: false, 預設true
-    // domain: "lei.com",  設的話子網域test.lei.com均可讀取
-    // path: '/admin',  設的話/admin內的route才可讀取
-    // expires: 5 (UTC格式設截止日) maxAge 是以豪秒為有效時間
-    // secret: "0",
-    // }))
-    const cookieSet = JSON.parse(JSON.stringify(globalCookieSetting))
-    if (req.body.keepLogin) {
-      cookieSet.maxAge = 30 * 24 * 60 * 60000
-    }
-    let cookies = new cookie(req, res, { keys: [process.env.COOKIE_SECRET] })
-    cookies.set('keyJWT', token, {
-      httpOnly: true, ...cookieSet
-      // ,secure: true
-    })
-    cookies.set('loginCookie', loginCookie, {
-      httpOnly: false, ...cookieSet
-      // ,secure: true
-    })
+    console.log(token);
     res.status(200).send({
       message: { success: true, title: 'Login success!' },
       result: {
-        // token,
+        token,
         _id: req.user._id,
         account: req.user.account,
         role: req.user.securityData.role,
@@ -162,8 +138,6 @@ export const logout = async (req, res) => {
   try {
     console.log('incontroller');
     req.user.securityData.tokens = req.user.securityData.tokens.filter(token => token !== req.token)
-    req.cookies.set('keyJWT')
-    req.cookies.set('loginCookie')
     await req.user.save()
     res.status(200).send({ success: true, message: { success: true, title: '登出' } })
   } catch (error) {
@@ -173,26 +147,13 @@ export const logout = async (req, res) => {
 
 export const extend = async (req, res) => {
   try {
-    const loginCookie = randomPWD(10, 'high')
-    const token = jwt.sign({ _id: req.user._id, role: req.user.securityData.role, ck: loginCookie, kp: req.keepLogin }, process.env.SECRET, expireTime)
+    const token = jwt.sign({ _id: req.user._id, role: req.user.securityData.role }, process.env.SECRET, expireTime)
     req.user.securityData.tokens = req.user.securityData.tokens.filter(token => token !== req.token)
     req.user.securityData.tokens.push(token)
     await req.user.save()
-    const cookieSet = JSON.parse(JSON.stringify(globalCookieSetting))
-    if (req.keepLogin) {
-      cookieSet.maxAge = 30 * 24 * 60 * 60000
-    }
-    let cookies = new cookie(req, res, { keys: [process.env.COOKIE_SECRET] })
-    cookies.set('keyJWT', token, {
-      httpOnly: true, ...cookieSet
-      // ,secure: true
+    res.status(200).send({
+      success: true, message: '', result: token 
     })
-    cookies.set('loginCookie', loginCookie, {
-      httpOnly: false, ...cookieSet
-      // ,secure: true
-    })
-    console.log('extended');
-    res.status(200).send({ success: true, message: '' })
   } catch (error) {
     res.status(500).send({ success: false, message: '伺服器錯誤' })
   }
@@ -210,7 +171,6 @@ export const resetPWD = async (req, res) => {
     await sendMailJs(req.formatedEmail, '歐趴論壇(師大課程評價網)新密碼',
       `${createCode}  是你的師大課程評價網新密碼，請用此密碼登錄<br> 可改回原密碼無限制`
     )
-    console.log(createCode);
     await user.save()
     res.status(200).send({
       success: true,
@@ -227,22 +187,7 @@ export const resetPWD = async (req, res) => {
     })
   }
 }
-// 關鍵步驟前，確認是否錯誤累計時間已隔24hr可清除/次數過多(不合格回傳錯誤訊息)
-const errCheckFail = (data, needSave) => {
-  // 如果錯誤時間累積超過一天，錯誤次數重算
-  // 並確認是否需要再等
-  if (afterMin(data.errDate.getTime()) > 60 * 24) {
-    data.errTimes = 0
-    data.errDate = Date.now()
-    needSave = true
-  } // 當日異常次數大於15要隔一陣子
-  else if (data.errTimes > 15) {
-    const rM = afterMin(data.date.getTime())
-    if (data.errTimes > 30 && 24 * 60 > rM) {
-      return `錯誤次數過多，請隔${Math.ceil(24 - (rM / 60))}小時再試`
-    } else if (10 > rM) return `錯誤次數過多，請隔${10 - rM}分鐘再試`
-  }
-}
+
 
 export const changePWD = async (req, res) => {
   console.log('incontroller changePWD');
@@ -270,7 +215,7 @@ export const changePWD = async (req, res) => {
     }
     user.securityData.password = bcrypt.hashSync(req.body.newPWD, 8)
     user.securityData.tokens = []
-    user.save()
+    await user.save()
     console.log('ok');
     res.status(200).send({
       success: true,
