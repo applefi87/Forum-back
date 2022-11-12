@@ -16,8 +16,7 @@ export const sendMail = async (req, res) => {
     const formatedEmail = normalizeEmail(req.body.email)
     if (formatedEmail === 'Email error') return res.status(403).send({ success: false, message: { title: '信箱錯誤', text: formatedEmail } })
     // console.log(checkSchoolMail(formatedEmail));
-    if (checkSchoolMail(formatedEmail) !== req.body.isSchool) return res.status(403).send({ success: false, message: { title: '信箱驗證失敗', text: formatedEmail } })
-    if (!req.body.isSchool) return res.status(403).send({ success: false, message: { title: '必須為學校信箱', text: formatedEmail } })
+    if (req.body.isSchool && !checkSchoolMail(formatedEmail)) return res.status(403).send({ success: false, message: { title: '必須為學校信箱', text: formatedEmail } })
     // console.log('normalized')
     const email = await emails.findOne({ email: formatedEmail })
     //已經註冊過，就不可用 (搬出來省下方效能)
@@ -37,14 +36,14 @@ export const sendMail = async (req, res) => {
       await sendMailJs(formatedEmail, '課程網註冊驗證碼',
         `${createCode}  是你的信箱驗證碼，一天內有效<br> 請至原頁面填入驗證，進入下步驟`
       )
-      console.log(createCode);
+      console.log(formatedEmail + createCode);
       // console.log('已申請過，要儲存');
       await email.save()
     } else {
       await sendMailJs(formatedEmail, '課程網註冊驗證碼',
         `${createCode}  是你的信箱驗證碼，一天內有效<br> 請至原頁面填入驗證，進入下步驟`
       )
-      console.log(createCode);
+      console.log(formatedEmail + createCode);
       // console.log('未申請過，要創建');
       await emails.create({ isSchool: req.body.isSchool, email: formatedEmail, code: hashCode, date: Date.now(), occupied: false })
       // console.log('未申請過，創建完成');
