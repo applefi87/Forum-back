@@ -115,7 +115,6 @@ export const login = async (req, res) => {
     if (req.user.securityData.tokens.length > 5) { req.user.securityData.tokens = req.user.securityData.tokens.slice(3) }
     req.user.securityData.tokens.push(token)
     await req.user.save()
-    console.log(token);
     res.status(200).send({
       message: { success: true, title: 'Login success!' },
       result: {
@@ -198,10 +197,10 @@ export const changePWD = async (req, res) => {
         message: { title: '密碼必含英數，8位以上' },
       })
     }
-    const user = await users.findOne({ _id: req.user._id }).select(['securityData.password', 'securityData.tokens', ' securityData.safty'])
-    if (user.securityData.safty.times > 4) {
+    const user = await users.findOne({ _id: req.user._id }).select(['securityData.password', 'securityData.tokens', ' securityData.safety.time', ' securityData.safety.errTimes', ' securityData.safety.errDate'])
+    if (user.securityData.safety.times > 4) {
       user.securityData.tokens = user.securityData.tokens.filter(token => token !== req.token)
-      user.securityData.safty.times = 0
+      user.securityData.safety.times = 0
       user.securityData.safty.errTimes++
       req.cookies.set('keyJWT')
       req.cookies.set('loginCookie')
@@ -209,8 +208,8 @@ export const changePWD = async (req, res) => {
       return await user.save()
     }
     if (!bcrypt.compareSync(req.body.password, user.securityData.password)) {
-      user.securityData.safty.times++
-      res.status(403).send({ success: false, message: { success: false, title: `密碼錯誤，再${5 - user.securityData.safty.times}次錯誤將登出` } })
+      user.securityData.safety.times++
+      res.status(403).send({ success: false, message: { success: false, title: `密碼錯誤，再${5 - user.securityData.safety.times}次錯誤將登出` } })
       return await user.save()
     }
     user.securityData.password = bcrypt.hashSync(req.body.newPWD, 8)

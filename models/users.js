@@ -72,7 +72,7 @@ const schema = new mongoose.Schema({
       time: { type: Date },
       count: { type: Number }
     },
-    safty: {
+    safety: {
       // 紀錄忘記密碼/等小次數用
       times: {
         type: Number,
