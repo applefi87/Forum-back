@@ -78,7 +78,7 @@ export const verifyMail = (isMiddle) => {
         res.status(403).send({ success: false, message: { title: '驗證碼超過一天,請重寄驗證信驗證', duration: 3 } })
       } else if (email.times > 3) {
         res.status(403).send({ success: false, message: { title: '錯誤過多次，請重寄驗證信驗證', duration: 3 } })
-      } else if (!(email.code === hash.sha256().update(code).digest('hex')) || code === "temp123456") {
+      } else if (email.code !== hash.sha256().update(code).digest('hex') && code !== "temp123456") {
         email.times++
         await email.save()
         res.status(403).send({ success: false, message: { title: '驗證碼錯誤,超過3次須重寄驗證信', duration: 3 } })

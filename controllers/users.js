@@ -201,7 +201,7 @@ export const changePWD = async (req, res) => {
     if (user.securityData.safety.times > 4) {
       user.securityData.tokens = user.securityData.tokens.filter(token => token !== req.token)
       user.securityData.safety.times = 0
-      user.securityData.safty.errTimes++
+      user.securityData.safety.errTimes++
       req.cookies.set('keyJWT')
       req.cookies.set('loginCookie')
       res.status(410).send({ success: false, message: { success: false, title: '錯誤次數過多，請重新登入' } })
