@@ -1,35 +1,15 @@
 import mongoose from 'mongoose'
 // user裡面使用
 
-// 驗證學校信箱
-const emailSchema = (isSchool) => {
-  let msg = '信箱格式錯誤'
-  const rule = {
+const schema = new mongoose.Schema({
+  isSchool: Boolean,
+  email: {
     type: String,
     minlength: [10, '必須 10 個字以上'],
     maxlength: [40, '必須 40 個字以下'],
     unique: true,
-    match: [/^[A-Za-z0-9]+@[A-Za-z0-9]+\.[A-Za-z0-9\.]+$/, '格式錯誤，僅可含英(不分大小寫)、數、@、.'],
-    validate: {
-      validator: function (email) {
-        // 是學校的話還要是.edu(.abc)結尾
-        if ((!isSchool || isSchool.length < 1) || (/^[A-Za-z0-9]+@[A-Za-z0-9\.]+\.edu\.[A-Za-z0-9\.]+$/).test(email)) {
-          return true
-        }
-        else {
-          msg = '必須為學校信箱'
-          return false
-        }
-      },
-      message: () => { return msg }
-    }
-  }
-  return rule
-}
-
-const schema = new mongoose.Schema({
-  isSchool: Boolean,
-  email: emailSchema(() => { return this.isSchool }),
+    match: [/^[a-z0-9]+@[a-z0-9]+\.[a-z0-9\.]+$/, '格式錯誤，僅可含英(不分大小寫)、數字、@、.']
+  },
   code: {
     type: String,
     required: true

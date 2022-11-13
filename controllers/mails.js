@@ -14,7 +14,7 @@ export const sendMail = async (req, res) => {
     // ***會驗證isSchool跟實際驗證結果，目前統一要學校(以免亂試，反正目前都要是學校的)
     // 之後多加區分學校與一般信箱的註冊有區別即可 (使用者schema要調整成校Email可不填，且二選一)
     const formatedEmail = normalizeEmail(req.body.email)
-    if (formatedEmail === 'Email error') return res.status(403).send({ success: false, message: { title: '信箱錯誤', text: formatedEmail } })
+    if (formatedEmail === 'error') return res.status(403).send({ success: false, message: { title: '信箱錯誤', text: formatedEmail } })
     // console.log(checkSchoolMail(formatedEmail));
 
     if (req.body.isSchool && !checkSchoolMail(formatedEmail)) return res.status(403).send({ success: false, message: { title: '必須為學校信箱', text: formatedEmail } })
@@ -58,7 +58,7 @@ export const sendMail = async (req, res) => {
 export const verifyMail = (isMiddle) => {
   return async (req, res, next) => {
     const code = req.body.schoolEmailCode || req.body.emailCode
-    if (!(code?.length === 10 && (/[a-z]/).test(code) && (/[0-9]/).test(code))) { return res.status(403).send({ success: false, message: { title: '驗證碼應為十位英數', duration: 3 } }) }
+    if (!(code?.length === 10 && (/[a-zA-Z]/).test(code) && (/[0-9]/).test(code))) { return res.status(403).send({ success: false, message: { title: '驗證碼應為十位英數', duration: 3 } }) }
     try {
       // 如果是code一般信箱就驗證一般
       // 不然就全走學校信箱驗證
@@ -67,7 +67,7 @@ export const verifyMail = (isMiddle) => {
       const mail = req.body.schoolEmail || req.body.email
       if (!mail) return res.status(403).send({ success: false, message: { title: '信箱錯誤', text: mail } })
       const formatedEmail = normalizeEmail(mail)
-      if (formatedEmail === 'Email error') return res.status(403).send({ success: false, message: { title: '信箱錯誤', text: formatedEmail } })
+      if (formatedEmail === 'error') return res.status(403).send({ success: false, message: { title: '信箱錯誤', text: formatedEmail } })
       const email = await emails.findOne({ email: formatedEmail })
       // 防亂驗證信箱
       if (!email) {
@@ -119,7 +119,7 @@ export const sendForgetPWDMail = async (req, res) => {
     // 把emailVal accountVal的內容搬來
     if (!req.body.account || !req.body.email) return res.status(403).send({ success: false, message: { title: '格式錯誤', text: `帳號:${req.body.account},Email: ${req.body.email}` } })
     const formatedEmail = normalizeEmail(req.body.email)
-    if (formatedEmail === 'Email error') return res.status(403).send({ success: false, message: { title: '信箱錯誤', text: formatedEmail } })
+    if (formatedEmail === 'error') return res.status(403).send({ success: false, message: { title: '信箱錯誤', text: formatedEmail } })
     const identifier = randomPWD(3, 'low')
     const email = await emails.findOne({ email: formatedEmail }).populate({
       path: 'user',
@@ -169,7 +169,7 @@ export const verifyForgetPWDCode = async (req, res, next) => {
     // 基本不符合就不去資料庫抓，畢竟這不常用，犧牲一點運算是保護資料庫被搞爆
     if (!(req.body.code?.length === 10 && (/[a-zA-Z]/).test(req.body.code) && (/[0-9]/).test(req.body.code))) { return res.status(403).send({ success: false, message: { title: '驗證碼應為10位英數' } }) }
     const formatedEmail = normalizeEmail(req.body.email)
-    if (formatedEmail === 'Email error') return res.status(403).send({ success: false, message: { title: '信箱錯誤', text: formatedEmail } })
+    if (formatedEmail === 'error') return res.status(403).send({ success: false, message: { title: '信箱錯誤', text: formatedEmail } })
     const email = await emails.findOne({ email: formatedEmail })
     if (!email) {
       res.status(403).send({ success: false, message: { title: '尚未申請忘記密碼', text: formatedEmail } })
