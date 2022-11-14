@@ -140,7 +140,6 @@ export const sendForgetPWDMail = async (req, res) => {
     if (errorMsg) res.status(403).send({ success: false, message: { title: errorMsg, text: formatedEmail } })
     // 上方是叫你等所以不扣分，但這裡就可能是有異常在try，所以扣一分
     email.errTimes++
-    console.log(email, req.body.account);
     if (email.user?.account !== req.body.account) {
       res.status(403).send({ success: false, message: { title: '該信箱與帳號不符', text: formatedEmail } })
       return await email.save()
