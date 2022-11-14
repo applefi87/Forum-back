@@ -7,7 +7,7 @@ import hash from 'hash.js'
 const checkSchoolMail = (e) => {
   return (/^[a-z0-9]+@[a-z0-9\.]+\.edu\.tw$/).test(e)
 }
-
+// 必須學校信箱只靠這
 export const sendMail = async (req, res) => {
   console.log('in controller>mail-sendmail');
   try {
@@ -16,8 +16,8 @@ export const sendMail = async (req, res) => {
     const formatedEmail = normalizeEmail(req.body.email)
     if (formatedEmail === 'error') return res.status(403).send({ success: false, message: { title: '信箱錯誤', text: formatedEmail } })
     // console.log(checkSchoolMail(formatedEmail));
-
-    if (req.body.isSchool && !checkSchoolMail(formatedEmail)) return res.status(403).send({ success: false, message: { title: '必須為學校信箱', text: formatedEmail } })
+    // 目前必定是學校(之後移除)+是學校就進行驗證
+    if (!req.body.isSchool || (req.body.isSchool && !checkSchoolMail(formatedEmail))) return res.status(403).send({ success: false, message: { title: '必須為學校信箱', text: formatedEmail } })
     // console.log('normalized')
     const email = await emails.findOne({ email: formatedEmail })
     //已經註冊過，就不可用 (搬出來省下方效能)
@@ -140,6 +140,7 @@ export const sendForgetPWDMail = async (req, res) => {
     if (errorMsg) res.status(403).send({ success: false, message: { title: errorMsg, text: formatedEmail } })
     // 上方是叫你等所以不扣分，但這裡就可能是有異常在try，所以扣一分
     email.errTimes++
+    console.log(email, req.body.account);
     if (email.user?.account !== req.body.account) {
       res.status(403).send({ success: false, message: { title: '該信箱與帳號不符', text: formatedEmail } })
       return await email.save()
@@ -153,7 +154,7 @@ export const sendForgetPWDMail = async (req, res) => {
     email.times = 0
     email.forgetPWD = true
     await email.save()
-    console.log(`批次:${identifier} 【${createCode}】 10位英數是你的臨時驗證碼，一天內有效 <br> 請至原頁面輸入驗證`);
+    console.log(`批次:${identifier} 【${createCode}】 `);
     await sendMailJs(formatedEmail, '課程網找回密碼',
       `批次:${identifier} 【${createCode}】 10位英數是你的臨時驗證碼，一天內有效 <br> 請至原頁面輸入驗證`
     )

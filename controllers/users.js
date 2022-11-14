@@ -52,12 +52,11 @@ export const register = async (req, res) => {
       if (!success) {
         // 找不到就回應非法並結束
         res.status(400).send({ success: false, message: 'Wrong admin creatiion!' })
-        console.log('Wrong admin creatiion!');
+        // console.log('Wrong admin creatiion!');
         return
       }
-      console.log('creating admin!');
+      // console.log('creating admin!');
     }
-
     // ***********移除不該能新增的欄位
     ;['securityData', 'record', 'score'].forEach(e => delete req.body[e]);
 
@@ -91,7 +90,7 @@ export const register = async (req, res) => {
     emailcheck.user = result._id
     emailcheck.save()
 
-      // 直接丟陣列記得前方要; 不然會出錯...
+      // 直接陣列放前方要; 不然會出錯...
       ;['securityData', '_id'].forEach(e => delete result[e])
     // 註冊成功
     res.status(200).send({ success: true, message: { title: '註冊成功' }, result })
@@ -151,7 +150,7 @@ export const extend = async (req, res) => {
     req.user.securityData.tokens.push(token)
     await req.user.save()
     res.status(200).send({
-      success: true, message: '', result: token 
+      success: true, message: '', result: token
     })
   } catch (error) {
     res.status(500).send({ success: false, message: '伺服器錯誤' })
@@ -171,6 +170,7 @@ export const resetPWD = async (req, res) => {
       `${createCode}  是你的師大課程評價網新密碼，請用此密碼登錄<br> 可改回原密碼無限制`
     )
     await user.save()
+    console.log('密碼重設成功' + createCode);
     res.status(200).send({
       success: true,
       message: { title: '密碼重設成功，請至email查看新密碼' },
