@@ -97,23 +97,6 @@ export const verifyMail = (isMiddle) => {
 const afterMin = (time) => Math.ceil((Date.now() - time) / 60000)
 
 
-// 關鍵步驟前，確認是否錯誤累計時間已隔24hr可清除/次數過多(不合格回傳錯誤訊息)
-const errCheckFail = (email, needSave) => {
-  // 如果錯誤時間累積超過一天，錯誤次數重算
-  // 並確認是否需要再等
-  if (afterMin(email.errDate.getTime()) > 60 * 24) {
-    email.errTimes = 0
-    email.errDate = Date.now()
-    needSave = true
-  } // 當日異常次數大於15要隔一陣子
-  else if (email.errTimes > 15) {
-    const rM = afterMin(email.date.getTime())
-    if (email.errTimes > 30 && 24 * 60 > rM) {
-      return `錯誤次數過多，請隔${Math.ceil(24 - (rM / 60))}小時再試`
-    } else if (10 > rM) return `錯誤次數過多，請隔${10 - rM}分鐘再試`
-  }
-}
-
 export const sendForgetPWDMail = async (req, res) => {
   try {
     // 把emailVal accountVal的內容搬來
@@ -136,8 +119,21 @@ export const sendForgetPWDMail = async (req, res) => {
     }
     // 
     const needSave = false
-    const errorMsg = errCheckFail(email, needSave)
-    if (errorMsg) res.status(403).send({ success: false, message: { title: errorMsg, text: formatedEmail } })
+    // 關鍵步驟前，確認是否錯誤累計時間已隔24hr可清除/次數過多(不合格回傳錯誤訊息)
+    // 如果錯誤時間累積超過一天，錯誤次數重算
+    let errorMsg
+    if (afterMin(email.errDate.getTime()) > 60 * 24) {
+      email.errTimes = 0
+      email.errDate = Date.now()
+      needSave = true
+    } // 當日異常次數大於15要隔一陣子
+    else if (email.errTimes > 15) {
+      const rM = afterMin(email.date.getTime())
+      if (email.errTimes > 30 && 24 * 60 > rM) {
+        errorMsg = `錯誤次數過多，請隔${Math.ceil(24 - (rM / 60))}小時再試`
+      } else if (10 > rM) errorMsg = `錯誤次數過多，請隔${10 - rM}分鐘再試`
+    }
+    if (errorMsg) return res.status(403).send({ success: false, message: { title: errorMsg, text: formatedEmail } })
     // 上方是叫你等所以不扣分，但這裡就可能是有異常在try，所以扣一分
     email.errTimes++
     if (email.user?.account !== req.body.account) {
@@ -171,30 +167,29 @@ export const verifyForgetPWDCode = async (req, res, next) => {
     const formatedEmail = normalizeEmail(req.body.email)
     if (formatedEmail === 'error') return res.status(403).send({ success: false, message: { title: '信箱錯誤', text: formatedEmail } })
     const email = await emails.findOne({ email: formatedEmail })
-    if (!email) {
-      res.status(403).send({ success: false, message: { title: '尚未申請忘記密碼', text: formatedEmail } })
-      return
-    }
+    if (!email) return res.status(403).send({ success: false, message: { title: '尚未申請忘記密碼', text: formatedEmail } })
     // 
-    const needSave = false
-    const errorMsg = errCheckFail(email, needSave)
-    if (errorMsg) res.status(403).send({ success: false, message: { title: errorMsg, text: formatedEmail } })
-    // 有異常測試，扣3分
-    if (!email.occupied || !email.forgetPWD) {
-      res.status(403).send({ success: false, message: { title: '尚未申請忘記密碼', text: formatedEmail } })
-      email.errTimes += !email.occupied ? 5 : 1
-      await email.save()
-    } else if (email.times > 5) {
+    // 關鍵步驟前，確認是否錯誤累計時間已隔24hr可清除/次數過多(不合格回傳錯誤訊息)
+    // 如果錯誤時間累積超過一天，錯誤次數重算
+    let errorMsg
+    if (email.times > 5) {
       res.status(403).send({ success: false, message: { title: '錯誤過多次，請重寄驗證信驗證', duration: 3 } })
       // 如果都沒變沒必要儲存
-      if (email.forgetPWD || needSave) {
+      if (email.forgetPWD) {
         email.forgetPWD = false
         await email.save()
       }
+    }
+    if (errorMsg) return res.status(403).send({ success: false, message: { title: errorMsg, text: formatedEmail } })
+    // 有異常測試，扣3分
+    if (!email.occupied || !email.forgetPWD) {
+      res.status(403).send({ success: false, message: { title: '尚未申請忘記密碼', text: formatedEmail } })
+      email.errTimes++
+      await email.save()
     } else if (afterMin(email.date.getTime()) > 60) {
       res.status(403).send({ success: false, message: { title: '驗證碼超過一小時,請重寄驗證信驗證', duration: 3 } })
       // 如果都沒變沒必要儲存
-      if (email.forgetPWD || needSave) {
+      if (email.forgetPWD) {
         email.forgetPWD = false
         await email.save()
       }
