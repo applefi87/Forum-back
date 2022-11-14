@@ -118,7 +118,7 @@ export const sendForgetPWDMail = async (req, res) => {
       return res.status(403).send({ success: false, message: { title: `請隔${15 - waitSecond}秒再試`, text: formatedEmail } })
     }
     // 
-    const needSave = false
+    let needSave = false
     // 關鍵步驟前，確認是否錯誤累計時間已隔24hr可清除/次數過多(不合格回傳錯誤訊息)
     // 如果錯誤時間累積超過一天，錯誤次數重算
     let errorMsg
@@ -155,6 +155,7 @@ export const sendForgetPWDMail = async (req, res) => {
     )
     res.status(200).send({ success: true, message: { title: formatedEmail, text: `已寄送找回密碼驗證碼, 批次${identifier}`, identifier } })
   } catch (error) {
+    console.log(error);
     res.status(500).send({ success: false, message: 'ServerError' })
   }
 }
@@ -179,6 +180,7 @@ export const verifyForgetPWDCode = async (req, res, next) => {
         email.forgetPWD = false
         await email.save()
       }
+      return
     }
     if (errorMsg) return res.status(403).send({ success: false, message: { title: errorMsg, text: formatedEmail } })
     // 有異常測試，扣3分

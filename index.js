@@ -22,8 +22,8 @@ const app = express()
 
 // 限流量
 const limiter = rateLimit({
-  windowMs: 15 * 60 * 1000, // 1 minutes
-  max: 5 * 60, // Limit each IP to 100 requests per `window` (here, per 1 minutes)
+  windowMs: 2 * 60 * 1000, // 1 minutes
+  max: 90, // Limit each IP to 100 requests per `window` (here, per 1 minutes)
   standardHeaders: true, // Return rate limit info in the `RateLimit-*` headers
   legacyHeaders: false, // Disable the `X-RateLimit-*` headers
   handler(req, res, next, options) {
