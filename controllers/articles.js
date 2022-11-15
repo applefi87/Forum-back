@@ -13,9 +13,12 @@ const sanitizeArticle = (req, articleIn) => {
     const cleanMsg1List = article.msg1.list.map(m => {
       const msg = _.cloneDeep(m)
       // 發文者看自己文章，名稱變成"你"
-      // 先存著攻下方辨識就能清空了
-      const msgUserId = msg.user._id.toString()
-      if (msgUserId === req._id) {
+      // 避免使用者被刪除 找不到id...
+      const msgUserId = msg.user?._id?.toString()
+      if (!msgUserId) {
+        // msg.user = { nickName: 'deleted' }
+        return
+      } else if (msgUserId === req._id) {
         msg.owner = true
         if (msg.privacy === 0) {
           msg.user.nickName = 'youHide'

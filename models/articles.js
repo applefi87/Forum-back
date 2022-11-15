@@ -89,14 +89,14 @@ const schema = new mongoose.Schema({
   title: {
     type: String,
     required: [true, '必填標題'],
-    minlength: [4, '必須 4 個字以上'],
-    maxlength: [50, '必須 50 個字以下'],
+    minlength: [3, '必須 3 個字以上'],
+    maxlength: [30, '必須 30 個字以下'],
   },
   content: {
     type: String,
     required: [true, '必填內容'],
     minlength: [10, '必須 10 個字以上'],
-    maxlength: [50000, '必須 50000 個字以下'],
+    maxlength: [6000, '必須 3000 個字以下'],
   },
   score: {
     type: Number,

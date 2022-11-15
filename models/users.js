@@ -43,7 +43,7 @@ const schema = new mongoose.Schema({
   nickName: {
     type: String,
     required: [true, '缺少暱稱欄位'],
-    minlength: [6, '必須 6 個字以上'],
+    minlength: [3, '必須 3 個字以上'],
     maxlength: [30, '必須 30 個字以下'],
     unique: true
   },
