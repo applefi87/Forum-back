@@ -35,7 +35,7 @@ const sanitizeArticle = (req, articleIn) => {
         msg.user.nickName = null
       }
       return msg
-    })
+    }).filter(m => !!m?.user)
     delete article.msg1.list
     article.msg1.list = cleanMsg1List
   }
@@ -232,7 +232,7 @@ export const getArticles = async (req, res) => {
     if (articleList.lenth < 1) return res.status(403).send({ success: true, message: '' })
     const out = articleList.map(a => {
       return sanitizeArticle(req, a)
-    })
+    }).filter(a => !!a.user)
     console.log('end');
     res.status(200).send({ success: true, message: '', result: out })
   } catch (error) {

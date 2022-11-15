@@ -74,6 +74,7 @@ const article = new mongoose.Schema({
   //如果有勾tag再填
   tagOption: { type: mongoose.Mixed, required: function () { return this.tagActive } },
   contentCol: mongoose.Mixed,
+  contentTemplate: { type: [String], default: false },
   cols: col
   // 程式抓版不重複供選擇,填上代表必填
 })
