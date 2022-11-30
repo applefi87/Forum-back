@@ -70,9 +70,10 @@ passport.use('jwtForId', new JWTStrategy({
   passReqToCallback: true,
   ignoreExpiration: true
 }, async (req, payload, done) => {
-  const expired = payload.exp * 1000 < Date.now()
-  if (expired) {
-    return done(null, false, { message: '不採用ID' })
-  }
+  //不驗證過期 畢竟那都是可用來取新的，所以即使過期也應該有效
+  // const expired = payload.exp * 1000 < Date.now()
+  // if (expired) {
+  //   return done(null, false, { message: '不採用ID' })
+  // }
   return done(null, { _id: payload._id })
 }))

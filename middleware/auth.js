@@ -34,12 +34,7 @@ export const jwt = (req, res, next) => {
 export const jwtForId = (req, res, next) => {
   passport.authenticate('jwtForId', { session: false }, (err, data, info) => {
     if (err || !data) {
-      if (info instanceof jsonwebtoken.JsonWebTokenError) {
-        console.log('no Id');
-      } else {
-        return res.status(401).send({ success: false, message: { title: info.message } })
-      }
-
+      console.log('no Id');
     } else {
       req._id = data._id
       req.role = data.role
