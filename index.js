@@ -34,7 +34,8 @@ app.use(limiter)
 // app.set('trust proxy', 1);
 app.use(cors({
   origin(origin, callback) {
-    const corsCheck = process.env.NODE_ENV === 'main' ? origin === 'https://leisureforum.onrender.com' : (origin === undefined || origin === 'https://leisureforum-develop.onrender.com' || origin === 'http://localhost:9000')
+    console.log(origin,callback);
+    const corsCheck = process.env.NODE_ENV === 'main' ? origin === 'https://leisureforum.onrender.com' : (origin === undefined || origin === 'https://leisureforum-develop.onrender.com' || origin === 'http://localhost:9000'||true)
     if (corsCheck) {
       callback(null, true)
     } else {
