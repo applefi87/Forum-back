@@ -20,12 +20,18 @@ const msg = (nth) => {
         required: [true, '缺少留言隱私設定'],
         default: 1,
         // 0 隱身匿名  1全開(可被查看個人資訊)  ..只顯示暱稱 2只顯示校系 3 只顯示校
-        enum: [0, 1, 2, 3]
+        enum: [0, 1]
       },
       content: {
         type: String,
         required: [true, '必填留言內容'],
         maxlength: [1000, '留言必須 1000 個字以下'],
+      },
+      state: {
+        type: Number,
+        default: 1,
+        //屏蔽    1.正常
+        enum: [0, 1]
       },
       beScored: rate('users')
     }
@@ -83,14 +89,14 @@ const schema = new mongoose.Schema({
   title: {
     type: String,
     required: [true, '必填標題'],
-    minlength: [4, '必須 4 個字以上'],
-    maxlength: [50, '必須 50 個字以下'],
+    minlength: [3, '必須 3 個字以上'],
+    maxlength: [30, '必須 30 個字以下'],
   },
   content: {
     type: String,
     required: [true, '必填內容'],
     minlength: [10, '必須 10 個字以上'],
-    maxlength: [50000, '必須 50000 個字以下'],
+    maxlength: [6000, '必須 3000 個字以下'],
   },
   score: {
     type: Number,

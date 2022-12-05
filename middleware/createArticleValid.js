@@ -15,7 +15,7 @@ export default async (req, res, next) => {
     form.user = req.user._id
     form.uniqueId = req.body.uniqueId
     //找是否有對應到母版該category的規則
-    const category = req.article.category.find((it) => {
+    const category = req.articleRule.category.find((it) => {
       return it.c == req.body.category
     })
     if (!category) return res.status(403).send({ success: false, message: '無該文章類型' })
@@ -50,7 +50,7 @@ export default async (req, res, next) => {
     // column.
     //   form.columns = 2
     req.form = form
-    console.log('articleFormatValid ok');
+    // console.log('articleFormatValid ok');
     // return res.status(403).send({ success: false, message: '到這完成', result: form })
     next()
   } catch (error) {

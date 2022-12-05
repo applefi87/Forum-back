@@ -35,6 +35,7 @@ passport.use('login', new LocalStrategy({
     return done(error, false)
   }
 }))
+// 供cookie使用 若是tempLogin就要標記，晚點Auth會驗證
 
 passport.use('jwt', new JWTStrategy({
   jwtFromRequest: ExtractJWT.fromAuthHeaderAsBearerToken(),
@@ -42,12 +43,14 @@ passport.use('jwt', new JWTStrategy({
   passReqToCallback: true,
   ignoreExpiration: true
 }, async (req, payload, done) => {
-  const expired = payload.exp * 1000 < Date.now()
-  if (expired && req.originalUrl !== '/user/extend' && req.originalUrl !== '/user/logout') {
-    return done(null, false, { message: '登入逾期' })
-  }
-  const token = req.headers.authorization.split(' ')[1]
   try {
+    const expired = payload.exp * 1000 < Date.now()
+    if (expired) {
+      if (req.originalUrl !== '/user/extend' && req.originalUrl !== '/user/logout') {
+        return done(null, false, { message: '登入逾期' })
+      }
+    }
+    const token = req.headers.authorization.split(' ')[1]
     const user = await users.findById(payload._id)
     if (!user) {
       return done(null, false, { message: '使用者不存在' })
@@ -55,9 +58,9 @@ passport.use('jwt', new JWTStrategy({
     if (user.securityData.tokens.indexOf(token) === -1) {
       return done(null, false, { message: '驗證錯誤,請重新登錄' })
     }
-    return done(null, { user, token })
+    return done(null, { user, token: token })
   } catch (error) {
-    console.log('passport ERROR');
+    console.log('passportjwt ERROR');
     return done(error, false)
   }
 }))
@@ -67,10 +70,10 @@ passport.use('jwtForId', new JWTStrategy({
   passReqToCallback: true,
   ignoreExpiration: true
 }, async (req, payload, done) => {
-  const expired = payload.exp * 1000 < Date.now()
-  if (expired) {
-    return done(null, false, { message: '不採用ID' })
-  }
-  const token = req.headers.authorization.split(' ')[1]
-  return done(null, { _id: payload._id, role: payload.role })
+  //不驗證過期 畢竟那都是可用來取新的，所以即使過期也應該有效
+  // const expired = payload.exp * 1000 < Date.now()
+  // if (expired) {
+  //   return done(null, false, { message: '不採用ID' })
+  // }
+  return done(null, { _id: payload._id })
 }))

@@ -77,7 +77,7 @@ export const createUsers = async (req, res) => {
       securityData: {
         role,
         schoolEmail: req.body.schoolEmail,
-        password: bcrypt.hashSync(password, 10)
+        password: bcrypt.hashSync(password, 8)
       },
       info: { gender: req.body.gender },
       // 必須初始化，不然發東西要更新時會找不到而報錯

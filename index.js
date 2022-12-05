@@ -2,6 +2,7 @@ import * as dotenv from 'dotenv'
 import mongoose from 'mongoose'
 import express from 'express'
 import rateLimit from 'express-rate-limit'
+import rateLimit2 from 'rate-limiter-flexible'
 import mongoSanitize from 'express-mongo-sanitize'
 import cors from 'cors'
 import testRouter from './routes/tests.js'
@@ -21,8 +22,8 @@ const app = express()
 
 // 限流量
 const limiter = rateLimit({
-  windowMs: 60 * 1000, // 15 minutes
-  max: 60, // Limit each IP to 100 requests per `window` (here, per 15 minutes)
+  windowMs: 2 * 60 * 1000, // 1 minutes
+  max: 90, // Limit each IP to 100 requests per `window` (here, per 1 minutes)
   standardHeaders: true, // Return rate limit info in the `RateLimit-*` headers
   legacyHeaders: false, // Disable the `X-RateLimit-*` headers
   handler(req, res, next, options) {
@@ -30,28 +31,30 @@ const limiter = rateLimit({
   }
 })
 app.use(limiter)
+// app.set('trust proxy', 1);
 app.use(cors({
   origin(origin, callback) {
-    const corsCheck = process.env.NODE_ENV === 'main' ? origin === 'https://leisureforum.onrender.com' : (origin === undefined || origin === 'https://leisureforum-develop.onrender.com' || origin?.includes('http://localhost'))
+    const corsCheck = process.env.NODE_ENV === 'main' ? origin === 'https://leisureforum.onrender.com' : (origin === undefined || origin === 'https://leisureforum-develop.onrender.com' || origin === 'http://localhost:9000')
     if (corsCheck) {
       callback(null, true)
     } else {
       callback(new Error('Not Allowed'), false)
     }
   }
-  // , credentials: true
+  ,
+  // https://github.com/expressjs/cors#readme  https://israynotarray.com/vscode/20210709/4359299/
+  credentials: true
+  // methods: ['POST', 'PUT', 'GET', 'OPTIONS', 'HEAD', 'DELETE'],
+  // exposedHeaders: ["set-cookie"]
+  // allowedHeaders: ['Content-Type', 'X-H', 'x-requested-with', 'Accept']
 }))
 
 // 再限定一次防mongo語法
 app.use(mongoSanitize())
 app.use(express.json({ limit: '5mb' }))
-// *********************待紀錄ip
-// app.set('trust proxy', 1)
-// app.get('/ip', (request, response) => response.send(request.ip))
 
 app.use('/user', userRouter)
 app.use('/group', groupRouter)
-
 app.use('/article', articleRouter)
 app.use('/board', boardRouter)
 app.use('/test', testRouter)
