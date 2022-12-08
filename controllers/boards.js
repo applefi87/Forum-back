@@ -166,13 +166,13 @@ export const getChildBoards = async (req, res) => {
     // 目前讓前台去比對，先拔除
     // 同 輪到search的欄位(目前只一個，保留彈性用array包)
     // 沒有search.all
-    // if (filter.search?.length > 0) {
-    //   filter.search.forEach(search => {
-    //     if (search.col && typeof search.col === "string" && search.text) {
-    //       condition['colData.' + search.col] = RegExp(search.text, "i")
-    //     }
-    //   })
-    // }
+    if (filter.search?.length > 0) {
+      filter.search.forEach(search => {
+        if (search.col && typeof search.col === "string" && search.text) {
+          condition['colData.' + search.col] = RegExp(search.text, "i")
+        }
+      })
+    }
     const start1 = Date.now()
     // 只拿會在母版table顯示/用來排序的欄位 就好
     // console.log(condition);
