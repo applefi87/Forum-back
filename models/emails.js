@@ -44,5 +44,5 @@ const schema = new mongoose.Schema({
   forgetPWD: Boolean
 }, { versionKey: false })
 
-
+schema.index({ email: 1 })
 export default mongoose.model('emails', schema)
