@@ -118,7 +118,7 @@ const schema = new mongoose.Schema({
         // 未來預期，不同版有各自適合的過濾介面樣貌與過濾欄位，所以用可調整的
         display: display('board'),
         // 各欄位名稱支援多語系，這樣可彈性給前端顯示(未來應不會全部給，避免幾十個多語系浪費資源，但更改語系就要觸發get重抓)
-        transformTable: [mongoose.Mixed],
+        transformTable: mongoose.Mixed,
         // 與unique區隔，像課程名稱是重要區隔，用dataCol(dataList列出就會自動轉);同課程不同學期出產可能細微差異但應是維繫像差異，則為uniqueCol(不列在dataList就自動變)
         dataList: [String],
         // uniqueList: [String], 先移除 反正transformTable中不是datecol 就是 不該有多餘的在transformTable中 也方便只調整一邊就好
