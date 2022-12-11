@@ -15,6 +15,7 @@ dotenv.config({ path: `./.env.${process.env.NODE_ENV}` });
 console.log(process.env.NODE_ENV);
 // 初始化
 mongoose.connect(process.env.DB_URL, { autoIndex: false })
+// https://mongoosejs.com/docs/api.html#schematype_SchemaType-index:~:text=the%20background%20by-,default.,-If%20background%20is
 // mongoose.connect(process.env.DB_URL)
 
 mongoose.set('sanitizeFilter', true)
@@ -34,7 +35,6 @@ app.use(limiter)
 // app.set('trust proxy', 1);
 app.use(cors({
   origin(origin, callback) {
-    console.log(origin,callback);
     const corsCheck = process.env.NODE_ENV === 'main' ? origin === 'https://leisureforum.onrender.com' : (origin === undefined || origin === 'https://leisureforum-develop.onrender.com' || origin === 'http://localhost:9000'||true)
     if (corsCheck) {
       callback(null, true)
