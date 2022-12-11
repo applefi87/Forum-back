@@ -176,6 +176,9 @@ export const getChildBoards = async (req, res) => {
         }
       })
     }
+    if (filter.onlyRated) {
+      condition['beScored.amount'] = { $gte: 0 }
+    }
     // console.log(condition);
     //版名只顯示當下多語言
     let displayCols = `colData.${req.board.childBoard.rule.titleCol[filter.langWord]} `;

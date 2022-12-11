@@ -18,7 +18,7 @@ mongoose.connect(process.env.DB_URL, { autoIndex: false })
 // https://mongoosejs.com/docs/api.html#schematype_SchemaType-index:~:text=the%20background%20by-,default.,-If%20background%20is
 // mongoose.connect(process.env.DB_URL)
 
-mongoose.set('sanitizeFilter', true)
+// mongoose.set('sanitizeFilter', true)
 const app = express()
 
 // 限流量
@@ -35,7 +35,7 @@ app.use(limiter)
 // app.set('trust proxy', 1);
 app.use(cors({
   origin(origin, callback) {
-    const corsCheck = process.env.NODE_ENV === 'main' ? origin === 'https://leisureforum.onrender.com' : (origin === undefined || origin === 'https://leisureforum-develop.onrender.com' || origin === 'http://localhost:9000'||true)
+    const corsCheck = process.env.NODE_ENV === 'main' ? origin === 'https://leisureforum.onrender.com' : (origin === undefined || origin === 'https://leisureforum-develop.onrender.com' || origin === 'http://localhost:9000' || true)
     if (corsCheck) {
       callback(null, true)
     } else {
@@ -51,7 +51,9 @@ app.use(cors({
 }))
 
 // 再限定一次防mongo語法
-app.use(mongoSanitize())
+app.use(mongoSanitize({
+  replaceWith: '_'
+}))
 app.use(express.json({ limit: '5mb' }))
 
 app.use('/user', userRouter)
