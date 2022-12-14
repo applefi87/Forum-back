@@ -134,7 +134,8 @@ export const getChildBoards = async (req, res) => {
     const filter = JSON.parse(decodeURI(req.query.test))
     // 先處理過濾內容
     const condition = { parent: req.params.id }
-    // 如果主要filter欄c0沒被宣告過，給預設(下方有宣告就會改false)
+    // filterData search filterUnique 是規則的必搜內容 未來可能沒有，但目前先列出來
+    // 雖然目前駭客一定會選all,但之後有可能會取消
     let defaultFilter = true
     // 使用者有輸入內容直接去資料庫查詢即可(打錯就找不到)
     // console.log(filter);
@@ -149,34 +150,44 @@ export const getChildBoards = async (req, res) => {
         }
       })
     }
-    // 沒宣告過加上默認過濾
+    // c0是一定要有宣告的過濾欄(可以有全選)，如果c0沒被宣告過代表是機器直接post，直接回傳空的
     if (defaultFilter) {
-      condition['colData.' + "c0"] = req.board.childBoard.rule.display.filter.dataCols.c0[0]
+      return res.status(400).send({ success: false, message: '', result: "" })
+      // 原本因應不同過濾機制，某些欄位必須要過濾，抓第一個 之後再重新想
+      // condition['colData.' + "c0"] = req.board.childBoard.rule.display.filter.dataCols.c0[0]
     }
+    // 同 輪到search的欄位(目前只一個，保留彈性用array包)(不打就全部)
+    // 目前先不可查
+    // if (filter.search?.length > 0) {
+    //   filter.search.forEach(search => {
+    //     if (search.col && typeof search.col === "string" && search.text && search.text != "") {
+    //       condition['colData.' + search.col] = RegExp(search.text, "i")
+    //     }
+    //   })
+    // }
     // 同 輪到unique的欄位 
+    // filter.all抄filterData 目前沒用
     if (filter.filterUnique?.length > 0) {
       filter.filterUnique.forEach(filter => {
-        if (filter.col && typeof filter.col === "string" && (filter.text || filter.all)) {
+        if (filter.col && typeof filter.col === "string" && ((filter.text && filter.text != "") || filter.all)) {
           if (!filter.all) {
             condition['uniqueData.' + filter.col] = filter.text
           }
         }
       })
     }
-    // 目前讓前台去比對，先拔除
-    // 同 輪到search的欄位(目前只一個，保留彈性用array包)
-    // 沒有search.all
-    // if (filter.search?.length > 0) {
-    //   filter.search.forEach(search => {
-    //     if (search.col && typeof search.col === "string" && search.text) {
-    //       condition['colData.' + search.col] = RegExp(search.text, "i")
-    //     }
-    //   })
-    // }
-    const start1 = Date.now()
-    // 只拿會在母版table顯示/用來排序的欄位 就好
+    if (filter.onlyRated) {
+      condition['beScored.amount'] = { $gte: 0 }
+    }
     // console.log(condition);
-    const childBoards = await boards.find(condition, "title beScored colData")
+    //版名只顯示當下多語言
+    let displayCols = `colData.${req.board.childBoard.rule.titleCol[filter.langWord]} `;
+    // 只拿會在母版table顯示/用來排序的欄位 就好
+    req.board.childBoard.rule.displayCol.forEach(c =>
+      displayCols += `colData.${c} `
+    )
+    // console.log(displayCols);
+    const childBoards = await boards.find(condition, "title beScored " + displayCols)
     res.status(200).send({ success: true, message: '', result: childBoards })
     console.log("end");
   } catch (error) {

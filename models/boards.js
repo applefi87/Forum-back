@@ -113,14 +113,25 @@ const schema = new mongoose.Schema({
     active: { type: Boolean, required: true },
     rule: {
       type: {
+        //整個資料各欄位的資料格式
         cols: col,
+        // 未來預期，不同版有各自適合的過濾介面樣貌與過濾欄位，所以用可調整的
         display: display('board'),
-        transformTable: [mongoose.Mixed],
+        // 各欄位名稱支援多語系，這樣可彈性給前端顯示(未來應不會全部給，避免幾十個多語系浪費資源，但更改語系就要觸發get重抓)
+        transformTable: mongoose.Mixed,
+        // 與unique區隔，像課程名稱是重要區隔，用dataCol(dataList列出就會自動轉);同課程不同學期出產可能細微差異但應是維繫像差異，則為uniqueCol(不列在dataList就自動變)
         dataList: [String],
         // uniqueList: [String], 先移除 反正transformTable中不是datecol 就是 不該有多餘的在transformTable中 也方便只調整一邊就好
-        multiLangList: [String],
-        combineCheckCols: [String],
+        // 標題(版名)必定可多語言，所以特別區隔那些欄位是板名並對應語言
         titleCol: { type: mongoose.Mixed, required: function () { return this.parent.length > 0 }, default: undefined },
+        // 未來可能部分欄位會像title操作，先保留
+        multiLangList: [String],
+        // 系統在區分dataList是否相同時，沒必要全部欄位比對，把關鍵欄位比對就好;或有時細微內容會變化(課程名轉繁體，目前先忽略)
+        combineCheckCols: [String],
+        // (請跳過title欄): dataCol可能很多，但目前需求設定下實際顯示可能只有一部分(多語系只傳當下語系欄位)，所以會偵測當下語系給對應需要的值(未來有這欄位再說)
+        // 目前先陣列 未來應可設定交錯顯示，可改物件{"C0":5}(第五欄位)
+        // 目前只是讓後端提供欄位時提供title+下面欄位,節省流量(不然名稱長的20多語系就炸了)
+        displayCol: [String]
       },
       required: function () { return this.childBoard.active },
       _id: false
@@ -139,7 +150,7 @@ const schema = new mongoose.Schema({
   }
 }, { versionKey: false, timestamps: { createdAt: 'created_at', updatedAt: false } })
 // 考量, "beScored.score" 是會一直變動的，先移除
-schema.index({ parent: 1, "colData.c0": 1 })
+schema.index({ parent: -1, "colData.c0": 1 })
 // 處理index 錯誤
 export default mongoose.model('boards', schema)
   .on('index', function (err) {

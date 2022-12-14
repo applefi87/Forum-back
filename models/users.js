@@ -129,5 +129,5 @@ const schema = new mongoose.Schema({
   temp: mongoose.Mixed
 }, { versionKey: false })
 
-
+// schema.index({ nickName: 1 })
 export default mongoose.model('users', schema)

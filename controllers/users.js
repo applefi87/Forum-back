@@ -6,7 +6,7 @@ import sendMailJs from '../util/sendMail.js'
 // import fs from 'fs'
 import bcrypt from 'bcrypt'
 import jwt from 'jsonwebtoken'
-const expireTime = { expiresIn: '15 minutes' }
+const expireTime = { expiresIn: '3 hours' }
 // const expireTime = { expiresIn: '2 seconds' }
 
 // domain消失

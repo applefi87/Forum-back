@@ -25,40 +25,40 @@ export default async function (csv, rule) {
       // 預加工母版定義要Boolean/數字等無法直接用csv檔建立的資料(由於我判斷用_.isEqual,物件/陣列無法比較，先用字串留著)
       const preFormatCols = {}
       rule.cols.forEach(it => {
-        if (it.t === 0 || it.t === 3 || it.t === 1 || it.t === 2) {
+        if (it.t === 0 || it.t === 1 || it.t === 2 || it.t === 3) {
           preFormatCols[it.c] = it.t
         }
       })
-      // 
+      // 把部分欄位轉換成特定格式，並且轉換成英文的key值
       toCode = arr?.map(obj => {
         const ok = {}
-        for (let it of translate) {
+        for (let k of Object.keys(translate)) {
           // 欄位是空的/根本沒有就不填入 不然0要照樣填入
-          if (obj[it['zhTW']] !== "" && obj[it['zhTW']] !== undefined) {
-            if (preFormatCols[it.c] !== undefined) {
-              const t = obj[it['zhTW']]
-              switch (preFormatCols[it.c]) {
+          if (obj[translate[k]['zhTW']] !== "" && obj[translate[k]['zhTW']] !== undefined) {
+            if (preFormatCols[k] !== undefined) {
+              const t = obj[translate[k]['zhTW']]
+              switch (preFormatCols[k]) {
                 case 1:
                 case 2: {
-                  ok[it['c']] = obj[it['zhTW']].toString()
+                  ok[k] = obj[translate[k]['zhTW']].toString()
                   break;
                 }
                 case 0: {
                   if (t === "有" || t === "是" || t === "yes" || t === "true" || t === 'TRUE' || t === true) {
-                    ok[it['c']] = true
+                    ok[k] = true
                   } else if (t === "無" || t === "否" || t === "no" || t === "false" || t === "FALSE" || t === false) {
-                    ok[it['c']] = false
+                    ok[k] = false
                   }
                   break;
                 }
                 case 3: {
-                  const number = Number(obj[it['zhTW']])
-                  if (!isNaN(number)) ok[it['c']] = number
+                  const number = Number(obj[translate[k]['zhTW']])
+                  if (!isNaN(number)) ok[k] = number
                   break;
                 }
               }
             } else {
-              ok[it['c']] = obj[it['zhTW']]
+              ok[k] = obj[translate[k]['zhTW']]
             }
           }
         }

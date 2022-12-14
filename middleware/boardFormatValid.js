@@ -1,8 +1,7 @@
 import buildFile from '../util/build.js'
 import boards from '../models/boards.js'
 import _ from 'lodash'
-import mongoose from 'mongoose'
-import fs from 'fs'
+
 // !!!
 // 須確保判斷重複的欄位
 // 加入的csv要檢查:必填的意外沒值是否有改預設(目前有d可以預設填東西，之後再評估要程式/csv處理)
