@@ -105,6 +105,7 @@ export const createArticle = async (req, res) => {
       toBoard.amount++
       await req.user.save()
     }
+    console.log("create Article:" + req.user.nickName);
     res.status(200).send({ success: true, message: { title: 'published' } })
   } catch (error) {
     // console.log(error);
