@@ -9,7 +9,7 @@ export default async (req, res, next) => {
       res.status(403).send({ success: false, message: '非留言擁有者' })
     }
   } catch (error) {
-    console.log(error);
+    // console.log(error);
     res.status(404).send({ success: false, message: '伺服器錯誤' })
   }
 }

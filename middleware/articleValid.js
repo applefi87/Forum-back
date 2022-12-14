@@ -15,13 +15,13 @@ export default async (req, res, next) => {
     // mongoose特殊用法
     const uniqueOK = board.uniqueData?.id(req.body.uniqueId)
     if (!uniqueOK) return res.status(403).send({ success: false, message: '沒對到該版獨立分類' })
-    console.log('ArticleValid OK');
+    // console.log('ArticleValid OK');
     req.articleRule = article
     req.board = board
     // return res.status(403).send({ success: false, message: '到這完成', result: form })
     next()
   } catch (error) {
-    console.log(error);
+    // console.log(error);
     res.status(500).send({ success: false, message: '伺服器錯誤' })
   }
 }

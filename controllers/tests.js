@@ -40,7 +40,7 @@ export const usersPostBoards = async (req, res) => {
     }
     res.status(200).send({ success: true, message: '', result })
   } catch (error) {
-    console.log(error);
+    // console.log(error);
     if (error.name === 'ValidationError') {
       return res.status(400).send({ success: false, message: error.message })
     } else {
@@ -61,10 +61,10 @@ export const createUsers = async (req, res) => {
       if (!success) {
         // 找不到就回應非法並結束
         res.status(400).send({ success: false, message: 'Wrong admin creatiion!' })
-        console.log('Wrong admin creatiion!');
+        // console.log('Wrong admin creatiion!');
         return
       }
-      console.log('creating admin!');
+      // console.log('creating admin!');
     }
 
     // ***********移除不該能新增的欄位
@@ -99,12 +99,12 @@ export const createUsers = async (req, res) => {
       ;['securityData', '_id'].forEach(e => delete result[e])
     // 註冊成功
     res.status(200).send({ success: true, message: { title: '註冊成功' }, result })
-    console.log('create success!');
+    // console.log('create success!');
   } catch (error) {
     if (error.name === 'ValidationError') {
       return res.status(400).send({ success: false, message: { title: error.message } })
     } else {
-      console.log(error);
+      // console.log(error);
       res.status(500).send({ success: false, message: '伺服器錯誤' })
     }
   }

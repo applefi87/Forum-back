@@ -52,10 +52,10 @@ export const register = async (req, res) => {
       if (!success) {
         // 找不到就回應非法並結束
         res.status(400).send({ success: false, message: 'Wrong admin creatiion!' })
-        // console.log('Wrong admin creatiion!');
+        // // console.log('Wrong admin creatiion!');
         return
       }
-      // console.log('creating admin!');
+      // // console.log('creating admin!');
     }
     // ***********移除不該能新增的欄位
     ;['securityData', 'record', 'score'].forEach(e => delete req.body[e]);
@@ -94,12 +94,12 @@ export const register = async (req, res) => {
       ;['securityData', '_id'].forEach(e => delete result[e])
     // 註冊成功
     res.status(200).send({ success: true, message: { title: '註冊成功' }, result })
-    console.log('create success!');
+    // console.log('create success!');
   } catch (error) {
     if (error.name === 'ValidationError') {
       return res.status(400).send({ success: false, message: { title: error.message } })
     } else {
-      console.log(error);
+      // console.log(error);
       res.status(500).send({ success: false, message: '伺服器錯誤' })
     }
   }
@@ -107,12 +107,14 @@ export const register = async (req, res) => {
 
 // 
 export const login = async (req, res) => {
-  console.log('incontroller login');
+  // console.log('incontroller login');
   try {
     const token = jwt.sign({ _id: req.user._id, role: req.user.securityData.role }, process.env.SECRET, expireTime)
     // token太多 自動刪(預估留最後2次登陸，反正自動續約也會在後面，原本的會被刪掉)
     if (req.user.securityData.tokens.length > 5) { req.user.securityData.tokens = req.user.securityData.tokens.slice(3) }
-    req.user.securityData.tokens.push(token)
+    // 只留驗證部分，這樣偷看資料庫也沒差(雖不曉得何時會被看，也許防工程師?)
+    const jwtSignature = token.substring(token.lastIndexOf(".")+1)
+    req.user.securityData.tokens.push(jwtSignature)
     await req.user.save()
     res.status(200).send({
       message: { success: true, title: 'Login success!' },
@@ -125,7 +127,7 @@ export const login = async (req, res) => {
       }
     })
   } catch (error) {
-    console.log(error);
+    // console.log(error);
     res.status(500).send({
       message: { success: true, title: '伺服器錯誤' },
     })
@@ -134,8 +136,8 @@ export const login = async (req, res) => {
 
 export const logout = async (req, res) => {
   try {
-    console.log('incontroller');
-    req.user.securityData.tokens = req.user.securityData.tokens.filter(token => token !== req.token)
+    const jwtSignature = req.tokenSignature.substring(req.tokenSignature.lastIndexOf(".")+1)
+    req.user.securityData.tokens = req.user.securityData.tokens.filter(token => token !== jwtSignature)
     await req.user.save()
     res.status(200).send({ success: true, message: { success: true, title: '登出' } })
   } catch (error) {
@@ -145,8 +147,9 @@ export const logout = async (req, res) => {
 
 export const extend = async (req, res) => {
   try {
+    const jwtSignature = req.tokenSignature.substring(req.tokenSignature.lastIndexOf(".")+1)
+    req.user.securityData.tokens = req.user.securityData.tokens.filter(token => token !== jwtSignature)
     const token = jwt.sign({ _id: req.user._id, role: req.user.securityData.role }, process.env.SECRET, expireTime)
-    req.user.securityData.tokens = req.user.securityData.tokens.filter(token => token !== req.token)
     req.user.securityData.tokens.push(token)
     await req.user.save()
     res.status(200).send({
@@ -159,7 +162,7 @@ export const extend = async (req, res) => {
 
 
 export const resetPWD = async (req, res) => {
-  console.log('incontroller resetPWD');
+  // console.log('incontroller resetPWD');
   try {
     const createCode = randomPWD(10)
     //需要加上臨時密碼
@@ -170,7 +173,7 @@ export const resetPWD = async (req, res) => {
       `${createCode}  是你的師大課程評價網新密碼，請用此密碼登錄<br> 可改回原密碼無限制`
     )
     await user.save()
-    console.log('密碼重設成功' + createCode);
+    // console.log('密碼重設成功' + createCode);
     res.status(200).send({
       success: true,
       message: { title: '密碼重設成功，請至email查看新密碼' },
@@ -179,7 +182,7 @@ export const resetPWD = async (req, res) => {
       }
     })
   } catch (error) {
-    console.log(error);
+    // console.log(error);
     res.status(500).send({
       success: false,
       message: { title: '伺服器錯誤' },
@@ -189,7 +192,7 @@ export const resetPWD = async (req, res) => {
 
 
 export const changePWD = async (req, res) => {
-  console.log('incontroller changePWD');
+  // console.log('incontroller changePWD');
   try {
     if (req.body.password.length < 8 || req.body.password.length > 40 || !((/[a-zA-Z]/).test(req.body.password) && (/[0-9]/).test(req.body.password)) || req.body.newPWD.length < 8 || req.body.newPWD.length > 40 || !((/[a-zA-Z]/).test(req.body.newPWD) && (/[0-9]/).test(req.body.newPWD))) {
       return res.status(403).send({
@@ -199,11 +202,10 @@ export const changePWD = async (req, res) => {
     }
     const user = await users.findOne({ _id: req.user._id }).select(['securityData.password', 'securityData.tokens', ' securityData.safety.time', ' securityData.safety.errTimes', ' securityData.safety.errDate'])
     if (user.securityData.safety.times > 4) {
-      user.securityData.tokens = user.securityData.tokens.filter(token => token !== req.token)
+      const jwtSignature = req.tokenSignature.substring(req.tokenSignature.lastIndexOf(".")+1)
+      user.securityData.tokens = user.securityData.tokens.filter(token => token !== jwtSignature)
       user.securityData.safety.times = 0
       user.securityData.safety.errTimes++
-      req.cookies.set('keyJWT')
-      req.cookies.set('loginCookie')
       res.status(410).send({ success: false, message: { success: false, title: '錯誤次數過多，請重新登入' } })
       return await user.save()
     }
@@ -215,13 +217,13 @@ export const changePWD = async (req, res) => {
     user.securityData.password = bcrypt.hashSync(req.body.newPWD, 8)
     user.securityData.tokens = []
     await user.save()
-    console.log('ok');
+    // // console.log('ok');
     res.status(200).send({
       success: true,
       message: { title: '密碼重設成功，請重新登入' }
     })
   } catch (error) {
-    console.log(error);
+    // console.log(error);
     res.status(500).send({
       success: false,
       message: { title: '伺服器錯誤' },

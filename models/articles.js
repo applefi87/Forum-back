@@ -130,5 +130,5 @@ schema.index({ board: -1, category: 1 })
 // 處理index 錯誤
 export default mongoose.model('articles', schema)
   .on('index', err => {
-    if (err) console.log(err)
+    if (err) console.error(err)
   })

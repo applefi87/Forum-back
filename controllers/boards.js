@@ -5,25 +5,25 @@ export const createBoard = async (req, res) => {
   try {
     // fs.writeFileSync('tt.json', JSON.stringify(req.updateList))
     if (req.updateList.length > 0) {
-      console.log("boards updating");
+      // console.log("boards updating");
       const us = Date.now();
       await boards.bulkSave(req.updateList);
-      console.log("boards updated" + (Date.now() - us));
+      // console.log("boards updated" + (Date.now() - us));
     }
     let result
     if (req.newList.length > 0) {
-      console.log("boards creating");
+      // console.log("boards creating");
       const us = Date.now();
       result = await boards.insertMany(req.newList);
-      console.log("boards created" + (Date.now() - us));
+      // console.log("boards created" + (Date.now() - us));
     }
     // *******抓之前的filter清單，再把新加入的加進去更新，省效能*****
     const pFilter = req.parent.childBoard.rule.display.filter
     // ***把原顯示的過濾清單，加上新的過濾清單
     const addObj2ObjSet = (cols, newFilters) => {
-      // console.log(cols);
+      // // console.log(cols);
       for (let k of Object.keys(cols)) {
-        // console.log(req.newFilters[k]);
+        // // console.log(req.newFilters[k]);
         const filterArr = [...newFilters[k]]
         if (cols[k]?.l?.length > 0) {
           for (let nk of filterArr) {
@@ -47,11 +47,11 @@ export const createBoard = async (req, res) => {
       }
       addObj2ObjSet(pFilter.uniqueCols, req.newUniqueFilters)
       req.parent.markModified('childBoard.rule.display.filter.uniqueCols')
-      // console.log(pFilter.uniqueCols);
+      // // console.log(pFilter.uniqueCols);
       await req.parent.save()
-      console.log("uniqueCols updated");
+      // console.log("uniqueCols updated");
     } else {
-      console.log('no changed');
+      // console.log('no changed');
     }
     // dataCols 比較多 要去比對新資料
     if (result) {
@@ -60,16 +60,16 @@ export const createBoard = async (req, res) => {
         pFilter.dataCols = {}
       }
       addObj2ObjSet(pFilter.dataCols, req.newDataFilters)
-      console.log("filterList updated");
+      // console.log("filterList updated");
       // 要這樣通知才能更新mixed
       req.parent.markModified('childBoard.rule.display.filter.dataCols')
       await req.parent.save()
-      console.log("filter list updated");
+      // console.log("filter list updated");
     }
     console.log('end---------------------------------');
     res.status(200).send({ success: true, message: { title: '上傳更新完成', text: req.info, duration: 20000 } })
   } catch (error) {
-    console.log(error);
+    // console.log(error);
     if (error.name === 'ValidationError') {
       return res.status(400).send({ success: false, message: { title: 'ValidationError' } })
     } else {
@@ -108,28 +108,28 @@ export const createRoot = async (req, res) => {
   }
 }
 export const getBoard = async (req, res) => {
-  console.log('in controller -getBoard');
+  // console.log('in controller -getBoard');
   try {
     res.status(200).send({ success: true, message: '', result: req.board })
-    // console.log("end");
+    // // console.log("end");
   } catch (error) {
-    console.log(error);
+    // console.log(error);
     res.status(500).send({ success: false, message: 'ServerError' })
   }
 }
 export const getBoardTest = async (req, res) => {
-  console.log('in controller-getBoardTest');
-  // console.log(req.board);
+  // console.log('in controller-getBoardTest');
+  // // console.log(req.board);
   try {
     res.status(200).send({ success: true, message: '', result: req.all })
-    console.log("end");
+    // console.log("end");
   } catch (error) {
-    console.log(error);
+    // console.log(error);
     res.status(500).send({ success: false, message: 'ServerError' })
   }
 }
 export const getChildBoards = async (req, res) => {
-  console.log("in Controller-getChildBoards");
+  // console.log("in Controller-getChildBoards");
   try {
     const filter = JSON.parse(decodeURI(req.query.test))
     // 先處理過濾內容
@@ -138,7 +138,7 @@ export const getChildBoards = async (req, res) => {
     // 雖然目前駭客一定會選all,但之後有可能會取消
     let defaultFilter = true
     // 使用者有輸入內容直接去資料庫查詢即可(打錯就找不到)
-    // console.log(filter);
+    // // console.log(filter);
     if (filter.filterData.length > 0) {
       filter.filterData.forEach(filter => {
         // 欄位要有字串非空值 + 要有過濾/全部 才算有效
@@ -179,19 +179,19 @@ export const getChildBoards = async (req, res) => {
     if (filter.onlyRated) {
       condition['beScored.amount'] = { $gte: 0 }
     }
-    // console.log(condition);
+    // // console.log(condition);
     //版名只顯示當下多語言
     let displayCols = `colData.${req.board.childBoard.rule.titleCol[filter.langWord]} `;
     // 只拿會在母版table顯示/用來排序的欄位 就好
     req.board.childBoard.rule.displayCol.forEach(c =>
       displayCols += `colData.${c} `
     )
-    // console.log(displayCols);
+    // // console.log(displayCols);
     const childBoards = await boards.find(condition, "title beScored " + displayCols)
     res.status(200).send({ success: true, message: '', result: childBoards })
-    console.log("end");
+    // console.log("end");
   } catch (error) {
-    console.log(error);
+    // console.log(error);
     res.status(500).send({ success: false, message: 'ServerError' })
   }
 }

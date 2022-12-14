@@ -1,6 +1,6 @@
 // 信箱基本加工
 export default function async(email) {
-  // console.log('start normalizeEmail');
+  // // console.log('start normalizeEmail');
   // 轉小寫
   try {
     if (!email || !(/^[a-z0-9]+@[a-z0-9]+\.[a-z0-9\.]+$/).test(email)) return 'error'

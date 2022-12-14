@@ -6,7 +6,7 @@ const cleanXSS = (html) => {
   return xss(html)
 }
 export default async (req, res, next) => {
-  console.log('in middle formatvalid');
+  // console.log('in middle formatvalid');
   try {
     // 評價需要改目標版資料，確認有找到板再刪
     if (req.body.score !== undefined) {
@@ -51,7 +51,7 @@ export default async (req, res, next) => {
     // const columns = []
     // column.
     //   form.columns = 2
-    // console.log('articleFormatValid ok');
+    // // console.log('articleFormatValid ok');
     req.isTagsChange = isTagsChange
     req.tagsChange = tagsChange
     req.scoreChange = scoreChange
@@ -59,7 +59,7 @@ export default async (req, res, next) => {
     // return res.status(403).send({ success: false, message: '到這完成', result: form })
     next()
   } catch (error) {
-    console.log(error);
+    // console.log(error);
     res.status(500).send({ success: false, message: '伺服器錯誤' })
   }
 }

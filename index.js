@@ -20,7 +20,6 @@ mongoose.connect(process.env.DB_URL, { autoIndex: false })
 
 // mongoose.set('sanitizeFilter', true)
 const app = express()
-
 // 限流量
 const limiter = rateLimit({
   windowMs: 2 * 60 * 1000, // 1 minutes

@@ -9,16 +9,16 @@ const checkSchoolMail = (e) => {
 }
 // 必須學校信箱只靠這
 export const sendMail = async (req, res) => {
-  console.log('in controller>mail-sendmail');
+  // console.log('in controller>mail-sendmail');
   try {
     // ***會驗證isSchool跟實際驗證結果，目前統一要學校(以免亂試，反正目前都要是學校的)
     // 之後多加區分學校與一般信箱的註冊有區別即可 (使用者schema要調整成校Email可不填，且二選一)
     const formatedEmail = normalizeEmail(req.body.email)
     if (formatedEmail === 'error') return res.status(403).send({ success: false, message: { title: '信箱錯誤', text: formatedEmail } })
-    // console.log(checkSchoolMail(formatedEmail));
+    // // console.log(checkSchoolMail(formatedEmail));
     // 目前必定是學校(之後移除)+是學校就進行驗證
     if (!req.body.isSchool || (req.body.isSchool && !checkSchoolMail(formatedEmail))) return res.status(403).send({ success: false, message: { title: '必須為學校信箱', text: formatedEmail } })
-    // console.log('normalized')
+    // // console.log('normalized')
     const email = await emails.findOne({ email: formatedEmail })
     //已經註冊過，就不可用 (搬出來省下方效能)
     if (email?.occupied) {
@@ -26,28 +26,28 @@ export const sendMail = async (req, res) => {
       return
     }
     // 6位驗證碼
-    // console.log(email || '沒找到此email');
+    // // console.log(email || '沒找到此email');
     const createCode = randomPWD(10, 'low')
     const hashCode = hash.sha256().update(createCode).digest('hex')
     if (email) {
       email.code = hashCode
       email.date = Date.now()
       email.times = 1
-      // console.log('已申請過，要寄信');
+      // // console.log('已申請過，要寄信');
       await sendMailJs(formatedEmail, '課程網註冊驗證碼',
         `${createCode}  是你的信箱驗證碼，一天內有效<br> 請至原頁面填入驗證，進入下步驟`
       )
-      console.log(formatedEmail + createCode);
-      // console.log('已申請過，要儲存');
+      // console.log(formatedEmail + createCode);
+      // // console.log('已申請過，要儲存');
       await email.save()
     } else {
       await sendMailJs(formatedEmail, '課程網註冊驗證碼',
         `${createCode}  是你的信箱驗證碼，一天內有效<br> 請至原頁面填入驗證，進入下步驟`
       )
-      console.log(formatedEmail + createCode);
-      // console.log('未申請過，要創建');
+      // console.log(formatedEmail + createCode);
+      // // console.log('未申請過，要創建');
       await emails.create({ isSchool: req.body.isSchool, email: formatedEmail, code: hashCode, date: Date.now(), occupied: false })
-      // console.log('未申請過，創建完成');
+      // // console.log('未申請過，創建完成');
     }
     res.status(200).send({ success: true, message: { title: '請至該信箱收信', text: formatedEmail, duration: 10000 } })
   } catch (error) {
@@ -89,7 +89,7 @@ export const verifyMail = (isMiddle) => {
         next()
       } else { res.status(200).send({ success: true, message: { title: '驗證成功，請填寫帳密', text: formatedEmail, duration: 2 } }) }
     } catch (error) {
-      console.log(error);
+      // console.log(error);
       res.status(500).send({ success: false, message: 'ServerError' })
     }
   }
@@ -150,13 +150,13 @@ export const sendForgetPWDMail = async (req, res) => {
     email.times = 0
     email.forgetPWD = true
     await email.save()
-    console.log(`批次:${identifier} 【${createCode}】 `);
+    // console.log(`批次:${identifier} 【${createCode}】 `);
     await sendMailJs(formatedEmail, '課程網找回密碼',
       `批次:${identifier} 【${createCode}】 10位英數是你的臨時驗證碼，一天內有效 <br> 請至原頁面輸入驗證`
     )
     res.status(200).send({ success: true, message: { title: formatedEmail, text: `已寄送找回密碼驗證碼, 批次${identifier}`, identifier } })
   } catch (error) {
-    console.log(error);
+    // console.log(error);
     res.status(500).send({ success: false, message: 'ServerError' })
   }
 }
@@ -210,7 +210,7 @@ export const verifyForgetPWDCode = async (req, res, next) => {
       next()
     }
   } catch (error) {
-    console.log(error);
+    // console.log(error);
     res.status(500).send({ success: false, message: 'ServerError' })
   }
 }
