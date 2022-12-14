@@ -3,7 +3,7 @@ import jsonwebtoken from 'jsonwebtoken'
 
 export const login = (req, res, next) => {
   passport.authenticate('login', { session: false }, (err, user, info) => {
-    console.log('authErr');
+    // console.log('authErr');
     if (err || !user) {
       if (info.message === 'Missing credentials') { info.message = '驗證錯誤' }
       return res.status(401).send({ success: false, message: { title: info.message } })
@@ -16,7 +16,7 @@ export const login = (req, res, next) => {
 export const jwt = (req, res, next) => {
   passport.authenticate('jwt', { session: false }, (err, data, info) => {
     if (err || !data) {
-      console.log(err, info);
+      // console.log(err, info);
       if (info instanceof jsonwebtoken.JsonWebTokenError) {
         return res.status(404).send({ success: false, message: { title: '驗證錯誤' } })
       } else {
@@ -34,11 +34,11 @@ export const jwt = (req, res, next) => {
 export const jwtForId = (req, res, next) => {
   passport.authenticate('jwtForId', { session: false }, (err, data, info) => {
     if (err || !data) {
-      console.log('no Id');
+      // console.log('no Id');
     } else {
       req._id = data._id
       req.role = data.role
-      console.log('Get Id');
+      // console.log('Get Id');
     }
     next()
   })(req, res, next)

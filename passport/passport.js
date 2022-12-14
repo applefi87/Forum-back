@@ -51,16 +51,17 @@ passport.use('jwt', new JWTStrategy({
       }
     }
     const token = req.headers.authorization.split(' ')[1]
+    const jwtSignature = token.substring(token.lastIndexOf(".")+1)
     const user = await users.findById(payload._id)
     if (!user) {
       return done(null, false, { message: '使用者不存在' })
     }
-    if (user.securityData.tokens.indexOf(token) === -1) {
+    if (user.securityData.tokens.indexOf(jwtSignature) === -1) {
       return done(null, false, { message: '驗證錯誤,請重新登錄' })
     }
-    return done(null, { user, token: token })
+    return done(null, { user, tokenSignature: jwtSignature })
   } catch (error) {
-    console.log('passportjwt ERROR');
+    // console.log('passportjwt ERROR');
     return done(error, false)
   }
 }))

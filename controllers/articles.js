@@ -77,7 +77,7 @@ export const createArticle = async (req, res) => {
       // 之前沒有就產生新beScored物件  不預設放空值是減少資料負擔      
       // board.beScored 因為是mogoose格式,所以沒設也有東西，才用.list去抓
       if (!req.board.beScored?.list) {
-        console.log('create bs');
+        // console.log('create bs');
         req.board.beScored = { scoreSum: 0, amount: 0, list: [] }
       }
       req.board.beScored.scoreSum += req.body.score
@@ -105,9 +105,10 @@ export const createArticle = async (req, res) => {
       toBoard.amount++
       await req.user.save()
     }
+    console.log("create Article:" + req.user.nickName);
     res.status(200).send({ success: true, message: { title: 'published' } })
   } catch (error) {
-    console.log(error);
+    // console.log(error);
     if (error.name === 'ValidationError') {
       return res.status(400).send({ success: false, message: { title: '格式不符', text: error.message } })
     } else {
@@ -116,7 +117,7 @@ export const createArticle = async (req, res) => {
   }
 }
 export const editArticle = async (req, res) => {
-  console.log('in controller editArticle');
+  // console.log('in controller editArticle');
   try {
     await req.article.save()
     // 更新版評分/tags/使用者評分***(如果有更動的話)
@@ -151,13 +152,13 @@ export const editArticle = async (req, res) => {
     }
     res.status(200).send({ success: true, message: { title: 'published' } })
   } catch (error) {
-    console.log(error);
+    // console.log(error);
     res.status(500).send({ success: false, message: '伺服器錯誤' })
   }
 }
 
 export const deleteArticle = async (req, res) => {
-  console.log('in controller deleteArticle');
+  // console.log('in controller deleteArticle');
   try {
     // 評價需要改目標版資料，確認有找到板再刪
     let board
@@ -165,9 +166,9 @@ export const deleteArticle = async (req, res) => {
       board = await boards.findById(req.article.board)
       if (!board) return res.status(403).send({ success: false, message: { title: 'BoardNoFound' } })
     }
-    console.log('start del');
+    // console.log('start del');
     await articles.deleteOne({ _id: req.article._id })
-    console.log('del ok');
+    // console.log('del ok');
     // 如果是評分版，成功後呼叫板塊移除評分
     // (不該合併到上面，避免文章沒刪成功就移除資訊)
     if (req.article.category === 1) {
@@ -177,13 +178,13 @@ export const deleteArticle = async (req, res) => {
     }
     res.status(200).send({ success: true, message: { title: 'deleted' } })
   } catch (error) {
-    console.log(error);
+    // console.log(error);
     res.status(500).send({ success: false, message: '伺服器錯誤' })
   }
 }
 
 export const banArticle = async (req, res) => {
-  console.log('in controller');
+  // console.log('in controller');
   try {
     const article = await articles.findById(req.params.id)
     if (!article) return res.status(403).send({ success: false, message: '查無此評價' })
@@ -212,13 +213,13 @@ export const banArticle = async (req, res) => {
     } else {
       res.status(500).send({ success: false, message: { title: error } })
     }
-    console.log(error);
+    // console.log(error);
   }
 }
 
 export const getArticles = async (req, res) => {
   try {
-    console.log('in controller');
+    // console.log('in controller');
     const articleList = await articles.find({ board: req.params.id }).
       populate({
         path: 'user',
@@ -233,10 +234,10 @@ export const getArticles = async (req, res) => {
     const out = articleList.map(a => {
       return sanitizeArticle(req, a)
     }).filter(a => !!a.user)
-    console.log('end');
+    // console.log('end');
     res.status(200).send({ success: true, message: '', result: out })
   } catch (error) {
-    console.log(error);
+    // console.log(error);
     res.status(500).send({ success: false, message: 'ServerError' })
   }
 }
@@ -269,12 +270,12 @@ export const createMsg = async (req, res) => {
     } else {
       res.status(500).send({ success: false, message: { title: error } })
     }
-    console.log(error);
+    // console.log(error);
   }
 }
 
 export const editMsg = async (req, res) => {
-  console.log('in controller editMsg');
+  // console.log('in controller editMsg');
   try {
     const msg1List = req.article.msg1.list
     const theMsg = msg1List[msg1List.findIndex(msg => msg.id === req.body.id)]
@@ -282,9 +283,9 @@ export const editMsg = async (req, res) => {
     theMsg.content = req.body.content
     theMsg.lastEditDate = Date.now()
     // 偷工 抓資料就加工(預期存=取)
-    console.log('start update');
+    // console.log('start update');
     await req.article.save()
-    console.log('updated');
+    // console.log('updated');
     res.status(200).send({ success: true, message: { title: 'updated' } })
   } catch (error) {
     if (error.name === 'ValidationError') {
@@ -292,7 +293,7 @@ export const editMsg = async (req, res) => {
     } else {
       res.status(500).send({ success: false, message: { title: error } })
     }
-    console.log(error);
+    // console.log(error);
   }
 }
 
@@ -302,7 +303,7 @@ export const deleteMsg = async (req, res) => {
     msg1List.splice(msg1List.findIndex(msg => msg.id === req.body.id), 1)
     // 找到後加留言
     req.article.msg1.amount--
-    console.log('saving del result in C');
+    // console.log('saving del result in C');
     await req.article.save()
     // 之後留言有評分功能要補上下方使用者紀錄
     // 刪除使用者發文紀錄
@@ -321,17 +322,17 @@ export const deleteMsg = async (req, res) => {
     //   toBoard.amount--
     //   toBoard.scoreChart[req.article.score]--
     // }
-    console.log('del ok');
+    // console.log('del ok');
     res.status(200).send({ success: true, message: { title: 'deleted' } })
   } catch (error) {
-    console.log(error);
+    // console.log(error);
     res.status(500).send({ success: false, message: '伺服器錯誤' })
   }
 }
 
 
 export const banMsg = async (req, res) => {
-  console.log('in controller banMsg');
+  // console.log('in controller banMsg');
   try {
     const article = await articles.findById(req.params.id)
     if (!article) return res.status(403).send({ success: false, message: '查無此文章' })
@@ -340,9 +341,9 @@ export const banMsg = async (req, res) => {
     // theMsg.privacy = req.body.privacy
     theMsg.state = 0
     // 偷工 抓資料就加工(預期存=取)
-    console.log('start ban');
+    // console.log('start ban');
     await article.save()
-    console.log('banned');
+    // console.log('banned');
     res.status(200).send({ success: true, message: { title: 'banned' } })
   } catch (error) {
     if (error.name === 'ValidationError') {
@@ -350,17 +351,17 @@ export const banMsg = async (req, res) => {
     } else {
       res.status(500).send({ success: false, message: { title: error } })
     }
-    console.log(error);
+    // console.log(error);
   }
 }
 export const getArticle = async (req, res) => {
-  console.log('in controller');
+  // console.log('in controller');
   try {
     const article = await articles.findById(req.params.id)
     if (!article) return res.status(403).send({ success: false, message: '查無此評價' })
     res.status(200).send({ success: true, message: '', result: article })
   } catch (error) {
-    console.log(error);
+    // console.log(error);
     if (error.name === 'ValidationError') {
       return res.status(400).send({ success: false, message: { title: 'ValidationError', text: error.message } })
     } else {

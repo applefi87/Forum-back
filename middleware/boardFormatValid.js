@@ -74,7 +74,7 @@ export default async (req, res, next) => {
     console.time("Get childBoards");
     const childBoards = await boards.find({ parent: req.params.id }, "colData uniqueData")
     console.timeEnd("Get childBoards");
-    console.log("childBoards:" + childBoards.length);
+    // console.log("childBoards:" + childBoards.length);
     const updateList = []
     const newList = []
     // *****************************************
@@ -221,7 +221,7 @@ export default async (req, res, next) => {
       childBoardsMap.set(combineDataString(item.colData), item);
     }
     console.timeEnd('building childBoardsMap');
-    console.log('start for');
+    // console.log('start for');
     console.time('for')
     for (const c of file) {
       count++
@@ -275,7 +275,7 @@ export default async (req, res, next) => {
             duplicated++
           }
         } else {
-          // console.log('creating');
+          // // console.log('creating');
           // 要全新增的
           const form = {
             // title/intro只根版才一定要有 不然抓它母版的titleCol欄位去調資料
@@ -289,7 +289,7 @@ export default async (req, res, next) => {
           form.colData = row2Col(c, pDataCol)
           const temp = row2Col(c, pUniqueCol)
           form.uniqueData = [temp]
-          // console.log(temp);
+          // // console.log(temp);
           newList.push({ ...form })
           // 因為成功更新，該列的display>filter>dataCols&&uniqueCols要存著，等等一起更新
           addDataFilter(c)
@@ -299,15 +299,15 @@ export default async (req, res, next) => {
     }
     console.timeEnd('for')
     // ***********
-    console.log("count:" + count);
-    console.log("same:" + same);
-    console.log("updateList:" + updateList.length);
-    console.log("combineUpdate:" + combineUpdate);
-    console.log("newList:" + newList.length);
-    console.log("combineNew:" + combineNew);
-    console.log("duplicated:" + duplicated);
-    console.log("errorList:" + errorList);
-    console.log('next');
+    // console.log("count:" + count);
+    // console.log("same:" + same);
+    // console.log("updateList:" + updateList.length);
+    // console.log("combineUpdate:" + combineUpdate);
+    // console.log("newList:" + newList.length);
+    // console.log("combineNew:" + combineNew);
+    // console.log("duplicated:" + duplicated);
+    // console.log("errorList:" + errorList);
+    // console.log('next');
     const info = "count:" + count + "; " + "same:" + same + "; " + "combineUpdate:" + combineUpdate + "; " + "updateList:" + updateList.length + "; " + "newList:" + newList.length + "; " + "combineNew:" + combineNew + "duplicated:" + duplicated
     // fs.writeFileSync('tt.json', JSON.stringify(updateList))
     req.updateList = updateList
@@ -319,7 +319,7 @@ export default async (req, res, next) => {
     // return res.status(200).send({ success: false, message: '跑完' })
     next()
   } catch (error) {
-    console.log(error)
+    // console.log(error)
   }
 }
 

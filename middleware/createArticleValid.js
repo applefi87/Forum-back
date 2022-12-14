@@ -5,10 +5,10 @@ const cleanXSS = (html) => {
   return xss(html)
 }
 export default async (req, res, next) => {
-  console.log('in middle formatvalid');
+  // console.log('in middle formatvalid');
   try {
     // 延遲工具
-    // await new Promise(resolve => setTimeout(() => resolve(console.log('ok')), 2000));
+    // await new Promise(resolve => setTimeout(() => resolve(// console.log('ok')), 2000));
     const form = {}
     // 此為必填區 不然就報錯 (上方已經驗證過)
     form.board = req.params.id
@@ -50,11 +50,11 @@ export default async (req, res, next) => {
     // column.
     //   form.columns = 2
     req.form = form
-    // console.log('articleFormatValid ok');
+    // // console.log('articleFormatValid ok');
     // return res.status(403).send({ success: false, message: '到這完成', result: form })
     next()
   } catch (error) {
-    console.log(error);
+    // console.log(error);
     res.status(500).send({ success: false, message: '伺服器錯誤' })
   }
 }
