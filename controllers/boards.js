@@ -5,17 +5,17 @@ export const createBoard = async (req, res) => {
   try {
     // fs.writeFileSync('tt.json', JSON.stringify(req.updateList))
     if (req.updateList.length > 0) {
-      // console.log("boards updating");
+      console.log("boards updating");
       const us = Date.now();
       await boards.bulkSave(req.updateList);
-      // console.log("boards updated" + (Date.now() - us));
+      console.log("boards updated" + (Date.now() - us));
     }
     let result
     if (req.newList.length > 0) {
-      // console.log("boards creating");
+      console.log("boards creating");
       const us = Date.now();
       result = await boards.insertMany(req.newList);
-      // console.log("boards created" + (Date.now() - us));
+      console.log("boards created" + (Date.now() - us));
     }
     // *******抓之前的filter清單，再把新加入的加進去更新，省效能*****
     const pFilter = req.parent.childBoard.rule.display.filter
@@ -51,7 +51,7 @@ export const createBoard = async (req, res) => {
       await req.parent.save()
       // console.log("uniqueCols updated");
     } else {
-      // console.log('no changed');
+      console.log('no changed');
     }
     // dataCols 比較多 要去比對新資料
     if (result) {
@@ -60,11 +60,11 @@ export const createBoard = async (req, res) => {
         pFilter.dataCols = {}
       }
       addObj2ObjSet(pFilter.dataCols, req.newDataFilters)
-      // console.log("filterList updated");
+      console.log("filterList updated");
       // 要這樣通知才能更新mixed
       req.parent.markModified('childBoard.rule.display.filter.dataCols')
       await req.parent.save()
-      // console.log("filter list updated");
+      console.log("filter list updated");
     }
     console.log('end---------------------------------');
     res.status(200).send({ success: true, message: { title: '上傳更新完成', text: req.info, duration: 20000 } })
@@ -187,7 +187,7 @@ export const getChildBoards = async (req, res) => {
       displayCols += `colData.${c} `
     )
     // // console.log(displayCols);
-    const childBoards = await boards.find(condition, "title beScored " + displayCols)
+    const childBoards = await boards.find(condition, "title beScored uniqueData " + displayCols)
     res.status(200).send({ success: true, message: '', result: childBoards })
     // console.log("end");
   } catch (error) {
