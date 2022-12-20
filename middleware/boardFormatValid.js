@@ -57,7 +57,6 @@ export default async (req, res, next) => {
     // ******************抓取現有的子板，比對是新的再更新加入
     // 留一些計數的，確認運算沒錯
     let count = 0
-    let same = 0
     let duplicated = 0
     let combineUpdate = 0
     let combineNew = 0
@@ -174,9 +173,9 @@ export default async (req, res, next) => {
               break;
             // **********!!!!!!!!!之後要改掉!!!!!!!!!!!!!!!!!!!******************** (未來也許放圖片等等)
             case 7:
-              return
+              return false
             default:
-              { errorList.push("其他" + "母版規則格式錯誤:" + rule.t + ":" + data); return false }
+              { returnerrorList.push("其他" + "母版規則格式錯誤:" + rule.t + ":" + data); return false }
           }
           itData[rule.c] = data
         }
@@ -186,21 +185,18 @@ export default async (req, res, next) => {
     // ***把將被新增的清單與新資料檢查，是新的才新增
     // 有更新則回傳true供計數
     const checkUniqueAndAdd = (uniquesArr, newRow) => {
-      let success = false
       // 有些是document物件要轉一般物件，有些不是
       const uniqueDatas = uniquesArr.toObject ? uniquesArr.toObject().uniqueData : uniquesArr.uniqueData
       const newUniqueRow = _.pick(newRow, uniqueList);
-      let equal = false
+      let notEqual = true
       for (let it of uniqueDatas) {
         delete it._id
         if (_.isEqual(it, newUniqueRow)) {
-          equal = true
+          notEqual = false
           break
         }
       }
-      if (equal) same++
-      else {
-        success = true
+      if (notEqual) {
         const newCol = row2Col(newRow, pUniqueCol)
         // 審核成功才加進去，不然跳過並存著供回報
         if (newCol) {
@@ -209,7 +205,7 @@ export default async (req, res, next) => {
           addUniqueFilter(newRow)
         }
       }
-      return success
+      return notEqual
     }
     // *******************************************
     // 區分unique/data
@@ -288,6 +284,7 @@ export default async (req, res, next) => {
           // !!!!!!!!!!!!!!!!!!!!!!!!!! 是否有必要{...obj}? !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
           form.colData = row2Col(c, pDataCol)
           const temp = row2Col(c, pUniqueCol)
+          if (!form.colData || !temp) { continue }
           form.uniqueData = [temp]
           // // console.log(temp);
           newList.push({ ...form })
@@ -299,16 +296,16 @@ export default async (req, res, next) => {
     }
     console.timeEnd('for')
     // ***********
-    // console.log("count:" + count);
-    // console.log("same:" + same);
-    // console.log("updateList:" + updateList.length);
-    // console.log("combineUpdate:" + combineUpdate);
-    // console.log("newList:" + newList.length);
-    // console.log("combineNew:" + combineNew);
-    // console.log("duplicated:" + duplicated);
-    // console.log("errorList:" + errorList);
-    // console.log('next');
-    const info = "count:" + count + "; " + "same:" + same + "; " + "combineUpdate:" + combineUpdate + "; " + "updateList:" + updateList.length + "; " + "newList:" + newList.length + "; " + "combineNew:" + combineNew + "duplicated:" + duplicated
+    console.log("count:" + count);
+    console.log("updateList:" + updateList.length);
+    console.log("combineUpdate:" + combineUpdate);
+    console.log("newList:" + newList.length);
+    console.log("combineNew:" + combineNew);
+    console.log("duplicated:" + duplicated);
+    console.log("errorList:" + errorList.length);
+    console.log(errorList);
+    console.log('next');
+    const info = "count:" + count + "; "  + "combineUpdate:" + combineUpdate + "; " + "updateList:" + updateList.length + "; " + "newList:" + newList.length + "; " + "combineNew:" + combineNew + "duplicated:" + duplicated
     // fs.writeFileSync('tt.json', JSON.stringify(updateList))
     req.updateList = updateList
     req.parent = parent
