@@ -2,53 +2,73 @@ import articles from '../models/articles.js'
 import boards from '../models/boards.js'
 import users from '../models/users.js'
 import _ from 'lodash'
+import mongoose from 'mongoose'
 // **************小功能區
 // 移除使用者設匿名後的暱稱/id,以及本人/版主的暱稱修改
 // 保留字: 'originalPoster' 'you' 'admin' 
 const sanitizeArticle = (req, articleIn) => {
   // 要轉物件才會正常,不然有時delete 等等就是不一樣
-  const article = articleIn.toObject()
+  const result = articleIn.toObject()
   // 有留言?---把發文者與留言者要匿名的暱稱+id移除
-  if (article.msg1?.amount) {
-    const cleanMsg1List = article.msg1.list.map(m => {
-      const msg = _.cloneDeep(m)
-      // 發文者看自己文章，名稱變成"你"
-      // 避免使用者被刪除 找不到id...
-      const msgUserId = msg.user?._id?.toString()
-      if (!msgUserId) {
-        // msg.user = { nickName: 'deleted' }
-        return
-      } else if (msgUserId === req._id) {
-        msg.owner = true
-        if (msg.privacy === 0) {
-          msg.user.nickName = 'youHide'
-        } else {
-          msg.user.nickName = 'you'
+  if (result.msg1?.amount) {
+    const cleanMsg1List = []
+    result.msg1.list.forEach(m => {
+      if (m.user) {
+        const msg = _.cloneDeep(m)
+        // 發文者看自己文章，名稱變成"你"
+        // 避免使用者被刪除 找不到id...
+        const msgUserId = msg.user?._id?.toString()
+        sanitizeMsgNickname()
+        function sanitizeMsgNickname() {
+          // 你: (剛新增的那筆留言才沒id，一定是你),把使用者的user改成物件才能更改
+          if (!msg.user.nickName) {
+            msg.user = {}
+            nickName2Owner()
+          }//你: 
+          else if (msgUserId === req._id) {
+            nickName2Owner()
+          } // 樓主
+          else if (msgUserId === result.user._id.toString()) {
+            msg.user.nickName = 'articleOwner'
+            if (result.privacy === 0) removeID()
+            // 其他人要被設匿名的
+          } else if (msg.privacy === 0) {
+            removeID()
+            delete msg.user.nickName
+          }
         }
-      } else if (msgUserId === article.user._id.toString()) {
-        // 看發文者在留言區，他的名稱變 "樓主"
-        msg.user.nickName = 'owner'
-        // 避免意外，文章設匿名再刪一次
-        if (article.privacy === 0) delete msg.user._id
-      } else if (msg.privacy === 0) {
-        delete msg.user._id
-        msg.user.nickName = null
+        function nickName2Owner() {
+          msg.owner = true
+          if (msg.privacy === 0) {
+            removeID()
+            msg.user.nickName = 'youHide'
+          } else {
+            msg.user.nickName = 'you'
+          }
+        }
+        function removeID() {
+          delete msg.user._id //避免追id知道使用者
+        }
+        cleanMsg1List.push(msg)
       }
-      return msg
-    }).filter(m => !!m?.user)
-    delete article.msg1.list
-    article.msg1.list = cleanMsg1List
+    })
+    delete result.msg1.list
+    result.msg1.list = cleanMsg1List
   }
+  // console.log(result);
   // 發文者看自己文章，名稱變成"你"
-  if (article.user._id.toString() === req._id) {
-    article.user.nickName = 'you'
-    article.owner = true
+  // 留言不會populate user，為ObjectId不該跑下面，只有查看文章會(不會用到所以不抓，所以要多一道不然把_id當物件修改會異常消失)
+  if (!mongoose.isValidObjectId(result.user)) {
+    if (result.user._id.toString() === req._id) {
+      result.user.nickName = 'you'
+      result.owner = true
+    }
+    else if (result.privacy == 0) {
+      result.user._id = undefined
+      result.user.nickName = null
+    }
   }
-  else if (article.privacy == 0) {
-    article.user._id = undefined
-    article.user.nickName = null
-  }
-  return article
+  return result
 }
 // 因為刪除/ban文章 版的評分/使用者紀錄要移除
 const removeReviewinfo = (article, board, user) => {
@@ -257,13 +277,19 @@ export const createMsg = async (req, res) => {
     if (!(article.msg1?.amount)) article.msg1 = { amount: 0, nowId: 0, list: [] }
     article.msg1.amount++
     article.msg1.nowId++
+    // 發文者與評價者同人，直接用他評價的設定(反正使用者都只能看到"版主")
+    const privacy = req.user._id === article.user._id.toString() ? article.privacy : req.body.privacy
     // beScored:  msg2先忽略
     article.msg1.list.push({
-      id: article.msg1.nowId, user: req.user._id, privacy: req.body.privacy, lastEditDate: Date.now(), content: req.body.content
+      id: article.msg1.nowId, user: req.user._id, privacy: privacy, lastEditDate: Date.now(), content: req.body.content
     })
     await article.save()
+    const sanitizedList = sanitizeArticle(req, article).msg1.list
+    console.log("ST OK");
     // 偷工 存完不重抓，由於新增的缺nickname，直接前台設沒nickname就是'you'
-    res.status(200).send({ success: true, message: { title: 'published' }, result: sanitizeArticle(req, article) })
+    res.status(200).send({ success: true, message: { title: 'published' }, result: sanitizedList })
+    console.log("end");
+
   } catch (error) {
     if (error.name === 'ValidationError') {
       return res.status(400).send({ success: false, message: { title: 'ValidationError', text: error.message } })
