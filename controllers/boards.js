@@ -117,6 +117,15 @@ export const getBoard = async (req, res) => {
     res.status(500).send({ success: false, message: 'ServerError' })
   }
 }
+export const getParentBoard = async (req, res) => {
+  try {
+    const board = await boards.findById(req.params.id,"childBoard.rule.transformTable childBoard.rule.titleCol childBoard.article ")
+    if (!board) return res.status(404).send({ success: false, message: '找無該版' })
+    res.status(200).send({ success: true, message: '', result: board })
+  } catch (error) {
+    res.status(404).send({ success: false, message: '查找出錯' })
+  }
+}
 export const getBoardTest = async (req, res) => {
   // console.log('in controller-getBoardTest');
   // // console.log(req.board);
@@ -186,8 +195,9 @@ export const getChildBoards = async (req, res) => {
     req.board.childBoard.rule.displayCol.forEach(c =>
       displayCols += `colData.${c} `
     )
+    const beScored = " beScored.scoreSum beScored.amount beScored.tags "
     // // console.log(displayCols);
-    const childBoards = await boards.find(condition, "title beScored uniqueData " + displayCols)
+    const childBoards = await boards.find(condition, "title " + beScored + displayCols)
     res.status(200).send({ success: true, message: '', result: childBoards })
     // console.log("end");
   } catch (error) {
