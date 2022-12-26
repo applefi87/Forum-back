@@ -9,7 +9,8 @@ import {
   createRoot,
   getBoard,
   // getBoardTest,
-  getChildBoards
+  getChildBoards,
+  getParentBoard
 } from '../controllers/boards.js'
 //   181 209
 const router = express.Router()
@@ -21,5 +22,7 @@ router.post('/createRoot', content('application/json'), auth.jwt, admin, createR
 // 主要在過濾+搜尋的部分(sort先放在用戶端排) 
 router.get('/childs/:id', getBoardValid, getChildBoards)
 router.get('/:id', getBoardValid, getBoard)
+// 只拿需要的部分，所以新開一個
+router.get('/parent/:id', getParentBoard)
 
 export default router 
