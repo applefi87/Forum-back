@@ -41,15 +41,15 @@ export const sendMail = async (req, res) => {
       await email.save()
     } else {
       await sendMailJs(formatedEmail, '課程網註冊驗證碼',
-        `${createCode}  是你的信箱驗證碼，一天內有效<br> 請至原頁面填入驗證，進入下步驟`
+        `${createCode}  <br>是你的信箱驗證碼，一天內有效<br> 請至原頁面填入驗證，進入下步驟`
       )
-      
+
       // // console.log('未申請過，要創建');
       await emails.create({ isSchool: req.body.isSchool, email: formatedEmail, code: hashCode, date: Date.now(), occupied: false })
       // // console.log('未申請過，創建完成');
     }
-    console.log(formatedEmail + createCode);
-    res.status(200).send({ success: true, message: { title: '請至該信箱收信', text: formatedEmail, duration: 10000 } })
+    // console.log(formatedEmail + createCode);
+    res.status(200).send({ success: true, message: { title: '請至該信箱收信', text: formatedEmail, duration: 10000, timeout } })
   } catch (error) {
     res.status(500).send({ success: false, message: { title: 'ServerError' }, info: error })
   }
