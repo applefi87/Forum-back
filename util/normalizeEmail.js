@@ -13,7 +13,8 @@ export default function async(email) {
     front = front?.replace(/\./g, "")
     // 解決gmail內部通用名
     back = back?.replace("googlemail", 'gmail')
-    back = back?.replace("gapps.ntnu", 'ntnu')
+    // 拔除更動師大email，接受重複註冊，不搞學生麻煩
+    // back = back?.replace("gapps.ntnu", 'ntnu')
     if (idx < 1 || !front || !back) {
       return 'error'
     }
