@@ -6,12 +6,6 @@ import sendMailJs from '../util/sendMail.js'
 // import fs from 'fs'
 import bcrypt from 'bcrypt'
 import jwt from 'jsonwebtoken'
-const expireTime = { expiresIn: '3 hours' }
-// const expireTime = { expiresIn: '2 seconds' }
-
-// domain消失
-// const globalCookieSetting = { sameSite: 'lax', signed: true, secure: true, domain: 'leisureforum-develop.onrender.com' }
-const globalCookieSetting = { sameSite: 'none', signed: true, secure: true }
 
 const rateEmpty = {
   score: 0,
@@ -104,22 +98,32 @@ export const register = async (req, res) => {
     }
   }
 }
-
+// 
+const expireTime = { expiresIn: '3 hours' }
+// const expireTime = { expiresIn: '2 seconds' }
+const updateJWT = async (req) => {
+  try {
+    const token = jwt.sign({ _id: req.user._id, role: req.user.securityData.role }, process.env.SECRET, expireTime)
+    // token太多 自動刪(預估留最後2次登陸，反正自動續約也會在後面，原本的會被刪掉)
+    if (req.user.securityData.tokens.length > 8) { req.user.securityData.tokens = req.user.securityData.tokens.slice(4) }
+    // 只留驗證部分，這樣偷看資料庫也沒差(雖不曉得何時會被看，也許防工程師?)
+    const jwtSignature = token.substring(token.lastIndexOf(".") + 1)
+    req.user.securityData.tokens.push(jwtSignature)
+    await req.user.save()
+    return token
+  } catch (error) {
+    throw error
+  }
+}
 // 
 export const login = async (req, res) => {
   // console.log('incontroller login');
   try {
-    const token = jwt.sign({ _id: req.user._id, role: req.user.securityData.role }, process.env.SECRET, expireTime)
-    // token太多 自動刪(預估留最後2次登陸，反正自動續約也會在後面，原本的會被刪掉)
-    if (req.user.securityData.tokens.length > 5) { req.user.securityData.tokens = req.user.securityData.tokens.slice(3) }
-    // 只留驗證部分，這樣偷看資料庫也沒差(雖不曉得何時會被看，也許防工程師?)
-    const jwtSignature = token.substring(token.lastIndexOf(".")+1)
-    req.user.securityData.tokens.push(jwtSignature)
-    await req.user.save()
+    const newJWT = await updateJWT(req)
     res.status(200).send({
       message: { success: true, title: 'Login success!' },
       result: {
-        token,
+        token: newJWT,
         _id: req.user._id,
         account: req.user.account,
         role: req.user.securityData.role,
@@ -133,11 +137,19 @@ export const login = async (req, res) => {
     })
   }
 }
-
+export const extend = async (req, res) => {
+  try {
+    const newJWT = await updateJWT(req)
+    res.status(200).send({
+      success: true, message: '', result: newJWT
+    })
+  } catch (error) {
+    res.status(500).send({ success: false, message: '伺服器錯誤' })
+  }
+}
 export const logout = async (req, res) => {
   try {
-    const jwtSignature = req.tokenSignature.substring(req.tokenSignature.lastIndexOf(".")+1)
-    req.user.securityData.tokens = req.user.securityData.tokens.filter(token => token !== jwtSignature)
+    req.user.securityData.tokens = req.user.securityData.tokens.filter(token => token !== req.jwtSignature)
     await req.user.save()
     res.status(200).send({ success: true, message: { success: true, title: '登出' } })
   } catch (error) {
@@ -145,28 +157,12 @@ export const logout = async (req, res) => {
   }
 }
 
-export const extend = async (req, res) => {
-  try {
-    const jwtSignature = req.tokenSignature.substring(req.tokenSignature.lastIndexOf(".")+1)
-    req.user.securityData.tokens = req.user.securityData.tokens.filter(token => token !== jwtSignature)
-    const token = jwt.sign({ _id: req.user._id, role: req.user.securityData.role }, process.env.SECRET, expireTime)
-    req.user.securityData.tokens.push(token)
-    await req.user.save()
-    res.status(200).send({
-      success: true, message: '', result: token
-    })
-  } catch (error) {
-    res.status(500).send({ success: false, message: '伺服器錯誤' })
-  }
-}
-
-
 export const resetPWD = async (req, res) => {
   // console.log('incontroller resetPWD');
   try {
     const createCode = randomPWD(10)
     //需要加上臨時密碼
-    const user = await users.findOne({ _id: req.user }).select(['account', 'securityData.password'])
+    const user = await users.findOne({ _id: req.user._id }).select(['account', 'securityData.password'])
     user.securityData.password = bcrypt.hashSync(createCode, 8)
     user.securityData.tokens = []
     await sendMailJs(req.formatedEmail, '歐趴論壇(師大課程評價網)新密碼',
@@ -202,8 +198,7 @@ export const changePWD = async (req, res) => {
     }
     const user = await users.findOne({ _id: req.user._id }).select(['securityData.password', 'securityData.tokens', ' securityData.safety.time', ' securityData.safety.errTimes', ' securityData.safety.errDate'])
     if (user.securityData.safety.times > 4) {
-      const jwtSignature = req.tokenSignature.substring(req.tokenSignature.lastIndexOf(".")+1)
-      user.securityData.tokens = user.securityData.tokens.filter(token => token !== jwtSignature)
+      user.securityData.tokens = user.securityData.tokens.filter(token => token !== req.jwtSignature)
       user.securityData.safety.times = 0
       user.securityData.safety.errTimes++
       res.status(410).send({ success: false, message: { success: false, title: '錯誤次數過多，請重新登入' } })

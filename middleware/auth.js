@@ -24,8 +24,7 @@ export const jwt = (req, res, next) => {
       }
     }
     req.user = data.user
-    req.token = data.token
-    req.role = data.role
+    req.jwtSignature = data.jwtSignature
     next()
   })(req, res, next)
 }
@@ -37,8 +36,6 @@ export const jwtForId = (req, res, next) => {
       // console.log('no Id');
     } else {
       req._id = data._id
-      req.role = data.role
-      // console.log('Get Id');
     }
     next()
   })(req, res, next)

@@ -59,7 +59,7 @@ passport.use('jwt', new JWTStrategy({
     if (user.securityData.tokens.indexOf(jwtSignature) === -1) {
       return done(null, false, { message: '驗證錯誤,請重新登錄' })
     }
-    return done(null, { user, tokenSignature: jwtSignature })
+    return done(null, { user, jwtSignature: jwtSignature })
   } catch (error) {
     // console.log('passportjwt ERROR');
     return done(error, false)
