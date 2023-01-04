@@ -262,7 +262,21 @@ export const getArticles = async (req, res) => {
   }
 }
 
-
+export const getArticle = async (req, res) => {
+  // console.log('in controller');
+  try {
+    const article = await articles.findById(req.params.id)
+    if (!article) return res.status(403).send({ success: false, message: '查無此評價' })
+    res.status(200).send({ success: true, message: '', result: article })
+  } catch (error) {
+    // console.log(error);
+    if (error.name === 'ValidationError') {
+      return res.status(400).send({ success: false, message: { title: 'ValidationError', text: error.message } })
+    } else {
+      res.status(500).send({ success: false, message: { title: error } })
+    }
+  }
+}
 
 // ******
 export const createMsg = async (req, res) => {
@@ -378,20 +392,5 @@ export const banMsg = async (req, res) => {
       res.status(500).send({ success: false, message: { title: error } })
     }
     // console.log(error);
-  }
-}
-export const getArticle = async (req, res) => {
-  // console.log('in controller');
-  try {
-    const article = await articles.findById(req.params.id)
-    if (!article) return res.status(403).send({ success: false, message: '查無此評價' })
-    res.status(200).send({ success: true, message: '', result: article })
-  } catch (error) {
-    // console.log(error);
-    if (error.name === 'ValidationError') {
-      return res.status(400).send({ success: false, message: { title: 'ValidationError', text: error.message } })
-    } else {
-      res.status(500).send({ success: false, message: { title: error } })
-    }
   }
 }
