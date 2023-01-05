@@ -1,6 +1,7 @@
 import articles from '../models/articles.js'
 import boards from '../models/boards.js'
 import users from '../models/users.js'
+import Notification from '../Class/Notification.js'
 import _ from 'lodash'
 import mongoose from 'mongoose'
 // **************小功能區
@@ -278,7 +279,7 @@ export const getArticle = async (req, res) => {
   }
 }
 
-// ******
+// 
 export const createMsg = async (req, res) => {
   try {
     const article = await articles.findById(req.params.id).
@@ -299,11 +300,12 @@ export const createMsg = async (req, res) => {
     })
     await article.save()
     const sanitizedList = sanitizeArticle(req, article).msg1.list
-    console.log("ST OK");
+    const newNotification = new Notification(1, req.user._id, 1, article._id, req.body.content)
+    await Notification.addNotification(article.user._id, newNotification)
     // 偷工 存完不重抓，由於新增的缺nickname，直接前台設沒nickname就是'you'
     res.status(200).send({ success: true, message: { title: 'published' }, result: sanitizedList })
-    console.log("end");
-
+    // 留言成功就通過，訊息錯誤沒差
+    
   } catch (error) {
     if (error.name === 'ValidationError') {
       return res.status(400).send({ success: false, message: { title: 'ValidationError', text: error.message } })
