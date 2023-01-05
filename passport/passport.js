@@ -3,6 +3,7 @@ import passportJWT from 'passport-jwt'
 import passportLocal from 'passport-local'
 import bcrypt from 'bcrypt'
 import users from '../models/users.js'
+import { jwtPickSignature } from '../util/dataFormetTool.js'
 
 const LocalStrategy = passportLocal.Strategy
 const JWTStrategy = passportJWT.Strategy
@@ -51,7 +52,7 @@ passport.use('jwt', new JWTStrategy({
       }
     }
     const token = req.headers.authorization.split(' ')[1]
-    const jwtSignature = token.substring(token.lastIndexOf(".")+1)
+    const jwtSignature = jwtPickSignature(token)
     const user = await users.findById(payload._id)
     if (!user) {
       return done(null, false, { message: '使用者不存在' })

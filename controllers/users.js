@@ -3,6 +3,7 @@ import groups from '../models/groups.js'
 import emails from '../models/emails.js'
 import randomPWD from '../util/randomPWD.js'
 import sendMailJs from '../util/sendMail.js'
+import { jwtPickSignature } from '../util/dataFormetTool.js'
 // import fs from 'fs'
 import bcrypt from 'bcrypt'
 import jwt from 'jsonwebtoken'
@@ -107,7 +108,7 @@ const updateJWT = async (req) => {
     // token太多 自動刪(預估留最後2次登陸，反正自動續約也會在後面，原本的會被刪掉)
     if (req.user.securityData.tokens.length > 8) { req.user.securityData.tokens = req.user.securityData.tokens.slice(4) }
     // 只留驗證部分，這樣偷看資料庫也沒差(雖不曉得何時會被看，也許防工程師?)
-    const jwtSignature = token.substring(token.lastIndexOf(".") + 1)
+    const jwtSignature = jwtPickSignature(token)
     req.user.securityData.tokens.push(jwtSignature)
     await req.user.save()
     return token
@@ -131,7 +132,7 @@ export const login = async (req, res) => {
       }
     })
   } catch (error) {
-    // console.log(error);
+    console.log(error);
     res.status(500).send({
       message: { success: true, title: '伺服器錯誤' },
     })
