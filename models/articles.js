@@ -67,7 +67,7 @@ const schema = new mongoose.Schema({
     default: 1,
     //屏蔽    1.正常
     enum: [0, 1]
-  },
+  }, 
   privacy: {
     type: Number,
     required: [true, '缺少隱私設定'],
