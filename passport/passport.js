@@ -3,6 +3,7 @@ import passportJWT from 'passport-jwt'
 import passportLocal from 'passport-local'
 import bcrypt from 'bcrypt'
 import users from '../models/users.js'
+import { jwtPickSignature } from '../util/dataFormetTool.js'
 
 const LocalStrategy = passportLocal.Strategy
 const JWTStrategy = passportJWT.Strategy
@@ -15,7 +16,7 @@ passport.use('login', new LocalStrategy({
 }, async (req, account, password, done) => {
   try {
     // 因為req.body.role 是0 所以要用undefined判斷
-    let user = await users.findOne({ account, 'securityData.role': (req.body.role !== undefined ? req.body.role : 1) })
+    let user = await users.findOne({ account, 'securityData.role': (req.body.role !== undefined ? req.body.role : 1) }, "_id nickName account score info securityData.tokens securityData.role securityData.schoolEmail securityData.password record.toBoard ")
     if (!user) {
       return done(null, false, { message: '帳號不存在' })
     }
@@ -32,7 +33,7 @@ passport.use('login', new LocalStrategy({
     }
     return done(null, user)
   } catch (error) {
-    return done(error, false)
+    return done(error, false, { message: '伺服器錯誤' })
   }
 }))
 // 供cookie使用 若是tempLogin就要標記，晚點Auth會驗證
@@ -51,15 +52,15 @@ passport.use('jwt', new JWTStrategy({
       }
     }
     const token = req.headers.authorization.split(' ')[1]
-    const jwtSignature = token.substring(token.lastIndexOf(".")+1)
-    const user = await users.findById(payload._id)
+    const jwtSignature = jwtPickSignature(token)
+    const user = await users.findById(payload._id, "_id nickName account score info securityData.tokens securityData.role securityData.schoolEmail record.toBoard ")
     if (!user) {
       return done(null, false, { message: '使用者不存在' })
     }
     if (user.securityData.tokens.indexOf(jwtSignature) === -1) {
       return done(null, false, { message: '驗證錯誤,請重新登錄' })
     }
-    return done(null, { user, tokenSignature: jwtSignature })
+    return done(null, { user, jwtSignature: jwtSignature })
   } catch (error) {
     // console.log('passportjwt ERROR');
     return done(error, false)

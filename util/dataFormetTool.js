@@ -1,0 +1,1 @@
+export const jwtPickSignature = (token) => { return token.substring(token.lastIndexOf(".") + 1) }

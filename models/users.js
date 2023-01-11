@@ -126,7 +126,41 @@ const schema = new mongoose.Schema({
     // 自己訊息被評價
     msgScore: rateUser('articles', { hasLocation: true, hasAmount: true })
   },
-  temp: mongoose.Mixed
+  temp: mongoose.Mixed,
+  notification: {
+    type: [
+      {
+        type: {
+          type: Number,
+          required: [true, '必填通知類型'],
+          // 1 文章留言通知
+          enum: [1]
+        },
+        time: {
+          type: Date,
+          require: true
+        },
+        user: {
+          type: mongoose.ObjectId,
+          ref: 'users',
+        },
+        action: {
+          type: Number,
+          required: [true, '必填動詞'],
+          // 1 回復你對
+          enum: [1]
+        },
+        target: {
+          type: mongoose.ObjectId,
+          ref: 'boards',
+        },
+        detail: mongoose.Mixed,
+        read: { type: Boolean, default: false }
+      }
+    ],
+    default: [],
+  _id: false
+  }
 }, { versionKey: false })
 
 // schema.index({ nickName: 1 })

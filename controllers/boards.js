@@ -119,7 +119,7 @@ export const getBoard = async (req, res) => {
 }
 export const getParentBoard = async (req, res) => {
   try {
-    const board = await boards.findById(req.params.id,"childBoard.rule.transformTable childBoard.rule.titleCol childBoard.article ")
+    const board = await boards.findById(req.params.id,"childBoard.rule.transformTable childBoard.rule.titleCol childBoard.article.category childBoard.article.active")
     if (!board) return res.status(404).send({ success: false, message: '找無該版' })
     res.status(200).send({ success: true, message: '', result: board })
   } catch (error) {
