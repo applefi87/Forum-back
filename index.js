@@ -10,10 +10,14 @@ import groupRouter from './routes/groups.js'
 import articleRouter from './routes/articles.js'
 import boardRouter from './routes/boards.js'
 import './passport/passport.js'
+import './tool.js'
+import boards from './models/boards.js'
+
 dotenv.config({ path: `./.env.${process.env.NODE_ENV}` });
 console.log(process.env.NODE_ENV);
 // 初始化
 mongoose.connect(process.env.DB_URL, { autoIndex: false })
+// await boards.deleteMany({ 'intro': { "$ne": '師大選課評價' } })
 // https://mongoosejs.com/docs/api.html#schematype_SchemaType-index:~:text=the%20background%20by-,default.,-If%20background%20is
 // mongoose.connect(process.env.DB_URL)
 
