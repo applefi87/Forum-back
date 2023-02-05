@@ -28,7 +28,6 @@ export default function (ref, setting = {}) {
     tags: mongoose.Mixed,
     list: {
       type: [listDetail()],
-      default: undefined,
       _id: false
     },
     bannedList: {

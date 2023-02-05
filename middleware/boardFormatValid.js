@@ -67,7 +67,6 @@ export default async (req, res, next) => {
     const sortedCols = rule.cols.sort((a, b) => a.c.slice(1).localeCompare(b.c.slice(1), undefined, { numeric: true }))
     const pDataCol = sortedCols.filter((it) => rule.dataList.includes(it.c))
     const pUniqueCol = sortedCols.filter((it) => !rule.dataList.includes(it.c))
-    const uniqueList = pUniqueCol.map(it => it.c)
     //*****區分之前有的跟新的
     // 只拿欄位就夠區分了
     console.time("Get childBoards");
