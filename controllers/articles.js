@@ -302,8 +302,10 @@ export const createMsg = async (req, res) => {
     })
     await article.save()
     const sanitizedList = sanitizeArticle(req, article).msg1.list
-    const newNotification = new Notification(1, req.user._id, 1, article._id, req.body.content)
-    await Notification.addNotification(article.user._id, newNotification)
+    if (req.user._id.toString() !== article.user.toString()) {
+      const newNotification = await new Notification(1, req, 1, article)
+      await Notification.addNotification(article.user._id, newNotification)
+    }
     // 偷工 存完不重抓，由於新增的缺nickname，直接前台設沒nickname就是'you'
     res.status(200).send({ success: true, message: { title: 'published' }, result: sanitizedList })
     // 留言成功就通過，訊息錯誤沒差

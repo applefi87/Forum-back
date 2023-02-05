@@ -69,8 +69,8 @@ export const register = async (req, res) => {
       record: {
         toBoard: rateEmpty,
         toArticle: rateEmpty,
-        articleScore: rateEmpty,
-        msgScore: rateEmpty
+        articles: rateEmpty,
+        msgs: rateEmpty
       }
     }
 
@@ -126,9 +126,10 @@ export const login = async (req, res) => {
       result: {
         token: newJWT,
         _id: req.user._id,
-        account: req.user.account,
+        nickName: req.user.nickName,
         role: req.user.securityData.role,
-        score: req.user.score
+        score: req.user.score,
+        notification: req.user.notification
       }
     })
   } catch (error) {
@@ -142,7 +143,7 @@ export const extend = async (req, res) => {
   try {
     const newJWT = await updateJWT(req)
     res.status(200).send({
-      success: true, message: '', result: newJWT
+      success: true, message: '', result: { token: newJWT, notification: req.user.notification }
     })
   } catch (error) {
     res.status(500).send({ success: false, message: '伺服器錯誤' })

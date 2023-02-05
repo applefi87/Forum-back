@@ -122,44 +122,73 @@ const schema = new mongoose.Schema({
     //給人訊息評價
     toMsg: rateUser('articles', { hasLocation: true }),
     // 自己文章被評價
-    articleScore: rateUser('articles', { hasAmount: true }),
+    articles: rateUser('articles', { hasAmount: true }),
     // 自己訊息被評價
-    msgScore: rateUser('articles', { hasLocation: true, hasAmount: true })
+    msgs: rateUser('articles', { hasLocation: true, hasAmount: true })
+  },
+  favorite: {
+    boards: [{
+      type: mongoose.ObjectId,
+      ref: "boards"
+    }],
+    // {$wew版id:["文章oid1","文章oid2"]}
+    articles: mongoose.Mixed
   },
   temp: mongoose.Mixed,
+  //基於使用者最多20個通知 過多刪除? 而且日常抓取會跳過這欄位，所以不用一直去資料庫搜(未來要也可改放新資料表)
   notification: {
+    //檢舉應也可用同樣架構，導到對應的位置查看詳情(所以就差權限對應不同按鈕)
     type: [
       {
-        type: {
-          type: Number,
-          required: [true, '必填通知類型'],
-          // 1 文章留言通知
-          enum: [1]
-        },
-        time: {
-          type: Date,
-          require: true
-        },
-        user: {
+        //模仿fb 最深是msg2標記我/給評價 (action判斷行為)
+        //常態可能: 1.你的權限已通過 2.你在xx版的評論大受好評
+        //較刁鑽可能: 1.你的權限已通過 2.你在xx版的評論大受好評
+        //只有版必填，其他深度的文章、留言都是選填
+        //因為版名稱可能要往母版抓，省資源
+        BoardTitleCol: mongoose.Mixed,
+        board: {
           type: mongoose.ObjectId,
-          ref: 'users',
+          ref: 'boards',
         },
+        articleType: {
+          type: Number
+        },
+        //populate抓id+標題
+        article: {
+          type: mongoose.ObjectId,
+          ref: 'articles',
+        },
+        msg1: Number,
+        msg2: Number,
+        //留言 標記 回覆 按讚
         action: {
           type: Number,
           required: [true, '必填動詞'],
           // 1 回復你對
           enum: [1]
         },
-        target: {
-          type: mongoose.ObjectId,
-          ref: 'boards',
+        //未來通知種類變多: 您在xx爭辯的論點有評論/待回復/等下一步 (很像action 但是爭辯的版本)
+        //目前預設不填
+        type: {
+          type: Number,
+          // 1 文章留言通知
+          enum: [1]
         },
+        //留言xxx 顯示一部分
         detail: mongoose.Mixed,
+        user: {
+          type: mongoose.ObjectId,
+          ref: 'users',
+        },
+        time: {
+          type: Date,
+          require: true
+        },
         read: { type: Boolean, default: false }
       }
     ],
     default: [],
-  _id: false
+    _id: false
   }
 }, { versionKey: false })
 
