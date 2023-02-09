@@ -29,7 +29,43 @@ const emailSchema = (school) => {
   }
   return rule
 }
-
+const notificationSchema = new mongoose.Schema({
+  //模仿fb 最深是msg2標記我/給評價 (action判斷行為)
+  //常態可能: 1.你的權限已通過 2.你在xx版的評論大受好評
+  //較刁鑽可能: 1.你的權限已通過 2.你在xx版的評論大受好評
+  //只有版必填，其他深度的文章、留言都是選填
+  // //因為版名稱可能要往母版抓，省資源
+  // BoardTitleCol: mongoose.Mixed,
+  board: {
+    type: mongoose.ObjectId,
+    ref: 'boards',
+  },
+  //populate抓id+標題
+  article: {
+    type: mongoose.ObjectId,
+    ref: 'articles',
+  },
+  msg1: Number,
+  msg2: Number,
+  //留言 標記 回覆 按讚
+  action: {
+    type: Number,
+    required: [true, '必填動詞'],
+    // 1 回復你對
+    enum: [1]
+  },
+  //留言xxx 顯示一部分
+  detail: mongoose.Mixed,
+  user: {
+    type: mongoose.ObjectId,
+    ref: 'users',
+  },
+  time: {
+    type: Date,
+    require: true
+  },
+  read: { type: Boolean, default: false }
+})
 
 const schema = new mongoose.Schema({
   account: {
@@ -131,62 +167,24 @@ const schema = new mongoose.Schema({
       type: mongoose.ObjectId,
       ref: "boards"
     }],
-    // {$wew版id:["文章oid1","文章oid2"]}
+    // {$3ew版id:["文章oid1","文章oid2"]}
     articles: mongoose.Mixed
+  },
+  badge: {
+    // {$9ew版id:["文章oid1","文章oid2"]}
+    //不同版的徽章 像是高手/研究者/版主...?
+    board: mongoose.Mixed,
+    //全版的權限 像網站維修員
+    normal: [{
+      type: mongoose.ObjectId,
+      ref: "boards"
+    }]
   },
   temp: mongoose.Mixed,
   //基於使用者最多20個通知 過多刪除? 而且日常抓取會跳過這欄位，所以不用一直去資料庫搜(未來要也可改放新資料表)
   notification: {
     //檢舉應也可用同樣架構，導到對應的位置查看詳情(所以就差權限對應不同按鈕)
-    type: [
-      {
-        //模仿fb 最深是msg2標記我/給評價 (action判斷行為)
-        //常態可能: 1.你的權限已通過 2.你在xx版的評論大受好評
-        //較刁鑽可能: 1.你的權限已通過 2.你在xx版的評論大受好評
-        //只有版必填，其他深度的文章、留言都是選填
-        //因為版名稱可能要往母版抓，省資源
-        BoardTitleCol: mongoose.Mixed,
-        board: {
-          type: mongoose.ObjectId,
-          ref: 'boards',
-        },
-        articleType: {
-          type: Number
-        },
-        //populate抓id+標題
-        article: {
-          type: mongoose.ObjectId,
-          ref: 'articles',
-        },
-        msg1: Number,
-        msg2: Number,
-        //留言 標記 回覆 按讚
-        action: {
-          type: Number,
-          required: [true, '必填動詞'],
-          // 1 回復你對
-          enum: [1]
-        },
-        //未來通知種類變多: 您在xx爭辯的論點有評論/待回復/等下一步 (很像action 但是爭辯的版本)
-        //目前預設不填
-        type: {
-          type: Number,
-          // 1 文章留言通知
-          enum: [1]
-        },
-        //留言xxx 顯示一部分
-        detail: mongoose.Mixed,
-        user: {
-          type: mongoose.ObjectId,
-          ref: 'users',
-        },
-        time: {
-          type: Date,
-          require: true
-        },
-        read: { type: Boolean, default: false }
-      }
-    ],
+    type: [notificationSchema],
     default: [],
     _id: false
   }

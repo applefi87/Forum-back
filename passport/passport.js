@@ -20,7 +20,8 @@ passport.use('login', new LocalStrategy({
     let user = await users.findOne({ account, 'securityData.role': (req.body.role !== undefined ? req.body.role : 1) }, req.sqlSelect).populate({
       path: 'notification.user',
       select: "nickName"
-    })
+    }).populate({ path: 'notification.board', select: 'titleCol parent colData',populate:{ path: 'parent', select: 'childBoard.rule.titleCol' } })
+    console.log(user);
     if (!user) {
       return done(null, false, { message: '帳號不存在' })
     }
