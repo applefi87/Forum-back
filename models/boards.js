@@ -68,15 +68,18 @@ const unique = () => {
 
 const article = new mongoose.Schema({
   c: { type: Number, required: true, alias: 'code' },
-  n: { type: mongoose.Mixed, required: function () { return this.c !== 1 }, alias: 'name' },
-  intro: { type: String, required: true },
-  tagActive: Boolean,
-  //如果有勾tag再填
-  tagOption: { type: mongoose.Mixed, required: function () { return this.tagActive } },
+  //***這區可能因c 就統一內容，不能客製
+  //非0教學 1評價 (也許有一些客製文章) 
+  n: { type: mongoose.Mixed, required: function () { return this.c !== 1 || this.c !== 0 }, alias: 'name' },
   contentCol: mongoose.Mixed,
-  contentTemplate: { type: [String], default: false },
-  cols: col
+  cols: col,
+  //***
   // 程式抓版不重複供選擇,填上代表必填
+  intro: { type: String, required: true },
+  //如果有勾tag再填
+  tagActive: Boolean,
+  tagOption: { type: mongoose.Mixed, required: function () { return this.tagActive } },
+  contentTemplate: { type: [String], default: false },
 })
 
 const schema = new mongoose.Schema({
