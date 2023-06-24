@@ -38,10 +38,11 @@ app.use(limiter)
 app.use(cors({
   origin(origin, callback) {
     const corsCheck = process.env.NODE_ENV === 'main' ? origin === 'https://all-pass.tw' : (origin === undefined || origin === 'https://leisureforum-develop.onrender.com' || origin === 'http://localhost:9000' || true)
-    console.log("cors origin:" + origin, ",corsCheck=" + corsCheck)
     if (corsCheck) {
       callback(null, true)
     } else {
+      console.log("cors origin:" + origin, ",corsCheck=" + corsCheck)
+      console.log("Upper line only display when cors failed.");
       callback(new Error('Not Allowed'))
     }
   }
