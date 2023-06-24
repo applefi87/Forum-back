@@ -42,6 +42,7 @@ app.use(cors({
       callback(null, true)
     } else {
       console.log("cors origin:" + origin, ",corsCheck=" + corsCheck)
+      console.log("Upper line only display when cors failed.");
       callback(new Error('Not Allowed'))
     }
   }
