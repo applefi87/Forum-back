@@ -84,8 +84,8 @@ export const createUsers = async (req, res) => {
       record: {
         toBoard: rateEmpty,
         toArticle: rateEmpty,
-        articleScore: rateEmpty,
-        msgScore: rateEmpty
+        articles: rateEmpty,
+        msgs: rateEmpty
       }
     }
     const result = JSON.parse(JSON.stringify(await users.create(input)))

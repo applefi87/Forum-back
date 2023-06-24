@@ -9,7 +9,7 @@ import {
 
 const router = express.Router()
 
-router.post('/usersPostBoards', content('application/json'), auth.jwt, usersPostBoards)
-router.post('/createUsers', content('application/json'), auth.jwt, createUsers)
+router.post('/usersPostBoards', content('application/json'), auth.jwt(), usersPostBoards)
+router.post('/createUsers', content('application/json'), auth.jwt(), createUsers)
 
 export default router

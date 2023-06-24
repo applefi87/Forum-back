@@ -18,3 +18,5 @@ export default function (ref) {
     }
   }
 }
+// dynamic-ref
+// https://mongoosejs.com/docs/populate.html#dynamic-ref

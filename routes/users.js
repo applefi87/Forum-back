@@ -25,13 +25,13 @@ router.post('/sendMail', content('application/json'), sendMail)
 router.post('/mailVerify', content('application/json'), verifyMail(false))
 // 
 router.post('/', content('application/json'), verifyMail(true), register)
-router.post('/login', content('application/json'), auth.login, login)
-router.delete('/logout', auth.jwt, logout)
-router.post('/extend', auth.jwt, extend)
+router.post('/login', content('application/json'), auth.login("_id nickName score securityData.role securityData.password securityData.tokens notification"), login)
+router.delete('/logout', auth.jwt(), logout)
+router.post('/extend', auth.jwt("_id securityData.role securityData.tokens notification"), extend)
 // 改密碼/忘記密碼相關
 router.post('/sendForgetPWDMail', content('application/json'), sendForgetPWDMail)
 router.post('/verifyForgetPWDCode', content('application/json'), verifyForgetPWDCode, resetPWD)
-router.post('/changePWD', content('application/json'), auth.jwt, changePWD)
+router.post('/changePWD', content('application/json'), auth.jwt(), changePWD)
 
 // router.get('/', auth.jwt, getUser)
 // router.patch('/editInfo', content('application/json'), auth.jwt, editInfo)

@@ -1,5 +1,4 @@
 import boards from '../models/boards.js'
-import fs from 'fs'
 
 export const createBoard = async (req, res) => {
   try {

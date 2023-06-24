@@ -4,6 +4,7 @@ import passportLocal from 'passport-local'
 import bcrypt from 'bcrypt'
 import users from '../models/users.js'
 import { jwtPickSignature } from '../util/dataFormetTool.js'
+import { json } from 'express'
 
 const LocalStrategy = passportLocal.Strategy
 const JWTStrategy = passportJWT.Strategy
@@ -16,17 +17,14 @@ passport.use('login', new LocalStrategy({
 }, async (req, account, password, done) => {
   try {
     // 因為req.body.role 是0 所以要用undefined判斷
-    let user = await users.findOne({ account, 'securityData.role': (req.body.role !== undefined ? req.body.role : 1) }, "_id nickName account score info securityData.tokens securityData.role securityData.schoolEmail securityData.password record.toBoard ")
+    let user = await users.findOne({ account, 'securityData.role': (req.body.role !== undefined ? req.body.role : 1) }, req.sqlSelect).populate({
+      path: 'notification.user',
+      select: "nickName"
+    }).populate({ path: 'notification.board', select: 'titleCol parent colData',populate:{ path: 'parent', select: 'childBoard.rule.titleCol' } })
+    console.log(user);
     if (!user) {
       return done(null, false, { message: '帳號不存在' })
     }
-    // // 近5分鐘登陸超過5次就報錯
-    // if (user.securityData.loginRec && user.securityData.loginRec.time + 1000 * 60 * 5 < Date.now()) {
-    //   user.securityData.loginRec
-    // }
-    // if (user.securityData.loginRec?.time < Date.now() + 1000 * 60 * 5) {
-    //   return done(null, false, { message: '密碼錯誤' })
-    // }
     // 驗證密碼
     if (!bcrypt.compareSync(password, user.securityData.password)) {
       return done(null, false, { message: '密碼錯誤' })
@@ -36,7 +34,6 @@ passport.use('login', new LocalStrategy({
     return done(error, false, { message: '伺服器錯誤' })
   }
 }))
-// 供cookie使用 若是tempLogin就要標記，晚點Auth會驗證
 
 passport.use('jwt', new JWTStrategy({
   jwtFromRequest: ExtractJWT.fromAuthHeaderAsBearerToken(),
@@ -53,7 +50,7 @@ passport.use('jwt', new JWTStrategy({
     }
     const token = req.headers.authorization.split(' ')[1]
     const jwtSignature = jwtPickSignature(token)
-    const user = await users.findById(payload._id, "_id nickName account score info securityData.tokens securityData.role securityData.schoolEmail record.toBoard ")
+    const user = await users.findById(payload._id, req.sqlSelect).populate({path: "notification.user", select: 'nickName'})
     if (!user) {
       return done(null, false, { message: '使用者不存在' })
     }

@@ -300,14 +300,15 @@ export const createMsg = async (req, res) => {
     article.msg1.list.push({
       id: article.msg1.nowId, user: req.user._id, privacy: privacy, lastEditDate: Date.now(), content: req.body.content
     })
-    await article.save()
+    await article.save()  
     const sanitizedList = sanitizeArticle(req, article).msg1.list
-    const newNotification = new Notification(1, req.user._id, 1, article._id, req.body.content)
-    await Notification.addNotification(article.user._id, newNotification)
+    if (req.user._id.toString() !== article.user.toString()) {
+      const newNotification =  new Notification(1, article.board, article, 1,  req.user, req.body.content.slice(0, 20))
+      await Notification.addNotification(article.user, newNotification)
+    }
     // 偷工 存完不重抓，由於新增的缺nickname，直接前台設沒nickname就是'you'
     res.status(200).send({ success: true, message: { title: 'published' }, result: sanitizedList })
     // 留言成功就通過，訊息錯誤沒差
-
   } catch (error) {
     if (error.name === 'ValidationError') {
       return res.status(400).send({ success: false, message: { title: 'ValidationError', text: error.message } })
