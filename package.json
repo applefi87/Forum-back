@@ -34,7 +34,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "test": "mocha --require @babel/register 'test/**/*.test.{js,mjs}'",
+    "test": "mocha 'test/**/*.test.{js,mjs}'",
     "dev": "set NODE_ENV=develop&&nodemon index.js",
     "devMain": "set NODE_ENV=mainDev&&nodemon index.js",
     "start": "set NODE_ENV=develop&&node index.js"
