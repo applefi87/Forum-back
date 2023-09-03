@@ -1,93 +1,74 @@
-import _ from 'lodash'
-import fs from 'fs'
-import converter from 'json-2-csv'
-// 把中文key轉英文(統一)
-// 剛改可變化檢查:
-// 傳出即為cx
-// 值是0 不影響判斷
-// 地點時間要先拆分加工，時間自行先改"周,節"
+import _ from 'lodash';
+import fs from 'fs';
+import converter from 'json-2-csv';
 
-export default async function (csv, rule) {
-  const translate = rule.transformTable
-  let toCode
-  // // console.log(csv);
-  // csv2json
+// Convert Chinese keys to English (unified)
+export default async function convertCsvToCode(csv, rule) {
+    const translate = rule.transformTable;
+    
+    // Normalize line endings in the CSV
+    const formattedCsv = csv.replace(/\r\n/g, '\n').replace(/\r/g, '');
 
-  // csv.replace(xxx) ，因為csv可能是'\r'、'\n'換行，測試到有'\r\n'換行，而且結尾是'/n'會出錯,所以統一確保加工
-  await converter.csv2jsonAsync(csv.replace(/\r\n/g, '\n').replace(/\r/g, ''), {
-    delimiter: {
-      // wrap: '"', 
-      // eol: '\r\n'
+    try {
+        const parsedCsv = await csv2json(formattedCsv);
+        return processCsvData(parsedCsv, translate, rule.cols);
+    } catch (err) {
+        console.error('ERROR:', err.message);
+        throw new Error('CSV conversion error');
     }
-  }).then(
-    (arr) => {
-      // // console.log(arr)
-      // 預加工母版定義要Boolean/數字等無法直接用csv檔建立的資料(由於我判斷用_.isEqual,物件/陣列無法比較，先用字串留著)
-      const preFormatCols = {}
-      rule.cols.forEach(it => {
-        if (it.t === 0 || it.t === 1 || it.t === 2 || it.t === 3) {
-          preFormatCols[it.c] = it.t
-        }
-      })
-      // 把部分欄位轉換成特定格式，並且轉換成英文的key值
-      toCode = arr?.map(obj => {
-        const ok = {}
-        for (let k of Object.keys(translate)) {
-          // 欄位是空的/根本沒有就不填入 不然0要照樣填入
-          if (obj[translate[k]['zhTW']] !== "" && obj[translate[k]['zhTW']] !== undefined) {
-            if (preFormatCols[k] !== undefined) {
-              const t = obj[translate[k]['zhTW']]
-              switch (preFormatCols[k]) {
-                case 1:
-                case 2: {
-                  ok[k] = obj[translate[k]['zhTW']].toString()
-                  break;
-                }
-                case 0: {
-                  if (t === "有" || t === "是" || t === "yes" || t === "true" || t === 'TRUE' || t === true) {
-                    ok[k] = true
-                  } else if (t === "無" || t === "否" || t === "no" || t === "false" || t === "FALSE" || t === false) {
-                    ok[k] = false
-                  }
-                  break;
-                }
-                case 3: {
-                  const number = Number(obj[translate[k]['zhTW']])
-                  if (!isNaN(number)) ok[k] = number
-                  break;
-                }
-              }
-            } else {
-              ok[k] = obj[translate[k]['zhTW']]
-            }
-          }
-        }
-        return ok
-      })
-    }
-  ).catch((err) => {
-    // console.log('ERROR: ' + err.message)
-    return res.status(400).send({ success: false, message: '轉檔錯誤' })
-  }
-  );
-  // // console.log(toCode);
-  return toCode
 }
 
-// *****
+// Convert CSV to JSON format
+async function csv2json(csvData) {
+    return await converter.csv2jsonAsync(csvData, {
+        // Delimiters can be specified here if needed
+    });
+}
 
+// Process the CSV data and transform based on provided translation map
+function processCsvData(csvArray, translate, cols) {
+    // Pre-process template definition requires Boolean/numbers, etc., which can't be directly created from a csv file 
+    // (because I judge with _.isEqual, objects/arrays can't be compared, so I leave it as a string for now)
+    const preFormatCols = getPreFormatCols(cols);
 
-// 用來檢查不重複位是否合理/需要新增(ex:發現班也是unique)
-// const o = []
-// const keyArray = Object.keys(group)
-// for (let i in keyArray) {
-//   if (group[keyArray[i]].length > 1) {
-//     o.push(group[keyArray[i]])
-//   }
-// }
-// *****
-// fs.writeFileSync('out.json', JSON.stringify(o))
+    return csvArray.map(obj => {
+        const processedObj = {};
 
-// 把原本簡單欄位補回去
+        Object.keys(translate).forEach(k => {
+            const value = obj[translate[k]['zhTW']];
+            
+            // If the field is empty/non-existent, don't fill it in. Otherwise, even 0 should be included
+            if (value !== "" && value !== undefined) {
+                processedObj[k] = formatValueBasedOnType(value, preFormatCols[k]);
+            }
+        });
 
+        return processedObj;
+    });
+}
 
+// Get the predefined column formats
+function getPreFormatCols(cols) {
+    return cols.reduce((acc, it) => {
+        if ([0, 1, 2, 3].includes(it.t)) {
+            acc[it.c] = it.t;
+        }
+        return acc;
+    }, {});
+}
+
+// Format the value based on its specified type
+function formatValueBasedOnType(value, type) {
+    switch (type) {
+        case 0:
+            return ['有', '是', 'yes', 'true', 'TRUE', true].includes(value);
+        case 1:
+        case 2:
+            return value.toString();
+        case 3:
+            const number = Number(value);
+            return isNaN(number) ? undefined : number;
+        default:
+            return value;
+    }
+}
