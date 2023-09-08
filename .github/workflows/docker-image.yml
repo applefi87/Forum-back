@@ -26,5 +26,5 @@ jobs:
 
     - name: Build and push Docker image
       run: |
-        docker build . -t applefi87/all-pass:lastest
-        docker push applefi87/all-pass:lastest
+        docker build . -t applefi87/all-pass:latest
+        docker push applefi87/all-pass:latest
