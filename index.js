@@ -69,7 +69,7 @@ app.use('/group', groupRouter)
 app.use('/article', articleRouter)
 app.use('/board', boardRouter)
 app.use('/test', testRouter)
-app.listen(process.env.PORT || 4000, () => {
+app.listen(process.env.PORT || 4001, () => {
   console.log('Server is running')
 })
 let minInMilliecoonds = 60000
