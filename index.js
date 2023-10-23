@@ -37,7 +37,9 @@ app.use(limiter)
 // app.set('trust proxy', 1);
 app.use(cors({
   origin(origin, callback) {
-    const corsCheck = process.env.NODE_ENV === 'main' ? origin === 'https://all-pass.tw' : (origin === undefined || origin === 'https://leisureforum-develop.onrender.com' || origin === 'http://localhost:9000' || true)
+    const corsCheck = process.env.NODE_ENV === 'main'
+    ? origin && (origin.startsWith('https://www.all-pass.tw') || origin.startsWith('https://all-pass.tw'))
+    : (origin === undefined || origin === 'https://leisureforum-develop.onrender.com' || origin === 'http://localhost:9000' || true)
     if (corsCheck) {
       callback(null, true)
     } else {
@@ -53,6 +55,7 @@ app.use(cors({
   // exposedHeaders: ["set-cookie"]
   // allowedHeaders: ['Content-Type', 'X-H', 'x-requested-with', 'Accept']
 }))
+
 
 // 再限定一次防mongo語法
 app.use(mongoSanitize({
