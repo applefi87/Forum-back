@@ -11,6 +11,7 @@ import articleRouter from './routes/articles.js'
 import boardRouter from './routes/boards.js'
 import './passport/passport.js'
 import './tool.js'
+import waker from "./util/wakerFor15Mins.js"
 import boards from './models/boards.js'
 
 dotenv.config({ path: `./.env.${process.env.NODE_ENV}` });
@@ -71,3 +72,5 @@ app.use('/test', testRouter)
 app.listen(process.env.PORT || 4000, () => {
   console.log('Server is running')
 })
+let minInMilliecoonds = 60000
+setInterval(waker, 13 * minInMilliecoonds)
